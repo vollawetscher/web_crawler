@@ -30,7 +30,17 @@
     "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2909-beratungstermin-hoer-und-sprachentwicklung-kind",
     "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/14-sept-tag-des-offenen-denkmals",
     "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-landshut-acht-neue-auszubildende-und-anwaerter",
-    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen"
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/0910-infoveranstaltung-aufbau-einer-organisierten-nachbarschaftshilfe",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/spannende-praktikumstage-im-rahmen-der-jobtour-erlebt",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/fuehrerschein-weiter-ausgedrucktes-passbild-noetig",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gemeinsam-familien-beraten-und-unterstuetzen",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/erfolgsprojekt-darf-nicht-gefaehrdet-werden",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2709-inklusives-sportfest-in-altdorf",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/entfall-haltestellen-l312-kumhausen",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/jugendkultour-rottenburg-2025",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/stadtradeln-2025",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/praevention-mehr-in-den-mittelpunkt-ruecken"
   ],
   "sitemap": {
     "https://www.landkreis-landshut.de": {
@@ -5181,59 +5191,488 @@
       "depth": 2,
       "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
       "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/0910-infoveranstaltung-aufbau-einer-organisierten-nachbarschaftshilfe": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/0910-infoveranstaltung-aufbau-einer-organisierten-nachbarschaftshilfe",
+      "title": "09.10. - Infoveranstaltung - Aufbau einer organisierten Nachbarschaftshilfe | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "09.10. - Infoveranstaltung - Aufbau einer organisierten Nachbarschaftshilfe"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Nähere Infos:",
+          "Anmeldung bis 29.09.2025:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "09.10. - Infoveranstaltung - Aufbau einer organisierten Nachbarschaftshilfe 05. September 2025: Weil wir Nachbarn sind Das Landratsamt Landshut und die Gemeinde Hohenthann bieten am 09. Oktober 2025 eine Informationsveranstaltung zum Thema Nachbarschaftshilfe an. Die Veranstaltung steht unter dem Motto „Weil wir Nachbarn sind“ und richtet sich an alle, die in ihrer Gemeinde eine organisierte Nachbarschaftshilfe gründen wollen, aber noch nicht genau wissen, wie man ein solches Angebot am besten auf den Weg bringt. Doris Rudolf von der Koordinationsstelle „Wohnen im Alter“ wird in einem Vortrag über die grundlegenden Aufgaben und die Organisation einer Nachbarschaftshilfe informieren und die Möglichkeit einer staatlichen Förderung für ein solches Projekt vorstellen. Im Anschluss werden Ulrike Hüttl vom Seniorenbeirat Rottenburg und Stephanie Möller von der Nachbarschaftshilfe ANNA Altdorf Einblick in zwei erfolgreiche Praxisbeispiele geben. Dabei wird der Bogen vom Aufbau über die Neugründung bis hin zur täglichen Arbeit einer organisierten Nachbarschaftshilfe gespannt. Zudem stehen auch Mitglieder der Nachbarschaftshilfen Binatal, Ergolding, Furth, Geisenhausen, Neufahrn und Velden für einen informativen Austausch zur Verfügung. Die Veranstaltung findet von 14:00 bis 16:30 Uhr im Pfarrsaal St. Laurentius in Hohenthann statt. Nähere Infos: Flyer \"Weil wir Nachbarn sind\" Anmeldung bis 29.09.2025: Elisabeth Strasser, Seniorenbeauftragte Landkreis LandshutE-Mai: [email protected]Telefon: 0871 4082116",
+      "links": [
+        {
+          "text": "Flyer \"Weil wir Nachbarn sind\"",
+          "url": "https://www.landkreis-landshut.de/media/3967/nachbarschaftshilfe-09102025_einladung_flyer.pdf"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#f7929b9e84969592839fd98483859684849285b79b9699939c85929e84da9b969993849f8283d99392"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shuttestock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/3967/nachbarschaftshilfe-09102025_einladung_flyer.pdf",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/spannende-praktikumstage-im-rahmen-der-jobtour-erlebt": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/spannende-praktikumstage-im-rahmen-der-jobtour-erlebt",
+      "title": "Spannende Praktikumstage im Rahmen der Jobtour erlebt | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Spannende Praktikumstage im Rahmen der Jobtour erlebt"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Spannende Praktikumstage im Rahmen der Jobtour erlebt 03. September 2025: Die Sommerferien zur Berufsorientierung genutzt Sechs Mädchen und vier Jungen aus den 8. und 9. Klassen verschiedener Mittel- und Realschulen haben in der ersten Woche der Sommerferien spannende Eindrücke und Erfahrungen bei Betrieben im Landkreis Landshut gesammelt. Sie haben im Rahmen der „Jobtour“, organisiert durch Angela Schedlbauer von der Wirtschaftsförderung desLandkreises Landshut, verschiedene Materialien, Werkzeuge und Techniken ausprobiert und auch eine Baustelle besucht. Bei der SPIE SAG in Ergolding gewannen die Jugendlichen Einblicke in Elektroinstallationen und Lötvorgänge. Am Dienstag, bei der Firma Feistl Lüftungs- und Klimatechnik GmbH & Co. KG, konnten die Schülerinnen und Schüler nach einer Betriebsführung die verschiedenen Geschäftsfelder des Betriebs erkunden und bekamen einen Einblick in die Firmengeschichte. Der Workshop „Teilebau“ und eine Baustellenbesichtigung rundeten das Programm ab. Im Ergomar in Ergolding wurde den Jugendlichen die Badewassertechnik und Saunatechnik gezeigt. Anschließend konnten alle Abteilungen (Haustechnik, Empfang, Verwaltung, Gastronomie) besichtigt werden. Zum Schluss stand noch die Rettung einer Person durch die Hilfe der Jugendlichen als Übung auf dem Programm. Ganz anderes Material stand bei der Schott AG in Landshut im Mittelpunkt: Glas. Hier wurde von den Ausbilderteams an mehreren Stationen das Stecken und Löten eines LED-Würfels, Fertigung eines Gehäuses für den LED-Würfel (3D-Druck sowie Edelstahlplatte fräsen, bohren, senken, Gewinde schneiden, fräsen, stempeln) sowie die Beschichtung metallischer Werkstücke durch galvanisches Vergolden vermittelt.",
+      "links": [
+        {
+          "text": "Ergomar",
+          "url": "https://www.landkreis-landshut.de/media/3966/jobtour_ergomar.jpg"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/3966/jobtour_ergomar.jpg",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/fuehrerschein-weiter-ausgedrucktes-passbild-noetig": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/fuehrerschein-weiter-ausgedrucktes-passbild-noetig",
+      "title": "Führerschein - Weiter ausgedrucktes Passbild nötig | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Führerschein - Weiter ausgedrucktes Passbild nötig"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Weitere Infos / Erforderliche Dokumente",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Führerschein - Weiter ausgedrucktes Passbild nötig 03. September 2025: Digitale Bilder können bei Führerscheinstelle am Landratsamt nicht verarbeitet werden Auch wenn in vielen Bereichen (z. B. bei Personalausweisen) mittlerweile ein biometrisches Passfoto in digitaler Form ausreicht – bei Leistungen der Führerscheinstelle am Landratsamt Landshut ist dies noch nicht möglich. Die Bürgerinnen und Bürger müssen für diese Leistungen weiterhin ein biometrisches Passbild in Papierform mitbringen bzw. ihren Antragsunterlagen beilegen. Dies ist seitens der Bundesdruckerei, die alle Führerschein-Karten herstellt, so vorgegeben. Ein zweiter Behördengang zur Abholung des Führerscheins ist nicht nötig, wenn der Führerschein bereits entwertet ist. Dann kann der neue Führerschein direkt an den Antragssteller nach Hause versandt werden. Wenn Sie den Führerschein persönlich beantragen, fragen Sie bitte nach der Entwertung des alten Führerscheins. Weitere Infos / Erforderliche Dokumente Führerscheinstelle Landkreis Landshut Auch sind die Beantragung eines Internationalen Führerscheins, der Umtausch des Papierführerscheins und der Umtausch des EU-Kartenführerscheins als Online-Antrag verfügbar.",
+      "links": [
+        {
+          "text": "Führerscheinstelle Landkreis Landshut",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gemeinsam-familien-beraten-und-unterstuetzen": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gemeinsam-familien-beraten-und-unterstuetzen",
+      "title": "Gemeinsam Familien beraten und unterstützen | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Gemeinsam Familien beraten und unterstützen"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Gemeinsam Familien beraten und unterstützen 28. August 2025: Verfahrenslotsinnen organisierten Vernetzungstreffen der Landshuter Beratungsstellen Brigitte Laumann (OBA BRK), Melanie Kühn, Monika Faßler und Katharina Graf (OBA Lebenshilfe), Carolin Völkner (Behindertenbeauftragte Stadt Landshut), Birgit Hadersbeck (EUTB) sowie die Verfahrenslotsinnen der Stadt Landshut und des Kreisjugendamts, Janine Brabender und Katharina Hellmann, tauschten sich zu Unterstützungsbedarfen und Inklusionshürden aus. Auf Einladung der Verfahrenslotsinnen der Stadt Landshut und des Kreisjugendamts, Janine Brabender und Katharina Hellmann, fand am vergangenen Donnerstag erstmals ein Vernetzungstreffen der Beratungsstellen, die Familien und junge Menschen mit (drohender) Behinderung unterstützen, im Kreisjugendamt statt. Das Treffen war als Auftakt für eine regelmäßige Vernetzung geplant. Mit dabei waren die städtische Behindertenbeauftragte sowie Fachkräfte der Ergänzenden Unabhängigen Teilhabeberatung (EUTB) der Offenen Behindertenarbeit des Bayerischen Roten Kreuzes (OBA BRK) und der Lebenshilfe Landshut. Ziel ist es, die Brücke zwischen Jugendhilfe und Eingliederungshilfe zu schlagen, die Bedarfe von Familien mit Kindern mit Behinderung stärker in den Blick zu nehmen und Synergien in der Zusammenarbeit zu nutzen. Eine 2022 veröffentlichte Studie des Bundesministeriums für Arbeit und Soziales „Eltern von Kindern mit Beeinträchtigung – Unterstützungsbedarfe und Hinweise auf Inklusionshürden“ zeigt deutlich: Eltern und betroffene junge Menschen selbst sind hohen psychischen Belastungen ausgesetzt. Die Pflege und Betreuung erfordern einen erheblichen Zeitaufwand – Zeit, die im Alltag an anderer Stelle fehlt. Hier setzen die Beratungsstellen an und können entlastend wirken, indem sie Betroffene durch das komplexe Unterstützungssystem lotsen und bei der Antragstellung von Leistungen unterstützen. Die Beteiligten waren sich einig: Nur durch enge Zusammenarbeit und Kooperation lassen sich Angebote verbessern, die Vernetzung stärken und passgenaue Hilfen entwickeln. Weitere Treffen sind bereits in Planung.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/erfolgsprojekt-darf-nicht-gefaehrdet-werden": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/erfolgsprojekt-darf-nicht-gefaehrdet-werden",
+      "title": "Erfolgsprojekt darf nicht gefährdet werden | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Erfolgsprojekt darf nicht gefährdet werden"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Erfolgsprojekt darf nicht gefährdet werden 28. August 2025: Landrat Peter Dreier fordert Unterstützung des Bundes für die Landschaftspflegeverbände Landrat Peter Dreier (Mitte, mit Oberbürgermeister Alexander Putz und den Mitarbeitern des LPV) ist seit Jahren Vorsitzender des Landschaftspflegeverbandes Landshut – und fordert finanzielle Unterstützung von Bund zum Erhalt der Verbände. Sie spielen als Vertreter kooperativen Naturschutzes eine entscheidende Rolle für den Erhalt unserer Kulturlandschaften: Die Landschaftspflegeverbände (LPV), die auch in der Region Landshut für die Förderung der Biodiversität unverzichtbar sind. Ihre Finanzierung steht angesichts knapper Mittel im Bundeshaushalt auf der Kippe. Deshalb hat sich Landshuts Landrat Peter Dreier, seines Zeichens Vorsitzender des Landschaftspflegeverbandes Landshut, mit einem Schreiben an die örtlichen Bundestagsabgeordneten gewandt, damit diese sich für die nachhaltige Finanzierung dieser wichtigen Institutionen einsetzen. „Landschaftspflegeverbände sind unverzichtbare Akteure in der Umsetzung von Maßnahmen zur Pflege und Entwicklung unserer natürlichen Lebensräume. Sie fungieren als Bindeglied zwischen verschiedenen Interessengruppen, darunter Landwirte, Naturschutzorganisationen, Kommunen und Bürger“, erklärt Dreier in seinem Schreiben. Denn neben dem Erhalt der Biodiversität gehört auch die Förderung einer nachhaltigen Landwirtschaft zu den Aufgaben der Landschaftspflegeverbände. Und dass gerade in Landshut der LPV in den vergangenen Jahren sehr erfolgreich gearbeitet hat, beweist zum Beispiel das Projekt „Landshut blüht“, in Rahmen dessen tausende Obstbäume gepflanzt und hunderte Hektar Blumenwiesen angelegt worden sind. Mit seiner Forderung auf örtlicher Ebene unterstützt Dreier auch die Bestrebungen des Bayerischen Umweltministers, der zuletzt ebenfalls an den Bund appelliert hatte, die Finanzierung nachhaltig zu sichern. „Andernfalls müssten die Kommunen wieder für den Bund in die Bresche springen – und das können wir auf keinen Fall auf Dauer leisten“, erklärte Dreier.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2709-inklusives-sportfest-in-altdorf": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2709-inklusives-sportfest-in-altdorf",
+      "title": "27.09. -  Inklusives Sportfest in Altdorf | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "27.09. -  Inklusives Sportfest in Altdorf"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Detaillierter Zeitplan und weitere Infos:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "27.09. - Inklusives Sportfest in Altdorf 28. August 2025: „Gemeinsam aktiv. Sportfest für alle.“ Am Samstag, den 27. September 2025, findet auf dem Sportplatz der DJK Altdorf erstmalig ein inklusives Sportfest für Kinder, Jugendliche und Familien statt. Von 13:00 bis 18:00 Uhr sind alle eingeladen, unter dem Motto \"GEMEINSAM AKTIV - SPORTFEST FÜR ALLE\" einen Tag voller Sport und Gemeinschaft zu erleben. Das Event wird von der Kommunalen Jugendarbeit des Landkreises Landshut und der Offenen Behindertenarbeit des BRK Kreisverband Landshut organisiert und findet bei jedem Wetter statt. Für das leibliche Wohl ist durch die Vereinsgaststätte gesorgt, die eine Auswahl an Speisen und Getränken anbietet. Das Sportfest bietet eine breite Palette an Aktivitäten, die für alle Kinder und Jugendlichen unabhängig von Beeinträchtigungen, zugänglich sind: Darunter ist der Fußballcourt der Bananenflanke: Hier können die jungen Sportler ihr Können unter Beweis stellen. Ein besonderes Highlight wird ein Show-Match sein, bei dem die Teilnehmer die Möglichkeit haben, mit erfahrenen Spielern zu spielen. Hinzu kommt Blindenbaseball mit den Bavarian Bats: Diese einzigartige Sportart ermöglicht es blinden und sehbehinderten Kindern und Jugendlichen, aktiv am Spiel teilzunehmen. Unter Anleitung erfahrener Trainer lernen die Teilnehmer die Grundlagen des Spiels und können in einem freundlichen Wettkampf gegeneinander antreten. Weiterhin bietet Beate Schaffelhuber einen Rollstuhlparcours an: Kinder und Jugendliche mit und ohne Mobilitätseinschränkungen können einen spannenden Rollstuhlparcours absolvieren, der Geschicklichkeit und Teamarbeit fördert. Die Boulderhalle Peak7 organisiert eine mobile Boulderwand, um Klettern für alle zu ermöglichen. An der mobilen Boulderwand können die Teilnehmer ihre Kletterfähigkeiten testen und sich in einem sicheren Umfeld ausprobieren. Stationen des wettbewerbsfreien Angebots von Special Olympics Bayern: Hier stehen verschiedene Aktivitäten bereit, die den Fokus auf Spaß und Inklusion legen, ohne den Druck eines Wettbewerbs. Das Fußballdart des inklusiven Familiensports: verspricht eine kreative Mischung aus Fußball und Darts für alle Altersgruppen. Die Welt des Yoga wird durch eine Mitmach-Vorführung der Magic Yogis und Probeyoga-Stunden mit YogaSprosse-Inklu gezeigt. Das inklusive Sportfest in Altdorf ist nicht nur eine Gelegenheit, verschiedene Sportarten auszuprobieren, sondern auch ein Fest der Gemeinschaft. Es fördert den Austausch zwischen den Teilnehmern und schafft ein Umfeld, in dem jeder willkommen ist. Detaillierter Zeitplan und weitere Infos: Kommunale Jugendarbeit des Landkreises Landshut",
+      "links": [
+        {
+          "text": "Kommunale Jugendarbeit des Landkreises Landshut",
+          "url": "https://www.kojalala.de/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/entfall-haltestellen-l312-kumhausen": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/entfall-haltestellen-l312-kumhausen",
+      "title": "Entfall Haltestellen L312 Kumhausen | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Änderungen am Fahrplan der Linie 312"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Änderungen am Fahrplan der Linie 312 18. August 2025: Wegen Bauarbeiten entfällt von 18.08. bis voraussichtlich Ende September der Halt an mehreren Haltestellen zwischen Kumhausen und Hachelstuhl ÖPNV; Öffentliche LAVV Linie 312 (RBO 6243) “ Landshut-Velden-Vilsbiburg“ und LAVV Linie 314 „Vilsheim-Münchsdorf-Landshut“ (beide Linien mit Gegenrichtung) von 18.08. – vsl. Ende September 2025; Wegfall Haltestellenbedienung; Aufgrund der für den Bereich ab Kumhausen, Kreisverkehr bis Hachelstuhl im Zeitraum von 18.08. – vsl. Ende September 2025 vorgesehenen Baumaßnahme sind die öffentlichen LAVV Linie 312 (RBO 6243) „Landshut-Velden-Vilsbiburg“ der Regionalbus Ostbayern GmbH (RBO) und die Linie 314 „Vilsheim-Münchsdorf-Landshut“ der Fa. Schrafstetter GmbH und CO.KG (jeweils mit Gegenrichtung) in der Haltestellenbedienung betroffen. Folgende Änderungen sind zu beachten:Linie 312 (RBO 6243) „Landshut-Velden-Vilsbiburg“(Änderung gilt nur für ÖPNV-Leistungen der Teilstrecke Kumhausen-Hachelstuhl; die Fahrten über Obergangkofen sind von den Änderungen nicht betroffen) Entfallende Haltestellen:- Kumhausen, Rathausplatz- Niederkam- Rammelkam Abzw.- Walpersdorf bei Landshut- Grammelkam- Hachelstuhl Ersatzhaltestellen:- Landshut, Äußere Stelze- Hachelstuhl, Zweikirchener Straße (Ersatzhaltestelle)Linie 314 „Vilsheim-Münchsdorf-Landshut“ Wegfall Haltestellen:- Hachelstuhl- Grammelkam- Niederkam Nähere Informationen erhalten Sie beim Verkehrsunternehmen RBO, Regionalbus Ostbayern GmbH, Tel. 0871/9633620 oder per Mail unter [email protected] und der Fa. Schrafstetter GmbH & Co.KG, Tel. 08706/274 oder per Mail unter [email protected]",
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/jugendkultour-rottenburg-2025": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/jugendkultour-rottenburg-2025",
+      "title": "JugendkulTour Rottenburg 2025 | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Die eigenen Stärken fördern und neue Leidenschaften finden"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Die eigenen Stärken fördern und neue Leidenschaften finden 07. August 2025: DJing, Graffiti-Kunst und regionale Sportarten – JugendkulTour in Rottenburg ein voller Erfolg Bildunterschrift: Workshops, Olympiade und Abenddisco: Die JugendkulTour begeisterte mit einem abwechslungsreichen Angebot. Kreativ, sportlich und voller Energie: Die JugendkulTour der Kommunalen Jugendarbeit des Landkreises Landshut machte am Freitag, 25. Juli, Station in Rottenburg – genauer gesagt auf dem Verkehrsübungsplatz hinter dem Jugendzentrum. Trotz überschaubarer Besucherzahlen war die Resonanz durchweg positiv – für viele Kinder und Jugendliche wurde der Tag zu einem Highlight der Sommerferien. Organisiert wurde die JugendkulTour von der Kommunalen Jugendarbeit des Landkreises Landshut gemeinsam mit dem Kreisjugendring, Andy Stenzl, Michael Sandmeyer und der gastgebenden Kommune. Ziel: Junge Menschen in ihrer Freizeit stärken, ihnen neue Perspektiven eröffnen – und dabei jede Menge Spaß vermitteln.Das Programm war bunt und vielfältig: Die königlich privilegierte Feuerschützengesellschaft Rottenburg bot einen betreuten Schießstand, bei dem die Jugendlichen – unter Einhaltung aller Sicherheitsvorschriften – ihre Treffsicherheit testen konnten. Der Tischtennisclub Rottenburg forderte das sportliche Geschick heraus und sorgte für echte Wettkampfatmosphäre.Ein besonderer Publikumsmagnet war der DJ-Workshop mit DJ FLO.motion. Hier konnten die Teilnehmenden eigene Beats mixen und einen Einblick in die Welt des Auflegens gewinnen. Beim Graffiti-Workshop mit Künstler Olli Skaravan sprühten nicht nur die Farben – sondern auch die Ideen. Wer wollte, konnte sich zudem ein Airbrush-Tattoo gestalten lassen – ein beliebtes Andenken an einen unvergesslichen Tag.Erfrischung bot die alkoholfreie Saftbar, die mit kreativen Cocktails nicht nur für Abkühlung, sondern auch für ein Zeichen in Sachen gesunder Genuss sorgte: „Genuss geht auch ohne Alkohol – und schmeckt trotzdem!“, war die klare Botschaft.Herzstück der Veranstaltung war die Olympiade, bei der die Teilnehmer für die Teilnahme an den einzelnen Workshops Stempel sammeln und anschließend an einer Verlosung teilnehmen konnten. Die Gewinner durften sich über tolle Preise freuen, was die Motivation und den Spaß an der Veranstaltung zusätzlich steigerte. Das Demokratiemobil des Kreisjugendrings war ebenfalls vor Ort und bot den Jugendlichen die Möglichkeit, sich über politische Themen zu informieren und ihre Meinungen auszutauschen. Dies förderte das Bewusstsein für gesellschaftliche Themen und die Bedeutung der Mitbestimmung. Den Abschluss bildete die Abenddisco, bei der ausgelassen getanzt und gefeiert wurde – ein gelungener Ausklang für einen ebenso gelungenen Tag.Fazit der Veranstalter: Die JugendkulTour ist ein wichtiges Angebot im Landkreis Landshut, das jungen Menschen zeigt, wie sie eigene Stärken entdecken, neue Leidenschaften entwickeln und sich in der Gemeinschaft entfalten können. Gerade in herausfordernden Zeiten sind solche Erlebnisse ein wertvoller Beitrag zur Persönlichkeitsentwicklung – und machen einfach Spaß.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/stadtradeln-2025": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/stadtradeln-2025",
+      "title": "Stadtradeln 2025 | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Landkreis Landshut zieht erfolgreiche Bilanz beim Stadtradeln 2025"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Landkreis Landshut zieht erfolgreiche Bilanz beim Stadtradeln 2025 07. August 2025: Über 230.000 Kilometer Strecke Mit großem Engagement hat sich der Landkreis Landshut an der diesjährigen Kampagne Stadtradeln beteiligt, die vom 22. Juni bis 12. Juli 2025 stattfand. Insgesamt legten 1172 aktive Radlerinnen und Radler in 81 Teams über 230.000 Kilometer mit dem Fahrrad zurück. Diese beeindruckenden Zahlen belegen erneut das starke Interesse und die hohe Motivation der Bürgerinnen und Bürger, einen aktiven Beitrag zur Förderung des Radverkehrs und zum Klimaschutz zu leisten. Auch wenn in diesem Jahr keine Steigerung gegenüber den Vorjahren erzielt wurde, bleibt das Gesamtniveau – sowohl bei der Zahl der Teilnehmenden als auch bei den zurückgelegten Kilometern – weiterhin auf einem sehr hohen Stand.Die Gewinnerinnen und Gewinner in den verschiedenen Kategorien stehen nun fest und werden im Rahmen einer feierlichen Preisverleihung im Oktober geehrt. Eine Übersicht der Ergebnisse ist auf der offiziellen Stadtradeln-Webseite für den Landkreis Landshut unter stadtradeln.de/landkreis-landshut abrufbar. Besonders hervorzuheben ist die Staatliche Realschule Ergolding, die sich in der Teamwertung den ersten Platz sicherte. Mit einer beeindruckenden Zahl an Teilnehmenden und zurückgelegten Kilometern hat die Schule erneut eindrucksvoll gezeigt, welchen Stellenwert das Fahr-radfahren bereits bei Kindern und Jugendlichen hat.Inzwischen nehmen deutschlandweit sowie in Teilen von Frankreich, Dänemark und sogar den USA über 3.000 Kommunen an der Kampagne Stadtradeln teil. Das unterstreicht die zunehmende internationale Bedeutung von nachhaltiger Mobilität und Klimaschutz. Zusätzlich möchten wir auf die Meldeplattform RADar! hinweisen, die unter www.radar-online.net erreichbar ist. Mit RADar! können Bürgerinnen und Bürger unkompliziert Hinweise zu Mängeln an der Radinfrastruktur – etwa zu Schlaglöchern, schlechter Beschilderung oder fehlenden Abstellmöglichkeiten – an ihre Kommune übermitteln. Die Nutzung ist kostenlos und stellt einen weiteren wichtigen Baustein in der Förderung des Radverkehrs im Landkreis dar.",
+      "links": [
+        {
+          "text": "www.radar-online.net",
+          "url": "https://www.radar-online.net/home"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/praevention-mehr-in-den-mittelpunkt-ruecken": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/praevention-mehr-in-den-mittelpunkt-ruecken",
+      "title": "Prävention mehr in den Mittelpunkt rücken | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Prävention mehr in den Mittelpunkt rücken"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Prävention mehr in den Mittelpunkt rücken 05. August 2025: Landrat Peter Dreier besuchte Zentrum für Gesundheit und Therapie in Adlkofen Landrat Peter Dreier testete ein innovatives Therapiegerät aus, das am Zentrum für Therapie und Gesundheit in Adlkofen im Einsatz ist. Regelmäßig besuchen Landrat Peter Dreier und der Wirtschaftsreferent Ludwig Götz gemeinsam mit den Standort-Bürgermeistern verschiedenste Unternehmen im Landkreis Landshut, um sich über die Situation und Herausforderungen in den jeweiligen Branchen zu informieren – nun stand ein erfolgreiches Unternehmen aus dem Bereich Gesundheit im Mittelpunkt. Seit 1997 führt Margot Raff das Zentrum für Gesundheit und Therapie in Adlkofen (ZGT). Gegründet als Rehazentrum, ist der Standort kontinuierlich gewachsen – und auch jetzt steht eine Erweiterung an. Bis Ende November entstehen weitere Räume, in denen eine neurologische Intensivtherapie und Handtherapie angeboten werden. „Gerade nach Schlaganfällen, Operationen oder Unfällen sind spezielle Therapieansätze mit hohem neurologischem Anteil unverzichtbar“, erklärt Margot Raff. Aber auch personell hat sich das Unternehmen entwickelt: Mittlerweile zählt das ZGT 65 Mitarbeiterinnen und Mitarbeiter, von Physio- und Ergotherapeuten über Logopäden bis hin zum Sportwissenschaftler. Nach Ausbildung und Studium sind auch die Töchter Denise und Nadine in das Unternehmen eingestiegen. „Unser Ziel ist es, Gesundheitsangebote für alle zugänglich zu machen“, erklärten Margot Raff und ihre Töchter. Das große Einzugsgebiet, das das ZGT Adlkofen abdeckt ist ein Beweis dafür. Denn das Zentrum bietet, neben der ganzheitlichen Versorgung am Standort, auch viele Hausbesuche an, die Therapeutinnen und Therapeuten sind auch viel in Altenheimen bis in den Raum Moosburg unterwegs. „Unser Fuhrpark umfasst etwa 30 Autos, die für die Hausbesuche und Außentermine genutzt werden.“ Genau diese Abwechslung ist es, das die Therapeuten nach eigenen Angaben sehr schätzen. Gerade diese Freude und Leidenschaft für den eigenen Beruf wollen das Führungstrio des ZGT fördern. „Die Therapeutinnen und Therapeuten wollen ihren Patienten die bestmögliche Behandlung anbieten – und dafür braucht es verschiedene Möglichkeiten und Hilfsmittel. Rein auf manuelle Therapie zu setzen, ist einfach nicht mehr zeitgemäß. Wir haben deshalb rund 2,5 Millionen Euro in die Anschaffung neuester Technologien und Geräte investiert, um passgenaue Behandlungsoptionen anbieten zu können. Aber auch Behandlungsräume, in denen man sich wohlfühlt oder andere Trainingsumgebungen wie ein Schwimmbecken helfen ungemein“, erklärten Nadine und Denise Raff. Zudem investieren sie viel in Aus- und Weiterbildung ihrer Mitarbeiterinnen und Mitarbeiter. Eines dieser speziellen Geräte mit neurologischem Ansatz, von denen es oft nur wenige Exemplare in Deutschland gibt, durfte Landrat Peter Dreier gleich ausprobieren. „Dadurch können wir Stück für Stück Verbesserungen für unsere Patientinnen und Patienten erreichen, damit sie ihre Einschränkungen hinter sich lassen und beispielsweise wieder selbstständig Besteck oder Becher halten können.“ Gerade das hochmoderne und stützende EksoNR-Skelett ermöglicht es Patienten, die nicht mehr selbstständig gehen können, dies wieder zu erlernen. „Wenn die Patienten nach vielen Wochen oder gar Monaten Leidensweg plötzlich wieder aufrecht stehen, da fließen schon mal die Tränen.“ Gerade diese Kontinuität ist etwas, das die Verantwortlichen des ZGT voranbringen wollen. „Nicht nur, dass die Ärzte die Möglichkeiten des Heilmittelkatalogs besser nutzen und so längerfristige Therapieansätze ermöglichen könnten – auch der Einzelne ist gefordert, sich frühzeitig und dauerhaft um seine Gesundheit zu kümmern.“ Dem pflichtete Landrat Peter Dreier bei: „Hier muss ein Umdenken stattfinden, aber auch die Präventionsangebote ausgebaut und auch gelebt werden – auch im Hinblick auf die immer älter werdende Gesellschaft.“ Gerade das Thema Bürokratie und Hindernisse in der Digitalisierung waren für Landrat Dreier von besonderem Interesse. Wie die Nadine, Denise und Margot Raff berichteten, fehlen hier weiter Richtlinien und Standardisierungen, sodass noch viel zu oft die manuelle Unterschrift nötig ist. „Wir gehören zu einer von nur 40 Praxen in ganz Deutschland, die digitale Unterschriften für den Reha Sport ermöglichen.“ Auch die Umsetzung einer einheitlichen digitalen Patientenakte, die die Unterlagen von Ärzten, Therapeuten und Apotheken sammeln würde, läuft schleppend, genauso wie die Einführung des E-Rezepts, berichteten die Verantwortlichen. Dennoch waren sich die Anwesenden einig: Im Bereich Organisation führt kein Weg an der Digitalisierung vorbei.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
     }
   },
   "queue": [
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/0910-infoveranstaltung-aufbau-einer-organisierten-nachbarschaftshilfe",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/spannende-praktikumstage-im-rahmen-der-jobtour-erlebt",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/fuehrerschein-weiter-ausgedrucktes-passbild-noetig",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gemeinsam-familien-beraten-und-unterstuetzen",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/erfolgsprojekt-darf-nicht-gefaehrdet-werden",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2709-inklusives-sportfest-in-altdorf",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/entfall-haltestellen-l312-kumhausen",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/jugendkultour-rottenburg-2025",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/stadtradeln-2025",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/praevention-mehr-in-den-mittelpunkt-ruecken",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
     {
       "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/foerderung-der-europaeischen-union-fuer-den-laendlichen-raum",
       "depth": 2,
@@ -7750,9 +8189,9 @@
       "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
     }
   ],
-  "pageCount": 30,
+  "pageCount": 40,
   "maxDepth": 2,
   "maxPages": 50,
   "startUrl": "https://www.landkreis-landshut.de/",
-  "lastUpdated": "2025-09-09T11:40:43.694Z"
+  "lastUpdated": "2025-09-09T11:41:20.916Z"
 }
