@@ -10,7 +10,16 @@
     "https://www.abfallwirtschaft-loerrach-landkreis.de/biotonne/nutzungstipps",
     "https://www.abfallwirtschaft-loerrach-landkreis.de/1775",
     "https://www.abfallwirtschaft-loerrach-landkreis.de/app",
-    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen"
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Aktuelles-Termine",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=5027&download=1",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=3932&download=1",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/2500",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails",
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer"
   ],
   "sitemap": {
     "https://www.abfallwirtschaft-loerrach-landkreis.de/willkommen": {
@@ -559,83 +568,277 @@
         "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=13600&download=1",
         "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=9311&download=1"
       ]
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte",
+      "title": "Abfallwirtschaft Landkreis Lörrach | Service-Point, Verkaufsstellen & Buchschachteln",
+      "meta_description": "Müllsackverkaufsstellen, Kompostverkaufsstellen, Service-Point, Buchschachteln",
+      "headings": {
+        "h1": [],
+        "h2": [],
+        "h3": [
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche Ihre Suche Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte#oben"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=3672",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Aktuelles-Termine": {
+      "error": "HTTP 404: Not Found",
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5332",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=5027&download=1": {
+      "error": "Content type application/pdf is not HTML",
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5248",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup",
+      "title": "Abfallwirtschaft Landkreis Lörrach | CleanUp-Days 2025",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "CleanUp-Days 2025"
+        ],
+        "h2": [],
+        "h3": [
+          "CleanUp Day - Was genau ist das?",
+          "Warum unterstützt der Landkreis die Aktion?",
+          "Wie unterstützt der Landkreis?",
+          "Was kann mein Verein/ meine Organisation tun?",
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche CleanUp-Days 2025 CleanUp Day - Was genau ist das? In CleanUp Days organisieren sich überregional verschiedene Organisationen und Gruppen zu gemeinsamen Müllsammelaktionen. Gruppen, Initiativen und Vereine, die sich an solchen Aktionen beteiligen möchten, werden vom Eigenbetrieb Abfallwirtschaft bei der Entsorgung der gesammelten Abfälle unterstützt. Dafür muss im Vorfeld eine Putzete beantragt werden. RhineCleanUp am 13. September 2025 Jedes Jahr finden initiiert durch die Initiativen River Cleanup und RhineCleanup, entlang des Rheines in sechs verschiedenen Ländern Säuberungen des Rheinufers statt. Diese führen überwiegend gemeinnützige Organisationen und Vereine durch, die zum Erhalt unseres Lebens- und Freizeitraums beitragen möchten. Informationen zur Aktion finden Sie unter www.river-cleanup.org/de. World Cleanup Day am 20. September 2025 Ziel des World Cleanup Days ist es, weltweit die Meere und Umwelt von Plastik und anderen Abfällen zu befreien. Weitere Informationen zur Aktion sowie eine Übersicht der Sammelgruppen finden sich unter www.worldcleanupday.de. Warum unterstützt der Landkreis die Aktion? Wir wollen diese Initiativen durch unseren Impuls in der Region bekannter machen und außerdem das gemeinschaftliche Engagement sowie die Sensibilität gegenüber unserer Umwelt und dem gedankenlosen Wegwerfen von Abfällen erhöhen. Wie unterstützt der Landkreis? Der Landkreis Lörrach unterstützt das Aufsammeln von achtlos weggeworfenen Abfällen im Rahmen der sogenannten „Putzeten“ schon seit vielen Jahren, indem er die kostenlose Entsorgung der eingesammelten Abfälle ermöglicht. Auch diese Aktion, die einen wertvollen Beitrag zum Umweltschutz darstellt, möchten wir gerne unterstützen. Die Abfallwirtschaft wird daher teilnehmenden Organisationen Müllsäcke für die Einsammlung bei der Hausmüllabfuhr zur Verfügung stellen. Was kann mein Verein/ meine Organisation tun? Als Verein/ gemeinnützige Organisation aus dem Landkreis können Sie ein eigenes Putzteam organisieren oder sich bestehenden Aktionen (Übersicht auf den jeweiligen Veranstaltungsseiten) anschließen. Bei der Abfallwirtschaft können Sie bis zum 23.08.2025 (Anmeldeschluss RhineCleanUp) oder bis zum 30.08.2025 (Anmeldeschluss World Cleanup) eine sogenannte \"Putzete\" beantragen und die gesammelten Abfälle dadurch kostenfrei entsorgen. Anmeldung: 1. Ausfüllen des Antrags 2. Zusendung des Formulars bis 23.08.2025 bzw. 30.08.2025 per E-Mail an pressestelle-abfallwirtschaft(at)loerrach-landkreis.de Nach erfolgreicher Anmeldung erhalten Sie von uns: Einen Bezugsschein für 10 offizielle Blaue Abfallsäcke, die Sie sich bei einer der Verkaufsstellen kostenfrei abholen und nach erfolgreichem Cleanup bei der nächsten Restmüllabfuhr bereitstellen können. Hier finden Sie alle Verkaufsstellen. Ihre Suche Sortierhilfe Putzete (PDF) Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup#oben"
+        },
+        {
+          "text": "Putzete",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/formulare"
+        },
+        {
+          "text": "www.river-cleanup.org/de",
+          "url": "http://www.river-cleanup.org/de"
+        },
+        {
+          "text": "www.worldcleanupday.de",
+          "url": "http://www.worldcleanupday.de/"
+        },
+        {
+          "text": "Antrags",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=5027&download=1"
+        },
+        {
+          "text": "Verkaufsstellen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte"
+        },
+        {
+          "text": "Sortierhilfe Putzete (PDF)",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=8850&download=1"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/formulare",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=5027&download=1",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=8850&download=1"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5248",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=3932&download=1": {
+      "error": "Content type application/pdf is not HTML",
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/biotonne/nutzungstipps",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht",
+      "title": "Abfallwirtschaft Landkreis Lörrach | Ihre Nachricht",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Schreiben Sie uns eine Nachricht"
+        ],
+        "h2": [],
+        "h3": [
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche Schreiben Sie uns eine Nachricht *) Pflichtfeld Betreff: bitte wählen Gebühren Biotonne Probleme mit Müllschleusen oder Behältern Sonstige Anliegen Anrede: Herr Frau Vorname:* Nachname:* Kundennummer: (Diese Angabe ermöglicht uns, Ihr Anliegen zügiger zu bearbeiten.) Straße:* PLZ:* Ort:* Telefon: (für eventuelle Rückfragen) E-Mail:* Nachricht: Ich habe die Datenschutzerklärung zur Kenntnis genommen. Mit dem Absenden des Kontaktformulars erklären Sie sich damit einverstanden, dass Ihre Daten zur Bearbeitung Ihres Anliegens verwendet werden. Weitere Informationen und Widerrufshinweise finden Sie in der Datenschutzerklärung. Bitte beachten Sie, dass wir Ihre personenbezogenen Daten benötigen, um Sie zu kontaktieren. Legitimation: Bitte belassen Sie dieses Feld unverändert. Nachricht senden Ihre Suche Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht#oben"
+        },
+        {
+          "text": "Datenschutzerklärung",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/Datenschutz"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/Datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/2500": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/2500",
+      "title": "Abfallwirtschaft Landkreis Lörrach | Behältertausch",
+      "meta_description": "",
+      "headings": {
+        "h1": [],
+        "h2": [],
+        "h3": [
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche Ihre Suche Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/2500#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/2500#oben"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/2500"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails",
+      "title": "Abfallwirtschaft Landkreis Lörrach | Behälter Maße, Gewicht und Gebühren",
+      "meta_description": "Behälter, Abfallbehälter, Abfalleimer, Maße, Gewicht, Gebühren",
+      "headings": {
+        "h1": [
+          "Abfallbehälter: Alles auf einen Blick"
+        ],
+        "h2": [
+          "Die verschiedenen Tonnengrößen*"
+        ],
+        "h3": [
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche Abfallbehälter: Alles auf einen Blick Für die im Landkreis angebotenen Rest- und Bioabfalltonnen finden Sie hier wichtige Informationen auf einen Blick. Größe in Litern Maße (BxHxT) in cm max. Gewicht in kg Mindestleerungen pro Jahr für die Restmülltonnen 60 44,8 x 97,5 x 53 24 6 120 50,5 x 100,5 x 55,5 48 6 240 58,3 x 110 x 74 96 6 660 (nur Biotonne)* 137,3 x 125 x 78 264 - 1.100 (nur Restmülltonne)* 137 x 147 x 111,5 440 20 * 660 Liter Biomüll- und 1.100 Liter Restmülltonnen sind nur von Gewerben sowie Hausverwaltungen bestellbar. Auf der folgende Seite können Sie Ihren Behälter wechseln. Ihre Suche Die verschiedenen Tonnengrößen* 60 Liter Tonne 120 Liter Tonne 240 Liter Tonne 660 Liter Biotonne 1.100 Liter Restmülltonne * Die hier dargestellten Tonnen sind nicht proportional im Vergleich zu den Originalgrößen dargestellt. Die 60, 120 und 240 Liter Tonnen sind für Rest- und Biomüll baugleich und unterscheiden sich lediglich durch unterschiedliche Behälterdeckel. Die 660er Tonne gibt es nur für Biomüll. Die 1.100er Tonne gibt es nur für Restmüll. Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails#oben"
+        },
+        {
+          "text": "Behälter wechseln",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelter-bestellen"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails",
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelter-bestellen"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775",
+      "children": []
+    },
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer": {
+      "success": true,
+      "final_url": "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer",
+      "title": "Abfallwirtschaft Landkreis Lörrach | Kundennummer Gebührenbescheid",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Wo finde ich meine Kundennummer auf dem Gebührenbescheid?"
+        ],
+        "h2": [],
+        "h3": [
+          "Warum benötige ich meine Kundennummer?",
+          "Wo finde ich meine Kundennummer?",
+          "Abfallwirtschaft Landkreis Lörrach",
+          "So erreichen Sie uns",
+          "Schreiben Sie uns"
+        ]
+      },
+      "main_content": "Ihre Suche Wo finde ich meine Kundennummer auf dem Gebührenbescheid? Warum benötige ich meine Kundennummer? Für die meisten Online-Services ist es notwendig, dass Sie sich über Ihre Kundennummer identifizieren. Zusammen mit Ihrer Adresse, Ihrem Namen und Ihrem Geburtstag wird mit dieser Abfrage sichergestellt, dass außer Ihnen niemand Zugriff auf Ihre Behälterdaten hat. Wo finde ich meine Kundennummer? Ihre Kundennummer finden Sie auf den Gebührenbescheiden, die Sie jährlich von der Abfallwirtschaft per Post zugeschickt bekommen. Auf einigen Gebührenbescheiden steht statt einer Kundennummer die sogenannte Belegnummer. Bitte geben Sie in diesem Fall bei der Abfrage der Kundennummer die ersten 7 Ziffern der Belegnummer ein. Ihre Suche Navigation Navigation schliessen",
+      "links": [
+        {
+          "text": "Zum Inhalt springen",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer#content"
+        },
+        {
+          "text": "nach oben",
+          "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer#oben"
+        }
+      ],
+      "internal_links": [
+        "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer"
+      ],
+      "depth": 2,
+      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775",
+      "children": []
     }
   },
-  "queue": [
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/standorte",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=3672"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=6868"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Aktuelles-Termine",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5332"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/app",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5332"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=5027&download=1",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5248"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/cleanup",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/aktuelles/meldungen?view=publish&item=article&id=5248"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=3932&download=1",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/biotonne/nutzungstipps"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Kontakt/Ihre-Nachricht",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/2500",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/behaelterdetails",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/kundennummer",
-      "depth": 2,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/1775"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=13599&download=1",
-      "depth": 3,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=13600&download=1",
-      "depth": 3,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen"
-    },
-    {
-      "url": "https://www.abfallwirtschaft-loerrach-landkreis.de/ceasy/resource/?id=9311&download=1",
-      "depth": 3,
-      "parent": "https://www.abfallwirtschaft-loerrach-landkreis.de/de/Infothek/Standorte-Entsorgungseinrichtungen"
-    }
-  ],
-  "pageCount": 10,
-  "maxDepth": 3,
-  "maxPages": 20,
+  "queue": [],
+  "pageCount": 19,
+  "maxDepth": 2,
+  "maxPages": 50,
   "startUrl": "https://www.abfallwirtschaft-loerrach-landkreis.de/willkommen",
-  "lastUpdated": "2025-09-09T10:52:11.703Z"
+  "lastUpdated": "2025-09-09T10:52:49.662Z",
+  "completed": true
 }
