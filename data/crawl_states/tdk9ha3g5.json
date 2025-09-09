@@ -1,0 +1,37 @@
+{
+  "jobId": "tdk9ha3g5",
+  "visited": [
+    "https://landkreis-erding.de"
+  ],
+  "sitemap": {
+    "https://landkreis-erding.de": {
+      "success": true,
+      "final_url": "https://landkreis-erding.de/",
+      "title": "LivingData komXcms",
+      "meta_description": "",
+      "headings": {
+        "h1": [],
+        "h2": [],
+        "h3": []
+      },
+      "main_content": "Foto: flickr / digital cat",
+      "links": [
+        {
+          "text": "Foto: flickr / digital cat",
+          "url": "https://www.flickr.com/photos/14646075@N03/4096604026/"
+        }
+      ],
+      "internal_links": [],
+      "depth": 0,
+      "parent": null,
+      "children": []
+    }
+  },
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 3,
+  "maxPages": 200,
+  "startUrl": "https://landkreis-erding.de",
+  "lastUpdated": "2025-09-09T11:03:37.053Z",
+  "completed": true
+}
