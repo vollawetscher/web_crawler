@@ -374,49 +374,28 @@ function parseDocument(html, url, lastModified = null) {
                 // Get all content between this heading and the next one
                 let contentElements = [];
                 
+                // Use DOM traversal to find content between headings
                 if ($nextHeading && $nextHeading.length) {
-                    // Find all elements between current heading and next heading
-                    const headingOffset = $heading.offset();
-                    const nextHeadingOffset = $nextHeading.offset();
-                    
-                    $mainContent.find('*').each((_, el) => {
-                        const $el = $(el);
-                        const elOffset = $el.offset();
-                        
-                        // Simple heuristic: if element comes after current heading but before next
-                        if (elOffset && headingOffset && nextHeadingOffset &&
-                            elOffset.top > headingOffset.top && 
-                            elOffset.top < nextHeadingOffset.top) {
-                            
-                            // Only include text-containing elements
-                            const text = $el.text().trim();
-                            if (text && text.length > 10) {
-                                contentElements.push(el);
-                            }
+                    // Find all siblings between current heading and next heading
+                    let $current = $heading.next();
+                    while ($current.length > 0 && !$current.is($nextHeading)) {
+                        const text = $current.text().trim();
+                        if (text && text.length > 10) {
+                            contentElements.push($current.get(0));
+                            // Also check for nested content
+                            $current.find('*').each((_, nested) => {
+                                const nestedText = $(nested).text().trim();
+                                if (nestedText && nestedText.length > 10) {
+                                    contentElements.push(nested);
+                                }
+                            });
                         }
-                    });
+                        $current = $current.next();
+                    }
                 } else {
                     // Last heading - get everything after it
-                    const headingOffset = $heading.offset();
-                    
-                    $mainContent.find('*').each((_, el) => {
-                        const $el = $(el);
-                        const elOffset = $el.offset();
-                        
-                        if (elOffset && headingOffset && elOffset.top > headingOffset.top) {
-                            const text = $el.text().trim();
-                            if (text && text.length > 10) {
-                                contentElements.push(el);
-                            }
-                        }
-                    });
-                }
-                
-                // If offset-based approach didn't work, fall back to DOM traversal
-                if (contentElements.length === 0) {
                     let $current = $heading.next();
                     while ($current.length > 0) {
-                        // Stop if we hit another heading of same or higher level
                         const tagName = $current.get(0).tagName.toLowerCase();
                         if (tagName.match(/^h[1-6]$/) && tagName <= headingLevel) {
                             break;
@@ -425,6 +404,13 @@ function parseDocument(html, url, lastModified = null) {
                         const text = $current.text().trim();
                         if (text && text.length > 10) {
                             contentElements.push($current.get(0));
+                            // Also check for nested content
+                            $current.find('*').each((_, nested) => {
+                                const nestedText = $(nested).text().trim();
+                                if (nestedText && nestedText.length > 10) {
+                                    contentElements.push(nested);
+                                }
+                            });
                         }
                         
                         $current = $current.next();
