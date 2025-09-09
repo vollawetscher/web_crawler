@@ -494,9 +494,6 @@ class URLInspector {
 
     populateSitemap() {
         if (!this.currentSitemap) return;
-        
-        const urls = Object.keys(this.currentSitemap);
-        
         // Update summary
         const summary = document.getElementById('crawlSummary');
         summary.innerHTML = `
@@ -554,8 +551,8 @@ class URLInspector {
         urlLink.href = url;
         urlLink.target = '_blank';
         urlLink.textContent = url;
-        
-        const meta = document.createElement('div');
+            <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
+            <span>Sections: ${data.sections ? data.sections.length : 0}</span>
         meta.className = 'sitemap-meta';
         
         // Calculate total content length from sections
@@ -563,21 +560,7 @@ class URLInspector {
         if (data.sections && data.sections.length > 0) {
             totalContentLength = data.sections.reduce((sum, section) => sum + section.content_text.length, 0);
         }
-        
-        meta.innerHTML = `
-            <span>Depth: ${data.depth || 0}</span>
-            <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
-            <span>Sections: ${data.sections ? data.sections.length : 0}</span>
-        `;
-        
-        content.appendChild(title);
-        content.appendChild(urlLink);
-        content.appendChild(meta);
-        
-        if (data.error) {
             const error = document.createElement('div');
-            this.showCrawlStatus(false);
-            this.crawlBtn.disabled = false;
             error.className = 'sitemap-error';
             error.textContent = data.error;
             content.appendChild(error);
@@ -615,11 +598,6 @@ class URLInspector {
         this.ragOptions.classList.toggle('hidden', format !== 'rag_jsonl');
         this.updateExportInfo();
     }
-
-    updateExportInfo() {
-        const format = document.querySelector('input[name="export_format"]:checked').value;
-        const selectedPages = this.getSelectedPages();
-        const totalPages = selectedPages.length;
         const totalSections = selectedPages.reduce((sum, page) => {
             const sections = page.data.sections || [];
             return sum + sections.length;
@@ -894,7 +872,6 @@ class URLInspector {
     }
 
     showLoading() {
-        console.log('[DEBUG] showLoading() called');
         this.hideMessages();
         this.loadingIndicator.classList.remove('hidden');
         this.crawlStatus.classList.add('hidden');
@@ -903,17 +880,15 @@ class URLInspector {
     }
 
     hideLoading() {
-        console.log('[DEBUG] hideLoading() called');
         this.loadingIndicator.classList.add('hidden');
         this.inspectBtn.disabled = false;
         this.parseManualBtn.disabled = false;
     }
 
     showError(message) {
-        this.hideLoading();
         this.errorMessage.textContent = `❌ ${message}`;
         this.errorMessage.classList.remove('hidden');
-        this.successMessage.classList.add('hidden');
+            this.loadingIndicator.classList.add('hidden');
     }
 
     showSuccess(message) {
