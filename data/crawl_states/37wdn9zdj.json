@@ -10,7 +10,17 @@
     "https://www.landkreis-landshut.de/themen/mobilitaet/bus-und-bahn",
     "https://www.landkreis-landshut.de/landkreis/wichtige-einrichtungen",
     "https://www.landkreis-landshut.de/themen/freizeit-und-tourismus",
-    "https://www.landkreis-landshut.de/landkreis"
+    "https://www.landkreis-landshut.de/landkreis",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv",
+    "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+    "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter",
+    "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten",
+    "https://www.landkreis-landshut.de/buergerservice/telefonliste",
+    "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung",
+    "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen",
+    "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen",
+    "https://www.landkreis-landshut.de/themen/jobcenter"
   ],
   "sitemap": {
     "https://www.landkreis-landshut.de": {
@@ -2694,59 +2704,1461 @@
         "https://www.landkreis-landshut.de/meta/impressum",
         "https://www.landkreis-landshut.de/meta/datenschutz"
       ]
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025",
+      "title": "Baby- und Kinderkleiderbasare Herbst 2025 | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Baby- und Kinderkleiderbasare Herbst 2025"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Nähere Infos:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Baby- und Kinderkleiderbasare Herbst 2025 09. September 2025: Termine in der Region Landshut Baby- und Kinderkleiderbasare sind für viele eine ausgezeichnete Möglichkeit, sich kostengünstig mit gut erhaltenen Artikeln „einzudecken“ bzw. um Gebrauchtes zweckmäßig abzugeben. Darüber hinaus bieten die Second-Hand-Läden ganzjährig ihr umfangreiches Warensortiment an. Zur besseren Terminplanung für Interessierte haben wir für Stadt und Landkreis Landshut eine Übersicht zusammengestellt. Die Organisation der Basare übernehmen die jeweiligen Veranstalter. Deren Kontaktdaten sind in der Übersicht mit angegeben. Nähere Infos: Termine Baby- und KinderkleiderbasareBasarliste mit QR-Code www.schwanger-in-landshut.de",
+      "links": [
+        {
+          "text": "Termine Baby- und Kinderkleiderbasare",
+          "url": "https://www.landkreis-landshut.de/media/3754/kinderkleiderbasar-secondhand-fruehjahr2025.pdf"
+        },
+        {
+          "text": "Basarliste mit QR-Code",
+          "url": "https://www.landkreis-landshut.de/media/3755/basarliste_plakat_mit-qr-code-fruehjahr-2025.pdf"
+        },
+        {
+          "text": "www.schwanger-in-landshut.de",
+          "url": "https://www.schwanger-in-landshut.de/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/3754/kinderkleiderbasar-secondhand-fruehjahr2025.pdf",
+        "https://www.landkreis-landshut.de/media/3755/basarliste_plakat_mit-qr-code-fruehjahr-2025.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/media/3754/kinderkleiderbasar-secondhand-fruehjahr2025.pdf",
+        "https://www.landkreis-landshut.de/media/3755/basarliste_plakat_mit-qr-code-fruehjahr-2025.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv",
+      "title": "Vergabe von Verkehrsleistungen im ÖPNV | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Vergabe von Verkehrsleistungen im ÖPNV"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Nähere Infos:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Vergabe von Verkehrsleistungen im ÖPNV 09. September 2025: Vorabbekanntmachung des Landkreises Landshut Hinweis des Landkreises Landshut auf die Vorabbekanntmachungen nach Art. 7 Abs. 2 Verordnung (EG) Nr. 1370/2007 und § 8a Abs. 2 i. V. m. § 13 Abs. 2a Personenbeförderungsgesetz (PBefG) für die Regionalbuslinie 405 von Velden über Bodenkirchen und Bonbruck nach Vilsbiburg. Vorinformation über den beabsichtigten öffentlichen Dienstleistungsauftrag (öDA) des Landkreises Landshut über Verkehrsleistungen im Omnibusverkehr: Der Landkreis Landshut beabsichtigt als Aufgabenträger und zuständige Behörde nach Art. 8 Abs. 1 und 2 BayÖPNVG i. V. m. § 8a PBefG und Art. 2 lit. c) VO (EG) Nr. 1370/2007, einen öffentlichen Dienstleistungsauftrag (ÖDA) über öffentliche Personenverkehrsdienste mit Kraftfahrzeugen nach § 2 Abs. 1 PBefG für einen Linienverkehr auf der Regionalbuslinie 405 von Velden über Bodenkirchen und Bonbruck nach Vilsbiburg im Gebiet des südlichen Landkreises Landshut für den Zeitraum vom 14.02.2026 bis zum 13.02.2031 zu vergeben. Die Regionalbuslinie trägt die Bezeichnung 405: mit einer Streckenrelation von Velden über Bodenkirchen und Bonbruck nach Vilsbiburg. Gegenstand des beabsichtigten öffentlichen Dienstleistungsauftrages (öDA) ist die Sicherstellung einer ausreichenden Verkehrsbedienung auf der Linie 405, welche im südlichen Landkreis Landshut verläuft. Hierzu wurde im Amtsblatt der Europäischen Union (EU) die Vorabbekanntmachung nach Art. 7 Abs. 2 der Verordnung (EG) Nr. 1370/2007 veröffentlicht. Nähere Infos: Vorabbekanntmachung mit ergänzenden Hinweisen Fahrplan der Regionalbuslinie 405 Technischer Anhang zum Datenüberlassungsvertrag (DÜV) für DEFAS Bayern Liniensteckbrief",
+      "links": [
+        {
+          "text": "Vorabbekanntmachung mit ergänzenden Hinweisen",
+          "url": "https://www.landkreis-landshut.de/media/3980/linie-405_vorabbekanntmachung.pdf"
+        },
+        {
+          "text": "Fahrplan der Regionalbuslinie 405",
+          "url": "https://www.landkreis-landshut.de/media/3981/linie405_fahrplan.pdf"
+        },
+        {
+          "text": "Technischer Anhang zum Datenüberlassungsvertrag (DÜV) für DEFAS Bayern",
+          "url": "https://www.landkreis-landshut.de/media/3982/linie405_technischer_anhang.pdf"
+        },
+        {
+          "text": "Liniensteckbrief",
+          "url": "https://www.landkreis-landshut.de/media/3983/linie405_liniensteckbrief.pdf"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/3980/linie-405_vorabbekanntmachung.pdf",
+        "https://www.landkreis-landshut.de/media/3981/linie405_fahrplan.pdf",
+        "https://www.landkreis-landshut.de/media/3982/linie405_technischer_anhang.pdf",
+        "https://www.landkreis-landshut.de/media/3983/linie405_liniensteckbrief.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/media/3980/linie-405_vorabbekanntmachung.pdf",
+        "https://www.landkreis-landshut.de/media/3981/linie405_fahrplan.pdf",
+        "https://www.landkreis-landshut.de/media/3982/linie405_technischer_anhang.pdf",
+        "https://www.landkreis-landshut.de/media/3983/linie405_liniensteckbrief.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+      "title": "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder - Gesundheitsamt | Landkreis Landshut",
+      "meta_description": "Leistungen des Gesundheitsamtes Landshut: Gesundheitsf&#246;rderung, Schwangerenberatung, Infektionsschutz, Gesundheitshilfen, Medizinische Gutachten.",
+      "headings": {
+        "h1": [
+          "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder"
+        ],
+        "h2": [
+          "Aufgaben und Dienstleistungen",
+          "Ansprechpartner",
+          "Landratsamt Landshut",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder Aufgaben und Dienstleistungen Wasserqualität in der Gretlmühle Wasserqualität des Haselfurther Weihers Wasserqualität des Waketoolz-Wakepark Ansprechpartner Spalte mit Schaltflächen zum Ein- oder Ausblenden von Personendetails Name Telefon Handy Zimmer E-Mail Personendetails ein- oder ausblenden Fehrer, Martin 0871/408-5709 N2.005 14217 [email protected] Kontakt Zimmer: N2.005 Telefon: 0871/408-5709 E-Mail versenden Anschrift Veldener Str. 15 Adresse auf Karte anzeigen 84036 Landshut Funktionen dieser Person Hygienekontrolleur: Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder Personendetails ein- oder ausblenden Palmberger, Florian 0871/408-5714 N2.007 14219 [email protected] Kontakt Zimmer: N2.007 Telefon: 0871/408-5714 E-Mail versenden Anschrift Veldener Str. 15 Adresse auf Karte anzeigen 84036 Landshut Funktionen dieser Person Hygienekontrolleur: Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder Landratsamt Landshut AdresseLandratsamt Landshut Veldener Str. 15 84036 Landshut Kontakt Telefon: 0871/408-5000 Fax: 0871/408-1002 E-Mail senden Öffnungszeiten Montag - Freitag: 08.00 - 12.00 Uhr Montag : 13.30 - 15.30 Uhr Donnerstag: 13.30 - 17.00 Uhr Terminvereinbarung erforderlich! 7 Gesundheitsamt Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder",
+      "links": [
+        {
+          "text": "Wasserqualität  in der Gretlmühle",
+          "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-in-der-gretlmuehle&orga=a5e8b36781dfa9928784e75b0a63e368"
+        },
+        {
+          "text": "Wasserqualität des Haselfurther Weihers",
+          "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-haselfurther-weihers&orga=dcd4d25c13e5fb560a3b1baeb84302ff"
+        },
+        {
+          "text": "Wasserqualität des Waketoolz-Wakepark",
+          "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-waketoolz-wakepark&orga=2621f179e2332d1e2eb8457d7e77e16e"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#b7fad6c5c3ded999f1d2dfc5d2c5f7dbd6d9d3dcc5d2dec49adbd6d9d3c4dfc2c399d3d2"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#470a2635332e296901222f352235072b2629232c35222e346a2b262923342f3233692322"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#d492b8bba6bdb5bafa84b5b8b9b6b1a6b3b1a694b8b5bab0bfa6b1bda7f9b8b5bab0a7bca1a0fab0b1"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#03456f6c716a626d2d53626f6e616671646671436f626d676871666a702e6f626d67706b76772d6766"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+        },
+        {
+          "text": "E-Mail senden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#9cfbf9efe9f2f8f4f9f5e8dcf0fdf2f8f7eef9f5efb1f0fdf2f8eff4e9e8b2f8f9"
+        },
+        {
+          "text": "7 Gesundheitsamt",
+          "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?7-gesundheitsamt&orga=b5b262cc22cb6a6e6eec2554b7f4ead6"
+        },
+        {
+          "text": "Bayer. Badegewässerverordnung, EU Badegewässer, Hallenbäder, Freibäder",
+          "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-in-der-gretlmuehle&orga=a5e8b36781dfa9928784e75b0a63e368",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-haselfurther-weihers&orga=dcd4d25c13e5fb560a3b1baeb84302ff",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-waketoolz-wakepark&orga=2621f179e2332d1e2eb8457d7e77e16e",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?7-gesundheitsamt&orga=b5b262cc22cb6a6e6eec2554b7f4ead6",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-in-der-gretlmuehle&orga=a5e8b36781dfa9928784e75b0a63e368",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-haselfurther-weihers&orga=dcd4d25c13e5fb560a3b1baeb84302ff",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-waketoolz-wakepark&orga=2621f179e2332d1e2eb8457d7e77e16e",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+        "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?7-gesundheitsamt&orga=b5b262cc22cb6a6e6eec2554b7f4ead6",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter",
+      "title": "Formulare & Merkblätter | Landkreis Landshut",
+      "meta_description": "Unsere Verwaltungsleistungen - Alle Dienstleistungen, Informationen und Antr&#228;ge des Landratsamtes Landshut schnell und einfach im &#220;berblick.",
+      "headings": {
+        "h1": [
+          "Formulare & Merkblätter"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Formulare & Merkblätter Bitte geben Sie einen Begriff ein oder benutzen Sie die alphabetische Sortierung Bitte Suchbegriff eingeben Suchen Alle 0-9 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Abfallwirtschaft - Abfallbeförderung § 53 KrWG Anzeige von Sammlern, Beförderern, Händlern und Maklern von Abfällen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Transportgenehmigung - Einsammeln, Befördern von Abfällen Abfallwirtschaft - Abfallbeförderung § 53 KrWG (1) Anzeige von Sammlern, Beförderern, Händlern und Maklern von Abfällen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Transportgenehmigung - Einsammeln, Befördern von Abfällen Abfallwirtschaft - Abfallbeförderung § 54 KrWG Anzeige von Sammlern, Beförderern, Händlern und Maklern von gefährlichen Abfällen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Transportgenehmigung - Einsammeln, Befördern von Abfällen Abfallwirtschaft - Altstoffsammelstelle - Gebühren Gebührenübersicht Altstoffsammelstelle 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Entsorgungsanlagen im Überblick Abfallwirtschaft - Altstoffsammelstellen - Öffnungszeiten und Anschriften Öffnungszeiten und Anschriften der Altstoffsammelstellen im Landkreis Landshut 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Entsorgungsanlagen im Überblick Abfallwirtschaft - Asbesthaltige Materialien Infoblatt zur Entsorgung asbesthaltiger Materialien 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Reststoffdeponie Spitzlberg Asbesthaltige Materialien (z. B. Eternit) Abfallwirtschaft - Bauschutt und Baustellenabfälle Infoblatt zur Entsorgung von Bauschutt und Baustellenabfällen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Bau- und Abbruchabfälle Abfallwirtschaft - Brandschutt Infoblatt zur Entsorgung von Brandschutt 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Reststoffdeponie Spitzlberg Brandschutt Abfallwirtschaft - Erteilung einer Abfallerzeugernummer Art und Menge der anfallenden Abfallarten (gefährliche Abfälle) 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Transportgenehmigung - Einsammeln, Befördern von Abfällen Abfallwirtschaft - Gebuehrensatzung - Deponiebenutzungssatzung - Spitzlberg Gebührensatzung zur Benutzungssatzung der vom Landkreis Landshut betriebenen Restsstoffdeponie Spitzlberg 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Reststoffdeponie Spitzlberg Abfallwirtschaft - Gebühren - Kompostieranlage Rottenburg - Pfifferling Kompostieranlage Rottenburg (Ortsteil Schlamberg) Abfallwirtschaft - Gebühren - Reststoffdeponie Spitzlberg Reststoffdeponie Spitzlberg Abfallwirtschaft - Gebührensatzung Bauschuttannahmestellen 2. Änderungssatzung zur Gebührensatzung zur Benutzungssatzung der vom Landkreis Landshut betriebenen Bauschuttannahmestellen Geisenhausen und Inkofen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Bauschuttannahmestellen Bau- und Abbruchabfälle Abfallwirtschaft - Gebührensatzung für den Landkreis Landshut Gebührensatzung für die öffentliche Abfallentsorgung des Landkreises Landshut 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Abfallwirtschaftssatzung, Gebührensatzung Abfallwirtschaft - Hausmüll - Gebühren Gebührenübersicht Hausmüll im Landkreis Landshut 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Restmülltonne - Entleerung und Gebühren Papiertonne - Entleerung und Gebühren Biotonne - Entleerung und Gebühren Abfallwirtschaft - Heizen - sauber und richtig Infoblatt zum richtigen Heizen und was sie keinesfalls verbrennen dürfen 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallrecht: Vollzugsaufgaben Abfallwirtschaft - Künstliche Mineralfasern - KMF Infoblatt zur Entsorgung künstlicher Mineralfasern 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Entsorgungsanlagen im Überblick Reststoffdeponie Spitzlberg Künstliche Mineralfasern Abfallwirtschaft - Satzung für den Landkreis Landshut Satzung über die Vermeidung, Verwertung und Beseitigung von Abfällen im Landkreis Landshut 25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht Abfallberatung Abfallwirtschaftssatzung, Gebührensatzung Abgeschlossenheitsbescheinigung und Aufteilungsplan (Antrag) Abgeschlossenheitsbescheinigung nach dem Wohnungseigentumsgesetz Ambulante Pflegedienste - Antrag Antrag zur Förderung ambulanter Pflegedienste Investitionskostenförderung für ambulante Pflegedienste",
+      "links": [
+        {
+          "text": "Alle",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=alle"
+        },
+        {
+          "text": "0-9",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=0to9#PageHeadline"
+        },
+        {
+          "text": "A",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=A"
+        },
+        {
+          "text": "B",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=B"
+        },
+        {
+          "text": "D",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=D"
+        },
+        {
+          "text": "E",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=E"
+        },
+        {
+          "text": "F",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=F"
+        },
+        {
+          "text": "G",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=G"
+        },
+        {
+          "text": "H",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=H"
+        },
+        {
+          "text": "I",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=I"
+        },
+        {
+          "text": "J",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=J"
+        },
+        {
+          "text": "K",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=K"
+        },
+        {
+          "text": "L",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=L"
+        },
+        {
+          "text": "M",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=M"
+        },
+        {
+          "text": "N",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=N"
+        },
+        {
+          "text": "P",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=P"
+        },
+        {
+          "text": "Q",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=Q"
+        },
+        {
+          "text": "R",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=R"
+        },
+        {
+          "text": "S",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=S"
+        },
+        {
+          "text": "T",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=T"
+        },
+        {
+          "text": "V",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=V"
+        },
+        {
+          "text": "W",
+          "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=W"
+        },
+        {
+          "text": "Abfallwirtschaft - Abfallbeförderung § 53 KrWG\n\n                          Anzeige von Sammlern, Beförderern, Händlern und Maklern von Abfällen",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21800/sg25_abfallbefoerderung_-53_krwg.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Transportgenehmigung - Einsammeln, Befördern von Abfällen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7"
+        },
+        {
+          "text": "Abfallwirtschaft - Abfallbeförderung § 53 KrWG (1)\n\n                          Anzeige von Sammlern, Beförderern, Händlern und Maklern von Abfällen",
+          "url": "https://fc.landkreis-landshut.de/formcycle/form/alias/1/anzeige-53-krwg/"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Transportgenehmigung - Einsammeln, Befördern von Abfällen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7"
+        },
+        {
+          "text": "Abfallwirtschaft - Abfallbeförderung § 54 KrWG\n\n                          Anzeige von Sammlern, Beförderern, Händlern und Maklern von gefährlichen Abfällen",
+          "url": "https://fc.landkreis-landshut.de/formcycle/form/alias/1/anzeige-54-krwg/"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Transportgenehmigung - Einsammeln, Befördern von Abfällen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7"
+        },
+        {
+          "text": "Abfallwirtschaft - Altstoffsammelstelle - Gebühren\n\n                          Gebührenübersicht Altstoffsammelstelle",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21808/sg25_gebuehren_altstoffsammelstelle_072021.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Entsorgungsanlagen im Überblick",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573"
+        },
+        {
+          "text": "Abfallwirtschaft - Altstoffsammelstellen - Öffnungszeiten und Anschriften\n\n                          Öffnungszeiten und Anschriften der Altstoffsammelstellen im Landkreis Landshut",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21807/sg25_oeffnungszeiten_altstoffsammelstellen082025.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Entsorgungsanlagen im Überblick",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573"
+        },
+        {
+          "text": "Abfallwirtschaft - Asbesthaltige Materialien\n\n                          Infoblatt zur Entsorgung asbesthaltiger Materialien",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21797/sg25_abfallwirtschaft_asbesthaltige_materialien_052025.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5"
+        },
+        {
+          "text": "Asbesthaltige Materialien (z. B. Eternit)",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?asbesthaltige-materialien-z-b-eternit&orga=c714c5b4911107496f878077a2da1bda"
+        },
+        {
+          "text": "Abfallwirtschaft - Bauschutt und Baustellenabfälle\n\n                          Infoblatt zur Entsorgung von Bauschutt und Baustellenabfällen",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21805/sg25_abfallwirtschaft_bauschutt_baustellenabfaelle_072025.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Bau- und Abbruchabfälle",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bau-und-abbruchabfaelle&orga=159b6b8f4a725d251e4b18464e36252c"
+        },
+        {
+          "text": "Abfallwirtschaft - Brandschutt\n\n                          Infoblatt zur Entsorgung von Brandschutt",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21804/sg25_abfallwirtschaft_brandschutt_052025.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5"
+        },
+        {
+          "text": "Brandschutt",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?brandschutt&orga=47147a63b11e42b5c535a1c6cc8f15c6"
+        },
+        {
+          "text": "Abfallwirtschaft - Erteilung einer Abfallerzeugernummer\n\n                          Art und Menge der anfallenden Abfallarten (gefährliche Abfälle)",
+          "url": "https://fc.landkreis-landshut.de/formcycle/form/alias/1/abfallerzeugernummer/"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Transportgenehmigung - Einsammeln, Befördern von Abfällen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7"
+        },
+        {
+          "text": "Abfallwirtschaft - Gebuehrensatzung - Deponiebenutzungssatzung - Spitzlberg\n\n                          Gebührensatzung zur Benutzungssatzung der vom Landkreis Landshut betriebenen Restsstoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/22333/sg25_abfallwirtschaft-gebuehrensatzung_deponiebenutzungssatz.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5"
+        },
+        {
+          "text": "Abfallwirtschaft - Gebühren - Kompostieranlage Rottenburg - Pfifferling",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/22198/sg25gebuehren_kompostieranlage_rol_pfifferling_042025.pdf"
+        },
+        {
+          "text": "Kompostieranlage Rottenburg (Ortsteil Schlamberg)",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kompostieranlage-rottenburg-ortsteil-schlamberg&orga=6fc99433439522312c4900cba5bfeba4"
+        },
+        {
+          "text": "Abfallwirtschaft - Gebühren - Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/22325/sg25_gebuehren_spitzlberg_042025.pdf"
+        },
+        {
+          "text": "Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5"
+        },
+        {
+          "text": "Abfallwirtschaft - Gebührensatzung Bauschuttannahmestellen\n\n                          2. Änderungssatzung zur Gebührensatzung zur Benutzungssatzung der vom Landkreis Landshut betriebenen Bauschuttannahmestellen Geisenhausen und Inkofen",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21799/sg25_2_aenderungssatzung-zur-gebuehrensatzung-zur-benutzungssatzung-bauschuttannahmestellen.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Bauschuttannahmestellen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bauschuttannahmestellen&orga=6b1605249adadece2d901073e303b393"
+        },
+        {
+          "text": "Bau- und Abbruchabfälle",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bau-und-abbruchabfaelle&orga=159b6b8f4a725d251e4b18464e36252c"
+        },
+        {
+          "text": "Abfallwirtschaft - Gebührensatzung für den Landkreis Landshut\n\n                          Gebührensatzung für die öffentliche Abfallentsorgung des Landkreises Landshut",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21802/sg25_abfallwirtschaftssatzung_012021.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Abfallwirtschaftssatzung, Gebührensatzung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallwirtschaftssatzung-gebuehrensatzung&orga=7d8f8f4441a9b35259e70dd37da75d35"
+        },
+        {
+          "text": "Abfallwirtschaft - Hausmüll - Gebühren \n\n                          Gebührenübersicht Hausmüll  im Landkreis Landshut",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21801/sg25_hausmuell_gebuehren_022021.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Restmülltonne - Entleerung und Gebühren",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?restmuelltonne-entleerung-und-gebuehren&orga=259718b695730be13d6cb05345d774fa"
+        },
+        {
+          "text": "Papiertonne - Entleerung und Gebühren",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?papiertonne-entleerung-und-gebuehren&orga=dcee97386465e54eb59aa57786112ea0"
+        },
+        {
+          "text": "Biotonne - Entleerung und Gebühren",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?biotonne-entleerung-und-gebuehren&orga=75cb9707de900e6ba59452a51591d07a"
+        },
+        {
+          "text": "Abfallwirtschaft - Heizen - sauber und richtig\n\n                          Infoblatt zum richtigen Heizen und was sie keinesfalls verbrennen dürfen",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21806/sg25_heizen_sauber_richtig_infoblatt.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallrecht: Vollzugsaufgaben",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallrecht-vollzugsaufgaben&orga=61be55b559f519aefbabbb264093ea9e"
+        },
+        {
+          "text": "Abfallwirtschaft - Künstliche Mineralfasern - KMF\n\n                          Infoblatt zur Entsorgung künstlicher Mineralfasern",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21798/sg25_abfallwirtschaft_kuenstliche_mineralfasern_kmf_052025.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Entsorgungsanlagen im Überblick",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573"
+        },
+        {
+          "text": "Reststoffdeponie Spitzlberg",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5"
+        },
+        {
+          "text": "Künstliche Mineralfasern",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kuenstliche-mineralfasern&orga=57c49ce64ec166e4dc6e54438e1b4d0d"
+        },
+        {
+          "text": "Abfallwirtschaft - Satzung für den Landkreis Landshut\n\n                          Satzung über die Vermeidung, Verwertung und Beseitigung von Abfällen im Landkreis Landshut",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21803/sg25_abfallwirtschaftssatzung.pdf"
+        },
+        {
+          "text": "25 Abfallwirtschaft, staatl. Abfallrecht, Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012"
+        },
+        {
+          "text": "Abfallberatung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525"
+        },
+        {
+          "text": "Abfallwirtschaftssatzung, Gebührensatzung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallwirtschaftssatzung-gebuehrensatzung&orga=7d8f8f4441a9b35259e70dd37da75d35"
+        },
+        {
+          "text": "Abgeschlossenheitsbescheinigung und Aufteilungsplan (Antrag)",
+          "url": "https://www.landkreis-landshut.de/hostedmedia/21921/sg40_antrag_abgeschlossenheitsbesch_112019.pdf"
+        },
+        {
+          "text": "Abgeschlossenheitsbescheinigung nach dem Wohnungseigentumsgesetz",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abgeschlossenheitsbescheinigung-nach-dem-wohnungseigentumsgesetz&orga=588ede75bf98552de270627c28352879"
+        },
+        {
+          "text": "Ambulante Pflegedienste - Antrag\n\n                          Antrag zur Förderung ambulanter Pflegedienste",
+          "url": "https://fc.landkreis-landshut.de/formcycle/form/provide/1212/"
+        },
+        {
+          "text": "Investitionskostenförderung für ambulante Pflegedienste",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?investitionskostenfoerderung-fuer-ambulante-pflegedienste&orga=a9f6ec6e7c03dd2164865e98efe852ba"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=alle",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=0to9",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=A",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=B",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=D",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=E",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=F",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=G",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=H",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=I",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=J",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=K",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=L",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=M",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=N",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=P",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=Q",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=R",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=S",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=T",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=V",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=W",
+        "https://www.landkreis-landshut.de/hostedmedia/21800/sg25_abfallbefoerderung_-53_krwg.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7",
+        "https://www.landkreis-landshut.de/hostedmedia/21808/sg25_gebuehren_altstoffsammelstelle_072021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573",
+        "https://www.landkreis-landshut.de/hostedmedia/21807/sg25_oeffnungszeiten_altstoffsammelstellen082025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525",
+        "https://www.landkreis-landshut.de/hostedmedia/21797/sg25_abfallwirtschaft_asbesthaltige_materialien_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?asbesthaltige-materialien-z-b-eternit&orga=c714c5b4911107496f878077a2da1bda",
+        "https://www.landkreis-landshut.de/hostedmedia/21805/sg25_abfallwirtschaft_bauschutt_baustellenabfaelle_072025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bau-und-abbruchabfaelle&orga=159b6b8f4a725d251e4b18464e36252c",
+        "https://www.landkreis-landshut.de/hostedmedia/21804/sg25_abfallwirtschaft_brandschutt_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?brandschutt&orga=47147a63b11e42b5c535a1c6cc8f15c6",
+        "https://www.landkreis-landshut.de/hostedmedia/22333/sg25_abfallwirtschaft-gebuehrensatzung_deponiebenutzungssatz.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/22198/sg25gebuehren_kompostieranlage_rol_pfifferling_042025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kompostieranlage-rottenburg-ortsteil-schlamberg&orga=6fc99433439522312c4900cba5bfeba4",
+        "https://www.landkreis-landshut.de/hostedmedia/22325/sg25_gebuehren_spitzlberg_042025.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/21799/sg25_2_aenderungssatzung-zur-gebuehrensatzung-zur-benutzungssatzung-bauschuttannahmestellen.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bauschuttannahmestellen&orga=6b1605249adadece2d901073e303b393",
+        "https://www.landkreis-landshut.de/hostedmedia/21802/sg25_abfallwirtschaftssatzung_012021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallwirtschaftssatzung-gebuehrensatzung&orga=7d8f8f4441a9b35259e70dd37da75d35",
+        "https://www.landkreis-landshut.de/hostedmedia/21801/sg25_hausmuell_gebuehren_022021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?restmuelltonne-entleerung-und-gebuehren&orga=259718b695730be13d6cb05345d774fa",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?papiertonne-entleerung-und-gebuehren&orga=dcee97386465e54eb59aa57786112ea0",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?biotonne-entleerung-und-gebuehren&orga=75cb9707de900e6ba59452a51591d07a",
+        "https://www.landkreis-landshut.de/hostedmedia/21806/sg25_heizen_sauber_richtig_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallrecht-vollzugsaufgaben&orga=61be55b559f519aefbabbb264093ea9e",
+        "https://www.landkreis-landshut.de/hostedmedia/21798/sg25_abfallwirtschaft_kuenstliche_mineralfasern_kmf_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kuenstliche-mineralfasern&orga=57c49ce64ec166e4dc6e54438e1b4d0d",
+        "https://www.landkreis-landshut.de/hostedmedia/21803/sg25_abfallwirtschaftssatzung.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/21921/sg40_antrag_abgeschlossenheitsbesch_112019.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abgeschlossenheitsbescheinigung-nach-dem-wohnungseigentumsgesetz&orga=588ede75bf98552de270627c28352879",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?investitionskostenfoerderung-fuer-ambulante-pflegedienste&orga=a9f6ec6e7c03dd2164865e98efe852ba",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=alle",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=0to9",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=A",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=B",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=D",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=E",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=F",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=G",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=H",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=I",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=J",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=K",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=L",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=M",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=N",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=P",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=Q",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=R",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=S",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=T",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=V",
+        "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=W",
+        "https://www.landkreis-landshut.de/hostedmedia/21800/sg25_abfallbefoerderung_-53_krwg.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7",
+        "https://www.landkreis-landshut.de/hostedmedia/21808/sg25_gebuehren_altstoffsammelstelle_072021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573",
+        "https://www.landkreis-landshut.de/hostedmedia/21807/sg25_oeffnungszeiten_altstoffsammelstellen082025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525",
+        "https://www.landkreis-landshut.de/hostedmedia/21797/sg25_abfallwirtschaft_asbesthaltige_materialien_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?asbesthaltige-materialien-z-b-eternit&orga=c714c5b4911107496f878077a2da1bda",
+        "https://www.landkreis-landshut.de/hostedmedia/21805/sg25_abfallwirtschaft_bauschutt_baustellenabfaelle_072025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bau-und-abbruchabfaelle&orga=159b6b8f4a725d251e4b18464e36252c",
+        "https://www.landkreis-landshut.de/hostedmedia/21804/sg25_abfallwirtschaft_brandschutt_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?brandschutt&orga=47147a63b11e42b5c535a1c6cc8f15c6",
+        "https://www.landkreis-landshut.de/hostedmedia/22333/sg25_abfallwirtschaft-gebuehrensatzung_deponiebenutzungssatz.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/22198/sg25gebuehren_kompostieranlage_rol_pfifferling_042025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kompostieranlage-rottenburg-ortsteil-schlamberg&orga=6fc99433439522312c4900cba5bfeba4",
+        "https://www.landkreis-landshut.de/hostedmedia/22325/sg25_gebuehren_spitzlberg_042025.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/21799/sg25_2_aenderungssatzung-zur-gebuehrensatzung-zur-benutzungssatzung-bauschuttannahmestellen.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bauschuttannahmestellen&orga=6b1605249adadece2d901073e303b393",
+        "https://www.landkreis-landshut.de/hostedmedia/21802/sg25_abfallwirtschaftssatzung_012021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallwirtschaftssatzung-gebuehrensatzung&orga=7d8f8f4441a9b35259e70dd37da75d35",
+        "https://www.landkreis-landshut.de/hostedmedia/21801/sg25_hausmuell_gebuehren_022021.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?restmuelltonne-entleerung-und-gebuehren&orga=259718b695730be13d6cb05345d774fa",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?papiertonne-entleerung-und-gebuehren&orga=dcee97386465e54eb59aa57786112ea0",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?biotonne-entleerung-und-gebuehren&orga=75cb9707de900e6ba59452a51591d07a",
+        "https://www.landkreis-landshut.de/hostedmedia/21806/sg25_heizen_sauber_richtig_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallrecht-vollzugsaufgaben&orga=61be55b559f519aefbabbb264093ea9e",
+        "https://www.landkreis-landshut.de/hostedmedia/21798/sg25_abfallwirtschaft_kuenstliche_mineralfasern_kmf_052025.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kuenstliche-mineralfasern&orga=57c49ce64ec166e4dc6e54438e1b4d0d",
+        "https://www.landkreis-landshut.de/hostedmedia/21803/sg25_abfallwirtschaftssatzung.pdf",
+        "https://www.landkreis-landshut.de/hostedmedia/21921/sg40_antrag_abgeschlossenheitsbesch_112019.pdf",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abgeschlossenheitsbescheinigung-nach-dem-wohnungseigentumsgesetz&orga=588ede75bf98552de270627c28352879",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?investitionskostenfoerderung-fuer-ambulante-pflegedienste&orga=a9f6ec6e7c03dd2164865e98efe852ba",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten",
+      "title": "Standorte & Öffnungszeiten | Landkreis Landshut",
+      "meta_description": "Standorte &amp; &#214;ffnungszeiten des Landratsamtes Landshut inkl. seiner Au&#223;enstellen - Bitte beachten Sie die Hinweise der einzelnen Einrichtungen.",
+      "headings": {
+        "h1": [
+          "Standorte & Öffnungszeiten"
+        ],
+        "h2": [
+          "Das Landratsamt Landshut und seine Außenstellen",
+          "Seitenleiste Rechts",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Die Außenstellen des Landratsamtes",
+          "Landkreis-Magazin",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Standorte & Öffnungszeiten Das Landratsamt Landshut und seine Außenstellen Landratsamt LandshutVeldener Straße 1584036 LandshutAnfahrt - Google Maps Telefon: +49 (0)871 408-0Fax: +49 (0)871 408-1001[email protected]Öffnungszeiten:Für Behördengänge ist eine vorherige Terminvereinbarung notwendig. Montag - Freitag: 08.00 - 12.00 Uhr Montag: 13.30 - 15.30 UhrDonnerstag: 13.30 - 17.00 Uhr Parkmöglichkeiten am Landratsamt Landshut Die Außenstellen des Landratsamtes Landratsamt II - Kreisjugendamt Landratsamt II - KreisjugendamtSonnenring 1484032 AltdorfAnfahrt - Google Maps Telefon: +49 (0)871 408-0Fax: +49 (0)871 408-1001[email protected] Öffnungszeiten:Für Behördengänge ist eine vorherige Terminvereinbarung notwendig. KFZ-Zulassungsstelle Landshut-Ergolding KFZ-Zulassungsstelle Landshut-ErgoldingAlte Regensburger Str. 1184030 ErgoldingAnfahrt - Google MapsTel.: +49 (0)871 408-1820Fax: +49 (0)871 408-5890[email protected] Öffnungszeiten:Montag - Freitag: 07.30 - 12.00 UhrMontag: 13.30 - 15.30 UhrDonnerstag: 13.30 - 17.00 Uhr KFZ-Zulassungsstelle Rottenburg KFZ-Zulassungsstelle RottenburgGeorg-Pöschl-Str. 2584056 RottenburgAnfahrt - Google Maps Tel.: +49 (0)871 408-5866Fax: +49 (0)871 408-5848[email protected] Öffnungszeiten:Montag - Freitag: 07.30 - 12.00 UhrMontag - Mittwoch: 13.30 - 15.30 UhrDonnerstag: 13.30 - 17.00 Uhr Annahmeschluss ist jeweils 30 Minuten vorher. KFZ-Zulassungsstelle Vilsbiburg KFZ-Zulassungsstelle VilsbiburgOhmstr. 2 b84137 VilsbiburgAnfahrt - Google MapsTel.: +49 (0)871 408-5895Fax: +49 (0)871 408-5899[email protected] Öffnungszeiten: Montag - Freitag: 07.30 - 12.00 UhrMontag - Mittwoch: 13.30 - 15.30 UhrDonnerstag: 13.30 - 17.00 Uhr Annahmeschluss ist jeweils 30 Minuten vorher. Hier ist der Besuch sowohl mit als auch ohne Terminvereinbarung möglich - Tel. 0871 408-5895 bzw. -5897 Tiefbauverwaltung des Landkreises Landshut Tiefbauverwaltung des Landkreises LandshutGeorg-Pöschl-Str. 2584056 RottenburgAnfahrt - Google Maps Telefon: +49 (0)871 408-5851Fax: +49 (0)871 408-5849[email protected] Öffnungszeiten:Montag - Freitag: 08.00 - 12.00 Uhr Für Behördengänge ist eine vorherige Terminvereinbarung notwendig. Bauhof Rottenburg Bauhof RottenburgGeorg-Pöschl-Str. 2584056 RottenburgAnfahrt - Google Maps Telefon: +49 (0)871 408-5851Fax: +49 (0)871 408-5849[email protected] Öffnungszeiten:Montag - Donnerstag: 07.00 - 16.15 Uhrjeder zweiter Freitag: 07.00 - 14.00 Uhr Bauhof Vilsbiburg Bauhof VilsbiburgFrontenhausener Str. 9084137 VilsbiburgAnfahrt - Google Maps Telefon: +49 (0)871 408-5830Fax: +49 (0)871 408-5839[email protected] Öffnungszeiten:Montag - Donnerstag: 07.00 - 16.30 Uhrjeder zweiter Freitag: 07.00 - 14.00 Uhr Reststoffdeponie Spitzlberg Reststoffdeponie SpitzlbergNähe Unterglaim bei ErgoldingAnfahrt - Google Maps Telefon: +49 (0)871 408 3030Fax: +49 (0)871 408 1030[email protected] Öffnungszeiten:Montag - Donnerstag: 07.30 - 12.00 Uhrund 13.00 - 16.30 UhrFreitag: 07.30 - 12.00 Uhrund 13.00 - 16.00 UhrSamstag: 09.00 - 12.00 Uhr Jobcenter Landkreis Landshut Jobcenter Landkreis LandshutLehbühlstr. 28, 84034 LandshutAnfahrt - Google Maps Tel.: +49 871 40472290 - Erreichbarkeit: 8 - 12 UhrTel.: +49 871 40472298 - Erreichbarkeit: 8 - 18 UhrFax: 0871 40472210[email protected] Öffnungszeiten:Montag – Freitag: 08.00 Uhr – 12.00 Uhr Jobcenter - Außenstelle Rottenburg Jobcenter - Außenstelle RottenburgMax-von-Müller-Str. 1984056 Rottenburg Anfahrt - Google Maps Tel.: +49 871 40472290 - Erreichbarkeit: 8 - 12 UhrTel.: +49 871 40472298 - Erreichbarkeit: 8 - 18 UhrFax: 0871 40472210[email protected] Öffnungszeiten:Eine persönliche Vorsprache ist nur in Landshut möglich.Weitere Informationen finden Sie auf der Website der Bundesagentur für Arbeit. Jobcenter - Außenstelle Vilsbiburg Jobcenter - Außenstelle VilsbiburgFrauensattlinger Str. 1084137 VilsbiburgAnfahrt - Google Maps Tel.: +49 871 40472290 - Erreichbarkeit: 8 - 12 UhrTel.: +49 871 40472298 - Erreichbarkeit: 8 - 18 UhrFax: 0871 40472210[email protected] Öffnungszeiten:Montag, Dienstag und Donnerstag: 08.00 Uhr – 12.00 Uhr Alle aufklappen Alle zuklappen",
+      "links": [
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Landratsamt+Landshut/@48.52328,12.1445613,17z/data=!3m1!4b1!4m5!3m4!1s0x479e267c43f4129d:0x589ba30dbaf3c059!8m2!3d48.52328!4d12.14675"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#98e8f7ebecebecfdf4f4fdd8f4f9f6fcf3eafdf1ebb5f4f9f6fcebf0edecb6fcfd"
+        },
+        {
+          "text": "Parkmöglichkeiten am Landratsamt Landshut",
+          "url": "https://www.landkreis-landshut.de/media/1080/parkplaetze-lra-la-luftbild.pdf"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Landratsamt+II+-+Kreisjugendamt/@48.5487601,12.101992,17z/data=!4m13!1m7!3m6!1s0x479e259374616a69:0x2ac8c2545e0a64a9!2sSonnenring+14,+84032+Altdorf!3b1!8m2!3d48.5487566!4d12.1041807!3m4!1s0x479e259976599aa7:0xec61477397df837c!8m2!3d48.5487566!4d12.1041807"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#a4d4cbd7d0d7d0c1c8c8c1e4c8c5cac0cfd6c1cdd789c8c5cac0d7ccd1d08ac0c1"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/KfZ-Zulassung+Stadt+Landshut/@48.550679,12.1599448,15z/data=!4m5!3m4!1s0x0:0x1b3c92353e784a26!8m2!3d48.550679!4d12.1599448"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#d3a9a6bfb2a0a0a6bdb493bfb2bdb7b8a1b6baa0febfb2bdb7a0bba6a7fdb7b6"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/KFZ-Zulassungsstelle+Rottenburg/@48.7057709,12.0386917,17z/data=!4m13!1m7!3m6!1s0x479e331079e10abb:0x82be15b2c863e07c!2sGeorg-P%C3%B6schl-Stra%C3%9Fe+25,+84056+Rottenburg+an+der+Laaber!3b1!8m2!3d48.7057674!4d12.0408804!3m4!1s0x479e331079e0404f:0x4c8c451180bc8c74!8m2!3d48.7058646!4d12.0409584"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#d5afa0b9b4a6a6a0bbb295b9b4bbb1bea7b0bca6f8b9b4bbb1a6bda0a1fbb1b0"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/KFZ-Zulassungsstelle+Vilsbiburg/@48.4547905,12.3318319,17z/data=!4m9!1m2!2m1!1sOhmstra%C3%9Fe+2+b+vilsiburg+kfz-zulassung!3m5!1s0x47758dda0cbd2537:0xf4dbc190e0fbd0be!8m2!3d48.4548205!4d12.3339383!15sCiZPaG1zdHJhw59lIDIgYiB2aWxzaWJ1cmcga2Z6LXp1bGFzc3VuZ1ooIiZvaG1zdHJhw59lIDIgYiB2aWxzaWJ1cmcga2Z6IHp1bGFzc3VuZ5IBEGNvcnBvcmF0ZV9vZmZpY2WaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTnBMWFZVUkhOM1JSQUI"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#106a657c716363657e77507c717e747b627579633d7c717e74637865643e7475"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Georg-P%C3%B6schl-Stra%C3%9Fe+25,+84056+Rottenburg+an+der+Laaber/@48.70573,12.0387213,17z/data=!3m1!4b1!4m5!3m4!1s0x479e331079e0404f:0x1368f75d9e6da43d!8m2!3d48.70573!4d12.04091"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#55213c3033373420343721303c39203b321539343b313e27303c267839343b31263d20217b3130"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Georg-P%C3%B6schl-Stra%C3%9Fe+25,+84056+Rottenburg+an+der+Laaber/@48.7053689,12.0383018,18z/data=!4m5!3m4!1s0x479e331079e10abb:0x82be15b2c863e07c!8m2!3d48.70573!4d12.04091"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#6b1f020e0d090a1e0a091f0e02071e050c2b070a0500190e021846070a050f18031e1f450f0e"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Frontenhausener+Str.+90,+84137+Vilsbiburg/@48.45408,12.3624357,18z/data=!4m5!3m4!1s0x47758c27d8f87505:0x9af6430798c46eec!8m2!3d48.45408!4d12.36353"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#0b787f796a78786e65666e62787f6e796e62267d62694b676a656f60796e627826676a656f78637e7f256f6e"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Reststoffdeponie+Spitzlberg/@48.5987869,12.1425303,15z/data=!4m5!3m4!1s0x479e2f1f5daf55cd:0x35e483eabaf8fb7b!8m2!3d48.5962572!4d12.1381789"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#214c40484d4e551b404347404d4d56485355524249404755614d404f454a534448520c4d404f45524954550f4544"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Jobcenter+Landkreis+Landshut/@48.5472205,12.1508109,17z/data=!4m13!1m7!3m6!1s0x479e2608e11adae3:0xca32330bdfd97e41!2sLehb%C3%BChlstra%C3%9Fe+28,+84034+Landshut!3b1!8m2!3d48.5468824!4d12.1522459!3m4!1s0x479e26090330e941:0xf4bc320744909ad6!8m2!3d48.5472428!4d12.152927"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#ade7c2cfcec8c3d9c8df80e1e680e1ccc3c9dec5d8d9edc7c2cfcec8c3d9c8df80cac883c9c8"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Max-von-M%C3%BCller-Stra%C3%9Fe+19,+84056+Rottenburg+an+der+Laaber/@48.7047594,12.0237462,17z/data=!3m1!4b1!4m5!3m4!1s0x479e3372bc8965c3:0xfd6d97540f61c251!8m2!3d48.7046239!4d12.0259102"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#276d48454442495342550a6b6c0a6b464943544f5253674d48454442495342550a4042094342"
+        },
+        {
+          "text": "Website der Bundesagentur für Arbeit",
+          "url": "https://www.arbeitsagentur.de/vor-ort/landshut-pfarrkirchen/rottenburg"
+        },
+        {
+          "text": "Anfahrt - Google Maps",
+          "url": "https://www.google.de/maps/place/Frauensattlinger+Str.+10,+84137+Vilsbiburg/@48.4479776,12.3580066,17z/data=!3m1!4b1!4m5!3m4!1s0x47758c257ac79949:0x647157f84e454dc2!8m2!3d48.4479776!4d12.3601953"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#561c39343533382233247b1a1d7b1a373832253e2322163c39343533382233247b3133783233"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/media/1080/parkplaetze-lra-la-luftbild.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/media/1080/parkplaetze-lra-la-luftbild.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/buergerservice/telefonliste": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/buergerservice/telefonliste",
+      "title": "Telefonliste | Landkreis Landshut",
+      "meta_description": "Telefonverzeichnis des Landratsamtes Landshut nach Fachbereichen gegliedert. Kontaktieren Sie Ihren gew&#252;nschten Ansprechpartner.",
+      "headings": {
+        "h1": [
+          "Telefonliste"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Telefonliste Telefon-Vermittlung: +49 (0)871 408-0Fax: +49 (0)871 408-1001[email protected] www.landkreis-landshut.de Fachbereiche Durchwahl Vorzimmer Landrat 408-1101, -1102 Abfallwirtschaft 408-3120 Aids-Beratungsstelle 408-5000 Ausbildungsförderung - BAföG 408-1885 Ausbildungsförderung - AFBG (Meister-BAföG) 408-1886 Ausländerbehörde 408-5187, -5191, -5188 Bauhof Rottenburg, Georg-Pöschl-Str. 25 408-5862 Bauhof Vilsbiburg, Frontenhausener Str. 90 408-5830 Bauleitplanung 408-3154 Bauverwaltung - nördlicher Bereich 408-3162, -3167 Bauverwaltung - südlicher Bereich 408-3177, -3179 Energieberatung 408-3140 Feuerwehrwesen 408-1307 Finanz- und Liegenschaftsverwaltung 408-1108 Führerscheine 408-2154, -55, -57 Geschäftsleitung 408-1104 Gesundheitsamt 408-5000 Gesundheits- und Veterinärrecht 408-5305 Gewerberecht 408-1333 Gleichstellungsstelle 408-1845 Gutachterausschuss 408-3157 Informations- und Kommunikationstechnik 408-1166 Jagd und Fischerei 408-1304 Jobcenter Landkreis Landshut 404-72298 Katastrophenschutz 408-1810 Kfz-Zulassung - Ergolding, Alte Regensburger Str. 11 408-1820 Kfz-Zulassung - Rottenburg, Georg-Pöschl-Str. 25 408-5866 Kfz-Zulassung - Vilsbiburg, Ohmstraße 2 b 408-5895 Klimaschutzmanagement 408-2128 Kreisjugendamt - Allgemeiner Sozialer Dienst 408-4923 Kreisjugendamt - Kinder- Jugend- und Familienförderung 408-4872 Kreisjugendamt - Materielle Hilfen 408-4843 Kreisfachberater für Gartenkultur und Landespflege 408-1850 Leader Förderung (Lokale Aktionsgruppe Landshut/LAG) 408-1178 Lebensmittelüberwachung 408-5324 Medienzentrum 408-1316 Naturschutz 408-1860 Personalverwaltung 408-1130 Pressearbeit 408-1835 -1836 Regionalmanagement 408-1156 Reststoffdeponie Spitzlberg - Telefon 408-3030 Reststoffdeponie Spitzlberg - Fax 408-1030 Schülerbeförderung 408-2205 Schwangerenberatung -staatl. anerkannt- 408-5000 Sozialhilfe 408-1880 Staatl. Schulamt 408-3811 Tiefbauamt, Rottenburg 408-5851 Tourismus 408-1840 Umwelttelefon 408-3000 Verkehrswesen 408-2164, -2168, -2167, -2169 Versicherungsamt 408-1130 Veterinäramt 408-4000 Waffenrecht 408-1325 Wasserrecht 408-4113 Wirtschaftsförderung 408-1830 Wohngeld 408-1888 Wohnberechtigungsscheine 408-2197 Wohnungsbauförderung 408-2196",
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#33435c40474047565f5f56735f525d575841565a401e5f525d57405b46471d5756"
+        },
+        {
+          "text": "www.landkreis-landshut.de",
+          "url": "https://www.landkreis-landshut.de/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung",
+      "title": "KFZ-Zulassung | Landkreis Landshut",
+      "meta_description": "Ansprechpartner und Formulare: Fahrzeug anmelden / abmelden, Wunschkennzeichen reservieren – sowie weitere Infos und Dienstleistungen",
+      "headings": {
+        "h1": [
+          "34 Kraftfahrzeugzulassung"
+        ],
+        "h2": [
+          "Aufgaben und Dienstleistungen",
+          "Ansprechpartner",
+          "Landratsamt Landshut",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "34 Kraftfahrzeugzulassung Merkblätter, Formulare und detaillierte Hinweise zu den einzelnen Zulassungsvorgängen finden Sie unter Kfz-Zulassung sowie bei den dort aufgeführten Zulassungsvorgängen. Dort erfahren Sie auch, welche Unterlagen mitzubringen sind und wieviel der jeweilige Vorgang kostet. Bitte beachten Sie hierzu auch die Hinweise und Details in der allgemeinen Beschreibung zur Kfz-Zulassung. Die genauen Anschriften, die Telefon- und Telefaxnummern sowie die Öffnungszeiten der einzelnen Zulassungsstellen finden Sie hier. Bürgerservice-Portal - Online-Zulassung Kennzeichen-Reservierung Zulassungsbehörden Aufgaben und Dienstleistungen Kfz-Zulassung, Informationen zur Kfz-Zulassung Vollzug der StVZO und FZV Ansprechpartner Spalte mit Schaltflächen zum Ein- oder Ausblenden von Personendetails Name Telefon Handy Zimmer E-Mail Personendetails ein- oder ausblenden Winner, Brigitte 0871/408-5880 Zul. Erg., Sch. 2 14971 [email protected] Kontakt Zimmer: Zul. Erg., Sch. 2 Telefon: 0871/408-5880 E-Mail versenden Anschrift Alte Regensburger Str. 11 Adresse auf Karte anzeigen 84030 Ergolding Funktionen dieser Person Stellvertretende Sachgebietsleiterin: 34 Kraftfahrzeugzulassung Personendetails ein- oder ausblenden Information Kfz-Zulassung 0871/408-1820 Zulassung Ergolding 14969 [email protected] Kontakt Zimmer: Zulassung Ergolding Telefon: 0871/408-1820 E-Mail versenden Anschrift Alte Regensburger Str. 11 Adresse auf Karte anzeigen 84030 Ergolding Funktionen dieser Person sonstige: 34 Kraftfahrzeugzulassung Landratsamt Landshut AdresseLandratsamt Landshut Alte Regensburger Str. 11 84030 Ergolding Kontakt Telefon: 0871/408-1820 Fax: 0871/408-5890 E-Mail senden",
+      "links": [
+        {
+          "text": "Kfz-Zulassung",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?Kfz-Zulassung,InformationenzurKfz-Zulassung&view=org&orgid=b498ef45-c776-4a70-98fa-ecd9c7944e04"
+        },
+        {
+          "text": "hier",
+          "url": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten/"
+        },
+        {
+          "text": "Bürgerservice-Portal - Online-Zulassung",
+          "url": "https://www.buergerservice-portal.de/bayern/lkrlandshut/bsp_ikfz_antragstellung/#/"
+        },
+        {
+          "text": "Kennzeichen-Reservierung",
+          "url": "https://www.buergerservice-portal.de/bayern/lkrlandshut/igvwkz/#/"
+        },
+        {
+          "text": "Zulassungsbehörden",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?zulassungsbehoerden&orga=8d8e567f9b459ad660662f387e16afbf"
+        },
+        {
+          "text": "Kfz-Zulassung, Informationen zur Kfz-Zulassung",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab"
+        },
+        {
+          "text": "Vollzug der StVZO und FZV",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?vollzug-der-stvzo-und-fzv&orga=7ebf284addd8e94e9c9a9444d9cc3e42"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#eba999828c829f9f8ec5bc8285858e99ab878a858f80998e8298c6878a858f98839e9fc58f8e"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#89cbfbe0eee0fdfdeca7dee0e7e7ecfbc9e5e8e7ede2fbece0faa4e5e8e7edfae1fcfda7edec"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "34 Kraftfahrzeugzulassung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?34-kraftfahrzeugzulassung&orga=5e60bbac36aa12dcb4b952cb693ce94c"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#7d0708111c0e0e08131a3d111c1319160f18140e50111c13190e150809531918"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#2a505f464b59595f444d6a464b444e41584f435907464b444e59425f5e044e4f"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "34 Kraftfahrzeugzulassung",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?34-kraftfahrzeugzulassung&orga=5e60bbac36aa12dcb4b952cb693ce94c"
+        },
+        {
+          "text": "E-Mail senden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#d3a9a6bfb2a0a0a6bdb493bfb2bdb7b8a1b6baa0febfb2bdb7a0bba6a7fdb7b6"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?Kfz-Zulassung,InformationenzurKfz-Zulassung&view=org&orgid=b498ef45-c776-4a70-98fa-ecd9c7944e04",
+        "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?zulassungsbehoerden&orga=8d8e567f9b459ad660662f387e16afbf",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?vollzug-der-stvzo-und-fzv&orga=7ebf284addd8e94e9c9a9444d9cc3e42",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?34-kraftfahrzeugzulassung&orga=5e60bbac36aa12dcb4b952cb693ce94c",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?Kfz-Zulassung,InformationenzurKfz-Zulassung&view=org&orgid=b498ef45-c776-4a70-98fa-ecd9c7944e04",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?zulassungsbehoerden&orga=8d8e567f9b459ad660662f387e16afbf",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?vollzug-der-stvzo-und-fzv&orga=7ebf284addd8e94e9c9a9444d9cc3e42",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?34-kraftfahrzeugzulassung&orga=5e60bbac36aa12dcb4b952cb693ce94c",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen",
+      "title": "Führerscheinstelle / Verkehrswesen | Landkreis Landshut",
+      "meta_description": "Ansprechpartner und Formulare: F&#252;hrerscheinstelle, Verkehrswesen, Verkehrssicherung, Bauarbeiten – sowie weitere Infos und Dienstleistungen",
+      "headings": {
+        "h1": [
+          "33 Verkehrswesen, Straßen- und Wegerecht"
+        ],
+        "h2": [
+          "Aufgaben und Dienstleistungen",
+          "Landratsamt Landshut",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "33 Verkehrswesen, Straßen- und Wegerecht Für unsere Dienstleistungen können Sie Ihren Wunschtermin online vereinbaren. Über den nachfolgenden Link gelangen Sie zur Online-Terminvereinbarung.Zur Online-Terminvereinbarung Bitte nutzen Sie die gesetzliche Möglichkeit, Ihren Antrag auf Erteilung/Verlängerung der Fahrerlaubnis bereits 6 Monate vor Ablauf der Gültigkeit bzw. vor Erreichen des Mindestalters zu stellen. Da mit Bearbeitungszeiten von ca. 3 Monaten gerechnet werden muss, können wir nur so eine fristgerechte Bearbeitung Ihres Antrages ermöglichen. Grundsätzlich können Sie alle Anträge bis auf den internationalen Führerschein schriftlich stellen. Eine persönliche Vorsprache ist nicht erforderlich. Bitte achten Sie unbedingt auf eine Antragstellung mit vollständigen Unterlagen. Bitte fügen Sie den Anträgen kein Bargeld bei. Sie bekommen von uns eine Kostenrechnung zugesandt. Sollten sich irgendwelche Änderungen zu Ihrem Antrag ergeben, informieren Sie uns bitte per E-Mail an [email protected] Wir bitten Sie, von telefonischen und E-Mail-Anfragen zum Bearbeitungsstand von eingereichten Anträgen abzusehen. Ihre Anträge werden nach Eingangsdatum bearbeitet. Nur so können wir die Bearbeitungskapazitäten ausschließlich zur Bearbeitung Ihres eigentlichen Anliegens nutzen. Aufgaben und Dienstleistungen Führerscheinstelle Fahreignung Fahrlehrer, Fahrschulen Verkehrssicherung/Verkehrslenkung Gewerblicher Güter- und Personenverkehr Verkehrswesen Straßen- und Wegerecht Landratsamt Landshut AdresseLandratsamt Landshut Veldener Str. 15 84036 Landshut Kontakt Telefon: siehe Ansprechpartner Fax: 0871/408-1003 E-Mail senden Öffnungszeiten Montag - Freitag: 08.00 - 12.00 Uhr Montag: 13.30 - 15.30 Uhr Donnerstag: 13.30 - 17.00 Uhr Terminvereinbarung erforderlich!",
+      "links": [
+        {
+          "text": "Zur Online-Terminvereinbarung",
+          "url": "https://www.landkreis-landshut.de/buergerservice/online-terminbuchung/"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#8ee8efe6fcebfce2effbece0e7fdcee2efe0eae5fcebe7fda3e2efe0eafde6fbfaa0eaeb"
+        },
+        {
+          "text": "Führerscheinstelle",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa"
+        },
+        {
+          "text": "Fahreignung",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahreignung&orga=f69fe1c2785e7efe0f87c540037d2335"
+        },
+        {
+          "text": "Fahrlehrer, Fahrschulen",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahrlehrer-fahrschulen&orga=e3cfdf54820d220be2e7dc70d01c78bb"
+        },
+        {
+          "text": "Verkehrssicherung/Verkehrslenkung",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrssicherungverkehrslenkung&orga=f88549828d9b15fd6d9bbd68a7034a80"
+        },
+        {
+          "text": "Gewerblicher Güter- und Personenverkehr",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?gewerblicher-gueter-und-personenverkehr&orga=cadc59dcd5dbed86738428d496f787bf"
+        },
+        {
+          "text": "Verkehrswesen",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrswesen&orga=ab239b9f69c71e6c016bf585bbc34fd1"
+        },
+        {
+          "text": "Straßen- und Wegerecht",
+          "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?strassen-und-wegerecht&orga=f9099de99042b975dbef776acf18fd4b"
+        },
+        {
+          "text": "E-Mail senden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#d8aebdaab3bdb0aa98b4b9b6bcb3aabdb1abf5b4b9b6bcabb0adacf6bcbd"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/buergerservice/online-terminbuchung",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahreignung&orga=f69fe1c2785e7efe0f87c540037d2335",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahrlehrer-fahrschulen&orga=e3cfdf54820d220be2e7dc70d01c78bb",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrssicherungverkehrslenkung&orga=f88549828d9b15fd6d9bbd68a7034a80",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?gewerblicher-gueter-und-personenverkehr&orga=cadc59dcd5dbed86738428d496f787bf",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrswesen&orga=ab239b9f69c71e6c016bf585bbc34fd1",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?strassen-und-wegerecht&orga=f9099de99042b975dbef776acf18fd4b",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/buergerservice/online-terminbuchung",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahreignung&orga=f69fe1c2785e7efe0f87c540037d2335",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahrlehrer-fahrschulen&orga=e3cfdf54820d220be2e7dc70d01c78bb",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrssicherungverkehrslenkung&orga=f88549828d9b15fd6d9bbd68a7034a80",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?gewerblicher-gueter-und-personenverkehr&orga=cadc59dcd5dbed86738428d496f787bf",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrswesen&orga=ab239b9f69c71e6c016bf585bbc34fd1",
+        "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?strassen-und-wegerecht&orga=f9099de99042b975dbef776acf18fd4b",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen",
+      "title": "Ausländeramt / Ausländerwesen | Landkreis Landshut",
+      "meta_description": "Ansprechpartner und Formulare: Ausl&#228;nderrecht, Asylgesetz, Visum, Integration, Aufenthaltszweck, Arbeitsmigration – sowie weitere Infos und Dienstleistungen",
+      "headings": {
+        "h1": [
+          "32 Staatsangehörigkeits- und Ausländerwesen"
+        ],
+        "h2": [
+          "Aufgaben und Dienstleistungen",
+          "Ansprechpartner",
+          "Landratsamt Landshut",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Informationen und Anträge zu folgenden Themen:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "32 Staatsangehörigkeits- und Ausländerwesen Informationen und Anträge zu folgenden Themen: Verpflichtungserklärung Aufgaben und Dienstleistungen Ausländerwesen Staatsangehörigkeit, Einbürgerung Asylbewerberunterkünfte und Asylbewerberunterbringung Formulare Ausländeramt - Aufenthaltstitel Online-Anträge zum Aufenthaltstitel Auswärtiges Amt Informationen des Auswärtigen Amtes der Bundesrepublik Deutschland Ansprechpartner Spalte mit Schaltflächen zum Ein- oder Ausblenden von Personendetails Name Telefon Handy Zimmer E-Mail Personendetails ein- oder ausblenden Wawrotzki, Oliver 0871 4085100 002 14870 [email protected] Kontakt Zimmer: 002 Telefon: 0871 4085100 E-Mail versenden Anschrift Veldener Str. 15 Adresse auf Karte anzeigen 84036 Landshut Funktionen dieser Person Sachgebietsleiter: 32 Staatsangehörigkeits- und Ausländerwesen Personendetails ein- oder ausblenden Klaus, Anna-Theresa 0871 4085101 003 14623 [email protected] Kontakt Zimmer: 003 Telefon: 0871 4085101 E-Mail versenden Anschrift Veldener Str. 15 Adresse auf Karte anzeigen 84036 Landshut Funktionen dieser Person Stellvertretende Sachgebietsleiterin: 32 Staatsangehörigkeits- und Ausländerwesen Landratsamt Landshut AdresseLandratsamt Landshut Veldener Str. 15 84036 Landshut Kontakt Telefon: 0871/408-5100 Fax: 0871/408-1001 E-Mail senden Öffnungszeiten Montag - Freitag: 08.00 - 12.00 Uhr Montag: 13.30 - 15.30 Uhr Donnerstag: 13.30 - 17.00 Uhr Termine zur persönlichen Vorsprache beim Ausländeramt können vorranging per E-Mail, sonst telefonisch zu den üblichen Parteiverkehrszeiten vereinbart werden Bitte beachten: Dienstag und Mittwoch ist ab 12 Uhr keine telefonische Terminvergabe möglich!",
+      "links": [
+        {
+          "text": "Verpflichtungserklärung",
+          "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?einreise-visum-verpflichtungserklaerung&orga=67490b16bdcb604cf09ac967a54efeb9"
+        },
+        {
+          "text": "Ausländerwesen",
+          "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?auslaenderwesen&orga=67e49e85e0ee3e555042aef0fff66fb5"
+        },
+        {
+          "text": "Staatsangehörigkeit, Einbürgerung",
+          "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?staatsangehoerigkeit-einbuergerung&orga=fdd9a55f3b0e0f56a78c2820434a6971"
+        },
+        {
+          "text": "Asylbewerberunterkünfte und Asylbewerberunterbringung",
+          "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?asylbewerberunterkuenfte-und-asylbewerberunterbringung&orga=1be4b1a29c59f0f1bb28e2dc374bf0b9"
+        },
+        {
+          "text": "Ausländeramt - Aufenthaltstitel\n\n                          Online-Anträge zum Aufenthaltstitel",
+          "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/online-antraege/"
+        },
+        {
+          "text": "Auswärtiges Amt\n\n                          Informationen des Auswärtigen Amtes der Bundesrepublik Deutschland",
+          "url": "http://www.auswaertigesamt.de/"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#85cae9ecf3e0f7abd2e4f2f7eaf1ffeeecc5e9e4ebe1eef7e0ecf6a8e9e4ebe1f6edf0f1abe1e0"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#296645405f4c5b077e485e5b465d534240694548474d425b4c405a044548474d5a415c5d074d4c"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "32 Staatsangehörigkeits- und Ausländerwesen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?32-staatsangehoerigkeits-und-auslaenderwesen&orga=03e27f0bfff308374daf21ebf00f1eb3"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#87c6e9e9e6aad3efe2f5e2f4e6a9ccebe6f2f4c7ebe6e9e3ecf5e2eef4aaebe6e9e3f4eff2f3a9e3e2"
+        },
+        {
+          "text": "E-Mail versenden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#a0e1cecec18df4c8c5d2c5d3c18eebccc1d5d3e0ccc1cec4cbd2c5c9d38dccc1cec4d3c8d5d48ec4c5"
+        },
+        {
+          "text": "Adresse auf Karte anzeigen",
+          "url": "https://www.openstreetmap.org/?mlat=48.135125&mlon=11.581981#map=7/48.135125/11.581981"
+        },
+        {
+          "text": "32 Staatsangehörigkeits- und Ausländerwesen",
+          "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?32-staatsangehoerigkeits-und-auslaenderwesen&orga=03e27f0bfff308374daf21ebf00f1eb3"
+        },
+        {
+          "text": "E-Mail senden",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#365743455a575358525344575b42765a5758525d44535f451b5a575852455e4342185253"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?einreise-visum-verpflichtungserklaerung&orga=67490b16bdcb604cf09ac967a54efeb9",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?auslaenderwesen&orga=67e49e85e0ee3e555042aef0fff66fb5",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?staatsangehoerigkeit-einbuergerung&orga=fdd9a55f3b0e0f56a78c2820434a6971",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?asylbewerberunterkuenfte-und-asylbewerberunterbringung&orga=1be4b1a29c59f0f1bb28e2dc374bf0b9",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/online-antraege",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?32-staatsangehoerigkeits-und-auslaenderwesen&orga=03e27f0bfff308374daf21ebf00f1eb3",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?einreise-visum-verpflichtungserklaerung&orga=67490b16bdcb604cf09ac967a54efeb9",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?auslaenderwesen&orga=67e49e85e0ee3e555042aef0fff66fb5",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?staatsangehoerigkeit-einbuergerung&orga=fdd9a55f3b0e0f56a78c2820434a6971",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?asylbewerberunterkuenfte-und-asylbewerberunterbringung&orga=1be4b1a29c59f0f1bb28e2dc374bf0b9",
+        "https://www.landkreis-landshut.de/themen/auslaenderamt/online-antraege",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?32-staatsangehoerigkeits-und-auslaenderwesen&orga=03e27f0bfff308374daf21ebf00f1eb3",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/jobcenter": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/jobcenter",
+      "title": "Jobcenter | Landkreis Landshut",
+      "meta_description": "An das Jobcenter des Landkreises Landshut k&#246;nnen sich sowohl die B&#252;rgerinnen und B&#252;rger des Landkreises als auch der Stadt Landshut wenden.",
+      "headings": {
+        "h1": [
+          "Jobcenter Landkreis Landshut"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt"
+        ]
+      },
+      "main_content": "Jobcenter Landkreis Landshut Herzlich Willkommen Jobcenter Digital Jobcenter App Erreichbarkeiten Bürgergeld Bildung und Teilhabe Formulare und Merkblätter Sonstiges WICHTIG: Das Jobcenter Landkreis Landshut können Sie nicht per Mail erreichen. E-Mails, die an die E-Mail-Adresse [email protected] gesandt werden, können nicht bearbeitet werden.",
+      "links": [
+        {
+          "text": "Herzlich Willkommen",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/herzlich-willkommen/"
+        },
+        {
+          "text": "Jobcenter Digital",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-digital/"
+        },
+        {
+          "text": "Jobcenter App",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-app/"
+        },
+        {
+          "text": "Erreichbarkeiten",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/erreichbarkeiten/"
+        },
+        {
+          "text": "Bürgergeld",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/buergergeld/"
+        },
+        {
+          "text": "Bildung und Teilhabe",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/bildung-und-teilhabe/"
+        },
+        {
+          "text": "Formulare und Merkblätter",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/formulare-und-merkblaetter/"
+        },
+        {
+          "text": "Sonstiges",
+          "url": "https://www.landkreis-landshut.de/themen/jobcenter/sonstiges/"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/jobcenter/herzlich-willkommen",
+        "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-digital",
+        "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-app",
+        "https://www.landkreis-landshut.de/themen/jobcenter/erreichbarkeiten",
+        "https://www.landkreis-landshut.de/themen/jobcenter/buergergeld",
+        "https://www.landkreis-landshut.de/themen/jobcenter/bildung-und-teilhabe",
+        "https://www.landkreis-landshut.de/themen/jobcenter/formulare-und-merkblaetter",
+        "https://www.landkreis-landshut.de/themen/jobcenter/sonstiges",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/themen/jobcenter/herzlich-willkommen",
+        "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-digital",
+        "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-app",
+        "https://www.landkreis-landshut.de/themen/jobcenter/erreichbarkeiten",
+        "https://www.landkreis-landshut.de/themen/jobcenter/buergergeld",
+        "https://www.landkreis-landshut.de/themen/jobcenter/bildung-und-teilhabe",
+        "https://www.landkreis-landshut.de/themen/jobcenter/formulare-und-merkblaetter",
+        "https://www.landkreis-landshut.de/themen/jobcenter/sonstiges",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
     }
   },
   "queue": [
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/buergerservice/telefonliste",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/jobcenter",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
     {
       "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie",
       "depth": 1,
@@ -4386,11 +5798,621 @@
       "url": "https://www.landkreis-landshut.de/meta/datenschutz",
       "depth": 2,
       "parent": "https://www.landkreis-landshut.de/landkreis"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3754/kinderkleiderbasar-secondhand-fruehjahr2025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3755/basarliste_plakat_mit-qr-code-fruehjahr-2025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3980/linie-405_vorabbekanntmachung.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3981/linie405_fahrplan.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3982/linie405_technischer_anhang.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/3983/linie405_liniensteckbrief.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-in-der-gretlmuehle&orga=a5e8b36781dfa9928784e75b0a63e368",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-haselfurther-weihers&orga=dcd4d25c13e5fb560a3b1baeb84302ff",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?wasserqualitaet-des-waketoolz-wakepark&orga=2621f179e2332d1e2eb8457d7e77e16e",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?7-gesundheitsamt&orga=b5b262cc22cb6a6e6eec2554b7f4ead6",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/gesundheitsamt/?bayer-badegewaesserverordnung-eu-badegewaesser-hallenbaeder-freibaeder&orga=7fe2b906319759ecb56189e60e548ce6"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=alle",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=0to9",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=A",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=B",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=D",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=E",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=F",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=G",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=H",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=I",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=J",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=K",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=L",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=M",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=N",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=P",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=Q",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=R",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=S",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=T",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=V",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter?filter=W",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21800/sg25_abfallbefoerderung_-53_krwg.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?25-abfallwirtschaft-staatl-abfallrecht-bodenschutzrecht&orga=7e83f2e740fb7be8a828525142002012",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?transportgenehmigung-einsammeln-befoerdern-von-abfaellen&orga=e3ac6795971c6922ea66a077fc9948a7",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21808/sg25_gebuehren_altstoffsammelstelle_072021.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?entsorgungsanlagen-im-ueberblick&orga=68b016964bc5cd06e937b38bae6dd573",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21807/sg25_oeffnungszeiten_altstoffsammelstellen082025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallberatung&orga=48633d4be8fe3a619b817c902d053525",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21797/sg25_abfallwirtschaft_asbesthaltige_materialien_052025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?reststoffdeponie-spitzlberg&orga=12d57f853e98287b8d18c6e9fc8649c5",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?asbesthaltige-materialien-z-b-eternit&orga=c714c5b4911107496f878077a2da1bda",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21805/sg25_abfallwirtschaft_bauschutt_baustellenabfaelle_072025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bau-und-abbruchabfaelle&orga=159b6b8f4a725d251e4b18464e36252c",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21804/sg25_abfallwirtschaft_brandschutt_052025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?brandschutt&orga=47147a63b11e42b5c535a1c6cc8f15c6",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/22333/sg25_abfallwirtschaft-gebuehrensatzung_deponiebenutzungssatz.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/22198/sg25gebuehren_kompostieranlage_rol_pfifferling_042025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kompostieranlage-rottenburg-ortsteil-schlamberg&orga=6fc99433439522312c4900cba5bfeba4",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/22325/sg25_gebuehren_spitzlberg_042025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21799/sg25_2_aenderungssatzung-zur-gebuehrensatzung-zur-benutzungssatzung-bauschuttannahmestellen.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?bauschuttannahmestellen&orga=6b1605249adadece2d901073e303b393",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21802/sg25_abfallwirtschaftssatzung_012021.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallwirtschaftssatzung-gebuehrensatzung&orga=7d8f8f4441a9b35259e70dd37da75d35",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21801/sg25_hausmuell_gebuehren_022021.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?restmuelltonne-entleerung-und-gebuehren&orga=259718b695730be13d6cb05345d774fa",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?papiertonne-entleerung-und-gebuehren&orga=dcee97386465e54eb59aa57786112ea0",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?biotonne-entleerung-und-gebuehren&orga=75cb9707de900e6ba59452a51591d07a",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21806/sg25_heizen_sauber_richtig_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abfallrecht-vollzugsaufgaben&orga=61be55b559f519aefbabbb264093ea9e",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21798/sg25_abfallwirtschaft_kuenstliche_mineralfasern_kmf_052025.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?kuenstliche-mineralfasern&orga=57c49ce64ec166e4dc6e54438e1b4d0d",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21803/sg25_abfallwirtschaftssatzung.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/hostedmedia/21921/sg40_antrag_abgeschlossenheitsbesch_112019.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?abgeschlossenheitsbescheinigung-nach-dem-wohnungseigentumsgesetz&orga=588ede75bf98552de270627c28352879",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?investitionskostenfoerderung-fuer-ambulante-pflegedienste&orga=a9f6ec6e7c03dd2164865e98efe852ba",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/formulare-merkblaetter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1080/parkplaetze-lra-la-luftbild.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/landratsamt/standorte-oeffnungszeiten"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/telefonliste"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/telefonliste"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/buergerservice/telefonliste"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?Kfz-Zulassung,InformationenzurKfz-Zulassung&view=org&orgid=b498ef45-c776-4a70-98fa-ecd9c7944e04",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?zulassungsbehoerden&orga=8d8e567f9b459ad660662f387e16afbf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?kfz-zulassung-informationen-zur-kfz-zulassung&orga=94d1b201ab96edd0acf240f0507222ab",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung/?vollzug-der-stvzo-und-fzv&orga=7ebf284addd8e94e9c9a9444d9cc3e42",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?34-kraftfahrzeugzulassung&orga=5e60bbac36aa12dcb4b952cb693ce94c",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/buergerservice/online-terminbuchung",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fuehrerscheinstelle&orga=497ff8fc4534f7ecdba754a4e4cbf5aa",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahreignung&orga=f69fe1c2785e7efe0f87c540037d2335",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?fahrlehrer-fahrschulen&orga=e3cfdf54820d220be2e7dc70d01c78bb",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrssicherungverkehrslenkung&orga=f88549828d9b15fd6d9bbd68a7034a80",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?gewerblicher-gueter-und-personenverkehr&orga=cadc59dcd5dbed86738428d496f787bf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?verkehrswesen&orga=ab239b9f69c71e6c016bf585bbc34fd1",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen/?strassen-und-wegerecht&orga=f9099de99042b975dbef776acf18fd4b",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?einreise-visum-verpflichtungserklaerung&orga=67490b16bdcb604cf09ac967a54efeb9",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?auslaenderwesen&orga=67e49e85e0ee3e555042aef0fff66fb5",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?staatsangehoerigkeit-einbuergerung&orga=fdd9a55f3b0e0f56a78c2820434a6971",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen/?asylbewerberunterkuenfte-und-asylbewerberunterbringung&orga=1be4b1a29c59f0f1bb28e2dc374bf0b9",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/auslaenderamt/online-antraege",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/landratsamt/aufgaben-und-organisation/?32-staatsangehoerigkeits-und-auslaenderwesen&orga=03e27f0bfff308374daf21ebf00f1eb3",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/herzlich-willkommen",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-digital",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/jobcenter-app",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/erreichbarkeiten",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/buergergeld",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/bildung-und-teilhabe",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/formulare-und-merkblaetter",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/jobcenter/sonstiges",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
     }
   ],
-  "pageCount": 10,
+  "pageCount": 20,
   "maxDepth": 2,
   "maxPages": 50,
   "startUrl": "https://www.landkreis-landshut.de/",
-  "lastUpdated": "2025-09-09T11:39:31.356Z"
+  "lastUpdated": "2025-09-09T11:40:05.953Z"
 }
