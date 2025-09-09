@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 URL Inspector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 URL Inspector</h1>
+            <p class="subtitle">Extract and export content from web pages with flexible formatting options</p>
+        </header>
+
+        <div class="input-section">
+            <div class="url-input-group">
+                <input type="url" id="urlInput" placeholder="https://example.com" class="url-input">
+                <button id="inspectBtn" class="inspect-btn">🔍 Inspect</button>
+            </div>
+            
+            <div class="manual-input-section">
+                <details>
+                    <summary>📝 Or paste HTML content manually (if URL fetching fails)</summary>
+                    <div class="manual-input-content">
+                        <textarea id="manualHtml" placeholder="Paste HTML content here..." class="manual-textarea"></textarea>
+                        <input type="url" id="manualUrl" placeholder="Original URL (optional)" class="manual-url">
+                        <button id="parseManualBtn" class="parse-btn">📄 Parse HTML</button>
+                    </div>
+                </details>
+            </div>
+            
+            <div id="loadingIndicator" class="loading hidden">
+                <div class="spinner"></div>
+                <span>Fetching and analyzing content...</span>
+            </div>
+            <div id="errorMessage" class="error hidden"></div>
+            <div id="successMessage" class="success hidden"></div>
+        </div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <hr>
+            <h2>📋 Select Content to Export</h2>
+            
+            <!-- Basic Information -->
+            <div class="content-group">
+                <details class="expander" open>
+                    <summary>📄 Basic Information</summary>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_source_url" checked>
+                            <span>Source URL</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_title">
+                            <span>Title</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_meta_description">
+                            <span>Meta Description</span>
+                        </label>
+                    </div>
+                    <div id="basicPreviews" class="previews"></div>
+                </details>
+            </div>
+
+            <!-- Headings -->
+            <div class="content-group">
+                <details class="expander" id="headingsExpander">
+                    <summary>📝 Headings</summary>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_h1">
+                            <span id="h1Label">H1</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_h2">
+                            <span id="h2Label">H2</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="check_h3">
+                            <span id="h3Label">H3</span>
+                        </label>
+                    </div>
+                    <div id="headingPreviews" class="previews"></div>
+                </details>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content-group">
+                <details class="expander" id="contentExpander">
+                    <summary>📄 Main Content</summary>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="check_main_content" checked>
+                        <span>Main Content</span>
+                    </label>
+                    <div id="contentPreview" class="previews"></div>
+                </details>
+            </div>
+
+            <!-- Links -->
+            <div class="content-group">
+                <details class="expander" id="linksExpander">
+                    <summary>🔗 Links</summary>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="check_links">
+                        <span id="linksLabel">Links</span>
+                    </label>
+                    <div id="linksPreview" class="previews"></div>
+                </details>
+            </div>
+
+            <!-- Export Options -->
+            <hr>
+            <div class="export-section">
+                <h2>📤 Export Options</h2>
+                
+                <div class="format-selection">
+                    <h3>Choose export format:</h3>
+                    <div class="radio-group">
+                        <label class="radio-item">
+                            <input type="radio" name="export_format" value="json" checked>
+                            <span>JSON</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="export_format" value="rag_jsonl">
+                            <span>RAG JSONL</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="export_format" value="txt">
+                            <span>Plain Text</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- RAG JSONL Options -->
+                <div id="ragOptions" class="rag-options hidden">
+                    <div class="rag-controls">
+                        <div class="control-group">
+                            <label for="chunkSize">Chunk Size (words):</label>
+                            <input type="number" id="chunkSize" min="50" max="1000" value="300">
+                        </div>
+                        <div class="control-group">
+                            <label for="overlap">Overlap (words):</label>
+                            <input type="number" id="overlap" min="0" max="200" value="50">
+                        </div>
+                        <div class="control-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="includeHeadings" checked>
+                                <span>Include headings in metadata</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="downloadBtn" class="download-btn">📥 Download</button>
+                
+                <div class="export-info">
+                    <p id="exportInfo" class="export-info-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sitemap Section - THIS IS THE NEW PART -->
+        <div id="sitemapSection" class="sitemap-section hidden">
+            <hr>
+            <h2>🗺️ Site Crawling & Multi-page Selection</h2>
+            
+            <div class="crawl-controls">
+                <div class="crawl-inputs">
+                    <div class="control-group">
+                        <label for="maxDepth">Max Crawl Depth:</label>
+                        <select id="maxDepth">
+                            <option value="1">1 Level (current page only)</option>
+                            <option value="2" selected>2 Levels (current + linked pages)</option>
+                            <option value="3">3 Levels (deep crawl)</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="maxPages">Max Pages:</label>
+                        <input type="number" id="maxPages" value="20" min="1" max="100">
+                    </div>
+                    <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
+                </div>
+                
+                <div id="crawlStatus" class="crawl-status hidden">
+                    <div class="spinner"></div>
+                    <span id="crawlStatusText">Discovering and crawling linked pages...</span>
+                </div>
+            </div>
+            
+            <div id="sitemapContainer" class="sitemap-container hidden">
+                <div class="sitemap-header">
+                    <h3>📋 Select Pages for Multi-page Export</h3>
+                    <div class="sitemap-actions">
+                        <button id="selectAllBtn" class="action-btn">Select All</button>
+                        <button id="selectNoneBtn" class="action-btn">Select None</button>
+                        <span id="selectionCount" class="selection-count">0 pages selected</span>
+                    </div>
+                </div>
+                <div id="sitemapTree" class="sitemap-tree"></div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>💡 <strong>Note:</strong> This tool fetches content via CORS proxy. Some sites may block requests. For best results, use on publicly accessible, content-rich pages.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
