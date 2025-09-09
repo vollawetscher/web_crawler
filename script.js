@@ -555,15 +555,6 @@ class URLInspector {
         urlLink.target = '_blank';
         urlLink.textContent = url;
         
-        content.appendChild(title);
-        content.appendChild(urlLink);
-        
-        // Calculate total content length from sections
-        let totalContentLength = 0;
-        if (data.sections && data.sections.length > 0) {
-            totalContentLength = data.sections.reduce((sum, section) => sum + section.content_text.length, 0);
-        }
-        
         const meta = document.createElement('div');
         meta.innerHTML = `
             <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
@@ -571,6 +562,14 @@ class URLInspector {
         `;
         meta.className = 'sitemap-meta';
         
+        // Calculate total content length from sections
+        let totalContentLength = 0;
+        if (data.sections && data.sections.length > 0) {
+            totalContentLength = data.sections.reduce((sum, section) => sum + section.content_text.length, 0);
+        }
+        
+        content.appendChild(title);
+        content.appendChild(urlLink);
         content.appendChild(meta);
         
         if (data.error) {
@@ -908,6 +907,7 @@ class URLInspector {
     showError(message) {
         this.errorMessage.textContent = `❌ ${message}`;
         this.errorMessage.classList.remove('hidden');
+        this.successMessage.classList.add('hidden');
         this.loadingIndicator.classList.add('hidden');
     }
 
