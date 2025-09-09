@@ -39,40 +39,6 @@
         </div>
 
         <div id="resultsSection" class="results-section hidden">
-            <!-- AI Processing Section -->
-            <div id="aiSection" class="ai-section">
-                <hr>
-                <h2>🤖 AI Processing</h2>
-                
-                <div class="ai-controls">
-                    <div class="prompt-selection">
-                        <label for="promptSelect">Select Processing Template:</label>
-                        <select id="promptSelect" class="prompt-select">
-                            <option value="">Loading prompts...</option>
-                        </select>
-                        <button id="managePromptsBtn" class="manage-prompts-btn">✏️ Manage</button>
-                    </div>
-                    
-                    <div class="prompt-preview">
-                        <label for="promptPreview">Template Preview:</label>
-                        <textarea id="promptPreview" class="prompt-preview-text" readonly placeholder="Select a template to see its content..."></textarea>
-                    </div>
-                    
-                    <button id="processAiBtn" class="process-ai-btn">🤖 Process with AI</button>
-                </div>
-                
-                <div id="aiLoadingIndicator" class="loading hidden">
-                    <div class="spinner"></div>
-                    <span>Processing content with AI...</span>
-                </div>
-                
-                <div id="aiResults" class="ai-results hidden">
-                    <h3>AI Processing Results</h3>
-                    <div id="aiOutput" class="ai-output"></div>
-                </div>
-            </div>
-            
-            <hr>
             <h2>📋 Select Content to Export</h2>
             
             <!-- Basic Information -->
@@ -257,48 +223,6 @@
         <footer class="footer">
             <p>💡 <strong>Note:</strong> This tool fetches content via CORS proxy. Some sites may block requests. For best results, use on publicly accessible, content-rich pages.</p>
         </footer>
-    </div>
-
-    <!-- Prompt Management Modal -->
-    <div id="promptModal" class="modal hidden">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>🤖 Manage AI Processing Templates</h3>
-                <button id="closeModalBtn" class="close-modal">&times;</button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="prompt-manager">
-                    <div class="existing-prompts">
-                        <h4>Existing Templates</h4>
-                        <div id="promptList" class="prompt-list">
-                            <!-- Existing prompts will be populated here -->
-                        </div>
-                    </div>
-                    
-                    <div class="prompt-editor">
-                        <h4 id="editorTitle">Create New Template</h4>
-                        <div class="form-group">
-                            <label for="promptName">Template Name:</label>
-                            <input type="text" id="promptName" placeholder="e.g., Municipal Services">
-                        </div>
-                        <div class="form-group">
-                            <label for="promptDescription">Description:</label>
-                            <input type="text" id="promptDescription" placeholder="Brief description of what this template does">
-                        </div>
-                        <div class="form-group">
-                            <label for="promptTemplate">Template Content:</label>
-                            <textarea id="promptTemplate" rows="10" placeholder="Enter your prompt template. Use {content} as placeholder for the extracted website content."></textarea>
-                        </div>
-                        <div class="editor-actions">
-                            <button id="savePromptBtn" class="save-prompt-btn">💾 Save Template</button>
-                            <button id="updatePromptBtn" class="update-prompt-btn hidden">🔄 Update Template</button>
-                            <button id="cancelEditBtn" class="cancel-edit-btn hidden">❌ Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>

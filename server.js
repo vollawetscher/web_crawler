@@ -5,7 +5,6 @@ import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 import { URL } from 'url';
 import fs from 'fs/promises';
-import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,31 +15,11 @@ const port = process.env.PORT || 3000;
 // Create directories for data storage if they don't exist
 const DATA_DIR = path.join(__dirname, 'data');
 const CRAWL_STATES_DIR = path.join(DATA_DIR, 'crawl_states');
-const PROMPTS_FILE = path.join(DATA_DIR, 'prompts.json');
 
 async function initializeDataDirectories() {
     try {
         await fs.mkdir(DATA_DIR, { recursive: true });
         await fs.mkdir(CRAWL_STATES_DIR, { recursive: true });
-        
-        // Initialize prompts file if it doesn't exist
-        try {
-            await fs.access(PROMPTS_FILE);
-        } catch {
-            const defaultPrompts = [
-                {
-                    name: "Municipal Services",
-                    description: "Extract information about municipal services, permits, and administrative processes",
-                    template: "You are an AI assistant helping to extract information from government websites for a chatbot that serves citizens. Focus on:\n\n1. Services offered (permits, licenses, applications)\n2. Requirements and documents needed\n3. Fees and deadlines\n4. Contact information\n5. Step-by-step processes\n6. Office hours and locations\n\nExtract and structure this information clearly. Ignore navigation, boilerplate, and promotional content. Format your response as structured data that can be used by a RAG system.\n\nContent to process:\n{content}"
-                },
-                {
-                    name: "County Administration",
-                    description: "Extract information about county-level administrative services and departments",
-                    template: "You are an AI assistant extracting information from county government websites. Focus on:\n\n1. Department services and responsibilities\n2. Public records and document access\n3. Voting and election information\n4. Public safety services\n5. Social services and assistance programs\n6. Court services and legal processes\n\nStructure the information for use in a citizen-facing chatbot. Provide clear, actionable information.\n\nContent to process:\n{content}"
-                }
-            ];
-            await fs.writeFile(PROMPTS_FILE, JSON.stringify(defaultPrompts, null, 2));
-        }
     } catch (error) {
         console.error('Failed to initialize data directories:', error);
     }
@@ -204,7 +183,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         sitemap = {};
         queue = [{ url: normalizeUrl(startUrl), depth: 0, parent: null }];
         pageCount = 0;
-        jobId = crypto.randomUUID();
+        jobId = Math.random().toString(36).substr(2, 9);
     }
     
     let pagesProcessedInBatch = 0;
@@ -328,27 +307,6 @@ async function loadCrawlState(jobId) {
     }
 }
 
-// Prompt management functions
-async function loadPrompts() {
-    try {
-        const data = await fs.readFile(PROMPTS_FILE, 'utf8');
-        return JSON.parse(data);
-    } catch (error) {
-        console.error('Failed to load prompts:', error);
-        return [];
-    }
-}
-
-async function savePrompts(prompts) {
-    try {
-        await fs.writeFile(PROMPTS_FILE, JSON.stringify(prompts, null, 2));
-        return true;
-    } catch (error) {
-        console.error('Failed to save prompts:', error);
-        return false;
-    }
-}
-
 // API endpoint for single URL inspection
 app.post('/api/inspect', async (req, res) => {
     try {
@@ -419,162 +377,6 @@ app.post('/api/crawl', async (req, res) => {
     } catch (error) {
         console.error('Crawl error:', error);
         res.status(500).json({ error: `Crawling failed: ${error.message}` });
-    }
-});
-
-// API endpoints for prompt management
-app.get('/api/prompts', async (req, res) => {
-    try {
-        const prompts = await loadPrompts();
-        res.json({ success: true, prompts });
-    } catch (error) {
-        console.error('Failed to load prompts:', error);
-        res.status(500).json({ error: 'Failed to load prompts' });
-    }
-});
-
-app.post('/api/prompts', async (req, res) => {
-    try {
-        const { name, description, template } = req.body;
-        
-        if (!name || !template) {
-            return res.status(400).json({ error: 'Name and template are required' });
-        }
-        
-        const prompts = await loadPrompts();
-        
-        // Check if prompt with same name already exists
-        if (prompts.find(p => p.name === name)) {
-            return res.status(400).json({ error: 'Prompt with this name already exists' });
-        }
-        
-        prompts.push({ name, description: description || '', template });
-        
-        const success = await savePrompts(prompts);
-        if (success) {
-            res.json({ success: true, message: 'Prompt saved successfully' });
-        } else {
-            res.status(500).json({ error: 'Failed to save prompt' });
-        }
-    } catch (error) {
-        console.error('Failed to create prompt:', error);
-        res.status(500).json({ error: 'Failed to create prompt' });
-    }
-});
-
-app.put('/api/prompts/:name', async (req, res) => {
-    try {
-        const { name } = req.params;
-        const { description, template } = req.body;
-        
-        if (!template) {
-            return res.status(400).json({ error: 'Template is required' });
-        }
-        
-        const prompts = await loadPrompts();
-        const promptIndex = prompts.findIndex(p => p.name === name);
-        
-        if (promptIndex === -1) {
-            return res.status(404).json({ error: 'Prompt not found' });
-        }
-        
-        prompts[promptIndex] = { name, description: description || '', template };
-        
-        const success = await savePrompts(prompts);
-        if (success) {
-            res.json({ success: true, message: 'Prompt updated successfully' });
-        } else {
-            res.status(500).json({ error: 'Failed to update prompt' });
-        }
-    } catch (error) {
-        console.error('Failed to update prompt:', error);
-        res.status(500).json({ error: 'Failed to update prompt' });
-    }
-});
-
-app.delete('/api/prompts/:name', async (req, res) => {
-    try {
-        const { name } = req.params;
-        
-        const prompts = await loadPrompts();
-        const filteredPrompts = prompts.filter(p => p.name !== name);
-        
-        if (filteredPrompts.length === prompts.length) {
-            return res.status(404).json({ error: 'Prompt not found' });
-        }
-        
-        const success = await savePrompts(filteredPrompts);
-        if (success) {
-            res.json({ success: true, message: 'Prompt deleted successfully' });
-        } else {
-            res.status(500).json({ error: 'Failed to delete prompt' });
-        }
-    } catch (error) {
-        console.error('Failed to delete prompt:', error);
-        res.status(500).json({ error: 'Failed to delete prompt' });
-    }
-});
-
-// AI processing endpoint using OpenRouter
-app.post('/api/process-ai', async (req, res) => {
-    try {
-        const { content, prompt } = req.body;
-        
-        if (!content || !prompt) {
-            return res.status(400).json({ error: 'Content and prompt are required' });
-        }
-        
-        const openrouterApiKey = process.env.OPENROUTER_API_KEY;
-        if (!openrouterApiKey) {
-            return res.status(500).json({ error: 'OpenRouter API key not configured' });
-        }
-        
-        // Replace {content} placeholder in prompt template
-        const processedPrompt = prompt.replace('{content}', content);
-        
-        const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${openrouterApiKey}`,
-                'Content-Type': 'application/json',
-                'HTTP-Referer': 'http://localhost:3000',
-                'X-Title': 'URL Inspector'
-            },
-            body: JSON.stringify({
-                model: 'anthropic/claude-3-haiku', // Fast and cost-effective model
-                messages: [
-                    {
-                        role: 'user',
-                        content: processedPrompt
-                    }
-                ],
-                max_tokens: 2000,
-                temperature: 0.1
-            })
-        });
-        
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error('OpenRouter API error:', response.status, errorText);
-            return res.status(response.status).json({ error: 'AI processing failed' });
-        }
-        
-        const result = await response.json();
-        const aiResponse = result.choices?.[0]?.message?.content;
-        
-        if (!aiResponse) {
-            return res.status(500).json({ error: 'No response from AI' });
-        }
-        
-        res.json({
-            success: true,
-            aiResponse,
-            usage: result.usage
-        });
-        
-    } catch (error) {
-        console.error('AI processing error:', error);
-        res.status(500).json({ error: `AI processing failed: ${error.message}` });
     }
 });
 
