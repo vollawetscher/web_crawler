@@ -784,6 +784,7 @@ class URLInspector {
         }
         
         return result;
+    }
 
 
     extractHeadingsFromSections(sections, level) {
