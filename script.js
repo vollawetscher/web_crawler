@@ -260,6 +260,7 @@ class URLInspector {
             }
             
             this.currentSitemap = data.sitemap;
+            this.saveStateToStorage(); // Save current state
             this.updateCrawlInfo(data);
             this.populateSitemap();
             

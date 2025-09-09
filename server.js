@@ -921,6 +921,34 @@ app.post('/api/inspect', async (req, res) => {
     }
 });
 
+// API endpoint for loading saved inspection results
+app.get('/api/load-inspection/:inspectionId', async (req, res) => {
+    try {
+        const { inspectionId } = req.params;
+        
+        if (!inspectionId) {
+            return res.status(400).json({ error: 'Inspection ID is required' });
+        }
+        
+        const result = await loadInspectionResult(inspectionId);
+        
+        if (!result) {
+            return res.status(404).json({ error: 'Inspection not found' });
+        }
+        
+        res.json({
+            success: true,
+            ...result,
+            inspectionId,
+            restored: true
+        });
+        
+    } catch (error) {
+        console.error('Load inspection error:', error);
+        res.status(500).json({ error: `Failed to load inspection: ${error.message}` });
+    }
+});
+
 // API endpoint for crawling
 app.post('/api/crawl', async (req, res) => {
     try {
