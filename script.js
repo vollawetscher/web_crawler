@@ -291,8 +291,8 @@ class URLInspector {
         // Update headings
         this.updateHeadingsPreviews();
         
-        // Update sections (main content)
-        this.updateSectionsPreview();
+        // Update main content
+        this.updateMainContentPreview();
         
         // Update links
         this.updateLinksPreview();
@@ -318,17 +318,23 @@ class URLInspector {
     }
 
     updateHeadingsPreviews() {
-        // Extract headings from sections
         const sections = this.extractedData.sections || [];
+        
+        // Extract unique headings from sections and group by level
         const headings = { h1: [], h2: [], h3: [] };
+        const seenHeadings = new Set();
         
         sections.forEach(section => {
-            if (section.heading_level === 'h1' && !headings.h1.includes(section.heading)) {
-                headings.h1.push(section.heading);
-            } else if (section.heading_level === 'h2' && !headings.h2.includes(section.heading)) {
-                headings.h2.push(section.heading);
-            } else if (section.heading_level === 'h3' && !headings.h3.includes(section.heading)) {
-                headings.h3.push(section.heading);
+            const key = `${section.heading_level}-${section.heading}`;
+            if (!seenHeadings.has(key)) {
+                seenHeadings.add(key);
+                if (section.heading_level === 'h1') {
+                    headings.h1.push(section.heading);
+                } else if (section.heading_level === 'h2') {
+                    headings.h2.push(section.heading);
+                } else if (section.heading_level === 'h3') {
+                    headings.h3.push(section.heading);
+                }
             }
         });
         
@@ -364,7 +370,7 @@ class URLInspector {
         });
     }
 
-    updateSectionsPreview() {
+    updateMainContentPreview() {
         const sections = this.extractedData.sections || [];
         const expander = document.getElementById('contentExpander');
         
@@ -374,6 +380,9 @@ class URLInspector {
         }
         
         expander.style.display = 'block';
+        
+        // Enable main content checkbox if there are sections
+        document.getElementById('check_main_content').checked = sections.length > 0;
         
         const container = document.getElementById('contentPreview');
         container.innerHTML = '';
@@ -600,13 +609,13 @@ class URLInspector {
         const format = document.querySelector('input[name="export_format"]:checked').value;
         const selectedPages = this.getSelectedPages();
         const totalPages = selectedPages.length;
-        const totalSections = selectedPages.reduce((sum, page) => sum + (page.data.sections?.length || 0), 0);
+        const totalSections = selectedPages.reduce((sum, page) => sum + (page.data.sections?.length || 1), 0);
         
         let info = '';
         if (totalPages > 0) {
             info = `Ready to export ${totalSections} sections from ${totalPages} page(s) in ${format.toUpperCase()} format`;
         } else if (this.extractedData) {
-            const currentSections = this.extractedData.sections?.length || 0;
+            const currentSections = this.extractedData.sections?.length || 1;
             info = `Ready to export ${currentSections} sections from current page in ${format.toUpperCase()} format`;
         } else {
             info = 'No content available for export';
@@ -744,7 +753,7 @@ class URLInspector {
             result.meta_description = data.meta_description;
         }
         
-        // Include sections if main content is checked
+        // Include sections if main content is checked  
         if (document.getElementById('check_main_content')?.checked && data.sections) {
             result.sections = data.sections;
         }
