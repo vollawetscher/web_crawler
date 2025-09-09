@@ -201,6 +201,8 @@ class URLInspector {
             const data = await response.json();
             
             if (data.error) {
+                this.showCrawlStatus(false);
+                this.crawlBtn.disabled = false;
                 this.showError(`Crawling failed: ${data.error}`);
                 return;
             }
@@ -215,11 +217,13 @@ class URLInspector {
             }
             
         } catch (error) {
-            this.showError(`Crawling failed: ${error.message}`);
-        } finally {
             this.showCrawlStatus(false);
             this.crawlBtn.disabled = false;
+            this.showError(`Crawling failed: ${error.message}`);
         }
+        
+        this.showCrawlStatus(false);
+        this.crawlBtn.disabled = false;
     }
 
     async resumeCrawl() {
@@ -230,6 +234,9 @@ class URLInspector {
 
         const pagesPerBatch = parseInt(this.pagesPerBatchInput.value);
 
+        // Clear the previous sitemap display
+        this.clearSitemapDisplay();
+        
         this.showCrawlStatus(true);
         this.resumeCrawlBtn.disabled = true;
         
@@ -246,6 +253,8 @@ class URLInspector {
             const data = await response.json();
             
             if (data.error) {
+                this.showCrawlStatus(false);
+                this.resumeCrawlBtn.disabled = false;
                 this.showError(`Resume failed: ${data.error}`);
                 return;
             }
@@ -259,11 +268,13 @@ class URLInspector {
             }
             
         } catch (error) {
-            this.showError(`Resume failed: ${error.message}`);
-        } finally {
             this.showCrawlStatus(false);
             this.resumeCrawlBtn.disabled = false;
+            this.showError(`Resume failed: ${error.message}`);
         }
+        
+        this.showCrawlStatus(false);
+        this.resumeCrawlBtn.disabled = false;
     }
 
     populateResults() {
@@ -457,6 +468,18 @@ class URLInspector {
 
     hideResumeOption() {
         this.resumeCrawlBtn.classList.add('hidden');
+    }
+
+    clearSitemapDisplay() {
+        this.sitemapTree.innerHTML = '';
+        this.sitemapContainer.classList.add('hidden');
+        this.selectionCount.textContent = '0 pages selected';
+        
+        // Clear crawl summary
+        const summary = document.getElementById('crawlSummary');
+        if (summary) {
+            summary.innerHTML = '';
+        }
     }
 
     populateSitemap() {
@@ -850,6 +873,8 @@ class URLInspector {
     showLoading() {
         this.hideMessages();
         this.loadingIndicator.classList.remove('hidden');
+        // Ensure crawl status is hidden when showing main loading
+        this.showCrawlStatus(false);
         this.inspectBtn.disabled = true;
         this.parseManualBtn.disabled = true;
     }
