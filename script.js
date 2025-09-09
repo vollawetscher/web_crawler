@@ -401,7 +401,7 @@ class URLInspector {
             container.appendChild(moreDiv);
         }
     }
-
+    
     updateLinksPreview() {
         const links = this.extractedData.links || [];
         const expander = document.getElementById('linksExpander');
