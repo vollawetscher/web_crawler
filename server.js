@@ -16,11 +16,13 @@ const port = process.env.PORT || 3000;
 // Create directories for data storage if they don't exist
 const DATA_DIR = path.join(__dirname, 'data');
 const CRAWL_STATES_DIR = path.join(DATA_DIR, 'crawl_states');
+const INSPECTIONS_DIR = path.join(DATA_DIR, 'inspections');
 
 async function initializeDataDirectories() {
     try {
         await fs.mkdir(DATA_DIR, { recursive: true });
         await fs.mkdir(CRAWL_STATES_DIR, { recursive: true });
+        await fs.mkdir(INSPECTIONS_DIR, { recursive: true });
     } catch (error) {
         console.error('Failed to initialize data directories:', error);
     }
