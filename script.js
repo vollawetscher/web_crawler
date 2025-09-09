@@ -69,6 +69,13 @@ class URLInspector {
                 this.closePromptModal();
             }
         });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closePromptModal();
+            }
+        });
     }
     
     async loadPrompts() {
@@ -180,7 +187,15 @@ class URLInspector {
     
     closePromptModal() {
         const modal = document.getElementById('promptModal');
-        modal.classList.add('hidden');
+        if (modal) {
+            modal.classList.add('hidden');
+            // Clear any selections and reset editor
+            this.clearPromptEditor();
+            // Remove any selected prompt item highlights
+            document.querySelectorAll('.prompt-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+        }
     }
     
     populatePromptList() {
