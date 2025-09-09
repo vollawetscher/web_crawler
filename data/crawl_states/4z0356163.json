@@ -1,0 +1,27 @@
+{
+  "jobId": "4z0356163",
+  "visited": [
+    "https://www.landkreis-landshut.de"
+  ],
+  "sitemap": {
+    "https://www.landkreis-landshut.de": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/",
+      "title": "",
+      "meta_description": "",
+      "sections": [],
+      "links": [],
+      "internal_links": [],
+      "depth": 0,
+      "parent": null,
+      "children": []
+    }
+  },
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 20,
+  "startUrl": "https://www.landkreis-landshut.de/",
+  "lastUpdated": "2025-09-09T12:16:18.840Z",
+  "completed": true
+}
