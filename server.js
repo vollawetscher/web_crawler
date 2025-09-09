@@ -210,6 +210,15 @@ function parseDocument(html, url, lastModified = null) {
         $('*:contains("rechte Seitenleiste der Seite anspringen")').remove();
         $('*:contains("Seitenanfang")').remove();
         
+        // Remove cookie and copyright sections by heading text
+        $('h2:contains("Cookie-Einstellungen"), h3:contains("Cookie-Einstellungen")').parent().remove();
+        $('h2:contains("Copyrightinformationen"), h3:contains("Copyrightinformationen")').parent().remove();
+        $('h2:contains("Cookie"), h3:contains("Cookie")').parent().remove();
+        
+        // Remove common German boilerplate headings
+        $('*:contains("Wir verwenden Cookies")').remove();
+        $('*:contains("Diese Website verwendet Cookies")').remove();
+        
         console.log(`[DEBUG] HTML after boilerplate removal: ${$.html().length} characters`);
         
         // Extract basic metadata
@@ -285,6 +294,16 @@ function parseDocument(html, url, lastModified = null) {
                 
                 if (!headingText) return;
                 
+                // Skip obvious boilerplate sections by heading text
+                const boilerplateHeadings = [
+                    'cookie-einstellungen', 'cookie', 'copyrightinformationen', 
+                    'copyright', 'datenschutz', 'impressum', 'meist gesucht'
+                ];
+                if (boilerplateHeadings.some(bp => headingText.toLowerCase().includes(bp))) {
+                    console.log(`[DEBUG] Skipping boilerplate section: "${headingText}"`);
+                    return;
+                }
+                
                 // Find all content until the next heading of same or higher level
                 let $content = $();
                 let $current = $heading.next();
@@ -299,7 +318,7 @@ function parseDocument(html, url, lastModified = null) {
                     }
                     
                     // Include paragraphs, lists, divs, and address elements with text content
-                    if (['p', 'ul', 'ol', 'li', 'div', 'address'].includes(tagName)) {
+                    if (['p', 'ul', 'ol', 'li', 'div', 'address', 'article', 'section'].includes(tagName)) {
                         $content = $content.add($current);
                     }
                     
@@ -323,7 +342,9 @@ function parseDocument(html, url, lastModified = null) {
                 
                 console.log(`[DEBUG] Section "${headingText}" content length: ${sectionText.length} characters`);
                 
-                if (sectionText && sectionText !== headingText) {
+                // Only include sections with meaningful content (more than just the heading)
+                const contentWithoutHeading = sectionText.replace(headingText, '').trim();
+                if (contentWithoutHeading && contentWithoutHeading.length > 50) {
                     // Extract links from this section
                     const sectionLinks = [];
                     $content.find('a[href]').each((_, linkEl) => {
