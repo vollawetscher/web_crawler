@@ -183,9 +183,14 @@ function parseDocument(html, url, lastModified = null) {
         
         // Remove boilerplate elements before processing
         const boilerplateSelectors = [
-            'script', 'style', 'nav', 'header', 'footer',
-            '.cookie-settings', '.cookie-modal', '#cookie-consent',
-            '.skip-links', '.skiplink'
+            'script', 'style', 'nav', 'header', 'footer', 'aside',
+            '.navigation', '.nav', '.menu', '.cookie', '.banner',
+            '.newsletter', '.impressum', '.datenschutz',
+            // Enhanced selectors based on landkreis-erding.de analysis
+            '.breadcrumb', '.breadcrumbs',
+            '.cookie-settings', '.cookie-modal', '#cookie', '#cookie-consent', '#cookie-settings',
+            '.skip-links', '.skiplink', 'a[href="#top"]',
+            'a[href*="/meta/impressum/"]', 'a[href*="/meta/datenschutzerklaerung/"]'
         ];
         
         boilerplateSelectors.forEach(selector => {
