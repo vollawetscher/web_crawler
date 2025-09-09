@@ -181,49 +181,23 @@ function parseDocument(html, url, lastModified = null) {
         
         const $ = cheerio.load(html);
         
+        // Extract basic metadata FIRST, before any content removal
+        const title = $('title').text().trim() || '';
+        const metaDescription = $('meta[name="description"]').attr('content') || '';
+        
         // Remove boilerplate elements before processing
         const boilerplateSelectors = [
-            'script', 'style', 'nav', 'header', 'footer', 'aside',
-            '.navigation', '.nav', '.menu', '.cookie', '.banner',
-            '.newsletter', '.impressum', '.datenschutz',
-            // Enhanced selectors based on landkreis-erding.de analysis
-            '.breadcrumb', '.breadcrumbs',
-            '.cookie-settings', '.cookie-modal', '#cookie', '#cookie-consent', '#cookie-settings',
-            '.skip-links', '.skiplink', 'a[href="#top"]',
-            'a[href*="/meta/impressum/"]', 'a[href*="/meta/datenschutzerklaerung/"]'
+            // Only remove the most obvious non-content elements
+            'script', 'style', 'noscript',
+            '.cookie-banner', '.cookie-modal', '#cookie-consent',
+            '.skip-links', '.skiplink'
         ];
         
         boilerplateSelectors.forEach(selector => {
             $(selector).remove();
         });
         
-        // Remove specific German municipal site boilerplate
-        $('*:contains("Ihre Suche")').remove();
-        $('*:contains("Navigation schließen")').remove();
-        $('*:contains("Navigation schliessen")').remove();
-        $('*:contains("nach oben")').remove();
-        $('*:contains("Zum Inhalt springen")').remove();
-        
-        // Enhanced text-based boilerplate removal based on analysis
-        $('*:contains("Hauptnavigation der Seite anspringen")').remove();
-        $('*:contains("Inhaltsbereich der Seite anspringen")').remove();
-        $('*:contains("rechte Seitenleiste der Seite anspringen")').remove();
-        $('*:contains("Seitenanfang")').remove();
-        
-        // Remove cookie and copyright sections by heading text
-        $('h2:contains("Cookie-Einstellungen"), h3:contains("Cookie-Einstellungen")').parent().remove();
-        $('h2:contains("Copyrightinformationen"), h3:contains("Copyrightinformationen")').parent().remove();
-        $('h2:contains("Cookie"), h3:contains("Cookie")').parent().remove();
-        
-        // Remove common German boilerplate headings
-        $('*:contains("Wir verwenden Cookies")').remove();
-        $('*:contains("Diese Website verwendet Cookies")').remove();
-        
         console.log(`[DEBUG] HTML after boilerplate removal: ${$.html().length} characters`);
-        
-        // Extract basic metadata
-        const title = $('title').text().trim() || '';
-        const metaDescription = $('meta[name="description"]').attr('content') || '';
         
         // Extract breadcrumbs
         const breadcrumbs = extractBreadcrumbs($, url);
