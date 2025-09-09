@@ -619,7 +619,7 @@ function parseDocument(html, url, lastModified = null) {
             sections,
             links: uniqueLinks,
             internal_links: internalLinks
-        ];
+        };
         
     } catch (error) {
         return { error: `Parsing failed: ${error.message}` };
