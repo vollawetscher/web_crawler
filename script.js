@@ -58,7 +58,7 @@ class URLInspector {
         this.updateSelectionCount();
 
         try {
-            crawlStatusText.textContent = `Crawling up to ${maxPages} pages at depth ${maxDepth}...`;
+            crawlStatusText.textContent = `🔍 Crawl initiated for up to ${maxPages} pages at depth ${maxDepth}. This may take a few moments depending on site size and server response times...`;
 
             const response = await fetch('/api/crawl', {
                 method: 'POST',
@@ -100,7 +100,38 @@ class URLInspector {
 
     renderSitemap(sitemap, stats) {
         const sitemapTree = document.getElementById('sitemapTree');
+        const crawlSummary = document.getElementById('crawlSummary');
         sitemapTree.innerHTML = '';
+        
+        // Display crawl statistics
+        const successfulPages = Object.values(sitemap).filter(page => !page.error).length;
+        const failedPages = Object.values(sitemap).filter(page => page.error).length;
+        const avgDepth = Math.round(Object.values(sitemap).reduce((sum, page) => sum + page.depth, 0) / Object.keys(sitemap).length * 10) / 10;
+        
+        crawlSummary.innerHTML = `
+            <div class="crawl-stats">
+                <div class="stat-item">
+                    <span class="stat-value">${stats.totalPages}</span>
+                    <span class="stat-label">Total Pages Found</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${successfulPages}</span>
+                    <span class="stat-label">Successfully Crawled</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${failedPages}</span>
+                    <span class="stat-label">Failed to Load</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${stats.maxDepth}</span>
+                    <span class="stat-label">Max Depth Reached</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${avgDepth}</span>
+                    <span class="stat-label">Average Depth</span>
+                </div>
+            </div>
+        `;
 
         // Sort URLs by depth and then alphabetically
         const sortedUrls = Object.keys(sitemap).sort((a, b) => {
@@ -116,8 +147,7 @@ class URLInspector {
         });
 
         // Show crawl statistics
-        const statsText = `Found ${stats.totalPages} pages (depth: ${stats.maxDepth})`;
-        console.log(statsText);
+        console.log(`Crawl completed: Found ${stats.totalPages} pages (${successfulPages} successful, ${failedPages} failed)`);
     }
 
     createSitemapNode(url, data) {
