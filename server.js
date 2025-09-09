@@ -176,13 +176,21 @@ function extractBreadcrumbs($, url) {
 // Parse document with Cheerio and create sections (server-side)
 function parseDocument(html, url, lastModified = null) {
     try {
+        console.log(`[DEBUG] Starting parseDocument for: ${url}`);
+        console.log(`[DEBUG] Original HTML length: ${html.length} characters`);
+        
         const $ = cheerio.load(html);
         
         // Remove boilerplate elements before processing
         const boilerplateSelectors = [
             'script', 'style', 'nav', 'header', 'footer', 'aside',
             '.navigation', '.nav', '.menu', '.cookie', '.banner',
-            '.newsletter', '.impressum', '.datenschutz'
+            '.newsletter', '.impressum', '.datenschutz',
+            // Enhanced selectors based on landkreis-erding.de analysis
+            '.breadcrumb', '.breadcrumbs',
+            '.cookie-settings', '.cookie-modal', '#cookie', '#cookie-consent', '#cookie-settings',
+            '.skip-links', '.skiplink', 'a[href="#top"]',
+            'a[href*="/meta/impressum/"]', 'a[href*="/meta/datenschutzerklaerung/"]'
         ];
         
         boilerplateSelectors.forEach(selector => {
@@ -196,6 +204,14 @@ function parseDocument(html, url, lastModified = null) {
         $('*:contains("nach oben")').remove();
         $('*:contains("Zum Inhalt springen")').remove();
         
+        // Enhanced text-based boilerplate removal based on analysis
+        $('*:contains("Hauptnavigation der Seite anspringen")').remove();
+        $('*:contains("Inhaltsbereich der Seite anspringen")').remove();
+        $('*:contains("rechte Seitenleiste der Seite anspringen")').remove();
+        $('*:contains("Seitenanfang")').remove();
+        
+        console.log(`[DEBUG] HTML after boilerplate removal: ${$.html().length} characters`);
+        
         // Extract basic metadata
         const title = $('title').text().trim() || '';
         const metaDescription = $('meta[name="description"]').attr('content') || '';
@@ -205,16 +221,22 @@ function parseDocument(html, url, lastModified = null) {
         
         // Find all headings (h2, h3) that will define sections
         const headingElements = $('h2, h3').get();
+        console.log(`[DEBUG] Found ${headingElements.length} heading elements (h2, h3)`);
+        
         const sections = [];
         
         if (headingElements.length === 0) {
+            console.log(`[DEBUG] No headings found, creating single section from main content`);
+            
             // No headings found, treat entire content as one section
             const mainElement = $('main, article, .content, #content').first();
             let contentText = '';
             
             if (mainElement.length) {
+                console.log(`[DEBUG] Using main element: ${mainElement.get(0).tagName}`);
                 contentText = mainElement.text();
             } else {
+                console.log(`[DEBUG] Using body element for content`);
                 contentText = $('body').text();
             }
             
@@ -223,6 +245,8 @@ function parseDocument(html, url, lastModified = null) {
                 .replace(/\s+/g, ' ')
                 .replace(/\n\s*\n/g, '\n\n')
                 .trim();
+            
+            console.log(`[DEBUG] Single section content length: ${contentText.length} characters`);
             
             if (contentText) {
                 const section = {
@@ -250,10 +274,14 @@ function parseDocument(html, url, lastModified = null) {
             }
         } else {
             // Process sections defined by headings
+            console.log(`[DEBUG] Processing ${headingElements.length} sections based on headings`);
+            
             headingElements.forEach((headingEl, index) => {
                 const $heading = $(headingEl);
                 const headingText = $heading.text().trim();
                 const headingLevel = headingEl.tagName.toLowerCase();
+                
+                console.log(`[DEBUG] Processing section ${index + 1}: "${headingText}" (${headingLevel})`);
                 
                 if (!headingText) return;
                 
@@ -270,8 +298,8 @@ function parseDocument(html, url, lastModified = null) {
                         break;
                     }
                     
-                    // Include paragraphs, lists, and divs with text content
-                    if (['p', 'ul', 'ol', 'li', 'div'].includes(tagName)) {
+                    // Include paragraphs, lists, divs, and address elements with text content
+                    if (['p', 'ul', 'ol', 'li', 'div', 'address'].includes(tagName)) {
                         $content = $content.add($current);
                     }
                     
@@ -292,6 +320,8 @@ function parseDocument(html, url, lastModified = null) {
                     .replace(/\s+/g, ' ')
                     .replace(/\n\s*\n/g, '\n\n')
                     .trim();
+                
+                console.log(`[DEBUG] Section "${headingText}" content length: ${sectionText.length} characters`);
                 
                 if (sectionText && sectionText !== headingText) {
                     // Extract links from this section
@@ -337,32 +367,47 @@ function parseDocument(html, url, lastModified = null) {
             });
         }
         
-        // Clean up whitespace
-        mainContent = mainContent
-            .map((_, el) => {
-                const $el = $(el);
-                const href = $el.attr('href');
-                const text = $el.text().trim();
-                
-                if (!href || !text) return null;
-                
-                try {
-                    const absoluteUrl = new URL(href, url).href;
-                    return { text, url: absoluteUrl };
-                } catch {
-                    return null;
+        console.log(`[DEBUG] Final sections count: ${sections.length}`);
+        sections.forEach((section, index) => {
+            console.log(`[DEBUG] Section ${index + 1}: "${section.heading}" (${section.content_text.length} chars, type: ${section.content_type})`);
+        });
+        
+        // Extract links
+        const links = [];
+        $('a[href]').each((_, linkEl) => {
+            const $link = $(linkEl);
+            const href = $link.attr('href');
+            const text = $link.text().trim();
+            
+            if (!href || !text) return;
+            
+            try {
+                const absoluteUrl = new URL(href, url).href;
+                if (absoluteUrl.startsWith('http')) {
+                    links.push({ text, url: absoluteUrl });
                 }
-            })
-            .get()
-            .filter(Boolean)
-            .filter(link => link.url.startsWith('http'))
-            .slice(0, 200); // Limit to 200 links
+            } catch {
+                // Skip invalid URLs
+            }
+        });
+        
+        // Limit to 200 links and remove duplicates
+        const uniqueLinks = [];
+        const seenUrls = new Set();
+        for (const link of links.slice(0, 200)) {
+            if (!seenUrls.has(link.url)) {
+                seenUrls.add(link.url);
+                uniqueLinks.push(link);
+            }
+        }
         
         // Extract internal links for crawling
-        const internalLinks = links
+        const internalLinks = uniqueLinks
             .filter(link => isInternalUrl(link.url, url))
             .map(link => normalizeUrl(link.url))
             .filter((linkUrl, index, array) => array.indexOf(linkUrl) === index); // Remove duplicates
+        
+        console.log(`[DEBUG] Extracted ${uniqueLinks.length} total links, ${internalLinks.length} internal links`);
         
         return {
             success: true,
@@ -370,7 +415,7 @@ function parseDocument(html, url, lastModified = null) {
             title,
             meta_description: metaDescription,
             sections,
-            links,
+            links: uniqueLinks,
             internal_links: internalLinks
         };
         
