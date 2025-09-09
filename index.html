@@ -111,6 +111,49 @@
             </div>
 
             <!-- Export Options -->
+            <!-- Sitemap Section - THIS IS NOW REPOSITIONED ABOVE EXPORT -->
+            <div id="sitemapSection" class="sitemap-section hidden">
+                <hr>
+                <h2>🗺️ Site Crawling & Multi-page Selection</h2>
+                
+                <div class="crawl-controls">
+                    <div class="crawl-inputs">
+                        <div class="control-group">
+                            <label for="maxDepth">Max Crawl Depth:</label>
+                            <select id="maxDepth">
+                                <option value="1">1 Level (current page only)</option>
+                                <option value="2" selected>2 Levels (current + linked pages)</option>
+                                <option value="3">3 Levels (deep crawl)</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <label for="maxPages">Max Pages:</label>
+                            <input type="number" id="maxPages" value="20" min="1" max="100">
+                        </div>
+                        <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
+                    </div>
+                    
+                    <div id="crawlStatus" class="crawl-status hidden">
+                        <div class="spinner"></div>
+                        <span id="crawlStatusText">Discovering and crawling linked pages...</span>
+                    </div>
+                </div>
+                
+                <div id="sitemapContainer" class="sitemap-container hidden">
+                    <div class="sitemap-header">
+                        <h3>📋 Select Pages for Multi-page Export</h3>
+                        <div class="sitemap-actions">
+                            <button id="selectAllBtn" class="action-btn">Select All</button>
+                            <button id="selectNoneBtn" class="action-btn">Select None</button>
+                            <span id="selectionCount" class="selection-count">0 pages selected</span>
+                        </div>
+                    </div>
+                    <div id="crawlSummary" class="crawl-summary"></div>
+                    <div id="sitemapTree" class="sitemap-tree"></div>
+                </div>
+            </div>
+
+            <!-- Export Options -->
             <hr>
             <div class="export-section">
                 <h2>📤 Export Options</h2>
@@ -161,48 +204,6 @@
             </div>
         </div>
 
-        <!-- Sitemap Section - THIS IS THE NEW PART -->
-        <div id="sitemapSection" class="sitemap-section hidden">
-            <hr>
-            <h2>🗺️ Site Crawling & Multi-page Selection</h2>
-            
-            <div class="crawl-controls">
-                <div class="crawl-inputs">
-                    <div class="control-group">
-                        <label for="maxDepth">Max Crawl Depth:</label>
-                        <select id="maxDepth">
-                            <option value="1">1 Level (current page only)</option>
-                            <option value="2" selected>2 Levels (current + linked pages)</option>
-                            <option value="3">3 Levels (deep crawl)</option>
-                        </select>
-                    </div>
-                    <div class="control-group">
-                        <label for="maxPages">Max Pages:</label>
-                        <input type="number" id="maxPages" value="20" min="1" max="100">
-                    </div>
-                    <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
-                </div>
-                
-                <div id="crawlStatus" class="crawl-status hidden">
-                    <div class="spinner"></div>
-                    <span id="crawlStatusText">Discovering and crawling linked pages...</span>
-                </div>
-            </div>
-            
-            <div id="sitemapContainer" class="sitemap-container hidden">
-                <div class="sitemap-header">
-                    <h3>📋 Select Pages for Multi-page Export</h3>
-                    <div class="sitemap-actions">
-                        <button id="selectAllBtn" class="action-btn">Select All</button>
-                        <button id="selectNoneBtn" class="action-btn">Select None</button>
-                        <span id="selectionCount" class="selection-count">0 pages selected</span>
-                    </div>
-                </div>
-                <div id="crawlSummary" class="crawl-summary"></div>
-                <div id="sitemapTree" class="sitemap-tree"></div>
-            </div>
-        </div>
-        
         <footer class="footer">
             <p>💡 <strong>Note:</strong> This tool fetches content via CORS proxy. Some sites may block requests. For best results, use on publicly accessible, content-rich pages.</p>
         </footer>

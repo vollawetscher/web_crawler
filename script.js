@@ -540,6 +540,17 @@ class URLInspector {
     }
 
     downloadData() {
+        // Check if we should do multi-page export or single-page export
+        if (this.selectedPages.size > 0) {
+            // Multi-page export
+            this.downloadMultiPageData();
+        } else if (this.extractedData) {
+            // Single-page export
+            this.downloadSinglePageData();
+        }
+    }
+
+    downloadSinglePageData() {
         if (!this.extractedData) return;
 
         const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
@@ -563,6 +574,35 @@ class URLInspector {
             case 'txt':
                 exportData = this.createTextExport(selectedFields);
                 filename = `content_${Date.now()}.txt`;
+                mimeType = 'text/plain';
+                break;
+        }
+
+        this.downloadFile(exportData, filename, mimeType);
+    }
+
+    downloadMultiPageData() {
+        if (this.selectedPages.size === 0) return;
+
+        const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
+        let exportData, filename, mimeType;
+
+        switch (selectedFormat) {
+            case 'json':
+                exportData = this.createMultiPageJSONExport();
+                filename = `multi_page_content_${Date.now()}.json`;
+                mimeType = 'application/json';
+                break;
+
+            case 'rag_jsonl':
+                exportData = this.createMultiPageRAGJSONLExport();
+                filename = `multi_page_rag_${Date.now()}.jsonl`;
+                mimeType = 'application/jsonl';
+                break;
+
+            case 'txt':
+                exportData = this.createMultiPageTextExport();
+                filename = `multi_page_content_${Date.now()}.txt`;
                 mimeType = 'text/plain';
                 break;
         }
