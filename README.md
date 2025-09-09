@@ -170,4 +170,85 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 
 ---
 
-💡 **Pro Tip**: For optimal results, use on publicly accessible, content-rich pages with good semantic HTML structure. The tool excels at extracting organized content from government sites, documentation, blogs, and news articles.
+## 🚨 Current Development Status
+
+### ✅ **Working Components**
+- **URL Fetching**: Successfully retrieves web pages (197k+ characters)
+- **Basic Parsing**: HTML parsing and boilerplate removal works
+- **Crawling System**: Multi-level website crawling with job management
+- **Export Formats**: JSON, RAG JSONL, and Plain Text export functionality
+- **Frontend Interface**: Complete UI with multi-page selection
+- **Server Architecture**: Express.js backend with proper error handling
+
+### 🔧 **Critical Bug Identified - Content Extraction Failure**
+
+**Issue**: The `parseDocument` function in `server.js` has a fundamental flaw in section extraction that causes ~95% content loss.
+
+**Symptoms**:
+- HTML fetched: 197,718 characters ✅
+- After boilerplate removal: 189,563 characters ✅  
+- Final extracted content: ~10k characters ❌ (should be 50k+)
+- Only extracts footer/sidebar content, misses main page content
+
+**Root Cause** (Lines ~200-350 in `server.js`):
+1. **Flawed DOM Traversal**: Uses `.next()` siblings only - misses nested content structures
+2. **Rigid Element Filtering**: Only accepts specific HTML tags (`['p', 'ul', 'ol', 'li', 'div', 'address', 'article', 'section']`)
+3. **Wrong Structural Assumptions**: Expects flat, predictable layouts that don't exist in real websites
+4. **No Robust Fallback**: When heading-based extraction fails, very little content is recovered
+
+**Current Extraction Results** (example):
+```
+✅ "Footer" (460 chars)
+✅ "Wichtige Links" (166 chars)
+✅ "Öffnungszeiten" (171 chars)  
+✅ "Kontakt" (114 chars)
+❌ Main page content (MISSING - should be 10k+ chars)
+```
+
+### 🎯 **Solution Strategy**
+
+**Priority 1**: Rewrite `parseDocument` function to:
+1. **Find main content areas first** using multiple strategies:
+   - `<main>`, `<article>`, `.content`, `#content` selectors
+   - Largest text-containing element detection
+   - Heuristic-based content area identification
+
+2. **Extract ALL text content** regardless of DOM structure:
+   - Get full text from identified content areas
+   - Preserve paragraph breaks and structure
+   - Don't filter by specific HTML tags
+
+3. **Then organize by headings** (optional):
+   - Find headings within extracted content
+   - Create sections if headings exist
+   - Fall back to single section if no clear structure
+
+4. **Robust fallback strategy**:
+   - If all else fails, extract all `<body>` text minus obvious boilerplate
+   - Better to have messy content than no content
+
+**Files Requiring Changes**:
+- `server.js` (lines ~200-350): Complete `parseDocument` rewrite
+- `script.js`: Already updated to handle section-based data structure
+
+### 📋 **Development Checklist**
+
+- [ ] **Fix content extraction algorithm** in `server.js`
+- [ ] **Test extraction** on multiple website types (government, news, docs)
+- [ ] **Verify RAG JSONL export** produces meaningful chunks
+- [ ] **Test multi-page crawling** with fixed extraction
+- [ ] **Performance optimization** for large content volumes
+
+### 🧪 **Test Cases for Verification**
+
+After fixing the extraction algorithm, test with:
+1. **Government sites**: `https://www.landkreis-landshut.de/` (current failing case)
+2. **News articles**: Content-rich pages with clear structure
+3. **Documentation**: Technical docs with nested content
+4. **Complex layouts**: Sites with sidebars, navigation, mixed content
+
+Expected results: 50k+ characters extracted from typical government pages instead of current ~10k.
+
+---
+
+💡 **Pro Tip**: For optimal results, use on publicly accessible, content-rich pages with good semantic HTML structure. The tool excels at extracting organized content from government sites, documentation, blogs, and news articles.</parameter>
