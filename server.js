@@ -185,53 +185,136 @@ function parseDocument(html, url, lastModified = null) {
         const title = $('title').text().trim() || '';
         const metaDescription = $('meta[name="description"]').attr('content') || '';
         
-        // Remove boilerplate elements before processing
-        const boilerplateSelectors = [
-            // Only remove the most obvious non-content elements
-            'script', 'style', 'noscript',
-            '.cookie-banner', '.cookie-modal', '#cookie-consent',
-            '.skip-links', '.skiplink'
-        ];
+        // Remove scripts and styles but preserve structure for better content extraction
+        $('script, style, noscript').remove();
         
-        boilerplateSelectors.forEach(selector => {
-            $(selector).remove();
-        });
+        console.log(`[DEBUG] HTML after script/style removal: ${$.html().length} characters`);
         
-        console.log(`[DEBUG] HTML after boilerplate removal: ${$.html().length} characters`);
+        // STRATEGY 1: Find main content container using multiple approaches
+        let $mainContent = null;
+        let contentStrategy = 'none';
         
-        // Extract breadcrumbs
+        // Try semantic HTML5 elements first
+        const semanticSelectors = ['main', 'article', '[role="main"]'];
+        for (const selector of semanticSelectors) {
+            const $candidate = $(selector).first();
+            if ($candidate.length && $candidate.text().trim().length > 200) {
+                $mainContent = $candidate;
+                contentStrategy = `semantic-${selector}`;
+                break;
+            }
+        }
+        
+        // Try common content class/id selectors
+        if (!$mainContent) {
+            const contentSelectors = [
+                '.content', '#content', '.main-content', '#main-content',
+                '.page-content', '#page-content', '.entry-content', '.post-content',
+                '.article-content', '.body-content', '.container .content'
+            ];
+            
+            for (const selector of contentSelectors) {
+                const $candidate = $(selector).first();
+                if ($candidate.length && $candidate.text().trim().length > 200) {
+                    $mainContent = $candidate;
+                    contentStrategy = `class-${selector}`;
+                    break;
+                }
+            }
+        }
+        
+        // Try to find the largest content-rich element
+        if (!$mainContent) {
+            let largestElement = null;
+            let largestSize = 0;
+            
+            $('div, section, article').each((_, el) => {
+                const $el = $(el);
+                const text = $el.text().trim();
+                
+                // Skip elements that are likely navigation, footer, etc.
+                const classList = ($el.attr('class') || '').toLowerCase();
+                const id = ($el.attr('id') || '').toLowerCase();
+                
+                if (classList.includes('nav') || classList.includes('menu') || 
+                    classList.includes('footer') || classList.includes('header') ||
+                    classList.includes('sidebar') || classList.includes('cookie') ||
+                    id.includes('nav') || id.includes('menu') || 
+                    id.includes('footer') || id.includes('header')) {
+                    return; // Skip this element
+                }
+                
+                if (text.length > largestSize && text.length > 500) {
+                    largestSize = text.length;
+                    largestElement = el;
+                }
+            });
+            
+            if (largestElement) {
+                $mainContent = $(largestElement);
+                contentStrategy = `largest-element`;
+            }
+        }
+        
+        // Final fallback: use body but remove obvious boilerplate
+        if (!$mainContent) {
+            $mainContent = $('body').clone();
+            // Remove common boilerplate elements from the clone
+            $mainContent.find([
+                'nav', 'header', 'footer', 'aside',
+                '.navigation', '.nav', '.menu', '.header', '.footer', '.sidebar',
+                '.cookie-banner', '.cookie-modal', '#cookie-consent',
+                '.skip-links', '.skiplink'
+            ].join(', ')).remove();
+            contentStrategy = 'body-fallback';
+        }
+        
+        console.log(`[DEBUG] Content strategy used: ${contentStrategy}`);
+        console.log(`[DEBUG] Main content container text length: ${$mainContent.text().length} characters`);
+        
+        // Extract breadcrumbs from the full page (before content extraction)
         const breadcrumbs = extractBreadcrumbs($, url);
         
-        // Find all headings (h2, h3) that will define sections
-        const headingElements = $('h2, h3').get();
-        console.log(`[DEBUG] Found ${headingElements.length} heading elements (h2, h3)`);
-        
+        // STRATEGY 2: Extract ALL meaningful content from the main container
         const sections = [];
         
+        // Get all headings within the main content to use for organization
+        const headingElements = $mainContent.find('h1, h2, h3, h4, h5, h6').get();
+        console.log(`[DEBUG] Found ${headingElements.length} headings in main content`);
+        
         if (headingElements.length === 0) {
-            console.log(`[DEBUG] No headings found, creating single section from main content`);
+            console.log(`[DEBUG] No headings found, creating single comprehensive section`);
             
-            // No headings found, treat entire content as one section
-            const mainElement = $('main, article, .content, #content').first();
+            // No headings - create one comprehensive section with all content
             let contentText = '';
             
-            if (mainElement.length) {
-                console.log(`[DEBUG] Using main element: ${mainElement.get(0).tagName}`);
-                contentText = mainElement.text();
-            } else {
-                console.log(`[DEBUG] Using body element for content`);
-                contentText = $('body').text();
-            }
+            // Extract text preserving paragraph structure
+            $mainContent.find('p, h1, h2, h3, h4, h5, h6, li, blockquote, address, div').each((_, el) => {
+                const $el = $(el);
+                const text = $el.clone().children().remove().end().text().trim();
+                
+                if (text && text.length > 10) {
+                    // Add heading markers for any headings we find
+                    const tagName = el.tagName?.toLowerCase();
+                    if (tagName?.match(/^h[1-6]$/)) {
+                        contentText += `\n\n### ${text}\n\n`;
+                    } else {
+                        contentText += `${text}\n\n`;
+                    }
+                }
+            });
             
-            // Clean up whitespace
-            contentText = contentText
-                .replace(/\s+/g, ' ')
-                .replace(/\n\s*\n/g, '\n\n')
-                .trim();
+            // If that didn't work well, fall back to getting all text
+            if (contentText.trim().length < 500) {
+                contentText = $mainContent.text()
+                    .replace(/\s+/g, ' ')
+                    .replace(/\n\s*\n/g, '\n\n')
+                    .trim();
+            }
             
             console.log(`[DEBUG] Single section content length: ${contentText.length} characters`);
             
-            if (contentText) {
+            if (contentText && contentText.length > 50) {
                 const section = {
                     section_id: generateSectionId(url, 'main', 0),
                     section_order: 0,
@@ -246,7 +329,7 @@ function parseDocument(html, url, lastModified = null) {
                     last_modified: lastModified,
                     hash: computeContentHash(contentText),
                     extracted_contacts: extractContacts(contentText),
-                    extracted_addresses: [], // Placeholder for future implementation
+                    extracted_addresses: [], 
                     extracted_links: [],
                     extracted_dates: extractDates(contentText),
                     extracted_opening_hours: extractOpeningHours(contentText),
@@ -256,110 +339,234 @@ function parseDocument(html, url, lastModified = null) {
                 sections.push(section);
             }
         } else {
-            // Process sections defined by headings
-            console.log(`[DEBUG] Processing ${headingElements.length} sections based on headings`);
+            console.log(`[DEBUG] Processing sections based on ${headingElements.length} headings`);
             
-            headingElements.forEach((headingEl, index) => {
+            // Process sections based on headings, but extract ALL content between them
+            for (let i = 0; i < headingElements.length; i++) {
+                const headingEl = headingElements[i];
                 const $heading = $(headingEl);
                 const headingText = $heading.text().trim();
                 const headingLevel = headingEl.tagName.toLowerCase();
                 
-                console.log(`[DEBUG] Processing section ${index + 1}: "${headingText}" (${headingLevel})`);
+                console.log(`[DEBUG] Processing section ${i + 1}: "${headingText}" (${headingLevel})`);
                 
-                if (!headingText) return;
+                if (!headingText) continue;
                 
-                // Skip obvious boilerplate sections by heading text
+                // Skip obvious boilerplate headings
                 const boilerplateHeadings = [
                     'cookie-einstellungen', 'cookie', 'copyrightinformationen', 
-                    'copyright', 'datenschutz', 'impressum', 'meist gesucht'
+                    'copyright', 'datenschutz', 'impressum'
                 ];
                 if (boilerplateHeadings.some(bp => headingText.toLowerCase().includes(bp))) {
-                    console.log(`[DEBUG] Skipping boilerplate section: "${headingText}"`);
-                    return;
+                    console.log(`[DEBUG] Skipping boilerplate heading: "${headingText}"`);
+                    continue;
                 }
                 
-                // Find all content until the next heading of same or higher level
-                let $content = $();
-                let $current = $heading.next();
+                // Build section content by finding all content until next heading of same/higher level
+                let sectionContent = headingText + '\n\n';
+                let $current = $heading;
+                const nextHeadingIndex = i + 1;
+                const $nextHeading = nextHeadingIndex < headingElements.length ? 
+                    $(headingElements[nextHeadingIndex]) : null;
                 
-                while ($current.length > 0) {
-                    const tagName = $current.get(0).tagName.toLowerCase();
+                // Get all content between this heading and the next one
+                let contentElements = [];
+                
+                if ($nextHeading && $nextHeading.length) {
+                    // Find all elements between current heading and next heading
+                    const headingOffset = $heading.offset();
+                    const nextHeadingOffset = $nextHeading.offset();
                     
-                    // Stop if we hit another heading of same or higher level
-                    if ((tagName === 'h2') || 
-                        (tagName === 'h3' && headingLevel === 'h3')) {
-                        break;
-                    }
-                    
-                    // Include paragraphs, lists, divs, and address elements with text content
-                    if (['p', 'ul', 'ol', 'li', 'div', 'address', 'article', 'section'].includes(tagName)) {
-                        $content = $content.add($current);
-                    }
-                    
-                    $current = $current.next();
-                }
-                
-                // Extract text content from this section
-                let sectionText = headingText + '\n\n';
-                $content.each((_, el) => {
-                    const text = $(el).text().trim();
-                    if (text) {
-                        sectionText += text + '\n\n';
-                    }
-                });
-                
-                // Clean up whitespace
-                sectionText = sectionText
-                    .replace(/\s+/g, ' ')
-                    .replace(/\n\s*\n/g, '\n\n')
-                    .trim();
-                
-                console.log(`[DEBUG] Section "${headingText}" content length: ${sectionText.length} characters`);
-                
-                // Only include sections with meaningful content (more than just the heading)
-                const contentWithoutHeading = sectionText.replace(headingText, '').trim();
-                if (contentWithoutHeading && contentWithoutHeading.length > 50) {
-                    // Extract links from this section
-                    const sectionLinks = [];
-                    $content.find('a[href]').each((_, linkEl) => {
-                        const $link = $(linkEl);
-                        const linkText = $link.text().trim();
-                        const href = $link.attr('href');
+                    $mainContent.find('*').each((_, el) => {
+                        const $el = $(el);
+                        const elOffset = $el.offset();
                         
-                        if (linkText && href) {
-                            try {
-                                const absoluteUrl = new URL(href, url).href;
-                                sectionLinks.push({ text: linkText, url: absoluteUrl });
-                            } catch (e) {
-                                // Skip invalid URLs
+                        // Simple heuristic: if element comes after current heading but before next
+                        if (elOffset && headingOffset && nextHeadingOffset &&
+                            elOffset.top > headingOffset.top && 
+                            elOffset.top < nextHeadingOffset.top) {
+                            
+                            // Only include text-containing elements
+                            const text = $el.text().trim();
+                            if (text && text.length > 10) {
+                                contentElements.push(el);
                             }
                         }
                     });
+                } else {
+                    // Last heading - get everything after it
+                    const headingOffset = $heading.offset();
+                    
+                    $mainContent.find('*').each((_, el) => {
+                        const $el = $(el);
+                        const elOffset = $el.offset();
+                        
+                        if (elOffset && headingOffset && elOffset.top > headingOffset.top) {
+                            const text = $el.text().trim();
+                            if (text && text.length > 10) {
+                                contentElements.push(el);
+                            }
+                        }
+                    });
+                }
+                
+                // If offset-based approach didn't work, fall back to DOM traversal
+                if (contentElements.length === 0) {
+                    let $current = $heading.next();
+                    while ($current.length > 0) {
+                        // Stop if we hit another heading of same or higher level
+                        const tagName = $current.get(0).tagName.toLowerCase();
+                        if (tagName.match(/^h[1-6]$/) && tagName <= headingLevel) {
+                            break;
+                        }
+                        
+                        const text = $current.text().trim();
+                        if (text && text.length > 10) {
+                            contentElements.push($current.get(0));
+                        }
+                        
+                        $current = $current.next();
+                    }
+                }
+                
+                // Extract text from content elements
+                contentElements.forEach(el => {
+                    const text = $(el).text().trim();
+                    if (text && text !== headingText) {
+                        sectionContent += text + '\n\n';
+                    }
+                });
+                
+                // Clean up the content
+                sectionContent = sectionContent
+                    .replace(/\n{3,}/g, '\n\n')
+                    .replace(/\s+/g, ' ')
+                    .replace(/ \n/g, '\n')
+                    .trim();
+                
+                console.log(`[DEBUG] Section "${headingText}" content length: ${sectionContent.length} characters`);
+                
+                // Include section if it has meaningful content beyond just the heading
+                const contentWithoutHeading = sectionContent.replace(headingText, '').trim();
+                if (contentWithoutHeading.length > 30) {
+                    
+                    // Extract links from this section content
+                    const sectionLinks = [];
+                    contentElements.forEach(el => {
+                        $(el).find('a[href]').each((_, linkEl) => {
+                            const $link = $(linkEl);
+                            const linkText = $link.text().trim();
+                            const href = $link.attr('href');
+                            
+                            if (linkText && href) {
+                                try {
+                                    const absoluteUrl = new URL(href, url).href;
+                                    sectionLinks.push({ text: linkText, url: absoluteUrl });
+                                } catch (e) {
+                                    // Skip invalid URLs
+                                }
+                            }
+                        });
+                    });
                     
                     const section = {
-                        section_id: generateSectionId(url, headingText, index),
-                        section_order: index,
+                        section_id: generateSectionId(url, headingText, i),
+                        section_order: i,
                         heading: headingText,
                         heading_level: headingLevel,
-                        content_text: sectionText,
+                        content_text: sectionContent,
                         page_url: url,
                         page_title: title,
                         breadcrumbs: breadcrumbs,
-                        content_type: inferContentType(headingText, sectionText),
-                        volatility: inferVolatility(headingText, sectionText),
+                        content_type: inferContentType(headingText, sectionContent),
+                        volatility: inferVolatility(headingText, sectionContent),
                         last_modified: lastModified,
-                        hash: computeContentHash(sectionText),
-                        extracted_contacts: extractContacts(sectionText),
-                        extracted_addresses: [], // Placeholder for future implementation
+                        hash: computeContentHash(sectionContent),
+                        extracted_contacts: extractContacts(sectionContent),
+                        extracted_addresses: [], 
                         extracted_links: sectionLinks,
-                        extracted_dates: extractDates(sectionText),
-                        extracted_opening_hours: extractOpeningHours(sectionText),
+                        extracted_dates: extractDates(sectionContent),
+                        extracted_opening_hours: extractOpeningHours(sectionContent),
                         last_seen: new Date().toISOString(),
                         prev_hash: null
                     };
                     sections.push(section);
+                } else {
+                    console.log(`[DEBUG] Skipping section "${headingText}" - insufficient content (${contentWithoutHeading.length} chars)`);
+                }
+            }
+        }
+        
+        // STRATEGY 3: If we still don't have much content, do a comprehensive fallback
+        const totalContentLength = sections.reduce((sum, section) => sum + section.content_text.length, 0);
+        console.log(`[DEBUG] Total extracted content length: ${totalContentLength} characters`);
+        
+        if (totalContentLength < 1000) {
+            console.log(`[DEBUG] Content extraction seems insufficient, applying comprehensive fallback`);
+            
+            // Clear existing sections and do a comprehensive text extraction
+            sections.length = 0;
+            
+            // Remove obvious navigation and boilerplate from a body clone
+            const $bodyClone = $('body').clone();
+            $bodyClone.find([
+                'nav', 'header', 'footer', 'aside', 'script', 'style',
+                '.navigation', '.nav', '.menu', '.header', '.footer', '.sidebar',
+                '.cookie-banner', '.cookie-modal', '#cookie-consent',
+                '[role="navigation"]', '[class*="nav"]', '[id*="nav"]',
+                '[class*="menu"]', '[id*="menu"]'
+            ].join(', ')).remove();
+            
+            let comprehensiveContent = '';
+            
+            // Extract all meaningful text blocks
+            $bodyClone.find('p, h1, h2, h3, h4, h5, h6, li, div, section, article, blockquote, address').each((_, el) => {
+                const $el = $(el);
+                const text = $el.clone().children().remove().end().text().trim();
+                
+                if (text && text.length > 15) {
+                    const tagName = el.tagName?.toLowerCase();
+                    if (tagName?.match(/^h[1-6]$/)) {
+                        comprehensiveContent += `\n\n### ${text}\n\n`;
+                    } else {
+                        comprehensiveContent += `${text}\n\n`;
+                    }
                 }
             });
+            
+            // Final cleanup
+            comprehensiveContent = comprehensiveContent
+                .replace(/\n{3,}/g, '\n\n')
+                .replace(/\s+/g, ' ')
+                .replace(/ \n/g, '\n')
+                .trim();
+            
+            console.log(`[DEBUG] Comprehensive fallback content length: ${comprehensiveContent.length} characters`);
+            
+            if (comprehensiveContent.length > 100) {
+                const section = {
+                    section_id: generateSectionId(url, 'comprehensive', 0),
+                    section_order: 0,
+                    heading: title || 'Page Content',
+                    heading_level: 'page',
+                    content_text: comprehensiveContent,
+                    page_url: url,
+                    page_title: title,
+                    breadcrumbs: breadcrumbs,
+                    content_type: 'general',
+                    volatility: 'medium',
+                    last_modified: lastModified,
+                    hash: computeContentHash(comprehensiveContent),
+                    extracted_contacts: extractContacts(comprehensiveContent),
+                    extracted_addresses: [], 
+                    extracted_links: [],
+                    extracted_dates: extractDates(comprehensiveContent),
+                    extracted_opening_hours: extractOpeningHours(comprehensiveContent),
+                    last_seen: new Date().toISOString(),
+                    prev_hash: null
+                };
+                sections.push(section);
+            }
         }
         
         console.log(`[DEBUG] Final sections count: ${sections.length}`);
@@ -367,7 +574,7 @@ function parseDocument(html, url, lastModified = null) {
             console.log(`[DEBUG] Section ${index + 1}: "${section.heading}" (${section.content_text.length} chars, type: ${section.content_type})`);
         });
         
-        // Extract links
+        // Extract all links from the original page (not just main content)
         const links = [];
         $('a[href]').each((_, linkEl) => {
             const $link = $(linkEl);
@@ -386,7 +593,7 @@ function parseDocument(html, url, lastModified = null) {
             }
         });
         
-        // Limit to 200 links and remove duplicates
+        // Remove duplicate links and limit to 200
         const uniqueLinks = [];
         const seenUrls = new Set();
         for (const link of links.slice(0, 200)) {
@@ -412,7 +619,7 @@ function parseDocument(html, url, lastModified = null) {
             sections,
             links: uniqueLinks,
             internal_links: internalLinks
-        };
+        ];
         
     } catch (error) {
         return { error: `Parsing failed: ${error.message}` };
