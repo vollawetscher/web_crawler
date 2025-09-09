@@ -2,162 +2,172 @@
 
 ## Project Description
 
-The URL Inspector & Web Crawler is a powerful web-based tool designed to extract, analyze, and export content from web pages and entire websites. It enables users to inspect single URLs, parse manual HTML input, and systematically crawl websites to gather both structured and unstructured data. The extracted information can be exported in multiple formats including JSON, RAG-ready JSONL for AI systems, and plain text, making it ideal for content analysis, data collection, knowledge base creation, and populating Retrieval-Augmented Generation (RAG) systems.
+The URL Inspector & Web Crawler is a comprehensive web-based tool designed to extract, analyze, and export content from web pages and entire websites. It provides intelligent content parsing, systematic website crawling capabilities, and flexible export options optimized for various use cases including AI/RAG systems, content analysis, and data collection.
 
-## Features
+## ✨ Key Features
 
-### 🔍 **URL Inspection**
-- **Single Page Analysis**: Fetch and parse content from any given URL
-- **Comprehensive Data Extraction**:
-  - Page Title and Meta Description
-  - Hierarchical Headings (H1, H2, H3)
-  - Main Content with intelligent extraction
-  - Internal and External Links
-  - Structured Data Detection
+### 🔍 **Smart URL Inspection**
+- **Single Page Analysis**: Fetch and parse content from any publicly accessible URL
+- **Intelligent Content Extraction**:
+  - Page titles and meta descriptions
+  - Hierarchical heading structure (H1, H2, H3) with section organization  
+  - Main content with advanced section-based parsing
+  - Internal and external link discovery
+  - Contact information and date extraction
+- **Fallback HTML Parser**: Manual HTML input when direct URL access fails
 
-### 📝 **Manual HTML Parsing**
-- **Local Processing**: Parse raw HTML content directly without URL fetching
-- **Debug-Friendly**: Useful when direct URL access fails or for offline analysis
-- **Same Data Extraction**: Applies the same intelligent parsing to manual input
+### 🕷️ **Systematic Website Crawling**
+- **Multi-level Discovery**: Crawl websites up to 3 levels deep
+- **Batch Processing**: Process large sites in manageable chunks with resume capability
+- **Respectful Crawling**: Built-in delays and rate limiting to avoid server overload
+- **Job Management**: Pause, resume, and track crawling progress with unique job IDs
+- **Visual Sitemap**: Interactive tree view of discovered pages with metadata
 
-### ✅ **Granular Content Selection**
-- **Flexible Export Control**: Choose exactly which content types to include
-- **Preview System**: View extracted content before export
-- **Batch Processing**: Select multiple pages for combined exports
+### ✅ **Granular Content Control**
+- **Flexible Selection**: Choose exactly which content types to export
+- **Live Previews**: Review extracted content before export
+- **Multi-page Exports**: Combine content from multiple crawled pages
+- **Quality Filtering**: Automatically skip pages with extraction errors
 
-### 📤 **Multiple Export Formats**
-- **JSON**: Structured export for programmatic use
-- **RAG JSONL**: Optimized for AI/ML systems with configurable:
-  - Chunk size and overlap for content splitting
-  - Metadata inclusion (headings, source URLs)
-  - Stable chunk IDs for consistent processing
-- **Plain Text**: Clean text export for simple analysis
+### 📤 **Advanced Export Formats**
 
-### 🕷️ **Website Crawling**
-- **Intelligent Discovery**: Automatically find and follow internal links
-- **Configurable Depth**: Set maximum crawl depth (1-3 levels)
-- **Batch Processing**: Process sites in controlled batches to manage resources
-- **Resume Capability**: Pause and resume crawls using job IDs
-- **Respectful Crawling**: Built-in delays to avoid overwhelming servers
+#### **JSON Export**
+- Structured data format for programmatic use
+- Preserves all extracted metadata and relationships
+- Perfect for data analysis and integration
 
-### 🗺️ **Multi-page Management**
-- **Visual Sitemap**: Tree-view of discovered pages with metadata
-- **Selective Export**: Choose specific pages from crawl results
-- **Batch Operations**: Select all, select none, or individual page selection
-- **Error Handling**: Clear indication of failed page crawls
+#### **RAG JSONL Export** ⭐
+- **AI-Optimized**: Purpose-built for Retrieval-Augmented Generation systems
+- **Intelligent Chunking**: Configurable chunk size and overlap for optimal context windows
+- **Rich Metadata**: Includes source URLs, content types, headings, and volatility indicators
+- **Stable IDs**: Consistent chunk identification for version tracking
+- **Content Classification**: Automatic categorization (announcements, facility info, FAQs, etc.)
+
+#### **Plain Text Export**
+- Clean, readable text format
+- Organized by sections and headings
+- Ideal for simple analysis and review
+
+### 🧠 **Content Intelligence**
+- **Section-Based Parsing**: Organizes content into logical sections with headings
+- **Content Type Classification**: Automatically identifies announcements, facility information, FAQs, and general content
+- **Volatility Assessment**: Classifies content stability (high/medium/low volatility)
+- **Contact & Date Extraction**: Identifies email addresses, phone numbers, and dates
+- **Boilerplate Filtering**: Removes navigation, footers, and other non-content elements
 
 ### 🎨 **User Experience**
-- **Responsive Design**: Works seamlessly across desktop and mobile devices
-- **Real-time Feedback**: Progress indicators and status updates
-- **Error Recovery**: Graceful handling of network issues and parsing errors
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Real-time Progress**: Live status updates during crawling operations  
+- **Error Handling**: Graceful recovery from network issues and parsing failures
 - **Intuitive Interface**: Clean, organized layout with collapsible sections
 
-## How to Run Locally
-
-To run this application on your local machine:
+## 🚀 How to Run Locally
 
 ### Prerequisites
-- Node.js (version 14 or higher)
-- npm (comes with Node.js)
+- **Node.js** (version 14 or higher)
+- **npm** (comes with Node.js)
 
-### Installation & Setup
+### Quick Start
 
-1. **Clone or download** the project files to a local directory
-
-2. **Install dependencies**:
+1. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Start the development server**:
+2. **Start the development server**:
    ```bash
    npm run dev
    ```
+   
+   Or alternatively:
+   ```bash
+   npm start
+   ```
 
-4. **Access the application**:
+3. **Access the application**:
    - Open your web browser
    - Navigate to `http://localhost:3000`
-   - The URL Inspector interface should load
+   - The URL Inspector interface will load and be ready to use
 
-### Alternative Start Command
-```bash
-npm start
-```
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 ### **Backend**
 - **Node.js**: JavaScript runtime for server-side processing
-- **Express.js**: Web framework for API endpoints and static file serving
-- **node-fetch**: HTTP client for fetching web pages
+- **Express.js**: Web framework for RESTful API endpoints
+- **node-fetch**: HTTP client for web page retrieval
 - **cheerio**: Server-side HTML parsing and DOM manipulation
+- **File-based Storage**: JSON persistence for crawl state management
 
 ### **Frontend**
-- **HTML5**: Modern markup with semantic elements
-- **CSS3**: Responsive styling with flexbox and grid layouts
-- **JavaScript (ES6+)**: Modern JavaScript with async/await, modules, and DOM manipulation
+- **HTML5**: Semantic markup with modern web standards
+- **CSS3**: Responsive design with flexbox and grid layouts
+- **Vanilla JavaScript**: Modern ES6+ with async/await and DOM APIs
 
 ### **Architecture**
 - **RESTful API**: Clean separation between frontend and backend
-- **File-based Storage**: JSON files for crawl state persistence
 - **Modular Design**: Organized code structure for maintainability
+- **Stateful Crawling**: Persistent job management with resume capability
 
-## Usage Guide
+## 📖 Usage Guide
 
 ### **Basic URL Inspection**
-1. **Enter URL**: Paste the target URL in the main input field
-2. **Click Inspect**: The system will fetch and analyze the page content
-3. **Review Results**: Extracted content appears in organized, expandable sections
-4. **Select Content**: Use checkboxes to choose which elements to export
-5. **Choose Format**: Select JSON, RAG JSONL, or Plain Text
-6. **Download**: Generate and save your extracted data
-
-### **Manual HTML Processing**
-1. **Expand Manual Section**: Click "Or paste HTML content manually"
-2. **Paste Content**: Add your HTML code to the textarea
-3. **Optional URL**: Provide the original URL for context
-4. **Parse**: Click "Parse HTML" to process the content
-5. **Export**: Follow the same selection and export process
+1. Enter the target URL in the main input field
+2. Click **"🔍 Inspect"** to analyze the page
+3. Review the extracted content in organized sections
+4. Select desired content types using checkboxes
+5. Choose your preferred export format
+6. Click **"📥 Download"** to save your data
 
 ### **Website Crawling**
-1. **Configure Crawl**: Set maximum depth (1-3 levels) and page limits
-2. **Start Crawling**: Click "Discover & Crawl Links"
-3. **Monitor Progress**: Watch the real-time status updates
-4. **Batch Processing**: Crawls process in configurable batches
-5. **Resume if Needed**: Use the generated Job ID to continue interrupted crawls
-
-### **Multi-page Export**
-1. **Review Sitemap**: Examine the discovered pages in the tree view
-2. **Select Pages**: Choose specific pages or use "Select All/None"
-3. **Export Combined**: Download multiple pages as a single file
-4. **Format Options**: All export formats support multi-page content
+1. Configure crawl settings:
+   - **Max Depth**: How many link levels to follow (1-3)
+   - **Max Pages**: Total page limit for the crawl
+   - **Pages per Batch**: Processing batch size
+2. Click **"🕷️ Discover & Crawl Links"** to start
+3. Monitor real-time progress and statistics
+4. Use **Job ID** to resume interrupted crawls
+5. Select specific pages from the sitemap for export
 
 ### **RAG JSONL Configuration**
-1. **Select Format**: Choose "RAG JSONL" as export format
-2. **Adjust Settings**:
-   - **Chunk Size**: Words per chunk (50-1000)
-   - **Overlap**: Words to overlap between chunks (0-200)
-   - **Metadata**: Include headings in chunk metadata
-3. **Export**: Generate AI-ready data with stable IDs
+1. Select **"RAG JSONL"** as your export format
+2. Configure chunking parameters:
+   - **Chunk Size**: Words per chunk (recommended: 200-500)
+   - **Overlap**: Words to overlap between chunks (recommended: 25-100)
+   - **Include Headings**: Add heading structure to metadata
+3. Export creates AI-ready chunks with stable IDs and rich metadata
 
-## Use Cases
+### **Manual HTML Processing**
+1. Expand **"📝 Or paste HTML content manually"**
+2. Paste your HTML content into the textarea
+3. Optionally provide the original URL for context
+4. Click **"📄 Parse HTML"** to process locally
 
-- **Content Analysis**: Analyze website structure and content quality
-- **Data Collection**: Gather information from multiple related pages
-- **Knowledge Base Creation**: Build structured datasets for AI training
-- **RAG System Population**: Create chunked, metadata-rich content for retrieval systems
-- **SEO Analysis**: Extract and analyze page titles, descriptions, and headings
-- **Competitive Research**: Study competitor website structure and content
-- **Academic Research**: Collect data from institutional or government websites
+## 🎯 Use Cases
 
-## Technical Notes
+- **🤖 AI/RAG System Training**: Create chunked, metadata-rich datasets for AI training
+- **📊 Content Analysis**: Analyze website structure, content quality, and organization
+- **🔍 Competitive Research**: Study competitor websites and content strategies  
+- **📚 Knowledge Base Creation**: Build structured information repositories
+- **🎓 Academic Research**: Collect data from institutional and government websites
+- **⚡ SEO Analysis**: Extract and analyze page titles, descriptions, and heading structures
+- **📈 Content Auditing**: Review and catalog existing website content
 
-- **CORS Handling**: The application handles cross-origin requests appropriately
+## 🔧 Technical Notes
+
+- **CORS Handling**: Proper cross-origin request management
 - **Rate Limiting**: Built-in delays prevent server overload during crawling
-- **Error Recovery**: Robust error handling for network issues and parsing failures
-- **Memory Management**: Efficient processing of large websites through batch operations
-- **Data Persistence**: Crawl states are saved for resumable operations
+- **Error Recovery**: Robust handling of network issues and parsing failures
+- **Memory Management**: Efficient processing through batch operations
+- **Content Intelligence**: Advanced parsing with section-based organization
+- **Boilerplate Filtering**: Smart removal of navigation and non-content elements
+
+## ⚠️ Limitations & Best Practices
+
+- **JavaScript-Heavy Sites**: Limited extraction from heavily client-side rendered pages
+- **Access Restrictions**: Some sites may block automated requests
+- **Content Quality**: Best results with well-structured, semantic HTML
+- **Respectful Usage**: Built-in delays help maintain good server relationships
 
 ---
 
-💡 **Tip**: For best results, use the tool on publicly accessible, content-rich pages. Some sites with heavy JavaScript requirements or strict CORS policies may have limited content extraction capabilities.
+💡 **Pro Tip**: For optimal results, use on publicly accessible, content-rich pages with good semantic HTML structure. The tool excels at extracting organized content from government sites, documentation, blogs, and news articles.
