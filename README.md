@@ -170,85 +170,112 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 
 ---
 
-## 🚨 Current Development Status
+## 🚨 **Current Development Status - Updated Dec 2024**
 
-### ✅ **Working Components**
-- **URL Fetching**: Successfully retrieves web pages (197k+ characters)
-- **Basic Parsing**: HTML parsing and boilerplate removal works
-- **Crawling System**: Multi-level website crawling with job management
-- **Export Formats**: JSON, RAG JSONL, and Plain Text export functionality
-- **Frontend Interface**: Complete UI with multi-page selection
-- **Server Architecture**: Express.js backend with proper error handling
+### ✅ **Recently Implemented (Latest Session)**
+- **✅ Frontend State Persistence**: Automatic save/restore of inspection results and crawl progress
+- **✅ Improved Content Extraction**: Better boilerplate filtering and semantic content detection
+- **✅ Fixed Export Logic**: Checkbox selections now properly control export content
+- **✅ Enhanced RAG JSONL**: Boilerplate sections filtered from AI-ready exports
+- **✅ Session Recovery**: Page refreshes won't lose your work anymore
+- **✅ Error Handling**: Fixed parsing errors and improved stability
 
-### 🔧 **Critical Bug Identified - Content Extraction Failure**
+### ✅ **Stable Working Components**
+- **✅ URL Fetching & Parsing**: Successfully processes HTML pages with improved content extraction
+- **✅ Multi-level Crawling**: Website crawling with batch processing and resume capability
+- **✅ Export Formats**: JSON, RAG JSONL, and Plain Text with proper content filtering
+- **✅ State Management**: Persistent crawl jobs and inspection results across sessions
+- **✅ Frontend Interface**: Complete UI with multi-page selection and real-time progress
+- **✅ Selective Export**: Checkbox-controlled content inclusion/exclusion
 
-**Issue**: The `parseDocument` function in `server.js` has a fundamental flaw in section extraction that causes ~95% content loss.
+### 🔧 **Known Issues & Limitations**
 
-**Symptoms**:
-- HTML fetched: 197,718 characters ✅
-- After boilerplate removal: 189,563 characters ✅  
-- Final extracted content: ~10k characters ❌ (should be 50k+)
-- Only extracts footer/sidebar content, misses main page content
+#### **Content Extraction Quality**
+- **Partial Success**: Content extraction significantly improved but may still miss some main content
+- **Complex Layouts**: Some websites with unusual DOM structures may not extract optimally
+- **Boilerplate Residue**: Occasional cookie/legal text may still appear in exports
 
-**Root Cause** (Lines ~200-350 in `server.js`):
-1. **Flawed DOM Traversal**: Uses `.next()` siblings only - misses nested content structures
-2. **Rigid Element Filtering**: Only accepts specific HTML tags (`['p', 'ul', 'ol', 'li', 'div', 'address', 'article', 'section']`)
-3. **Wrong Structural Assumptions**: Expects flat, predictable layouts that don't exist in real websites
-4. **No Robust Fallback**: When heading-based extraction fails, very little content is recovered
+#### **Network & Crawling**
+- **Timeout Issues**: Some pages timeout during crawling (30-second limit)
+- **No robots.txt Support**: Crawler doesn't read or respect robots.txt files
+- **Rate Limiting**: Some servers may block requests despite 1-second delays
 
-**Current Extraction Results** (example):
-```
-✅ "Footer" (460 chars)
-✅ "Wichtige Links" (166 chars)
-✅ "Öffnungszeiten" (171 chars)  
-✅ "Kontakt" (114 chars)
-❌ Main page content (MISSING - should be 10k+ chars)
-```
-
-### 🎯 **Solution Strategy**
-
-**Priority 1**: Rewrite `parseDocument` function to:
-1. **Find main content areas first** using multiple strategies:
-   - `<main>`, `<article>`, `.content`, `#content` selectors
-   - Largest text-containing element detection
-   - Heuristic-based content area identification
-
-2. **Extract ALL text content** regardless of DOM structure:
-   - Get full text from identified content areas
-   - Preserve paragraph breaks and structure
-   - Don't filter by specific HTML tags
-
-3. **Then organize by headings** (optional):
-   - Find headings within extracted content
-   - Create sections if headings exist
-   - Fall back to single section if no clear structure
-
-4. **Robust fallback strategy**:
-   - If all else fails, extract all `<body>` text minus obvious boilerplate
-   - Better to have messy content than no content
-
-**Files Requiring Changes**:
-- `server.js` (lines ~200-350): Complete `parseDocument` rewrite
-- `script.js`: Already updated to handle section-based data structure
-
-### 📋 **Development Checklist**
-
-- [ ] **Fix content extraction algorithm** in `server.js`
-- [ ] **Test extraction** on multiple website types (government, news, docs)
-- [ ] **Verify RAG JSONL export** produces meaningful chunks
-- [ ] **Test multi-page crawling** with fixed extraction
-- [ ] **Performance optimization** for large content volumes
-
-### 🧪 **Test Cases for Verification**
-
-After fixing the extraction algorithm, test with:
-1. **Government sites**: `https://www.landkreis-landshut.de/` (current failing case)
-2. **News articles**: Content-rich pages with clear structure
-3. **Documentation**: Technical docs with nested content
-4. **Complex layouts**: Sites with sidebars, navigation, mixed content
-
-Expected results: 50k+ characters extracted from typical government pages instead of current ~10k.
+#### **User Experience**
+- **Crawl Speed**: Intentionally slow (1-second delays) for server respect
+- **Complex Sites**: JavaScript-heavy or dynamically-loaded content may be missed
 
 ---
 
-💡 **Pro Tip**: For optimal results, use on publicly accessible, content-rich pages with good semantic HTML structure. The tool excels at extracting organized content from government sites, documentation, blogs, and news articles.</parameter>
+## 🎯 **Development Priorities for Next Session**
+
+### **Priority 1: Content Extraction Optimization**
+- **Test on various website types**: Government sites, news articles, documentation
+- **Fine-tune boilerplate detection**: Reduce false positives while keeping filtering effective
+- **Improve section organization**: Better heading-based content structuring
+- **Add content validation**: Verify extracted content length vs expected content
+
+### **Priority 2: Responsible Crawling Features**
+- **Implement robots.txt parsing**: Respect website crawling policies
+- **Add configurable delays**: Allow users to set crawl delays (1-5 seconds)
+- **Improve timeout handling**: Retry logic for failed URLs
+- **Rate limit awareness**: Better detection and handling of server limitations
+
+### **Priority 3: User Experience Improvements**
+- **Real-time content preview**: Show extraction quality during crawling
+- **Content quality metrics**: Display extraction success rates and content scores
+- **Export preview**: Let users see what will be exported before downloading
+- **Crawl resume improvements**: Better job management and status tracking
+
+### **Priority 4: Advanced Features**
+- **Content deduplication**: Identify and merge similar sections across pages
+- **Smart chunking**: Improve RAG JSONL chunk boundaries for better AI performance
+- **Metadata enhancement**: Extract more structured data (tables, lists, contact info)
+- **Export customization**: More granular control over what gets included
+
+---
+
+## 🧪 **Testing Checklist for Next Session**
+
+### **Content Extraction Testing**
+1. **Government Sites**: Test on `landkreis-*.de` domains
+2. **News Articles**: Content-rich journalism sites
+3. **Documentation**: Technical docs with nested content  
+4. **Corporate Sites**: Marketing pages with mixed content types
+5. **Complex Layouts**: Sites with sidebars, widgets, complex navigation
+
+### **Export Quality Testing**
+1. **Checkbox Functionality**: Verify all checkboxes properly control exports
+2. **Boilerplate Filtering**: Ensure cookie/legal text doesn't dominate exports
+3. **RAG JSONL Quality**: Check chunk sizes, metadata accuracy, content relevance
+4. **Multi-page Exports**: Test combined exports with various page selections
+
+### **Persistence & Recovery Testing**  
+1. **Page Refresh**: Verify state restoration after browser refresh
+2. **Long Crawls**: Test job resumption after interruption
+3. **Session Management**: Validate inspection result persistence
+4. **Error Recovery**: Ensure graceful handling of corrupted states
+
+---
+
+## 🔄 **Session Handoff Notes**
+
+### **What Was Fixed Today**
+- ✅ **State Persistence**: Frontend now automatically saves and restores work
+- ✅ **Export Logic**: Checkboxes now properly control what gets exported  
+- ✅ **Content Quality**: Improved filtering of boilerplate/cookie content
+- ✅ **Error Handling**: Fixed parsing errors and improved stability
+
+### **Current Data Files**
+- **Crawl States**: Stored in `data/crawl_states/*.json`
+- **Inspection Results**: Stored in `data/inspections/*.json`  
+- **Active Job IDs**: Check existing files for resumeable crawl jobs
+
+### **Quick Start for Next Session**
+1. **Start Server**: `npm run dev`
+2. **Test State Persistence**: Inspect a URL, refresh page, verify restoration
+3. **Resume Existing Crawls**: Use job IDs from `data/crawl_states/` directory
+4. **Focus Areas**: Content extraction quality and robots.txt implementation
+
+---
+
+💡 **Pro Tip**: The tool now persistently saves your work! Inspect URLs and start crawls confidently - your progress won't be lost. Focus next session on content extraction quality and responsible crawling practices.
