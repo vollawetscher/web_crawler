@@ -5,6 +5,7 @@ import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 import { URL } from 'url';
 import fs from 'fs/promises';
+import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -62,41 +63,282 @@ function isInternalUrl(url, baseUrl) {
     }
 }
 
-// Parse document with Cheerio (server-side)
-function parseDocument(html, url) {
+// Helper function to generate section ID
+function generateSectionId(url, heading, sectionOrder) {
+    const content = `${url}_${heading}_${sectionOrder}`;
+    return crypto.createHash('md5').update(content).digest('hex').substring(0, 12);
+}
+
+// Helper function to compute content hash
+function computeContentHash(content) {
+    return crypto.createHash('md5').update(content).digest('hex');
+}
+
+// Helper function to extract contacts using basic regex
+function extractContacts(text) {
+    const contacts = [];
+    
+    // Email regex
+    const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
+    const emails = text.match(emailRegex) || [];
+    
+    // Phone regex (German format)
+    const phoneRegex = /(?:\+49\s?)?(?:\(0\)\s?)?(?:0\d{2,5}[\s\-/]?\d{3,10}|\d{3,5}[\s\-/]?\d{3,10})/g;
+    const phones = text.match(phoneRegex) || [];
+    
+    emails.forEach(email => contacts.push({ type: 'email', value: email }));
+    phones.forEach(phone => contacts.push({ type: 'phone', value: phone.replace(/\s/g, '') }));
+    
+    return contacts;
+}
+
+// Helper function to extract dates and convert to ISO 8601
+function extractDates(text) {
+    const dates = [];
+    
+    // German date formats: DD.MM.YYYY, DD.MM.YY, DD.MM.
+    const dateRegex = /\b(\d{1,2})\.(\d{1,2})\.(\d{2,4})?\b/g;
+    let match;
+    
+    while ((match = dateRegex.exec(text)) !== null) {
+        const day = match[1].padStart(2, '0');
+        const month = match[2].padStart(2, '0');
+        let year = match[3];
+        
+        if (year) {
+            if (year.length === 2) {
+                year = '20' + year; // Assume 21st century for 2-digit years
+            }
+            try {
+                const isoDate = `${year}-${month}-${day}`;
+                // Validate date
+                if (!isNaN(Date.parse(isoDate))) {
+                    dates.push(isoDate);
+                }
+            } catch (e) {
+                // Skip invalid dates
+            }
+        }
+    }
+    
+    return dates;
+}
+
+// Helper function to extract basic opening hours
+function extractOpeningHours(text) {
+    const hours = [];
+    
+    // Look for time patterns like "08:00-17:00" or "8-17 Uhr"
+    const hourRegex = /(\d{1,2}):?(\d{2})?\s?-\s?(\d{1,2}):?(\d{2})?\s?(Uhr)?/g;
+    let match;
+    
+    while ((match = hourRegex.exec(text)) !== null) {
+        const startHour = match[1].padStart(2, '0');
+        const startMin = match[2] || '00';
+        const endHour = match[3].padStart(2, '0');
+        const endMin = match[4] || '00';
+        
+        hours.push(`${startHour}:${startMin}-${endHour}:${endMin}`);
+    }
+    
+    return hours;
+}
+
+// Helper function to extract breadcrumbs
+function extractBreadcrumbs($, url) {
+    const breadcrumbs = [];
+    
+    // Try common breadcrumb selectors
+    const breadcrumbSelectors = [
+        '.breadcrumb a',
+        '.breadcrumbs a', 
+        'nav.breadcrumb a',
+        '[role="navigation"] a',
+        '.navigation-path a'
+    ];
+    
+    for (const selector of breadcrumbSelectors) {
+        const links = $(selector);
+        if (links.length > 0) {
+            links.each((_, el) => {
+                const text = $(el).text().trim();
+                if (text && text !== 'Home' && text !== 'Startseite') {
+                    breadcrumbs.push(text);
+                }
+            });
+            break; // Use first matching selector
+        }
+    }
+    
+    return breadcrumbs;
+}
+
+// Parse document with Cheerio and create sections (server-side)
+function parseDocument(html, url, lastModified = null) {
     try {
         const $ = cheerio.load(html);
+        
+        // Remove boilerplate elements before processing
+        const boilerplateSelectors = [
+            'script', 'style', 'nav', 'header', 'footer', 'aside',
+            '.navigation', '.nav', '.menu', '.cookie', '.banner',
+            '.newsletter', '.impressum', '.datenschutz'
+        ];
+        
+        boilerplateSelectors.forEach(selector => {
+            $(selector).remove();
+        });
+        
+        // Remove specific German municipal site boilerplate
+        $('*:contains("Ihre Suche")').remove();
+        $('*:contains("Navigation schließen")').remove();
+        $('*:contains("Navigation schliessen")').remove();
+        $('*:contains("nach oben")').remove();
+        $('*:contains("Zum Inhalt springen")').remove();
         
         // Extract basic metadata
         const title = $('title').text().trim() || '';
         const metaDescription = $('meta[name="description"]').attr('content') || '';
         
-        // Extract headings
-        const headings = {
-            h1: $('h1').map((_, el) => $(el).text().trim()).get().filter(Boolean),
-            h2: $('h2').map((_, el) => $(el).text().trim()).get().filter(Boolean),
-            h3: $('h3').map((_, el) => $(el).text().trim()).get().filter(Boolean)
-        };
+        // Extract breadcrumbs
+        const breadcrumbs = extractBreadcrumbs($, url);
         
-        // Extract main content
-        $('script, style, nav, header, footer, aside').remove();
-        const mainElement = $('main, article, .content, #content').first();
-        let mainContent = '';
+        // Find all headings (h2, h3) that will define sections
+        const headingElements = $('h2, h3').get();
+        const sections = [];
         
-        if (mainElement.length) {
-            mainContent = mainElement.text();
+        if (headingElements.length === 0) {
+            // No headings found, treat entire content as one section
+            const mainElement = $('main, article, .content, #content').first();
+            let contentText = '';
+            
+            if (mainElement.length) {
+                contentText = mainElement.text();
+            } else {
+                contentText = $('body').text();
+            }
+            
+            // Clean up whitespace
+            contentText = contentText
+                .replace(/\s+/g, ' ')
+                .replace(/\n\s*\n/g, '\n\n')
+                .trim();
+            
+            if (contentText) {
+                const section = {
+                    section_id: generateSectionId(url, 'main', 0),
+                    section_order: 0,
+                    heading: title || 'Main Content',
+                    heading_level: 'page',
+                    content_text: contentText,
+                    page_url: url,
+                    page_title: title,
+                    breadcrumbs: breadcrumbs,
+                    content_type: 'general',
+                    volatility: 'medium',
+                    last_modified: lastModified,
+                    hash: computeContentHash(contentText),
+                    extracted_contacts: extractContacts(contentText),
+                    extracted_addresses: [], // Placeholder for future implementation
+                    extracted_links: [],
+                    extracted_dates: extractDates(contentText),
+                    extracted_opening_hours: extractOpeningHours(contentText),
+                    last_seen: new Date().toISOString(),
+                    prev_hash: null
+                };
+                sections.push(section);
+            }
         } else {
-            mainContent = $('body').text();
+            // Process sections defined by headings
+            headingElements.forEach((headingEl, index) => {
+                const $heading = $(headingEl);
+                const headingText = $heading.text().trim();
+                const headingLevel = headingEl.tagName.toLowerCase();
+                
+                if (!headingText) return;
+                
+                // Find all content until the next heading of same or higher level
+                let $content = $();
+                let $current = $heading.next();
+                
+                while ($current.length > 0) {
+                    const tagName = $current.get(0).tagName.toLowerCase();
+                    
+                    // Stop if we hit another heading of same or higher level
+                    if ((tagName === 'h2') || 
+                        (tagName === 'h3' && headingLevel === 'h3')) {
+                        break;
+                    }
+                    
+                    // Include paragraphs, lists, and divs with text content
+                    if (['p', 'ul', 'ol', 'li', 'div'].includes(tagName)) {
+                        $content = $content.add($current);
+                    }
+                    
+                    $current = $current.next();
+                }
+                
+                // Extract text content from this section
+                let sectionText = headingText + '\n\n';
+                $content.each((_, el) => {
+                    const text = $(el).text().trim();
+                    if (text) {
+                        sectionText += text + '\n\n';
+                    }
+                });
+                
+                // Clean up whitespace
+                sectionText = sectionText
+                    .replace(/\s+/g, ' ')
+                    .replace(/\n\s*\n/g, '\n\n')
+                    .trim();
+                
+                if (sectionText && sectionText !== headingText) {
+                    // Extract links from this section
+                    const sectionLinks = [];
+                    $content.find('a[href]').each((_, linkEl) => {
+                        const $link = $(linkEl);
+                        const linkText = $link.text().trim();
+                        const href = $link.attr('href');
+                        
+                        if (linkText && href) {
+                            try {
+                                const absoluteUrl = new URL(href, url).href;
+                                sectionLinks.push({ text: linkText, url: absoluteUrl });
+                            } catch (e) {
+                                // Skip invalid URLs
+                            }
+                        }
+                    });
+                    
+                    const section = {
+                        section_id: generateSectionId(url, headingText, index),
+                        section_order: index,
+                        heading: headingText,
+                        heading_level: headingLevel,
+                        content_text: sectionText,
+                        page_url: url,
+                        page_title: title,
+                        breadcrumbs: breadcrumbs,
+                        content_type: inferContentType(headingText, sectionText),
+                        volatility: inferVolatility(headingText, sectionText),
+                        last_modified: lastModified,
+                        hash: computeContentHash(sectionText),
+                        extracted_contacts: extractContacts(sectionText),
+                        extracted_addresses: [], // Placeholder for future implementation
+                        extracted_links: sectionLinks,
+                        extracted_dates: extractDates(sectionText),
+                        extracted_opening_hours: extractOpeningHours(sectionText),
+                        last_seen: new Date().toISOString(),
+                        prev_hash: null
+                    };
+                    sections.push(section);
+                }
+            });
         }
         
         // Clean up whitespace
         mainContent = mainContent
-            .replace(/\s+/g, ' ')
-            .replace(/\n\s*\n/g, '\n\n')
-            .trim();
-        
-        // Extract links
-        const links = $('a[href]')
             .map((_, el) => {
                 const $el = $(el);
                 const href = $el.attr('href');
@@ -120,15 +362,14 @@ function parseDocument(html, url) {
         const internalLinks = links
             .filter(link => isInternalUrl(link.url, url))
             .map(link => normalizeUrl(link.url))
-            .filter((url, index, array) => array.indexOf(url) === index); // Remove duplicates
+            .filter((linkUrl, index, array) => array.indexOf(linkUrl) === index); // Remove duplicates
         
         return {
             success: true,
             final_url: url,
             title,
             meta_description: metaDescription,
-            headings,
-            main_content: mainContent,
+            sections,
             links,
             internal_links: internalLinks
         };
@@ -136,6 +377,60 @@ function parseDocument(html, url) {
     } catch (error) {
         return { error: `Parsing failed: ${error.message}` };
     }
+}
+
+// Helper function to infer content type from heading and content
+function inferContentType(heading, content) {
+    const headingLower = heading.toLowerCase();
+    const contentLower = content.toLowerCase();
+    
+    if (headingLower.includes('aktuell') || headingLower.includes('news') || 
+        headingLower.includes('meldung') || contentLower.includes('datum')) {
+        return 'announcement';
+    }
+    
+    if (headingLower.includes('öffnungszeit') || headingLower.includes('standort') ||
+        headingLower.includes('adresse') || contentLower.includes('uhr')) {
+        return 'facility';
+    }
+    
+    if (headingLower.includes('app') || headingLower.includes('online') ||
+        headingLower.includes('service')) {
+        return 'app_info';
+    }
+    
+    if (headingLower.includes('tipp') || headingLower.includes('hinweis') ||
+        headingLower.includes('wie') || headingLower.includes('was')) {
+        return 'faq';
+    }
+    
+    if (headingLower.includes('bestell') || headingLower.includes('antrag') ||
+        headingLower.includes('formular')) {
+        return 'service_info';
+    }
+    
+    return 'general';
+}
+
+// Helper function to infer content volatility
+function inferVolatility(heading, content) {
+    const headingLower = heading.toLowerCase();
+    const contentLower = content.toLowerCase();
+    
+    // High volatility for current events, dates, closures
+    if (headingLower.includes('aktuell') || headingLower.includes('geschlossen') ||
+        contentLower.includes('2025') || contentLower.includes('datum')) {
+        return 'high';
+    }
+    
+    // Low volatility for static service information, tips
+    if (headingLower.includes('tipp') || headingLower.includes('information') ||
+        headingLower.includes('service') || headingLower.includes('bestell')) {
+        return 'stable';
+    }
+    
+    // Medium volatility for everything else
+    return 'medium';
 }
 
 // Fetch and parse a single URL
@@ -158,8 +453,19 @@ async function fetchAndParseUrl(url) {
             throw new Error(`Content type ${contentType} is not HTML`);
         }
         
+        // Extract Last-Modified header
+        const lastModified = response.headers.get('last-modified');
+        let lastModifiedISO = null;
+        if (lastModified) {
+            try {
+                lastModifiedISO = new Date(lastModified).toISOString();
+            } catch (e) {
+                // Invalid date format, ignore
+            }
+        }
+        
         const html = await response.text();
-        return parseDocument(html, response.url);
+        return parseDocument(html, response.url, lastModifiedISO);
         
     } catch (error) {
         return { error: error.message };
@@ -232,12 +538,43 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         
         const result = await fetchAndParseUrl(url);
         
-        sitemap[url] = {
-            ...result,
-            depth,
-            parent,
-            children: []
-        };
+        if (result.success) {
+            // Process sections for deduplication and change tracking
+            const processedSections = result.sections.map(section => {
+                // Check if we have this section from a previous crawl
+                const existingPage = sitemap[url];
+                let prevHash = null;
+                
+                if (existingPage && existingPage.sections) {
+                    const existingSection = existingPage.sections.find(s => s.section_id === section.section_id);
+                    if (existingSection) {
+                        prevHash = existingSection.hash;
+                    }
+                }
+                
+                return {
+                    ...section,
+                    prev_hash: prevHash,
+                    has_changed: prevHash !== section.hash
+                };
+            });
+            
+            sitemap[url] = {
+                ...result,
+                sections: processedSections,
+                depth,
+                parent,
+                children: []
+            };
+        } else {
+            sitemap[url] = {
+                ...result,
+                sections: [],
+                depth,
+                parent,
+                children: []
+            };
+        }
         
         // If parsing was successful and we haven't reached max depth, add internal links to queue
         if (result.success && depth < maxDepth && result.internal_links) {
