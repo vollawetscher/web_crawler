@@ -307,7 +307,20 @@ class URLInspector {
     }
 
     updateHeadingsPreviews() {
-        const headings = this.extractedData.headings || {};
+        // Extract headings from sections
+        const sections = this.extractedData.sections || [];
+        const headings = { h1: [], h2: [], h3: [] };
+        
+        sections.forEach(section => {
+            if (section.heading_level === 'h1' && !headings.h1.includes(section.heading)) {
+                headings.h1.push(section.heading);
+            } else if (section.heading_level === 'h2' && !headings.h2.includes(section.heading)) {
+                headings.h2.push(section.heading);
+            } else if (section.heading_level === 'h3' && !headings.h3.includes(section.heading)) {
+                headings.h3.push(section.heading);
+            }
+        });
+        
         const hasHeadings = Object.values(headings).some(arr => arr.length > 0);
         
         const expander = document.getElementById('headingsExpander');
@@ -341,10 +354,10 @@ class URLInspector {
     }
 
     updateMainContentPreview() {
-        const content = this.extractedData.main_content;
+        const sections = this.extractedData.sections || [];
         const expander = document.getElementById('contentExpander');
         
-        if (!content?.trim()) {
+        if (sections.length === 0) {
             expander.style.display = 'none';
             return;
         }
@@ -354,8 +367,19 @@ class URLInspector {
         const container = document.getElementById('contentPreview');
         container.innerHTML = '';
         
-        const preview = content.substring(0, 500) + (content.length > 500 ? '...' : '');
-        this.addPreview(container, 'Content Preview', preview);
+        // Show preview of first few sections
+        const previewSections = sections.slice(0, 3);
+        previewSections.forEach((section, index) => {
+            const preview = section.content_text.substring(0, 200) + (section.content_text.length > 200 ? '...' : '');
+            this.addPreview(container, `Section ${index + 1}: ${section.heading}`, preview);
+        });
+        
+        if (sections.length > 3) {
+            const moreDiv = document.createElement('div');
+            moreDiv.className = 'preview-item';
+            moreDiv.innerHTML = `<div class="preview-label">... and ${sections.length - 3} more sections</div>`;
+            container.appendChild(moreDiv);
+        }
     }
 
     updateLinksPreview() {
@@ -553,12 +577,14 @@ class URLInspector {
         const format = document.querySelector('input[name="export_format"]:checked').value;
         const selectedPages = this.getSelectedPages();
         const totalPages = selectedPages.length;
+        const totalSections = selectedPages.reduce((sum, page) => sum + (page.data.sections?.length || 0), 0);
         
         let info = '';
         if (totalPages > 0) {
-            info = `Ready to export ${totalPages} page(s) in ${format.toUpperCase()} format`;
+            info = `Ready to export ${totalSections} sections from ${totalPages} page(s) in ${format.toUpperCase()} format`;
         } else if (this.extractedData) {
-            info = `Ready to export current page in ${format.toUpperCase()} format`;
+            const currentSections = this.extractedData.sections?.length || 0;
+            info = `Ready to export ${currentSections} sections from current page in ${format.toUpperCase()} format`;
         } else {
             info = 'No content available for export';
         }
@@ -602,23 +628,15 @@ class URLInspector {
             urls: selectedPages.map(p => p.url),
             title: `Combined Export (${selectedPages.length} pages)`,
             meta_description: '',
-            headings: { h1: [], h2: [], h3: [] },
-            main_content: '',
+            sections: [],
             links: []
         };
         
         selectedPages.forEach(({ url, data }) => {
             if (data.success) {
-                // Combine headings
-                ['h1', 'h2', 'h3'].forEach(level => {
-                    if (data.headings?.[level]) {
-                        combined.headings[level].push(...data.headings[level]);
-                    }
-                });
-                
-                // Combine content
-                if (data.main_content) {
-                    combined.main_content += `\n\n=== ${data.title || url} ===\n\n${data.main_content}`;
+                // Combine sections
+                if (data.sections) {
+                    combined.sections.push(...data.sections);
                 }
                 
                 // Combine links
@@ -626,11 +644,6 @@ class URLInspector {
                     combined.links.push(...data.links);
                 }
             }
-        });
-        
-        // Remove duplicates from headings
-        ['h1', 'h2', 'h3'].forEach(level => {
-            combined.headings[level] = [...new Set(combined.headings[level])];
         });
         
         // Remove duplicate links
@@ -667,31 +680,26 @@ class URLInspector {
     }
 
     createRAGJSONLExport(data, timestamp, isMultiPage) {
-        const chunkSize = parseInt(this.chunkSizeInput.value);
-        const overlap = parseInt(this.overlapInput.value);
-        const includeHeadings = this.includeHeadingsCheckbox.checked;
-        
-        const jsonlStr = this.createRAGJSONL(data, chunkSize, overlap, includeHeadings);
+        const jsonlStr = this.createRAGJSONL(data);
         const filename = `${isMultiPage ? 'multi_page' : 'rag'}_content_${timestamp}.jsonl`;
         return [jsonlStr, filename, 'application/jsonl'];
     }
 
     createTextExport(data, timestamp, isMultiPage) {
-        const content = this.getSelectedContent(data);
+        const sections = data.sections || [];
         let textStr = '';
         
-        if (content.title) textStr += `Title: ${content.title}\n\n`;
-        if (content.meta_description) textStr += `Description: ${content.meta_description}\n\n`;
-        if (content.main_content) textStr += `Content:\n${content.main_content}\n\n`;
+        if (data.title) textStr += `Title: ${data.title}\n\n`;
+        if (data.meta_description) textStr += `Description: ${data.meta_description}\n\n`;
         
-        ['h1', 'h2', 'h3'].forEach(level => {
-            if (content[level]?.length) {
-                textStr += `${level.toUpperCase()} Headings:\n${content[level].join('\n')}\n\n`;
-            }
+        // Add sections
+        sections.forEach((section, index) => {
+            textStr += `Section ${index + 1}: ${section.heading}\n`;
+            textStr += `${section.content_text}\n\n`;
         });
         
-        if (content.links?.length) {
-            textStr += `Links:\n${content.links.map(l => `${l.text}: ${l.url}`).join('\n')}\n\n`;
+        if (data.links?.length) {
+            textStr += `Links:\n${data.links.map(l => `${l.text}: ${l.url}`).join('\n')}\n\n`;
         }
         
         const filename = `${isMultiPage ? 'multi_page' : 'url'}_content_${timestamp}.txt`;
@@ -713,14 +721,9 @@ class URLInspector {
             result.meta_description = data.meta_description;
         }
         
-        ['h1', 'h2', 'h3'].forEach(level => {
-            if (document.getElementById(`check_${level}`)?.checked && data.headings?.[level]?.length) {
-                result[level] = data.headings[level];
-            }
-        });
-        
-        if (document.getElementById('check_main_content')?.checked && data.main_content) {
-            result.main_content = data.main_content;
+        // Include sections if main content is checked
+        if (document.getElementById('check_main_content')?.checked && data.sections) {
+            result.sections = data.sections;
         }
         
         if (document.getElementById('check_links')?.checked && data.links?.length) {
@@ -730,54 +733,67 @@ class URLInspector {
         return result;
     }
 
-    createRAGJSONL(data, chunkSize, overlap, includeHeadings) {
+    createRAGJSONL(data) {
         const lines = [];
-        const finalUrl = data.final_url || data.urls?.[0] || 'unknown';
+        const sections = data.sections || [];
         const title = data.title || '';
-        
-        // Base metadata
-        const baseMetadata = { source: finalUrl };
-        if (includeHeadings && data.headings) {
-            baseMetadata.h1 = data.headings.h1 || [];
-            baseMetadata.h2 = data.headings.h2 || [];
-            baseMetadata.h3 = data.headings.h3 || [];
-        }
-        
-        let chunkIndex = 0;
+        const baseUrl = data.final_url || data.urls?.[0] || 'unknown';
         
         // Add title
-        if (document.getElementById('check_title')?.checked && title) {
+        if (document.getElementById('check_title')?.checked && title && sections.length === 0) {
             lines.push({
-                id: this.generateChunkId(finalUrl, chunkIndex, title),
+                id: this.generateChunkId(baseUrl, 0, title),
                 title,
                 chunk: title,
-                metadata: { ...baseMetadata, type: 'title' }
+                metadata: { 
+                    source: baseUrl, 
+                    type: 'title',
+                    content_type: 'general',
+                    volatility: 'stable'
+                }
             });
-            chunkIndex++;
         }
         
         // Add meta description
-        if (document.getElementById('check_meta_description')?.checked && data.meta_description) {
+        if (document.getElementById('check_meta_description')?.checked && data.meta_description && sections.length === 0) {
             lines.push({
-                id: this.generateChunkId(finalUrl, chunkIndex, data.meta_description),
+                id: this.generateChunkId(baseUrl, 1, data.meta_description),
                 title,
                 chunk: data.meta_description,
-                metadata: { ...baseMetadata, type: 'description' }
+                metadata: { 
+                    source: baseUrl, 
+                    type: 'description',
+                    content_type: 'general',
+                    volatility: 'stable'
+                }
             });
-            chunkIndex++;
         }
         
-        // Chunk main content
-        if (document.getElementById('check_main_content')?.checked && data.main_content) {
-            const chunks = this.chunkText(data.main_content, chunkSize, overlap);
-            chunks.forEach(chunk => {
+        // Add sections directly (no chunking needed - they're already properly sized)
+        if (document.getElementById('check_main_content')?.checked && sections.length > 0) {
+            sections.forEach(section => {
                 lines.push({
-                    id: this.generateChunkId(finalUrl, chunkIndex, chunk),
+                    id: section.section_id,
                     title,
-                    chunk,
-                    metadata: { ...baseMetadata, type: 'text' }
+                    chunk: section.content_text,
+                    metadata: {
+                        source: section.page_url,
+                        type: 'section',
+                        section_order: section.section_order,
+                        heading: section.heading,
+                        heading_level: section.heading_level,
+                        content_type: section.content_type,
+                        volatility: section.volatility,
+                        breadcrumbs: section.breadcrumbs || [],
+                        last_modified: section.last_modified,
+                        extracted_contacts: section.extracted_contacts || [],
+                        extracted_dates: section.extracted_dates || [],
+                        extracted_links: section.extracted_links || [],
+                        hash: section.hash,
+                        has_changed: section.has_changed,
+                        last_seen: section.last_seen
+                    }
                 });
-                chunkIndex++;
             });
         }
         
