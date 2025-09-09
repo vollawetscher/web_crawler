@@ -494,6 +494,9 @@ class URLInspector {
 
     populateSitemap() {
         if (!this.currentSitemap) return;
+        
+        const urls = Object.keys(this.currentSitemap);
+        
         // Update summary
         const summary = document.getElementById('crawlSummary');
         summary.innerHTML = `
@@ -553,6 +556,10 @@ class URLInspector {
         urlLink.textContent = url;
             <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
             <span>Sections: ${data.sections ? data.sections.length : 0}</span>
+        meta.innerHTML = `
+            <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
+            <span>Sections: ${data.sections ? data.sections.length : 0}</span>
+        `;
         meta.className = 'sitemap-meta';
         
         // Calculate total content length from sections
@@ -560,6 +567,8 @@ class URLInspector {
         if (data.sections && data.sections.length > 0) {
             totalContentLength = data.sections.reduce((sum, section) => sum + section.content_text.length, 0);
         }
+        
+        if (data.error) {
             const error = document.createElement('div');
             error.className = 'sitemap-error';
             error.textContent = data.error;
