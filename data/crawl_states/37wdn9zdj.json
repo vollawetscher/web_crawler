@@ -20,7 +20,17 @@
     "https://www.landkreis-landshut.de/themen/mobilitaet/kfz-zulassung",
     "https://www.landkreis-landshut.de/themen/mobilitaet/fuehrerscheinstelle-verkehrswesen",
     "https://www.landkreis-landshut.de/themen/auslaenderamt/auslaenderamt-auslaenderwesen",
-    "https://www.landkreis-landshut.de/themen/jobcenter"
+    "https://www.landkreis-landshut.de/themen/jobcenter",
+    "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie",
+    "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene",
+    "https://www.landkreis-landshut.de/meta/impressum",
+    "https://www.landkreis-landshut.de/meta/datenschutz",
+    "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gewaesserunterhaltungszweckverbands-vor-neuer-ausrichtung",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2909-beratungstermin-hoer-und-sprachentwicklung-kind",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/14-sept-tag-des-offenen-denkmals",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-landshut-acht-neue-auszubildende-und-anwaerter",
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen"
   ],
   "sitemap": {
     "https://www.landkreis-landshut.de": {
@@ -4156,79 +4166,1024 @@
         "https://www.landkreis-landshut.de/meta/impressum",
         "https://www.landkreis-landshut.de/meta/datenschutz"
       ]
+    },
+    "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie",
+      "title": "Kinder, Jugend und Familie | Landkreis Landshut",
+      "meta_description": "Ansprechpartner und Formulare zum Thema Kinder, Jugend und Familie: Jugendamt, Kindertagesst&#228;tten und -betreuung, Pflegekinderwesen und Unterhalt",
+      "headings": {
+        "h1": [
+          "Kinder, Jugend und Familie"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Kinder, Jugend und Familie Ansprechpartner und Formulare zum Thema Kinder, Jugend und Familie: Jugendamt, Kindertagesstätten und -betreuung, Pflegekinderwesen und Unterhalt und Beurkundung Abrufbar über die untenstehenden Links: Jugendamt Kindertagesstätten und Kinderbetreuung Pflegekinderwesen Unterhalt und Beurkundung Koordinierende Kinderschutzstelle KoKi Kinder- und Jungendärztlicher Dienst",
+      "links": [
+        {
+          "text": "Jugendamt",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/jugendamt/"
+        },
+        {
+          "text": "Kindertagesstätten und -betreuung",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kindertagesstaetten-und-kinderbetreuung/"
+        },
+        {
+          "text": "Pflegekinderwesen",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/pflegekinderwesen/"
+        },
+        {
+          "text": "Unterhalt und Beurkundung",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/unterhalt-und-beurkundung/"
+        },
+        {
+          "text": "Jugendamt",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/jugendamt/"
+        },
+        {
+          "text": "Kindertagesstätten und Kinderbetreuung",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kindertagesstaetten-und-kinderbetreuung/"
+        },
+        {
+          "text": "Pflegekinderwesen",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/pflegekinderwesen/"
+        },
+        {
+          "text": "Unterhalt und Beurkundung",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/unterhalt-und-beurkundung/"
+        },
+        {
+          "text": "Koordinierende Kinderschutzstelle KoKi",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/koordinierende-kinderschutzstelle-koki/"
+        },
+        {
+          "text": "Kinder- und Jungendärztlicher Dienst",
+          "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kinder-und-jungendaerztlicher-dienst/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/jugendamt",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kindertagesstaetten-und-kinderbetreuung",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/pflegekinderwesen",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/unterhalt-und-beurkundung",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/koordinierende-kinderschutzstelle-koki",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kinder-und-jungendaerztlicher-dienst",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/jugendamt",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kindertagesstaetten-und-kinderbetreuung",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/pflegekinderwesen",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/unterhalt-und-beurkundung",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/koordinierende-kinderschutzstelle-koki",
+        "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kinder-und-jungendaerztlicher-dienst",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene",
+      "title": "Trinkwasserhygiene | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Trinkwasserhygiene"
+        ],
+        "h2": [
+          "Änderung der Trinkwasserverordnung",
+          "Nähere Informationen",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Trinkwasserhygiene Änderung der Trinkwasserverordnung Die 2. Verordnung zur Änderung der Trinkwasserverordnung ist am 14.12.2012 in Kraft getreten. Nähere Informationen Systemische Untersuchungen von Trinkwasserinstallationen auf Legionellen Allgemeine Informationen zur Trinkwasserverordnung und Legionellen Empfehlungen für die Durchführung einer Gefährdungsanalyse gem. TrinkwV Bayer. Liste von Untersuchungsstellen nach § 15 Abs. 4 TrinkwV 2001 Legionellen - die am häufigsten gestellten Fragen - LGL Bayern",
+      "links": [
+        {
+          "text": "Systemische Untersuchungen von Trinkwasserinstallationen auf Legionellen",
+          "url": "https://www.landkreis-landshut.de/media/1719/systemische-untersuchung-legionellen-empfehlung.pdf"
+        },
+        {
+          "text": "Allgemeine Informationen zur Trinkwasserverordnung und Legionellen",
+          "url": "https://www.landkreis-landshut.de/media/1718/stammtext-trinkwv-und-legionellen.pdf"
+        },
+        {
+          "text": "Empfehlungen für die Durchführung einer Gefährdungsanalyse gem. TrinkwV",
+          "url": "https://www.landkreis-landshut.de/media/1717/gefaehrdungsanalyse-trinkwv-empfehlungen.pdf"
+        },
+        {
+          "text": "Bayer. Liste von Untersuchungsstellen nach § 15 Abs. 4 TrinkwV 2001",
+          "url": "https://www.lgl.bayern.de/das_lgl/aufgaben_zustaendigkeiten/zqm_aufgaben/us_trinkwv_index.htm"
+        },
+        {
+          "text": "Legionellen - die am häufigsten gestellten Fragen - LGL Bayern",
+          "url": "https://www.lgl.bayern.de/gesundheit/hygiene/wasserhygiene/legionellen/index.htm"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/1719/systemische-untersuchung-legionellen-empfehlung.pdf",
+        "https://www.landkreis-landshut.de/media/1718/stammtext-trinkwv-und-legionellen.pdf",
+        "https://www.landkreis-landshut.de/media/1717/gefaehrdungsanalyse-trinkwv-empfehlungen.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/media/1719/systemische-untersuchung-legionellen-empfehlung.pdf",
+        "https://www.landkreis-landshut.de/media/1718/stammtext-trinkwv-und-legionellen.pdf",
+        "https://www.landkreis-landshut.de/media/1717/gefaehrdungsanalyse-trinkwv-empfehlungen.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/meta/impressum": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/meta/impressum",
+      "title": "Impressum | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Impressum"
+        ],
+        "h2": [
+          "Seitenleiste Rechts",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt"
+        ]
+      },
+      "main_content": "Impressum Anschrift und Erreichbarkeit Landratsamt LandshutLandrat Peter DreierVeldener Straße 1584036 LandshutTelefon: 0871/408-0Telefax: 0871/4081001E-Mail: [email protected]USt-Identifikationsnummer: DE 128969144 Aufsichtsbehörde Zuständige Aufsichtsbehörde ist die Regierung von Niederbayern Verantwortlich für den Inhalt Landratsamt LandshutLandrat Peter DreierVeldener Straße 1584036 Landshut Die fachlichen Inhalte werden von den einzelnen Abteilungen und Sachgebieten des Landratsamtes Landshut bereitgestellt. Bei Fragen zum fachlichen Inhalt wenden Sie sich daher bitte an den jeweils genannten zuständigen Fachbereich. Namentlich gekennzeichnete Internetseiten geben die Auffassungen und Erkenntnisse der genannten Personen wieder. Quellenangaben für verwendete Bilder und Grafiken:Einige unserer Bilder und Grafiken wurden von dem Stockfotoportal shutterstock.com sowie von Fotolia erworben und für die Verwendung lizensiert! NutzungsbedingungenTexte, Bilder, Grafiken sowie die Gestaltung dieser Internetseiten können dem Urheberrecht unterliegen. Nicht urheberrechtlich geschützt sind nach § 5 des Urheberrechtsgesetzes (UrhG) Gesetze, Verordnungen, amtliche Erlasse und Bekanntmachungen sowie Entscheidungen und amtlich verfasste Leitsätze zu Entscheidungen und andere amtliche Werke, die im amtlichen Interesse zur allgemeinen Kenntnisnahme veröffentlicht worden sind, mit der Einschränkung, dass die Bestimmungen über Änderungsverbot und Quellenangabe in § 62 Abs. 1 bis 3 und § 63 Abs. 1 und 2 UrhG entsprechend anzuwenden sind. Als Privatperson dürfen Sie urheberrechtlich geschütztes Material zum privaten und sonstigen eigenen Gebrauch im Rahmen des § 53 UrhG verwenden. Eine Vervielfältigung oder Verwendung urheberrechtlich geschützten Materials dieser Seiten oder Teilen davon in anderen elektronischen oder gedruckten Publikationen und deren Veröffentlichung ist nur mit unserer Einwilligung gestattet. Diese erteilen auf Anfrage die für den Inhalt Verantwortlichen. Weiterhin können Texte, Bilder, Grafiken und sonstige Dateien ganz oder teilweise dem Urheberrecht Dritter unterliegen. Auch über das Bestehen möglicher Rechte Dritter geben Ihnen die für den Inhalt Verantwortlichen nähere Auskünfte. Haftungsausschluss Alle in dieser Website bereitgestellten Informationen haben wir nach bestem Wissen und Gewissen erarbeitet und geprüft. Eine Gewähr für die jederzeitige Aktualität, Richtigkeit, Vollständigkeit und Verfügbarkeit der bereit gestellten Informationen können wir allerdings nicht übernehmen. Ein Vertragsverhältnis mit den Nutzern des Internetangebots kommt nicht zustande. Wir haften nicht für Schäden, die durch die Nutzung dieses Internetangebots entstehen. Dieser Haftungsausschluss gilt nicht, soweit die Vorschriften des § 839 BGB (Haftung bei Amtspflichtverletzung) einschlägig sind. Für etwaige Schäden, die beim Aufrufen oder Herunterladen von Daten durch Schadsoftware oder der Installation oder Nutzung von Software verursacht werden, wird nicht gehaftet. Links Von unseren eigenen Inhalten sind Querverweise (Links) auf die Webseiten anderer Anbieter zu unterscheiden. Durch diese Links ermöglichen wir lediglich den Zugang zur Nutzung fremder Inhalte nach § 8 Digitale-Dienste-Gesetz. Bei der erstmaligen Verknüpfung mit diesen Internetangeboten haben wir diese fremden Inhalte daraufhin überprüft, ob durch sie eine mögliche zivilrechtliche oder strafrechtliche Verantwortlichkeit ausgelöst wird. Wir können diese fremden Inhalte aber nicht ständig auf Veränderungen überprüfen und daher auch keine Verantwortung dafür übernehmen. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung von Informationen Dritter entstehen, haftet allein der jeweilige Anbieter der Seite. SocialMediaDieses Impressum gilt grundsätzlich auch für folgende Social-Media-Profile: https://www.facebook.com/LandkreisLandshut/https://www.instagram.com/landkreis.landshut/https://www.linkedin.com/company/landkreis-landshuthttps://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg",
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#f3839c80878087969f9f96b39f929d979881969a80de9f929d97809b8687dd9796"
+        },
+        {
+          "text": "https://www.facebook.com/LandkreisLandshut/",
+          "url": "https://www.facebook.com/LandkreisLandshut/"
+        },
+        {
+          "text": "https://www.instagram.com/landkreis.landshut/",
+          "url": "https://www.instagram.com/landkreis.landshut/"
+        },
+        {
+          "text": "https://www.linkedin.com/company/landkreis-landshut",
+          "url": "https://www.linkedin.com/company/landkreis-landshut"
+        },
+        {
+          "text": "https://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg",
+          "url": "https://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ]
+    },
+    "https://www.landkreis-landshut.de/meta/datenschutz": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "title": "Datenschutz | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Datenschutzerklärung"
+        ],
+        "h2": [
+          "1. Verantwortlich für die Datenerhebung",
+          "Informationen zum Internetauftritt",
+          "Informationsblätter zur Erhebung personenbezogener Daten nach Art. 13 und 14 Datenschutz-Grundverordnung",
+          "Seitenleiste Rechts",
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Datenschutzerklärung Zum Ändern Ihrer Datenschutzeinstellungen, z.B. Erteilung oder Widerruf von Einwilligungen, klicken Sie hier 1. Verantwortlich für die Datenerhebung Landratsamt LandshutVeldener Straße 1584036 LandshutTelefon: 0871/408-0Telefax: 0871/4081001E-Mail: [email protected] 2. Kontaktdaten des Datenschutzbeauftragten Landratsamt Landshut Veldener Straße 1584036 LandshutTelefon: 0871/408-2146E-Mail: [email protected] 3. Zweck und Rechtsgrundlagen der Datenverarbeitung Zweck der Verarbeitung ist die Erfüllung der uns vom Gesetzgeber zugewiesenen öffentlichen Aufgaben, insbesondere der Information der Öffentlichkeit. Die Rechtsgrundlage für die Verarbeitung Ihrer Daten ergibt sich, soweit nichts anderes angegeben ist, aus Art. 4 Abs. 1 des Bayerischen Datenschutzgesetzes (BayDSG) in Verbindung mit Art. 6 Abs. 1 UAbs. 1 Buchst. e der Datenschutzgrundverordnung (DSGVO). Demnach ist es uns erlaubt, die zur Erfüllung einer uns obliegenden Aufgabe erforderlichen Daten zu verarbeiten. 4. Empfänger von personenbezogenen Daten Gegebenenfalls werden Ihre Daten an die zuständigen Aufsichts- und Rechnungsprüfungsbehörden zur Wahrnehmung der jeweiligen Kontrollrechte übermittelt. Zur Abwehr von Gefahren für die Sicherheit in der Informationstechnik können bei elektronischer Übermittlung Daten an das Landesamt für Sicherheit in der Informationstechnik weitergeleitet werden und dort auf Grundlage der Art. 12 ff. des Bayerischen E-Government-Gesetzes verarbeitet werden. 5. Dauer der Speicherung der personenbezogenen Daten Ihre Daten werden nur so lange gespeichert, wie dies unter Beachtung gesetzlicher Aufbewahrungsfristen zur Aufgabenerfüllung erforderlich ist. 6. Ihre Rechte Soweit wir von Ihnen personenbezogene Daten verarbeiten, stehen Ihnen als Betroffener nachfolgende Rechte zu: Sie haben das Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten (Art. 15 DSGVO). Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO). Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen (Art. 17 und 18 DSGVO). Wenn Sie in die Verarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Falls Sie in die Verarbeitung eingewilligt haben und die Verarbeitung auf dieser Einwilligung beruht, können Sie die Einwilligung jederzeit für die Zukunft widerrufen. Die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Datenverarbeitung wird durch diesen nicht berührt. Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Ihrer Daten Widerspruch einzulegen, wenn die Verarbeitung ausschließlich auf Grundlage des Art. 6 Abs. 1 Buchst. e oder f DSGVO erfolgt (Art. 21 Abs. 1 Satz 1 DSGVO). 7. Beschwerderecht bei der Aufsichtsbehörde Weiterhin besteht ein Beschwerderecht beim Bayerischen Landesbeauftragten für den Datenschutz. Diesen können Sie unter folgenden Kontaktdaten erreichen: PostanschriftPostfach 22 12 1980502 München HausanschriftWagmüllerstraße 1880538 MünchenTelefon: 089 212672-0Telefax: 089 212672-50E-Mail: [email protected]Internet: www.datenschutz-bayern.de 8. Weitere Informationen Für nähere Informationen zur Verarbeitung Ihrer Daten und zu Ihren Rechten können Sie uns unter den oben genannten Kontaktdaten erreichen. Alle aufklappen Alle zuklappen Informationen zum Internetauftritt 9. Technische Umsetzung Unsere Webserver werden durch das Landratsamt Landshut im Rahmen des Kommunalen Behördennetzes (KomBN) betrieben. 10. Protokollierung Wenn Sie diese oder andere Internetseiten aufrufen, übermitteln Sie über Ihren Internetbrowser Daten an unseren Webserver. Die folgenden Daten werden während einer laufenden Verbindung zur Kommunikation zwischen Ihrem Internetbrowser und unserer Firewall aufgezeichnet: Datum und Uhrzeit der Anforderung Name der angeforderten Datei Seite, von der aus die Datei angefordert wurde Zugriffsstatus (Datei übertragen, Datei nicht gefunden, etc.) verwendete Webbrowser und angewendetes Betriebssystem vollständige IP-Adresse des anfordernden Rechners übertragene Datenmenge Aus Gründen der technischen Sicherheit, insbesondere zur Abwehr von Angriffsversuchen auf unseren Webserver, werden diese Daten von uns gespeichert. Diese Daten können von uns nicht bestimmten Personen zugeordnet werden. Eine Zusammenführung der Daten mit anderen Datenquellen wird nicht vorgenommen. Im Falle eines Cyberangriffs können diese Daten aber bei Bedarf den zuständigen Strafverfolgungsbehörden zur Verfügung gestellt werden. 11. Verwendung von Cookies a) Beschreibung und Umfang der Datenverarbeitung Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht. Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Internetseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. In den Cookies werden dabei folgende Daten gespeichert und übermittelt: (1) geografischer GPS-Standort (2) Benutzerbandbreite b) Rechtsgrundlage für die DatenverarbeitungDie Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies ist Art. 4 Abs. 1 BayDSG. c) Zweck der DatenverarbeitungDer Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer zu vereinfachen. Einige Funktionen unserer Internetseite können ohne den Einsatz von Cookies nicht angeboten werden. Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt wird. Wir benötigen Cookies für die Einbettung von Videos auf unseren Webseiten, welche via YouTube bereitgestellt werden. Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von Nutzerprofilen verwendet. e) Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden. 12. Aktive Komponenten Auf unserer Webseite werden aktive Komponenten wie Javascript, Java-Applets oder Active-X-Controls verwendet. Diese Funktion kann durch die Einstellung Ihres Internetbrowsers von Ihnen abgeschaltet werden. 13. Webanalyse durch Matomo (vormals Piwik) 1. Umfang der Verarbeitung personenbezogener DatenWir nutzen auf unserer Website das Open-Source-Software-Tool Matomo (vormals Piwik) zur Analyse des Surfverhaltens unserer Nutzer. Die Software setzt ein Cookie auf dem Rechner der Nutzer (zu Cookies siehe bereits oben). Werden Einzelseiten unserer Website aufgerufen, so werden folgende Daten gespeichert: (1) Zwei Bytes der IP-Adresse des aufrufenden Systems des Nutzers (2) Die aufgerufene Webseite (3) Die Website, von der der Nutzer auf die aufgerufene Webseite gelangt ist (Referrer) (4) Die Unterseiten, die von der aufgerufenen Webseite aus aufgerufen werden (5) Die Verweildauer auf der Webseite (6) Die Häufigkeit des Aufrufs der Webseite (7) Geografische Informationen (Herkunftsland und Ort) (8) Verwendeter Browser inkl. Versionsnummer (9) Verwendetes Betriebssystem inkl. Versionsnummer (10) Auflösung des Bildschirmes des Besuchers (11) Art des verwendeten Gerätes, bei Mobilgeräten auch Typ und Hersteller des Gerätes (12) Provider (Festnetz und Mobiles Internet) Die Software läuft dabei ausschließlich auf den Servern unseres Anbieters livingdata GmbH. Eine Speicherung der personenbezogenen Daten der Nutzer findet nur dort statt. Eine Weitergabe der Daten an Dritte erfolgt nicht. Die Software ist so eingestellt, dass die IP-Adressen nicht vollständig gespeichert werden, sondern 2 Bytes der IP-Adresse maskiert werden (Bsp.: 192.168.0.0). Auf diese Weise ist eine Zuordnung der gekürzten IP-Adresse zum aufrufenden Rechner nicht mehr möglich. 2. Rechtsgrundlage für die Verarbeitung personenbezogener DatenRechtsgrundlage für die Verarbeitung der personenbezogenen Daten der Nutzer ist Art. 4 Abs. 1 BayDSG. 3. Zweck der DatenverarbeitungDie Verarbeitung der personenbezogenen Daten der Nutzer ermöglicht uns eine Analyse des Surfverhaltens unserer Nutzer. Wir sind durch die Auswertung der gewonnenen Daten in der Lage, Informationen über die Nutzung der einzelnen Komponenten unserer Webseite zusammenzustellen. Dies hilft uns dabei unsere Webseite und deren Nutzerfreundlichkeit stetig zu verbessern. In diesen Zwecken liegt auch unser Interesse in der Verarbeitung der Daten nach Art. 4 Abs. 1 BayDSG. Durch die Anonymisierung der IP-Adresse wird dem Interesse der Nutzer an deren Schutz personenbezogener Daten hinreichend Rechnung getragen. 4. Dauer der SpeicherungDie Daten werden gelöscht, sobald sie für unsere Aufzeichnungszwecke nicht mehr benötigt werden. In unserem Fall ist dies nach 180 Tagen der Fall. 5. Widerspruchs- und BeseitigungsmöglichkeitCookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser / unserer Cookie-Einstellungen können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden. 14. Prospektbestellung Sie haben die Möglichkeit, auf unserer Website Prospekte zu bestellen. Ihre persönlich eingegebenen Daten werden nur für den Zweck des Prospektversandes an Sie herangezogen. Durch die Eingabe Ihrer Daten in unser Kontaktformular willigen Sie in die Verarbeitung dieser Daten ein. Die Einwilligung stellt gem. Art. 6 Abs. 1 Buchstabe a DSGVO die Rechtsgrundlage für die Verarbeitung dar. Die Pflichtangaben sind zur Erfüllung der Prospektbestellung erforderlich. Die Rechtsgrundlage ist somit Art. 6 Abs. 1 Buchstabe b DSGVO. Eine Weiterverarbeitung oder Weitergabe der Daten findet nicht statt. Ihre personenbezogenen Daten werden für statistische Zwecke 18 Monate aufbewahrt. 15. Erhebung weiterer Daten In unserem Angebot besteht die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten. Ihre Daten werden dabei auf dem Transport unter Verwendung einer Software (SSL) verschlüsselt und sind vor einer Kenntnisnahme durch Dritte geschützt. 16. Rechtswirksamkeit elektronischer Kommunikation und E-Mail-Sicherheit Rechtsbehelfe können schriftlich oder zur Niederschrift bei der zuständigen Behörde eingelegt werden. Darüber hinaus bietet das Landratsamt Landshut Möglichkeiten zur elektronischen Kommunikation im Sinne des Art. 3a Bayer. Verwaltungsverfahrensgesetzes (BayVwVfG), des Bayerischen Digitalgesetzes (BayDiG), der Bayerischen Digitalverordnung (BayDiV) sowie der Verordnung über den elektronischen Rechtsverkehr in der Verwaltungsgerichtsbarkeit (ERVV VwG) an. Für die Einlegung von Widersprüchen sind folgende elektronische Formen zugelassen: Widerspruch per E-Mail nur in Verbindung mit einer qualifizierten elektronischen Signatur nach dem Signaturgesetz (SigG) an: [email protected] Die Einlegung eines Rechtsbehelfs mit einfacher E-Mail ist nicht zugelassen und entfaltet keine rechtlichen Wirkungen. Sollten wir eine E-Mail von Ihnen erhalten, so gehen wir davon aus, dass wir zur Beantwortung per E-Mail berechtigt sind. Ansonsten müssen Sie ausdrücklich auf eine andere Kommunikation verweisen. Wenn Sie uns eine E-Mail senden, so wird Ihre E-Mail-Adresse nur für die Korrespondenz mit Ihnen verwendet.Wollen Sie eine E-Mail mit schutzwürdigem Inhalt an uns senden, so empfehlen wir dringend, diese zu verschlüsseln, um eine unbefugte Kenntnisnahme und Verfälschung auf dem Übertragungsweg zu verhindern.Zur Verschlüsselung Ihrer Nachricht benötigen Sie ein geeignetes Verschlüsselungswerkzeug, das mit dem OpenPGP Standard RFC 4880 kompatibel ist. Unseren öffentlichen OpenPGP-Schlüssel finden Sie nachfolgend. Bitte verwenden Sie nur diesen Schlüssel zur Verschlüsselung Ihrer an uns gerichteten E-Mail, da wir andernfalls Ihre Mail nicht lesen können. Schutzwürdige Nachrichten sollten Sie daher entweder auf konventionellem Postwege oder als PGP-verschlüsselte E-Mail an die Adresse [email protected] richten. Für unser Antwortschreiben geben Sie bei E-Mail bitte auch Ihre Postanschrift an.Sollten Sie PGP-verschlüsselte Nachrichten an uns senden wollen, so benutzen Sie bitte unbedingt den nachfolgenden PGP-Kommunikationsschlüssel (Public Key) zur Verschlüsselung. PGP-Kommunikationsschlüssel• Type: pub• Bits/KeyID: 1024/484D497A• Date: 11.07.2011• User ID: Landratsamt Landshut -----BEGIN PGP PUBLIC KEY BLOCK-----Version: GnuPG v1.4.9 (MingW32) mQGiBE4awbARBACjZW6qCYWcKF3MVsJIAUR4WRz5L6+0zF+xuvIT1YyEWb40sIGi3u+5X+1dYQw+ND9Wzgqm1y+9XhrJLWBkG3J/VrvniIYDWoJrz7ytJHByQCipxzhv4xMbrmXwxrxb9OHckw2RcbCUDzQ//+MqO95GSHvfTwk12jLRBYByYCt2JwCgu7yrpqEkwWWWT8fhDOKW4NgjzXUEAJowICvhVeTycKxrN+fuodJ0pNAUw2LSxJFcP/Ze4Q8MrMgZdkcbKdJBE8SkxIUYlUhQQjnVcUeKzoBLntiUH2kLcHckjeSz3E5kXUiAdtiAfndp/mAHWbCLm5jVzyaiJMjmqt2ATcz/bISENxr7f7wFUhsdrY2N46AhPcnvx/rbBACAEN3LkksyGwYRSBGx9PlaPUJmJ5HHljVNyd2+dCp9CKWlqn7/GSkmQ0RYC6q5goDMK3vPDfq9nn/VClYv7wBx55LfJZ8OM6LaLUytiBu7Heko4xJBNXdsTLMC9HSaVcxdRcDz9aBd4TefxQyidJHkS1Mx2BfOsdw8GYABOETJWbQzTGFuZHJhdHNhbXQgTGFuZHNodXQgPGxyYS1sYUBsYW5ka3JlaXMtbGFuZHNodXQuZGU+iGAEExECACAFAk4awbACGwMGCwkIBwMCBBUCCAMEFgIDAQIeAQIXgAAKCRBTWYT6SE1JeuMlAKCnV6OPrNoOf+MbjL9zRVcuIkgMLACgol25ySctP0KKCTGmhk1G5tVdu0q5Ag0EThrBsBAIAISQtxP5i+DvY9/hgInhmzeDUmGjrQKH1E7rCqCssso4Ickr3f1mUoRgoU5jLGk+IwyvndJyMWqxpk1f/8RkN8q2KcROpWezpei7PNdQjXrRjfoI8qqsb9BrlzgzNvmLC1KzaCj+KK4Di40bPfPhVHA1X2YurIf60lX54O3888KI4zZUlT3j1sIA9yXW8BQ3OBRCb41SuzXzEoJBvQlBDxKf/KyHKHOQIduQ95/Ipmd0MCcbvFQCQJt6Z/DX9/8TxGSX3OXtdq+8TKcQL+AGvMW92xyxMNGoMVvGP7a71KGASKXtqvI741z/oeA0rJecLLdI94EsZu9j8DH8y7UJIDsAAwUH/Av2AjOLLoaUa9bDGDTymG74DrbZkzPchnYSStTBaH3iCaB/338Hat0kwxy/L6mKPs0P4+Q/MVxYPS7Kt65Loghvk+BCUCuMHnwo3FaALfqxnI+yB4SfvtQS6cMjw9SsZGuhoHRQrQi2qtFoeRKx/mu2f7ExCtBWjANW0y88hUA5Qb6H3UZgJzBWXttqjf0LFz4BnJyVP0pbt4ctqO1kkcu1ceRzDiJlmQ8Ny8hfyJZvP0WVrAr1mlI4Hpc9SIzepDnhARjKmWYZt84aggYQQs1w+kYA6nQqUAhp0FHuI3jJqAe0vTuo+gWY43wwU2e+NLg0QUqTfO1gKJSGaS9gmM6ISAQYEQIACQUCThrBsAIbDAAKCRBTWYT6SE1JerggAJ9W4oApBsgMmTA9BS5Cw39vq27jJQCY+yLuIuHhvBM7m5pM/yRPbye1tA===2qaY-----END PGP PUBLIC KEY BLOCK----- Wir setzen - wie viele E-Mail-Anbieter - Filter gegen unerwünschte Werbung („SPAM-Filter“) ein, die in seltenen Fällen auch normale E-Mails fälschlicherweise automatisch als unerwünschte Werbung einordnen und löschen. E-Mails, die schädigende Programme („Viren“) enthalten, werden von uns in jedem Fall automatisch gelöscht. 17. Datensicherheit Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. In der Regel handelt es sich dabei um eine 256 Bit Verschlüsselung. Falls Ihr Browser keine 256-Bit Verschlüsselung unterstützt, greifen wir stattdessen auf 128-Bit v3 Technologie zurück. Ob eine einzelne Seite unseres Internetauftrittes verschlüsselt übertragen wird, erkennen Sie an der geschlossenen Darstellung des Schüssel- beziehungsweise Schloss-Symbols Ihres Browsers.Wir bedienen uns im Übrigen geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert. 18. Fotoaufnahmen Im Rahmen unserer Presse- und Öffentlichkeitsarbeit werden bei Veranstaltungen und Terminen Fotos aufgenommen, auf denen Sie gegebenenfalls erkennbar zu sehen sind. Der Aufnahme und/oder einer Veröffentlichung können Sie widersprechen. Bitte weisen Sie den oder die Fotografin auf Ihr Anliegen hin bzw. nutzten Sie für Ihren Widerspruch die oben genannten Kontaktdaten. 19. Aktualität und Änderung dieser Datenschutzerklärung Diese Datenschutzerklärung ist aktuell gültig (Stand März 2022) und berücksichtigt die Anforderungen der ab dem 25.05.2018 anzuwendenden Datenschutz Grundverordnung (DSGVO). Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website von Ihnen abgerufen und ausgedruckt werden. 20. Ergänzende Datenschutzhinweise zu unserer Facebook-Fanpage und weiteren Social Media-Auftritten Im Rahmen unserer Facebook-Fanpage (abrufbar unter: https://www.facebook.com/LandkreisLandshut/) sowie auf Instagram (https://www.instagram.com/landkreis.landshut/) und Youtube (https://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg) haben Sie ebenfalls die Möglichkeit, sich über den Landkreis Landshut zu informieren. 21. Facebook Das Landratsamt Landshut präsentiert sich auf Facebook, um dort zu kommunizieren und über Dienstleistungen, Veranstaltungen und weiteres zu informieren. Falls Sie unsere Facebook-Seite besuchen, können Ihre Nutzerdaten auch außerhalb der Europäischen Union verarbeitet werden. Weiterhin werden Nutzerdaten für Werbezwecke verarbeitet, um u.a. Nutzungsprofile zu erstellen. Zu diesen Zwecken speichert Facebook Cookies auf Ihrem Rechner. Weitere Auskünfte hierzu erhalten Sie bei Facebook. Unser berechtigtes Interesse zur Verarbeitung der personenbezogenen Nutzerdaten ergibt sich aus Art. 6 Abs. 1 sowie Art. 7 DSGVO. Datenschutzerklärung zu Facebook Page Controller Addendum 22. Instagram Das Landratsamt Landshut präsentiert sich auf Instagram, um dort zu kommunizieren und über Dienstleistungen, Veranstaltungen und weiteres zu informieren. Falls Sie unsere Instagram-Seite besuchen, können Ihre Nutzerdaten auch außerhalb der Europäischen Union verarbeitet werden. Weiterhin werden Nutzerdaten für Werbezwecke verarbeitet, um u.a. Nutzungsprofile zu erstellen. Zu diesen Zwecken speichert Instagram Cookies auf Ihrem Rechner. Weitere Auskünfte hierzu erhalten Sie bei Instagram. Unser berechtigtes Interesse zur Verarbeitung der personenbezogenen Nutzerdaten ergibt sich aus Art. 6 Abs. 1 sowie Art. 7 DSGVO. Datenschutzerklärung zu Instagram 23. Linked In Das Landratsamt Landshut präsentiert sich auf LinkedIn, um dort zu kommunizieren und über Dienstleistungen, Veranstaltungen und weiteres zu informieren. Falls Sie unsere LinkedIn-Seite besuchen, können Ihre Nutzerdaten auch außerhalb der Europäischen Union verarbeitet werden. Weiterhin werden Nutzerdaten für Werbezwecke verarbeitet, um u.a. Nutzungsprofile zu erstellen. Zu diesen Zwecken speichert LinkedIn Cookies auf Ihrem Rechner. Weitere Auskünfte hierzu erhalten Sie bei LinkedIn. Unser berechtigtes Interesse zur Verarbeitung der personenbezogenen Nutzerdaten ergibt sich aus Art. 6 Abs. 1 sowie Art. 7 DSGVO. Datenschutzerklärung zu LinkedIn 24. Eye-Able Eye-Able® ist eine Software der Web Inclusion GmbH, um allen Menschen einen barriere-reduzierten Zugang zu Informationen im Internet zu gewährleisten. Die dafür notwendigen Dateien wie JavaScript, Stylesheets und Bilder werden lokal von dieser Webseite geladen. Eye-Able verwendet bei einer Aktivierung von Funktionen den Local Storage des Browsers, um die Einstellungen zu speichern. Alle Einstellungen werden nur lokal gespeichert und nicht weiter übertragen. Weitere Informationen zu Eye-Able® finden Sie in folgender Datenschutzerklärung: https://eye-able.com/datenschutz/ Bei Fragen zum Datenschutz melden Sie sich gerne unter [email protected] Alle aufklappen Alle zuklappen Informationsblätter zur Erhebung personenbezogener Daten nach Art. 13 und 14 Datenschutz-Grundverordnung Informationsblätter Datenschutz-Grundverordnung (A - I) Abfallwirtschaft - Kommunales Abfallrecht Abfallwirtschaft - Kreislaufwirtschaftsgesetz (KrWG) Abfallwirtschaft - Staatliches Abfallrecht - Bodenschutzrecht Bauverwaltung - Bauleitplanung - Wohnraumförderung - Wohnberechtigungsschein Behindertenberatung Betreuungsstelle - Beratung - Betreuung - Beglaubigung Betreuungsstelle - Betreuungsgerichtshilfe Bildung und Teilhabe Denkmalschutz Ehrungen Förderanträge Landkreis Landshut FQA - Heimaufsicht Führerscheinstelle Gesundheitsamt Gesundheitsamt - Corona - Einreise - Saisonarbeitskräfte Gesundheitsamt - Corona - Einreise-Quarantäneverordnung Gesundheitsamt - Corona - Kontaktnachverfolgung Gesundheitsamt - Digitale Impfverwaltung Gesundheitsamt - Schuleingangsuntersuchung Gesundheitsamt - Schwangerschaftsberatung - Online-Terminbuchung Gesundheitsregion Plus Immissionsschutz Informationsblätter Datenschutz-Grundverordnung (Jugendamt) Adoptionsvermittlung Familiengerichtshilfe Jugendgerichtshilfe Kindertagesbetreuung SGB VIII - Kostenübernahme Kindertagespflege - Erlaubnis Kindertagesstätte - Kindertagesbetreuung Koordinierende Kinderschutzstelle Leistung - Kinder- und Jugendhilfe Pflegeeltern-Erlaubnis Pflegekinderdienst Unterhaltsvorschuss Informationsblätter Datenschutz-Grundverordnung (K-N) Kfz-Zulassungswesen Kommunale Angelegenheiten Kreiseigener Hochbau - Gebäudemanagement - Kommunale Energieberatung Kreisheimatpflege Namensänderung Naturschutz - Artenschutz Informationsblätter Datenschutz-Grundverordnung (Öffentliche Sicherheit und Ordnung) Feldgeschworene Feuerwehrwesen Fischereirecht Gewerberecht Jagdrecht - Wildschutzrecht Katastrophenschutz Motorsportliche Veranstaltung Sprengstoffrecht Versammlungsrecht Waffenrecht Informationsblätter Datenschutz-Grundverordnung (P-Z) Rettungsdienst Schülerbeförderung Sitzungsdienst Sozialhilfe und Asyl Staatsangehörigkeits- und Ausländerrecht Tiefbauamt Veterinärwesen - Gesundheitlicher Verbraucherschutz Videokonferenzen Videoüberwachung - Videobeobachtung Wasserrecht Wirtschaftsförderung und Tourismus Wohnberatung Alle aufklappen Alle zuklappen",
+      "links": [
+        {
+          "text": "Vorheriger Slide",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz#LdCarouselHeaderImageCarousel-2195036"
+        },
+        {
+          "text": "Nächster Slide",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz#LdCarouselHeaderImageCarousel-2195036"
+        },
+        {
+          "text": "Zum Ändern Ihrer Datenschutzeinstellungen, z.B. Erteilung oder Widerruf von Einwilligungen, klicken Sie hier",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz#dfxLegalsCookieConsent"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#b6c6d9c5c2c5c2d3dadad3f6dad7d8d2ddc4d3dfc59bdad7d8d2c5dec3c298d2d3"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#80e4e1f4e5eef3e3e8f5f4fac0ece1eee4ebf2e5e9f3adece1eee4f3e8f5f4aee4e5"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#7808170b0c0b0c1d14141d381c190c1d160b1b100d0c02551a19011d0a16561c1d"
+        },
+        {
+          "text": "www.datenschutz-bayern.de",
+          "url": "https://www.datenschutz-bayern.de/"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#abc7d9ca86c7caebc7cac5cfc0d9cec2d886c7cac5cfd8c3dedf85cfce"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#5b37293a76373a1b373a353f30293e322876373a353f28332e2f753f3e"
+        },
+        {
+          "text": "https://www.facebook.com/LandkreisLandshut/",
+          "url": "https://www.facebook.com/LandkreisLandshut/"
+        },
+        {
+          "text": "https://www.instagram.com/landkreis.landshut/",
+          "url": "https://www.instagram.com/landkreis.landshut/"
+        },
+        {
+          "text": "https://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg",
+          "url": "https://www.youtube.com/channel/UCdGvZYAKpeafJ-BtzTzJ2fg"
+        },
+        {
+          "text": "Datenschutzerklärung zu Facebook",
+          "url": "https://www.facebook.com/policy.php"
+        },
+        {
+          "text": "Page Controller Addendum",
+          "url": "https://www.facebook.com/legal/terms/page_controller_addendum"
+        },
+        {
+          "text": "Datenschutzerklärung zu Instagram",
+          "url": "https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+        },
+        {
+          "text": "Datenschutzerklärung zu LinkedIn",
+          "url": "https://de.linkedin.com/legal/privacy-policy"
+        },
+        {
+          "text": "https://eye-able.com/datenschutz/",
+          "url": "https://eye-able.com/datenschutz/"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#02717772726d707642677b672f63606e672c616d6f"
+        },
+        {
+          "text": "Abfallwirtschaft - Kommunales Abfallrecht",
+          "url": "https://www.landkreis-landshut.de/media/1469/sg25_abfallwirtschaft_kommunales_abfallrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Abfallwirtschaft - Kreislaufwirtschaftsgesetz (KrWG)",
+          "url": "https://www.landkreis-landshut.de/media/1470/sg25_abfallwirtschaft_kreislaufwirtschaftsgesetz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Abfallwirtschaft - Staatliches Abfallrecht - Bodenschutzrecht",
+          "url": "https://www.landkreis-landshut.de/media/1471/sg25_staatliches_abfallrecht_bodenschutzrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Bauverwaltung - Bauleitplanung - Wohnraumförderung - Wohnberechtigungsschein",
+          "url": "https://www.landkreis-landshut.de/media/1465/abt4v_bauverwaltung_bauleitplanung_wohnraumfoerderung_wohnberechtigungsschein_dsgvo.pdf"
+        },
+        {
+          "text": "Behindertenberatung",
+          "url": "https://www.landkreis-landshut.de/media/1475/sg51_behindertenberatung_dsgvo_infoblatt_072020.pdf"
+        },
+        {
+          "text": "Betreuungsstelle - Beratung - Betreuung - Beglaubigung",
+          "url": "https://www.landkreis-landshut.de/media/1476/sg51-infoblatt_betreuungsstelle_beratung_betreuer_beglaubigung_012023.pdf"
+        },
+        {
+          "text": "Betreuungsstelle - Betreuungsgerichtshilfe",
+          "url": "https://www.landkreis-landshut.de/media/1477/sg51_dsgvo_infoblatt_betreuungsstelle_betreuungsgerichtshilfe_012023.pdf"
+        },
+        {
+          "text": "Bildung und Teilhabe",
+          "url": "https://www.landkreis-landshut.de/media/1479/sg52_bildung_und_teilhabe_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Denkmalschutz",
+          "url": "https://www.landkreis-landshut.de/media/1474/sg44_denkmalschutz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Ehrungen",
+          "url": "https://www.landkreis-landshut.de/media/1464/abt1_sg20_ehrungen_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Förderanträge Landkreis Landshut",
+          "url": "https://www.landkreis-landshut.de/media/1468/sg13_foerderantraege_landkreis_landshut.pdf"
+        },
+        {
+          "text": "FQA - Heimaufsicht",
+          "url": "https://www.landkreis-landshut.de/media/1478/sg51_fqa_heimaufsicht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Führerscheinstelle",
+          "url": "https://www.landkreis-landshut.de/media/1472/sg33_fuehrerscheinstelle_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Gesundheitsamt",
+          "url": "https://www.landkreis-landshut.de/media/1466/abt7_gesundheitsamt_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Corona - Einreise - Saisonarbeitskräfte",
+          "url": "https://www.landkreis-landshut.de/media/1481/sg72_gesundheitsamt_corona_saisonarbeitskraefte_dsgvo-info082020.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Corona - Einreise-Quarantäneverordnung",
+          "url": "https://www.landkreis-landshut.de/media/1480/sg72_einreise_quarantaene_dsgvo_info_062020.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Corona - Kontaktnachverfolgung",
+          "url": "https://www.landkreis-landshut.de/media/1509/sg74_gesundheitsamt_corona_kontaktnachverfolgung_dsgvo_info_032022.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Digitale Impfverwaltung",
+          "url": "https://www.landkreis-landshut.de/media/1482/sg74_digitale_impfverwaltung_dsgvo-infoblatt.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Schuleingangsuntersuchung",
+          "url": "https://www.landkreis-landshut.de/media/2380/sg71_schuleingangsuntersuchung_dsgvo-infoblatt092023.pdf"
+        },
+        {
+          "text": "Gesundheitsamt - Schwangerschaftsberatung - Online-Terminbuchung",
+          "url": "https://www.landkreis-landshut.de/media/2689/sg71_gesundheitsamt_schwangerschaftsberatung_online_terminbuchung_dsgvoinfo.pdf"
+        },
+        {
+          "text": "Gesundheitsregion Plus",
+          "url": "https://www.landkreis-landshut.de/media/1467/abt7_gesundheitsregionplus_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Immissionsschutz",
+          "url": "https://www.landkreis-landshut.de/media/1473/sg43_immissionsschutz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Adoptionsvermittlung",
+          "url": "https://www.landkreis-landshut.de/media/1485/sg53_adoptionsvermittlung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Familiengerichtshilfe",
+          "url": "https://www.landkreis-landshut.de/media/1483/abt5_familiengerichtshilfe_dsgvo_infoblatt_062021.pdf"
+        },
+        {
+          "text": "Jugendgerichtshilfe",
+          "url": "https://www.landkreis-landshut.de/media/1484/abt5_jugendgerichtshilfe_dsgvo-infoblatt062021.pdf"
+        },
+        {
+          "text": "Kindertagesbetreuung SGB VIII - Kostenübernahme",
+          "url": "https://www.landkreis-landshut.de/media/1487/sg53_kindertagesbetreuung_-90_kostenuebernahme_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Kindertagespflege - Erlaubnis",
+          "url": "https://www.landkreis-landshut.de/media/1488/sg53_kindertagespflege_erlaubnis.pdf"
+        },
+        {
+          "text": "Kindertagesstätte - Kindertagesbetreuung",
+          "url": "https://www.landkreis-landshut.de/media/1489/sg53_kindertagesstaette_kindertagesbetreuung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Koordinierende Kinderschutzstelle",
+          "url": "https://www.landkreis-landshut.de/media/1490/sg53_koki_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Leistung - Kinder- und Jugendhilfe",
+          "url": "https://www.landkreis-landshut.de/media/1486/sg53_kinder_und_jugendhilfe_leistung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Pflegeeltern-Erlaubnis",
+          "url": "https://www.landkreis-landshut.de/media/1491/sg53_pflegeeltern-erlaubnis_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Pflegekinderdienst",
+          "url": "https://www.landkreis-landshut.de/media/2714/sg55_pflegekinderdienst_dsgvo_info.pdf"
+        },
+        {
+          "text": "Unterhaltsvorschuss",
+          "url": "https://www.landkreis-landshut.de/media/1492/sg54_unterhaltsvorschuss_dsgvo-infoblatt2023.pdf"
+        },
+        {
+          "text": "Kfz-Zulassungswesen",
+          "url": "https://www.landkreis-landshut.de/media/1498/sg34_kfz_zulassungswesen_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Kommunale Angelegenheiten",
+          "url": "https://www.landkreis-landshut.de/media/1495/sg20_kommunale_angelegenheiten.pdf"
+        },
+        {
+          "text": "Kreiseigener Hochbau - Gebäudemanagement - Kommunale Energieberatung",
+          "url": "https://www.landkreis-landshut.de/media/1494/sg16_kreiseigener_hochbau_gebaeudemanagement_kommunale_energieberatung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Kreisheimatpflege",
+          "url": "https://www.landkreis-landshut.de/media/1493/abt1_kreisheimatpflege_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Namensänderung",
+          "url": "https://www.landkreis-landshut.de/media/1496/sg20_namensaenderung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Naturschutz - Artenschutz",
+          "url": "https://www.landkreis-landshut.de/media/1497/sg24_naturschutz_artenschutz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Feldgeschworene",
+          "url": "https://www.landkreis-landshut.de/media/1499/sg30_feldgeschworene_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Feuerwehrwesen",
+          "url": "https://www.landkreis-landshut.de/media/1500/sg30_feuerwehrwesen_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Fischereirecht",
+          "url": "https://www.landkreis-landshut.de/media/1501/sg30_fischereirecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Gewerberecht",
+          "url": "https://www.landkreis-landshut.de/media/1502/sg30_gewerberecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Jagdrecht - Wildschutzrecht",
+          "url": "https://www.landkreis-landshut.de/media/1503/sg30_jagdrecht_wildschutzrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Katastrophenschutz",
+          "url": "https://www.landkreis-landshut.de/media/1504/sg30_katastrophenschutz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Motorsportliche Veranstaltung",
+          "url": "https://www.landkreis-landshut.de/media/1505/sg30_motorsportliche_veranstaltung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Sprengstoffrecht",
+          "url": "https://www.landkreis-landshut.de/media/1506/sg30_sprengstoffrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Versammlungsrecht",
+          "url": "https://www.landkreis-landshut.de/media/1507/sg30_versammlungsrecht_dsgvo_infoblatt-1.pdf"
+        },
+        {
+          "text": "Waffenrecht",
+          "url": "https://www.landkreis-landshut.de/media/1508/sg30_waffenrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Rettungsdienst",
+          "url": "https://www.landkreis-landshut.de/media/2124/sg31_dsgvo_info_rettungsdienst_042023.pdf"
+        },
+        {
+          "text": "Schülerbeförderung",
+          "url": "https://www.landkreis-landshut.de/media/1514/sg17_schuelerbeforderung_dsgvo_infoblatt_082023.pdf"
+        },
+        {
+          "text": "Sitzungsdienst",
+          "url": "https://www.landkreis-landshut.de/media/1510/abt1_sitzungsdienst_dsgvo_info_052020.pdf"
+        },
+        {
+          "text": "Sozialhilfe und Asyl",
+          "url": "https://www.landkreis-landshut.de/media/1518/sg51_sozialhilfe_und_asyl.pdf"
+        },
+        {
+          "text": "Staatsangehörigkeits- und Ausländerrecht",
+          "url": "https://www.landkreis-landshut.de/media/1517/sg32_staatsangehoerigkeits_und_auslaenderecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Tiefbauamt",
+          "url": "https://www.landkreis-landshut.de/media/1511/abt6_tiefbau_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Veterinärwesen - Gesundheitlicher Verbraucherschutz",
+          "url": "https://www.landkreis-landshut.de/media/1520/sg84_veterinaerwesen_gesundheitlicher_verbraucherschutz_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Videokonferenzen",
+          "url": "https://www.landkreis-landshut.de/media/1512/sg10_videokonferenzen_dsgvo_info.pdf"
+        },
+        {
+          "text": "Videoüberwachung - Videobeobachtung",
+          "url": "https://www.landkreis-landshut.de/media/1513/sg10_videoueberwachung_videobeobachtung_dsgvo_info.pdf"
+        },
+        {
+          "text": "Wasserrecht",
+          "url": "https://www.landkreis-landshut.de/media/1516/sg23_wasserrecht_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Wirtschaftsförderung und Tourismus",
+          "url": "https://www.landkreis-landshut.de/media/1515/sg18_wirtschaftsfoerderung_tourismus_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Wohnberatung",
+          "url": "https://www.landkreis-landshut.de/media/1519/sg51_wohnberatung_dsgvo_infoblatt.pdf"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/datenschutz",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/media/1469/sg25_abfallwirtschaft_kommunales_abfallrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1470/sg25_abfallwirtschaft_kreislaufwirtschaftsgesetz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1471/sg25_staatliches_abfallrecht_bodenschutzrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1465/abt4v_bauverwaltung_bauleitplanung_wohnraumfoerderung_wohnberechtigungsschein_dsgvo.pdf",
+        "https://www.landkreis-landshut.de/media/1475/sg51_behindertenberatung_dsgvo_infoblatt_072020.pdf",
+        "https://www.landkreis-landshut.de/media/1476/sg51-infoblatt_betreuungsstelle_beratung_betreuer_beglaubigung_012023.pdf",
+        "https://www.landkreis-landshut.de/media/1477/sg51_dsgvo_infoblatt_betreuungsstelle_betreuungsgerichtshilfe_012023.pdf",
+        "https://www.landkreis-landshut.de/media/1479/sg52_bildung_und_teilhabe_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1474/sg44_denkmalschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1464/abt1_sg20_ehrungen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1468/sg13_foerderantraege_landkreis_landshut.pdf",
+        "https://www.landkreis-landshut.de/media/1478/sg51_fqa_heimaufsicht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1472/sg33_fuehrerscheinstelle_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1466/abt7_gesundheitsamt_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1481/sg72_gesundheitsamt_corona_saisonarbeitskraefte_dsgvo-info082020.pdf",
+        "https://www.landkreis-landshut.de/media/1480/sg72_einreise_quarantaene_dsgvo_info_062020.pdf",
+        "https://www.landkreis-landshut.de/media/1509/sg74_gesundheitsamt_corona_kontaktnachverfolgung_dsgvo_info_032022.pdf",
+        "https://www.landkreis-landshut.de/media/1482/sg74_digitale_impfverwaltung_dsgvo-infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2380/sg71_schuleingangsuntersuchung_dsgvo-infoblatt092023.pdf",
+        "https://www.landkreis-landshut.de/media/2689/sg71_gesundheitsamt_schwangerschaftsberatung_online_terminbuchung_dsgvoinfo.pdf",
+        "https://www.landkreis-landshut.de/media/1467/abt7_gesundheitsregionplus_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1473/sg43_immissionsschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1485/sg53_adoptionsvermittlung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1483/abt5_familiengerichtshilfe_dsgvo_infoblatt_062021.pdf",
+        "https://www.landkreis-landshut.de/media/1484/abt5_jugendgerichtshilfe_dsgvo-infoblatt062021.pdf",
+        "https://www.landkreis-landshut.de/media/1487/sg53_kindertagesbetreuung_-90_kostenuebernahme_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1488/sg53_kindertagespflege_erlaubnis.pdf",
+        "https://www.landkreis-landshut.de/media/1489/sg53_kindertagesstaette_kindertagesbetreuung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1490/sg53_koki_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1486/sg53_kinder_und_jugendhilfe_leistung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1491/sg53_pflegeeltern-erlaubnis_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2714/sg55_pflegekinderdienst_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1492/sg54_unterhaltsvorschuss_dsgvo-infoblatt2023.pdf",
+        "https://www.landkreis-landshut.de/media/1498/sg34_kfz_zulassungswesen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1495/sg20_kommunale_angelegenheiten.pdf",
+        "https://www.landkreis-landshut.de/media/1494/sg16_kreiseigener_hochbau_gebaeudemanagement_kommunale_energieberatung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1493/abt1_kreisheimatpflege_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1496/sg20_namensaenderung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1497/sg24_naturschutz_artenschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1499/sg30_feldgeschworene_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1500/sg30_feuerwehrwesen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1501/sg30_fischereirecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1502/sg30_gewerberecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1503/sg30_jagdrecht_wildschutzrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1504/sg30_katastrophenschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1505/sg30_motorsportliche_veranstaltung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1506/sg30_sprengstoffrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1507/sg30_versammlungsrecht_dsgvo_infoblatt-1.pdf",
+        "https://www.landkreis-landshut.de/media/1508/sg30_waffenrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2124/sg31_dsgvo_info_rettungsdienst_042023.pdf",
+        "https://www.landkreis-landshut.de/media/1514/sg17_schuelerbeforderung_dsgvo_infoblatt_082023.pdf",
+        "https://www.landkreis-landshut.de/media/1510/abt1_sitzungsdienst_dsgvo_info_052020.pdf",
+        "https://www.landkreis-landshut.de/media/1518/sg51_sozialhilfe_und_asyl.pdf",
+        "https://www.landkreis-landshut.de/media/1517/sg32_staatsangehoerigkeits_und_auslaenderecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1511/abt6_tiefbau_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1520/sg84_veterinaerwesen_gesundheitlicher_verbraucherschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1512/sg10_videokonferenzen_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1513/sg10_videoueberwachung_videobeobachtung_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1516/sg23_wasserrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1515/sg18_wirtschaftsfoerderung_tourismus_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1519/sg51_wohnberatung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum"
+      ],
+      "depth": 1,
+      "parent": "https://www.landkreis-landshut.de",
+      "children": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/media/1469/sg25_abfallwirtschaft_kommunales_abfallrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1470/sg25_abfallwirtschaft_kreislaufwirtschaftsgesetz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1471/sg25_staatliches_abfallrecht_bodenschutzrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1465/abt4v_bauverwaltung_bauleitplanung_wohnraumfoerderung_wohnberechtigungsschein_dsgvo.pdf",
+        "https://www.landkreis-landshut.de/media/1475/sg51_behindertenberatung_dsgvo_infoblatt_072020.pdf",
+        "https://www.landkreis-landshut.de/media/1476/sg51-infoblatt_betreuungsstelle_beratung_betreuer_beglaubigung_012023.pdf",
+        "https://www.landkreis-landshut.de/media/1477/sg51_dsgvo_infoblatt_betreuungsstelle_betreuungsgerichtshilfe_012023.pdf",
+        "https://www.landkreis-landshut.de/media/1479/sg52_bildung_und_teilhabe_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1474/sg44_denkmalschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1464/abt1_sg20_ehrungen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1468/sg13_foerderantraege_landkreis_landshut.pdf",
+        "https://www.landkreis-landshut.de/media/1478/sg51_fqa_heimaufsicht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1472/sg33_fuehrerscheinstelle_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1466/abt7_gesundheitsamt_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1481/sg72_gesundheitsamt_corona_saisonarbeitskraefte_dsgvo-info082020.pdf",
+        "https://www.landkreis-landshut.de/media/1480/sg72_einreise_quarantaene_dsgvo_info_062020.pdf",
+        "https://www.landkreis-landshut.de/media/1509/sg74_gesundheitsamt_corona_kontaktnachverfolgung_dsgvo_info_032022.pdf",
+        "https://www.landkreis-landshut.de/media/1482/sg74_digitale_impfverwaltung_dsgvo-infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2380/sg71_schuleingangsuntersuchung_dsgvo-infoblatt092023.pdf",
+        "https://www.landkreis-landshut.de/media/2689/sg71_gesundheitsamt_schwangerschaftsberatung_online_terminbuchung_dsgvoinfo.pdf",
+        "https://www.landkreis-landshut.de/media/1467/abt7_gesundheitsregionplus_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1473/sg43_immissionsschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1485/sg53_adoptionsvermittlung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1483/abt5_familiengerichtshilfe_dsgvo_infoblatt_062021.pdf",
+        "https://www.landkreis-landshut.de/media/1484/abt5_jugendgerichtshilfe_dsgvo-infoblatt062021.pdf",
+        "https://www.landkreis-landshut.de/media/1487/sg53_kindertagesbetreuung_-90_kostenuebernahme_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1488/sg53_kindertagespflege_erlaubnis.pdf",
+        "https://www.landkreis-landshut.de/media/1489/sg53_kindertagesstaette_kindertagesbetreuung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1490/sg53_koki_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1486/sg53_kinder_und_jugendhilfe_leistung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1491/sg53_pflegeeltern-erlaubnis_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2714/sg55_pflegekinderdienst_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1492/sg54_unterhaltsvorschuss_dsgvo-infoblatt2023.pdf",
+        "https://www.landkreis-landshut.de/media/1498/sg34_kfz_zulassungswesen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1495/sg20_kommunale_angelegenheiten.pdf",
+        "https://www.landkreis-landshut.de/media/1494/sg16_kreiseigener_hochbau_gebaeudemanagement_kommunale_energieberatung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1493/abt1_kreisheimatpflege_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1496/sg20_namensaenderung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1497/sg24_naturschutz_artenschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1499/sg30_feldgeschworene_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1500/sg30_feuerwehrwesen_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1501/sg30_fischereirecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1502/sg30_gewerberecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1503/sg30_jagdrecht_wildschutzrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1504/sg30_katastrophenschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1505/sg30_motorsportliche_veranstaltung_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1506/sg30_sprengstoffrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1507/sg30_versammlungsrecht_dsgvo_infoblatt-1.pdf",
+        "https://www.landkreis-landshut.de/media/1508/sg30_waffenrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/2124/sg31_dsgvo_info_rettungsdienst_042023.pdf",
+        "https://www.landkreis-landshut.de/media/1514/sg17_schuelerbeforderung_dsgvo_infoblatt_082023.pdf",
+        "https://www.landkreis-landshut.de/media/1510/abt1_sitzungsdienst_dsgvo_info_052020.pdf",
+        "https://www.landkreis-landshut.de/media/1518/sg51_sozialhilfe_und_asyl.pdf",
+        "https://www.landkreis-landshut.de/media/1517/sg32_staatsangehoerigkeits_und_auslaenderecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1511/abt6_tiefbau_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1520/sg84_veterinaerwesen_gesundheitlicher_verbraucherschutz_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1512/sg10_videokonferenzen_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1513/sg10_videoueberwachung_videobeobachtung_dsgvo_info.pdf",
+        "https://www.landkreis-landshut.de/media/1516/sg23_wasserrecht_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1515/sg18_wirtschaftsfoerderung_tourismus_dsgvo_infoblatt.pdf",
+        "https://www.landkreis-landshut.de/media/1519/sg51_wohnberatung_dsgvo_infoblatt.pdf"
+      ]
+    },
+    "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection": {
+      "error": "request to https://www.landkreis-landshut.de/cdn-cgi/l/email-protection failed, reason: socket hang up",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-vorherige-terminvereinbarung-weiter-noetig",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gewaesserunterhaltungszweckverbands-vor-neuer-ausrichtung": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gewaesserunterhaltungszweckverbands-vor-neuer-ausrichtung",
+      "title": "Gewässerunterhaltungszweckverbands vor neuer Ausrichtung | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Gewässerunterhaltungszweckverbands vor neuer Ausrichtung"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Gewässerunterhaltungszweckverbands vor neuer Ausrichtung 09. September 2025: Jährliche Verbandsversammlung im Zeichen des Umbruchs Der Gewässerunterhaltungszweckverband (kurz: GUZV) steht vor einem Umbruch. Die erfolgreiche, interkommunale Zusammenarbeit über die Landkreisgrenzen hinweg wird neu ausgerichtet. Diese Prognose stand im Mittelpunkt der Jahreshauptversammlung des Zweckverbandes, der bereits seit 1976 besteht. Aufgrund der immer komplexer werdenden Aufgaben und Anforderungen im sehr umfangreichen Verbandsgebiet (Landkreise Dingolfing-Landau, Landshut, Kelheim) hat das bisher tätige Ingenieurbüro Dietlmeier seine Tätigkeit abgeschlossen – obgleich die Zusammenarbeit über viele Jahre sehr erfolgreich war. Nachdem nur in Teilen des Verbandsgebietes das „Regensburger Modell“ praktiziert werden kann, bei dem die jeweiligen, etablierten Landschaftspflegeverbände die Aufgaben des GUZV übernehmen, wird sich der GUZV neu ausrichten müssen. So wird im Landkreis Kelheim der dortige Landschaftspflegeverband mit der Gewässerunterhaltung beauftragt, aus dem Landkreis Dingolfing-Landau bleiben lediglich drei Gemeinden Mitglied beim GUZV, sodass der Verband künftig 16 Mitglieder hat. Zudem hat der langjährige Geschäftsführer Klaus Weindl bekannt gegeben, dass er die noch nicht abgerechneten Maßnahmen in den Bauabschnitten 10 und 48 noch abwickeln wird, im Anschluss aber als Mitarbeiter ausscheidet. Der Vorsitzende Josef Klaus, seines Zeichens auch Bürgermeister Niederaichbachs, stellte in Aussicht, dass diese Aufgabe innerhalb seiner Gemeindeverwaltung übernommen werden konnte. In einer Abstimmung haben 36 Kommunen für den Fortbestand des GUZV gestimmt. Klaus sagte daraufhin zu, dass er versuchen wird, zusammen mit einem neuen Ingenieurbüro und einem neuen Geschäftsführer den GUZV weiterzuführen – natürlich unter wirtschaftlichen Gesichtspunkten. Deshalb wird aktuell keine Verbandsumlage erhoben, sodass bis zur Änderung des GUZV für alle Gemeinden keine finanziellen Ausgaben entstehen. Sollte der GUZV fortgeführt werden, werden den verbliebenen Mitgliedsgemeinden wieder eine Verwaltungs- und Bauumlage in Rechnung. „Der Verband wird räumlich gesehen zwar insgesamt kleiner – dadurch können wir das verbleibende Gebiet aber intensiver betreuen“, erklärte der Vorsitzende Klaus. Der GUZV kümmert sich um Pflege und Unterhalt aller Gewässer 3. Ordnung zwischen der Altmühl, der Großen und Kleinen Laber, der Isar, der Vils und der Bina – genauer: um das ganze Geflecht von Bächen und kleinen Wasseradern zwischen diesen Flüssen. Diese Lebensadern der heimischen Natur intakt zu halten, ist nach Landesrecht Pflicht der Gemeinden. Unter fachlicher Beratung würden hier den Belangen der Natur, aber auch der Wirtschaftlichkeit Rechnung getragen. Für die Erfüllung seiner Aufgaben kann sich der GUZV auf einen Haushaltsplan für das laufende Jahr stützen, der 607 150 Euro im Verwaltungshaushalt und 251 100 Euro im Vermögenshaushalt umfasst.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2909-beratungstermin-hoer-und-sprachentwicklung-kind": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2909-beratungstermin-hoer-und-sprachentwicklung-kind",
+      "title": "29.09. - Beratungstermin Hör- und Sprachentwicklung Kind | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "29.09. - Beratungstermin Hör- und Sprachentwicklung Kind"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Anmeldung/Terminvereinbarung erforderlich:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "29.09. - Beratungstermin Hör- und Sprachentwicklung Kind 09. September 2025: Hört und spricht mein Kind richtig? Im Gesundheitsamt am Landratsamt Landshut findet am Montag, 29.09.2025 der nächste kostenlose Beratungstag für Kinder mit Hör- und Sprachauffälligkeiten statt. Die Sprachentwicklung eines Kindes verläuft selten nach einem vorhersehbaren Schema. Viele Eltern fragen sich jedoch, ob die Sprachentwicklung ihres Kindes noch altersgemäß ist oder ob nicht vielleicht eine Sprachentwicklungsverzögerung vorliegen könnte. Auch einzuschätzen, ob ein Kind richtig hört, ist nicht immer ganz einfach. Für Eltern, die Fragen in Bezug auf die Hör- und Sprachentwicklung ihres Kindes haben, gibt es am Landratsamt Landshut, Abteilung Gesundheitswesen, in Zusammenarbeit mit dem Institut für Hören und Sprache Straubing eine Beratungsmöglichkeit. Eine Studienrätin im Förderschuldienst der pädagogisch-audiologischen Beratungsstelle bietet einen kindesgemäßen Hör- und Sprachtest an und zeigt individuelle Möglichkeiten der Förderung auf. Die Beratung ist kostenlos. Eine Überweisung ist nicht erforderlich. Test und Beratung finden am Beratungstag, 29. September 2025 in der Zeit von 9 bis 15 Uhr im Landratsamt Landshut, Veldener Straße 15, 84036 Landshut, statt. Anmeldung/Terminvereinbarung erforderlich: Telefon: 0871 408-1720",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/14-sept-tag-des-offenen-denkmals": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/14-sept-tag-des-offenen-denkmals",
+      "title": "14. Sept. - Tag des offenen Denkmals | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "14. Sept. - Tag des offenen Denkmals"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "14. Sept. - Tag des offenen Denkmals 05. September 2025: Von der Grabung bis zum denkmalgeschützten Ortskern Die Archäologische Ausgrabung am Färberanger im Herzen der Stadt Vilsbiburg Der Tag des offenen Denkmals gehört zu den größten Kulturveranstaltungen Deutschlands und wir mittlerweile seit 1993 von der Deutschen Stiftung Denkmalschutz ausgerichtet. Auch der Landkreis Landshut ist reich an Denkmälern. Einige von ihnen werden am Veranstaltungstag ihre Türen für interessierte Besucherinnen und Besucher öffnen: Archäologische Ausgrabung am Färberanger (Stadt Vilsbiburg) Mitten im Zentrum der mittelalterlichen Stadt Vilsbiburg führt die Kreisarchäologie aktuell im Auftrag der Stadt Vilsbiburg bauvorgreifende archäologische Ausgrabungen durch. Im Schatten der hier entdeckten Vilsbiburger Stadtmauer des ausgehenden Mittelalters fanden sich dabei Spuren aus 800 Jahren Vilsbiburger Stadtgeschichte. Am Tag des offenen Denkmals ist die Ausgrabung von 14.00–16.00 Uhr für die Öffentlichkeit zugänglich. Um 14.30 Uhr und 15.30 Uhr wird eine öffentliche Führung angeboten. Auf dem Grabungsgelände wird die Untere Denkmalschutzbehörde des Landkreises Landshut im Rahmen einer Plakatausstellung einen Einblick in verschiedene Denkmalschutzprojekte im Bereich der Vilsbiburger Altstadt geben. Der Heimatverein Vilsbiburg stellt die Ergebnisse seiner Forschungen vor allem zur Ernährung im mittelalterlichen Vilsbiburg vor und die Stadt Vilsbiburg präsentiert die Pläne zur Entwicklung des Areals am Färberanger. Der Heimatverein bietet Kaffee und Kuchen an. Eintritt und Führungen sind kostenlos. Parkplätze stehen am Großparkplatz Färberanger zur Verfügung. Künstlerhaus Ganslberg, Ganslberg 24, Altdorf Das Anwesen wurde in den 1960ern im Stil eines niederbayerischen Hofes erbaut und diente bis zum Tod Koenigs als Wohn- und Atelierhaus. Seit 2023 laufen Bestrebungen, das Objekt wieder einer Nutzung zuzuführen. Hierfür sind im Jahr 2024 umfangreiche Instandsetzungsarbeiten angelaufen. Im Sommer 2025 fand eine temporäre Ausstellung statt, nach Abschluss dieser Ausstellung wird das Anwesen nicht mehr öffentlich zugänglich sein, sondern wieder als Atelierhaus dienen. Freier Zugang zum Anwesen zwischen 10:00 und 16:00 Uhr Führungen (Dauer: ca. 1- 1,5 h): 11:00 Uhr & 14:00 Uhr, Start an der Kugelhalle,Anmeldung: https://www.freunde-fritz-koenig.de/fuehrungen.php Bilder-/Videoschleife in der »AFRIKAHALLE« - Der Ganslberg als Bergeraum WICHTIG: Eine individuelle Zufahrt zum Anwesen nicht möglich! Das Anwesen ist erreichbar über die LAVV-Linie 1; Haltestelle „Alte Ziegelei“ PKW können an der Rottenburger Straße 24 in 84032 Altdorf parken, von dort aus wird ein Shuttle-Service gegen Gebühr und vorheriger Anmeldung angeboten. Denkmalgeschützter Ortskern Haunzenbergersöll, (Gemeinde Bodenkirchen) Das denkmalgeschützte Ensemble umfasst den südwestlichen Teil des Dorfes. Zwei kleine Wohnhäuser aus dem 18. Jahrhundert bilden den ältesten erhaltenen Baubestand dieser planmäßig angelegten Dorfstruktur. Die westlich davon gelegenen Gebäude wurden nach einem verheerenden Ortsbrand im Jahr 1902 neu errichtet – in bewusst historisierenden Formen. In ihrer städtisch wirkenden Erscheinung spiegeln sie die Tradition der hofmärkischen Handwerkersiedlung wieder. An diesem Tag findet das Dorffest im denkmalgeschützten Ensemble in Haunzenbergersöll statt. Gefeiert wird auch das 50-jährige Jubiläum des Heimat- und Gartenbauvereins. Es werden Führungen durch den denkmalgeschützten Ortskern mit Blick in Wohnbereiche und Hinterhöfe angeboten (um 13:00 Uhr, 14:00 Uhr und 15:00 Uhr). Startpunkt ist die ehemalige Bäckerei am Dorfplatz, Anmeldung unter [email protected].",
+      "links": [
+        {
+          "text": "Anwesen",
+          "url": "https://www.landkreis-landshut.de/media/3974/tag_des_offenen_denkmals_quelle_fritzkoenigganslberg.jpg"
+        },
+        {
+          "text": "https://www.freunde-fritz-koenig.de/fuehrungen.php",
+          "url": "https://www.freunde-fritz-koenig.de/fuehrungen.php"
+        },
+        {
+          "text": "Zwei kleine Wohnhäuser",
+          "url": "https://www.landkreis-landshut.de/media/3972/tag_des_offenen_denkmals_haunzenbergersoell_quelle_gerhard_w.jpg"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#a1c6c4d3c9c0d3c58fd6c4c8cfc5cde1c8cfcf8cd2c0cddbc0c2c98fc5c4"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/media/3974/tag_des_offenen_denkmals_quelle_fritzkoenigganslberg.jpg",
+        "https://www.landkreis-landshut.de/media/3972/tag_des_offenen_denkmals_haunzenbergersoell_quelle_gerhard_w.jpg",
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-landshut-acht-neue-auszubildende-und-anwaerter": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-landshut-acht-neue-auszubildende-und-anwaerter",
+      "title": "Landratsamt Landshut - Acht neue Auszubildende und Anwärter | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "Landratsamt Landshut - Acht neue Auszubildende und Anwärter"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "Landratsamt Landshut - Acht neue Auszubildende und Anwärter 05. September 2025: Spannende Jahre stehen bevor Bildunterschrift: Landrat Peter Dreier (1.v.l.) begrüßte gemeinsam mit Ausbildungsleiterin Eva Schinharl (2.v.l.) und Personalleiter Christian Gruber (1.v.r.) die neuen Gesichter im Amt. Der 1. September markiert für viele junge Menschen den Beginn eines neuen Lebensabschnitts – so auch für acht Berufseinsteigerinnen und Berufseinsteiger aus dem Landkreis Landshut und Umgebung, die nun ihre Ausbildung im Landratsamt Landshut beginnen. Vier von ihnen haben sich für den Beruf Verwaltungsfachangestellte/r in der Fachrichtung „Allgemeine Innere Verwaltung des Freistaates Bayern und Kommunalverwaltung“ entschieden. Neben den Praxiseinsätzen im Landratsamt besuchen sie die Berufsschule und absolvieren Lehrgänge an der Bayerischen Verwaltungsschule. Ebenfalls vier Nachwuchskräfte haben den Weg in die Beamtenlaufbahn der zweiten Qualifikationsebene gewählt. Ihre zweijährige duale Ausbildung kombiniert praktische Erfahrungen im Landratsamt mit Theorieblöcken in der Ausbildungseinrichtung. Ab 1. Oktober nehmen darüber hinaus zwei Anwärter der dritten Qualifikationsebene ihr Studium auf. Begrüßt wurden die neuen Kolleginnen und Kollegen von Landrat Peter Dreier, Ausbildungsleiterin Eva Schinharl und Personalleiter Christian Gruber. „Mit viel Fleiß und Interesse könnt ihr in der Verwaltung viel erreichen – wir als Landkreis sind froh, junge, engagierte Menschen ausbilden zu dürfen und so unsere Fachkräfte von morgen sichern zu können“, betonte Dreier. Dass die Arbeit im Landratsamt abwechslungsreich und verantwortungsvoll ist, unterstrich er ebenfalls: „Von A wie Abfallwirtschaft bis Z wie Zulassung – dazwischen liegen die unterschiedlichsten Bereiche wie Naturschutz, Bauwesen oder ÖPNV. Diese Ausbildungen bieten ein hervorragendes Rüstzeug für eine erfolgreiche Karriere in der Verwaltung. Fleiß, Eifer und ein guter Draht zum Bürger sind dabei die wichtigsten Voraussetzungen.“ Um den Einstieg zu erleichtern, bietet das Ausbildungsteam auch in diesem Jahr wieder Einführungstage an. Dabei lernen die Nachwuchskräfte schrittweise ihre Aufgaben und die Organisation im Landratsamt kennen – unterstützt von Auszubildenden aus höheren Lehrjahren.",
+      "links": [
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
+    },
+    "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen": {
+      "success": true,
+      "final_url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen",
+      "title": "16.10. - Schulung für ehrenamtlich tätige Einzelpersonen | Landkreis Landshut",
+      "meta_description": "",
+      "headings": {
+        "h1": [
+          "16.10. - Schulung für ehrenamtlich tätige Einzelpersonen"
+        ],
+        "h2": [
+          "Footer",
+          "Cookie-Einstellungen"
+        ],
+        "h3": [
+          "Weitere Infos:",
+          "Wichtige Links",
+          "Öffnungszeiten",
+          "Kontakt",
+          "Copyrightinformationen"
+        ]
+      },
+      "main_content": "16.10. - Schulung für ehrenamtlich tätige Einzelpersonen 05. September 2025: Menschen mit Pflegebedarf im Alltag unterstützen Seit dem 1. Januar 2021 können Privatpersonen als ehrenamtlich tätige Einzelpersonen (nach § 82 Abs. 4 Satz 2 Nr. 1 AVSG) Menschen mit Pflegebedarf (ab Pflegegrad 1) zu Hause unterstützen und die pflegenden Angehörigen entlasten. Dafür erhalten sie eine Aufwandsentschädigung (über den Entlastungsbetrag der Pflegekasse) von bis zu 131 Euro monatlich. Zu den Aufgaben von ehrenamtlich tätigen Einzelpersonen gehören die Begleitung zu Arztterminen oder bei Behördengängen, die Unterstützung beim Kochen, Einkaufen und im Haushalt (z.B. Wäsche waschen, Reinigung der Wohnung) sowie Hilfe bei der Organisation des Pflegealltags. Wer sich in der ehrenamtlichen Alltagsbegleitung engagieren möchte muss mindestens 16 Jahre alt sein, darf nicht bis zum 2. Grad verwandt mit der pflegebedürftigen Person sein oder in häuslicher Gemeinschaft mit ihr leben. Eine private Haftpflicht- und Unfallversicherung wird empfohlen. Um von der Pflegekasse als ehrenamtlich tätige Einzelperson anerkannt zu werden, ist außerdem die Teilnahme an einer entsprechenden Schulung notwendig. Eine solche bietet das Landratsamt Landshut nun zum ersten Mal in Kooperation mit der Fachstelle für Demenz und Pflege Niederbayern und dem Markt Ergolding an. Schulung nach § 82 Abs. 4 Satz 2 Nr. 1 AVSG Donnerstag, 16.Oktober 2025, 09:00 - 16:00 Uhr Im Ahornhof Ergolding (Gemeinschaftsraum), Bargrabenstraße 8, 84030 Ergolding Interessierte können sich bis Donnerstag, 02.10.2025 bei Elisabeth Strasser, der Seniorenbeauftragten des Landkreises Landshut, unter Tel.: 0871 408 2116 oder per Email an [email protected] anmelden. Das kostenfreie Schulungsangebot richtet sich in erster Linie an Bürgerinnen und Bürger mit Wohnsitz im Landkreis Landshut, die Teilnehmerzahl ist begrenzt. Weitere Infos: www.einzelperson-bayern.de Flyer",
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection#9ffaf3f6ecfefdfaebf7b1ecebedfeececfaeddff3fef1fbf4edfaf6ecb2f3fef1fbecf7eaebb1fbfa"
+        },
+        {
+          "text": "www.einzelperson-bayern.de",
+          "url": "http://www.einzelperson-bayern.de/"
+        },
+        {
+          "text": "Flyer",
+          "url": "https://www.landkreis-landshut.de/media/3968/ehrenamtlich_taetige_einzelpersonen_schulung_flyer.pdf"
+        },
+        {
+          "text": "Shutterstock",
+          "url": "http://www.shutterstock.com/"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.landkreis-landshut.de/meta/impressum/"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.landkreis-landshut.de/meta/datenschutz/"
+        }
+      ],
+      "internal_links": [
+        "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+        "https://www.landkreis-landshut.de/media/3968/ehrenamtlich_taetige_einzelpersonen_schulung_flyer.pdf",
+        "https://www.landkreis-landshut.de/meta/impressum",
+        "https://www.landkreis-landshut.de/meta/datenschutz"
+      ],
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen",
+      "children": []
     }
   },
   "queue": [
-    {
-      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/meta/impressum",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
-      "depth": 1,
-      "parent": "https://www.landkreis-landshut.de"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-vorherige-terminvereinbarung-weiter-noetig"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/meta/impressum",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-vorherige-terminvereinbarung-weiter-noetig"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-vorherige-terminvereinbarung-weiter-noetig"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/baby-und-kinderkleiderbasare-herbst-2025",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/vergabe-von-verkehrsleistungen-im-oepnv",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/gewaesserunterhaltungszweckverbands-vor-neuer-ausrichtung",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/2909-beratungstermin-hoer-und-sprachentwicklung-kind",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/14-sept-tag-des-offenen-denkmals",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/landratsamt-landshut-acht-neue-auszubildende-und-anwaerter",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
-    {
-      "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/1610-schulung-fuer-ehrenamtlich-taetige-einzelpersonen",
-      "depth": 2,
-      "parent": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen"
-    },
     {
       "url": "https://www.landkreis-landshut.de/aktuelles/aktuelle-meldungen/0910-infoveranstaltung-aufbau-einer-organisierten-nachbarschaftshilfe",
       "depth": 2,
@@ -6408,11 +7363,396 @@
       "url": "https://www.landkreis-landshut.de/meta/datenschutz",
       "depth": 2,
       "parent": "https://www.landkreis-landshut.de/themen/jobcenter"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/jugendamt",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kindertagesstaetten-und-kinderbetreuung",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/pflegekinderwesen",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/unterhalt-und-beurkundung",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/koordinierende-kinderschutzstelle-koki",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie/kinder-und-jungendaerztlicher-dienst",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/kinder-jugend-und-familie"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1719/systemische-untersuchung-legionellen-empfehlung.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1718/stammtext-trinkwv-und-legionellen.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1717/gefaehrdungsanalyse-trinkwv-empfehlungen.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/impressum",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/themen/gesundheit/trinkwasserhygiene"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/impressum"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/meta/datenschutz",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/impressum"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/cdn-cgi/l/email-protection",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1469/sg25_abfallwirtschaft_kommunales_abfallrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1470/sg25_abfallwirtschaft_kreislaufwirtschaftsgesetz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1471/sg25_staatliches_abfallrecht_bodenschutzrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1465/abt4v_bauverwaltung_bauleitplanung_wohnraumfoerderung_wohnberechtigungsschein_dsgvo.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1475/sg51_behindertenberatung_dsgvo_infoblatt_072020.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1476/sg51-infoblatt_betreuungsstelle_beratung_betreuer_beglaubigung_012023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1477/sg51_dsgvo_infoblatt_betreuungsstelle_betreuungsgerichtshilfe_012023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1479/sg52_bildung_und_teilhabe_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1474/sg44_denkmalschutz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1464/abt1_sg20_ehrungen_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1468/sg13_foerderantraege_landkreis_landshut.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1478/sg51_fqa_heimaufsicht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1472/sg33_fuehrerscheinstelle_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1466/abt7_gesundheitsamt_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1481/sg72_gesundheitsamt_corona_saisonarbeitskraefte_dsgvo-info082020.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1480/sg72_einreise_quarantaene_dsgvo_info_062020.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1509/sg74_gesundheitsamt_corona_kontaktnachverfolgung_dsgvo_info_032022.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1482/sg74_digitale_impfverwaltung_dsgvo-infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/2380/sg71_schuleingangsuntersuchung_dsgvo-infoblatt092023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/2689/sg71_gesundheitsamt_schwangerschaftsberatung_online_terminbuchung_dsgvoinfo.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1467/abt7_gesundheitsregionplus_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1473/sg43_immissionsschutz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1485/sg53_adoptionsvermittlung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1483/abt5_familiengerichtshilfe_dsgvo_infoblatt_062021.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1484/abt5_jugendgerichtshilfe_dsgvo-infoblatt062021.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1487/sg53_kindertagesbetreuung_-90_kostenuebernahme_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1488/sg53_kindertagespflege_erlaubnis.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1489/sg53_kindertagesstaette_kindertagesbetreuung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1490/sg53_koki_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1486/sg53_kinder_und_jugendhilfe_leistung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1491/sg53_pflegeeltern-erlaubnis_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/2714/sg55_pflegekinderdienst_dsgvo_info.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1492/sg54_unterhaltsvorschuss_dsgvo-infoblatt2023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1498/sg34_kfz_zulassungswesen_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1495/sg20_kommunale_angelegenheiten.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1494/sg16_kreiseigener_hochbau_gebaeudemanagement_kommunale_energieberatung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1493/abt1_kreisheimatpflege_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1496/sg20_namensaenderung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1497/sg24_naturschutz_artenschutz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1499/sg30_feldgeschworene_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1500/sg30_feuerwehrwesen_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1501/sg30_fischereirecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1502/sg30_gewerberecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1503/sg30_jagdrecht_wildschutzrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1504/sg30_katastrophenschutz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1505/sg30_motorsportliche_veranstaltung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1506/sg30_sprengstoffrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1507/sg30_versammlungsrecht_dsgvo_infoblatt-1.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1508/sg30_waffenrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/2124/sg31_dsgvo_info_rettungsdienst_042023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1514/sg17_schuelerbeforderung_dsgvo_infoblatt_082023.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1510/abt1_sitzungsdienst_dsgvo_info_052020.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1518/sg51_sozialhilfe_und_asyl.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1517/sg32_staatsangehoerigkeits_und_auslaenderecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1511/abt6_tiefbau_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1520/sg84_veterinaerwesen_gesundheitlicher_verbraucherschutz_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1512/sg10_videokonferenzen_dsgvo_info.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1513/sg10_videoueberwachung_videobeobachtung_dsgvo_info.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1516/sg23_wasserrecht_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1515/sg18_wirtschaftsfoerderung_tourismus_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
+    },
+    {
+      "url": "https://www.landkreis-landshut.de/media/1519/sg51_wohnberatung_dsgvo_infoblatt.pdf",
+      "depth": 2,
+      "parent": "https://www.landkreis-landshut.de/meta/datenschutz"
     }
   ],
-  "pageCount": 20,
+  "pageCount": 30,
   "maxDepth": 2,
   "maxPages": 50,
   "startUrl": "https://www.landkreis-landshut.de/",
-  "lastUpdated": "2025-09-09T11:40:05.953Z"
+  "lastUpdated": "2025-09-09T11:40:43.694Z"
 }
