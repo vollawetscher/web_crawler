@@ -495,32 +495,92 @@ function parseDocument(html, url, lastModified = null) {
             // Clear existing sections and do a comprehensive text extraction
             sections.length = 0;
             
-            // Remove obvious navigation and boilerplate from a body clone
+            // Create a more aggressive boilerplate removal strategy
             const $bodyClone = $('body').clone();
+            
+            // Remove extensive boilerplate elements
             $bodyClone.find([
                 'nav', 'header', 'footer', 'aside', 'script', 'style',
                 '.navigation', '.nav', '.menu', '.header', '.footer', '.sidebar',
                 '.cookie-banner', '.cookie-modal', '#cookie-consent',
                 '[role="navigation"]', '[class*="nav"]', '[id*="nav"]',
-                '[class*="menu"]', '[id*="menu"]'
+                '[class*="menu"]', '[id*="menu"]',
+                // More specific boilerplate selectors
+                '[class*="cookie"]', '[id*="cookie"]',
+                '[class*="copyright"]', '[id*="copyright"]',
+                '.breadcrumb', '.breadcrumbs', '[role="navigation"]',
+                'form', 'input', 'button', 'select', 'textarea'
             ].join(', ')).remove();
             
-            let comprehensiveContent = '';
-            
-            // Extract all meaningful text blocks
-            $bodyClone.find('p, h1, h2, h3, h4, h5, h6, li, div, section, article, blockquote, address').each((_, el) => {
+            // Also remove any elements that contain primarily boilerplate text
+            $bodyClone.find('*').each((_, el) => {
                 const $el = $(el);
-                const text = $el.clone().children().remove().end().text().trim();
+                const text = $el.text().toLowerCase();
                 
-                if (text && text.length > 15) {
+                const boilerplateTerms = [
+                    'cookie-einstellungen', 'copyrightinformationen', 'cookie',
+                    'asp.net_sessionid', 'matomo', 'piwik', 'opt-out',
+                    '__requestverificationtoken', 'browsersession'
+                ];
+                
+                const hasBoilerplate = boilerplateTerms.some(term => text.includes(term));
+                if (hasBoilerplate && text.length > 50) {
+                    $el.remove();
+                }
+            });
+            
+            let comprehensiveContent = '';
+
+            // Focus on semantic content elements first
+            const contentSelectors = [
+                'h1, h2, h3, h4, h5, h6',  // Headings first
+                'p',                        // Paragraphs
+                'article',                  // Articles
+                'section',                  // Sections  
+                'blockquote',              // Quotes
+                'li',                      // List items
+                'address'                  // Addresses
+            ];
+            
+            contentSelectors.forEach(selector => {
+                $bodyClone.find(selector).each((_, el) => {
+                    const $el = $(el);
+                    const text = $el.clone().children().remove().end().text().trim();
+                    
+                    // Skip very short text or obvious boilerplate
+                    if (text.length < 20) return;
+                    
+                    const textLower = text.toLowerCase();
+                    const boilerplateTerms = [
+                        'cookie', 'datenschutz', 'copyright', 'impressum',
+                        'asp.net', 'matomo', 'piwik', 'browsersession'
+                    ];
+                    
+                    if (boilerplateTerms.some(term => textLower.includes(term))) {
+                        return; // Skip boilerplate
+                    }
+                    
                     const tagName = el.tagName?.toLowerCase();
                     if (tagName?.match(/^h[1-6]$/)) {
                         comprehensiveContent += `\n\n### ${text}\n\n`;
                     } else {
                         comprehensiveContent += `${text}\n\n`;
                     }
-                }
+                });
             });
+            
+            // If still not enough content, try div elements but be more selective
+            if (comprehensiveContent.length < 500) {
+                $bodyClone.find('div').each((_, el) => {
+                const $el = $(el);
+                const text = $el.clone().children().remove().end().text().trim();
+                
+                    // Only include divs with substantial, meaningful content
+                    if (text.length > 50 && text.length < 2000) {
+                        comprehensiveContent += `${text}\n\n`;
+                    }
+                });
+            }
             
             // Final cleanup
             comprehensiveContent = comprehensiveContent

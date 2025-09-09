@@ -742,20 +742,40 @@ class URLInspector {
     getSelectedContent(data) {
         const result = {};
         
-        if (document.getElementById('check_source_url')?.checked) {
+        // Check if we're in multi-page mode or single-page mode
+        const selectedPages = this.getSelectedPages();
+        const isMultiPage = selectedPages.length > 0;
+        
+        if (document.getElementById('check_source_url')?.checked !== false) {
             result.source_url = data.final_url || data.urls;
         }
         
-        if (document.getElementById('check_title')?.checked && data.title) {
+        if (document.getElementById('check_title')?.checked !== false && data.title) {
             result.title = data.title;
         }
         
-        if (document.getElementById('check_meta_description')?.checked && data.meta_description) {
+        if (document.getElementById('check_meta_description')?.checked !== false && data.meta_description) {
             result.meta_description = data.meta_description;
         }
         
-        // Include sections if main content is checked  
-        if (document.getElementById('check_main_content')?.checked && data.sections) {
+        // For headings - only include if explicitly checked
+        const headings = {};
+        if (document.getElementById('check_h1')?.checked) {
+            headings.h1 = this.extractHeadingsFromSections(data.sections, 'h1');
+        }
+        if (document.getElementById('check_h2')?.checked) {
+            headings.h2 = this.extractHeadingsFromSections(data.sections, 'h2');
+        }
+        if (document.getElementById('check_h3')?.checked) {
+            headings.h3 = this.extractHeadingsFromSections(data.sections, 'h3');
+        }
+        
+        if (Object.keys(headings).length > 0) {
+            result.headings = headings;
+        }
+        
+        // Include sections if main content is checked
+        if (document.getElementById('check_main_content')?.checked !== false && data.sections) {
             result.sections = data.sections;
         }
         
@@ -764,8 +784,26 @@ class URLInspector {
         }
         
         return result;
-    }
 
+
+    extractHeadingsFromSections(sections, level) {
+        if (!sections) return [];
+        
+        const headings = [];
+        const seenHeadings = new Set();
+        
+        sections.forEach(section => {
+            if (section.heading_level === level && section.heading) {
+                const heading = section.heading.trim();
+                if (!seenHeadings.has(heading)) {
+                    seenHeadings.add(heading);
+                    headings.push(heading);
+                }
+            }
+        });
+        
+        return headings;
+    }
     createRAGJSONL(data) {
         const lines = [];
         const sections = data.sections || [];
@@ -805,6 +843,11 @@ class URLInspector {
         // Add sections directly (no chunking needed - they're already properly sized)
         if (document.getElementById('check_main_content')?.checked && sections.length > 0) {
             sections.forEach(section => {
+                // Filter out sections that are mostly boilerplate
+                if (this.isBoilerplateSection(section)) {
+                    return; // Skip this section
+                }
+                
                 lines.push({
                     id: section.section_id,
                     title,
@@ -831,6 +874,46 @@ class URLInspector {
         }
         
         return lines.map(line => JSON.stringify(line)).join('\n');
+    }
+
+    isBoilerplateSection(section) {
+        if (!section.content_text) return true;
+        
+        const content = section.content_text.toLowerCase();
+        const heading = section.heading.toLowerCase();
+        
+        // Skip sections that are primarily boilerplate
+        const boilerplateIndicators = [
+            'cookie-einstellungen',
+            'copyrightinformationen', 
+            'cookie',
+            'datenschutz',
+            'matomo',
+            'piwik',
+            'opt-out-cookie',
+            'browser',
+            'sitzungscookie',
+            'asp.net_sessionid',
+            '__requestverificationtoken'
+        ];
+        
+        // Check if heading contains boilerplate terms
+        if (boilerplateIndicators.some(term => heading.includes(term))) {
+            return true;
+        }
+        
+        // Check if content is primarily boilerplate (more than 50% boilerplate terms)
+        const boilerplateMatches = boilerplateIndicators.filter(term => content.includes(term)).length;
+        if (boilerplateMatches >= 3) {
+            return true;
+        }
+        
+        // Skip sections that are too short or mostly symbols
+        if (section.content_text.length < 100) {
+            return true;
+        }
+        
+        return false;
     }
 
     chunkText(text, chunkSize, overlap) {
