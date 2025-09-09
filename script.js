@@ -109,6 +109,8 @@ class URLInspector {
             
         } catch (error) {
             this.showError(`Inspection failed: ${error.message}`);
+        } finally {
+            this.hideLoading();
         }
     }
 
@@ -167,6 +169,8 @@ class URLInspector {
             
         } catch (error) {
             this.showError(`HTML parsing failed: ${error.message}`);
+        } finally {
+            this.hideLoading();
         }
     }
 
@@ -453,7 +457,13 @@ class URLInspector {
     }
 
     showCrawlStatus(show) {
-        this.crawlStatus.classList.toggle('hidden', !show);
+        console.log(`[DEBUG] showCrawlStatus(${show}) called`);
+        if (show) {
+            this.crawlStatus.classList.remove('hidden');
+            this.loadingIndicator.classList.add('hidden');
+        } else {
+            this.crawlStatus.classList.add('hidden');
+        }
     }
 
     updateCrawlInfo(data) {
@@ -547,9 +557,17 @@ class URLInspector {
         
         const meta = document.createElement('div');
         meta.className = 'sitemap-meta';
+        
+        // Calculate total content length from sections
+        let totalContentLength = 0;
+        if (data.sections && data.sections.length > 0) {
+            totalContentLength = data.sections.reduce((sum, section) => sum + section.content_text.length, 0);
+        }
+        
         meta.innerHTML = `
-            <span>Depth: ${data.depth}</span>
-            <span>Content: ${data.main_content ? Math.round(data.main_content.length / 100) * 100 : 0} chars</span>
+            <span>Depth: ${data.depth || 0}</span>
+            <span>Content: ${Math.round(totalContentLength / 100) * 100} chars</span>
+            <span>Sections: ${data.sections ? data.sections.length : 0}</span>
         `;
         
         content.appendChild(title);
@@ -558,6 +576,8 @@ class URLInspector {
         
         if (data.error) {
             const error = document.createElement('div');
+            this.showCrawlStatus(false);
+            this.crawlBtn.disabled = false;
             error.className = 'sitemap-error';
             error.textContent = data.error;
             content.appendChild(error);
@@ -600,13 +620,16 @@ class URLInspector {
         const format = document.querySelector('input[name="export_format"]:checked').value;
         const selectedPages = this.getSelectedPages();
         const totalPages = selectedPages.length;
-        const totalSections = selectedPages.reduce((sum, page) => sum + (page.data.sections?.length || 0), 0);
+        const totalSections = selectedPages.reduce((sum, page) => {
+            const sections = page.data.sections || [];
+            return sum + sections.length;
+        }, 0);
         
         let info = '';
         if (totalPages > 0) {
             info = `Ready to export ${totalSections} sections from ${totalPages} page(s) in ${format.toUpperCase()} format`;
-        } else if (this.extractedData) {
-            const currentSections = this.extractedData.sections?.length || 0;
+        } else if (this.extractedData && this.extractedData.sections) {
+            const currentSections = this.extractedData.sections.length;
             info = `Ready to export ${currentSections} sections from current page in ${format.toUpperCase()} format`;
         } else {
             info = 'No content available for export';
@@ -871,15 +894,16 @@ class URLInspector {
     }
 
     showLoading() {
+        console.log('[DEBUG] showLoading() called');
         this.hideMessages();
         this.loadingIndicator.classList.remove('hidden');
-        // Ensure crawl status is hidden when showing main loading
-        this.showCrawlStatus(false);
+        this.crawlStatus.classList.add('hidden');
         this.inspectBtn.disabled = true;
         this.parseManualBtn.disabled = true;
     }
 
     hideLoading() {
+        console.log('[DEBUG] hideLoading() called');
         this.loadingIndicator.classList.add('hidden');
         this.inspectBtn.disabled = false;
         this.parseManualBtn.disabled = false;
