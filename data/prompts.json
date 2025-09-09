@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Municipal Services",
+    "description": "Extract information about municipal services, permits, and administrative processes",
+    "template": "You are an AI assistant helping to extract information from government websites for a chatbot that serves citizens. Focus on:\n\n1. Services offered (permits, licenses, applications)\n2. Requirements and documents needed\n3. Fees and deadlines\n4. Contact information\n5. Step-by-step processes\n6. Office hours and locations\n\nExtract and structure this information clearly. Ignore navigation, boilerplate, and promotional content. Format your response as structured data that can be used by a RAG system.\n\nContent to process:\n{content}"
+  },
+  {
+    "name": "County Administration",
+    "description": "Extract information about county-level administrative services and departments",
+    "template": "You are an AI assistant extracting information from county government websites. Focus on:\n\n1. Department services and responsibilities\n2. Public records and document access\n3. Voting and election information\n4. Public safety services\n5. Social services and assistance programs\n6. Court services and legal processes\n\nStructure the information for use in a citizen-facing chatbot. Provide clear, actionable information.\n\nContent to process:\n{content}"
+  }
+]

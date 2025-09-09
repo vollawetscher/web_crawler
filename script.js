@@ -3,7 +3,12 @@ class URLInspector {
         this.extractedData = null;
         this.sitemapData = null;
         this.selectedPages = new Set();
+        this.currentJobId = null;
+        this.prompts = [];
+        this.selectedPrompt = null;
+        this.aiProcessedData = null;
         this.initializeEventListeners();
+        this.loadPrompts();
     }
 
     initializeEventListeners() {
@@ -12,9 +17,19 @@ class URLInspector {
         const parseManualBtn = document.getElementById('parseManualBtn');
         const downloadBtn = document.getElementById('downloadBtn');
         const crawlBtn = document.getElementById('crawlBtn');
+        const resumeCrawlBtn = document.getElementById('resumeCrawlBtn');
         const selectAllBtn = document.getElementById('selectAllBtn');
         const selectNoneBtn = document.getElementById('selectNoneBtn');
         const formatRadios = document.querySelectorAll('input[name="export_format"]');
+        
+        // AI and prompt management elements
+        const processAiBtn = document.getElementById('processAiBtn');
+        const promptSelect = document.getElementById('promptSelect');
+        const managePromptsBtn = document.getElementById('managePromptsBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const savePromptBtn = document.getElementById('savePromptBtn');
+        const updatePromptBtn = document.getElementById('updatePromptBtn');
+        const cancelEditBtn = document.getElementById('cancelEditBtn');
 
         inspectBtn.addEventListener('click', () => this.inspectURL());
         urlInput.addEventListener('keypress', (e) => {
@@ -23,8 +38,20 @@ class URLInspector {
         parseManualBtn.addEventListener('click', () => this.parseManualHTML());
         downloadBtn.addEventListener('click', () => this.downloadData());
         crawlBtn.addEventListener('click', () => this.crawlSite());
+        resumeCrawlBtn.addEventListener('click', () => this.resumeCrawl());
         selectAllBtn.addEventListener('click', () => this.selectAllPages());
         selectNoneBtn.addEventListener('click', () => this.selectNoPages());
+        
+        // AI processing
+        processAiBtn.addEventListener('click', () => this.processWithAI());
+        promptSelect.addEventListener('change', () => this.onPromptSelected());
+        
+        // Prompt management
+        managePromptsBtn.addEventListener('click', () => this.openPromptModal());
+        closeModalBtn.addEventListener('click', () => this.closePromptModal());
+        savePromptBtn.addEventListener('click', () => this.savePrompt());
+        updatePromptBtn.addEventListener('click', () => this.updatePrompt());
+        cancelEditBtn.addEventListener('click', () => this.cancelEdit());
 
         // Show/hide RAG options based on format selection
         formatRadios.forEach(radio => {
@@ -35,6 +62,295 @@ class URLInspector {
         formatRadios.forEach(radio => {
             radio.addEventListener('change', () => this.updateExportInfo());
         });
+        
+        // Close modal when clicking outside
+        document.getElementById('promptModal').addEventListener('click', (e) => {
+            if (e.target.id === 'promptModal') {
+                this.closePromptModal();
+            }
+        });
+    }
+    
+    async loadPrompts() {
+        try {
+            const response = await fetch('/api/prompts');
+            const result = await response.json();
+            
+            if (result.success) {
+                this.prompts = result.prompts;
+                this.populatePromptSelect();
+            }
+        } catch (error) {
+            console.error('Failed to load prompts:', error);
+        }
+    }
+    
+    populatePromptSelect() {
+        const promptSelect = document.getElementById('promptSelect');
+        promptSelect.innerHTML = '<option value="">Select a processing template...</option>';
+        
+        this.prompts.forEach(prompt => {
+            const option = document.createElement('option');
+            option.value = prompt.name;
+            option.textContent = prompt.name;
+            promptSelect.appendChild(option);
+        });
+    }
+    
+    onPromptSelected() {
+        const promptSelect = document.getElementById('promptSelect');
+        const promptPreview = document.getElementById('promptPreview');
+        const selectedName = promptSelect.value;
+        
+        if (selectedName) {
+            const prompt = this.prompts.find(p => p.name === selectedName);
+            if (prompt) {
+                this.selectedPrompt = prompt;
+                promptPreview.value = prompt.template;
+                document.getElementById('processAiBtn').disabled = false;
+            }
+        } else {
+            this.selectedPrompt = null;
+            promptPreview.value = '';
+            document.getElementById('processAiBtn').disabled = true;
+        }
+    }
+    
+    async processWithAI() {
+        if (!this.extractedData || !this.selectedPrompt) {
+            this.showError('Please inspect a URL and select a processing template first');
+            return;
+        }
+        
+        const processAiBtn = document.getElementById('processAiBtn');
+        const aiLoadingIndicator = document.getElementById('aiLoadingIndicator');
+        const aiResults = document.getElementById('aiResults');
+        
+        processAiBtn.disabled = true;
+        aiLoadingIndicator.classList.remove('hidden');
+        aiResults.classList.add('hidden');
+        
+        try {
+            const response = await fetch('/api/process-ai', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    content: this.extractedData.main_content,
+                    prompt: this.selectedPrompt.template
+                })
+            });
+            
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.error || 'AI processing failed');
+            }
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                this.aiProcessedData = result.aiResponse;
+                this.displayAIResults(result.aiResponse);
+                aiResults.classList.remove('hidden');
+            } else {
+                throw new Error('AI processing failed');
+            }
+            
+        } catch (error) {
+            console.error('AI processing error:', error);
+            this.showError(`AI processing failed: ${error.message}`);
+        } finally {
+            processAiBtn.disabled = false;
+            aiLoadingIndicator.classList.add('hidden');
+        }
+    }
+    
+    displayAIResults(aiResponse) {
+        const aiOutput = document.getElementById('aiOutput');
+        aiOutput.textContent = aiResponse;
+    }
+    
+    openPromptModal() {
+        const modal = document.getElementById('promptModal');
+        modal.classList.remove('hidden');
+        this.populatePromptList();
+        this.clearPromptEditor();
+    }
+    
+    closePromptModal() {
+        const modal = document.getElementById('promptModal');
+        modal.classList.add('hidden');
+    }
+    
+    populatePromptList() {
+        const promptList = document.getElementById('promptList');
+        promptList.innerHTML = '';
+        
+        this.prompts.forEach(prompt => {
+            const item = this.createPromptListItem(prompt);
+            promptList.appendChild(item);
+        });
+    }
+    
+    createPromptListItem(prompt) {
+        const item = document.createElement('div');
+        item.className = 'prompt-item';
+        item.dataset.name = prompt.name;
+        
+        item.innerHTML = `
+            <div class="prompt-item-name">${prompt.name}</div>
+            <div class="prompt-item-description">${prompt.description || 'No description'}</div>
+            <div class="prompt-item-actions">
+                <button class="prompt-action-btn edit" title="Edit">✏️</button>
+                <button class="prompt-action-btn delete" title="Delete">🗑️</button>
+            </div>
+        `;
+        
+        // Add event listeners
+        item.addEventListener('click', () => this.selectPromptForEdit(prompt));
+        item.querySelector('.edit').addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.editPrompt(prompt);
+        });
+        item.querySelector('.delete').addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.deletePrompt(prompt.name);
+        });
+        
+        return item;
+    }
+    
+    selectPromptForEdit(prompt) {
+        // Remove previous selection
+        document.querySelectorAll('.prompt-item').forEach(item => {
+            item.classList.remove('selected');
+        });
+        
+        // Add selection to current item
+        const item = document.querySelector(`[data-name="${prompt.name}"]`);
+        item.classList.add('selected');
+    }
+    
+    editPrompt(prompt) {
+        document.getElementById('editorTitle').textContent = 'Edit Template';
+        document.getElementById('promptName').value = prompt.name;
+        document.getElementById('promptName').disabled = true;
+        document.getElementById('promptDescription').value = prompt.description || '';
+        document.getElementById('promptTemplate').value = prompt.template;
+        
+        document.getElementById('savePromptBtn').classList.add('hidden');
+        document.getElementById('updatePromptBtn').classList.remove('hidden');
+        document.getElementById('cancelEditBtn').classList.remove('hidden');
+    }
+    
+    clearPromptEditor() {
+        document.getElementById('editorTitle').textContent = 'Create New Template';
+        document.getElementById('promptName').value = '';
+        document.getElementById('promptName').disabled = false;
+        document.getElementById('promptDescription').value = '';
+        document.getElementById('promptTemplate').value = '';
+        
+        document.getElementById('savePromptBtn').classList.remove('hidden');
+        document.getElementById('updatePromptBtn').classList.add('hidden');
+        document.getElementById('cancelEditBtn').classList.add('hidden');
+    }
+    
+    cancelEdit() {
+        this.clearPromptEditor();
+    }
+    
+    async savePrompt() {
+        const name = document.getElementById('promptName').value.trim();
+        const description = document.getElementById('promptDescription').value.trim();
+        const template = document.getElementById('promptTemplate').value.trim();
+        
+        if (!name || !template) {
+            alert('Please fill in the template name and content');
+            return;
+        }
+        
+        try {
+            const response = await fetch('/api/prompts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, description, template })
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                await this.loadPrompts();
+                this.populatePromptList();
+                this.clearPromptEditor();
+            } else {
+                alert(result.error || 'Failed to save prompt');
+            }
+        } catch (error) {
+            console.error('Failed to save prompt:', error);
+            alert('Failed to save prompt');
+        }
+    }
+    
+    async updatePrompt() {
+        const name = document.getElementById('promptName').value.trim();
+        const description = document.getElementById('promptDescription').value.trim();
+        const template = document.getElementById('promptTemplate').value.trim();
+        
+        if (!name || !template) {
+            alert('Please fill in the template name and content');
+            return;
+        }
+        
+        try {
+            const response = await fetch(`/api/prompts/${encodeURIComponent(name)}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ description, template })
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                await this.loadPrompts();
+                this.populatePromptList();
+                this.clearPromptEditor();
+            } else {
+                alert(result.error || 'Failed to update prompt');
+            }
+        } catch (error) {
+            console.error('Failed to update prompt:', error);
+            alert('Failed to update prompt');
+        }
+    }
+    
+    async deletePrompt(name) {
+        if (!confirm(`Are you sure you want to delete the template "${name}"?`)) {
+            return;
+        }
+        
+        try {
+            const response = await fetch(`/api/prompts/${encodeURIComponent(name)}`, {
+                method: 'DELETE'
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                await this.loadPrompts();
+                this.populatePromptList();
+                this.clearPromptEditor();
+            } else {
+                alert(result.error || 'Failed to delete prompt');
+            }
+        } catch (error) {
+            console.error('Failed to delete prompt:', error);
+            alert('Failed to delete prompt');
+        }
     }
 
     async crawlSite() {
@@ -49,16 +365,23 @@ class URLInspector {
         const sitemapContainer = document.getElementById('sitemapContainer');
         const maxDepth = document.getElementById('maxDepth').value;
         const maxPages = document.getElementById('maxPages').value;
+        const pagesPerBatch = document.getElementById('pagesPerBatch').value;
+        const jobId = document.getElementById('jobId').value.trim();
 
         // Reset UI state
         crawlBtn.disabled = true;
         crawlStatus.classList.remove('hidden');
         sitemapContainer.classList.add('hidden');
-        this.selectedPages.clear();
-        this.updateSelectionCount();
+        
+        if (!jobId) {
+            // New crawl - reset selections
+            this.selectedPages.clear();
+            this.updateSelectionCount();
+        }
 
         try {
-            crawlStatusText.textContent = `🔍 Crawl initiated for up to ${maxPages} pages at depth ${maxDepth}. This may take a few moments depending on site size and server response times...`;
+            const isResume = jobId ? true : false;
+            crawlStatusText.textContent = `🔍 ${isResume ? 'Resuming' : 'Starting'} crawl for up to ${maxPages} pages at depth ${maxDepth}. Processing ${pagesPerBatch} pages per batch...`;
 
             const response = await fetch('/api/crawl', {
                 method: 'POST',
@@ -68,7 +391,9 @@ class URLInspector {
                 body: JSON.stringify({
                     url: this.extractedData.final_url,
                     maxDepth: parseInt(maxDepth),
-                    maxPages: parseInt(maxPages)
+                    maxPages: parseInt(maxPages),
+                    pagesPerBatch: parseInt(pagesPerBatch),
+                    jobId: jobId || undefined
                 })
             });
 
@@ -83,6 +408,20 @@ class URLInspector {
             }
 
             this.sitemapData = result.sitemap;
+            this.currentJobId = result.jobId;
+            
+            // Update UI with job info
+            document.getElementById('jobId').value = result.jobId;
+            document.getElementById('currentJobId').textContent = result.jobId;
+            document.getElementById('crawlProgressStatus').textContent = result.isComplete ? 'Complete' : 'In Progress';
+            document.getElementById('batchInfo').classList.remove('hidden');
+            
+            if (!result.isComplete) {
+                document.getElementById('resumeCrawlBtn').classList.remove('hidden');
+            } else {
+                document.getElementById('resumeCrawlBtn').classList.add('hidden');
+            }
+            
             this.renderSitemap(result.sitemap, result.stats);
             sitemapContainer.classList.remove('hidden');
             
@@ -96,6 +435,17 @@ class URLInspector {
             crawlBtn.disabled = false;
             crawlStatus.classList.add('hidden');
         }
+    }
+    
+    async resumeCrawl() {
+        const jobId = document.getElementById('jobId').value.trim();
+        if (!jobId) {
+            this.showError('Please enter a Job ID to resume');
+            return;
+        }
+        
+        // Use the same crawl logic but with existing job ID
+        await this.crawlSite();
     }
 
     renderSitemap(sitemap, stats) {
