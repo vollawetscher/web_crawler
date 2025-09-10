@@ -706,7 +706,10 @@ class URLInspector {
     }
 
     createJSONExport(data, timestamp, isMultiPage) {
-        const exportData = this.getSelectedContent(data);
+        const exportData = {
+            ...this.getSelectedContent(data),
+            _metadata: this.getExportMetadata(data, isMultiPage, 'json')
+        };
         const jsonStr = JSON.stringify(exportData, null, 2);
         const filename = `${isMultiPage ? 'multi_page' : 'url'}_content_${timestamp}.json`;
         return [jsonStr, filename, 'application/json'];
@@ -714,13 +717,23 @@ class URLInspector {
 
     createRAGJSONLExport(data, timestamp, isMultiPage) {
         const jsonlStr = this.createRAGJSONL(data);
+        
+        // Add metadata as first line for JSONL files
+        const metadata = {
+            _metadata: this.getExportMetadata(data, isMultiPage, 'rag_jsonl')
+        };
+        const metadataLine = JSON.stringify(metadata);
+        const finalJsonl = metadataLine + '\n' + jsonlStr;
+        
         const filename = `${isMultiPage ? 'multi_page' : 'rag'}_content_${timestamp}.jsonl`;
-        return [jsonlStr, filename, 'application/jsonl'];
+        return [finalJsonl, filename, 'application/jsonl'];
     }
 
     createTextExport(data, timestamp, isMultiPage) {
+        const metadata = this.getExportMetadata(data, isMultiPage, 'txt');
+        let textStr = this.formatMetadataAsText(metadata);
+        
         const sections = data.sections || [];
-        let textStr = '';
         
         if (data.title) textStr += `Title: ${data.title}\n\n`;
         if (data.meta_description) textStr += `Description: ${data.meta_description}\n\n`;
@@ -739,6 +752,99 @@ class URLInspector {
         return [textStr, filename, 'text/plain'];
     }
 
+    getExportMetadata(data, isMultiPage, format) {
+        const selectedPages = this.getSelectedPages();
+        
+        return {
+            export_info: {
+                format: format,
+                timestamp: new Date().toISOString(),
+                is_multi_page: isMultiPage,
+                pages_exported: isMultiPage ? selectedPages.length : 1,
+                total_sections: data.sections ? data.sections.length : 0
+            },
+            crawl_info: this.currentJobId ? {
+                job_id: this.currentJobId,
+                start_url: this.extractedData?.final_url || data.final_url || data.urls?.[0],
+                max_depth: parseInt(this.maxDepthSelect?.value) || 'unknown',
+                max_pages: parseInt(this.maxPagesInput?.value) || 'unknown',
+                pages_crawled: this.currentSitemap ? Object.keys(this.currentSitemap).length : 1
+            } : {
+                single_page_inspection: true,
+                url: data.final_url || data.urls?.[0] || 'unknown'
+            },
+            selection_criteria: {
+                include_title: document.getElementById('check_title')?.checked || false,
+                include_meta_description: document.getElementById('check_meta_description')?.checked || false,
+                include_h1: document.getElementById('check_h1')?.checked || false,
+                include_h2: document.getElementById('check_h2')?.checked || false,
+                include_h3: document.getElementById('check_h3')?.checked || false,
+                include_main_content: document.getElementById('check_main_content')?.checked || false,
+                include_links: document.getElementById('check_links')?.checked || false,
+                selected_pages: isMultiPage ? selectedPages.map(p => ({
+                    url: p.url,
+                    title: p.data.title || 'Untitled',
+                    sections: p.data.sections?.length || 0,
+                    content_length: p.data.main_content?.length || 0
+                })) : []
+            },
+            format_options: format === 'rag_jsonl' ? {
+                chunk_size: parseInt(this.chunkSizeInput?.value) || 300,
+                overlap: parseInt(this.overlapInput?.value) || 50,
+                include_headings_in_metadata: this.includeHeadingsCheckbox?.checked || false
+            } : {}
+        };
+    }
+
+    formatMetadataAsText(metadata) {
+        let text = "=== EXPORT METADATA ===\n\n";
+        
+        text += `Export Format: ${metadata.export_info.format.toUpperCase()}\n`;
+        text += `Export Date: ${new Date(metadata.export_info.timestamp).toLocaleString()}\n`;
+        text += `Multi-page Export: ${metadata.export_info.is_multi_page ? 'Yes' : 'No'}\n`;
+        text += `Pages Exported: ${metadata.export_info.pages_exported}\n`;
+        text += `Total Sections: ${metadata.export_info.total_sections}\n\n`;
+        
+        if (metadata.crawl_info.single_page_inspection) {
+            text += `Single Page URL: ${metadata.crawl_info.url}\n\n`;
+        } else {
+            text += `Crawl Job ID: ${metadata.crawl_info.job_id}\n`;
+            text += `Start URL: ${metadata.crawl_info.start_url}\n`;
+            text += `Max Depth: ${metadata.crawl_info.max_depth}\n`;
+            text += `Max Pages: ${metadata.crawl_info.max_pages}\n`;
+            text += `Pages Crawled: ${metadata.crawl_info.pages_crawled}\n\n`;
+        }
+        
+        text += "Selected Content Types:\n";
+        const selections = metadata.selection_criteria;
+        if (selections.include_title) text += "✓ Title\n";
+        if (selections.include_meta_description) text += "✓ Meta Description\n";
+        if (selections.include_h1) text += "✓ H1 Headings\n";
+        if (selections.include_h2) text += "✓ H2 Headings\n";
+        if (selections.include_h3) text += "✓ H3 Headings\n";
+        if (selections.include_main_content) text += "✓ Main Content\n";
+        if (selections.include_links) text += "✓ Links\n";
+        
+        if (selections.selected_pages && selections.selected_pages.length > 0) {
+            text += "\nSelected Pages:\n";
+            selections.selected_pages.forEach((page, index) => {
+                text += `${index + 1}. ${page.title}\n`;
+                text += `   URL: ${page.url}\n`;
+                text += `   Sections: ${page.sections}, Content: ${page.content_length} chars\n`;
+            });
+        }
+        
+        if (metadata.format_options.chunk_size) {
+            text += `\nRAG Options:\n`;
+            text += `Chunk Size: ${metadata.format_options.chunk_size} words\n`;
+            text += `Overlap: ${metadata.format_options.overlap} words\n`;
+            text += `Include Headings: ${metadata.format_options.include_headings_in_metadata ? 'Yes' : 'No'}\n`;
+        }
+        
+        text += "\n" + "=".repeat(50) + "\n\n";
+        
+        return text;
+    }
     getSelectedContent(data) {
         const result = {};
         
