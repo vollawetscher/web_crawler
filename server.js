@@ -659,11 +659,15 @@ function parseDocument(html, url, lastModified = null) {
         
         console.log(`[DEBUG] Extracted ${uniqueLinks.length} total links, ${internalLinks.length} internal links`);
         
+        // Create main_content field for frontend compatibility
+        const main_content = sections.map(section => section.content_text).join('\n\n');
+        
         return {
             success: true,
             final_url: url,
             title,
             meta_description: metaDescription,
+            main_content, // For frontend display compatibility
             sections,
             links: uniqueLinks,
             internal_links: internalLinks
