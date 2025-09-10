@@ -480,27 +480,6 @@ class URLInspector {
             container.appendChild(categoryDiv);
         });
     }
-        
-        const ul = document.createElement('ul');
-        links.slice(0, 10).forEach(link => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = link.url;
-            a.textContent = link.text;
-            a.target = '_blank';
-            li.appendChild(a);
-            ul.appendChild(li);
-        });
-        
-        previewDiv.appendChild(ul);
-        
-        if (links.length > 10) {
-            const more = document.createElement('p');
-            more.textContent = `... and ${links.length - 10} more links`;
-            previewDiv.appendChild(more);
-        }
-        
-        container.appendChild(previewDiv);
     }
 
     addPreview(container, label, content) {
