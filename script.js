@@ -698,7 +698,12 @@ class URLInspector {
             title: `Combined Export (${selectedPages.length} pages)`,
             meta_description: '',
             sections: [],
-            links: []
+            categorized_links: {
+                content_internal: [],
+                external: [],
+                navigation: [],
+                legal_or_contact: []
+            }
         };
         
         selectedPages.forEach(({ url, data }) => {
@@ -708,19 +713,25 @@ class URLInspector {
                     combined.sections.push(...data.sections);
                 }
                 
-                // Combine links
-                if (data.links) {
-                    combined.links.push(...data.links);
+                // Combine categorized links
+                if (data.categorized_links) {
+                    Object.keys(data.categorized_links).forEach(category => {
+                        if (combined.categorized_links[category] && data.categorized_links[category]) {
+                            combined.categorized_links[category].push(...data.categorized_links[category]);
+                        }
+                    });
                 }
             }
         });
         
-        // Remove duplicate links
-        const linkUrls = new Set();
-        combined.links = combined.links.filter(link => {
-            if (linkUrls.has(link.url)) return false;
-            linkUrls.add(link.url);
-            return true;
+        // Remove duplicate links from each category
+        Object.keys(combined.categorized_links).forEach(category => {
+            const linkUrls = new Set();
+            combined.categorized_links[category] = combined.categorized_links[category].filter(link => {
+                if (linkUrls.has(link.url)) return false;
+                linkUrls.add(link.url);
+                return true;
+            });
         });
         
         return combined;
@@ -928,10 +939,11 @@ class URLInspector {
             result.sections = data.sections;
         }
         
-        // Handle categorized links
+        // Handle categorized links - only include selected categories
         const categorizedLinks = data.categorized_links || {};
         const selectedLinks = [];
         
+        // Check each category checkbox and include only selected categories
         if (document.getElementById('check_links_content_internal')?.checked && categorizedLinks.content_internal) {
             selectedLinks.push(...categorizedLinks.content_internal);
         }
@@ -945,6 +957,7 @@ class URLInspector {
             selectedLinks.push(...categorizedLinks.legal_or_contact);
         }
         
+        // Only add links to result if some were selected
         if (selectedLinks.length > 0) {
             result.links = selectedLinks;
         }
