@@ -480,7 +480,6 @@ class URLInspector {
             container.appendChild(categoryDiv);
         });
     }
-    }
 
     addPreview(container, label, content) {
         const item = document.createElement('div');
@@ -888,6 +887,7 @@ class URLInspector {
         
         return text;
     }
+
     getSelectedContent(data) {
         const result = {};
         
@@ -952,7 +952,6 @@ class URLInspector {
         return result;
     }
 
-
     extractHeadingsFromSections(sections, level) {
         if (!sections) return [];
         
@@ -971,6 +970,7 @@ class URLInspector {
         
         return headings;
     }
+
     createRAGJSONL(data) {
         const lines = [];
         const sections = data.sections || [];
