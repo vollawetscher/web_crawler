@@ -146,6 +146,47 @@ function extractOpeningHours(text) {
     return hours;
 }
 
+// Helper function to categorize links
+function categorizeLink(linkText, linkUrl, baseUrl) {
+    const text = linkText.toLowerCase().trim();
+    const url = linkUrl.toLowerCase();
+    
+    // Navigation links (skip links, jump links, anchors)
+    const navigationPatterns = [
+        'navigation', 'nav', 'menu', 'menü',
+        'jump', 'skip', 'springen', 'anspringen',
+        'inhalt', 'content', 'header', 'footer',
+        'hauptnavigation', 'hauptmenü', 'inhaltsbereich',
+        'zum inhalt', 'zur navigation', 'nach oben'
+    ];
+    
+    if (url.includes('#') || navigationPatterns.some(pattern => text.includes(pattern))) {
+        return 'navigation';
+    }
+    
+    // Legal, contact, and administrative links
+    const legalContactPatterns = [
+        'impressum', 'datenschutz', 'privacy', 'legal',
+        'kontakt', 'contact', 'agb', 'terms',
+        'cookie', 'disclaimer', 'haftungsausschluss',
+        'nutzungsbedingungen', 'rechtliche hinweise',
+        'leichte sprache', 'gebärdensprache', 'barrierefreiheit',
+        'sitemap', 'hilfe', 'help', 'faq'
+    ];
+    
+    if (legalContactPatterns.some(pattern => text.includes(pattern) || url.includes(pattern))) {
+        return 'legal_or_contact';
+    }
+    
+    // Check if external link
+    if (!isInternalUrl(linkUrl, baseUrl)) {
+        return 'external';
+    }
+    
+    // Everything else that's internal is considered content
+    return 'content_internal';
+}
+
 // Helper function to extract breadcrumbs
 function extractBreadcrumbs($, url) {
     const breadcrumbs = [];
@@ -622,8 +663,15 @@ function parseDocument(html, url, lastModified = null) {
             console.log(`[DEBUG] Section ${index + 1}: "${section.heading}" (${section.content_text.length} chars, type: ${section.content_type})`);
         });
         
-        // Extract all links from the original page (not just main content)
-        const links = [];
+        // Extract and categorize all links from the original page
+        const allLinks = [];
+        const categorizedLinks = {
+            navigation: [],
+            legal_or_contact: [],
+            content_internal: [],
+            external: []
+        };
+        
         $('a[href]').each((_, linkEl) => {
             const $link = $(linkEl);
             const href = $link.attr('href');
@@ -634,30 +682,42 @@ function parseDocument(html, url, lastModified = null) {
             try {
                 const absoluteUrl = new URL(href, url).href;
                 if (absoluteUrl.startsWith('http')) {
-                    links.push({ text, url: absoluteUrl });
+                    const category = categorizeLink(text, absoluteUrl, url);
+                    const linkObj = { text, url: absoluteUrl, category };
+                    
+                    allLinks.push(linkObj);
+                    categorizedLinks[category].push(linkObj);
                 }
             } catch {
                 // Skip invalid URLs
             }
         });
         
-        // Remove duplicate links and limit to 200
-        const uniqueLinks = [];
-        const seenUrls = new Set();
-        for (const link of links.slice(0, 200)) {
-            if (!seenUrls.has(link.url)) {
-                seenUrls.add(link.url);
-                uniqueLinks.push(link);
+        // Remove duplicate links from each category and limit total to 200
+        const processedCategorizedLinks = {};
+        let totalLinks = 0;
+        
+        Object.keys(categorizedLinks).forEach(category => {
+            const uniqueLinks = [];
+            const seenUrls = new Set();
+            
+            for (const link of categorizedLinks[category]) {
+                if (!seenUrls.has(link.url) && totalLinks < 200) {
+                    seenUrls.add(link.url);
+                    uniqueLinks.push(link);
+                    totalLinks++;
+                }
             }
-        }
+            
+            processedCategorizedLinks[category] = uniqueLinks;
+        });
         
         // Extract internal links for crawling
-        const internalLinks = uniqueLinks
-            .filter(link => isInternalUrl(link.url, url))
+        const internalLinks = processedCategorizedLinks.content_internal
             .map(link => normalizeUrl(link.url))
             .filter((linkUrl, index, array) => array.indexOf(linkUrl) === index); // Remove duplicates
         
-        console.log(`[DEBUG] Extracted ${uniqueLinks.length} total links, ${internalLinks.length} internal links`);
+        console.log(`[DEBUG] Extracted ${totalLinks} total links (nav: ${processedCategorizedLinks.navigation.length}, legal: ${processedCategorizedLinks.legal_or_contact.length}, content: ${processedCategorizedLinks.content_internal.length}, external: ${processedCategorizedLinks.external.length}), ${internalLinks.length} crawlable internal links`);
         
         // Create main_content field for frontend compatibility
         const main_content = sections.map(section => section.content_text).join('\n\n');
@@ -669,7 +729,8 @@ function parseDocument(html, url, lastModified = null) {
             meta_description: metaDescription,
             main_content, // For frontend display compatibility
             sections,
-            links: uniqueLinks,
+            links: allLinks, // Keep for backward compatibility
+            categorized_links: processedCategorizedLinks,
             internal_links: internalLinks
         };
         

@@ -404,24 +404,82 @@ class URLInspector {
     }
     
     updateLinksPreview() {
-        const links = this.extractedData.links || [];
+        const categorizedLinks = this.extractedData.categorized_links || {};
         const expander = document.getElementById('linksExpander');
         
-        if (links.length === 0) {
+        const totalLinks = Object.values(categorizedLinks).reduce((sum, links) => sum + links.length, 0);
+        
+        if (totalLinks === 0) {
             expander.style.display = 'none';
             return;
         }
         
         expander.style.display = 'block';
         
-        document.getElementById('linksLabel').textContent = `Links (${links.length})`;
-        document.getElementById('check_links').checked = false;
+        // Update labels with counts
+        document.getElementById('linksContentInternalLabel').textContent = 
+            `Content Links (${categorizedLinks.content_internal?.length || 0})`;
+        document.getElementById('linksExternalLabel').textContent = 
+            `External Links (${categorizedLinks.external?.length || 0})`;
+        document.getElementById('linksNavigationLabel').textContent = 
+            `Navigation Links (${categorizedLinks.navigation?.length || 0})`;
+        document.getElementById('linksLegalContactLabel').textContent = 
+            `Legal/Contact Links (${categorizedLinks.legal_or_contact?.length || 0})`;
+        
+        // Set default checkboxes (only content links checked by default)
+        document.getElementById('check_links_content_internal').checked = (categorizedLinks.content_internal?.length || 0) > 0;
+        document.getElementById('check_links_external').checked = false;
+        document.getElementById('check_links_navigation').checked = false;
+        document.getElementById('check_links_legal_or_contact').checked = false;
         
         const container = document.getElementById('linksPreview');
         container.innerHTML = '';
         
-        const previewDiv = document.createElement('div');
-        previewDiv.className = 'preview-list';
+        // Show preview for each category
+        Object.keys(categorizedLinks).forEach(category => {
+            const links = categorizedLinks[category] || [];
+            if (links.length === 0) return;
+            
+            const categoryDiv = document.createElement('div');
+            categoryDiv.className = 'preview-item';
+            
+            const categoryLabel = document.createElement('div');
+            categoryLabel.className = 'preview-label';
+            const categoryNames = {
+                content_internal: 'Content Links',
+                external: 'External Links', 
+                navigation: 'Navigation Links',
+                legal_or_contact: 'Legal/Contact Links'
+            };
+            categoryLabel.textContent = `${categoryNames[category]}:`;
+            
+            const previewDiv = document.createElement('div');
+            previewDiv.className = 'preview-list';
+            
+            const ul = document.createElement('ul');
+            links.slice(0, 5).forEach(link => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.textContent = link.text;
+                a.target = '_blank';
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            
+            previewDiv.appendChild(ul);
+            
+            if (links.length > 5) {
+                const more = document.createElement('p');
+                more.textContent = `... and ${links.length - 5} more links`;
+                previewDiv.appendChild(more);
+            }
+            
+            categoryDiv.appendChild(categoryLabel);
+            categoryDiv.appendChild(previewDiv);
+            container.appendChild(categoryDiv);
+        });
+    }
         
         const ul = document.createElement('ul');
         links.slice(0, 10).forEach(link => {
@@ -780,7 +838,10 @@ class URLInspector {
                 include_h2: document.getElementById('check_h2')?.checked || false,
                 include_h3: document.getElementById('check_h3')?.checked || false,
                 include_main_content: document.getElementById('check_main_content')?.checked || false,
-                include_links: document.getElementById('check_links')?.checked || false,
+                include_content_internal_links: document.getElementById('check_links_content_internal')?.checked || false,
+                include_external_links: document.getElementById('check_links_external')?.checked || false,
+                include_navigation_links: document.getElementById('check_links_navigation')?.checked || false,
+                include_legal_contact_links: document.getElementById('check_links_legal_or_contact')?.checked || false,
                 selected_pages: isMultiPage ? selectedPages.map(p => ({
                     url: p.url,
                     title: p.data.title || 'Untitled',
@@ -823,7 +884,10 @@ class URLInspector {
         if (selections.include_h2) text += "✓ H2 Headings\n";
         if (selections.include_h3) text += "✓ H3 Headings\n";
         if (selections.include_main_content) text += "✓ Main Content\n";
-        if (selections.include_links) text += "✓ Links\n";
+        if (selections.include_content_internal_links) text += "✓ Content Links\n";
+        if (selections.include_external_links) text += "✓ External Links\n";
+        if (selections.include_navigation_links) text += "✓ Navigation Links\n";
+        if (selections.include_legal_contact_links) text += "✓ Legal/Contact Links\n";
         
         if (selections.selected_pages && selections.selected_pages.length > 0) {
             text += "\nSelected Pages:\n";
@@ -885,8 +949,25 @@ class URLInspector {
             result.sections = data.sections;
         }
         
-        if (document.getElementById('check_links')?.checked && data.links?.length) {
-            result.links = data.links;
+        // Handle categorized links
+        const categorizedLinks = data.categorized_links || {};
+        const selectedLinks = [];
+        
+        if (document.getElementById('check_links_content_internal')?.checked && categorizedLinks.content_internal) {
+            selectedLinks.push(...categorizedLinks.content_internal);
+        }
+        if (document.getElementById('check_links_external')?.checked && categorizedLinks.external) {
+            selectedLinks.push(...categorizedLinks.external);
+        }
+        if (document.getElementById('check_links_navigation')?.checked && categorizedLinks.navigation) {
+            selectedLinks.push(...categorizedLinks.navigation);
+        }
+        if (document.getElementById('check_links_legal_or_contact')?.checked && categorizedLinks.legal_or_contact) {
+            selectedLinks.push(...categorizedLinks.legal_or_contact);
+        }
+        
+        if (selectedLinks.length > 0) {
+            result.links = selectedLinks;
         }
         
         return result;
