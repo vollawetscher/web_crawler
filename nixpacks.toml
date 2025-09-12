@@ -3,7 +3,7 @@
 NODE_ENV = "production"
 
 [phases.setup]
-nixPkgs = ["nodejs_20", "npm-10_x"]
+nixPkgs = ["nodejs_20", "npm"]
 
 [phases.install]
 cmds = ["npm ci --omit=dev"]
