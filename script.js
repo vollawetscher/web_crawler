@@ -4,7 +4,6 @@ class URLInspector {
         this.currentSitemap = null;
         this.currentJobId = null;
         this.isProcessing = false;
-        this.progressPollingInterval = null;
         
         this.initializeElements();
         this.attachEventListeners();
@@ -170,6 +169,113 @@ class URLInspector {
             this.showError(`HTML parsing failed: ${error.message}`);
         }
     }
+
+// Progress polling for live updates
+function startProgressPolling(jobId) {
+    if (progressPollingInterval) {
+        clearInterval(progressPollingInterval);
+    }
+    
+    progressPollingInterval = setInterval(async () => {
+        try {
+            const response = await fetch(`/api/crawl-progress/${jobId}`);
+            if (response.ok) {
+                const progress = await response.json();
+                updateCrawlProgress(progress);
+                
+                // Stop polling if complete or error
+                if (progress.isComplete || progress.status === 'batch_complete') {
+                    stopProgressPolling();
+                    if (progress.status === 'batch_complete') {
+                        showContinueCrawlOption(jobId);
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('Progress polling error:', error);
+        }
+    }, 2000); // Poll every 2 seconds
+}
+
+function stopProgressPolling() {
+    if (progressPollingInterval) {
+        clearInterval(progressPollingInterval);
+        progressPollingInterval = null;
+    }
+}
+
+function updateCrawlProgress(progress) {
+    const statusEl = document.getElementById('crawlStatusText');
+    const crawlStatus = document.getElementById('crawlStatus');
+    
+    if (!statusEl || !crawlStatus) return;
+    
+    crawlStatus.classList.remove('hidden');
+    
+    let statusText = '';
+    let statusClass = 'crawling';
+    
+    switch (progress.status) {
+        case 'starting':
+            statusText = `🚀 Initializing crawl... (${progress.pageCount} pages discovered)`;
+            break;
+        case 'crawling':
+            const currentUrl = progress.currentUrl ? new URL(progress.currentUrl).pathname : 'unknown';
+            statusText = `🔍 Processing: ${currentUrl}`;
+            if (progress.pagesProcessedInBatch && progress.maxPagesThisBatch) {
+                statusText += `\n📊 Batch Progress: ${progress.pagesProcessedInBatch}/${progress.maxPagesThisBatch} pages`;
+            }
+            if (progress.pageCount) {
+                statusText += `\n📈 Total: ${progress.pageCount} pages crawled, ${progress.queueLength} in queue`;
+            }
+            break;
+        case 'batch_complete':
+            statusText = `✅ Batch complete! Processed ${progress.pageCount} pages total`;
+            statusClass = 'complete';
+            break;
+        case 'completed':
+            statusText = `🎉 Crawl complete! Successfully processed ${progress.pageCount} pages`;
+            statusClass = 'complete';
+            break;
+        default:
+            statusText = `⏳ Processing... (${progress.pageCount} pages crawled)`;
+    }
+    
+    statusEl.textContent = statusText;
+    crawlStatus.className = `crawl-status ${statusClass}`;
+    
+    // Remove spinner for batch_complete and completed states
+    const spinner = crawlStatus.querySelector('.spinner');
+    if (spinner && (progress.status === 'batch_complete' || progress.status === 'completed')) {
+        spinner.remove();
+    }
+}
+
+function showContinueCrawlOption(jobId) {
+    const crawlBtn = document.getElementById('crawlBtn');
+    const batchInfo = document.getElementById('batchInfo');
+    const currentJobIdEl = document.getElementById('currentJobId');
+    const progressStatusEl = document.getElementById('crawlProgressStatus');
+    
+    if (crawlBtn) {
+        crawlBtn.textContent = '🔄 Continue Crawl';
+        crawlBtn.disabled = false;
+    }
+    
+    if (batchInfo) {
+        batchInfo.classList.remove('hidden');
+    }
+    
+    if (currentJobIdEl) {
+        currentJobIdEl.textContent = jobId;
+    }
+    
+    if (progressStatusEl) {
+        progressStatusEl.textContent = 'Batch complete - ready to continue';
+    }
+    
+    currentJobId = jobId;
+}
 
     async startCrawl() {
         const url = this.urlInput.value.trim();
