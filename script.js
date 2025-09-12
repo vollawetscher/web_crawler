@@ -4,6 +4,7 @@ class URLInspector {
         this.currentSitemap = null;
         this.currentJobId = null;
         this.isProcessing = false;
+        this.progressPollingInterval = null;
         
         this.initializeElements();
         this.attachEventListeners();
