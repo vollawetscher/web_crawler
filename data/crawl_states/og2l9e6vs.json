@@ -2,7 +2,8 @@
   "jobId": "og2l9e6vs",
   "visited": [
     "https://www.erding.de",
-    "https://www.erding.de/suchergebnis"
+    "https://www.erding.de/suchergebnis",
+    "https://www.erding.de/oberbuergermeister"
   ],
   "sitemap": {
     "https://www.erding.de": {
@@ -4100,14 +4101,3812 @@
         "https://www.erding.de/feedback"
       ],
       "is_relevant": true
+    },
+    "https://www.erding.de/suchergebnis": {
+      "success": true,
+      "final_url": "https://www.erding.de/suchergebnis",
+      "title": "Suchergebnis - Kreisstadt Erding",
+      "meta_description": "",
+      "main_content": "Barrierefreiheit: LEICHTE SPRACHE GEBÄRDENSPRACHE BARRIEREFREIHEIT BARRIEREFREIHEITSERKLÄRUNG LEICHTE SPRACHE LEICHTE SPRACHE GEBÄRDENSPRACHE GEBÄRDENSPRACHE BARRIEREFREIHEIT BARRIEREFREIHEIT BARRIEREFREIHEITSERKLÄRUNG BARRIEREFREIHEITSERKLÄRUNG\n\nInteressante Webseiten: RATSINFOPORTAL NEWSLETTER PUBLIKATIONEN LANDRATSAMT ERDING STADTWERKE ERDING GMBH CARSHARING ERDING E.V. FEEDBACK RATSINFOPORTAL RATSINFOPORTAL PUBLIKATIONEN PUBLIKATIONEN LANDRATSAMT ERDING LANDRATSAMT ERDING STADTWERKE ERDING GMBH STADTWERKE ERDING GMBH CARSHARING ERDING E.V. CARSHARING ERDING E.V.\n\nWetter in Erding +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° +7 ° C ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen Dienstag, 16 April 7-Tage-Vorhersage nachsehen 7-Tage-Vorhersage nachsehen",
+      "sections": [
+        {
+          "section_id": "311e478cd828",
+          "section_order": 0,
+          "heading": "Barrierefreiheit:",
+          "heading_level": "h2",
+          "content_text": "Barrierefreiheit: LEICHTE SPRACHE GEBÄRDENSPRACHE BARRIEREFREIHEIT BARRIEREFREIHEITSERKLÄRUNG LEICHTE SPRACHE LEICHTE SPRACHE GEBÄRDENSPRACHE GEBÄRDENSPRACHE BARRIEREFREIHEIT BARRIEREFREIHEIT BARRIEREFREIHEITSERKLÄRUNG BARRIEREFREIHEITSERKLÄRUNG",
+          "page_url": "https://www.erding.de/suchergebnis",
+          "page_title": "Suchergebnis - Kreisstadt Erding",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "7c1d42aac11a86e8d6c94a4bedc2e341",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "LEICHTE SPRACHE",
+              "url": "https://www.erding.de/leichte-sprache"
+            },
+            {
+              "text": "GEBÄRDENSPRACHE",
+              "url": "https://www.erding.de/gebaerdensprache-webseite"
+            },
+            {
+              "text": "BARRIEREFREIHEIT",
+              "url": "https://www.erding.de/barrierefreiheit"
+            },
+            {
+              "text": "BARRIEREFREIHEITSERKLÄRUNG",
+              "url": "https://www.erding.de/barrierefreiheit-erkl%C3%A4rt"
+            },
+            {
+              "text": "LEICHTE SPRACHE",
+              "url": "https://www.erding.de/leichte-sprache"
+            },
+            {
+              "text": "GEBÄRDENSPRACHE",
+              "url": "https://www.erding.de/gebaerdensprache-webseite"
+            },
+            {
+              "text": "BARRIEREFREIHEIT",
+              "url": "https://www.erding.de/barrierefreiheit"
+            },
+            {
+              "text": "BARRIEREFREIHEITSERKLÄRUNG",
+              "url": "https://www.erding.de/barrierefreiheit-erkl%C3%A4rt"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T08:39:57.796Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "c17be1da237b",
+          "section_order": 1,
+          "heading": "Interessante Webseiten:",
+          "heading_level": "h2",
+          "content_text": "Interessante Webseiten: RATSINFOPORTAL NEWSLETTER PUBLIKATIONEN LANDRATSAMT ERDING STADTWERKE ERDING GMBH CARSHARING ERDING E.V. FEEDBACK RATSINFOPORTAL RATSINFOPORTAL PUBLIKATIONEN PUBLIKATIONEN LANDRATSAMT ERDING LANDRATSAMT ERDING STADTWERKE ERDING GMBH STADTWERKE ERDING GMBH CARSHARING ERDING E.V. CARSHARING ERDING E.V.",
+          "page_url": "https://www.erding.de/suchergebnis",
+          "page_title": "Suchergebnis - Kreisstadt Erding",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "755402a8efbe23b282571ecf2a603e26",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "RATSINFOPORTAL",
+              "url": "https://ratsinfo-erding.digitalfabrix.de/"
+            },
+            {
+              "text": "NEWSLETTER",
+              "url": "https://www.erding.de/newsletter"
+            },
+            {
+              "text": "PUBLIKATIONEN",
+              "url": "https://www.erding.de/publikation"
+            },
+            {
+              "text": "LANDRATSAMT ERDING",
+              "url": "https://www.landkreis-erding.de/"
+            },
+            {
+              "text": "STADTWERKE ERDING GMBH",
+              "url": "https://www.stadtwerke-erding.de/?ConsentReferrer=https%3A%2F%2Fwww.google.com%2F"
+            },
+            {
+              "text": "CARSHARING ERDING E.V.",
+              "url": "https://www.carsharing-erding.de/"
+            },
+            {
+              "text": "FEEDBACK",
+              "url": "https://www.erding.de/feedback"
+            },
+            {
+              "text": "RATSINFOPORTAL",
+              "url": "https://ratsinfo-erding.digitalfabrix.de/"
+            },
+            {
+              "text": "PUBLIKATIONEN",
+              "url": "https://www.erding.de/publikation"
+            },
+            {
+              "text": "LANDRATSAMT ERDING",
+              "url": "https://www.landkreis-erding.de/"
+            },
+            {
+              "text": "STADTWERKE ERDING GMBH",
+              "url": "https://www.stadtwerke-erding.de/?ConsentReferrer=https%3A%2F%2Fwww.google.com%2F"
+            },
+            {
+              "text": "CARSHARING ERDING E.V.",
+              "url": "https://www.carsharing-erding.de/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T08:39:57.797Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "82e60aed1d9f",
+          "section_order": 2,
+          "heading": "Wetter in Erding",
+          "heading_level": "h2",
+          "content_text": "Wetter in Erding +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen +7 ° C H: +9° L: +3° +7 ° C ° C H: +9° L: +3° Erding Dienstag, 16 April 7-Tage-Vorhersage nachsehen Dienstag, 16 April 7-Tage-Vorhersage nachsehen 7-Tage-Vorhersage nachsehen",
+          "page_url": "https://www.erding.de/suchergebnis",
+          "page_title": "Suchergebnis - Kreisstadt Erding",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "46116ea0990e1143603fe4f1f7b00bba",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T08:39:57.798Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://www.erding.de/cdn-cgi/l/email-protection#2a0c091b1a1f110c09521c6f110c091b1a18110c09521c6c110c091c1e110c09521c1f110c091b1b1e110c09521c1e110c091b1a1f110c09521c6f110c091b1a19110c0952186f110c091b1a1a110c09521c1f11",
+          "category": "navigation"
+        },
+        {
+          "text": "Gebärdensprache",
+          "url": "https://www.erding.de/gebaerdensprache-webseite",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Barrierefreiheitserklärung",
+          "url": "https://www.erding.de/barrierefreiheit-erkl%C3%A4rt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Leichte Sprache",
+          "url": "https://www.erding.de/leichte-sprache",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Suche",
+          "url": "https://www.erding.de/suchergebnis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Oberbürgermeister",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtrat",
+          "url": "https://www.erding.de/stadtrat",
+          "category": "content_internal"
+        },
+        {
+          "text": "VFA",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "PBA",
+          "url": "https://www.erding.de/planungs-_und_bauausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "SEA",
+          "url": "https://www.erding.de/stadtentwicklungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundstücks",
+          "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksfest",
+          "url": "https://www.erding.de/volksfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rechnungsprüfung",
+          "url": "https://www.erding.de/rechnungspruefungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fraktionsvorsitzende",
+          "url": "https://www.erding.de/fraktionsvorsitzende",
+          "category": "content_internal"
+        },
+        {
+          "text": "Referenten",
+          "url": "https://www.erding.de/referenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vertreter in anderen Organisationen",
+          "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sitzungskalender",
+          "url": "https://www.erding.de/sitzungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerversammlungen",
+          "url": "https://www.erding.de/buergerversammlungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geschäftsordnung",
+          "url": "https://www.erding.de/geschaeftsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Organigramm",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Öffnungszeiten",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Beglaubigung  von Dokumenten",
+          "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kirchenaustritt",
+          "url": "https://www.erding.de/kirchenaustritt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Urkundenservice",
+          "url": "https://www.erding.de/urkundenservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geburtsregister",
+          "url": "https://www.erding.de/geburtsregister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sterberegister",
+          "url": "https://www.erding.de/sterberegister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Was ist Wo ?von A bis Z",
+          "url": "https://www.erding.de/was-ist-wo",
+          "category": "content_internal"
+        },
+        {
+          "text": "Müllentsorgung / Wertstoffhöfe",
+          "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kehrplan",
+          "url": "https://www.erding.de/kehrplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Notdienst",
+          "url": "https://www.erding.de/notdienst",
+          "category": "content_internal"
+        },
+        {
+          "text": "Verwaltungsgliederungvon A bis Z",
+          "url": "https://www.erding.de/verwaltungsgliederung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Formularservice",
+          "url": "https://www.erding.de/formularservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Aktuelle Projekte",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Flächennutzungsplan",
+          "url": "https://www.erding.de/flaechennutzungsplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bebauungspläne",
+          "url": "https://www.erding.de/bebauungsplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauantrag",
+          "url": "https://www.erding.de/bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Digitaler Bauantrag",
+          "url": "https://www.erding.de/digitaler-bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Denkmalschutz",
+          "url": "https://www.erding.de/denkmalschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Breitband",
+          "url": "https://www.erding.de/breitband",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ortsrecht",
+          "url": "https://www.erding.de/ortsrecht",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fundsachen",
+          "url": "https://www.erding.de/fundsachen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundwasser",
+          "url": "https://www.erding.de/grundwasser",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildung & Jobs",
+          "url": "https://www.erding.de/ausbildung-jobs",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stellenausschreibungen",
+          "url": "https://www.erding.de/stellenausschreibungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Publikation",
+          "url": "https://www.erding.de/publikation",
+          "category": "content_internal"
+        },
+        {
+          "text": "Newsletter",
+          "url": "https://www.erding.de/newsletter",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerserviceportal",
+          "url": "https://www.buergerservice-portal.de/bayern/erding/",
+          "category": "external"
+        },
+        {
+          "text": "Bekanntmachungen",
+          "url": "https://www.erding.de/bekanntmachungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderkrippen",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergärten",
+          "url": "https://www.erding.de/kindergaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Horte",
+          "url": "https://www.erding.de/horte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergarten St. Antonius",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderhaus zum Igelbau",
+          "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+          "category": "content_internal"
+        },
+        {
+          "text": "Schulen",
+          "url": "https://www.erding.de/schulen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Offene Jugendarbeit",
+          "url": "https://www.erding.de/jugendarbeit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Familie (= Betreuungsangebot)",
+          "url": "https://www.erding.de/familie-betreuungsangebot",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischer-s",
+          "category": "content_internal"
+        },
+        {
+          "text": "Betreutes Wohnen",
+          "url": "https://www.erding.de/betreutes-wohnen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Barrierefreiheit",
+          "url": "https://www.erding.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "ISEK Innenstadt",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "IQEK Klettham-Nord",
+          "url": "https://www.erding.de/klettham-nord",
+          "category": "content_internal"
+        },
+        {
+          "text": "Konversion Fliegerhorst",
+          "url": "https://www.erding.de/konversion",
+          "category": "content_internal"
+        },
+        {
+          "text": "S-Bahn-Ringschluss",
+          "url": "https://www.erding.de/s-bahn-ringschluss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hochwasserschutz",
+          "url": "https://www.erding.de/hochwasserschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrradfreundliche Kommune",
+          "url": "https://www.erding.de/radverkehr",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilitätsentwicklungskonzept",
+          "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtbücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/service",
+          "category": "content_internal"
+        },
+        {
+          "text": "Benutzungsordnung",
+          "url": "https://www.erding.de/benutzungsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Erding",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Franz Xaver Stahl",
+          "url": "https://www.erding.de/museum-franz-xaver-stahl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtarchiv",
+          "url": "https://www.erding.de/stadtarchiv",
+          "category": "content_internal"
+        },
+        {
+          "text": "Haus der Begegnung",
+          "url": "https://www.erding.de/haus-der-begegnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauernhausmuseum",
+          "url": "https://www.erding.de/bauernhausmuseum",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadthalle",
+          "url": "https://www.erding.de/stadthalle",
+          "category": "content_internal"
+        },
+        {
+          "text": "Frauenkircherl",
+          "url": "https://www.erding.de/frauenkircherl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jazz Tage",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksmusiktage",
+          "url": "https://www.erding.de/volksmusiktage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Orgelwoche",
+          "url": "https://www.erding.de/orgelwoche",
+          "category": "content_internal"
+        },
+        {
+          "text": "Altstadtfest",
+          "url": "https://www.erding.de/altstadtfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfest",
+          "url": "https://www.erding.de/herbstfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sinnflut",
+          "url": "https://www.erding.de/sinnflut",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pfarreien",
+          "url": "https://www.erding.de/pfarreien",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wappen",
+          "url": "https://www.erding.de/wappen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtgeschichte",
+          "url": "https://www.erding.de/stadtgeschichte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Straßennamen",
+          "url": "https://www.erding.de/strassennamen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ehrenbürger",
+          "url": "https://www.erding.de/ehrenbuerger",
+          "category": "content_internal"
+        },
+        {
+          "text": "Architektur in Erding",
+          "url": "https://www.erding.de/architektur-in-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Events",
+          "url": "https://www.erding.de/events",
+          "category": "content_internal"
+        },
+        {
+          "text": "Webcam",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kronthaler Weiher",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hallen- /Freibad",
+          "url": "https://www.erding.de/hallen-freibad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Eisstadion",
+          "url": "https://www.erding.de/eisstadion",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtpark",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kleingärten",
+          "url": "https://www.erding.de/kleingaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sporthallen",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bolzplätze",
+          "url": "https://www.erding.de/bolzplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderspielplätze",
+          "url": "https://www.erding.de/kinderspielplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wandern & Spazieren",
+          "url": "https://www.erding.de/wandern-spazieren",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadt(turm)führungen",
+          "url": "https://www.erding.de/stadt-turm-fuehrungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grüner Markt",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Marktschranne",
+          "url": "https://www.erding.de/marktschranne",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jahrmärkte",
+          "url": "https://www.erding.de/jahrmaerkte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christkindlmarkt",
+          "url": "https://www.erding.de/christkindlmarkt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadttriathlon / Stadtlauf",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfestrennen",
+          "url": "https://www.erding.de/herbstfestrennen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportlerehrung",
+          "url": "https://www.erding.de/sportlerehrung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Therme",
+          "url": "https://www.erding.de/therme",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lage & Anbindung",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Essen & Trinken",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Übernachten",
+          "url": "https://www.erding.de/uebernachten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Standortdaten",
+          "url": "https://www.erding.de/standortdaten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tagen",
+          "url": "https://www.erding.de/tagen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrrad",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bus & Bahn (Fahrpläne)",
+          "url": "https://www.erding.de/bus-bahn-fahrplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parken & Pkw",
+          "url": "https://www.erding.de/parken-pkw",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mietspiegel",
+          "url": "https://www.erding.de/mietspiegel",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildungspreis",
+          "url": "https://www.erding.de/ausbildungspreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Umweltpreis",
+          "url": "https://www.erding.de/umweltpreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "LEICHTE SPRACHE",
+          "url": "https://www.erding.de/leichte-sprache",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "GEBÄRDENSPRACHE",
+          "url": "https://www.erding.de/gebaerdensprache-webseite",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "BARRIEREFREIHEIT",
+          "url": "https://www.erding.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "BARRIEREFREIHEITSERKLÄRUNG",
+          "url": "https://www.erding.de/barrierefreiheit-erkl%C3%A4rt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "RATSINFOPORTAL",
+          "url": "https://ratsinfo-erding.digitalfabrix.de/",
+          "category": "external"
+        },
+        {
+          "text": "NEWSLETTER",
+          "url": "https://www.erding.de/newsletter",
+          "category": "content_internal"
+        },
+        {
+          "text": "PUBLIKATIONEN",
+          "url": "https://www.erding.de/publikation",
+          "category": "content_internal"
+        },
+        {
+          "text": "LANDRATSAMT ERDING",
+          "url": "https://www.landkreis-erding.de/",
+          "category": "external"
+        },
+        {
+          "text": "STADTWERKE ERDING GMBH",
+          "url": "https://www.stadtwerke-erding.de/?ConsentReferrer=https%3A%2F%2Fwww.google.com%2F",
+          "category": "external"
+        },
+        {
+          "text": "CARSHARING ERDING E.V.",
+          "url": "https://www.carsharing-erding.de/",
+          "category": "external"
+        },
+        {
+          "text": "FEEDBACK",
+          "url": "https://www.erding.de/feedback",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.erding.de/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.erding.de/datenschutz",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Zum Seitenanfang",
+          "url": "https://www.erding.de/suchergebnis#top",
+          "category": "navigation"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.erding.de/datenschutz",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.erding.de/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Cookie-Details",
+          "url": "https://www.erding.de/cookies",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Suche",
+          "url": "https://www.erding.de/suchergebnis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Politik",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Oberbürgermeister",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtrat",
+          "url": "https://www.erding.de/stadtrat",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausschüsse",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "VFA",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "PBA",
+          "url": "https://www.erding.de/planungs-_und_bauausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "SEA",
+          "url": "https://www.erding.de/stadtentwicklungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundstücks",
+          "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksfest",
+          "url": "https://www.erding.de/volksfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rechnungsprüfung",
+          "url": "https://www.erding.de/rechnungspruefungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fraktionsvorsitzende",
+          "url": "https://www.erding.de/fraktionsvorsitzende",
+          "category": "content_internal"
+        },
+        {
+          "text": "Referenten",
+          "url": "https://www.erding.de/referenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vertreter in anderen Organisationen",
+          "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stiftungen",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sitzungskalender",
+          "url": "https://www.erding.de/sitzungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerversammlungen",
+          "url": "https://www.erding.de/buergerversammlungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geschäftsordnung",
+          "url": "https://www.erding.de/geschaeftsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rathaus",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Organigramm",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Öffnungszeiten",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Beglaubigung  von Dokumenten",
+          "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kirchenaustritt",
+          "url": "https://www.erding.de/kirchenaustritt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Urkundenservice",
+          "url": "https://www.erding.de/urkundenservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geburtsregister",
+          "url": "https://www.erding.de/geburtsregister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sterberegister",
+          "url": "https://www.erding.de/sterberegister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Was ist Wo ?",
+          "url": "https://www.erding.de/was-ist-wo",
+          "category": "content_internal"
+        },
+        {
+          "text": "Müllentsorgung / Wertstoffhöfe",
+          "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kehrplan",
+          "url": "https://www.erding.de/kehrplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Notdienst",
+          "url": "https://www.erding.de/notdienst",
+          "category": "content_internal"
+        },
+        {
+          "text": "Verwaltungsgliederung",
+          "url": "https://www.erding.de/verwaltungsgliederung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Formularservice",
+          "url": "https://www.erding.de/formularservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bau",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Aktuelle Projekte",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Flächennutzungsplan",
+          "url": "https://www.erding.de/flaechennutzungsplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bebauungspläne",
+          "url": "https://www.erding.de/bebauungsplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauantrag",
+          "url": "https://www.erding.de/bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Digitaler Bauantrag",
+          "url": "https://www.erding.de/digitaler-bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Denkmalschutz",
+          "url": "https://www.erding.de/denkmalschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Breitband",
+          "url": "https://www.erding.de/breitband",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ortsrecht",
+          "url": "https://www.erding.de/ortsrecht",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fundsachen",
+          "url": "https://www.erding.de/fundsachen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundwasser",
+          "url": "https://www.erding.de/grundwasser",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildung & Jobs",
+          "url": "https://www.erding.de/ausbildung-jobs",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stellenausschreibungen",
+          "url": "https://www.erding.de/stellenausschreibungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Publikation",
+          "url": "https://www.erding.de/publikation",
+          "category": "content_internal"
+        },
+        {
+          "text": "Newsletter",
+          "url": "https://www.erding.de/newsletter",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerserviceportal",
+          "url": "https://www.buergerservice-portal.de/bayern/erding/",
+          "category": "external"
+        },
+        {
+          "text": "Bekanntmachungen",
+          "url": "https://www.erding.de/bekanntmachungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lebenslagen",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderbetreuung",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderkrippen",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergärten",
+          "url": "https://www.erding.de/kindergaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Horte",
+          "url": "https://www.erding.de/horte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergarten St. Antonius",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderhaus zum Igelbau",
+          "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+          "category": "content_internal"
+        },
+        {
+          "text": "Schulen",
+          "url": "https://www.erding.de/schulen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Offene Jugendarbeit",
+          "url": "https://www.erding.de/jugendarbeit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Familie (= Betreuungsangebot)",
+          "url": "https://www.erding.de/familie-betreuungsangebot",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pflege",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischer-s",
+          "category": "content_internal"
+        },
+        {
+          "text": "Betreutes Wohnen",
+          "url": "https://www.erding.de/betreutes-wohnen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Barrierefreiheit",
+          "url": "https://www.erding.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Erding 2035",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "ISEK Innenstadt",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "IQEK Klettham-Nord",
+          "url": "https://www.erding.de/klettham-nord",
+          "category": "content_internal"
+        },
+        {
+          "text": "Konversion Fliegerhorst",
+          "url": "https://www.erding.de/konversion",
+          "category": "content_internal"
+        },
+        {
+          "text": "S-Bahn-Ringschluss",
+          "url": "https://www.erding.de/s-bahn-ringschluss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hochwasserschutz",
+          "url": "https://www.erding.de/hochwasserschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrradfreundliche Kommune",
+          "url": "https://www.erding.de/radverkehr",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilitätsentwicklungskonzept",
+          "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kultur",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtbücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/service",
+          "category": "content_internal"
+        },
+        {
+          "text": "Benutzungsordnung",
+          "url": "https://www.erding.de/benutzungsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Erding",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Franz Xaver Stahl",
+          "url": "https://www.erding.de/museum-franz-xaver-stahl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtarchiv",
+          "url": "https://www.erding.de/stadtarchiv",
+          "category": "content_internal"
+        },
+        {
+          "text": "Haus der Begegnung",
+          "url": "https://www.erding.de/haus-der-begegnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauernhausmuseum",
+          "url": "https://www.erding.de/bauernhausmuseum",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadthalle",
+          "url": "https://www.erding.de/stadthalle",
+          "category": "content_internal"
+        },
+        {
+          "text": "Frauenkircherl",
+          "url": "https://www.erding.de/frauenkircherl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Veranstaltungsreihen",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jazz Tage",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksmusiktage",
+          "url": "https://www.erding.de/volksmusiktage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Orgelwoche",
+          "url": "https://www.erding.de/orgelwoche",
+          "category": "content_internal"
+        },
+        {
+          "text": "Altstadtfest",
+          "url": "https://www.erding.de/altstadtfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfest",
+          "url": "https://www.erding.de/herbstfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sinnflut",
+          "url": "https://www.erding.de/sinnflut",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pfarreien",
+          "url": "https://www.erding.de/pfarreien",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wappen",
+          "url": "https://www.erding.de/wappen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtgeschichte",
+          "url": "https://www.erding.de/stadtgeschichte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Straßennamen",
+          "url": "https://www.erding.de/strassennamen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ehrenbürger",
+          "url": "https://www.erding.de/ehrenbuerger",
+          "category": "content_internal"
+        },
+        {
+          "text": "Architektur in Erding",
+          "url": "https://www.erding.de/architektur-in-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Events",
+          "url": "https://www.erding.de/events",
+          "category": "content_internal"
+        },
+        {
+          "text": "Freizeit",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Webcam",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Freizeitanlagen",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kronthaler Weiher",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hallen- /Freibad",
+          "url": "https://www.erding.de/hallen-freibad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Eisstadion",
+          "url": "https://www.erding.de/eisstadion",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parkanlagen",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtpark",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kleingärten",
+          "url": "https://www.erding.de/kleingaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportstätten",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sporthallen",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bolzplätze",
+          "url": "https://www.erding.de/bolzplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderspielplätze",
+          "url": "https://www.erding.de/kinderspielplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wandern & Spazieren",
+          "url": "https://www.erding.de/wandern-spazieren",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadt(turm)führungen",
+          "url": "https://www.erding.de/stadt-turm-fuehrungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Märkte",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grüner Markt",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Marktschranne",
+          "url": "https://www.erding.de/marktschranne",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jahrmärkte",
+          "url": "https://www.erding.de/jahrmaerkte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christkindlmarkt",
+          "url": "https://www.erding.de/christkindlmarkt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportveranstaltungen",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadttriathlon / Stadtlauf",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfestrennen",
+          "url": "https://www.erding.de/herbstfestrennen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportlerehrung",
+          "url": "https://www.erding.de/sportlerehrung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Therme",
+          "url": "https://www.erding.de/therme",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wirtschaft",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lage & Anbindung",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tourismus",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Essen & Trinken",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Übernachten",
+          "url": "https://www.erding.de/uebernachten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Standortdaten",
+          "url": "https://www.erding.de/standortdaten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tagen",
+          "url": "https://www.erding.de/tagen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilität",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrrad",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bus & Bahn (Fahrpläne)",
+          "url": "https://www.erding.de/bus-bahn-fahrplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parken & Pkw",
+          "url": "https://www.erding.de/parken-pkw",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mietspiegel",
+          "url": "https://www.erding.de/mietspiegel",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildungspreis",
+          "url": "https://www.erding.de/ausbildungspreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Umweltpreis",
+          "url": "https://www.erding.de/umweltpreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Suche",
+          "url": "https://www.erding.de/suchergebnis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Oberbürgermeister",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtrat",
+          "url": "https://www.erding.de/stadtrat",
+          "category": "content_internal"
+        },
+        {
+          "text": "VFA",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "PBA",
+          "url": "https://www.erding.de/planungs-_und_bauausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "SEA",
+          "url": "https://www.erding.de/stadtentwicklungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundstücks",
+          "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksfest",
+          "url": "https://www.erding.de/volksfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rechnungsprüfung",
+          "url": "https://www.erding.de/rechnungspruefungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fraktionsvorsitzende",
+          "url": "https://www.erding.de/fraktionsvorsitzende",
+          "category": "content_internal"
+        },
+        {
+          "text": "Referenten",
+          "url": "https://www.erding.de/referenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vertreter in anderen Organisationen",
+          "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sitzungskalender",
+          "url": "https://www.erding.de/sitzungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerversammlungen",
+          "url": "https://www.erding.de/buergerversammlungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geschäftsordnung",
+          "url": "https://www.erding.de/geschaeftsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Organigramm",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Öffnungszeiten",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Beglaubigung  von Dokumenten",
+          "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kirchenaustritt",
+          "url": "https://www.erding.de/kirchenaustritt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Urkundenservice",
+          "url": "https://www.erding.de/urkundenservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geburtsregister",
+          "url": "https://www.erding.de/geburtsregister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sterberegister",
+          "url": "https://www.erding.de/sterberegister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Was ist Wo ?von A bis Z",
+          "url": "https://www.erding.de/was-ist-wo",
+          "category": "content_internal"
+        },
+        {
+          "text": "Müllentsorgung / Wertstoffhöfe",
+          "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kehrplan",
+          "url": "https://www.erding.de/kehrplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Notdienst",
+          "url": "https://www.erding.de/notdienst",
+          "category": "content_internal"
+        },
+        {
+          "text": "Verwaltungsgliederungvon A bis Z",
+          "url": "https://www.erding.de/verwaltungsgliederung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Formularservice",
+          "url": "https://www.erding.de/formularservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Aktuelle Projekte",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Flächennutzungsplan",
+          "url": "https://www.erding.de/flaechennutzungsplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bebauungspläne",
+          "url": "https://www.erding.de/bebauungsplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauantrag",
+          "url": "https://www.erding.de/bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Digitaler Bauantrag",
+          "url": "https://www.erding.de/digitaler-bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Denkmalschutz",
+          "url": "https://www.erding.de/denkmalschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Breitband",
+          "url": "https://www.erding.de/breitband",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ortsrecht",
+          "url": "https://www.erding.de/ortsrecht",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fundsachen",
+          "url": "https://www.erding.de/fundsachen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundwasser",
+          "url": "https://www.erding.de/grundwasser",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildung & Jobs",
+          "url": "https://www.erding.de/ausbildung-jobs",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stellenausschreibungen",
+          "url": "https://www.erding.de/stellenausschreibungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Publikation",
+          "url": "https://www.erding.de/publikation",
+          "category": "content_internal"
+        },
+        {
+          "text": "Newsletter",
+          "url": "https://www.erding.de/newsletter",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerserviceportal",
+          "url": "https://www.buergerservice-portal.de/bayern/erding/",
+          "category": "external"
+        },
+        {
+          "text": "Bekanntmachungen",
+          "url": "https://www.erding.de/bekanntmachungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderkrippen",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergärten",
+          "url": "https://www.erding.de/kindergaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Horte",
+          "url": "https://www.erding.de/horte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergarten St. Antonius",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderhaus zum Igelbau",
+          "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+          "category": "content_internal"
+        },
+        {
+          "text": "Schulen",
+          "url": "https://www.erding.de/schulen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Offene Jugendarbeit",
+          "url": "https://www.erding.de/jugendarbeit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Familie (= Betreuungsangebot)",
+          "url": "https://www.erding.de/familie-betreuungsangebot",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischer-s",
+          "category": "content_internal"
+        },
+        {
+          "text": "Betreutes Wohnen",
+          "url": "https://www.erding.de/betreutes-wohnen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Barrierefreiheit",
+          "url": "https://www.erding.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "ISEK Innenstadt",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "IQEK Klettham-Nord",
+          "url": "https://www.erding.de/klettham-nord",
+          "category": "content_internal"
+        },
+        {
+          "text": "Konversion Fliegerhorst",
+          "url": "https://www.erding.de/konversion",
+          "category": "content_internal"
+        },
+        {
+          "text": "S-Bahn-Ringschluss",
+          "url": "https://www.erding.de/s-bahn-ringschluss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hochwasserschutz",
+          "url": "https://www.erding.de/hochwasserschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrradfreundliche Kommune",
+          "url": "https://www.erding.de/radverkehr",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilitätsentwicklungskonzept",
+          "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtbücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/service",
+          "category": "content_internal"
+        },
+        {
+          "text": "Benutzungsordnung",
+          "url": "https://www.erding.de/benutzungsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Erding",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Franz Xaver Stahl",
+          "url": "https://www.erding.de/museum-franz-xaver-stahl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtarchiv",
+          "url": "https://www.erding.de/stadtarchiv",
+          "category": "content_internal"
+        },
+        {
+          "text": "Haus der Begegnung",
+          "url": "https://www.erding.de/haus-der-begegnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauernhausmuseum",
+          "url": "https://www.erding.de/bauernhausmuseum",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadthalle",
+          "url": "https://www.erding.de/stadthalle",
+          "category": "content_internal"
+        },
+        {
+          "text": "Frauenkircherl",
+          "url": "https://www.erding.de/frauenkircherl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jazz Tage",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksmusiktage",
+          "url": "https://www.erding.de/volksmusiktage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Orgelwoche",
+          "url": "https://www.erding.de/orgelwoche",
+          "category": "content_internal"
+        },
+        {
+          "text": "Altstadtfest",
+          "url": "https://www.erding.de/altstadtfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfest",
+          "url": "https://www.erding.de/herbstfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sinnflut",
+          "url": "https://www.erding.de/sinnflut",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pfarreien",
+          "url": "https://www.erding.de/pfarreien",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wappen",
+          "url": "https://www.erding.de/wappen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtgeschichte",
+          "url": "https://www.erding.de/stadtgeschichte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Straßennamen",
+          "url": "https://www.erding.de/strassennamen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ehrenbürger",
+          "url": "https://www.erding.de/ehrenbuerger",
+          "category": "content_internal"
+        },
+        {
+          "text": "Architektur in Erding",
+          "url": "https://www.erding.de/architektur-in-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Events",
+          "url": "https://www.erding.de/events",
+          "category": "content_internal"
+        },
+        {
+          "text": "Webcam",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kronthaler Weiher",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hallen- /Freibad",
+          "url": "https://www.erding.de/hallen-freibad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Eisstadion",
+          "url": "https://www.erding.de/eisstadion",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtpark",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kleingärten",
+          "url": "https://www.erding.de/kleingaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sporthallen",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bolzplätze",
+          "url": "https://www.erding.de/bolzplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderspielplätze",
+          "url": "https://www.erding.de/kinderspielplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wandern & Spazieren",
+          "url": "https://www.erding.de/wandern-spazieren",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadt(turm)führungen",
+          "url": "https://www.erding.de/stadt-turm-fuehrungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grüner Markt",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Marktschranne",
+          "url": "https://www.erding.de/marktschranne",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jahrmärkte",
+          "url": "https://www.erding.de/jahrmaerkte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christkindlmarkt",
+          "url": "https://www.erding.de/christkindlmarkt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadttriathlon / Stadtlauf",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfestrennen",
+          "url": "https://www.erding.de/herbstfestrennen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportlerehrung",
+          "url": "https://www.erding.de/sportlerehrung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Therme",
+          "url": "https://www.erding.de/therme",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lage & Anbindung",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Essen & Trinken",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Übernachten",
+          "url": "https://www.erding.de/uebernachten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Standortdaten",
+          "url": "https://www.erding.de/standortdaten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tagen",
+          "url": "https://www.erding.de/tagen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrrad",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bus & Bahn (Fahrpläne)",
+          "url": "https://www.erding.de/bus-bahn-fahrplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parken & Pkw",
+          "url": "https://www.erding.de/parken-pkw",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mietspiegel",
+          "url": "https://www.erding.de/mietspiegel",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildungspreis",
+          "url": "https://www.erding.de/ausbildungspreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Umweltpreis",
+          "url": "https://www.erding.de/umweltpreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Suche",
+          "url": "https://www.erding.de/suchergebnis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Politik",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Oberbürgermeister",
+          "url": "https://www.erding.de/oberbuergermeister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtrat",
+          "url": "https://www.erding.de/stadtrat",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausschüsse",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "VFA",
+          "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "PBA",
+          "url": "https://www.erding.de/planungs-_und_bauausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "SEA",
+          "url": "https://www.erding.de/stadtentwicklungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundstücks",
+          "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksfest",
+          "url": "https://www.erding.de/volksfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rechnungsprüfung",
+          "url": "https://www.erding.de/rechnungspruefungsausschuss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fraktionsvorsitzende",
+          "url": "https://www.erding.de/fraktionsvorsitzende",
+          "category": "content_internal"
+        },
+        {
+          "text": "Referenten",
+          "url": "https://www.erding.de/referenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vertreter in anderen Organisationen",
+          "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stiftungen",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZL",
+          "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sitzungskalender",
+          "url": "https://www.erding.de/sitzungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerversammlungen",
+          "url": "https://www.erding.de/buergerversammlungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geschäftsordnung",
+          "url": "https://www.erding.de/geschaeftsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rathaus",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Organigramm",
+          "url": "https://www.erding.de/organigramm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Öffnungszeiten",
+          "url": "https://www.erding.de/oeffnungszeiten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Beglaubigung  von Dokumenten",
+          "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kirchenaustritt",
+          "url": "https://www.erding.de/kirchenaustritt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Urkundenservice",
+          "url": "https://www.erding.de/urkundenservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geburtsregister",
+          "url": "https://www.erding.de/geburtsregister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sterberegister",
+          "url": "https://www.erding.de/sterberegister",
+          "category": "content_internal"
+        },
+        {
+          "text": "Was ist Wo ?",
+          "url": "https://www.erding.de/was-ist-wo",
+          "category": "content_internal"
+        },
+        {
+          "text": "Müllentsorgung / Wertstoffhöfe",
+          "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kehrplan",
+          "url": "https://www.erding.de/kehrplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Notdienst",
+          "url": "https://www.erding.de/notdienst",
+          "category": "content_internal"
+        },
+        {
+          "text": "Verwaltungsgliederung",
+          "url": "https://www.erding.de/verwaltungsgliederung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Formularservice",
+          "url": "https://www.erding.de/formularservice",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bau",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Aktuelle Projekte",
+          "url": "https://www.erding.de/aktuelle-projekte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Flächennutzungsplan",
+          "url": "https://www.erding.de/flaechennutzungsplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bebauungspläne",
+          "url": "https://www.erding.de/bebauungsplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauantrag",
+          "url": "https://www.erding.de/bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Digitaler Bauantrag",
+          "url": "https://www.erding.de/digitaler-bauantrag",
+          "category": "content_internal"
+        },
+        {
+          "text": "Denkmalschutz",
+          "url": "https://www.erding.de/denkmalschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Breitband",
+          "url": "https://www.erding.de/breitband",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ortsrecht",
+          "url": "https://www.erding.de/ortsrecht",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fundsachen",
+          "url": "https://www.erding.de/fundsachen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grundwasser",
+          "url": "https://www.erding.de/grundwasser",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildung & Jobs",
+          "url": "https://www.erding.de/ausbildung-jobs",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stellenausschreibungen",
+          "url": "https://www.erding.de/stellenausschreibungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Publikation",
+          "url": "https://www.erding.de/publikation",
+          "category": "content_internal"
+        },
+        {
+          "text": "Newsletter",
+          "url": "https://www.erding.de/newsletter",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bürgerserviceportal",
+          "url": "https://www.buergerservice-portal.de/bayern/erding/",
+          "category": "external"
+        },
+        {
+          "text": "Bekanntmachungen",
+          "url": "https://www.erding.de/bekanntmachungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lebenslagen",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderbetreuung",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderkrippen",
+          "url": "https://www.erding.de/kinderkrippen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergärten",
+          "url": "https://www.erding.de/kindergaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Horte",
+          "url": "https://www.erding.de/horte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kindergarten St. Antonius",
+          "url": "https://www.erding.de/kindergarten-st-antonius",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderhaus zum Igelbau",
+          "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+          "category": "content_internal"
+        },
+        {
+          "text": "Schulen",
+          "url": "https://www.erding.de/schulen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Offene Jugendarbeit",
+          "url": "https://www.erding.de/jugendarbeit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Familie (= Betreuungsangebot)",
+          "url": "https://www.erding.de/familie-betreuungsangebot",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pflege",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "HG",
+          "url": "https://www.erding.de/hg",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fischer's",
+          "url": "https://www.erding.de/fischer-s",
+          "category": "content_internal"
+        },
+        {
+          "text": "Betreutes Wohnen",
+          "url": "https://www.erding.de/betreutes-wohnen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Barrierefreiheit",
+          "url": "https://www.erding.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Erding 2035",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "ISEK Innenstadt",
+          "url": "https://www.erding.de/isek",
+          "category": "content_internal"
+        },
+        {
+          "text": "IQEK Klettham-Nord",
+          "url": "https://www.erding.de/klettham-nord",
+          "category": "content_internal"
+        },
+        {
+          "text": "Konversion Fliegerhorst",
+          "url": "https://www.erding.de/konversion",
+          "category": "content_internal"
+        },
+        {
+          "text": "S-Bahn-Ringschluss",
+          "url": "https://www.erding.de/s-bahn-ringschluss",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hochwasserschutz",
+          "url": "https://www.erding.de/hochwasserschutz",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrradfreundliche Kommune",
+          "url": "https://www.erding.de/radverkehr",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilitätsentwicklungskonzept",
+          "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kultur",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtbücherei",
+          "url": "https://www.erding.de/stadtbuecherei",
+          "category": "content_internal"
+        },
+        {
+          "text": "Service",
+          "url": "https://www.erding.de/service",
+          "category": "content_internal"
+        },
+        {
+          "text": "Benutzungsordnung",
+          "url": "https://www.erding.de/benutzungsordnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Erding",
+          "url": "https://www.erding.de/museum-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Museum Franz Xaver Stahl",
+          "url": "https://www.erding.de/museum-franz-xaver-stahl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtarchiv",
+          "url": "https://www.erding.de/stadtarchiv",
+          "category": "content_internal"
+        },
+        {
+          "text": "Haus der Begegnung",
+          "url": "https://www.erding.de/haus-der-begegnung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauernhausmuseum",
+          "url": "https://www.erding.de/bauernhausmuseum",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadthalle",
+          "url": "https://www.erding.de/stadthalle",
+          "category": "content_internal"
+        },
+        {
+          "text": "Frauenkircherl",
+          "url": "https://www.erding.de/frauenkircherl",
+          "category": "content_internal"
+        },
+        {
+          "text": "Veranstaltungsreihen",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jazz Tage",
+          "url": "https://www.erding.de/jazz-tage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Volksmusiktage",
+          "url": "https://www.erding.de/volksmusiktage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Orgelwoche",
+          "url": "https://www.erding.de/orgelwoche",
+          "category": "content_internal"
+        },
+        {
+          "text": "Altstadtfest",
+          "url": "https://www.erding.de/altstadtfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfest",
+          "url": "https://www.erding.de/herbstfest",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sinnflut",
+          "url": "https://www.erding.de/sinnflut",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pfarreien",
+          "url": "https://www.erding.de/pfarreien",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wappen",
+          "url": "https://www.erding.de/wappen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtgeschichte",
+          "url": "https://www.erding.de/stadtgeschichte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Straßennamen",
+          "url": "https://www.erding.de/strassennamen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ehrenbürger",
+          "url": "https://www.erding.de/ehrenbuerger",
+          "category": "content_internal"
+        },
+        {
+          "text": "Architektur in Erding",
+          "url": "https://www.erding.de/architektur-in-erding",
+          "category": "content_internal"
+        },
+        {
+          "text": "Events",
+          "url": "https://www.erding.de/events",
+          "category": "content_internal"
+        },
+        {
+          "text": "Freizeit",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Webcam",
+          "url": "https://www.erding.de/webcam",
+          "category": "content_internal"
+        },
+        {
+          "text": "Freizeitanlagen",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kronthaler Weiher",
+          "url": "https://www.erding.de/kronthaler-weiher",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hallen- /Freibad",
+          "url": "https://www.erding.de/hallen-freibad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Eisstadion",
+          "url": "https://www.erding.de/eisstadion",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parkanlagen",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtpark",
+          "url": "https://www.erding.de/stadtpark",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kleingärten",
+          "url": "https://www.erding.de/kleingaerten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportstätten",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sporthallen",
+          "url": "https://www.erding.de/sporthallen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bolzplätze",
+          "url": "https://www.erding.de/bolzplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinderspielplätze",
+          "url": "https://www.erding.de/kinderspielplaetze",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wandern & Spazieren",
+          "url": "https://www.erding.de/wandern-spazieren",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadt(turm)führungen",
+          "url": "https://www.erding.de/stadt-turm-fuehrungen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Märkte",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Grüner Markt",
+          "url": "https://www.erding.de/gruener-markt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Marktschranne",
+          "url": "https://www.erding.de/marktschranne",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jahrmärkte",
+          "url": "https://www.erding.de/jahrmaerkte",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christkindlmarkt",
+          "url": "https://www.erding.de/christkindlmarkt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportveranstaltungen",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadttriathlon / Stadtlauf",
+          "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+          "category": "content_internal"
+        },
+        {
+          "text": "Herbstfestrennen",
+          "url": "https://www.erding.de/herbstfestrennen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sportlerehrung",
+          "url": "https://www.erding.de/sportlerehrung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Therme",
+          "url": "https://www.erding.de/therme",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wirtschaft",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Lage & Anbindung",
+          "url": "https://www.erding.de/lage-anbindung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tourismus",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Essen & Trinken",
+          "url": "https://www.erding.de/essen-trinken",
+          "category": "content_internal"
+        },
+        {
+          "text": "Übernachten",
+          "url": "https://www.erding.de/uebernachten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Standortdaten",
+          "url": "https://www.erding.de/standortdaten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tagen",
+          "url": "https://www.erding.de/tagen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mobilität",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fahrrad",
+          "url": "https://www.erding.de/fahrrad",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bus & Bahn (Fahrpläne)",
+          "url": "https://www.erding.de/bus-bahn-fahrplaene",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parken & Pkw",
+          "url": "https://www.erding.de/parken-pkw",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mietspiegel",
+          "url": "https://www.erding.de/mietspiegel",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ausbildungspreis",
+          "url": "https://www.erding.de/ausbildungspreis",
+          "category": "content_internal"
+        },
+        {
+          "text": "Umweltpreis",
+          "url": "https://www.erding.de/umweltpreis",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "[email protected]",
+            "url": "https://www.erding.de/cdn-cgi/l/email-protection#2a0c091b1a1f110c09521c6f110c091b1a18110c09521c6c110c091c1e110c09521c1f110c091b1b1e110c09521c1e110c091b1a1f110c09521c6f110c091b1a19110c0952186f110c091b1a1a110c09521c1f11",
+            "category": "navigation"
+          },
+          {
+            "text": "Zum Seitenanfang",
+            "url": "https://www.erding.de/suchergebnis#top",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "Gebärdensprache",
+            "url": "https://www.erding.de/gebaerdensprache-webseite",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Barrierefreiheitserklärung",
+            "url": "https://www.erding.de/barrierefreiheit-erkl%C3%A4rt",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Leichte Sprache",
+            "url": "https://www.erding.de/leichte-sprache",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Barrierefreiheit",
+            "url": "https://www.erding.de/barrierefreiheit",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://www.erding.de/impressum",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://www.erding.de/datenschutz",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Cookie-Details",
+            "url": "https://www.erding.de/cookies",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Suche",
+            "url": "https://www.erding.de/suchergebnis",
+            "category": "content_internal"
+          },
+          {
+            "text": "Oberbürgermeister",
+            "url": "https://www.erding.de/oberbuergermeister",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtrat",
+            "url": "https://www.erding.de/stadtrat",
+            "category": "content_internal"
+          },
+          {
+            "text": "VFA",
+            "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "PBA",
+            "url": "https://www.erding.de/planungs-_und_bauausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "SEA",
+            "url": "https://www.erding.de/stadtentwicklungsausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "Grundstücks",
+            "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "Volksfest",
+            "url": "https://www.erding.de/volksfest",
+            "category": "content_internal"
+          },
+          {
+            "text": "ZL",
+            "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "Rechnungsprüfung",
+            "url": "https://www.erding.de/rechnungspruefungsausschuss",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fraktionsvorsitzende",
+            "url": "https://www.erding.de/fraktionsvorsitzende",
+            "category": "content_internal"
+          },
+          {
+            "text": "Referenten",
+            "url": "https://www.erding.de/referenten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Vertreter in anderen Organisationen",
+            "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+            "category": "content_internal"
+          },
+          {
+            "text": "HG",
+            "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fischer's",
+            "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+            "category": "content_internal"
+          },
+          {
+            "text": "ZL",
+            "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sitzungskalender",
+            "url": "https://www.erding.de/sitzungskalender",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bürgerversammlungen",
+            "url": "https://www.erding.de/buergerversammlungen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Geschäftsordnung",
+            "url": "https://www.erding.de/geschaeftsordnung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Organigramm",
+            "url": "https://www.erding.de/organigramm",
+            "category": "content_internal"
+          },
+          {
+            "text": "Öffnungszeiten",
+            "url": "https://www.erding.de/oeffnungszeiten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Beglaubigung  von Dokumenten",
+            "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kirchenaustritt",
+            "url": "https://www.erding.de/kirchenaustritt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Urkundenservice",
+            "url": "https://www.erding.de/urkundenservice",
+            "category": "content_internal"
+          },
+          {
+            "text": "Geburtsregister",
+            "url": "https://www.erding.de/geburtsregister",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sterberegister",
+            "url": "https://www.erding.de/sterberegister",
+            "category": "content_internal"
+          },
+          {
+            "text": "Was ist Wo ?von A bis Z",
+            "url": "https://www.erding.de/was-ist-wo",
+            "category": "content_internal"
+          },
+          {
+            "text": "Müllentsorgung / Wertstoffhöfe",
+            "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kehrplan",
+            "url": "https://www.erding.de/kehrplan",
+            "category": "content_internal"
+          },
+          {
+            "text": "Notdienst",
+            "url": "https://www.erding.de/notdienst",
+            "category": "content_internal"
+          },
+          {
+            "text": "Verwaltungsgliederungvon A bis Z",
+            "url": "https://www.erding.de/verwaltungsgliederung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Formularservice",
+            "url": "https://www.erding.de/formularservice",
+            "category": "content_internal"
+          },
+          {
+            "text": "Aktuelle Projekte",
+            "url": "https://www.erding.de/aktuelle-projekte",
+            "category": "content_internal"
+          },
+          {
+            "text": "Flächennutzungsplan",
+            "url": "https://www.erding.de/flaechennutzungsplan",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bebauungspläne",
+            "url": "https://www.erding.de/bebauungsplaene",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bauantrag",
+            "url": "https://www.erding.de/bauantrag",
+            "category": "content_internal"
+          },
+          {
+            "text": "Digitaler Bauantrag",
+            "url": "https://www.erding.de/digitaler-bauantrag",
+            "category": "content_internal"
+          },
+          {
+            "text": "Denkmalschutz",
+            "url": "https://www.erding.de/denkmalschutz",
+            "category": "content_internal"
+          },
+          {
+            "text": "Breitband",
+            "url": "https://www.erding.de/breitband",
+            "category": "content_internal"
+          },
+          {
+            "text": "Ortsrecht",
+            "url": "https://www.erding.de/ortsrecht",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fundsachen",
+            "url": "https://www.erding.de/fundsachen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Grundwasser",
+            "url": "https://www.erding.de/grundwasser",
+            "category": "content_internal"
+          },
+          {
+            "text": "Ausbildung & Jobs",
+            "url": "https://www.erding.de/ausbildung-jobs",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stellenausschreibungen",
+            "url": "https://www.erding.de/stellenausschreibungen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Publikation",
+            "url": "https://www.erding.de/publikation",
+            "category": "content_internal"
+          },
+          {
+            "text": "Newsletter",
+            "url": "https://www.erding.de/newsletter",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bekanntmachungen",
+            "url": "https://www.erding.de/bekanntmachungen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kinderkrippen",
+            "url": "https://www.erding.de/kinderkrippen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kindergärten",
+            "url": "https://www.erding.de/kindergaerten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Horte",
+            "url": "https://www.erding.de/horte",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kindergarten St. Antonius",
+            "url": "https://www.erding.de/kindergarten-st-antonius",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kinderhaus zum Igelbau",
+            "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+            "category": "content_internal"
+          },
+          {
+            "text": "Schulen",
+            "url": "https://www.erding.de/schulen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Offene Jugendarbeit",
+            "url": "https://www.erding.de/jugendarbeit",
+            "category": "content_internal"
+          },
+          {
+            "text": "Familie (= Betreuungsangebot)",
+            "url": "https://www.erding.de/familie-betreuungsangebot",
+            "category": "content_internal"
+          },
+          {
+            "text": "HG",
+            "url": "https://www.erding.de/hg",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fischer's",
+            "url": "https://www.erding.de/fischer-s",
+            "category": "content_internal"
+          },
+          {
+            "text": "Betreutes Wohnen",
+            "url": "https://www.erding.de/betreutes-wohnen",
+            "category": "content_internal"
+          },
+          {
+            "text": "ISEK Innenstadt",
+            "url": "https://www.erding.de/isek",
+            "category": "content_internal"
+          },
+          {
+            "text": "IQEK Klettham-Nord",
+            "url": "https://www.erding.de/klettham-nord",
+            "category": "content_internal"
+          },
+          {
+            "text": "Konversion Fliegerhorst",
+            "url": "https://www.erding.de/konversion",
+            "category": "content_internal"
+          },
+          {
+            "text": "S-Bahn-Ringschluss",
+            "url": "https://www.erding.de/s-bahn-ringschluss",
+            "category": "content_internal"
+          },
+          {
+            "text": "Hochwasserschutz",
+            "url": "https://www.erding.de/hochwasserschutz",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fahrradfreundliche Kommune",
+            "url": "https://www.erding.de/radverkehr",
+            "category": "content_internal"
+          },
+          {
+            "text": "Mobilitätsentwicklungskonzept",
+            "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtbücherei",
+            "url": "https://www.erding.de/stadtbuecherei",
+            "category": "content_internal"
+          },
+          {
+            "text": "Service",
+            "url": "https://www.erding.de/service",
+            "category": "content_internal"
+          },
+          {
+            "text": "Benutzungsordnung",
+            "url": "https://www.erding.de/benutzungsordnung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Museum Erding",
+            "url": "https://www.erding.de/museum-erding",
+            "category": "content_internal"
+          },
+          {
+            "text": "Museum Franz Xaver Stahl",
+            "url": "https://www.erding.de/museum-franz-xaver-stahl",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtarchiv",
+            "url": "https://www.erding.de/stadtarchiv",
+            "category": "content_internal"
+          },
+          {
+            "text": "Haus der Begegnung",
+            "url": "https://www.erding.de/haus-der-begegnung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bauernhausmuseum",
+            "url": "https://www.erding.de/bauernhausmuseum",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadthalle",
+            "url": "https://www.erding.de/stadthalle",
+            "category": "content_internal"
+          },
+          {
+            "text": "Frauenkircherl",
+            "url": "https://www.erding.de/frauenkircherl",
+            "category": "content_internal"
+          },
+          {
+            "text": "Jazz Tage",
+            "url": "https://www.erding.de/jazz-tage",
+            "category": "content_internal"
+          },
+          {
+            "text": "Volksmusiktage",
+            "url": "https://www.erding.de/volksmusiktage",
+            "category": "content_internal"
+          },
+          {
+            "text": "Orgelwoche",
+            "url": "https://www.erding.de/orgelwoche",
+            "category": "content_internal"
+          },
+          {
+            "text": "Altstadtfest",
+            "url": "https://www.erding.de/altstadtfest",
+            "category": "content_internal"
+          },
+          {
+            "text": "Herbstfest",
+            "url": "https://www.erding.de/herbstfest",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sinnflut",
+            "url": "https://www.erding.de/sinnflut",
+            "category": "content_internal"
+          },
+          {
+            "text": "Pfarreien",
+            "url": "https://www.erding.de/pfarreien",
+            "category": "content_internal"
+          },
+          {
+            "text": "Wappen",
+            "url": "https://www.erding.de/wappen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtgeschichte",
+            "url": "https://www.erding.de/stadtgeschichte",
+            "category": "content_internal"
+          },
+          {
+            "text": "Straßennamen",
+            "url": "https://www.erding.de/strassennamen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Ehrenbürger",
+            "url": "https://www.erding.de/ehrenbuerger",
+            "category": "content_internal"
+          },
+          {
+            "text": "Architektur in Erding",
+            "url": "https://www.erding.de/architektur-in-erding",
+            "category": "content_internal"
+          },
+          {
+            "text": "Events",
+            "url": "https://www.erding.de/events",
+            "category": "content_internal"
+          },
+          {
+            "text": "Webcam",
+            "url": "https://www.erding.de/webcam",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kronthaler Weiher",
+            "url": "https://www.erding.de/kronthaler-weiher",
+            "category": "content_internal"
+          },
+          {
+            "text": "Hallen- /Freibad",
+            "url": "https://www.erding.de/hallen-freibad",
+            "category": "content_internal"
+          },
+          {
+            "text": "Eisstadion",
+            "url": "https://www.erding.de/eisstadion",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtpark",
+            "url": "https://www.erding.de/stadtpark",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kleingärten",
+            "url": "https://www.erding.de/kleingaerten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sporthallen",
+            "url": "https://www.erding.de/sporthallen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bolzplätze",
+            "url": "https://www.erding.de/bolzplaetze",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kinderspielplätze",
+            "url": "https://www.erding.de/kinderspielplaetze",
+            "category": "content_internal"
+          },
+          {
+            "text": "Wandern & Spazieren",
+            "url": "https://www.erding.de/wandern-spazieren",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadt(turm)führungen",
+            "url": "https://www.erding.de/stadt-turm-fuehrungen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Grüner Markt",
+            "url": "https://www.erding.de/gruener-markt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Marktschranne",
+            "url": "https://www.erding.de/marktschranne",
+            "category": "content_internal"
+          },
+          {
+            "text": "Jahrmärkte",
+            "url": "https://www.erding.de/jahrmaerkte",
+            "category": "content_internal"
+          },
+          {
+            "text": "Christkindlmarkt",
+            "url": "https://www.erding.de/christkindlmarkt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadttriathlon / Stadtlauf",
+            "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+            "category": "content_internal"
+          },
+          {
+            "text": "Herbstfestrennen",
+            "url": "https://www.erding.de/herbstfestrennen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sportlerehrung",
+            "url": "https://www.erding.de/sportlerehrung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Therme",
+            "url": "https://www.erding.de/therme",
+            "category": "content_internal"
+          },
+          {
+            "text": "Lage & Anbindung",
+            "url": "https://www.erding.de/lage-anbindung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Essen & Trinken",
+            "url": "https://www.erding.de/essen-trinken",
+            "category": "content_internal"
+          },
+          {
+            "text": "Übernachten",
+            "url": "https://www.erding.de/uebernachten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Standortdaten",
+            "url": "https://www.erding.de/standortdaten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Tagen",
+            "url": "https://www.erding.de/tagen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fahrrad",
+            "url": "https://www.erding.de/fahrrad",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bus & Bahn (Fahrpläne)",
+            "url": "https://www.erding.de/bus-bahn-fahrplaene",
+            "category": "content_internal"
+          },
+          {
+            "text": "Parken & Pkw",
+            "url": "https://www.erding.de/parken-pkw",
+            "category": "content_internal"
+          },
+          {
+            "text": "Mietspiegel",
+            "url": "https://www.erding.de/mietspiegel",
+            "category": "content_internal"
+          },
+          {
+            "text": "Ausbildungspreis",
+            "url": "https://www.erding.de/ausbildungspreis",
+            "category": "content_internal"
+          },
+          {
+            "text": "Umweltpreis",
+            "url": "https://www.erding.de/umweltpreis",
+            "category": "content_internal"
+          },
+          {
+            "text": "FEEDBACK",
+            "url": "https://www.erding.de/feedback",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Bürgerserviceportal",
+            "url": "https://www.buergerservice-portal.de/bayern/erding/",
+            "category": "external"
+          },
+          {
+            "text": "RATSINFOPORTAL",
+            "url": "https://ratsinfo-erding.digitalfabrix.de/",
+            "category": "external"
+          },
+          {
+            "text": "LANDRATSAMT ERDING",
+            "url": "https://www.landkreis-erding.de/",
+            "category": "external"
+          },
+          {
+            "text": "STADTWERKE ERDING GMBH",
+            "url": "https://www.stadtwerke-erding.de/?ConsentReferrer=https%3A%2F%2Fwww.google.com%2F",
+            "category": "external"
+          },
+          {
+            "text": "CARSHARING ERDING E.V.",
+            "url": "https://www.carsharing-erding.de/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://www.erding.de/suchergebnis",
+        "https://www.erding.de/oberbuergermeister",
+        "https://www.erding.de/stadtrat",
+        "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+        "https://www.erding.de/planungs-_und_bauausschuss",
+        "https://www.erding.de/stadtentwicklungsausschuss",
+        "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+        "https://www.erding.de/volksfest",
+        "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+        "https://www.erding.de/rechnungspruefungsausschuss",
+        "https://www.erding.de/fraktionsvorsitzende",
+        "https://www.erding.de/referenten",
+        "https://www.erding.de/vertreter-in-anderen-organisationen",
+        "https://www.erding.de/heiliggeist-spitalstiftung",
+        "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+        "https://www.erding.de/zollner-leihfonds-stiftung",
+        "https://www.erding.de/sitzungskalender",
+        "https://www.erding.de/buergerversammlungen",
+        "https://www.erding.de/geschaeftsordnung",
+        "https://www.erding.de/organigramm",
+        "https://www.erding.de/oeffnungszeiten",
+        "https://www.erding.de/beglaubigung-von-dokumenten",
+        "https://www.erding.de/kirchenaustritt",
+        "https://www.erding.de/urkundenservice",
+        "https://www.erding.de/geburtsregister",
+        "https://www.erding.de/sterberegister",
+        "https://www.erding.de/was-ist-wo",
+        "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+        "https://www.erding.de/kehrplan",
+        "https://www.erding.de/notdienst",
+        "https://www.erding.de/verwaltungsgliederung",
+        "https://www.erding.de/formularservice",
+        "https://www.erding.de/aktuelle-projekte",
+        "https://www.erding.de/flaechennutzungsplan",
+        "https://www.erding.de/bebauungsplaene",
+        "https://www.erding.de/bauantrag",
+        "https://www.erding.de/digitaler-bauantrag",
+        "https://www.erding.de/denkmalschutz",
+        "https://www.erding.de/breitband",
+        "https://www.erding.de/ortsrecht",
+        "https://www.erding.de/fundsachen",
+        "https://www.erding.de/grundwasser",
+        "https://www.erding.de/ausbildung-jobs",
+        "https://www.erding.de/stellenausschreibungen",
+        "https://www.erding.de/publikation",
+        "https://www.erding.de/newsletter",
+        "https://www.erding.de/bekanntmachungen",
+        "https://www.erding.de/kinderkrippen",
+        "https://www.erding.de/kindergaerten",
+        "https://www.erding.de/horte",
+        "https://www.erding.de/kindergarten-st-antonius",
+        "https://www.erding.de/kinderhaus-zum-igelbau",
+        "https://www.erding.de/schulen",
+        "https://www.erding.de/jugendarbeit",
+        "https://www.erding.de/familie-betreuungsangebot",
+        "https://www.erding.de/hg",
+        "https://www.erding.de/fischer-s",
+        "https://www.erding.de/betreutes-wohnen",
+        "https://www.erding.de/isek",
+        "https://www.erding.de/klettham-nord",
+        "https://www.erding.de/konversion",
+        "https://www.erding.de/s-bahn-ringschluss",
+        "https://www.erding.de/hochwasserschutz",
+        "https://www.erding.de/radverkehr",
+        "https://www.erding.de/mobilitaetsentwicklungskonzept",
+        "https://www.erding.de/stadtbuecherei",
+        "https://www.erding.de/service",
+        "https://www.erding.de/benutzungsordnung",
+        "https://www.erding.de/museum-erding",
+        "https://www.erding.de/museum-franz-xaver-stahl",
+        "https://www.erding.de/stadtarchiv",
+        "https://www.erding.de/haus-der-begegnung",
+        "https://www.erding.de/bauernhausmuseum",
+        "https://www.erding.de/stadthalle",
+        "https://www.erding.de/frauenkircherl",
+        "https://www.erding.de/jazz-tage",
+        "https://www.erding.de/volksmusiktage",
+        "https://www.erding.de/orgelwoche",
+        "https://www.erding.de/altstadtfest",
+        "https://www.erding.de/herbstfest",
+        "https://www.erding.de/sinnflut",
+        "https://www.erding.de/pfarreien",
+        "https://www.erding.de/wappen",
+        "https://www.erding.de/stadtgeschichte",
+        "https://www.erding.de/strassennamen",
+        "https://www.erding.de/ehrenbuerger",
+        "https://www.erding.de/architektur-in-erding",
+        "https://www.erding.de/events",
+        "https://www.erding.de/webcam",
+        "https://www.erding.de/kronthaler-weiher",
+        "https://www.erding.de/hallen-freibad",
+        "https://www.erding.de/eisstadion",
+        "https://www.erding.de/stadtpark",
+        "https://www.erding.de/kleingaerten",
+        "https://www.erding.de/sporthallen",
+        "https://www.erding.de/bolzplaetze",
+        "https://www.erding.de/kinderspielplaetze",
+        "https://www.erding.de/wandern-spazieren",
+        "https://www.erding.de/stadt-turm-fuehrungen",
+        "https://www.erding.de/gruener-markt",
+        "https://www.erding.de/marktschranne",
+        "https://www.erding.de/jahrmaerkte",
+        "https://www.erding.de/christkindlmarkt",
+        "https://www.erding.de/stadttriathlon-stadtlauf",
+        "https://www.erding.de/herbstfestrennen",
+        "https://www.erding.de/sportlerehrung",
+        "https://www.erding.de/therme",
+        "https://www.erding.de/lage-anbindung",
+        "https://www.erding.de/essen-trinken",
+        "https://www.erding.de/uebernachten",
+        "https://www.erding.de/standortdaten",
+        "https://www.erding.de/tagen",
+        "https://www.erding.de/fahrrad",
+        "https://www.erding.de/bus-bahn-fahrplaene",
+        "https://www.erding.de/parken-pkw",
+        "https://www.erding.de/mietspiegel",
+        "https://www.erding.de/ausbildungspreis",
+        "https://www.erding.de/umweltpreis",
+        "https://www.erding.de/feedback"
+      ],
+      "depth": 1,
+      "parent": "https://www.erding.de",
+      "children": [
+        "https://www.erding.de/oberbuergermeister",
+        "https://www.erding.de/stadtrat",
+        "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+        "https://www.erding.de/planungs-_und_bauausschuss",
+        "https://www.erding.de/stadtentwicklungsausschuss",
+        "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+        "https://www.erding.de/volksfest",
+        "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+        "https://www.erding.de/rechnungspruefungsausschuss",
+        "https://www.erding.de/fraktionsvorsitzende",
+        "https://www.erding.de/referenten",
+        "https://www.erding.de/vertreter-in-anderen-organisationen",
+        "https://www.erding.de/heiliggeist-spitalstiftung",
+        "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+        "https://www.erding.de/zollner-leihfonds-stiftung",
+        "https://www.erding.de/sitzungskalender",
+        "https://www.erding.de/buergerversammlungen",
+        "https://www.erding.de/geschaeftsordnung",
+        "https://www.erding.de/organigramm",
+        "https://www.erding.de/oeffnungszeiten",
+        "https://www.erding.de/beglaubigung-von-dokumenten",
+        "https://www.erding.de/kirchenaustritt",
+        "https://www.erding.de/urkundenservice",
+        "https://www.erding.de/geburtsregister",
+        "https://www.erding.de/sterberegister",
+        "https://www.erding.de/was-ist-wo",
+        "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+        "https://www.erding.de/kehrplan",
+        "https://www.erding.de/notdienst",
+        "https://www.erding.de/verwaltungsgliederung",
+        "https://www.erding.de/formularservice",
+        "https://www.erding.de/aktuelle-projekte",
+        "https://www.erding.de/flaechennutzungsplan",
+        "https://www.erding.de/bebauungsplaene",
+        "https://www.erding.de/bauantrag",
+        "https://www.erding.de/digitaler-bauantrag",
+        "https://www.erding.de/denkmalschutz",
+        "https://www.erding.de/breitband",
+        "https://www.erding.de/ortsrecht",
+        "https://www.erding.de/fundsachen",
+        "https://www.erding.de/grundwasser",
+        "https://www.erding.de/ausbildung-jobs",
+        "https://www.erding.de/stellenausschreibungen",
+        "https://www.erding.de/publikation",
+        "https://www.erding.de/newsletter",
+        "https://www.erding.de/bekanntmachungen",
+        "https://www.erding.de/kinderkrippen",
+        "https://www.erding.de/kindergaerten",
+        "https://www.erding.de/horte",
+        "https://www.erding.de/kindergarten-st-antonius",
+        "https://www.erding.de/kinderhaus-zum-igelbau",
+        "https://www.erding.de/schulen",
+        "https://www.erding.de/jugendarbeit",
+        "https://www.erding.de/familie-betreuungsangebot",
+        "https://www.erding.de/hg",
+        "https://www.erding.de/fischer-s",
+        "https://www.erding.de/betreutes-wohnen",
+        "https://www.erding.de/isek",
+        "https://www.erding.de/klettham-nord",
+        "https://www.erding.de/konversion",
+        "https://www.erding.de/s-bahn-ringschluss",
+        "https://www.erding.de/hochwasserschutz",
+        "https://www.erding.de/radverkehr",
+        "https://www.erding.de/mobilitaetsentwicklungskonzept",
+        "https://www.erding.de/stadtbuecherei",
+        "https://www.erding.de/service",
+        "https://www.erding.de/benutzungsordnung",
+        "https://www.erding.de/museum-erding",
+        "https://www.erding.de/museum-franz-xaver-stahl",
+        "https://www.erding.de/stadtarchiv",
+        "https://www.erding.de/haus-der-begegnung",
+        "https://www.erding.de/bauernhausmuseum",
+        "https://www.erding.de/stadthalle",
+        "https://www.erding.de/frauenkircherl",
+        "https://www.erding.de/jazz-tage",
+        "https://www.erding.de/volksmusiktage",
+        "https://www.erding.de/orgelwoche",
+        "https://www.erding.de/altstadtfest",
+        "https://www.erding.de/herbstfest",
+        "https://www.erding.de/sinnflut",
+        "https://www.erding.de/pfarreien",
+        "https://www.erding.de/wappen",
+        "https://www.erding.de/stadtgeschichte",
+        "https://www.erding.de/strassennamen",
+        "https://www.erding.de/ehrenbuerger",
+        "https://www.erding.de/architektur-in-erding",
+        "https://www.erding.de/events",
+        "https://www.erding.de/webcam",
+        "https://www.erding.de/kronthaler-weiher",
+        "https://www.erding.de/hallen-freibad",
+        "https://www.erding.de/eisstadion",
+        "https://www.erding.de/stadtpark",
+        "https://www.erding.de/kleingaerten",
+        "https://www.erding.de/sporthallen",
+        "https://www.erding.de/bolzplaetze",
+        "https://www.erding.de/kinderspielplaetze",
+        "https://www.erding.de/wandern-spazieren",
+        "https://www.erding.de/stadt-turm-fuehrungen",
+        "https://www.erding.de/gruener-markt",
+        "https://www.erding.de/marktschranne",
+        "https://www.erding.de/jahrmaerkte",
+        "https://www.erding.de/christkindlmarkt",
+        "https://www.erding.de/stadttriathlon-stadtlauf",
+        "https://www.erding.de/herbstfestrennen",
+        "https://www.erding.de/sportlerehrung",
+        "https://www.erding.de/therme",
+        "https://www.erding.de/lage-anbindung",
+        "https://www.erding.de/essen-trinken",
+        "https://www.erding.de/uebernachten",
+        "https://www.erding.de/standortdaten",
+        "https://www.erding.de/tagen",
+        "https://www.erding.de/fahrrad",
+        "https://www.erding.de/bus-bahn-fahrplaene",
+        "https://www.erding.de/parken-pkw",
+        "https://www.erding.de/mietspiegel",
+        "https://www.erding.de/ausbildungspreis",
+        "https://www.erding.de/umweltpreis",
+        "https://www.erding.de/feedback"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://www.erding.de/oberbuergermeister",
-      "depth": 1,
-      "parent": "https://www.erding.de"
-    },
     {
       "url": "https://www.erding.de/stadtrat",
       "depth": 1,
@@ -4742,18 +8541,608 @@
       "url": "https://www.erding.de/feedback",
       "depth": 1,
       "parent": "https://www.erding.de"
+    },
+    {
+      "url": "https://www.erding.de/oberbuergermeister",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtrat",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/verwaltungs-_und_finanzausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/planungs-_und_bauausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtentwicklungsausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/grundstuecks-_und_wohnungsausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/volksfest",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/zollner-leihfonds-stiftungsausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/rechnungspruefungsausschuss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/fraktionsvorsitzende",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/referenten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/vertreter-in-anderen-organisationen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/heiliggeist-spitalstiftung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/fischers-wohltaetigkeitsstiftung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/zollner-leihfonds-stiftung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/sitzungskalender",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/buergerversammlungen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/geschaeftsordnung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/organigramm",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/oeffnungszeiten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/beglaubigung-von-dokumenten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kirchenaustritt",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/urkundenservice",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/geburtsregister",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/sterberegister",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/was-ist-wo",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/muellentsorgung-wertstoffhoefe",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kehrplan",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/notdienst",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/verwaltungsgliederung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/formularservice",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/aktuelle-projekte",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/flaechennutzungsplan",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bebauungsplaene",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bauantrag",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/digitaler-bauantrag",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/denkmalschutz",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/breitband",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/ortsrecht",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/fundsachen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/grundwasser",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/ausbildung-jobs",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stellenausschreibungen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/publikation",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/newsletter",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bekanntmachungen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kinderkrippen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kindergaerten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/horte",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kindergarten-st-antonius",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kinderhaus-zum-igelbau",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/schulen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/jugendarbeit",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/familie-betreuungsangebot",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/hg",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/fischer-s",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/betreutes-wohnen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/isek",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/klettham-nord",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/konversion",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/s-bahn-ringschluss",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/hochwasserschutz",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/radverkehr",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/mobilitaetsentwicklungskonzept",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtbuecherei",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/service",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/benutzungsordnung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/museum-erding",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/museum-franz-xaver-stahl",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtarchiv",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/haus-der-begegnung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bauernhausmuseum",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadthalle",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/frauenkircherl",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/jazz-tage",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/volksmusiktage",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/orgelwoche",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/altstadtfest",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/herbstfest",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/sinnflut",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/pfarreien",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/wappen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtgeschichte",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/strassennamen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/ehrenbuerger",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/architektur-in-erding",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/events",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/webcam",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kronthaler-weiher",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/hallen-freibad",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/eisstadion",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadtpark",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kleingaerten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/sporthallen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bolzplaetze",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/kinderspielplaetze",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/wandern-spazieren",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadt-turm-fuehrungen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/gruener-markt",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/marktschranne",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/jahrmaerkte",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/christkindlmarkt",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/stadttriathlon-stadtlauf",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/herbstfestrennen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/sportlerehrung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/therme",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/lage-anbindung",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/essen-trinken",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/uebernachten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/standortdaten",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/tagen",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/fahrrad",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/bus-bahn-fahrplaene",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/parken-pkw",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/mietspiegel",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/ausbildungspreis",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/umweltpreis",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
+    },
+    {
+      "url": "https://www.erding.de/feedback",
+      "depth": 2,
+      "parent": "https://www.erding.de/suchergebnis"
     }
   ],
-  "pageCount": 2,
+  "pageCount": 3,
   "maxDepth": 10,
   "maxPages": 5,
   "startUrl": "https://www.erding.de/",
-  "lastUpdated": "2025-09-12T08:39:56.551Z",
+  "lastUpdated": "2025-09-12T08:39:58.820Z",
   "completed": false,
-  "currentUrl": "https://www.erding.de/suchergebnis",
+  "currentUrl": "https://www.erding.de/oberbuergermeister",
   "status": "crawling",
-  "pagesProcessedInBatch": 2,
+  "pagesProcessedInBatch": 3,
   "maxPagesThisBatch": 5,
-  "queueLength": 128,
+  "queueLength": 245,
   "batchComplete": false
 }
