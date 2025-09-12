@@ -924,7 +924,8 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
                 sections: processedSections,
                 depth,
                 parent,
-                children: []
+                children: [],
+                is_relevant: true
             };
         } else {
             sitemap[url] = {
@@ -932,7 +933,8 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
                 sections: [],
                 depth,
                 parent,
-                children: []
+                children: [],
+                is_relevant: true
             };
         }
         

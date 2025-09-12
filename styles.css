@@ -572,9 +572,19 @@ h3 {
 }
 
 .selection-count {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
     font-size: 0.875rem;
-    color: #6b7280;
     font-weight: 500;
+}
+
+.selection-stat {
+    color: #3b82f6;
+}
+
+.relevance-stat {
+    color: #059669;
 }
 
 .sitemap-tree {
@@ -668,13 +678,54 @@ h3 {
     border-color: #fecaca;
 }
 
+.sitemap-item.irrelevant {
+    background: #f9fafb;
+    border-color: #d1d5db;
+    opacity: 0.7;
+}
+
+.sitemap-item.irrelevant .sitemap-title {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.sitemap-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+    min-width: 80px;
+}
+
+.checkbox-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.export-label {
+    color: #3b82f6;
+}
+
+.relevance-label {
+    color: #059669;
+}
+
 .sitemap-checkbox {
     width: 18px;
     height: 18px;
-    margin-top: 2px;
     accent-color: #3b82f6;
 }
 
+.sitemap-relevance-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #059669;
+}
 .sitemap-content {
     flex: 1;
     min-width: 0;

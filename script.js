@@ -572,11 +572,55 @@ class URLInspector {
         const item = document.createElement('div');
         item.className = `sitemap-item ${data.error ? 'error' : ''}`;
         
+        // Create checkboxes container
+        const checkboxContainer = document.createElement('div');
+        checkboxContainer.className = 'sitemap-checkboxes';
+        
+        // Export selection checkbox (existing)
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'sitemap-checkbox';
         checkbox.value = url;
         checkbox.addEventListener('change', () => this.updateSelectionCount());
+        
+        // Relevance checkbox (new)
+        const relevanceCheckbox = document.createElement('input');
+        relevanceCheckbox.type = 'checkbox';
+        relevanceCheckbox.className = 'sitemap-relevance-checkbox';
+        relevanceCheckbox.value = url;
+        relevanceCheckbox.checked = data.is_relevant !== undefined ? data.is_relevant : true;
+        relevanceCheckbox.addEventListener('change', (e) => {
+            // Update the relevance status in the current sitemap
+            if (this.currentSitemap && this.currentSitemap[url]) {
+                this.currentSitemap[url].is_relevant = e.target.checked;
+                
+                // Update visual styling of the item
+                item.classList.toggle('irrelevant', !e.target.checked);
+                
+                // If marked as irrelevant, uncheck the export selection
+                if (!e.target.checked) {
+                    checkbox.checked = false;
+                }
+                
+                this.updateSelectionCount();
+            }
+        });
+        
+        // Add labels for clarity
+        const exportLabel = document.createElement('label');
+        exportLabel.className = 'checkbox-label export-label';
+        exportLabel.textContent = 'Export';
+        exportLabel.title = 'Select for export';
+        
+        const relevanceLabel = document.createElement('label');
+        relevanceLabel.className = 'checkbox-label relevance-label';
+        relevanceLabel.textContent = 'Relevant';
+        relevanceLabel.title = 'Mark as relevant content';
+        
+        checkboxContainer.appendChild(relevanceCheckbox);
+        checkboxContainer.appendChild(relevanceLabel);
+        checkboxContainer.appendChild(checkbox);
+        checkboxContainer.appendChild(exportLabel);
         
         const content = document.createElement('div');
         content.className = 'sitemap-content';
@@ -609,7 +653,12 @@ class URLInspector {
             content.appendChild(error);
         }
         
-        item.appendChild(checkbox);
+        // Set initial visual state based on relevance
+        if (data.is_relevant === false) {
+            item.classList.add('irrelevant');
+        }
+        
+        item.appendChild(checkboxContainer);
         item.appendChild(content);
         node.appendChild(item);
         
@@ -620,7 +669,8 @@ class URLInspector {
         const checkboxes = this.sitemapTree.querySelectorAll('.sitemap-checkbox');
         checkboxes.forEach(cb => {
             const data = this.currentSitemap[cb.value];
-            cb.checked = !data.error; // Only select successful pages
+            // Only select pages that are relevant and don't have errors
+            cb.checked = !data.error && data.is_relevant !== false;
         });
         this.updateSelectionCount();
     }
@@ -632,8 +682,13 @@ class URLInspector {
     }
 
     updateSelectionCount() {
-        const checkboxes = this.sitemapTree.querySelectorAll('.sitemap-checkbox:checked');
-        this.selectionCount.textContent = `${checkboxes.length} pages selected`;
+        const exportCheckboxes = this.sitemapTree.querySelectorAll('.sitemap-checkbox:checked');
+        const relevantCheckboxes = this.sitemapTree.querySelectorAll('.sitemap-relevance-checkbox:checked');
+        
+        this.selectionCount.innerHTML = `
+            <span class="selection-stat">${exportCheckboxes.length} pages selected for export</span>
+            <span class="relevance-stat">${relevantCheckboxes.length} pages marked as relevant</span>
+        `;
     }
 
     handleFormatChange() {
@@ -663,10 +718,16 @@ class URLInspector {
 
     getSelectedPages() {
         const checkboxes = this.sitemapTree.querySelectorAll('.sitemap-checkbox:checked');
-        return Array.from(checkboxes).map(cb => ({
-            url: cb.value,
-            data: this.currentSitemap[cb.value]
-        }));
+        return Array.from(checkboxes)
+            .filter(cb => {
+                const data = this.currentSitemap[cb.value];
+                // Only include pages that are marked as relevant
+                return data.is_relevant !== false;
+            })
+            .map(cb => ({
+                url: cb.value,
+                data: this.currentSitemap[cb.value]
+            }));
     }
 
     async handleDownload() {
