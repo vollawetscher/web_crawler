@@ -47,8 +47,6 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 #### **Plain Text Export**
 - Clean, readable text format
 - Organized by sections and headings
-- Ideal for simple analysis and review
-
 ### 🧠 **Content Intelligence**
 - **Section-Based Parsing**: Organizes content into logical sections with headings
 - **Content Type Classification**: Automatically identifies announcements, facility information, FAQs, and general content
@@ -73,11 +71,6 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 
 1. **Install dependencies**:
    ```bash
-   npm install
-   ```
-
-2. **Start the development server**:
-   ```bash
    npm run dev
    ```
    
@@ -97,7 +90,6 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 - **Node.js**: JavaScript runtime for server-side processing
 - **Express.js**: Web framework for RESTful API endpoints
 - **node-fetch**: HTTP client for web page retrieval
-- **cheerio**: Server-side HTML parsing and DOM manipulation
 - **File-based Storage**: JSON persistence for crawl state management
 
 ### **Frontend**
@@ -151,8 +143,6 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 - **🔍 Competitive Research**: Study competitor websites and content strategies  
 - **📚 Knowledge Base Creation**: Build structured information repositories
 - **🎓 Academic Research**: Collect data from institutional and government websites
-- **⚡ SEO Analysis**: Extract and analyze page titles, descriptions, heading structures, and link profiles
-- **📈 Content Auditing**: Review and catalog existing website content
 
 ## 🔧 Technical Notes
 
@@ -160,14 +150,8 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 - **Rate Limiting**: Built-in delays prevent server overload during crawling
 - **Error Recovery**: Robust handling of network issues and parsing failures
 - **Memory Management**: Efficient processing through batch operations
-- **Content Intelligence**: Advanced parsing with section-based organization
 - **Boilerplate Filtering**: Smart removal of navigation and non-content elements
 
-## ⚠️ Limitations & Best Practices
-
-- **JavaScript-Heavy Sites**: Limited extraction from heavily client-side rendered pages
-- **Access Restrictions**: Some sites may block automated requests
-- **Content Quality**: Best results with well-structured, semantic HTML
 - **Respectful Usage**: Built-in delays help maintain good server relationships
 
 ---
@@ -252,7 +236,6 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 ### **Before Claiming Anything Works:**
 1. **Manual Verification**: Open exported files and read them - are they useful?
 2. ✅ **Checkbox Testing**: Uncheck all boxes - export should be minimal or empty - WORKING
-3. **Content Quality**: Does export contain information the user actually wants?
 4. **Multiple Sites**: Test on 3-5 different website types to verify robustness
 
 **Bottom Line:** ✅ Link filtering now works correctly. Content extraction still needs improvement, but users can now avoid unwanted boilerplate links in their knowledge bases.
