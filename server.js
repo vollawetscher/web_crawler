@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 import { URL } from 'url';
-import fs from 'fs/promises';
-import crypto from 'crypto';
+import { promises as fs } from 'fs';
+import { createHash } from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -68,12 +68,12 @@ function isInternalUrl(url, baseUrl) {
 // Helper function to generate section ID
 function generateSectionId(url, heading, sectionOrder) {
     const content = `${url}_${heading}_${sectionOrder}`;
-    return crypto.createHash('md5').update(content).digest('hex').substring(0, 12);
+    return createHash('md5').update(content).digest('hex').substring(0, 12);
 }
 
 // Helper function to compute content hash
 function computeContentHash(content) {
-    return crypto.createHash('md5').update(content).digest('hex');
+    return createHash('md5').update(content).digest('hex');
 }
 
 // Helper function to extract contacts using basic regex
