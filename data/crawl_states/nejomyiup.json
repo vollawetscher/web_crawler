@@ -3,7 +3,8 @@
   "visited": [
     "https://www.ulm.de",
     "https://www.ulm.de/rathaus",
-    "https://www.ulm.de/leben-in-ulm"
+    "https://www.ulm.de/leben-in-ulm",
+    "https://www.ulm.de/kultur"
   ],
   "sitemap": {
     "https://www.ulm.de": {
@@ -3998,14 +3999,1360 @@
         "https://www.ulm.de/tourismus/stadtgeschichte/schicksalstage-und-orte/rathaus"
       ],
       "is_relevant": true
+    },
+    "https://www.ulm.de/leben-in-ulm": {
+      "success": true,
+      "final_url": "https://www.ulm.de/leben-in-ulm",
+      "title": "Stadt Ulm - Leben in Ulm",
+      "meta_description": "",
+      "main_content": "Schwörmontag 2025 Am 21. Juli 2025 feiert Ulm seinen Schwörmontag. Die Schwörfeier beginnt um 11 Uhr auf dem Weinhof. Der beliebte Wasserfestzug, das Nabada, findet ab 16 Uhr statt. Höhepunkte am Wochenende vor Schwörmontag sind das traditionelle Fischerstechen und die Lichterserenade. Weiter\n\nWarnung vor QR-Codes auf Parkautomaten Die Stadt Ulm warnt vor betrügerischen QR-Codes, die an Parkscheinautomaten angebracht wurden. In den vergangenen Tagen haben Mitarbeiterinnen und Mitarbeiter der Stadt festgestellt, dass die Original-Aufkleber seriöser Zahlungsanbieter an mehreren Automaten mit gefälschten Stickern überklebt wurden. Weiter\n\nNeuer Fahrradhain südlich des Bahnhofstegs ist fertig Seit Mittwoch, 2. Juli 2025, stehen mit der Eröffnung des sogenannten „Fahrradhains“ südlich des Bahnhofstegs entlang der Friedrich-Ebert-Straße weitere Fahrradstellplätze auf dem Bahnhofsplatz zur Verfügung. Damit gibt es in unmittelbarer Bahnhofsnähe nun rund 500 zusätzliche überdachte, hochwertige, moderne und teilweise zugangsgesicherte Abstellmöglichkeiten für Fahrräder. Weiter\n\nVeranstaltungskalender Veranstaltungen im September 2025 zum August 2025 zum Oktober 2025 Veranstaltungen im September 2025 Veranstaltungen im zum August 2025 zum August 2025 zum Oktober 2025 zum Oktober 2025 Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5 Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5\n\nVeranstaltungen im September 2025 zum August 2025 zum August 2025 zum Oktober 2025 zum Oktober 2025",
+      "sections": [
+        {
+          "section_id": "db358216dfda",
+          "section_order": 0,
+          "heading": "Schwörmontag 2025",
+          "heading_level": "h1",
+          "content_text": "Schwörmontag 2025 Am 21. Juli 2025 feiert Ulm seinen Schwörmontag. Die Schwörfeier beginnt um 11 Uhr auf dem Weinhof. Der beliebte Wasserfestzug, das Nabada, findet ab 16 Uhr statt. Höhepunkte am Wochenende vor Schwörmontag sind das traditionelle Fischerstechen und die Lichterserenade. Weiter",
+          "page_url": "https://www.ulm.de/leben-in-ulm",
+          "page_title": "Stadt Ulm - Leben in Ulm",
+          "breadcrumbs": [
+            "Leben in Ulm"
+          ],
+          "content_type": "facility",
+          "volatility": "high",
+          "last_modified": null,
+          "hash": "331fabea009b0ee5722bf3aba1f385b2",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Weiter",
+              "url": "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T09:13:11.747Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "ea4f71746860",
+          "section_order": 1,
+          "heading": "Warnung vor QR-Codes auf Parkautomaten",
+          "heading_level": "h1",
+          "content_text": "Warnung vor QR-Codes auf Parkautomaten Die Stadt Ulm warnt vor betrügerischen QR-Codes, die an Parkscheinautomaten angebracht wurden. In den vergangenen Tagen haben Mitarbeiterinnen und Mitarbeiter der Stadt festgestellt, dass die Original-Aufkleber seriöser Zahlungsanbieter an mehreren Automaten mit gefälschten Stickern überklebt wurden. Weiter",
+          "page_url": "https://www.ulm.de/leben-in-ulm",
+          "page_title": "Stadt Ulm - Leben in Ulm",
+          "breadcrumbs": [
+            "Leben in Ulm"
+          ],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "da2c15bbd721f3f7d98e668eca226475",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Weiter",
+              "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T09:13:11.747Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "9394ab0118db",
+          "section_order": 2,
+          "heading": "Neuer Fahrradhain südlich des Bahnhofstegs ist fertig",
+          "heading_level": "h1",
+          "content_text": "Neuer Fahrradhain südlich des Bahnhofstegs ist fertig Seit Mittwoch, 2. Juli 2025, stehen mit der Eröffnung des sogenannten „Fahrradhains“ südlich des Bahnhofstegs entlang der Friedrich-Ebert-Straße weitere Fahrradstellplätze auf dem Bahnhofsplatz zur Verfügung. Damit gibt es in unmittelbarer Bahnhofsnähe nun rund 500 zusätzliche überdachte, hochwertige, moderne und teilweise zugangsgesicherte Abstellmöglichkeiten für Fahrräder. Weiter",
+          "page_url": "https://www.ulm.de/leben-in-ulm",
+          "page_title": "Stadt Ulm - Leben in Ulm",
+          "breadcrumbs": [
+            "Leben in Ulm"
+          ],
+          "content_type": "general",
+          "volatility": "high",
+          "last_modified": null,
+          "hash": "d380342a8fa3fa34ab38854181e051fc",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Weiter",
+              "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T09:13:11.748Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "f814aca49f2d",
+          "section_order": 3,
+          "heading": "Veranstaltungskalender",
+          "heading_level": "h2",
+          "content_text": "Veranstaltungskalender Veranstaltungen im September 2025 zum August 2025 zum Oktober 2025 Veranstaltungen im September 2025 Veranstaltungen im zum August 2025 zum August 2025 zum Oktober 2025 zum Oktober 2025 Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5 Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag Sonntag 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 1 2 3 4 5",
+          "page_url": "https://www.ulm.de/leben-in-ulm",
+          "page_title": "Stadt Ulm - Leben in Ulm",
+          "breadcrumbs": [
+            "Leben in Ulm"
+          ],
+          "content_type": "general",
+          "volatility": "high",
+          "last_modified": null,
+          "hash": "3e5320742da97f65b37d96377b9eb23b",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "zum \n                August 2025",
+              "url": "javascript:void(0)"
+            },
+            {
+              "text": "zum \n                Oktober 2025",
+              "url": "javascript:void(0)"
+            },
+            {
+              "text": "12",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025"
+            },
+            {
+              "text": "13",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025"
+            },
+            {
+              "text": "14",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025"
+            },
+            {
+              "text": "15",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025"
+            },
+            {
+              "text": "16",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025"
+            },
+            {
+              "text": "17",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025"
+            },
+            {
+              "text": "18",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025"
+            },
+            {
+              "text": "19",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025"
+            },
+            {
+              "text": "20",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025"
+            },
+            {
+              "text": "21",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025"
+            },
+            {
+              "text": "22",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025"
+            },
+            {
+              "text": "23",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025"
+            },
+            {
+              "text": "24",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025"
+            },
+            {
+              "text": "25",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025"
+            },
+            {
+              "text": "26",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025"
+            },
+            {
+              "text": "27",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025"
+            },
+            {
+              "text": "28",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025"
+            },
+            {
+              "text": "29",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025"
+            },
+            {
+              "text": "30",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025"
+            },
+            {
+              "text": "12",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025"
+            },
+            {
+              "text": "13",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025"
+            },
+            {
+              "text": "14",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025"
+            },
+            {
+              "text": "15",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025"
+            },
+            {
+              "text": "16",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025"
+            },
+            {
+              "text": "17",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025"
+            },
+            {
+              "text": "18",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025"
+            },
+            {
+              "text": "19",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025"
+            },
+            {
+              "text": "20",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025"
+            },
+            {
+              "text": "21",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025"
+            },
+            {
+              "text": "22",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025"
+            },
+            {
+              "text": "23",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025"
+            },
+            {
+              "text": "24",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025"
+            },
+            {
+              "text": "25",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025"
+            },
+            {
+              "text": "26",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025"
+            },
+            {
+              "text": "27",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025"
+            },
+            {
+              "text": "28",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025"
+            },
+            {
+              "text": "29",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025"
+            },
+            {
+              "text": "30",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025"
+            },
+            {
+              "text": "12",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025"
+            },
+            {
+              "text": "13",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025"
+            },
+            {
+              "text": "14",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025"
+            },
+            {
+              "text": "15",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025"
+            },
+            {
+              "text": "16",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025"
+            },
+            {
+              "text": "17",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025"
+            },
+            {
+              "text": "18",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025"
+            },
+            {
+              "text": "19",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025"
+            },
+            {
+              "text": "20",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025"
+            },
+            {
+              "text": "21",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025"
+            },
+            {
+              "text": "22",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025"
+            },
+            {
+              "text": "23",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025"
+            },
+            {
+              "text": "24",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025"
+            },
+            {
+              "text": "25",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025"
+            },
+            {
+              "text": "26",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025"
+            },
+            {
+              "text": "27",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025"
+            },
+            {
+              "text": "28",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025"
+            },
+            {
+              "text": "29",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025"
+            },
+            {
+              "text": "30",
+              "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T09:13:11.750Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "9072533c613e",
+          "section_order": 4,
+          "heading": "Veranstaltungen im \n            \n            September 2025",
+          "heading_level": "h3",
+          "content_text": "Veranstaltungen im September 2025 zum August 2025 zum August 2025 zum Oktober 2025 zum Oktober 2025",
+          "page_url": "https://www.ulm.de/leben-in-ulm",
+          "page_title": "Stadt Ulm - Leben in Ulm",
+          "breadcrumbs": [
+            "Leben in Ulm"
+          ],
+          "content_type": "general",
+          "volatility": "high",
+          "last_modified": null,
+          "hash": "7dd74dac26d4a1de99c65aa39b05e17e",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-12T09:13:11.751Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "Startseite",
+          "url": "https://www.ulm.de/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hauptnavigation",
+          "url": "https://www.ulm.de/leben-in-ulm#menu",
+          "category": "navigation"
+        },
+        {
+          "text": "Hauptnavigation",
+          "url": "https://www.ulm.de/leben-in-ulm#menu-mobile",
+          "category": "navigation"
+        },
+        {
+          "text": "Inhalt",
+          "url": "https://www.ulm.de/leben-in-ulm#main",
+          "category": "navigation"
+        },
+        {
+          "text": "Seitenleiste",
+          "url": "https://www.ulm.de/leben-in-ulm#sidebar",
+          "category": "navigation"
+        },
+        {
+          "text": "Sitemap",
+          "url": "https://www.ulm.de/sonderseiten/sitemap",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Rathaus",
+          "url": "https://www.ulm.de/rathaus",
+          "category": "content_internal"
+        },
+        {
+          "text": "Leben in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kultur",
+          "url": "https://www.ulm.de/kultur",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wirtschaft & Wissenschaft",
+          "url": "https://www.ulm.de/wirtschaft-und-wissenschaft",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tourismus",
+          "url": "https://www.ulm.de/tourismus",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ratsinfo",
+          "url": "https://buergerinfo.ulm.de/info.php",
+          "category": "external"
+        },
+        {
+          "text": "Kalender",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Einfache Sprache",
+          "url": "https://www.ulm.de/leben-in-ulm#",
+          "category": "navigation"
+        },
+        {
+          "text": "Startseite",
+          "url": "https://www.ulm.de/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Leben in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Digitale Stadt",
+          "url": "https://www.ulm.de/leben-in-ulm/digitale-stadt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kinder, Jugend, Familie",
+          "url": "https://www.ulm.de/leben-in-ulm/kinder,-jugend,-familie",
+          "category": "content_internal"
+        },
+        {
+          "text": "Freizeit & Sport",
+          "url": "https://www.ulm.de/leben-in-ulm/freizeit-und-sport",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bildung & Arbeit",
+          "url": "https://www.ulm.de/leben-in-ulm/bildung-und-arbeit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Verkehr & Mobilität",
+          "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet",
+          "category": "content_internal"
+        },
+        {
+          "text": "Menschen mit Behinderung",
+          "url": "https://www.ulm.de/leben-in-ulm/menschen-mit-behinderung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mit wenig Geld in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm/mit-wenig-geld-in-ulm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Senioren und Seniorinnen",
+          "url": "https://www.ulm.de/leben-in-ulm/senioren-2",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bauen & Wohnen",
+          "url": "https://www.ulm.de/leben-in-ulm/bauen-und-wohnen",
+          "category": "content_internal"
+        },
+        {
+          "text": "Umwelt, Energie, Entsorgung",
+          "url": "https://www.ulm.de/leben-in-ulm/umwelt-energie-entsorgung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Finanzielle Hilfen und Zuschüsse",
+          "url": "https://www.ulm.de/leben-in-ulm/finanzielle-hilfen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Chancengerechtigkeit und Vielfalt in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm/chancengerechtigkeit-und-vielfalt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Gesundheit",
+          "url": "https://www.ulm.de/leben-in-ulm/gesundheit",
+          "category": "content_internal"
+        },
+        {
+          "text": "Geflüchtete Menschen in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm/gefl%C3%BCchtete-in-ulm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Neu in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm/neu-in-ulm",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rathaus",
+          "url": "https://www.ulm.de/rathaus?itemId=7B26EEBB575A4C67A5AD66019FD6F512",
+          "category": "content_internal"
+        },
+        {
+          "text": "Leben in Ulm",
+          "url": "https://www.ulm.de/leben-in-ulm?itemId=CC8C761F78C4469FBD993761FB3CEE2C",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kultur",
+          "url": "https://www.ulm.de/kultur?itemId=C54FED2A5BBC4209A813BD46017AF703",
+          "category": "content_internal"
+        },
+        {
+          "text": "Wirtschaft & Wissenschaft",
+          "url": "https://www.ulm.de/wirtschaft-und-wissenschaft?itemId=9544195AE4994965ADD2E41FFA3F9776",
+          "category": "content_internal"
+        },
+        {
+          "text": "Tourismus",
+          "url": "https://www.ulm.de/tourismus?itemId=32EAB24590C145CFAF45BFF27204C014",
+          "category": "content_internal"
+        },
+        {
+          "text": "Ratsinfo",
+          "url": "https://buergerinfo.ulm.de/info.php",
+          "category": "external"
+        },
+        {
+          "text": "Kalender",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Gemeinderat",
+          "url": "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+          "category": "content_internal"
+        },
+        {
+          "text": "Social Media Newsroom",
+          "url": "https://www.ulm.de/sonderseiten/newsroom",
+          "category": "content_internal"
+        },
+        {
+          "text": "Stadtplan",
+          "url": "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Maengelmelder",
+          "url": "https://anliegen.ulm.de/",
+          "category": "external"
+        },
+        {
+          "text": "Verkehrslage",
+          "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Leichte Sprache",
+          "url": "https://www.ulm.de/0/leichte-sprache/leichte-sprache",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Gemeinderat",
+          "url": "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+          "category": "content_internal"
+        },
+        {
+          "text": "Newsroom",
+          "url": "https://www.ulm.de/sonderseiten/newsroom",
+          "category": "content_internal"
+        },
+        {
+          "text": "Interaktive Karte",
+          "url": "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+          "category": "content_internal"
+        },
+        {
+          "text": "Anliegen melden",
+          "url": "https://anliegen.ulm.de/",
+          "category": "external"
+        },
+        {
+          "text": "Verkehrslage",
+          "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+          "category": "content_internal"
+        },
+        {
+          "text": "Leichte Sprache",
+          "url": "https://www.ulm.de/0/leichte-sprache/leichte-sprache",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Schwörmontag 2025",
+          "url": "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiter",
+          "url": "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "Warnung vor QR-Codes auf Parkautomaten",
+          "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiter",
+          "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+          "category": "content_internal"
+        },
+        {
+          "text": "Neuer Fahrradhain südlich des Bahnhofstegs ist fertig",
+          "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiter",
+          "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+          "category": "content_internal"
+        },
+        {
+          "text": "12",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "13",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "14",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "15",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "16",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "17",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "18",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "19",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "20",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "21",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "22",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "23",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "24",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "25",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "26",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "27",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "28",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "29",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "30",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025",
+          "category": "content_internal"
+        },
+        {
+          "text": "12.09. - 30.11.2025\n                                                    00:00\n                                            \n                                            100 Jahre Donaustadion",
+          "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/08/21/11/03/100-jahre-donaustadion-49839",
+          "category": "content_internal"
+        },
+        {
+          "text": "12.09.2025\n                                                    08:00\n                                            \n                                            Ausstellung - Markus Botzenhart",
+          "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/03/18/03/02/ausstellung-markus-botzenhart-48581",
+          "category": "content_internal"
+        },
+        {
+          "text": "12.09.2025\n                                                    08:00\n                                            \n                                            Ausstellung: Idee.Form.Design – gestaltendes Handwerk von heute",
+          "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/09/11/02/ausstellung-idee,-d-,form,-d-,design-%E2%80%93-gestaltendes-handwerk-von-heute-49620",
+          "category": "content_internal"
+        },
+        {
+          "text": "12.09.2025\n                                                    09:00\n                                            \n                                            Gesang der Vögel",
+          "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/01/02/03/gesang-der-v%C3%B6gel-49484",
+          "category": "content_internal"
+        },
+        {
+          "text": "12.09.2025\n                                                    09:00\n                                            \n                                            Café für alle beim Wiblinger Wochenmarkt",
+          "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/16/11/02/caf%C3%A9-f%C3%BCr-alle-beim-wiblinger-wochenmarkt-46548",
+          "category": "content_internal"
+        },
+        {
+          "text": "Alle Veranstaltungen",
+          "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+          "category": "content_internal"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.ulm.de/sonderseiten/datenschutzerklaerung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.ulm.de/sonderseiten/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "facebook",
+          "url": "https://www.facebook.com/stadtulm",
+          "category": "external"
+        },
+        {
+          "text": "linkedin",
+          "url": "https://de.linkedin.com/company/stadt-ulm",
+          "category": "external"
+        },
+        {
+          "text": "youtube",
+          "url": "https://www.youtube.com/user/UlmFilme",
+          "category": "external"
+        },
+        {
+          "text": "instagram",
+          "url": "https://www.instagram.com/stadtulm/",
+          "category": "external"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.ulm.de/sonderseiten/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.ulm.de/sonderseiten/datenschutzerklaerung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Barrierefreiheit",
+          "url": "https://www.ulm.de/sonderseiten/barrierefreiheitserkl%C3%A4rung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Sitemap",
+          "url": "https://www.ulm.de/sonderseiten/sitemap",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Kontakt",
+          "url": "https://www.ulm.de/sonderseiten/formulare/kontakt/kontaktformular-allgemein",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Zum Seitenanfang",
+          "url": "https://www.ulm.de/leben-in-ulm#",
+          "category": "navigation"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Hauptnavigation",
+            "url": "https://www.ulm.de/leben-in-ulm#menu",
+            "category": "navigation"
+          },
+          {
+            "text": "Hauptnavigation",
+            "url": "https://www.ulm.de/leben-in-ulm#menu-mobile",
+            "category": "navigation"
+          },
+          {
+            "text": "Inhalt",
+            "url": "https://www.ulm.de/leben-in-ulm#main",
+            "category": "navigation"
+          },
+          {
+            "text": "Seitenleiste",
+            "url": "https://www.ulm.de/leben-in-ulm#sidebar",
+            "category": "navigation"
+          },
+          {
+            "text": "Einfache Sprache",
+            "url": "https://www.ulm.de/leben-in-ulm#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "Sitemap",
+            "url": "https://www.ulm.de/sonderseiten/sitemap",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Finanzielle Hilfen und Zuschüsse",
+            "url": "https://www.ulm.de/leben-in-ulm/finanzielle-hilfen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Leichte Sprache",
+            "url": "https://www.ulm.de/0/leichte-sprache/leichte-sprache",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://www.ulm.de/sonderseiten/datenschutzerklaerung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://www.ulm.de/sonderseiten/impressum",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Barrierefreiheit",
+            "url": "https://www.ulm.de/sonderseiten/barrierefreiheitserkl%C3%A4rung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kontakt",
+            "url": "https://www.ulm.de/sonderseiten/formulare/kontakt/kontaktformular-allgemein",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Startseite",
+            "url": "https://www.ulm.de/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Rathaus",
+            "url": "https://www.ulm.de/rathaus",
+            "category": "content_internal"
+          },
+          {
+            "text": "Leben in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kultur",
+            "url": "https://www.ulm.de/kultur",
+            "category": "content_internal"
+          },
+          {
+            "text": "Wirtschaft & Wissenschaft",
+            "url": "https://www.ulm.de/wirtschaft-und-wissenschaft",
+            "category": "content_internal"
+          },
+          {
+            "text": "Tourismus",
+            "url": "https://www.ulm.de/tourismus",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kalender",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+            "category": "content_internal"
+          },
+          {
+            "text": "Digitale Stadt",
+            "url": "https://www.ulm.de/leben-in-ulm/digitale-stadt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kinder, Jugend, Familie",
+            "url": "https://www.ulm.de/leben-in-ulm/kinder,-jugend,-familie",
+            "category": "content_internal"
+          },
+          {
+            "text": "Freizeit & Sport",
+            "url": "https://www.ulm.de/leben-in-ulm/freizeit-und-sport",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bildung & Arbeit",
+            "url": "https://www.ulm.de/leben-in-ulm/bildung-und-arbeit",
+            "category": "content_internal"
+          },
+          {
+            "text": "Verkehr & Mobilität",
+            "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet",
+            "category": "content_internal"
+          },
+          {
+            "text": "Menschen mit Behinderung",
+            "url": "https://www.ulm.de/leben-in-ulm/menschen-mit-behinderung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Mit wenig Geld in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm/mit-wenig-geld-in-ulm",
+            "category": "content_internal"
+          },
+          {
+            "text": "Senioren und Seniorinnen",
+            "url": "https://www.ulm.de/leben-in-ulm/senioren-2",
+            "category": "content_internal"
+          },
+          {
+            "text": "Bauen & Wohnen",
+            "url": "https://www.ulm.de/leben-in-ulm/bauen-und-wohnen",
+            "category": "content_internal"
+          },
+          {
+            "text": "Umwelt, Energie, Entsorgung",
+            "url": "https://www.ulm.de/leben-in-ulm/umwelt-energie-entsorgung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Chancengerechtigkeit und Vielfalt in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm/chancengerechtigkeit-und-vielfalt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Gesundheit",
+            "url": "https://www.ulm.de/leben-in-ulm/gesundheit",
+            "category": "content_internal"
+          },
+          {
+            "text": "Geflüchtete Menschen in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm/gefl%C3%BCchtete-in-ulm",
+            "category": "content_internal"
+          },
+          {
+            "text": "Neu in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm/neu-in-ulm",
+            "category": "content_internal"
+          },
+          {
+            "text": "Rathaus",
+            "url": "https://www.ulm.de/rathaus?itemId=7B26EEBB575A4C67A5AD66019FD6F512",
+            "category": "content_internal"
+          },
+          {
+            "text": "Leben in Ulm",
+            "url": "https://www.ulm.de/leben-in-ulm?itemId=CC8C761F78C4469FBD993761FB3CEE2C",
+            "category": "content_internal"
+          },
+          {
+            "text": "Kultur",
+            "url": "https://www.ulm.de/kultur?itemId=C54FED2A5BBC4209A813BD46017AF703",
+            "category": "content_internal"
+          },
+          {
+            "text": "Wirtschaft & Wissenschaft",
+            "url": "https://www.ulm.de/wirtschaft-und-wissenschaft?itemId=9544195AE4994965ADD2E41FFA3F9776",
+            "category": "content_internal"
+          },
+          {
+            "text": "Tourismus",
+            "url": "https://www.ulm.de/tourismus?itemId=32EAB24590C145CFAF45BFF27204C014",
+            "category": "content_internal"
+          },
+          {
+            "text": "Gemeinderat",
+            "url": "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+            "category": "content_internal"
+          },
+          {
+            "text": "Social Media Newsroom",
+            "url": "https://www.ulm.de/sonderseiten/newsroom",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stadtplan",
+            "url": "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+            "category": "content_internal"
+          },
+          {
+            "text": "Verkehrslage",
+            "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+            "category": "content_internal"
+          },
+          {
+            "text": "Schwörmontag 2025",
+            "url": "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "Warnung vor QR-Codes auf Parkautomaten",
+            "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+            "category": "content_internal"
+          },
+          {
+            "text": "Neuer Fahrradhain südlich des Bahnhofstegs ist fertig",
+            "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+            "category": "content_internal"
+          },
+          {
+            "text": "12",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "13",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "14",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "15",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "16",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "17",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "18",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "19",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "20",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "21",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "22",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "23",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "24",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "25",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "26",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "27",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "28",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "29",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "30",
+            "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025",
+            "category": "content_internal"
+          },
+          {
+            "text": "12.09. - 30.11.2025\n                                                    00:00\n                                            \n                                            100 Jahre Donaustadion",
+            "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/08/21/11/03/100-jahre-donaustadion-49839",
+            "category": "content_internal"
+          },
+          {
+            "text": "12.09.2025\n                                                    08:00\n                                            \n                                            Ausstellung - Markus Botzenhart",
+            "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/03/18/03/02/ausstellung-markus-botzenhart-48581",
+            "category": "content_internal"
+          },
+          {
+            "text": "12.09.2025\n                                                    08:00\n                                            \n                                            Ausstellung: Idee.Form.Design – gestaltendes Handwerk von heute",
+            "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/09/11/02/ausstellung-idee,-d-,form,-d-,design-%E2%80%93-gestaltendes-handwerk-von-heute-49620",
+            "category": "content_internal"
+          },
+          {
+            "text": "12.09.2025\n                                                    09:00\n                                            \n                                            Gesang der Vögel",
+            "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/01/02/03/gesang-der-v%C3%B6gel-49484",
+            "category": "content_internal"
+          },
+          {
+            "text": "12.09.2025\n                                                    09:00\n                                            \n                                            Café für alle beim Wiblinger Wochenmarkt",
+            "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/16/11/02/caf%C3%A9-f%C3%BCr-alle-beim-wiblinger-wochenmarkt-46548",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Ratsinfo",
+            "url": "https://buergerinfo.ulm.de/info.php",
+            "category": "external"
+          },
+          {
+            "text": "Maengelmelder",
+            "url": "https://anliegen.ulm.de/",
+            "category": "external"
+          },
+          {
+            "text": "facebook",
+            "url": "https://www.facebook.com/stadtulm",
+            "category": "external"
+          },
+          {
+            "text": "linkedin",
+            "url": "https://de.linkedin.com/company/stadt-ulm",
+            "category": "external"
+          },
+          {
+            "text": "youtube",
+            "url": "https://www.youtube.com/user/UlmFilme",
+            "category": "external"
+          },
+          {
+            "text": "instagram",
+            "url": "https://www.instagram.com/stadtulm/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://www.ulm.de",
+        "https://www.ulm.de/rathaus",
+        "https://www.ulm.de/leben-in-ulm",
+        "https://www.ulm.de/kultur",
+        "https://www.ulm.de/wirtschaft-und-wissenschaft",
+        "https://www.ulm.de/tourismus",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+        "https://www.ulm.de/leben-in-ulm/digitale-stadt",
+        "https://www.ulm.de/leben-in-ulm/kinder,-jugend,-familie",
+        "https://www.ulm.de/leben-in-ulm/freizeit-und-sport",
+        "https://www.ulm.de/leben-in-ulm/bildung-und-arbeit",
+        "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet",
+        "https://www.ulm.de/leben-in-ulm/menschen-mit-behinderung",
+        "https://www.ulm.de/leben-in-ulm/mit-wenig-geld-in-ulm",
+        "https://www.ulm.de/leben-in-ulm/senioren-2",
+        "https://www.ulm.de/leben-in-ulm/bauen-und-wohnen",
+        "https://www.ulm.de/leben-in-ulm/umwelt-energie-entsorgung",
+        "https://www.ulm.de/leben-in-ulm/chancengerechtigkeit-und-vielfalt",
+        "https://www.ulm.de/leben-in-ulm/gesundheit",
+        "https://www.ulm.de/leben-in-ulm/gefl%C3%BCchtete-in-ulm",
+        "https://www.ulm.de/leben-in-ulm/neu-in-ulm",
+        "https://www.ulm.de/rathaus?itemId=7B26EEBB575A4C67A5AD66019FD6F512",
+        "https://www.ulm.de/leben-in-ulm?itemId=CC8C761F78C4469FBD993761FB3CEE2C",
+        "https://www.ulm.de/kultur?itemId=C54FED2A5BBC4209A813BD46017AF703",
+        "https://www.ulm.de/wirtschaft-und-wissenschaft?itemId=9544195AE4994965ADD2E41FFA3F9776",
+        "https://www.ulm.de/tourismus?itemId=32EAB24590C145CFAF45BFF27204C014",
+        "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+        "https://www.ulm.de/sonderseiten/newsroom",
+        "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+        "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+        "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+        "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+        "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/08/21/11/03/100-jahre-donaustadion-49839",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/03/18/03/02/ausstellung-markus-botzenhart-48581",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/09/11/02/ausstellung-idee,-d-,form,-d-,design-%E2%80%93-gestaltendes-handwerk-von-heute-49620",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/01/02/03/gesang-der-v%C3%B6gel-49484",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/16/11/02/caf%C3%A9-f%C3%BCr-alle-beim-wiblinger-wochenmarkt-46548"
+      ],
+      "depth": 1,
+      "parent": "https://www.ulm.de",
+      "children": [
+        "https://www.ulm.de/kultur",
+        "https://www.ulm.de/wirtschaft-und-wissenschaft",
+        "https://www.ulm.de/tourismus",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+        "https://www.ulm.de/leben-in-ulm/digitale-stadt",
+        "https://www.ulm.de/leben-in-ulm/kinder,-jugend,-familie",
+        "https://www.ulm.de/leben-in-ulm/freizeit-und-sport",
+        "https://www.ulm.de/leben-in-ulm/bildung-und-arbeit",
+        "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet",
+        "https://www.ulm.de/leben-in-ulm/menschen-mit-behinderung",
+        "https://www.ulm.de/leben-in-ulm/mit-wenig-geld-in-ulm",
+        "https://www.ulm.de/leben-in-ulm/senioren-2",
+        "https://www.ulm.de/leben-in-ulm/bauen-und-wohnen",
+        "https://www.ulm.de/leben-in-ulm/umwelt-energie-entsorgung",
+        "https://www.ulm.de/leben-in-ulm/chancengerechtigkeit-und-vielfalt",
+        "https://www.ulm.de/leben-in-ulm/gesundheit",
+        "https://www.ulm.de/leben-in-ulm/gefl%C3%BCchtete-in-ulm",
+        "https://www.ulm.de/leben-in-ulm/neu-in-ulm",
+        "https://www.ulm.de/rathaus?itemId=7B26EEBB575A4C67A5AD66019FD6F512",
+        "https://www.ulm.de/leben-in-ulm?itemId=CC8C761F78C4469FBD993761FB3CEE2C",
+        "https://www.ulm.de/kultur?itemId=C54FED2A5BBC4209A813BD46017AF703",
+        "https://www.ulm.de/wirtschaft-und-wissenschaft?itemId=9544195AE4994965ADD2E41FFA3F9776",
+        "https://www.ulm.de/tourismus?itemId=32EAB24590C145CFAF45BFF27204C014",
+        "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+        "https://www.ulm.de/sonderseiten/newsroom",
+        "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+        "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+        "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+        "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+        "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025",
+        "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/08/21/11/03/100-jahre-donaustadion-49839",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/03/18/03/02/ausstellung-markus-botzenhart-48581",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/09/11/02/ausstellung-idee,-d-,form,-d-,design-%E2%80%93-gestaltendes-handwerk-von-heute-49620",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/01/02/03/gesang-der-v%C3%B6gel-49484",
+        "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/16/11/02/caf%C3%A9-f%C3%BCr-alle-beim-wiblinger-wochenmarkt-46548"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://www.ulm.de/kultur",
-      "depth": 1,
-      "parent": "https://www.ulm.de"
-    },
     {
       "url": "https://www.ulm.de/wirtschaft-und-wissenschaft",
       "depth": 1,
@@ -4655,18 +6002,288 @@
       "url": "https://www.ulm.de/tourismus/stadtgeschichte/schicksalstage-und-orte/rathaus",
       "depth": 2,
       "parent": "https://www.ulm.de/rathaus"
+    },
+    {
+      "url": "https://www.ulm.de/kultur",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/wirtschaft-und-wissenschaft",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/tourismus",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/digitale-stadt",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/kinder,-jugend,-familie",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/freizeit-und-sport",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/bildung-und-arbeit",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/menschen-mit-behinderung",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/mit-wenig-geld-in-ulm",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/senioren-2",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/bauen-und-wohnen",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/umwelt-energie-entsorgung",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/chancengerechtigkeit-und-vielfalt",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/gesundheit",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/gefl%C3%BCchtete-in-ulm",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/neu-in-ulm",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/rathaus?itemId=7B26EEBB575A4C67A5AD66019FD6F512",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm?itemId=CC8C761F78C4469FBD993761FB3CEE2C",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/kultur?itemId=C54FED2A5BBC4209A813BD46017AF703",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/wirtschaft-und-wissenschaft?itemId=9544195AE4994965ADD2E41FFA3F9776",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/tourismus?itemId=32EAB24590C145CFAF45BFF27204C014",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/rathaus/stadtpolitik/gemeinderat",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/newsroom",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/interaktiver-stadtplan",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/leben-in-ulm/verkehr-und-mobilitaet/individualverkehr/verkehrslage",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/tourismus/stadtgeschichte/feste-und-traditionen/schwoermontag/schwoermontag_2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/parkscheinautomaten_qr_codes_2025_07",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/aktuelle-meldungen/z%C3%B6a/juli-2025/fahrradhain-2025_07",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=12-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=13-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=14-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=15-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=16-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=17-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=18-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=19-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=20-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=21-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=22-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=23-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=24-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=25-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=26-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=27-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=28-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=29-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/sonderseiten/veranstaltungskalender?date=30-9-2025",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/08/21/11/03/100-jahre-donaustadion-49839",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/03/18/03/02/ausstellung-markus-botzenhart-48581",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/09/11/02/ausstellung-idee,-d-,form,-d-,design-%E2%80%93-gestaltendes-handwerk-von-heute-49620",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/01/02/03/gesang-der-v%C3%B6gel-49484",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
+    },
+    {
+      "url": "https://www.ulm.de/global/datenpool/veranstaltungen/2025/07/16/11/02/caf%C3%A9-f%C3%BCr-alle-beim-wiblinger-wochenmarkt-46548",
+      "depth": 2,
+      "parent": "https://www.ulm.de/leben-in-ulm"
     }
   ],
-  "pageCount": 3,
+  "pageCount": 4,
   "maxDepth": 2,
   "maxPages": 5,
   "startUrl": "https://www.ulm.de/",
-  "lastUpdated": "2025-09-12T09:13:11.177Z",
+  "lastUpdated": "2025-09-12T09:13:12.761Z",
   "completed": false,
-  "currentUrl": "https://www.ulm.de/leben-in-ulm",
+  "currentUrl": "https://www.ulm.de/kultur",
   "status": "crawling",
-  "pagesProcessedInBatch": 3,
+  "pagesProcessedInBatch": 4,
   "maxPagesThisBatch": 5,
-  "queueLength": 131,
+  "queueLength": 184,
   "batchComplete": false
 }
