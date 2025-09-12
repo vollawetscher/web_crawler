@@ -106,9 +106,9 @@ function showCrawlStatus(show, message = '', isDetailed = false) {
         crawlStatus.classList.remove('hidden');
         crawlStatusText.textContent = message;
         
-        // Only show spinner for simple messages, hide for detailed status
+        // Only show spinner for actual crawling operations
         const spinner = crawlStatus.querySelector('.spinner');
-        if (isDetailed) {
+        if (isDetailed || message.includes('complete') || message.includes('Complete')) {
             spinner.style.display = 'none';
             crawlStatus.classList.add('crawling');
         } else {
@@ -571,7 +571,10 @@ function updateProgressDisplay(progress, isRestoredSession = false) {
     // Update resume button visibility
     if (progress.status === 'batch_complete' || progress.batchComplete) {
         showResumeCrawlButton(true);
-    } else if (progress.status === 'completed') {
+    } else if (progress.status === 'completed' || progress.isComplete) {
+        showResumeCrawlButton(false);
+    } else {
+        // Hide resume button for other statuses like 'crawling', 'starting'
         showResumeCrawlButton(false);
     }
 }
@@ -1074,6 +1077,52 @@ function createRagJsonlExport(selectedContent, pages, chunkSize, overlap, includ
 }
 
 function createTextExport(selectedContent, pages) {
+    // Generate export metadata header
+    const now = new Date();
+    const exportDate = now.toLocaleDateString('de-DE') + ', ' + now.toLocaleTimeString('de-DE');
+    const isMultiPage = pages.length > 1;
+    
+    let metadata = `=== EXPORT METADATA ===\n\n`;
+    metadata += `Export Format: TXT\n`;
+    metadata += `Export Date: ${exportDate}\n`;
+    metadata += `Multi-page Export: ${isMultiPage ? 'Yes' : 'No'}\n`;
+    metadata += `Pages Exported: ${pages.length}\n`;
+    
+    // Count total sections across all pages
+    const totalSections = pages.reduce((sum, page) => {
+        return sum + (page.sections ? page.sections.length : 0);
+    }, 0);
+    metadata += `Total Sections: ${totalSections}\n`;
+    
+    // Add crawl info if available (from multi-page export)
+    if (currentCrawlJobId && window.currentSitemap) {
+        metadata += `\nCrawl Job ID: ${currentCrawlJobId}\n`;
+        const sitemapUrls = Object.keys(window.currentSitemap);
+        if (sitemapUrls.length > 0) {
+            // Try to get crawl settings from first page depth info
+            const maxDepth = Math.max(...Object.values(window.currentSitemap).map(p => p.depth || 0));
+            metadata += `Start URL: ${sitemapUrls[0]}\n`;
+            metadata += `Max Depth: ${maxDepth + 1}\n`;  // +1 because depth is 0-indexed
+            metadata += `Max Pages: ${document.getElementById('maxPages')?.value || 'N/A'}\n`;
+            metadata += `Pages Crawled: ${sitemapUrls.length}\n`;
+        }
+    }
+    
+    // Add selected content types
+    metadata += `\nSelected Content Types:\n`;
+    if (selectedContent.title) metadata += `✓ Title\n`;
+    if (selectedContent.meta_description) metadata += `✓ Meta Description\n`;
+    if (selectedContent.h1) metadata += `✓ H1 Headings\n`;
+    if (selectedContent.h2) metadata += `✓ H2 Headings\n`;
+    if (selectedContent.h3) metadata += `✓ H3 Headings\n`;
+    if (selectedContent.main_content) metadata += `✓ Main Content\n`;
+    if (selectedContent.links_content_internal) metadata += `✓ Content Links\n`;
+    if (selectedContent.links_external) metadata += `✓ External Links\n`;
+    if (selectedContent.links_navigation) metadata += `✓ Navigation Links\n`;
+    if (selectedContent.links_legal_or_contact) metadata += `✓ Legal/Contact Links\n`;
+    
+    metadata += `\n${'='.repeat(80)}\n\n`;
+    
     let text = '';
     
     pages.forEach((data, pageIndex) => {
@@ -1120,7 +1169,7 @@ function createTextExport(selectedContent, pages) {
         }
     });
     
-    return text.trim();
+    return (metadata + text).trim();
 }
 
 // Utility functions
