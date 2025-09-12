@@ -568,11 +568,11 @@ function updateProgressDisplay(progress, isRestoredSession = false) {
     
     showCrawlStatus(true, statusMessage, isDetailed);
     
-    // Update resume button visibility
-    if (progress.status === 'batch_complete' || progress.batchComplete) {
-        showResumeCrawlButton(true);
-    } else if (progress.status === 'completed' || progress.isComplete) {
+    // Update resume button visibility - explicit logic
+    if (progress.status === 'completed' || progress.isComplete) {
         showResumeCrawlButton(false);
+    } else if (progress.status === 'batch_complete' || progress.batchComplete) {
+        showResumeCrawlButton(true);
     } else {
         // Hide resume button for other statuses like 'crawling', 'starting'
         showResumeCrawlButton(false);

@@ -553,7 +553,7 @@ h3 {
 }
 
 .crawl-status .spinner {
-    margin-bottom: 0.5rem;
+    display: none !important;
 }
 
 .crawl-status small {
