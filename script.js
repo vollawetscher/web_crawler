@@ -227,8 +227,11 @@ class URLInspector {
     }
 
     async resumeCrawl() {
-        if (!this.currentJobId) {
-            this.showError('No job ID available for resuming');
+        // Check for Job ID from input field first, then fall back to current job ID
+        const jobId = this.jobIdInput.value.trim() || this.currentJobId;
+        
+        if (!jobId) {
+            this.showError('Please enter a Job ID to resume or start a new crawl first');
             return;
         }
 
@@ -245,7 +248,7 @@ class URLInspector {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    jobId: this.currentJobId,
+                    jobId: jobId,
                     pagesPerBatch
                 })
             });
@@ -260,6 +263,7 @@ class URLInspector {
             }
             
             this.currentSitemap = data.sitemap;
+            this.currentJobId = data.jobId; // Update current job ID
             this.saveStateToStorage(); // Save current state
             this.updateCrawlInfo(data);
             this.populateSitemap();
