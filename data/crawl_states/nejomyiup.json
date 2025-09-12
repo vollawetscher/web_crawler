@@ -1,0 +1,20 @@
+{
+  "jobId": "nejomyiup",
+  "visited": [
+    "https://www.ulm.de"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 5,
+  "startUrl": "https://www.ulm.de/",
+  "lastUpdated": "2025-09-12T09:13:08.378Z",
+  "completed": false,
+  "currentUrl": "https://www.ulm.de",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 5,
+  "queueLength": 0,
+  "batchComplete": false
+}
