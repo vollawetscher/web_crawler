@@ -527,6 +527,19 @@ h3 {
     background: #f3f4f6;
     border-radius: 8px;
     text-align: center;
+    white-space: pre-line;
+}
+
+.crawl-status.crawling {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+}
+
+.crawl-status.complete {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
 }
 
 .crawl-status .spinner {
