@@ -27,7 +27,8 @@ const crawlStatusText = document.getElementById('crawlStatusText');
 const batchInfo = document.getElementById('batchInfo');
 const currentJobIdSpan = document.getElementById('currentJobId');
 const crawlProgressStatus = document.getElementById('crawlProgressStatus');
-const sitemapSection = document.getElementById('sitemapSection');
+const crawlControlsSection = document.getElementById('crawlControlsSection');
+const crawlResultsSection = document.getElementById('crawlResultsSection');
 const sitemapContainer = document.getElementById('sitemapContainer');
 const sitemapTree = document.getElementById('sitemapTree');
 const crawlSummary = document.getElementById('crawlSummary');
@@ -195,6 +196,9 @@ async function parseManualHtml(html, url = '') {
 // Display results
 function displayResults(data) {
     resultsSection.classList.remove('hidden');
+    
+    // Show crawl controls section after URL inspection
+    crawlControlsSection.classList.remove('hidden');
     
     // Basic Information
     updateBasicInfo(data);
@@ -440,7 +444,7 @@ async function startCrawl() {
             startCrawlProgressPolling(result.jobId);
             
             showBatchInfo(true, result.jobId, 'In Progress');
-            sitemapSection.classList.remove('hidden');
+            crawlResultsSection.classList.remove('hidden');
             
             if (result.isComplete) {
                 displayCrawlResults(result);
@@ -517,8 +521,8 @@ function updateProgressDisplay(progress, isRestoredSession = false) {
     let statusMessage = '';
     let isDetailed = false;
     
-    // Show sitemap section and batch info
-    sitemapSection.classList.remove('hidden');
+    // Show crawl results section and batch info
+    crawlResultsSection.classList.remove('hidden');
     showBatchInfo(true, progress.jobId, progress.status);
     
     if (isRestoredSession) {
@@ -634,7 +638,7 @@ async function resumeCrawl() {
 
 function displayCrawlResults(result) {
     showCrawlStatus(false);
-    sitemapContainer.classList.remove('hidden');
+    crawlResultsSection.classList.remove('hidden');
     
     // Display crawl summary
     displayCrawlSummary(result.stats);

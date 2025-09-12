@@ -430,7 +430,7 @@ h3 {
 }
 
 /* Sitemap Section */
-.sitemap-section {
+.crawl-controls-section, .crawl-results-section {
     background: white;
     padding: 2rem;
     border-radius: 12px;

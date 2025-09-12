@@ -124,8 +124,8 @@
             </div>
 
             <!-- Export Options -->
-            <!-- Sitemap Section - THIS IS NOW REPOSITIONED ABOVE EXPORT -->
-            <div id="sitemapSection" class="sitemap-section hidden">
+            <!-- Crawl Controls Section - Always visible after URL inspection -->
+            <div id="crawlControlsSection" class="crawl-controls-section hidden">
                 <hr>
                 <h2>🗺️ Site Crawling & Multi-page Selection</h2>
                 
@@ -172,8 +172,11 @@
                         <button id="resumeCrawlBtn" class="resume-crawl-btn hidden">▶️ Resume Crawl</button>
                     </div>
                 </div>
-                
-                <div id="sitemapContainer" class="sitemap-container hidden">
+            </div>
+
+            <!-- Crawl Results Section - Hidden until crawl starts -->
+            <div id="crawlResultsSection" class="crawl-results-section hidden">
+                <div id="sitemapContainer" class="sitemap-container">
                     <div class="sitemap-header">
                         <h3>📋 Select Pages for Multi-page Export</h3>
                         <div class="sitemap-actions">
