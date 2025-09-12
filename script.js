@@ -201,7 +201,7 @@ class URLInspector {
             const data = await response.json();
             
             if (data.error) {
-                this.showCrawlStatus(false);
+                this.showCrawlStatus(false, '');
                 this.crawlBtn.disabled = false;
                 this.showError(`Crawling failed: ${data.error}`);
                 return;
@@ -213,7 +213,7 @@ class URLInspector {
             this.populateSitemap();
             
             if (!data.isComplete) {
-                this.showResumeOption();
+                this.showResumeOption('Continue Crawl');
             }
             
         } catch (error) {
@@ -227,8 +227,8 @@ class URLInspector {
     }
 
     async resumeCrawl() {
-        // Check for Job ID from input field first, then fall back to current job ID
-        const jobId = this.jobIdInput.value.trim() || this.currentJobId;
+        // Use current job ID if available, otherwise check input field
+        const jobId = this.currentJobId || this.jobIdInput.value.trim();
         
         if (!jobId) {
             this.showError('Please enter a Job ID to resume or start a new crawl first');
@@ -240,7 +240,7 @@ class URLInspector {
         // Clear the previous sitemap display
         this.clearSitemapDisplay();
         
-        this.showCrawlStatus(true);
+        this.showCrawlStatus(true, 'Resuming crawl...');
         this.resumeCrawlBtn.disabled = true;
         
         try {
@@ -502,8 +502,25 @@ class URLInspector {
         container.appendChild(item);
     }
 
-    showCrawlStatus(show) {
+    showCrawlStatus(show, message = '', currentUrl = '') {
         this.crawlStatus.classList.toggle('hidden', !show);
+        if (show) {
+            // Update status message
+            this.crawlStatusText.textContent = message;
+            
+            // Show current URL if provided
+            let statusHtml = `<span>${message}</span>`;
+            if (currentUrl) {
+                statusHtml += `<br><small>Currently processing: <strong>${currentUrl}</strong></small>`;
+            }
+            this.crawlStatusText.innerHTML = statusHtml;
+            
+            // Show progress indicator instead of spinner
+            const spinner = this.crawlStatus.querySelector('.spinner');
+            if (spinner) {
+                spinner.style.display = currentUrl ? 'none' : 'block';
+            }
+        }
     }
 
     updateCrawlInfo(data) {
@@ -512,8 +529,9 @@ class URLInspector {
         this.batchInfo.classList.remove('hidden');
     }
 
-    showResumeOption() {
+    showResumeOption(buttonText = '▶️ Resume Crawl') {
         this.resumeCrawlBtn.classList.remove('hidden');
+        this.resumeCrawlBtn.textContent = buttonText;
     }
 
     hideResumeOption() {
