@@ -516,10 +516,18 @@ async function checkCrawlProgress(jobId, isRestoredSession = false) {
         const progress = await response.json();
         
         if (progress.success) {
+            // Don't update UI state if we're in a restored completed session
+            if (isRestoredSession && progress.status === 'completed' && window.currentSitemap) {
+                console.log('Skipping progress update for restored completed session');
+                return;
+            }
+            
             updateProgressDisplay(progress, isRestoredSession);
             
             if (progress.isComplete) {
                 stopCrawlProgressPolling();
+                saveCrawlCompletedStatus(true);
+                
                 // Fetch final results
                 const crawlResponse = await fetch('/api/crawl', {
                     method: 'POST',
@@ -538,6 +546,9 @@ async function checkCrawlProgress(jobId, isRestoredSession = false) {
                 if (finalResult.success) {
                     displayCrawlResults(finalResult);
                 }
+            } else {
+                // Save incomplete status
+                saveCrawlCompletedStatus(false);
             }
         } else if (!isRestoredSession) {
             console.error('Progress check failed:', progress.error);
