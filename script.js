@@ -525,8 +525,26 @@ class URLInspector {
 
     updateCrawlInfo(data) {
         this.currentJobIdSpan.textContent = data.jobId;
-        this.crawlProgressStatus.textContent = data.isComplete ? 'Complete' : 'In Progress';
+        this.crawlProgressStatus.textContent = data.isComplete ? 'Complete' : 'Ready to Continue';
         this.batchInfo.classList.remove('hidden');
+        
+        // Show stats
+        const totalPages = Object.keys(data.sitemap || {}).length;
+        const successfulPages = Object.values(data.sitemap || {}).filter(page => page.success).length;
+        
+        // Update job info display
+        const batchInfoElement = this.batchInfo;
+        const existingStats = batchInfoElement.querySelector('.batch-stats');
+        if (existingStats) {
+            existingStats.remove();
+        }
+        
+        const statsDiv = document.createElement('div');
+        statsDiv.className = 'batch-stats';
+        statsDiv.innerHTML = `
+            <p><strong>Pages Crawled:</strong> ${totalPages} | <strong>Successful:</strong> ${successfulPages}</p>
+        `;
+        batchInfoElement.appendChild(statsDiv);
     }
 
     showResumeOption(buttonText = '▶️ Resume Crawl') {

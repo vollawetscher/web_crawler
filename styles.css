@@ -519,12 +519,33 @@ h3 {
 .crawl-status {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.25rem;
     color: #7c3aed;
     font-weight: 500;
     padding: 1rem;
     background: #f3f4f6;
     border-radius: 8px;
+    text-align: center;
+}
+
+.crawl-status .spinner {
+    margin-bottom: 0.5rem;
+}
+
+.crawl-status small {
+    color: #6b7280;
+    font-weight: normal;
+    margin-top: 0.25rem;
+}
+
+.batch-stats {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: #f9fafb;
+    border-radius: 4px;
 }
 
 .sitemap-container {
