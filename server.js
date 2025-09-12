@@ -855,9 +855,35 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
     let pagesProcessedInBatch = 0;
     const maxPagesThisBatch = Math.min(pagesPerBatch, maxPages - pageCount);
     
+    // Save initial progress state
+    const saveProgress = async (currentUrl = null, status = 'crawling') => {
+        const progressState = {
+            jobId,
+            visited: Array.from(visited),
+            sitemap,
+            queue,
+            pageCount,
+            maxDepth,
+            maxPages,
+            startUrl: existingState?.startUrl || startUrl,
+            lastUpdated: new Date().toISOString(),
+            completed: false,
+            currentUrl,
+            status,
+            pagesProcessedInBatch,
+            maxPagesThisBatch,
+            queueLength: queue.length
+        };
+        await saveCrawlState(jobId, progressState);
+    };
+    
+    // Save initial state
+    await saveProgress(null, 'starting');
+    
     while (queue.length > 0 && pageCount < maxPages) {
         if (pagesProcessedInBatch >= maxPagesThisBatch) {
             // Save state and break for this batch
+            await saveProgress(null, 'batch_complete');
             const state = {
                 jobId,
                 visited: Array.from(visited),
@@ -866,17 +892,21 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
                 pageCount,
                 maxDepth,
                 maxPages,
-                startUrl,
-                lastUpdated: new Date().toISOString()
+                startUrl: existingState?.startUrl || startUrl,
+                lastUpdated: new Date().toISOString(),
+                currentUrl: null,
+                status: 'batch_complete',
+                pagesProcessedInBatch,
+                maxPagesThisBatch,
+                queueLength: queue.length
             };
-            await saveCrawlState(jobId, state);
             return {
                 jobId,
                 sitemap,
                 stats: {
                     totalPages: pageCount,
                     maxDepth,
-                    startUrl,
+                    startUrl: existingState?.startUrl || startUrl,
                     isComplete: false,
                     remaining: queue.length
                 },
@@ -893,6 +923,9 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         visited.add(url);
         pageCount++;
         pagesProcessedInBatch++;
+        
+        // Save progress with current URL
+        await saveProgress(url, 'crawling');
         
         console.log(`Crawling: ${url} (depth: ${depth})`);
         
@@ -956,6 +989,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
     }
     
     // Crawl is complete
+    await saveProgress(null, 'completed');
     const state = {
         jobId,
         visited: Array.from(visited),
@@ -964,11 +998,15 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         pageCount,
         maxDepth,
         maxPages,
-        startUrl,
+        startUrl: existingState?.startUrl || startUrl,
         lastUpdated: new Date().toISOString(),
-        completed: true
+        completed: true,
+        currentUrl: null,
+        status: 'completed',
+        pagesProcessedInBatch,
+        maxPagesThisBatch: maxPagesThisBatch,
+        queueLength: 0
     };
-    await saveCrawlState(jobId, state);
     
     return {
         jobId,
@@ -976,7 +1014,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         stats: {
             totalPages: pageCount,
             maxDepth,
-            startUrl,
+            startUrl: existingState?.startUrl || startUrl,
             isComplete: true,
             remaining: 0
         },
@@ -1104,6 +1142,35 @@ app.post('/api/crawl', async (req, res) => {
     } catch (error) {
         console.error('Crawl error:', error);
         res.status(500).json({ error: `Crawling failed: ${error.message}` });
+    }
+});
+
+// API endpoint for checking crawl progress
+app.get('/api/crawl-progress/:jobId', async (req, res) => {
+    try {
+        const { jobId } = req.params;
+        const state = await loadCrawlState(jobId);
+        
+        if (!state) {
+            return res.status(404).json({ error: 'Crawl job not found' });
+        }
+        
+        res.json({
+            success: true,
+            jobId,
+            status: state.status || 'unknown',
+            currentUrl: state.currentUrl || null,
+            pageCount: state.pageCount || 0,
+            maxPages: state.maxPages || 0,
+            queueLength: state.queueLength || 0,
+            pagesProcessedInBatch: state.pagesProcessedInBatch || 0,
+            maxPagesThisBatch: state.maxPagesThisBatch || 0,
+            isComplete: state.completed || false,
+            lastUpdated: state.lastUpdated
+        });
+    } catch (error) {
+        console.error('Progress check error:', error);
+        res.status(500).json({ error: `Failed to get progress: ${error.message}` });
     }
 });
 
