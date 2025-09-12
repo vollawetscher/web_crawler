@@ -1308,6 +1308,8 @@ class URLInspector {
         // Implementation for saving state to storage
     }
 }
+let progressPollingInterval = null;
+let currentJobId = null;
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {

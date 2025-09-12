@@ -855,7 +855,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
     let pagesProcessedInBatch = 0;
     const maxPagesThisBatch = Math.min(pagesPerBatch, maxPages - pageCount);
     
-    // Save initial progress state
+    // Save progress state with more detailed information
     const saveProgress = async (currentUrl = null, status = 'crawling') => {
         const progressState = {
             jobId,
@@ -872,7 +872,8 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
             status,
             pagesProcessedInBatch,
             maxPagesThisBatch,
-            queueLength: queue.length
+            queueLength: queue.length,
+            batchComplete: pagesProcessedInBatch >= maxPagesThisBatch
         };
         await saveCrawlState(jobId, progressState);
     };
@@ -924,10 +925,10 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         pageCount++;
         pagesProcessedInBatch++;
         
-        // Save progress with current URL
+        // Save detailed progress with current URL and batch info
         await saveProgress(url, 'crawling');
         
-        console.log(`Crawling: ${url} (depth: ${depth})`);
+        console.log(`Crawling: ${url} (depth: ${depth}, batch: ${pagesProcessedInBatch}/${maxPagesThisBatch})`);
         
         const result = await fetchAndParseUrl(url);
         
@@ -1165,8 +1166,11 @@ app.get('/api/crawl-progress/:jobId', async (req, res) => {
             queueLength: state.queueLength || 0,
             pagesProcessedInBatch: state.pagesProcessedInBatch || 0,
             maxPagesThisBatch: state.maxPagesThisBatch || 0,
+            batchComplete: state.batchComplete || false,
             isComplete: state.completed || false,
-            lastUpdated: state.lastUpdated
+            lastUpdated: state.lastUpdated,
+            startUrl: state.startUrl || '',
+            depth: state.maxDepth || 0
         });
     } catch (error) {
         console.error('Progress check error:', error);
