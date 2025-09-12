@@ -1040,7 +1040,9 @@ async function loadCrawlState(jobId) {
         const data = await fs.readFile(filePath, 'utf8');
         return JSON.parse(data);
     } catch (error) {
-        console.error('Failed to load crawl state:', error);
+        if (error.code !== 'ENOENT') {
+            console.error('Failed to load crawl state:', error);
+        }
         return null;
     }
 }
