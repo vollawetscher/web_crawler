@@ -1,0 +1,43 @@
+=== EXPORT METADATA ===
+
+Export Format: TXT
+Export Date: 12.9.2025, 08:47:49
+Multi-page Export: Yes
+Pages Exported: 3
+Total Sections: 2
+
+Crawl Job ID: oz8d3ft3m
+Start URL: https://www.landkreis-landshut.de/
+Max Depth: 3
+Max Pages: 40
+Pages Crawled: 20
+
+Selected Content Types:
+✓ Title
+✓ Meta Description
+✓ H1 Headings
+✓ H2 Headings
+✓ Main Content
+✓ Content Links
+
+Selected Pages:
+1. Telefonliste | Landkreis Landshut
+   URL: https://www.landkreis-landshut.de/buergerservice/telefonliste
+   Sections: 0, Content: 0 chars
+2. Abfall / Umwelt / Wasser | Landkreis Landshut
+   URL: https://www.landkreis-landshut.de/themen/abfall-umwelt-wasser
+   Sections: 1, Content: 158 chars
+3. Müllentsorgung - Abfall-ABC | Landkreis Landshut
+   URL: https://www.landkreis-landshut.de/themen/abfall-umwelt-wasser/abfall-abc
+   Sections: 1, Content: 126 chars
+
+==================================================
+
+Title: Combined Export (3 pages)
+
+Section 1: Abfall / Umwelt / Wasser | Landkreis Landshut
+### Abfall / Umwelt / Wasser Ansprechpartner, Formulare und Informationen zum Thema Abfall, Umwelt und Wasser: , , und Abrufbar über die untenstehenden Links:
+
+Section 2: Müllentsorgung - Abfall-ABC | Landkreis Landshut
+Müllentsorgung leicht gemacht - Mit Hilfe unseres Abfall-ABCs wissen Sie genau wie und wo welcher Abfall entsorgt werden muss.
+

@@ -137,7 +137,7 @@
                         </div>
                         <div class="control-group">
                             <label for="pagesPerBatch">Pages per Batch:</label>
-                            <input type="number" id="pagesPerBatch" value="10" min="1" max="50">
+                            <input type="number" id="pagesPerBatch" value="50" min="1" max="200">
                         </div>
                     </div>
                     
@@ -148,11 +148,15 @@
                                 <option value="1">1 Level (current page only)</option>
                                 <option value="2" selected>2 Levels (current + linked pages)</option>
                                 <option value="3">3 Levels (deep crawl)</option>
+                                <option value="4">4 Levels (deeper crawl)</option>
+                                <option value="5">5 Levels (very deep crawl)</option>
+                                <option value="10">10 Levels (extensive crawl)</option>
+                                <option value="999">Unlimited Depth</option>
                             </select>
                         </div>
                         <div class="control-group">
                             <label for="maxPages">Max Pages:</label>
-                            <input type="number" id="maxPages" value="20" min="1" max="100">
+                            <input type="number" id="maxPages" value="500" min="1" max="10000">
                         </div>
                         <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
                     </div>
