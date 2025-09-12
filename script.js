@@ -424,6 +424,8 @@ class URLInspector {
             container.appendChild(moreDiv);
         }
     }
+    const crawlStatus = document.getElementById('crawlStatus');
+    const crawlStatusText = document.getElementById('crawlStatusText');
     
     updateLinksPreview() {
         const categorizedLinks = this.extractedData.categorized_links || {};
@@ -1278,6 +1280,11 @@ class URLInspector {
     }
 
     showError(message) {
+    crawlStatus.classList.remove('hidden');
+    crawlStatusText.textContent = '🔄 Resuming crawl...';
+    
+    // Start polling for the resumed job
+    startProgressPolling(jobId);
         this.hideLoading();
         this.errorMessage.textContent = `❌ ${message}`;
         this.errorMessage.classList.remove('hidden');
@@ -1291,19 +1298,15 @@ class URLInspector {
         this.errorMessage.classList.add('hidden');
     }
 
-    hideMessages() {
-        this.errorMessage.classList.add('hidden');
-        this.successMessage.classList.add('hidden');
-    }
-
-    startProgressPolling(jobId) {
-        // Implementation for progress polling
+            crawlStatusText.textContent = `🔄 Crawl resumed! Job ID: ${result.jobId}`;
     }
 
     stopProgressPolling() {
         // Implementation for stopping progress polling
     }
 
+        crawlStatusText.textContent = `❌ Resume failed: ${error.message}`;
+        stopProgressPolling();
     saveStateToStorage() {
         // Implementation for saving state to storage
     }
