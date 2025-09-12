@@ -691,6 +691,8 @@ function displayCrawlResults(result) {
     displayCrawlSummary(result.stats);
     
     // Display sitemap
+    console.log('[DEBUG] displayCrawlResults called with:', result);
+    console.log('[DEBUG] Sitemap data:', result.sitemap);
     displaySitemap(result.sitemap);
 }
 
@@ -727,8 +729,19 @@ function displayCrawlSummary(stats) {
 }
 
 function displaySitemap(sitemap) {
+    console.log('[DEBUG] displaySitemap called with sitemap:', sitemap);
+    console.log('[DEBUG] Sitemap keys:', Object.keys(sitemap || {}));
+    
     window.currentSitemap = sitemap;
+    
+    if (!sitemap || Object.keys(sitemap).length === 0) {
+        console.error('[DEBUG] No sitemap data available');
+        sitemapTree.innerHTML = '<p style="padding: 1rem; text-align: center; color: #666;">No pages found in crawl results.</p>';
+        return;
+    }
+    
     const tree = buildSitemapTree(sitemap);
+    console.log('[DEBUG] Generated tree HTML length:', tree.length);
     sitemapTree.innerHTML = tree;
     updateSelectionCount();
 }
