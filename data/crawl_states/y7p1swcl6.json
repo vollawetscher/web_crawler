@@ -1,0 +1,20 @@
+{
+  "jobId": "y7p1swcl6",
+  "visited": [
+    "https://www.abfallwirtschaft-loerrach-landkreis.de/willkommen"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 5,
+  "maxPages": 8,
+  "startUrl": "https://www.abfallwirtschaft-loerrach-landkreis.de/willkommen",
+  "lastUpdated": "2025-09-12T09:17:40.145Z",
+  "completed": false,
+  "currentUrl": "https://www.abfallwirtschaft-loerrach-landkreis.de/willkommen",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 8,
+  "queueLength": 0,
+  "batchComplete": false
+}
