@@ -40,6 +40,8 @@ const selectionCount = document.getElementById('selectionCount');
 window.addEventListener('load', () => {
     const savedData = sessionStorage.getItem('urlInspectorData');
     const savedJobId = sessionStorage.getItem('currentCrawlJobId');
+    const savedSitemap = sessionStorage.getItem('currentSitemap');
+    const savedCrawlCompleted = sessionStorage.getItem('crawlCompleted');
     
     if (savedData) {
         try {
@@ -52,9 +54,38 @@ window.addEventListener('load', () => {
         }
     }
     
+    // Restore sitemap data if available
+    if (savedSitemap) {
+        try {
+            window.currentSitemap = JSON.parse(savedSitemap);
+            console.log('Restored sitemap with', Object.keys(window.currentSitemap).length, 'pages');
+        } catch (e) {
+            console.error('Failed to restore sitemap data:', e);
+            sessionStorage.removeItem('currentSitemap');
+        }
+    }
+    
     if (savedJobId) {
         currentCrawlJobId = savedJobId;
-        checkCrawlProgress(savedJobId, true);
+        
+        // If crawl was completed, restore full UI state without starting progress polling
+        if (savedCrawlCompleted === 'true' && window.currentSitemap) {
+            console.log('Restoring completed crawl state');
+            crawlResultsSection.classList.remove('hidden');
+            
+            // Restore sitemap display
+            displaySitemap(window.currentSitemap);
+            
+            // Show completion status without spinner
+            showCrawlStatus(true, 'Crawl completed - session restored', true);
+            showBatchInfo(true, savedJobId, 'Completed');
+            
+            // Ensure resume button is hidden
+            showResumeCrawlButton(false);
+        } else {
+            // Only check progress if crawl wasn't completed
+            checkCrawlProgress(savedJobId, true);
+        }
     }
 });
 
@@ -73,6 +104,8 @@ function showRestorationNotice() {
 function clearSession() {
     sessionStorage.removeItem('urlInspectorData');
     sessionStorage.removeItem('currentCrawlJobId');
+    sessionStorage.removeItem('currentSitemap');
+    sessionStorage.removeItem('crawlCompleted');
     location.reload();
 }
 
