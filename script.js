@@ -687,20 +687,22 @@ function displayCrawlResults(result) {
     showCrawlStatus(false);
     crawlResultsSection.classList.remove('hidden');
     
-    // Display crawl summary
-    displayCrawlSummary(result.stats);
-    
     // Display sitemap
     console.log('[DEBUG] displayCrawlResults called with:', result);
     console.log('[DEBUG] Sitemap data:', result.sitemap);
     displaySitemap(result.sitemap);
+    
+    // Display crawl summary AFTER sitemap is set
+    displayCrawlSummary(result.stats, result.sitemap);
 }
 
-function displayCrawlSummary(stats) {
-    const totalPages = Object.keys(window.currentSitemap || {}).length;
-    const successfulPages = Object.values(window.currentSitemap || {}).filter(page => page.success).length;
+function displayCrawlSummary(stats, sitemap) {
+    // Use passed sitemap directly instead of relying on window.currentSitemap
+    const actualSitemap = sitemap || window.currentSitemap || {};
+    const totalPages = Object.keys(actualSitemap).length;
+    const successfulPages = Object.values(actualSitemap).filter(page => page.success).length;
     const errorPages = totalPages - successfulPages;
-    const relevantPages = Object.values(window.currentSitemap || {}).filter(page => page.is_relevant !== false).length;
+    const relevantPages = Object.values(actualSitemap).filter(page => page.is_relevant !== false).length;
     
     crawlSummary.innerHTML = `
         <div class="crawl-stats">

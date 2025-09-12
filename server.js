@@ -1103,6 +1103,30 @@ app.get('/api/load-inspection/:inspectionId', async (req, res) => {
     }
 });
 
+// API endpoint for manual HTML parsing
+app.post('/api/parse-manual', async (req, res) => {
+    try {
+        const { html, url = '' } = req.body;
+        
+        if (!html || !html.trim()) {
+            return res.status(400).json({ error: 'HTML content is required' });
+        }
+        
+        console.log(`Parsing manual HTML content (${html.length} characters)${url ? ` with URL: ${url}` : ''}`);
+        
+        // Use provided URL or generate a placeholder
+        const finalUrl = url || 'manual-input://local';
+        
+        const result = parseDocument(html, finalUrl);
+        
+        res.json(result);
+        
+    } catch (error) {
+        console.error('Manual parsing error:', error);
+        res.status(500).json({ error: `Parsing failed: ${error.message}` });
+    }
+});
+
 // API endpoint for crawling
 app.post('/api/crawl', async (req, res) => {
     try {
