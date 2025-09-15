@@ -24,7 +24,10 @@
     "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
     "https://tv1.eu/en/home-english",
     "https://tv1.eu/en/virtual-events",
-    "https://tv1.eu/en/subtitling"
+    "https://tv1.eu/en/subtitling",
+    "https://tv1.eu/en/references",
+    "https://tv1.eu/en/about-us",
+    "https://tv1.eu/en/blog-en"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -5868,24 +5871,840 @@
       "parent": "https://tv1.eu/en/imprint",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/en/subtitling": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/subtitling",
+      "title": "Subtitling - TV1",
+      "meta_description": "We subtitle livestreams and videos - for accessibility and better comprehensibility for hearing users as well",
+      "main_content": "### Subtitles in every format ### Closed und Open Captions ### Subtitle translations ### Convert existing text to subtitles ### Would you like to receive our support?",
+      "sections": [
+        {
+          "section_id": "a1e50761a719",
+          "section_order": 0,
+          "heading": "Subtitling - TV1",
+          "heading_level": "page",
+          "content_text": "### Subtitles in every format ### Closed und Open Captions ### Subtitle translations ### Convert existing text to subtitles ### Would you like to receive our support?",
+          "page_url": "https://tv1.eu/en/subtitling",
+          "page_title": "Subtitling - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "58f5bac7d32d94bbf36941f13fdc09b1",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:11.740Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "CONTACT US",
+          "url": "https://tv1.eu/en/subtitling#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "MAKE AN APPOINTMENT",
+          "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/subtitling#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "CONTACT US",
+            "url": "https://tv1.eu/en/subtitling#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/subtitling#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "MAKE AN APPOINTMENT",
+            "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/en/references": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/references",
+      "title": "References - TV1",
+      "meta_description": "Our references and customers since our foundation in 1999 - numerous renowned companies and organisations trust TV1",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "CONTACT US",
+          "url": "https://tv1.eu/en/references#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Virtual event",
+          "url": "https://tv1.eu/en/vogelsaenger-studios-digital-event-2/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vogelsänger Studios Event",
+          "url": "https://tv1.eu/en/vogelsaenger-studios-digital-event-2/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual event",
+          "url": "https://tv1.eu/en/project-denkfabrik-legal-tech/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Ministry of justice",
+          "url": "https://tv1.eu/en/project-denkfabrik-legal-tech/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Press conference livestream",
+          "url": "https://tv1.eu/en/livestreaming-of-the-press-conference/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Merkel & Söder",
+          "url": "https://tv1.eu/en/livestreaming-of-the-press-conference/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual conference",
+          "url": "https://tv1.eu/en/bvi-sustainability-conference/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BVI",
+          "url": "https://tv1.eu/en/bvi-sustainability-conference/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Press conference",
+          "url": "https://tv1.eu/en/press-conference-of-the-bavarian-ministry-of-economic-affairs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bavarian Ministry of Economic Affairs",
+          "url": "https://tv1.eu/en/press-conference-of-the-bavarian-ministry-of-economic-affairs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual Event (City of Mannheim)",
+          "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+          "category": "external"
+        },
+        {
+          "text": "Bertha-und-Carl-Benz-Award",
+          "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+          "category": "external"
+        },
+        {
+          "text": "MAKE AN APPOINTMENT",
+          "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/references#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "CONTACT US",
+            "url": "https://tv1.eu/en/references#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/references#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Virtual event",
+            "url": "https://tv1.eu/en/project-denkfabrik-legal-tech/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual event",
+            "url": "https://tv1.eu/en/vogelsaenger-studios-digital-event-2/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Press conference livestream",
+            "url": "https://tv1.eu/en/livestreaming-of-the-press-conference/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual conference",
+            "url": "https://tv1.eu/en/bvi-sustainability-conference/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Press conference",
+            "url": "https://tv1.eu/en/press-conference-of-the-bavarian-ministry-of-economic-affairs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Virtual Event (City of Mannheim)",
+            "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+            "category": "external"
+          },
+          {
+            "text": "MAKE AN APPOINTMENT",
+            "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/vogelsaenger-studios-digital-event-2",
+        "https://tv1.eu/en/livestreaming-of-the-press-conference",
+        "https://tv1.eu/en/bvi-sustainability-conference",
+        "https://tv1.eu/en/press-conference-of-the-bavarian-ministry-of-economic-affairs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/en/about-us": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/about-us",
+      "title": "About us – TV1",
+      "meta_description": "About the company TV1 - Media streaming pioneers - Innovators - Performance-oriented since 1999 - Over 3600 successful projects",
+      "main_content": "Projects Streaming productions Live webcasts Online Video Analytics\n\nAbout us In 1997, the founders launched their first stream and since 1999 TV1.EU has been one of the leading providers of online video solutions. We help our clients be successful with online videos and live webcasts. In 1997, the founders launched their first stream and since 1999 TV1.EU has been one of the leading providers of online video solutions. We help our clients be successful with online videos and live webcasts.\n\nMission TV1.EU assists companies and organisations by broadcasting video content and live signals at superior quality to all devices. Our core competencies lie in helping clients explore the full potential of their livestreams and videos using state-of-the-art technology. TV1.EU assists companies and organisations by broadcasting video content and live signals at superior quality to all devices. Our core competencies lie in helping clients explore the full potential of their livestreams and videos using state-of-the-art technology.\n\nProfile In 1999, TV1.DE became the first German internet broadcaster. After the dotcom bubble burst, TV1 changed its business model and has since been a B2B provider. In 1999, TV1.DE became the first German internet broadcaster. After the dotcom bubble burst, TV1 changed its business model and has since been a B2B provider. With more than 21 years of expertise and over 4,500 live productions/streaming media projects, TV1.EU is one of the most experienced providers on the market. With more than 21 years of expertise and over 4,500 live productions/streaming media projects, TV1.EU is one of the most experienced providers on the market. As a full-service provider, our company portfolio includes: As a full-service provider, our company portfolio includes: As a full-service provider, our company portfolio includes: – Live webcasts – Online conferences – Streaming (encoding, transcoding, CDN) – Live subtitling, translation – Live webcasts – Online conferences – Streaming (encoding, transcoding, CDN) – Live subtitling, translation If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner. If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner. If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner.\n\nInnovation TV1.EU is an innovation leader in the industry. We have developed our innovative solutions independently based on years of project experience and have successfully implemented them in close cooperation with our clients. Our technologies are state-of-the-art and our solutions are tailored to our clients’ individual requirements. We guarantee constant development in the future and use of the latest technologies. TV1.EU is an innovation leader in the industry. We have developed our innovative solutions independently based on years of project experience and have successfully implemented them in close cooperation with our clients. Our technologies are state-of-the-art and our solutions are tailored to our clients’ individual requirements. We guarantee constant development in the future and use of the latest technologies.",
+      "sections": [
+        {
+          "section_id": "ad1c6b74d644",
+          "section_order": 2,
+          "heading": "Projects",
+          "heading_level": "h2",
+          "content_text": "Projects Streaming productions Live webcasts Online Video Analytics",
+          "page_url": "https://tv1.eu/en/about-us",
+          "page_title": "About us – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "e883e01407eaa1699e371c23da8e662e",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:14.684Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "4ddbbff685c3",
+          "section_order": 3,
+          "heading": "About us",
+          "heading_level": "h2",
+          "content_text": "About us In 1997, the founders launched their first stream and since 1999 TV1.EU has been one of the leading providers of online video solutions. We help our clients be successful with online videos and live webcasts. In 1997, the founders launched their first stream and since 1999 TV1.EU has been one of the leading providers of online video solutions. We help our clients be successful with online videos and live webcasts.",
+          "page_url": "https://tv1.eu/en/about-us",
+          "page_title": "About us – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "193bfcfed79898560591a3c08ca2680b",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:14.684Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "eef623c80101",
+          "section_order": 4,
+          "heading": "Mission",
+          "heading_level": "h2",
+          "content_text": "Mission TV1.EU assists companies and organisations by broadcasting video content and live signals at superior quality to all devices. Our core competencies lie in helping clients explore the full potential of their livestreams and videos using state-of-the-art technology. TV1.EU assists companies and organisations by broadcasting video content and live signals at superior quality to all devices. Our core competencies lie in helping clients explore the full potential of their livestreams and videos using state-of-the-art technology.",
+          "page_url": "https://tv1.eu/en/about-us",
+          "page_title": "About us – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "471c200fb55e4b0448ed1e5af41c7abe",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:14.685Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "4914a8e27ead",
+          "section_order": 5,
+          "heading": "Profile",
+          "heading_level": "h2",
+          "content_text": "Profile In 1999, TV1.DE became the first German internet broadcaster. After the dotcom bubble burst, TV1 changed its business model and has since been a B2B provider. In 1999, TV1.DE became the first German internet broadcaster. After the dotcom bubble burst, TV1 changed its business model and has since been a B2B provider. With more than 21 years of expertise and over 4,500 live productions/streaming media projects, TV1.EU is one of the most experienced providers on the market. With more than 21 years of expertise and over 4,500 live productions/streaming media projects, TV1.EU is one of the most experienced providers on the market. As a full-service provider, our company portfolio includes: As a full-service provider, our company portfolio includes: As a full-service provider, our company portfolio includes: – Live webcasts – Online conferences – Streaming (encoding, transcoding, CDN) – Live subtitling, translation – Live webcasts – Online conferences – Streaming (encoding, transcoding, CDN) – Live subtitling, translation If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner. If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner. If you are looking for individual solutions tailored to your specific requirements, we are your ideal partner.",
+          "page_url": "https://tv1.eu/en/about-us",
+          "page_title": "About us – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "51bbd8ae333d0fa2f5d5ea39f2baefae",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:14.686Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "f7bc896348c9",
+          "section_order": 6,
+          "heading": "Innovation",
+          "heading_level": "h2",
+          "content_text": "Innovation TV1.EU is an innovation leader in the industry. We have developed our innovative solutions independently based on years of project experience and have successfully implemented them in close cooperation with our clients. Our technologies are state-of-the-art and our solutions are tailored to our clients’ individual requirements. We guarantee constant development in the future and use of the latest technologies. TV1.EU is an innovation leader in the industry. We have developed our innovative solutions independently based on years of project experience and have successfully implemented them in close cooperation with our clients. Our technologies are state-of-the-art and our solutions are tailored to our clients’ individual requirements. We guarantee constant development in the future and use of the latest technologies.",
+          "page_url": "https://tv1.eu/en/about-us",
+          "page_title": "About us – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "220eda7ed7c8c81b497534d9732720a5",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:14.686Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "CONTACT US",
+          "url": "https://tv1.eu/en/about-us#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "MAKE AN APPOINTMENT",
+          "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/about-us#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "CONTACT US",
+            "url": "https://tv1.eu/en/about-us#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/about-us#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "MAKE AN APPOINTMENT",
+            "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/references",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
-    {
-      "url": "https://tv1.eu/en/about-us",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
-    {
-      "url": "https://tv1.eu/en/blog-en",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
     {
       "url": "https://tv1.eu/en/jobs-en",
       "depth": 2,
@@ -5932,16 +6751,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 24,
+  "pageCount": 27,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T10:00:11.387Z",
+  "lastUpdated": "2025-09-15T10:00:15.702Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/en/subtitling",
+  "currentUrl": "https://tv1.eu/en/blog-en",
   "status": "crawling",
-  "pagesProcessedInBatch": 4,
+  "pagesProcessedInBatch": 7,
   "maxPagesThisBatch": 10,
-  "queueLength": 12,
+  "queueLength": 9,
   "batchComplete": false
 }
