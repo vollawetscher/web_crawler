@@ -23,7 +23,8 @@
     "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet",
     "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
     "https://tv1.eu/en/home-english",
-    "https://tv1.eu/en/virtual-events"
+    "https://tv1.eu/en/virtual-events",
+    "https://tv1.eu/en/subtitling"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -5643,14 +5644,233 @@
       "parent": "https://tv1.eu/en/imprint",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/en/virtual-events": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/virtual-events",
+      "title": "Virtual events – TV1",
+      "meta_description": "Networking of locations and connection of external experts - Mobile video conferencing solution to enhance your event, etc.",
+      "main_content": "### Remote live production ### Participation made easy ### Various platforms can be connected ### Would you like to receive our support?",
+      "sections": [
+        {
+          "section_id": "4329ea39f598",
+          "section_order": 0,
+          "heading": "Virtual events – TV1",
+          "heading_level": "page",
+          "content_text": "### Remote live production ### Participation made easy ### Various platforms can be connected ### Would you like to receive our support?",
+          "page_url": "https://tv1.eu/en/virtual-events",
+          "page_title": "Virtual events – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "7049e13eb3c7ac46ef6b5d92a1aa91f8",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:10.377Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/virtual-events#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "MAKE AN APPOINTMENT",
+          "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/virtual-events#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/virtual-events#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/virtual-events#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "MAKE AN APPOINTMENT",
+            "url": "https://outlook.office365.com/owa/calendar/VIDEOTAXI1@tv1.eu/bookings/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/subtitling",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
     {
       "url": "https://tv1.eu/en/references",
       "depth": 2,
@@ -5712,16 +5932,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 23,
+  "pageCount": 24,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T10:00:09.934Z",
+  "lastUpdated": "2025-09-15T10:00:11.387Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/en/virtual-events",
+  "currentUrl": "https://tv1.eu/en/subtitling",
   "status": "crawling",
-  "pagesProcessedInBatch": 3,
+  "pagesProcessedInBatch": 4,
   "maxPagesThisBatch": 10,
-  "queueLength": 13,
+  "queueLength": 12,
   "batchComplete": false
 }
