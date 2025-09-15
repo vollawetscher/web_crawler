@@ -534,10 +534,17 @@ h3 {
     color: #7c3aed;
     font-weight: 500;
     padding: 1rem;
-    background: #f3f4f6;
+    background: #f8fafc;
     border-radius: 8px;
+    border: 1px solid #e2e8f0;
     text-align: center;
     white-space: pre-line;
+}
+
+.crawl-status.starting {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1e40af;
 }
 
 .crawl-status.crawling {
@@ -546,20 +553,45 @@ h3 {
     color: #1e40af;
 }
 
+.crawl-status.in-progress {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+}
+
+.crawl-status.paused {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    color: #ea580c;
+}
+
 .crawl-status.complete {
     background: #f0fdf4;
     border: 1px solid #bbf7d0;
     color: #15803d;
 }
 
-.crawl-status .spinner {
-    display: none !important;
-}
-
 .crawl-status small {
     color: #6b7280;
     font-weight: normal;
     margin-top: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.batch-stats {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+/* Export section visibility control */
+.export-section.hidden {
+    display: none !important;
 }
 
 .batch-stats {

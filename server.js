@@ -1160,18 +1160,23 @@ app.post('/api/parse-manual', async (req, res) => {
 // API endpoint for crawling
 app.post('/api/crawl', async (req, res) => {
     try {
-        const { url, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, jobId } = req.body;
+        const { url, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, jobId: providedJobId, respectRobotsTxt = true } = req.body;
         
         let existingState = null;
+        let jobId = providedJobId;
+        
         if (jobId) {
             existingState = await loadCrawlState(jobId);
             if (!existingState) {
                 return res.status(404).json({ error: 'Crawl job not found' });
             }
+        } else if (!url) {
+            return res.status(400).json({ error: 'URL is required for new crawls' });
         }
         
-        if (!url && !existingState) {
-            return res.status(400).json({ error: 'URL is required' });
+        // Generate jobId if not provided (for new crawls)
+        if (!jobId && url) {
+            jobId = Math.random().toString(36).substr(2, 9); // Fallback random ID
         }
         
         // Validate URL if starting new crawl
