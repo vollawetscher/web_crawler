@@ -1,0 +1,20 @@
+{
+  "jobId": "8oy4ewgb9",
+  "visited": [
+    "https://hitcom.de"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 20,
+  "startUrl": "https://hitcom.de",
+  "lastUpdated": "2025-09-15T08:30:22.812Z",
+  "completed": false,
+  "currentUrl": "https://hitcom.de",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 10,
+  "queueLength": 0,
+  "batchComplete": false
+}
