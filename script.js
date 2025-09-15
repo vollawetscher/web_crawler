@@ -1,4 +1,4 @@
-// Global state
+// Global state - after new chat
 let currentData = null;
 let currentCrawlJobId = null;
 let crawlProgressInterval = null;
