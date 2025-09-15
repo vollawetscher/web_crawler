@@ -169,6 +169,9 @@ The URL Inspector & Web Crawler is a comprehensive web-based tool designed to ex
 - **Content Quality**: Extraction works but may include some boilerplate content on complex sites
 - **Timeout Handling**: Some pages may timeout during crawling (30-second limit)
 - **CORS Limitations**: Some sites may block requests due to CORS policies
+- **Development Environment Sync Issues**: Recent code changes (including UI updates, new job ID logic, and export section visibility) may not consistently reflect in the StackBlitz development environment, indicating potential issues with how the environment picks up and displays code modifications
+- **Docker Health Check Configuration**: The `docker-compose.yml` health check parameters (start_period, timeout, interval) may be too aggressive, potentially causing premature restarts or deployment failures for the Node.js server
+- **Deployment Consistency**: Changes made locally may not always propagate correctly to deployed environments, requiring manual verification and potential server restarts
 
 ### 🔧 **Recent Fixes (Dec 2024)**
 - **✅ Fixed Statistics Display**: Crawl results now show correct page counts
