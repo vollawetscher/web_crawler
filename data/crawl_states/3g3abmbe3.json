@@ -14,7 +14,8 @@
     "https://tv1.eu/vogelsaenger-studios-digital-event",
     "https://tv1.eu/livestreaming-der-pressekonferenz",
     "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
-    "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums"
+    "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+    "https://tv1.eu/livestreaming-ohne-extra-hardware"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -3636,49 +3637,243 @@
       "parent": "https://tv1.eu/referenzen",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums": {
+      "success": true,
+      "final_url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+      "title": "Pressekonferenz des Bayerischen Wirtschaftsministeriums - TV1",
+      "meta_description": "",
+      "main_content": "### PK des Bayerischen Wirtschaftsministeriums ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+      "sections": [
+        {
+          "section_id": "406f2258b35e",
+          "section_order": 0,
+          "heading": "Pressekonferenz des Bayerischen Wirtschaftsministeriums - TV1",
+          "heading_level": "page",
+          "content_text": "### PK des Bayerischen Wirtschaftsministeriums ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+          "page_url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+          "page_title": "Pressekonferenz des Bayerischen Wirtschaftsministeriums - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "2578259909555992a69dfc1ad45c1c87",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:51.557Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "https://www.stmwi.bayern.de",
+          "url": "https://www.stmwi.bayern.de/",
+          "category": "external"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "https://www.stmwi.bayern.de",
+            "url": "https://www.stmwi.bayern.de/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/blog",
-      "depth": 2,
-      "parent": "https://tv1.eu/ueber-uns"
-    },
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 2,
-      "parent": "https://tv1.eu/ueber-uns"
-    },
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/ueber-uns"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/ueber-uns"
-    },
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
-    {
-      "url": "https://tv1.eu/livestreaming-ohne-extra-hardware",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
     {
       "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
       "depth": 2,
@@ -3805,16 +4000,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 14,
+  "pageCount": 15,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:59:51.283Z",
+  "lastUpdated": "2025-09-15T09:59:52.572Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+  "currentUrl": "https://tv1.eu/livestreaming-ohne-extra-hardware",
   "status": "crawling",
-  "pagesProcessedInBatch": 4,
+  "pagesProcessedInBatch": 5,
   "maxPagesThisBatch": 10,
-  "queueLength": 33,
+  "queueLength": 25,
   "batchComplete": false
 }
