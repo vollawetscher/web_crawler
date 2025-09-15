@@ -10,7 +10,8 @@
     "https://tv1.eu/blog",
     "https://tv1.eu/jobs",
     "https://tv1.eu/en/imprint",
-    "https://tv1.eu/en/data-protection"
+    "https://tv1.eu/en/data-protection",
+    "https://tv1.eu/vogelsaenger-studios-digital-event"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -2914,91 +2915,6 @@
   },
   "queue": [
     {
-      "url": "https://tv1.eu/untertitelung",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/referenzen",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/ueber-uns",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/blog",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/virtuelle-events"
-    },
-    {
-      "url": "https://tv1.eu/referenzen",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/ueber-uns",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/blog",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/untertitelung"
-    },
-    {
-      "url": "https://tv1.eu/ueber-uns",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/blog",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/vogelsaenger-studios-digital-event",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
       "url": "https://tv1.eu/livestreaming-der-pressekonferenz",
       "depth": 2,
       "parent": "https://tv1.eu/referenzen"
@@ -3179,16 +3095,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 10,
+  "pageCount": 11,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:58:12.655Z",
+  "lastUpdated": "2025-09-15T09:59:47.128Z",
   "completed": false,
-  "currentUrl": null,
-  "status": "batch_complete",
-  "pagesProcessedInBatch": 10,
+  "currentUrl": "https://tv1.eu/vogelsaenger-studios-digital-event",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
   "maxPagesThisBatch": 10,
-  "queueLength": 53,
-  "batchComplete": true
+  "queueLength": 36,
+  "batchComplete": false
 }
