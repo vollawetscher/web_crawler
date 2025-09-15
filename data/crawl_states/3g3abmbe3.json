@@ -21,7 +21,9 @@
     "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
     "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen",
     "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet",
-    "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert"
+    "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+    "https://tv1.eu/en/home-english",
+    "https://tv1.eu/en/virtual-events"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -5123,39 +5125,527 @@
       "parent": "https://tv1.eu/blog",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert": {
+      "success": true,
+      "final_url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+      "title": "TV1 ist ISO/IEC 27001 zertifiziert - TV1",
+      "meta_description": "",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/blog",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/en/home-english": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/home-english",
+      "title": "TV1 - Streaming provider since 1999",
+      "meta_description": "Welcome to the official website of TV1.EU from Unterföhring - We are experts in live streaming, online video, live webcasting etc.",
+      "main_content": "Bundestag Since 2012, TV1 has been broadcasting parliamentary debates live from the plenum of German Bundestag. Every single speech is cut and made accessible in the Bundestag media library. Since 2018, TV1 has also been creating subtitles and sign language translations in real time in a separate stream. Starting in 2021, all contents streamed live by Bundestag are subtitled. Employing artificial intelligence and speech-to-text interpreters allows us to create subtitles for roughly 1000 hours of video material every year. Since 2012, TV1 has been broadcasting parliamentary debates live from the plenum of German Bundestag. Every single speech is cut and made accessible in the Bundestag media library. Since 2018, TV1 has also been creating subtitles and sign language translations in real time in a separate stream. Starting in 2021, all contents streamed live by Bundestag are subtitled. Employing artificial intelligence and speech-to-text interpreters allows us to create subtitles for roughly 1000 hours of video material every year.\n\nYouTV YouTV is an online TV recorder that allows you to record more than 50 TV channels. Sophisticated recording assistants help our users decide which shows to record. YouTV assists users with program selection, removes commercials on demand, and is available in thirteen apps for all major devices. YouTV is an online TV recorder that allows you to record more than 50 TV channels. Sophisticated recording assistants help our users decide which shows to record. YouTV assists users with program selection, removes commercials on demand, and is available in thirteen apps for all major devices. Visit website … Visit website … Visit website … Visit website …\n\nVideo.Taxi Video.Taxi is a revolutionary platform for everyone who wants to carry out online events, meetings and video publishing in a quick and easy way. Numerous functions help users to considerably enhance their contents. Using Video.Taxi allows you to produce elaborate livestreams directly on the computer, to get live subtitling and to sell livestreams and videos. Video.Taxi is a revolutionary platform for everyone who wants to carry out online events, meetings and video publishing in a quick and easy way. Numerous functions help users to considerably enhance their contents. Using Video.Taxi allows you to produce elaborate livestreams directly on the computer, to get live subtitling and to sell livestreams and videos. Visit website … Visit website … Visit website … Visit website …",
+      "sections": [
+        {
+          "section_id": "b56515b006f6",
+          "section_order": 6,
+          "heading": "Bundestag",
+          "heading_level": "h5",
+          "content_text": "Bundestag Since 2012, TV1 has been broadcasting parliamentary debates live from the plenum of German Bundestag. Every single speech is cut and made accessible in the Bundestag media library. Since 2018, TV1 has also been creating subtitles and sign language translations in real time in a separate stream. Starting in 2021, all contents streamed live by Bundestag are subtitled. Employing artificial intelligence and speech-to-text interpreters allows us to create subtitles for roughly 1000 hours of video material every year. Since 2012, TV1 has been broadcasting parliamentary debates live from the plenum of German Bundestag. Every single speech is cut and made accessible in the Bundestag media library. Since 2018, TV1 has also been creating subtitles and sign language translations in real time in a separate stream. Starting in 2021, all contents streamed live by Bundestag are subtitled. Employing artificial intelligence and speech-to-text interpreters allows us to create subtitles for roughly 1000 hours of video material every year.",
+          "page_url": "https://tv1.eu/en/home-english",
+          "page_title": "TV1 - Streaming provider since 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "fe8f32308507ac48b6cdc2f1e04f9bd7",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:08.915Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "28955129000a",
+          "section_order": 7,
+          "heading": "YouTV",
+          "heading_level": "h5",
+          "content_text": "YouTV YouTV is an online TV recorder that allows you to record more than 50 TV channels. Sophisticated recording assistants help our users decide which shows to record. YouTV assists users with program selection, removes commercials on demand, and is available in thirteen apps for all major devices. YouTV is an online TV recorder that allows you to record more than 50 TV channels. Sophisticated recording assistants help our users decide which shows to record. YouTV assists users with program selection, removes commercials on demand, and is available in thirteen apps for all major devices. Visit website … Visit website … Visit website … Visit website …",
+          "page_url": "https://tv1.eu/en/home-english",
+          "page_title": "TV1 - Streaming provider since 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "296eb2826742b01d8f283a96afe2b19c",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Visit website …",
+              "url": "https://www.youtv.de/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:08.916Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "222d9355dbb2",
+          "section_order": 8,
+          "heading": "Video.Taxi",
+          "heading_level": "h5",
+          "content_text": "Video.Taxi Video.Taxi is a revolutionary platform for everyone who wants to carry out online events, meetings and video publishing in a quick and easy way. Numerous functions help users to considerably enhance their contents. Using Video.Taxi allows you to produce elaborate livestreams directly on the computer, to get live subtitling and to sell livestreams and videos. Video.Taxi is a revolutionary platform for everyone who wants to carry out online events, meetings and video publishing in a quick and easy way. Numerous functions help users to considerably enhance their contents. Using Video.Taxi allows you to produce elaborate livestreams directly on the computer, to get live subtitling and to sell livestreams and videos. Visit website … Visit website … Visit website … Visit website …",
+          "page_url": "https://tv1.eu/en/home-english",
+          "page_title": "TV1 - Streaming provider since 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "9f74dfc07ec333b78ac69d4a1336e5b2",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Visit website …",
+              "url": "http://www.video.taxi/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:08.917Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "READ MORE",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "READ MORE",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "READ MORE",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "In high demand\nVirtual Events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Streaming platform\nVideo.Taxi",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Subtitles &\nSign language",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Visit website …",
+          "url": "https://www.youtv.de/",
+          "category": "external"
+        },
+        {
+          "text": "Visit website …",
+          "url": "http://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "read more …",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "MAKE AN APPOINTMENT",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/home-english#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "MAKE AN APPOINTMENT",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/home-english#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "READ MORE",
+            "url": "https://www.video.taxi/",
+            "category": "external"
+          },
+          {
+            "text": "Visit website …",
+            "url": "https://www.youtv.de/",
+            "category": "external"
+          },
+          {
+            "text": "Visit website …",
+            "url": "http://www.video.taxi/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 2,
-      "parent": "https://tv1.eu/jobs"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/jobs"
-    },
-    {
-      "url": "https://tv1.eu/en/home-english",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
-    {
-      "url": "https://tv1.eu/en/virtual-events",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
     {
       "url": "https://tv1.eu/en/subtitling",
       "depth": 2,
@@ -5222,16 +5712,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 21,
+  "pageCount": 23,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T10:00:07.075Z",
+  "lastUpdated": "2025-09-15T10:00:09.934Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+  "currentUrl": "https://tv1.eu/en/virtual-events",
   "status": "crawling",
-  "pagesProcessedInBatch": 1,
+  "pagesProcessedInBatch": 3,
   "maxPagesThisBatch": 10,
-  "queueLength": 19,
+  "queueLength": 13,
   "batchComplete": false
 }
