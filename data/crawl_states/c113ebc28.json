@@ -1,0 +1,20 @@
+{
+  "jobId": "c113ebc28",
+  "visited": [
+    "https://books.toscrape.com"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 20,
+  "startUrl": "https://books.toscrape.com",
+  "lastUpdated": "2025-09-15T09:39:23.914Z",
+  "completed": false,
+  "currentUrl": "https://books.toscrape.com",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 10,
+  "queueLength": 0,
+  "batchComplete": false
+}
