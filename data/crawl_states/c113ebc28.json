@@ -10,7 +10,8 @@
     "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
     "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
     "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
-    "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+    "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+    "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
   ],
   "sitemap": {
     "https://books.toscrape.com": {
@@ -9026,11 +9027,6 @@
   },
   "queue": [
     {
-      "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "depth": 1,
-      "parent": "https://books.toscrape.com"
-    },
-    {
       "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
       "depth": 1,
       "parent": "https://books.toscrape.com"
@@ -12246,16 +12242,16 @@
       "parent": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
     }
   ],
-  "pageCount": 10,
+  "pageCount": 11,
   "maxDepth": 2,
   "maxPages": 20,
   "startUrl": "https://books.toscrape.com",
-  "lastUpdated": "2025-09-15T09:39:38.605Z",
+  "lastUpdated": "2025-09-15T09:40:14.375Z",
   "completed": false,
-  "currentUrl": null,
-  "status": "batch_complete",
-  "pagesProcessedInBatch": 10,
+  "currentUrl": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
   "maxPagesThisBatch": 10,
-  "queueLength": 644,
-  "batchComplete": true
+  "queueLength": 643,
+  "batchComplete": false
 }
