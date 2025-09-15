@@ -917,7 +917,37 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         
         const { url, depth, parent } = queue.shift();
         
-        if (visited.has(url) || depth > maxDepth) {
+        if (visited.has(url)) {
+            continue;
+        }
+        
+        if (depth > maxDepth) {
+            // Mark URL as skipped due to depth limitation
+            if (!sitemap[url]) {
+                sitemap[url] = {
+                    success: false,
+                    final_url: url,
+                    title: '',
+                    meta_description: '',
+                    main_content: '',
+                    sections: [],
+                    links: [],
+                    categorized_links: {
+                        navigation: [],
+                        legal_or_contact: [],
+                        content_internal: [],
+                        external: []
+                    },
+                    internal_links: [],
+                    depth,
+                    parent,
+                    children: [],
+                    is_relevant: false,
+                    skipped_due_to_depth: true,
+                    error: `Skipped: Max depth (${maxDepth}) reached`
+                };
+                visited.add(url);
+            }
             continue;
         }
         

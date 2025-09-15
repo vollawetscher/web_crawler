@@ -782,9 +782,10 @@ function buildSitemapTree(sitemap) {
 function buildSitemapNode(url, page, sitemap) {
     const isError = !page.success;
     const isBlockedByRobots = page.blocked_by_robots;
+    const isSkippedDueToDepth = page.skipped_due_to_depth;
     const isIrrelevant = page.is_relevant === false;
     const nodeClass = `sitemap-node depth-${Math.min(page.depth, 2)}`;
-    const itemClass = `sitemap-item ${isError ? 'error' : ''} ${isBlockedByRobots ? 'blocked-robots' : ''} ${isIrrelevant ? 'irrelevant' : ''}`;
+    const itemClass = `sitemap-item ${isError ? 'error' : ''} ${isBlockedByRobots ? 'blocked-robots' : ''} ${isSkippedDueToDepth ? 'skipped-depth' : ''} ${isIrrelevant ? 'irrelevant' : ''}`;
     
     // Generate unique IDs for checkboxes
     const urlHash = btoa(url).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
@@ -806,7 +807,7 @@ function buildSitemapNode(url, page, sitemap) {
                                id="${exportCheckboxId}"
                                data-url="${escapeHtml(url)}"
                                onchange="updateSelectionCount()"
-                               ${!isError && !isIrrelevant ? 'checked' : ''}>
+                               ${!isError && !isIrrelevant && !isSkippedDueToDepth ? 'checked' : ''}>
                         Export
                     </label>
                     <label class="checkbox-label relevance-label">
@@ -815,7 +816,7 @@ function buildSitemapNode(url, page, sitemap) {
                                id="${relevanceCheckboxId}"
                                data-url="${escapeHtml(url)}"
                                onchange="toggleRelevance('${escapeHtml(url)}'); updateSelectionCount()"
-                               ${!isIrrelevant ? 'checked' : ''}>
+                               ${!isIrrelevant && !isSkippedDueToDepth ? 'checked' : ''}>
                         Relevant
                     </label>
                 </div>
@@ -829,6 +830,7 @@ function buildSitemapNode(url, page, sitemap) {
                     </div>
                     ${isError ? `<div class="sitemap-error">${escapeHtml(page.error)}</div>` : ''}
                     ${isBlockedByRobots ? `<div class="sitemap-robots-blocked">🤖 Blocked by robots.txt</div>` : ''}
+                    ${isSkippedDueToDepth ? `<div class="sitemap-skipped-depth">⚠️ Skipped: Max depth (${page.depth - 1}) reached</div>` : ''}
                 </div>
             </div>
         </div>
