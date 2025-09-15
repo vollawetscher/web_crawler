@@ -2,7 +2,8 @@
   "jobId": "3g3abmbe3",
   "visited": [
     "https://tv1.eu",
-    "https://tv1.eu/cdn-cgi/l/email-protection"
+    "https://tv1.eu/cdn-cgi/l/email-protection",
+    "https://tv1.eu/virtuelle-events"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -352,14 +353,17 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/cdn-cgi/l/email-protection": {
+      "error": "request to https://tv1.eu/cdn-cgi/l/email-protection failed, reason: socket hang up",
+      "sections": [],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/virtuelle-events",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/untertitelung",
       "depth": 1,
@@ -396,16 +400,16 @@
       "parent": "https://tv1.eu"
     }
   ],
-  "pageCount": 2,
+  "pageCount": 3,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:58:01.185Z",
+  "lastUpdated": "2025-09-15T09:58:02.260Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/cdn-cgi/l/email-protection",
+  "currentUrl": "https://tv1.eu/virtuelle-events",
   "status": "crawling",
-  "pagesProcessedInBatch": 2,
+  "pagesProcessedInBatch": 3,
   "maxPagesThisBatch": 10,
-  "queueLength": 8,
+  "queueLength": 7,
   "batchComplete": false
 }
