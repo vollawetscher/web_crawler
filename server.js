@@ -1156,12 +1156,19 @@ app.post('/api/crawl', async (req, res) => {
         const crawlUrl = existingState ? existingState.startUrl : url;
         console.log(`${existingState ? 'Resuming' : 'Starting'} crawl of ${crawlUrl} with max depth ${maxDepth}`);
         
+        if (respectRobotsTxt) {
+            console.log('Robots.txt compliance: ENABLED');
+        } else {
+            console.log('Robots.txt compliance: DISABLED');
+        }
+        
         const result = await crawlWebsite(
             crawlUrl, 
             parseInt(maxDepth), 
             parseInt(maxPages),
             parseInt(pagesPerBatch),
-            existingState
+            existingState,
+            respectRobotsTxt
         );
         
         res.json({ success: true, ...result });

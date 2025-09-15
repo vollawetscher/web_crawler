@@ -722,6 +722,11 @@ h3 {
     border-color: #fecaca;
 }
 
+.sitemap-item.blocked-robots {
+    background: #fefce8;
+    border-color: #fde68a;
+}
+
 .sitemap-item.irrelevant {
     background: #f9fafb;
     border-color: #d1d5db;
@@ -807,6 +812,13 @@ h3 {
     color: #dc2626;
     font-size: 0.875rem;
     font-style: italic;
+}
+
+.sitemap-robots-blocked {
+    color: #d97706;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .export-info {

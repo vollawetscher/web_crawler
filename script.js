@@ -644,6 +644,8 @@ async function resumeCrawl() {
         return;
     }
     
+    const respectRobotsTxt = document.getElementById('respectRobotsTxt').checked;
+    
     try {
         resumeCrawlBtn.disabled = true;
         showCrawlStatus(true, 'Resuming crawl...');
@@ -658,7 +660,8 @@ async function resumeCrawl() {
                 jobId: currentCrawlJobId,
                 maxDepth: parseInt(maxDepthSelect.value),
                 maxPages: parseInt(maxPagesInput.value),
-                pagesPerBatch: parseInt(pagesPerBatchInput.value)
+                pagesPerBatch: parseInt(pagesPerBatchInput.value),
+                respectRobotsTxt
             })
         });
         
@@ -778,9 +781,10 @@ function buildSitemapTree(sitemap) {
 
 function buildSitemapNode(url, page, sitemap) {
     const isError = !page.success;
+    const isBlockedByRobots = page.blocked_by_robots;
     const isIrrelevant = page.is_relevant === false;
     const nodeClass = `sitemap-node depth-${Math.min(page.depth, 2)}`;
-    const itemClass = `sitemap-item ${isError ? 'error' : ''} ${isIrrelevant ? 'irrelevant' : ''}`;
+    const itemClass = `sitemap-item ${isError ? 'error' : ''} ${isBlockedByRobots ? 'blocked-robots' : ''} ${isIrrelevant ? 'irrelevant' : ''}`;
     
     // Generate unique IDs for checkboxes
     const urlHash = btoa(url).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
@@ -824,6 +828,7 @@ function buildSitemapNode(url, page, sitemap) {
                         ${page.meta_description ? `<span>Has description</span>` : ''}
                     </div>
                     ${isError ? `<div class="sitemap-error">${escapeHtml(page.error)}</div>` : ''}
+                    ${isBlockedByRobots ? `<div class="sitemap-robots-blocked">🤖 Blocked by robots.txt</div>` : ''}
                 </div>
             </div>
         </div>
