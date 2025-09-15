@@ -1,20 +1,2213 @@
 {
   "jobId": "hr7qv3dyz",
   "visited": [
-    "http://loerrach-landkreis.de"
+    "http://loerrach-landkreis.de",
+    "http://loerrach-landkreis.de/aktuelles"
   ],
-  "sitemap": {},
-  "queue": [],
-  "pageCount": 1,
+  "sitemap": {
+    "http://loerrach-landkreis.de": {
+      "success": true,
+      "final_url": "http://loerrach-landkreis.de/",
+      "title": "Willkommen | Landkreis Lörrach  - Gemeinsam Zukunft gestalten",
+      "meta_description": "Der Landkreis Lörrach liegt  im sogenannten \"Dreiländereck\" und grenzt mit dem Rhein im Süden an die Schweiz und im Westen an Frankreich an. Inmitten des Landkreises liegt Bad Bellingen: das jüngste Heilbad der Region. Das Erholungsgebiet zwischen Freiburg, Colmar und Basel bietet außerdem eine hohe Wirtschaftskraft, eine attraktive Landschaft und sehenswerte Kultur- und Naturdenkmäler.",
+      "main_content": "### Wasserentnahmeverbot ### Eingeschränkter Service vom 15. bis 26. September ### Landesportal ViBa-BW Allgemeinverfügung verlängert bis 30. September Aufgrund schnell sinkender Wasserstände sowie prognostizierter hoher Temperaturen und ausbleibender Regenfälle bleibt es auch weiterhin verboten, Wasser aus Bächen, Flüssen und Seen für Bewässerungs- oder Beregnungszwecke zu entnehmen. Kfz-Zulassungsstelle in Schopfheim Die Kfz-Zulassungsstelle in Schopfheim ist vom 15. bis 26. September nur eingeschränkt geöffnet. In diesem Zeitraum werden ausschließlich Kfz-Händler sowie Kundinnen und Kunden mit vorheriger Terminvereinbarung bedient. Für alle weiteren Anliegen stehen Ihnen die Außenstellen in Lörrach und Rheinfelden zur Verfügung. Neues Baugenehmigungsverfahren Ab dem 1. Oktober wickelt der Fachbereich Baurecht sämtliche Baugenehmigungsverfahren über das Virtuelle Bauamt Baden-Württemberg (ViBa-BW) ab. Damit können Bauanträge, Beteiligungsverfahren und Genehmigungen künftig vollständig digital eingereicht, bearbeitet und zugestellt werden.",
+      "sections": [
+        {
+          "section_id": "eb30fff674b8",
+          "section_order": 0,
+          "heading": "Willkommen | Landkreis Lörrach  - Gemeinsam Zukunft gestalten",
+          "heading_level": "page",
+          "content_text": "### Wasserentnahmeverbot ### Eingeschränkter Service vom 15. bis 26. September ### Landesportal ViBa-BW Allgemeinverfügung verlängert bis 30. September Aufgrund schnell sinkender Wasserstände sowie prognostizierter hoher Temperaturen und ausbleibender Regenfälle bleibt es auch weiterhin verboten, Wasser aus Bächen, Flüssen und Seen für Bewässerungs- oder Beregnungszwecke zu entnehmen. Kfz-Zulassungsstelle in Schopfheim Die Kfz-Zulassungsstelle in Schopfheim ist vom 15. bis 26. September nur eingeschränkt geöffnet. In diesem Zeitraum werden ausschließlich Kfz-Händler sowie Kundinnen und Kunden mit vorheriger Terminvereinbarung bedient. Für alle weiteren Anliegen stehen Ihnen die Außenstellen in Lörrach und Rheinfelden zur Verfügung. Neues Baugenehmigungsverfahren Ab dem 1. Oktober wickelt der Fachbereich Baurecht sämtliche Baugenehmigungsverfahren über das Virtuelle Bauamt Baden-Württemberg (ViBa-BW) ab. Damit können Bauanträge, Beteiligungsverfahren und Genehmigungen künftig vollständig digital eingereicht, bearbeitet und zugestellt werden.",
+          "page_url": "http://loerrach-landkreis.de/",
+          "page_title": "Willkommen | Landkreis Lörrach  - Gemeinsam Zukunft gestalten",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "a37e2174f692191d94c3cf132befe110",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:23:25.269Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "Zur Navigation springen",
+          "url": "http://loerrach-landkreis.de/#oC-trigger",
+          "category": "navigation"
+        },
+        {
+          "text": "Zum Inhalt springen",
+          "url": "http://loerrach-landkreis.de/#content",
+          "category": "navigation"
+        },
+        {
+          "text": "Leben im Landkreis",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis",
+          "category": "external"
+        },
+        {
+          "text": "Landkreis-Broschüre",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Landkreis-Broschuere",
+          "category": "external"
+        },
+        {
+          "text": "Dreiländereck",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Dreilaendereck",
+          "category": "external"
+        },
+        {
+          "text": "Grenzüberschreitende Zusammenarbeit",
+          "url": "https://www.loerrach-landkreis.de/Grenzueberschreitende-Zusammenarbeit",
+          "category": "external"
+        },
+        {
+          "text": "Infobest Palmrain",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Dreilaendereck/Infobest-Palmrain",
+          "category": "external"
+        },
+        {
+          "text": "Städte & Gemeinden",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden",
+          "category": "external"
+        },
+        {
+          "text": "Übersicht Städte & Gemeinden",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Staedte-Gemeinden",
+          "category": "external"
+        },
+        {
+          "text": "Zahlen, Daten und Fakten",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Zahlen,-Daten-Fakten",
+          "category": "external"
+        },
+        {
+          "text": "Geschichte",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Geschichte",
+          "category": "external"
+        },
+        {
+          "text": "Landkreis-Jubiläum",
+          "url": "https://www.loerrach-landkreis.de/50jahre",
+          "category": "external"
+        },
+        {
+          "text": "Wappen",
+          "url": "https://www.loerrach-landkreis.de/50jahre/50Jahre_Wappen",
+          "category": "external"
+        },
+        {
+          "text": "Bildergalerie",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Bildergalerie",
+          "category": "external"
+        },
+        {
+          "text": "Kreisreform",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Kreisreform",
+          "category": "external"
+        },
+        {
+          "text": "Events & Aktuelles",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Veranstaltungen",
+          "category": "external"
+        },
+        {
+          "text": "Landräte",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Landraete",
+          "category": "external"
+        },
+        {
+          "text": "Geschichte",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Geschichte",
+          "category": "external"
+        },
+        {
+          "text": "Gemeinden stellen sich vor",
+          "url": "https://www.loerrach-landkreis.de/50jahre/Gemeinden-stellen-sich-vor",
+          "category": "external"
+        },
+        {
+          "text": "Wirtschaft & Strukturpolitik",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft",
+          "category": "external"
+        },
+        {
+          "text": "Wirtschaftsförderung",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Wirschaftsfoerderung-WSW",
+          "category": "external"
+        },
+        {
+          "text": "Fachkräfteallianz",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Wirschaftsfoerderung-WSW/Fachkraefteallianz",
+          "category": "external"
+        },
+        {
+          "text": "Breitbandversorgung",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung",
+          "category": "external"
+        },
+        {
+          "text": "Ausbaustand Ortsnetze",
+          "url": "https://www.loerrach-landkreis.de/breitband",
+          "category": "external"
+        },
+        {
+          "text": "Glasfaserausbau Wittlingen",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Glasfaserausbau-Wittlingen",
+          "category": "external"
+        },
+        {
+          "text": "Netzbetrieb und Diensteangebot",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Netzbetrieb-und-Diensteangebot",
+          "category": "external"
+        },
+        {
+          "text": "Aktuelles",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Aktuelles",
+          "category": "external"
+        },
+        {
+          "text": "Arbeiten beim Zweckverband",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Arbeiten-beim-Zweckverband",
+          "category": "external"
+        },
+        {
+          "text": "Rechenzentrum für den Landkreis Lörrach",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Rechenzentrum-fuer-den-Landkreis-Loerrach",
+          "category": "external"
+        },
+        {
+          "text": "Innenhausverkabelung für Mehrfamilienhäuser",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Inhausverkabelung-fuer-Mehrfamilienhaeuser",
+          "category": "external"
+        },
+        {
+          "text": "Förderprogramme",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Foerderprogramme",
+          "category": "external"
+        },
+        {
+          "text": "Raumplanung",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Raumplanung",
+          "category": "external"
+        },
+        {
+          "text": "Bildung",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Bildung",
+          "category": "external"
+        },
+        {
+          "text": "Berufliche Schulen",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen",
+          "category": "external"
+        },
+        {
+          "text": "Gewerbeschule Lörrach",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gsl",
+          "category": "external"
+        },
+        {
+          "text": "Gewerbeschule Rheinfelden",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gsr",
+          "category": "external"
+        },
+        {
+          "text": "Gewerbeschule Schopfheim",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gss",
+          "category": "external"
+        },
+        {
+          "text": "Kaufmännische Schule Lörrach",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-ksl",
+          "category": "external"
+        },
+        {
+          "text": "Kaufmännische Schule Schopfheim",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-kss",
+          "category": "external"
+        },
+        {
+          "text": "Mathilde-Planck-Schule Lörrach",
+          "url": "https://www.loerrach-landkreis.de/berufliche-schulen-mps",
+          "category": "external"
+        },
+        {
+          "text": "Kreismedienzentrum",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Bildung/Kreismedienzentrum",
+          "category": "external"
+        },
+        {
+          "text": "Mobilität",
+          "url": "https://www.loerrach-landkreis.de/mobilitaet",
+          "category": "external"
+        },
+        {
+          "text": "Bus & Bahn",
+          "url": "https://www.loerrach-landkreis.de/bus-bahn",
+          "category": "external"
+        },
+        {
+          "text": "LÖGO",
+          "url": "https://www.loerrach-landkreis.de/loego",
+          "category": "external"
+        },
+        {
+          "text": "Buslinie Freund",
+          "url": "https://www.loerrach-landkreis.de/freund",
+          "category": "external"
+        },
+        {
+          "text": "Nahverkehrskonferenz",
+          "url": "https://www.loerrach-landkreis.de/nahverkehrskonferenz",
+          "category": "external"
+        },
+        {
+          "text": "Radverkehr",
+          "url": "https://www.loerrach-landkreis.de/rad",
+          "category": "external"
+        },
+        {
+          "text": "Touristische Mobilität",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Touristische-Mobilitaet",
+          "category": "external"
+        },
+        {
+          "text": "Touristische Radrouten",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Touristische-Radrouten",
+          "category": "external"
+        },
+        {
+          "text": "Rad- und Wanderbusse",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Rad-und-Wanderbusse",
+          "category": "external"
+        },
+        {
+          "text": "Elektromobilität",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Elektromobilitaet",
+          "category": "external"
+        },
+        {
+          "text": "KOMO",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/mobilitaet/KOMO",
+          "category": "external"
+        },
+        {
+          "text": "Klimaschutz",
+          "url": "https://www.loerrach-landkreis.de/Klimaschutz",
+          "category": "external"
+        },
+        {
+          "text": "REGIONAL.KLIMASCHUTZ.MACHEN",
+          "url": "http://regional-klimaschutz-machen.de/",
+          "category": "external"
+        },
+        {
+          "text": "Klimaschutz-Reporting",
+          "url": "https://www.loerrach-landkreis.de/klimareporting",
+          "category": "external"
+        },
+        {
+          "text": "Wärmewende",
+          "url": "https://www.loerrach-landkreis.de/Klimaschutz/Waermewende",
+          "category": "external"
+        },
+        {
+          "text": "Klimawandelanpassung",
+          "url": "https://www.loerrach-landkreis.de/Klimaschutz/Klimawandelanpassung",
+          "category": "external"
+        },
+        {
+          "text": "PV-Initiative",
+          "url": "https://www.loerrach-landkreis.de/Klimaschutzkonzept/PV-Initiative",
+          "category": "external"
+        },
+        {
+          "text": "Klimaschutzkonzept",
+          "url": "https://www.loerrach-landkreis.de/Klimaschutzkonzept",
+          "category": "external"
+        },
+        {
+          "text": "European Energy Award",
+          "url": "https://www.loerrach-landkreis.de/eea",
+          "category": "external"
+        },
+        {
+          "text": "Erneuerbare Energien",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Klimaschutzkonzept/Meilensteine",
+          "category": "external"
+        },
+        {
+          "text": "Tourismus, Freizeit & Kultur",
+          "url": "https://www.loerrach-landkreis.de/tourismus",
+          "category": "external"
+        },
+        {
+          "text": "Microcamping",
+          "url": "https://www.loerrach-landkreis.de/microcamping",
+          "category": "external"
+        },
+        {
+          "text": "Landschaft & Natur",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Landschaft-Natur",
+          "category": "external"
+        },
+        {
+          "text": "Museen, Kultur & Architektur",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Museen-Kultur-Architektur",
+          "category": "external"
+        },
+        {
+          "text": "Kleindenkmale",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Kleindenkmale",
+          "category": "external"
+        },
+        {
+          "text": "Sport & Freizeit",
+          "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Sport-Freizeit",
+          "category": "external"
+        },
+        {
+          "text": "Bürger-GeoPortal",
+          "url": "https://www.loerrach-landkreis.de/geoportal",
+          "category": "external"
+        },
+        {
+          "text": "Service & Verwaltung",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung",
+          "category": "external"
+        },
+        {
+          "text": "Bürgerservice",
+          "url": "https://www.loerrach-landkreis.de/buergerservice",
+          "category": "external"
+        },
+        {
+          "text": "Formulare",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Formulare",
+          "category": "external"
+        },
+        {
+          "text": "Fachbereiche",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche",
+          "category": "external"
+        },
+        {
+          "text": "Landratsamt",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt",
+          "category": "external"
+        },
+        {
+          "text": "Öffnungszeiten",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/oeffnungszeiten",
+          "category": "external"
+        },
+        {
+          "text": "Landrätin",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Landraetin",
+          "category": "external"
+        },
+        {
+          "text": "Mitarbeiter A-Z",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Mitarbeiter-A-Z",
+          "category": "external"
+        },
+        {
+          "text": "Organisationsübersicht",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Organisationsuebersicht",
+          "category": "external"
+        },
+        {
+          "text": "Ausschreibungen",
+          "url": "https://www.loerrach-landkreis.de/ausschreibung",
+          "category": "external"
+        },
+        {
+          "text": "Öffentliche Bekanntmachungen",
+          "url": "https://www.loerrach-landkreis.de/oeffentliche_bekanntmachungen",
+          "category": "external"
+        },
+        {
+          "text": "Katastrophenschutz",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Katastrophenschutz",
+          "category": "external"
+        },
+        {
+          "text": "Hinweisgeberschutz",
+          "url": "https://www.loerrach-landkreis.de/Hinweisgeberschutz",
+          "category": "external"
+        },
+        {
+          "text": "Abfallwirtschaft",
+          "url": "http://www.abfallwirtschaft-loerrach-landkreis.de/",
+          "category": "external"
+        },
+        {
+          "text": "Kfz-Zulassung",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Kfz-Zulassung",
+          "category": "external"
+        },
+        {
+          "text": "Presse",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Presse",
+          "category": "external"
+        },
+        {
+          "text": "Aktuelles",
+          "url": "https://www.loerrach-landkreis.de/aktuelles",
+          "category": "external"
+        },
+        {
+          "text": "Jobs & Karriere",
+          "url": "https://www.loerrach-landkreis.de/Jobs-Karriere",
+          "category": "external"
+        },
+        {
+          "text": "Ausbildung",
+          "url": "https://www.loerrach-landkreis.de/ausbildung",
+          "category": "external"
+        },
+        {
+          "text": "B.A. Soziale Arbeit",
+          "url": "https://www.loerrach-landkreis.de/ausbildung/B.A.Soziale-Arbeit",
+          "category": "external"
+        },
+        {
+          "text": "B.A. Public Management",
+          "url": "https://www.loerrach-landkreis.de/ausbildung/B.A.Public-Management",
+          "category": "external"
+        },
+        {
+          "text": "Straßenwärter/in",
+          "url": "https://www.loerrach-landkreis.de/ausbildung/Strassenwaerter",
+          "category": "external"
+        },
+        {
+          "text": "Vermessungstechniker/in",
+          "url": "https://www.loerrach-landkreis.de/ausbildung/Vermessungstechnik",
+          "category": "external"
+        },
+        {
+          "text": "Verwaltungsfachangestellte/r",
+          "url": "https://www.loerrach-landkreis.de/ausbildung/Verwaltungsfachangestellte",
+          "category": "external"
+        },
+        {
+          "text": "Jobcenter",
+          "url": "https://jobcenter-landkreis-loerrach.de/",
+          "category": "external"
+        },
+        {
+          "text": "Wahlen",
+          "url": "https://www.loerrach-landkreis.de/Wahlen",
+          "category": "external"
+        },
+        {
+          "text": "Landtagswahl",
+          "url": "https://www.loerrach-landkreis.de/Landtagswahl",
+          "category": "external"
+        },
+        {
+          "text": "Bundestagswahl",
+          "url": "https://www.loerrach-landkreis.de/Bundestagswahl",
+          "category": "external"
+        },
+        {
+          "text": "Europawahl",
+          "url": "https://www.loerrach-landkreis.de/Europawahl",
+          "category": "external"
+        },
+        {
+          "text": "Kreistagswahl",
+          "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Wahlen/Kreistagswahl",
+          "category": "external"
+        },
+        {
+          "text": "Politik & Ziele",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele",
+          "category": "external"
+        },
+        {
+          "text": "Landrätin",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Landraetin",
+          "category": "external"
+        },
+        {
+          "text": "Kreistag",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag",
+          "category": "external"
+        },
+        {
+          "text": "Fraktionen",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Fraktionen",
+          "category": "external"
+        },
+        {
+          "text": "Ratsinformationssystem",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Ratsinformationssystem",
+          "category": "external"
+        },
+        {
+          "text": "Kreisrecht",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Kreisrecht",
+          "category": "external"
+        },
+        {
+          "text": "Kreistagswahl",
+          "url": "https://www.loerrach-landkreis.de/Kreistagswahl",
+          "category": "external"
+        },
+        {
+          "text": "Nachrufe",
+          "url": "https://www.loerrach-landkreis.de/nachrufe",
+          "category": "external"
+        },
+        {
+          "text": "Kreispolitik",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik",
+          "category": "external"
+        },
+        {
+          "text": "Zukunftsstrategie 2035",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie-2035",
+          "category": "external"
+        },
+        {
+          "text": "Strategische Steuerung",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie-2035/Strategische-Steuerung",
+          "category": "external"
+        },
+        {
+          "text": "Strategische Schwerpunkte",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie",
+          "category": "external"
+        },
+        {
+          "text": "Kreishaushalt",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Kreishaushalt",
+          "category": "external"
+        },
+        {
+          "text": "Zentralklinikum",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Klinik",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Bürgerengagement",
+          "url": "https://www.loerrach-landkreis.de/be",
+          "category": "external"
+        },
+        {
+          "text": "Aktuelles BE",
+          "url": "https://www.loerrach-landkreis.de/be/aktuelles",
+          "category": "external"
+        },
+        {
+          "text": "Projektmittelförderung",
+          "url": "https://www.loerrach-landkreis.de/be/pmf",
+          "category": "external"
+        },
+        {
+          "text": "Projektfoerderungen",
+          "url": "https://www.loerrach-landkreis.de/be/Projektfoerderungen",
+          "category": "external"
+        },
+        {
+          "text": "Fördermöglichkeiten Bürgerengagement",
+          "url": "https://www.loerrach-landkreis.de/be/Foerdermoeglichkeiten",
+          "category": "external"
+        },
+        {
+          "text": "Projekt- und Mitmach-Börse",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Projekt-und-Mitmachboerse",
+          "category": "external"
+        },
+        {
+          "text": "Fotogalerie",
+          "url": "https://www.loerrach-landkreis.de/be/fotogalerie",
+          "category": "external"
+        },
+        {
+          "text": "Grundsätze für das Bürgerengagement",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Buergerengagement/Grundsaetze-fuer-das-Buergerengagement",
+          "category": "external"
+        },
+        {
+          "text": "Partnerlandkreise",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften",
+          "category": "external"
+        },
+        {
+          "text": "Lubliniec",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften/Lublini",
+          "category": "external"
+        },
+        {
+          "text": "Zwickau",
+          "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften/Zwickau",
+          "category": "external"
+        },
+        {
+          "text": "Beratung & Angebote",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Jugend & Familie",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Kinder- und Jugendschutz",
+          "url": "https://www.loerrach-landkreis.de/kinderschutz",
+          "category": "external"
+        },
+        {
+          "text": "Sozialpädagogische Familienhilfe",
+          "url": "https://www.loerrach-landkreis.de/familienhilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Kita Plus",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Kita-Plus",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Kinderbetreuung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Bildung,Betreuung-und-Erziehung/Kinderbetreuung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Pflege- und Adoptivkinderdienst",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Pflege-und-Adoptivkinderdienst",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Alle dabei!",
+          "url": "https://www.loerrach-landkreis.de/alle-dabei",
+          "category": "external"
+        },
+        {
+          "text": "Alle dabei! Info für Eltern",
+          "url": "https://www.loerrach-landkreis.de/praeventionslotsen",
+          "category": "external"
+        },
+        {
+          "text": "Frühe Hilfen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Was wir bieten",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/-Was-wir-bieten",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Über uns",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/ueber-uns-",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Teams und Anmeldung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/Teams-und-Anmeldung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "HalLÖchen",
+          "url": "https://www.loerrach-landkreis.de/HalLOEchen",
+          "category": "external"
+        },
+        {
+          "text": "Gruppen und Kurse",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/Gruppen-und-Kurse",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Psychologische Beratungsstelle",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Was wir bieten",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Psychologische-Beratungsstelle-Unser-Beratungsangebot",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Über uns",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Unser-Team",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Gruppen und Kurse",
+          "url": "https://www.loerrach-landkreis.de/pbkurse",
+          "category": "external"
+        },
+        {
+          "text": "Teams und Anmeldung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Kontakt-und-Anmeldung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Beratung zum Thema sexueller Missbrauch",
+          "url": "https://www.loerrach-landkreis.de/beratung_bei_missbrauch",
+          "category": "external"
+        },
+        {
+          "text": "Familienbesuche",
+          "url": "https://www.loerrach-landkreis.de/familienbesuche",
+          "category": "external"
+        },
+        {
+          "text": "Kreisjugendreferat",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Jugendagenturen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Soziale Beratung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Teilhabeberatung (EUTB)",
+          "url": "http://www.fritz-berger-stiftung.de/beratungsstelle-eutb.html",
+          "category": "external"
+        },
+        {
+          "text": "Sozialatlas",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Sozialatlas",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Platzbörse",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Platzboerse",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Behindertenwegweiser",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Behindertenwegweiser",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Schwangerenberatung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Schwangerenkonfliktberatung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Für den Notfall",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Fuer-den-Notfall",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Angebote zur Unterstützung im Alltag",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Angebote-zur-Unterstuetzung-im-Alltag",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Gesundheit",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Kliniken des Landkreises Lörrach",
+          "url": "http://www.klinloe.de/",
+          "category": "external"
+        },
+        {
+          "text": "Selbsthilfe KISS",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Selbsthilfeangebote",
+          "url": "https://www.loerrach-landkreis.de/selbsthilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Aktuelle Neugründungen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Aktuelle-Neugruendungen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Neugründung von Selbsthilfgruppen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Neugruendung-von-Selbsthilfgruppen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Junge Selbsthilfe",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Junge-Selbsthilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Forum Selbsthilfe Kreis Lörrach",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Forum-Selbsthilfe-Kreis-Loerrach",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Fort- und Weiterbildung Selbsthilfegruppen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Fort-und-Weiterbildung-Selbsthilfegruppen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Ernährung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Ernaehrung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Infektionsschutz",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Gesundheitsschutz",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Meldepflicht nach § 20 IfSG",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Gesundheitsschutz/Meldepflicht-nach-20-IfSG",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Hygieneschulung",
+          "url": "https://www.loerrach-landkreis.de/hygieneschulung",
+          "category": "external"
+        },
+        {
+          "text": "STI-Beratung",
+          "url": "https://www.loerrach-landkreis.de/STI-Beratung",
+          "category": "external"
+        },
+        {
+          "text": "P-Beratung",
+          "url": "https://www.loerrach-landkreis.de/P-Beratung",
+          "category": "external"
+        },
+        {
+          "text": "Schwangerenberatung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Schwangerenberatung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Generation 50+",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Älter werden heute",
+          "url": "https://www.loerrach-landkreis.de/altenarbeit",
+          "category": "external"
+        },
+        {
+          "text": "Heime & soziale Einrichtungen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Alten-und-Pflegeheime-des-Landkreises-Loerrach",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Fragen & Antworten zum geplanten Markus-Pflüger-Ze",
+          "url": "https://www.loerrach-landkreis.de/MPH",
+          "category": "external"
+        },
+        {
+          "text": "Ambulanter Pflegedienst",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Mobiler-Pflegedienst-des-Landkreises-Loerrach",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Weitere Pflegeeinrichtungen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Weitere-Pflegeeinrichtungen-im-Landkreis",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Pflegestützpunkt",
+          "url": "https://www.loerrach-landkreis.de/PSP",
+          "category": "external"
+        },
+        {
+          "text": "So können wir Ihnen helfen",
+          "url": "https://www.loerrach-landkreis.de/PSP/So-koennen-wir-helfen",
+          "category": "external"
+        },
+        {
+          "text": "Unser Team",
+          "url": "https://www.loerrach-landkreis.de/PSP/Team",
+          "category": "external"
+        },
+        {
+          "text": "Weitere Beratungsangebote",
+          "url": "https://www.loerrach-landkreis.de/PSP/Beratungsangebote",
+          "category": "external"
+        },
+        {
+          "text": "PSP Standorte und Öffnungszeiten",
+          "url": "https://www.loerrach-landkreis.de/PSP/Standorte",
+          "category": "external"
+        },
+        {
+          "text": "Die schnelle Hilfe",
+          "url": "https://www.loerrach-landkreis.de/PSP/Die-schnelle-Hilfe",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Träger der Einrichtung",
+          "url": "https://www.loerrach-landkreis.de/PSP/Traeger-der-Einrichtung",
+          "category": "external"
+        },
+        {
+          "text": "ipunkt der Fritz-Berger-Stiftung",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Häufig nachgefragte Adressen",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Haeufig-nachgefragte-Adressen",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Träger des ipunkt",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Traeger-des-ipunkt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Ihre Meinung ist uns wichtig",
+          "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Ihre-Meinung-ist-uns-wichtig",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Bevölkerungsschutz",
+          "url": "https://www.loerrach-landkreis.de/de/Bevoelkerungsschutz",
+          "category": "external"
+        },
+        {
+          "text": "Nachrufe",
+          "url": "https://www.loerrach-landkreis.de/de/Nachrufe",
+          "category": "external"
+        },
+        {
+          "text": "Zum Inhalt",
+          "url": "http://loerrach-landkreis.de/#madChickCss_middleClaim",
+          "category": "navigation"
+        },
+        {
+          "text": "Diese Maßnahmen gelten jetzt",
+          "url": "https://www.loerrach-landkreis.de/japankaefer",
+          "category": "external"
+        },
+        {
+          "text": "FREUND entdecken",
+          "url": "https://www.loerrach-landkreis.de/freund",
+          "category": "external"
+        },
+        {
+          "text": "Mehr Infos",
+          "url": "https://www.loerrach-landkreis.de/loego",
+          "category": "external"
+        },
+        {
+          "text": "Mehr Infos",
+          "url": "https://www.loerrach-landkreis.de/HalLOEchen",
+          "category": "external"
+        },
+        {
+          "text": "Jobs & Karriere",
+          "url": "https://www.loerrach-landkreis.de/karriere",
+          "category": "external"
+        },
+        {
+          "text": "Online-Services",
+          "url": "https://www.loerrach-landkreis.de/online-services",
+          "category": "external"
+        },
+        {
+          "text": "KFZ & Führerschein",
+          "url": "https://www.loerrach-landkreis.de/zulassung-fuehrerschein",
+          "category": "external"
+        },
+        {
+          "text": "Öffentliche Bekanntmachungen",
+          "url": "https://www.loerrach-landkreis.de/bekanntmachungen",
+          "category": "external"
+        },
+        {
+          "text": "Kreistag Online",
+          "url": "https://www.loerrach-landkreis.de/buergerinfo",
+          "category": "external"
+        },
+        {
+          "text": "Veranstaltungen",
+          "url": "https://www.loerrach-landkreis.de/veranstaltungen",
+          "category": "external"
+        },
+        {
+          "text": "Geoportal",
+          "url": "https://www.loerrach-landkreis.de/geoportal",
+          "category": "external"
+        },
+        {
+          "text": "Sitzung des Jugendhilfeausschusses am Mittwoch, 17. September",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7647",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "B 317 / Zell im Wiesental: Halbseitige Sperrung wegen Sanierungsarbeiten",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7645",
+          "category": "external"
+        },
+        {
+          "text": "Schutz für Wachtelkönig im Mattfeld abgeschlossen",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7646",
+          "category": "external"
+        },
+        {
+          "text": "Kfz-Zulassungsstelle in Schopfheim: Eingeschränkter Service vom 15. bis 26. September",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7643",
+          "category": "external"
+        },
+        {
+          "text": "K 6336 / Schopfheim-Wiechs: Verlängerung der Vollsperrung bis 19. September",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7642",
+          "category": "external"
+        },
+        {
+          "text": "Weitere Nachrichten",
+          "url": "http://loerrach-landkreis.de/aktuelles",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mehr Infos",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7594",
+          "category": "external"
+        },
+        {
+          "text": "Mehr Infos",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7643",
+          "category": "external"
+        },
+        {
+          "text": "Mehr Infos",
+          "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7608",
+          "category": "external"
+        },
+        {
+          "text": "mail(at)loerrach-landkreis.de",
+          "url": "http://loerrach-landkreis.de/#",
+          "category": "navigation"
+        },
+        {
+          "text": "Kontakt",
+          "url": "http://loerrach-landkreis.de/kontakt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Lage & Anfahrt",
+          "url": "http://loerrach-landkreis.de/anfahrt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sitemap",
+          "url": "http://loerrach-landkreis.de/sitemap",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Impressum",
+          "url": "http://loerrach-landkreis.de/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "http://loerrach-landkreis.de/datenschutz",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "http://loerrach-landkreis.de/#",
+          "category": "navigation"
+        },
+        {
+          "text": "Tastatursteuerung & Schriftgröße",
+          "url": "http://loerrach-landkreis.de/tastatursteuerung",
+          "category": "content_internal"
+        },
+        {
+          "text": "Erklärung zur Barrierefreiheit",
+          "url": "http://loerrach-landkreis.de/barrierefreiheit",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Videos in Gebärdensprache",
+          "url": "http://loerrach-landkreis.de/gebaerdensprache",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Text in Leichter Sprache",
+          "url": "http://loerrach-landkreis.de/leichte-sprache",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fehler melden",
+          "url": "http://loerrach-landkreis.de/fehler-melden",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Zur Navigation springen",
+            "url": "http://loerrach-landkreis.de/#oC-trigger",
+            "category": "navigation"
+          },
+          {
+            "text": "Zum Inhalt springen",
+            "url": "http://loerrach-landkreis.de/#content",
+            "category": "navigation"
+          },
+          {
+            "text": "Zum Inhalt",
+            "url": "http://loerrach-landkreis.de/#madChickCss_middleClaim",
+            "category": "navigation"
+          },
+          {
+            "text": "mail(at)loerrach-landkreis.de",
+            "url": "http://loerrach-landkreis.de/#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "Zentralklinikum",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Klinik",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Beratung & Angebote",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Jugend & Familie",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Sozialpädagogische Familienhilfe",
+            "url": "https://www.loerrach-landkreis.de/familienhilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kita Plus",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Kita-Plus",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kinderbetreuung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Bildung,Betreuung-und-Erziehung/Kinderbetreuung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Pflege- und Adoptivkinderdienst",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Pflege-und-Adoptivkinderdienst",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Frühe Hilfen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Was wir bieten",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/-Was-wir-bieten",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Über uns",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/ueber-uns-",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Teams und Anmeldung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/Teams-und-Anmeldung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Gruppen und Kurse",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Fruehe-Hilfen/Gruppen-und-Kurse",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Psychologische Beratungsstelle",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Was wir bieten",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Psychologische-Beratungsstelle-Unser-Beratungsangebot",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Über uns",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Unser-Team",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Teams und Anmeldung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Psychologische-Beratungsstelle/Kontakt-und-Anmeldung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kreisjugendreferat",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Jugendagenturen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Soziale Beratung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Sozialatlas",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Sozialatlas",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Platzbörse",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Platzboerse",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Behindertenwegweiser",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Behindertenwegweiser",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Schwangerenberatung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Schwangerenkonfliktberatung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Für den Notfall",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Fuer-den-Notfall",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Angebote zur Unterstützung im Alltag",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Soziale-Beratung/Angebote-zur-Unterstuetzung-im-Alltag",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Gesundheit",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Selbsthilfe KISS",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Selbsthilfeangebote",
+            "url": "https://www.loerrach-landkreis.de/selbsthilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Aktuelle Neugründungen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Aktuelle-Neugruendungen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Neugründung von Selbsthilfgruppen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Neugruendung-von-Selbsthilfgruppen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Junge Selbsthilfe",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Junge-Selbsthilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Forum Selbsthilfe Kreis Lörrach",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Forum-Selbsthilfe-Kreis-Loerrach",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Fort- und Weiterbildung Selbsthilfegruppen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Beratung/Selbsthilfe/Fort-und-Weiterbildung-Selbsthilfegruppen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Ernährung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Ernaehrung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Infektionsschutz",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Gesundheitsschutz",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Meldepflicht nach § 20 IfSG",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Gesundheitsschutz/Meldepflicht-nach-20-IfSG",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Schwangerenberatung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/Gesundheit/Schwangerenberatung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Generation 50+",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Heime & soziale Einrichtungen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Alten-und-Pflegeheime-des-Landkreises-Loerrach",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Ambulanter Pflegedienst",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Mobiler-Pflegedienst-des-Landkreises-Loerrach",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Weitere Pflegeeinrichtungen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/Weitere-Pflegeeinrichtungen-im-Landkreis",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Die schnelle Hilfe",
+            "url": "https://www.loerrach-landkreis.de/PSP/Die-schnelle-Hilfe",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "ipunkt der Fritz-Berger-Stiftung",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Häufig nachgefragte Adressen",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Haeufig-nachgefragte-Adressen",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Träger des ipunkt",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Traeger-des-ipunkt",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Ihre Meinung ist uns wichtig",
+            "url": "https://www.loerrach-landkreis.de/de/Rat-Hilfe/aelter-werden-heute/i-Punkt-der-Fritz-Berger-Stiftung/Ihre-Meinung-ist-uns-wichtig",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Sitzung des Jugendhilfeausschusses am Mittwoch, 17. September",
+            "url": "https://www.loerrach-landkreis.de/aktuell?view=publish&item=article&id=7647",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kontakt",
+            "url": "http://loerrach-landkreis.de/kontakt",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Sitemap",
+            "url": "http://loerrach-landkreis.de/sitemap",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "http://loerrach-landkreis.de/impressum",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "http://loerrach-landkreis.de/datenschutz",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Erklärung zur Barrierefreiheit",
+            "url": "http://loerrach-landkreis.de/barrierefreiheit",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Videos in Gebärdensprache",
+            "url": "http://loerrach-landkreis.de/gebaerdensprache",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Weitere Nachrichten",
+            "url": "http://loerrach-landkreis.de/aktuelles",
+            "category": "content_internal"
+          },
+          {
+            "text": "Lage & Anfahrt",
+            "url": "http://loerrach-landkreis.de/anfahrt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Tastatursteuerung & Schriftgröße",
+            "url": "http://loerrach-landkreis.de/tastatursteuerung",
+            "category": "content_internal"
+          },
+          {
+            "text": "Text in Leichter Sprache",
+            "url": "http://loerrach-landkreis.de/leichte-sprache",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fehler melden",
+            "url": "http://loerrach-landkreis.de/fehler-melden",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Leben im Landkreis",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis",
+            "category": "external"
+          },
+          {
+            "text": "Landkreis-Broschüre",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Landkreis-Broschuere",
+            "category": "external"
+          },
+          {
+            "text": "Dreiländereck",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Dreilaendereck",
+            "category": "external"
+          },
+          {
+            "text": "Grenzüberschreitende Zusammenarbeit",
+            "url": "https://www.loerrach-landkreis.de/Grenzueberschreitende-Zusammenarbeit",
+            "category": "external"
+          },
+          {
+            "text": "Infobest Palmrain",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Dreilaendereck/Infobest-Palmrain",
+            "category": "external"
+          },
+          {
+            "text": "Städte & Gemeinden",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden",
+            "category": "external"
+          },
+          {
+            "text": "Übersicht Städte & Gemeinden",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Staedte-Gemeinden",
+            "category": "external"
+          },
+          {
+            "text": "Zahlen, Daten und Fakten",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Zahlen,-Daten-Fakten",
+            "category": "external"
+          },
+          {
+            "text": "Geschichte",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Staedte-Gemeinden/Geschichte",
+            "category": "external"
+          },
+          {
+            "text": "Landkreis-Jubiläum",
+            "url": "https://www.loerrach-landkreis.de/50jahre",
+            "category": "external"
+          },
+          {
+            "text": "Wappen",
+            "url": "https://www.loerrach-landkreis.de/50jahre/50Jahre_Wappen",
+            "category": "external"
+          },
+          {
+            "text": "Bildergalerie",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Bildergalerie",
+            "category": "external"
+          },
+          {
+            "text": "Kreisreform",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Kreisreform",
+            "category": "external"
+          },
+          {
+            "text": "Events & Aktuelles",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Veranstaltungen",
+            "category": "external"
+          },
+          {
+            "text": "Landräte",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Landraete",
+            "category": "external"
+          },
+          {
+            "text": "Geschichte",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Geschichte",
+            "category": "external"
+          },
+          {
+            "text": "Gemeinden stellen sich vor",
+            "url": "https://www.loerrach-landkreis.de/50jahre/Gemeinden-stellen-sich-vor",
+            "category": "external"
+          },
+          {
+            "text": "Wirtschaft & Strukturpolitik",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft",
+            "category": "external"
+          },
+          {
+            "text": "Wirtschaftsförderung",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Wirschaftsfoerderung-WSW",
+            "category": "external"
+          },
+          {
+            "text": "Fachkräfteallianz",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Wirschaftsfoerderung-WSW/Fachkraefteallianz",
+            "category": "external"
+          },
+          {
+            "text": "Breitbandversorgung",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung",
+            "category": "external"
+          },
+          {
+            "text": "Ausbaustand Ortsnetze",
+            "url": "https://www.loerrach-landkreis.de/breitband",
+            "category": "external"
+          },
+          {
+            "text": "Glasfaserausbau Wittlingen",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Glasfaserausbau-Wittlingen",
+            "category": "external"
+          },
+          {
+            "text": "Netzbetrieb und Diensteangebot",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Netzbetrieb-und-Diensteangebot",
+            "category": "external"
+          },
+          {
+            "text": "Aktuelles",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Aktuelles",
+            "category": "external"
+          },
+          {
+            "text": "Arbeiten beim Zweckverband",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Arbeiten-beim-Zweckverband",
+            "category": "external"
+          },
+          {
+            "text": "Rechenzentrum für den Landkreis Lörrach",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Rechenzentrum-fuer-den-Landkreis-Loerrach",
+            "category": "external"
+          },
+          {
+            "text": "Innenhausverkabelung für Mehrfamilienhäuser",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Breitbandversorgung/Inhausverkabelung-fuer-Mehrfamilienhaeuser",
+            "category": "external"
+          },
+          {
+            "text": "Förderprogramme",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Foerderprogramme",
+            "category": "external"
+          },
+          {
+            "text": "Raumplanung",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Raumplanung",
+            "category": "external"
+          },
+          {
+            "text": "Bildung",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Bildung",
+            "category": "external"
+          },
+          {
+            "text": "Berufliche Schulen",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen",
+            "category": "external"
+          },
+          {
+            "text": "Gewerbeschule Lörrach",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gsl",
+            "category": "external"
+          },
+          {
+            "text": "Gewerbeschule Rheinfelden",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gsr",
+            "category": "external"
+          },
+          {
+            "text": "Gewerbeschule Schopfheim",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-gss",
+            "category": "external"
+          },
+          {
+            "text": "Kaufmännische Schule Lörrach",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-ksl",
+            "category": "external"
+          },
+          {
+            "text": "Kaufmännische Schule Schopfheim",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-kss",
+            "category": "external"
+          },
+          {
+            "text": "Mathilde-Planck-Schule Lörrach",
+            "url": "https://www.loerrach-landkreis.de/berufliche-schulen-mps",
+            "category": "external"
+          },
+          {
+            "text": "Kreismedienzentrum",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Bildung/Kreismedienzentrum",
+            "category": "external"
+          },
+          {
+            "text": "Mobilität",
+            "url": "https://www.loerrach-landkreis.de/mobilitaet",
+            "category": "external"
+          },
+          {
+            "text": "Bus & Bahn",
+            "url": "https://www.loerrach-landkreis.de/bus-bahn",
+            "category": "external"
+          },
+          {
+            "text": "LÖGO",
+            "url": "https://www.loerrach-landkreis.de/loego",
+            "category": "external"
+          },
+          {
+            "text": "Buslinie Freund",
+            "url": "https://www.loerrach-landkreis.de/freund",
+            "category": "external"
+          },
+          {
+            "text": "Nahverkehrskonferenz",
+            "url": "https://www.loerrach-landkreis.de/nahverkehrskonferenz",
+            "category": "external"
+          },
+          {
+            "text": "Radverkehr",
+            "url": "https://www.loerrach-landkreis.de/rad",
+            "category": "external"
+          },
+          {
+            "text": "Touristische Mobilität",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Touristische-Mobilitaet",
+            "category": "external"
+          },
+          {
+            "text": "Touristische Radrouten",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Touristische-Radrouten",
+            "category": "external"
+          },
+          {
+            "text": "Rad- und Wanderbusse",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Rad-und-Wanderbusse",
+            "category": "external"
+          },
+          {
+            "text": "Elektromobilität",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Wirtschaft/Elektromobilitaet",
+            "category": "external"
+          },
+          {
+            "text": "KOMO",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/mobilitaet/KOMO",
+            "category": "external"
+          },
+          {
+            "text": "Klimaschutz",
+            "url": "https://www.loerrach-landkreis.de/Klimaschutz",
+            "category": "external"
+          },
+          {
+            "text": "REGIONAL.KLIMASCHUTZ.MACHEN",
+            "url": "http://regional-klimaschutz-machen.de/",
+            "category": "external"
+          },
+          {
+            "text": "Klimaschutz-Reporting",
+            "url": "https://www.loerrach-landkreis.de/klimareporting",
+            "category": "external"
+          },
+          {
+            "text": "Wärmewende",
+            "url": "https://www.loerrach-landkreis.de/Klimaschutz/Waermewende",
+            "category": "external"
+          },
+          {
+            "text": "Klimawandelanpassung",
+            "url": "https://www.loerrach-landkreis.de/Klimaschutz/Klimawandelanpassung",
+            "category": "external"
+          },
+          {
+            "text": "PV-Initiative",
+            "url": "https://www.loerrach-landkreis.de/Klimaschutzkonzept/PV-Initiative",
+            "category": "external"
+          },
+          {
+            "text": "Klimaschutzkonzept",
+            "url": "https://www.loerrach-landkreis.de/Klimaschutzkonzept",
+            "category": "external"
+          },
+          {
+            "text": "European Energy Award",
+            "url": "https://www.loerrach-landkreis.de/eea",
+            "category": "external"
+          },
+          {
+            "text": "Erneuerbare Energien",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Klimaschutzkonzept/Meilensteine",
+            "category": "external"
+          },
+          {
+            "text": "Tourismus, Freizeit & Kultur",
+            "url": "https://www.loerrach-landkreis.de/tourismus",
+            "category": "external"
+          },
+          {
+            "text": "Microcamping",
+            "url": "https://www.loerrach-landkreis.de/microcamping",
+            "category": "external"
+          },
+          {
+            "text": "Landschaft & Natur",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Landschaft-Natur",
+            "category": "external"
+          },
+          {
+            "text": "Museen, Kultur & Architektur",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Museen-Kultur-Architektur",
+            "category": "external"
+          },
+          {
+            "text": "Kleindenkmale",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Kleindenkmale",
+            "category": "external"
+          },
+          {
+            "text": "Sport & Freizeit",
+            "url": "https://www.loerrach-landkreis.de/de/Leben-im-Landkreis/Tourismus-Freizeit-Kultur/Naherholung/Sport-Freizeit",
+            "category": "external"
+          },
+          {
+            "text": "Bürger-GeoPortal",
+            "url": "https://www.loerrach-landkreis.de/geoportal",
+            "category": "external"
+          },
+          {
+            "text": "Service & Verwaltung",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung",
+            "category": "external"
+          },
+          {
+            "text": "Bürgerservice",
+            "url": "https://www.loerrach-landkreis.de/buergerservice",
+            "category": "external"
+          },
+          {
+            "text": "Formulare",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Formulare",
+            "category": "external"
+          },
+          {
+            "text": "Fachbereiche",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Fachbereiche",
+            "category": "external"
+          },
+          {
+            "text": "Landratsamt",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt",
+            "category": "external"
+          },
+          {
+            "text": "Öffnungszeiten",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/oeffnungszeiten",
+            "category": "external"
+          },
+          {
+            "text": "Landrätin",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Landraetin",
+            "category": "external"
+          },
+          {
+            "text": "Mitarbeiter A-Z",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Mitarbeiter-A-Z",
+            "category": "external"
+          },
+          {
+            "text": "Organisationsübersicht",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Organisationsuebersicht",
+            "category": "external"
+          },
+          {
+            "text": "Ausschreibungen",
+            "url": "https://www.loerrach-landkreis.de/ausschreibung",
+            "category": "external"
+          },
+          {
+            "text": "Öffentliche Bekanntmachungen",
+            "url": "https://www.loerrach-landkreis.de/oeffentliche_bekanntmachungen",
+            "category": "external"
+          },
+          {
+            "text": "Katastrophenschutz",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Landratsamt/Katastrophenschutz",
+            "category": "external"
+          },
+          {
+            "text": "Hinweisgeberschutz",
+            "url": "https://www.loerrach-landkreis.de/Hinweisgeberschutz",
+            "category": "external"
+          },
+          {
+            "text": "Abfallwirtschaft",
+            "url": "http://www.abfallwirtschaft-loerrach-landkreis.de/",
+            "category": "external"
+          },
+          {
+            "text": "Kfz-Zulassung",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Kfz-Zulassung",
+            "category": "external"
+          },
+          {
+            "text": "Presse",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Presse",
+            "category": "external"
+          },
+          {
+            "text": "Aktuelles",
+            "url": "https://www.loerrach-landkreis.de/aktuelles",
+            "category": "external"
+          },
+          {
+            "text": "Jobs & Karriere",
+            "url": "https://www.loerrach-landkreis.de/Jobs-Karriere",
+            "category": "external"
+          },
+          {
+            "text": "Ausbildung",
+            "url": "https://www.loerrach-landkreis.de/ausbildung",
+            "category": "external"
+          },
+          {
+            "text": "B.A. Soziale Arbeit",
+            "url": "https://www.loerrach-landkreis.de/ausbildung/B.A.Soziale-Arbeit",
+            "category": "external"
+          },
+          {
+            "text": "B.A. Public Management",
+            "url": "https://www.loerrach-landkreis.de/ausbildung/B.A.Public-Management",
+            "category": "external"
+          },
+          {
+            "text": "Straßenwärter/in",
+            "url": "https://www.loerrach-landkreis.de/ausbildung/Strassenwaerter",
+            "category": "external"
+          },
+          {
+            "text": "Vermessungstechniker/in",
+            "url": "https://www.loerrach-landkreis.de/ausbildung/Vermessungstechnik",
+            "category": "external"
+          },
+          {
+            "text": "Verwaltungsfachangestellte/r",
+            "url": "https://www.loerrach-landkreis.de/ausbildung/Verwaltungsfachangestellte",
+            "category": "external"
+          },
+          {
+            "text": "Jobcenter",
+            "url": "https://jobcenter-landkreis-loerrach.de/",
+            "category": "external"
+          },
+          {
+            "text": "Wahlen",
+            "url": "https://www.loerrach-landkreis.de/Wahlen",
+            "category": "external"
+          },
+          {
+            "text": "Landtagswahl",
+            "url": "https://www.loerrach-landkreis.de/Landtagswahl",
+            "category": "external"
+          },
+          {
+            "text": "Bundestagswahl",
+            "url": "https://www.loerrach-landkreis.de/Bundestagswahl",
+            "category": "external"
+          },
+          {
+            "text": "Europawahl",
+            "url": "https://www.loerrach-landkreis.de/Europawahl",
+            "category": "external"
+          },
+          {
+            "text": "Kreistagswahl",
+            "url": "https://www.loerrach-landkreis.de/de/Service-Verwaltung/Wahlen/Kreistagswahl",
+            "category": "external"
+          },
+          {
+            "text": "Politik & Ziele",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele",
+            "category": "external"
+          },
+          {
+            "text": "Landrätin",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Landraetin",
+            "category": "external"
+          },
+          {
+            "text": "Kreistag",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag",
+            "category": "external"
+          },
+          {
+            "text": "Fraktionen",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Fraktionen",
+            "category": "external"
+          },
+          {
+            "text": "Ratsinformationssystem",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Ratsinformationssystem",
+            "category": "external"
+          },
+          {
+            "text": "Kreisrecht",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreistag/Kreisrecht",
+            "category": "external"
+          },
+          {
+            "text": "Kreistagswahl",
+            "url": "https://www.loerrach-landkreis.de/Kreistagswahl",
+            "category": "external"
+          },
+          {
+            "text": "Nachrufe",
+            "url": "https://www.loerrach-landkreis.de/nachrufe",
+            "category": "external"
+          },
+          {
+            "text": "Kreispolitik",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik",
+            "category": "external"
+          },
+          {
+            "text": "Zukunftsstrategie 2035",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie-2035",
+            "category": "external"
+          },
+          {
+            "text": "Strategische Steuerung",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie-2035/Strategische-Steuerung",
+            "category": "external"
+          },
+          {
+            "text": "Strategische Schwerpunkte",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Zukunftsstrategie",
+            "category": "external"
+          },
+          {
+            "text": "Kreishaushalt",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Kreispolitik/Kreishaushalt",
+            "category": "external"
+          },
+          {
+            "text": "Bürgerengagement",
+            "url": "https://www.loerrach-landkreis.de/be",
+            "category": "external"
+          },
+          {
+            "text": "Aktuelles BE",
+            "url": "https://www.loerrach-landkreis.de/be/aktuelles",
+            "category": "external"
+          },
+          {
+            "text": "Projektmittelförderung",
+            "url": "https://www.loerrach-landkreis.de/be/pmf",
+            "category": "external"
+          },
+          {
+            "text": "Projektfoerderungen",
+            "url": "https://www.loerrach-landkreis.de/be/Projektfoerderungen",
+            "category": "external"
+          },
+          {
+            "text": "Fördermöglichkeiten Bürgerengagement",
+            "url": "https://www.loerrach-landkreis.de/be/Foerdermoeglichkeiten",
+            "category": "external"
+          },
+          {
+            "text": "Projekt- und Mitmach-Börse",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Projekt-und-Mitmachboerse",
+            "category": "external"
+          },
+          {
+            "text": "Fotogalerie",
+            "url": "https://www.loerrach-landkreis.de/be/fotogalerie",
+            "category": "external"
+          },
+          {
+            "text": "Grundsätze für das Bürgerengagement",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Buergerengagement/Grundsaetze-fuer-das-Buergerengagement",
+            "category": "external"
+          },
+          {
+            "text": "Partnerlandkreise",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften",
+            "category": "external"
+          },
+          {
+            "text": "Lubliniec",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften/Lublini",
+            "category": "external"
+          },
+          {
+            "text": "Zwickau",
+            "url": "https://www.loerrach-landkreis.de/de/Politik-Ziele/Partnerschaften/Zwickau",
+            "category": "external"
+          },
+          {
+            "text": "Kinder- und Jugendschutz",
+            "url": "https://www.loerrach-landkreis.de/kinderschutz",
+            "category": "external"
+          },
+          {
+            "text": "Alle dabei!",
+            "url": "https://www.loerrach-landkreis.de/alle-dabei",
+            "category": "external"
+          },
+          {
+            "text": "Alle dabei! Info für Eltern",
+            "url": "https://www.loerrach-landkreis.de/praeventionslotsen",
+            "category": "external"
+          },
+          {
+            "text": "HalLÖchen",
+            "url": "https://www.loerrach-landkreis.de/HalLOEchen",
+            "category": "external"
+          },
+          {
+            "text": "Gruppen und Kurse",
+            "url": "https://www.loerrach-landkreis.de/pbkurse",
+            "category": "external"
+          },
+          {
+            "text": "Beratung zum Thema sexueller Missbrauch",
+            "url": "https://www.loerrach-landkreis.de/beratung_bei_missbrauch",
+            "category": "external"
+          },
+          {
+            "text": "Familienbesuche",
+            "url": "https://www.loerrach-landkreis.de/familienbesuche",
+            "category": "external"
+          },
+          {
+            "text": "Teilhabeberatung (EUTB)",
+            "url": "http://www.fritz-berger-stiftung.de/beratungsstelle-eutb.html",
+            "category": "external"
+          },
+          {
+            "text": "Kliniken des Landkreises Lörrach",
+            "url": "http://www.klinloe.de/",
+            "category": "external"
+          },
+          {
+            "text": "Hygieneschulung",
+            "url": "https://www.loerrach-landkreis.de/hygieneschulung",
+            "category": "external"
+          },
+          {
+            "text": "STI-Beratung",
+            "url": "https://www.loerrach-landkreis.de/STI-Beratung",
+            "category": "external"
+          },
+          {
+            "text": "P-Beratung",
+            "url": "https://www.loerrach-landkreis.de/P-Beratung",
+            "category": "external"
+          },
+          {
+            "text": "Älter werden heute",
+            "url": "https://www.loerrach-landkreis.de/altenarbeit",
+            "category": "external"
+          },
+          {
+            "text": "Fragen & Antworten zum geplanten Markus-Pflüger-Ze",
+            "url": "https://www.loerrach-landkreis.de/MPH",
+            "category": "external"
+          },
+          {
+            "text": "Pflegestützpunkt",
+            "url": "https://www.loerrach-landkreis.de/PSP",
+            "category": "external"
+          },
+          {
+            "text": "So können wir Ihnen helfen",
+            "url": "https://www.loerrach-landkreis.de/PSP/So-koennen-wir-helfen",
+            "category": "external"
+          },
+          {
+            "text": "Unser Team",
+            "url": "https://www.loerrach-landkreis.de/PSP/Team",
+            "category": "external"
+          },
+          {
+            "text": "Weitere Beratungsangebote",
+            "url": "https://www.loerrach-landkreis.de/PSP/Beratungsangebote",
+            "category": "external"
+          },
+          {
+            "text": "PSP Standorte und Öffnungszeiten",
+            "url": "https://www.loerrach-landkreis.de/PSP/Standorte",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "http://loerrach-landkreis.de/aktuelles",
+        "http://loerrach-landkreis.de/anfahrt",
+        "http://loerrach-landkreis.de/tastatursteuerung",
+        "http://loerrach-landkreis.de/leichte-sprache",
+        "http://loerrach-landkreis.de/fehler-melden"
+      ],
+      "depth": 0,
+      "parent": null,
+      "children": [
+        "http://loerrach-landkreis.de/aktuelles",
+        "http://loerrach-landkreis.de/anfahrt",
+        "http://loerrach-landkreis.de/tastatursteuerung",
+        "http://loerrach-landkreis.de/leichte-sprache",
+        "http://loerrach-landkreis.de/fehler-melden"
+      ],
+      "is_relevant": true
+    }
+  },
+  "queue": [
+    {
+      "url": "http://loerrach-landkreis.de/anfahrt",
+      "depth": 1,
+      "parent": "http://loerrach-landkreis.de"
+    },
+    {
+      "url": "http://loerrach-landkreis.de/tastatursteuerung",
+      "depth": 1,
+      "parent": "http://loerrach-landkreis.de"
+    },
+    {
+      "url": "http://loerrach-landkreis.de/leichte-sprache",
+      "depth": 1,
+      "parent": "http://loerrach-landkreis.de"
+    },
+    {
+      "url": "http://loerrach-landkreis.de/fehler-melden",
+      "depth": 1,
+      "parent": "http://loerrach-landkreis.de"
+    }
+  ],
+  "pageCount": 2,
   "maxDepth": 2,
   "maxPages": 15,
   "startUrl": "http://loerrach-landkreis.de",
-  "lastUpdated": "2025-09-15T10:23:25.149Z",
+  "lastUpdated": "2025-09-15T10:23:26.289Z",
   "completed": false,
-  "currentUrl": "http://loerrach-landkreis.de",
+  "currentUrl": "http://loerrach-landkreis.de/aktuelles",
   "status": "crawling",
-  "pagesProcessedInBatch": 1,
+  "pagesProcessedInBatch": 2,
   "maxPagesThisBatch": 5,
-  "queueLength": 0,
+  "queueLength": 4,
   "batchComplete": false
 }
