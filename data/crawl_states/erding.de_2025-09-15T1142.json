@@ -1,0 +1,18 @@
+{
+  "jobId": "erding.de_2025-09-15T1142",
+  "visited": [
+    "https://erding.de"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 10,
+  "startUrl": "https://erding.de",
+  "lastUpdated": "2025-09-15T11:42:22.323Z",
+  "completed": false,
+  "currentUrl": "https://erding.de",
+  "status": "crawling",
+  "queueLength": 0,
+  "stopRequested": false
+}
