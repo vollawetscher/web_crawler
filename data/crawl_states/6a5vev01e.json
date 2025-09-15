@@ -1,0 +1,20 @@
+{
+  "jobId": "6a5vev01e",
+  "visited": [
+    "https://stadt-ulm.de"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 15,
+  "startUrl": "https://stadt-ulm.de",
+  "lastUpdated": "2025-09-15T10:32:23.653Z",
+  "completed": false,
+  "currentUrl": "https://stadt-ulm.de",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 5,
+  "queueLength": 0,
+  "batchComplete": false
+}
