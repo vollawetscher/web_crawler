@@ -407,7 +407,7 @@ async function handleCrawl() {
     
     // Generate and display Job ID immediately for new crawls
     if (!providedJobId && url) {
-        currentJobId = generateJobId();
+        currentJobId = generateJobId(url.startsWith('http') ? url : `https://${url}`);
         currentJobIdSpan.textContent = currentJobId;
         jobIdInput.value = currentJobId;
         batchInfo.classList.remove('hidden');
@@ -476,8 +476,12 @@ async function handleCrawl() {
     }
 }
 
-function generateJobId() {
-    return Math.random().toString(36).substr(2, 9);
+function generateJobId(url) {
+    const urlObj = new URL(url);
+    const domain = urlObj.hostname.replace(/^www\./, '').replace(/\./g, '-');
+    const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-').replace('T', '_');
+    const random = Math.random().toString(36).substr(2, 4);
+    return `${domain}_${timestamp}_${random}`;
 }
 
 async function handleResumeCrawl() {
