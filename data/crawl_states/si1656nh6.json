@@ -5,7 +5,8 @@
     "https://tv1.eu/cdn-cgi/l/email-protection",
     "https://tv1.eu/virtuelle-events",
     "https://tv1.eu/untertitelung",
-    "https://tv1.eu/referenzen"
+    "https://tv1.eu/referenzen",
+    "https://tv1.eu/ueber-uns"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -824,14 +825,337 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/referenzen": {
+      "success": true,
+      "final_url": "https://tv1.eu/referenzen",
+      "title": "Referenzen – TV1",
+      "meta_description": "Unsere Referenzen und Kunden seit unserer Gründung im Jahr 1999 – zahlreiche renommierte Unternehmen und Organisationen vertrauen TV1",
+      "main_content": "### Projekte der TV1 GmbH ### Aktuelle Projekte und Referenzen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+      "sections": [
+        {
+          "section_id": "810ece9c3836",
+          "section_order": 0,
+          "heading": "Referenzen – TV1",
+          "heading_level": "page",
+          "content_text": "### Projekte der TV1 GmbH ### Aktuelle Projekte und Referenzen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+          "page_url": "https://tv1.eu/referenzen",
+          "page_title": "Referenzen – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "856ca85b36a8367c2433c7d1bcc5b76c",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:31.237Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/referenzen#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Virtuelles Event",
+          "url": "https://tv1.eu/vogelsaenger-studios-digital-event/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Vogelsänger Studios Event",
+          "url": "https://tv1.eu/vogelsaenger-studios-digital-event/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelles Event",
+          "url": "https://tv1.eu/projekt-denkfabrik-legal-tech/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Justizministerium",
+          "url": "https://tv1.eu/projekt-denkfabrik-legal-tech/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Pressekonf. Livestreaming",
+          "url": "https://tv1.eu/livestreaming-der-pressekonferenz/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Merkel & Söder",
+          "url": "https://tv1.eu/livestreaming-der-pressekonferenz/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Konferenz",
+          "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BVI",
+          "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Pressekonferenz",
+          "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Bayerisches Wirtschaftsministerium",
+          "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelles Event (Stadt Mannheim)",
+          "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+          "category": "external"
+        },
+        {
+          "text": "Bertha-und-Carl-Benz-Preis",
+          "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+          "category": "external"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/referenzen#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/referenzen#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/referenzen#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Virtuelles Event",
+            "url": "https://tv1.eu/projekt-denkfabrik-legal-tech/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelles Event",
+            "url": "https://tv1.eu/vogelsaenger-studios-digital-event/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Pressekonf. Livestreaming",
+            "url": "https://tv1.eu/livestreaming-der-pressekonferenz/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Konferenz",
+            "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Pressekonferenz",
+            "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Virtuelles Event (Stadt Mannheim)",
+            "url": "https://www.mannheim.de/de/stadt-gestalten/preise-der-stadt-mannheim/bertha-und-carl-benz-preis",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/vogelsaenger-studios-digital-event",
+        "https://tv1.eu/livestreaming-der-pressekonferenz",
+        "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+        "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/vogelsaenger-studios-digital-event",
+        "https://tv1.eu/livestreaming-der-pressekonferenz",
+        "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+        "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/ueber-uns",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/blog",
       "depth": 1,
@@ -916,18 +1240,63 @@
       "url": "https://tv1.eu/en/data-protection",
       "depth": 2,
       "parent": "https://tv1.eu/untertitelung"
+    },
+    {
+      "url": "https://tv1.eu/ueber-uns",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/blog",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/jobs",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/vogelsaenger-studios-digital-event",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/livestreaming-der-pressekonferenz",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/en/imprint",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen"
     }
   ],
-  "pageCount": 5,
+  "pageCount": 6,
   "maxDepth": 2,
   "maxPages": 10,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T11:18:30.937Z",
+  "lastUpdated": "2025-09-15T11:18:32.244Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/referenzen",
+  "currentUrl": "https://tv1.eu/ueber-uns",
   "status": "crawling",
-  "pagesProcessedInBatch": 5,
+  "pagesProcessedInBatch": 6,
   "maxPagesThisBatch": 10,
-  "queueLength": 18,
+  "queueLength": 26,
   "batchComplete": false
 }
