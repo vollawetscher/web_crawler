@@ -704,7 +704,6 @@ async function checkCrawlProgress() {
         if (response.status === 404) {
             console.warn(`Crawl job ${currentJobId} not found (404), stopping progress polling`);
             showCrawlStatus('Job not found. The crawl may have expired or been deleted.', 'paused');
-            resumeCrawlBtn.classList.add('hidden');
             stopProgressPolling();
             return;
         }
