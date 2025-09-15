@@ -1224,7 +1224,8 @@ app.get('/api/crawl-progress/:jobId', async (req, res) => {
             return res.status(404).json({ error: 'Crawl job not found' });
         }
         
-        res.json({
+        // Provide more detailed progress information
+        const progressInfo = {
             success: true,
             jobId,
             status: state.status || 'unknown',
@@ -1232,13 +1233,20 @@ app.get('/api/crawl-progress/:jobId', async (req, res) => {
             pageCount: state.pageCount || 0,
             maxPages: state.maxPages || 0,
             queueLength: state.queueLength || 0,
+            rawQueueLength: state.rawQueueLength || (state.queue ? state.queue.length : 0),
             pagesProcessedInBatch: state.pagesProcessedInBatch || 0,
             maxPagesThisBatch: state.maxPagesThisBatch || 0,
             batchComplete: state.batchComplete || false,
             isComplete: state.completed || false,
+            isNearCompletion: state.isNearCompletion || false,
+            remainingCapacity: state.remainingCapacity || 0,
             lastUpdated: state.lastUpdated,
             startUrl: state.startUrl || '',
             depth: state.maxDepth || 0
+        };
+        
+        res.json({
+            ...progressInfo
         });
     } catch (error) {
         console.error('Progress check error:', error);
