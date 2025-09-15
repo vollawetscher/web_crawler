@@ -11,7 +11,10 @@
     "https://tv1.eu/jobs",
     "https://tv1.eu/en/imprint",
     "https://tv1.eu/en/data-protection",
-    "https://tv1.eu/vogelsaenger-studios-digital-event"
+    "https://tv1.eu/vogelsaenger-studios-digital-event",
+    "https://tv1.eu/livestreaming-der-pressekonferenz",
+    "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+    "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -2911,24 +2914,731 @@
         "https://tv1.eu/en/jobs-en"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/vogelsaenger-studios-digital-event": {
+      "success": true,
+      "final_url": "https://tv1.eu/vogelsaenger-studios-digital-event",
+      "title": "Vogelsänger Studios Digital Event – TV1",
+      "meta_description": "Vogelsänger Studios Digital Event – Online Konferenz mit Livestreaming und interaktiven Zuschauerfragen per Video, Chat, Telefon",
+      "main_content": "### Virtuelles Hybrid Event mit virtuellem Studio ### Vogelsänger Studios Digital Event ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+      "sections": [
+        {
+          "section_id": "e62a55af9c62",
+          "section_order": 0,
+          "heading": "Vogelsänger Studios Digital Event – TV1",
+          "heading_level": "page",
+          "content_text": "### Virtuelles Hybrid Event mit virtuellem Studio ### Vogelsänger Studios Digital Event ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+          "page_url": "https://tv1.eu/vogelsaenger-studios-digital-event",
+          "page_title": "Vogelsänger Studios Digital Event – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "89c63466698ad6b639907f145b204c93",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:47.675Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "http://www.vogelsaenger.de/digital-event",
+          "url": "http://www.vogelsaenger.de/digital-event",
+          "category": "external"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/vogelsaenger-studios-digital-event#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/vogelsaenger-studios-digital-event#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/vogelsaenger-studios-digital-event#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/vogelsaenger-studios-digital-event#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "http://www.vogelsaenger.de/digital-event",
+            "url": "http://www.vogelsaenger.de/digital-event",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/livestreaming-der-pressekonferenz": {
+      "success": true,
+      "final_url": "https://tv1.eu/livestreaming-der-pressekonferenz",
+      "title": "Livestreaming der Pressekonferenz – TV1",
+      "meta_description": "Angela Merkel besucht Bayerischen Ministerrat - Livestreaming via Richtfunk via Multistreaming (gleichzeitiges Streaming zu FB und YouTube)",
+      "main_content": "### Angela Merkel besucht Bayerischen Ministerrat ### Livestreaming der Pressekonferenz ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+      "sections": [
+        {
+          "section_id": "2fb370b12db1",
+          "section_order": 0,
+          "heading": "Livestreaming der Pressekonferenz – TV1",
+          "heading_level": "page",
+          "content_text": "### Angela Merkel besucht Bayerischen Ministerrat ### Livestreaming der Pressekonferenz ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie",
+          "page_url": "https://tv1.eu/livestreaming-der-pressekonferenz",
+          "page_title": "Livestreaming der Pressekonferenz – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "34a3bd77f3a75832d650aaca92503d6d",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:48.984Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Multistreaming",
+          "url": "https://www.video.taxi/livestreaming/",
+          "category": "external"
+        },
+        {
+          "text": "Facebook",
+          "url": "https://www.facebook.com/watch/live/?v=635394693743475&ref=watch_permalink",
+          "category": "external"
+        },
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/watch?v=RAMyjwD1jMc&feature=youtu.be",
+          "category": "external"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/livestreaming-der-pressekonferenz#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/livestreaming-der-pressekonferenz#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/livestreaming-der-pressekonferenz#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/livestreaming-der-pressekonferenz#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Multistreaming",
+            "url": "https://www.video.taxi/livestreaming/",
+            "category": "external"
+          },
+          {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/watch/live/?v=635394693743475&ref=watch_permalink",
+            "category": "external"
+          },
+          {
+            "text": "YouTube",
+            "url": "https://www.youtube.com/watch?v=RAMyjwD1jMc&feature=youtu.be",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/bvi-nachhaltigkeitskonferenz": {
+      "success": true,
+      "final_url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+      "title": "BVI Nachhaltigkeitskonferenz – TV1",
+      "meta_description": "Virtuelles Event - BVI Nachhaltigkeitskonferenz als Hybrid Event mit Livestreaming, Zuschaltungen externer Teilnehmer aus Brüssel und Berlin",
+      "main_content": "### BVI Nachhaltigkeitskonferenz ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie (nur für Mitglieder)",
+      "sections": [
+        {
+          "section_id": "f6794fa0c7d7",
+          "section_order": 0,
+          "heading": "BVI Nachhaltigkeitskonferenz – TV1",
+          "heading_level": "page",
+          "content_text": "### BVI Nachhaltigkeitskonferenz ### Die besonderen Herausforderungen ### Dürfen wir Ihnen weiterhelfen? ### Unser Angebot für Sie (nur für Mitglieder)",
+          "page_url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
+          "page_title": "BVI Nachhaltigkeitskonferenz – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "959fe33c7c78dee25c398fe8af32bce3",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:50.276Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "http://www.bvi.de",
+          "url": "http://www.bvi.de/",
+          "category": "external"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "http://www.bvi.de",
+            "url": "http://www.bvi.de/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/referenzen",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/livestreaming-der-pressekonferenz",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
-    {
-      "url": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
-      "depth": 2,
-      "parent": "https://tv1.eu/referenzen"
-    },
     {
       "url": "https://tv1.eu/en/imprint",
       "depth": 2,
@@ -3095,16 +3805,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 11,
+  "pageCount": 14,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:59:47.128Z",
+  "lastUpdated": "2025-09-15T09:59:51.283Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/vogelsaenger-studios-digital-event",
+  "currentUrl": "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
   "status": "crawling",
-  "pagesProcessedInBatch": 1,
+  "pagesProcessedInBatch": 4,
   "maxPagesThisBatch": 10,
-  "queueLength": 36,
+  "queueLength": 33,
   "batchComplete": false
 }
