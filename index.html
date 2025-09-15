@@ -130,14 +130,10 @@
                 <h2>🗺️ Site Crawling & Multi-page Selection</h2>
                 
                 <div class="crawl-controls">
-                    <div class="batch-controls">
+                    <div class="job-controls">
                         <div class="control-group">
                             <label for="jobId">Job ID (optional - leave empty for new crawl):</label>
                             <input type="text" id="jobId" placeholder="Enter existing job ID to resume...">
-                        </div>
-                        <div class="control-group">
-                            <label for="pagesPerBatch">Pages per Batch:</label>
-                            <input type="number" id="pagesPerBatch" value="50" min="1" max="200">
                         </div>
                     </div>
                     
@@ -165,6 +161,7 @@
                             </label>
                         </div>
                         <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
+                        <button id="stopCrawlBtn" class="stop-crawl-btn hidden">⏹️ Emergency Stop</button>
                     </div>
                     
                     <div id="crawlStatus" class="crawl-status hidden">
@@ -172,10 +169,9 @@
                         <span id="crawlStatusText">Discovering and crawling linked pages...</span>
                     </div>
                     
-                    <div id="batchInfo" class="batch-info hidden">
+                    <div id="jobInfo" class="job-info hidden">
                         <p><strong>Job ID:</strong> <span id="currentJobId"></span></p>
                         <p><strong>Status:</strong> <span id="crawlProgressStatus"></span></p>
-                        <button id="resumeCrawlBtn" class="resume-crawl-btn hidden">▶️ Resume Crawl</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +197,7 @@
 
             <!-- Export Options -->
             <hr>
-            <div class="export-section">
+            <div class="export-section hidden">
                 <h2>📤 Export Options</h2>
                 
                 <div class="format-selection">
@@ -242,7 +238,9 @@
                     </div>
                 </div>
 
-                <button id="downloadBtn" class="download-btn">📥 Download</button>
+                <button id="downloadBtn" class="download-btn">📥 Download Selected Format</button>
+                
+                <p class="export-note">💡 All export formats are pre-generated when the crawl completes. Simply select your preferred format above.</p>
                 
                 <div class="export-info">
                     <p id="exportInfo" class="export-info-text"></p>

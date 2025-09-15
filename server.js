@@ -18,6 +18,9 @@ const DATA_DIR = path.join(__dirname, 'data');
 const CRAWL_STATES_DIR = path.join(DATA_DIR, 'crawl_states');
 const INSPECTIONS_DIR = path.join(DATA_DIR, 'inspections');
 
+// Track running crawl jobs
+const runningCrawlJobs = new Map();
+
 async function initializeDataDirectories() {
     try {
         await fs.mkdir(DATA_DIR, { recursive: true });
@@ -833,7 +836,7 @@ async function fetchAndParseUrl(url) {
 }
 
 // Crawl website with depth limit
-async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, existingState = null, respectRobotsTxt = true) {
+async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState = null, respectRobotsTxt = true) {
     let visited, sitemap, queue, pageCount, jobId;
     
     if (existingState) {
@@ -852,9 +855,6 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         jobId = Math.random().toString(36).substr(2, 9);
     }
     
-    let pagesProcessedInBatch = 0;
-    const maxPagesThisBatch = Math.min(pagesPerBatch, maxPages - pageCount);
-    
     // Save progress state with more detailed information
     const saveProgress = async (currentUrl = null, status = 'crawling') => {
         const progressState = {
@@ -867,13 +867,11 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
             maxPages,
             startUrl: existingState?.startUrl || startUrl,
             lastUpdated: new Date().toISOString(),
-            completed: false,
+            completed: status === 'completed' || status === 'stopped',
             currentUrl,
             status,
-            pagesProcessedInBatch,
-            maxPagesThisBatch,
             queueLength: queue.length,
-            batchComplete: pagesProcessedInBatch >= maxPagesThisBatch
+            stopRequested: false
         };
         await saveCrawlState(jobId, progressState);
     };
@@ -881,26 +879,16 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
     // Save initial state
     await saveProgress(null, 'starting');
     
+    // Add to running jobs tracker
+    runningCrawlJobs.set(jobId, { status: 'running' });
+    
     while (queue.length > 0 && pageCount < maxPages) {
-        if (pagesProcessedInBatch >= maxPagesThisBatch) {
-            // Save state and break for this batch
-            await saveProgress(null, 'batch_complete');
-            const state = {
-                jobId,
-                visited: Array.from(visited),
-                sitemap,
-                queue,
-                pageCount,
-                maxDepth,
-                maxPages,
-                startUrl: existingState?.startUrl || startUrl,
-                lastUpdated: new Date().toISOString(),
-                currentUrl: null,
-                status: 'batch_complete',
-                pagesProcessedInBatch,
-                maxPagesThisBatch,
-                queueLength: queue.length
-            };
+        // Check if stop was requested
+        const currentState = await loadCrawlState(jobId);
+        if (currentState && currentState.stopRequested) {
+            console.log(`Crawl ${jobId} stopped by user request`);
+            await saveProgress(null, 'stopped');
+            runningCrawlJobs.delete(jobId);
             return {
                 jobId,
                 sitemap,
@@ -908,10 +896,11 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
                     totalPages: pageCount,
                     maxDepth,
                     startUrl: existingState?.startUrl || startUrl,
-                    isComplete: false,
-                    remaining: queue.length
+                    isComplete: true,
+                    remaining: Math.max(0, maxPages - pageCount)
                 },
-                isComplete: false
+                isComplete: true,
+                stoppedByUser: true
             };
         }
         
@@ -953,7 +942,6 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         
         visited.add(url);
         pageCount++;
-        pagesProcessedInBatch++;
         
         // Save detailed progress with current URL and batch info
         await saveProgress(url, 'crawling');
@@ -1016,11 +1004,13 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         }
         
         // Add small delay to be respectful to the server
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
     }
     
     // Crawl is complete
     await saveProgress(null, 'completed');
+    runningCrawlJobs.delete(jobId);
+    
     const state = {
         jobId,
         visited: Array.from(visited),
@@ -1034,8 +1024,6 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
         completed: true,
         currentUrl: null,
         status: 'completed',
-        pagesProcessedInBatch,
-        maxPagesThisBatch: maxPagesThisBatch,
         queueLength: 0
     };
     
@@ -1047,7 +1035,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch
             maxDepth,
             startUrl: existingState?.startUrl || startUrl,
             isComplete: true,
-            remaining: 0
+            remaining: Math.max(0, maxPages - pageCount)
         },
         isComplete: true
     };
@@ -1160,7 +1148,7 @@ app.post('/api/parse-manual', async (req, res) => {
 // API endpoint for crawling
 app.post('/api/crawl', async (req, res) => {
     try {
-        const { url, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, jobId: providedJobId, respectRobotsTxt = true } = req.body;
+        const { url, maxDepth = 2, maxPages = 50, jobId: providedJobId, respectRobotsTxt = true } = req.body;
         
         let existingState = null;
         let jobId = providedJobId;
@@ -1197,20 +1185,57 @@ app.post('/api/crawl', async (req, res) => {
             console.log('Robots.txt compliance: DISABLED');
         }
         
-        const result = await crawlWebsite(
-            crawlUrl, 
-            parseInt(maxDepth), 
-            parseInt(maxPages),
-            parseInt(pagesPerBatch),
-            existingState,
-            respectRobotsTxt
-        );
+        // Start crawling asynchronously if not already running
+        if (!runningCrawlJobs.has(jobId)) {
+            console.log(`Starting background crawl for job ${jobId}`);
+            
+            // Start the crawl in the background
+            crawlWebsite(
+                crawlUrl, 
+                parseInt(maxDepth), 
+                parseInt(maxPages),
+                existingState,
+                respectRobotsTxt
+            ).catch(error => {
+                console.error(`Background crawl error for job ${jobId}:`, error);
+                runningCrawlJobs.delete(jobId);
+            });
+        }
         
-        res.json({ success: true, ...result });
+        // Return immediately with job info
+        res.json({ 
+            success: true, 
+            jobId,
+            isComplete: false,
+            message: 'Crawl started in background'
+        });
         
     } catch (error) {
         console.error('Crawl error:', error);
         res.status(500).json({ error: `Crawling failed: ${error.message}` });
+    }
+});
+
+// API endpoint for stopping a crawl
+app.post('/api/crawl-stop/:jobId', async (req, res) => {
+    try {
+        const { jobId } = req.params;
+        const state = await loadCrawlState(jobId);
+        
+        if (!state) {
+            return res.status(404).json({ error: 'Crawl job not found' });
+        }
+        
+        // Set stop flag
+        state.stopRequested = true;
+        state.status = 'stop_requested';
+        await saveCrawlState(jobId, state);
+        
+        res.json({ success: true, message: 'Stop signal sent' });
+        
+    } catch (error) {
+        console.error('Stop crawl error:', error);
+        res.status(500).json({ error: `Failed to stop crawl: ${error.message}` });
     }
 });
 
@@ -1224,7 +1249,9 @@ app.get('/api/crawl-progress/:jobId', async (req, res) => {
             return res.status(404).json({ error: 'Crawl job not found' });
         }
         
-        // Provide more detailed progress information
+        const isComplete = state.completed || state.status === 'completed' || state.status === 'stopped';
+        
+        // Provide detailed progress information
         const progressInfo = {
             success: true,
             jobId,
@@ -1232,22 +1259,21 @@ app.get('/api/crawl-progress/:jobId', async (req, res) => {
             currentUrl: state.currentUrl || null,
             pageCount: state.pageCount || 0,
             maxPages: state.maxPages || 0,
-            queueLength: state.queueLength || 0,
-            rawQueueLength: state.rawQueueLength || (state.queue ? state.queue.length : 0),
-            pagesProcessedInBatch: state.pagesProcessedInBatch || 0,
-            maxPagesThisBatch: state.maxPagesThisBatch || 0,
-            batchComplete: state.batchComplete || false,
-            isComplete: state.completed || false,
-            isNearCompletion: state.isNearCompletion || false,
-            remainingCapacity: state.remainingCapacity || 0,
+            queueLength: state.queue ? state.queue.length : 0,
+            remaining: Math.max(0, (state.maxPages || 0) - (state.pageCount || 0)),
+            isComplete,
             lastUpdated: state.lastUpdated,
             startUrl: state.startUrl || '',
-            depth: state.maxDepth || 0
+            depth: state.maxDepth || 0,
+            stoppedByUser: state.status === 'stopped'
         };
         
-        res.json({
-            ...progressInfo
-        });
+        // Include full sitemap when complete
+        if (isComplete) {
+            progressInfo.sitemap = state.sitemap || {};
+        }
+        
+        res.json(progressInfo);
     } catch (error) {
         console.error('Progress check error:', error);
         res.status(500).json({ error: `Failed to get progress: ${error.message}` });

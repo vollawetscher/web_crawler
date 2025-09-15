@@ -4,6 +4,9 @@ let currentData = null;
 let currentCrawlData = null;
 let currentJobId = null;
 let crawlProgressInterval = null;
+let generatedJsonExport = null;
+let generatedRagJsonlExport = null;
+let generatedTextExport = null;
 
 // DOM Elements
 const urlInput = document.getElementById('urlInput');
@@ -21,10 +24,11 @@ const downloadBtn = document.getElementById('downloadBtn');
 const crawlControlsSection = document.getElementById('crawlControlsSection');
 const crawlResultsSection = document.getElementById('crawlResultsSection');
 const crawlBtn = document.getElementById('crawlBtn');
-const resumeCrawlBtn = document.getElementById('resumeCrawlBtn');
+const stopCrawlBtn = document.getElementById('stopCrawlBtn');
+const exportSection = document.querySelector('.export-section');
 const crawlStatus = document.getElementById('crawlStatus');
 const crawlStatusText = document.getElementById('crawlStatusText');
-const batchInfo = document.getElementById('batchInfo');
+const jobInfo = document.getElementById('jobInfo');
 const currentJobIdSpan = document.getElementById('currentJobId');
 const crawlProgressStatus = document.getElementById('crawlProgressStatus');
 const jobIdInput = document.getElementById('jobId');
@@ -48,7 +52,7 @@ function initializeEventListeners() {
     parseManualBtn.addEventListener('click', handleManualParse);
     downloadBtn.addEventListener('click', handleDownload);
     crawlBtn.addEventListener('click', handleCrawl);
-    resumeCrawlBtn.addEventListener('click', handleResumeCrawl);
+    stopCrawlBtn.addEventListener('click', handleStopCrawl);
     
     // URL input enter key
     urlInput.addEventListener('keypress', function(e) {
@@ -393,7 +397,6 @@ async function handleCrawl() {
     const url = urlInput.value.trim();
     const maxDepth = parseInt(document.getElementById('maxDepth').value);
     const maxPages = parseInt(document.getElementById('maxPages').value);
-    const pagesPerBatch = parseInt(document.getElementById('pagesPerBatch').value);
     const respectRobotsTxt = document.getElementById('respectRobotsTxt').checked;
     const providedJobId = jobIdInput.value.trim();
     
@@ -404,31 +407,18 @@ async function handleCrawl() {
     
     showCrawlStatus('Starting crawl...', 'starting');
     crawlBtn.disabled = true;
-    
-    // Generate and display Job ID immediately for new crawls
-    if (!providedJobId && url) {
-        currentJobId = generateJobId(url.startsWith('http') ? url : `https://${url}`);
-        currentJobIdSpan.textContent = currentJobId;
-        jobIdInput.value = currentJobId;
-        batchInfo.classList.remove('hidden');
-        crawlProgressStatus.textContent = 'Starting crawl...';
-    } else if (providedJobId) {
-        currentJobId = providedJobId;
-        currentJobIdSpan.textContent = currentJobId;
-        batchInfo.classList.remove('hidden');
-        crawlProgressStatus.textContent = 'Resuming crawl...';
-    }
+    stopCrawlBtn.classList.remove('hidden');
     
     try {
         const requestBody = {
             maxDepth,
             maxPages,
-            pagesPerBatch,
             respectRobotsTxt
         };
         
         if (providedJobId) {
             requestBody.jobId = providedJobId;
+            currentJobId = providedJobId;
         } else {
             requestBody.url = url.startsWith('http') ? url : `https://${url}`;
         }
@@ -444,23 +434,15 @@ async function handleCrawl() {
         const data = await response.json();
         
         if (data.success) {
-            currentCrawlData = data;
-            // Job ID should already be set above, but ensure consistency
-            if (!currentJobId) {
-                currentJobId = data.jobId;
-                currentJobIdSpan.textContent = currentJobId;
-                jobIdInput.value = currentJobId;
-            }
+            currentJobId = data.jobId;
+            currentJobIdSpan.textContent = currentJobId;
+            jobIdInput.value = currentJobId;
+            jobInfo.classList.remove('hidden');
+            crawlProgressStatus.textContent = 'Starting crawl...';
             
-            if (data.isComplete) {
-                showCrawlStatus('Crawl completed!', 'complete');
-                displayCrawlResults(data);
-            } else {
-                showCrawlStatus('Batch completed. Click "Resume Crawl" to continue.', 'paused');
-                resumeCrawlBtn.classList.remove('hidden');
-                displayCrawlResults(data);
-                startProgressPolling();
-            }
+            // Start polling immediately
+            showCrawlStatus('Crawling in progress...', 'crawling');
+            startProgressPolling();
             
             saveSessionData();
         } else {
@@ -476,65 +458,32 @@ async function handleCrawl() {
     }
 }
 
-function generateJobId(url) {
-    const urlObj = new URL(url);
-    const domain = urlObj.hostname.replace(/^www\./, '').replace(/\./g, '-');
-    const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-').replace('T', '_');
-    const random = Math.random().toString(36).substr(2, 4);
-    return `${domain}_${timestamp}_${random}`;
-}
-
-async function handleResumeCrawl() {
+async function handleStopCrawl() {
     if (!currentJobId) {
-        showError('No job ID available to resume');
+        showError('No job ID available to stop');
         return;
     }
     
-    showCrawlStatus('Resuming crawl...', 'starting');
-    resumeCrawlBtn.disabled = true;
+    showCrawlStatus('Stopping crawl...', 'stopping');
+    stopCrawlBtn.disabled = true;
     
     try {
-        const response = await fetch('/api/crawl', {
+        const response = await fetch(`/api/crawl-stop/${currentJobId}`, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ 
-                jobId: currentJobId,
-                maxDepth: parseInt(document.getElementById('maxDepth').value),
-                maxPages: parseInt(document.getElementById('maxPages').value),
-                pagesPerBatch: parseInt(document.getElementById('pagesPerBatch').value),
-                respectRobotsTxt: document.getElementById('respectRobotsTxt').checked
-            })
         });
         
         const data = await response.json();
         
         if (data.success) {
-            currentCrawlData = data;
-            
-            if (data.isComplete) {
-                showCrawlStatus('Crawl completed!', 'complete');
-                resumeCrawlBtn.classList.add('hidden');
-                displayCrawlResults(data);
-                stopProgressPolling();
-            } else {
-                showCrawlStatus('Batch completed. Click "Resume Crawl" to continue.', 'paused');
-                displayCrawlResults(data);
-                startProgressPolling();
-            }
-            
-            saveSessionData();
+            showSuccess('Stop signal sent. Crawl will stop after current page.');
         } else {
-            showError(`❌ ${data.error}`);
-            hideCrawlStatus();
+            showError(`Failed to stop crawl: ${data.error}`);
         }
         
     } catch (error) {
         showError(`Network error: ${error.message}`);
-        hideCrawlStatus();
     } finally {
-        resumeCrawlBtn.disabled = false;
+        stopCrawlBtn.disabled = false;
     }
 }
 
@@ -552,10 +501,11 @@ function displayCrawlResults(data) {
     crawlResultsSection.classList.remove('hidden');
     
     // Display crawl summary
-    displayCrawlSummary(data.stats);
+    const stats = data.stats || data;
+    displayCrawlSummary(stats);
     
     // Display sitemap
-    displaySitemap(data.sitemap);
+    displaySitemap(data.sitemap || {});
     
     // Update selection count
     updateSelectionCount();
@@ -567,14 +517,16 @@ function displayCrawlResults(data) {
 function displayCrawlSummary(stats) {
     const summaryContainer = document.getElementById('crawlSummary');
     
+    const remaining = stats.remaining !== undefined ? stats.remaining : Math.max(0, (stats.maxPages || 0) - (stats.totalPages || stats.pageCount || 0));
+    
     summaryContainer.innerHTML = `
         <div class="crawl-stats">
             <div class="stat-item">
-                <span class="stat-value">${stats.totalPages}</span>
+                <span class="stat-value">${stats.totalPages || stats.pageCount || 0}</span>
                 <span class="stat-label">Pages Found</span>
             </div>
             <div class="stat-item">
-                <span class="stat-value">${stats.maxDepth}</span>
+                <span class="stat-value">${stats.maxDepth || 0}</span>
                 <span class="stat-label">Max Depth</span>
             </div>
             <div class="stat-item">
@@ -582,7 +534,7 @@ function displayCrawlSummary(stats) {
                 <span class="stat-label">Status</span>
             </div>
             <div class="stat-item">
-                <span class="stat-value">${stats.remaining || 0}</span>
+                <span class="stat-value">${remaining}</span>
                 <span class="stat-label">Remaining</span>
             </div>
         </div>
@@ -762,39 +714,67 @@ async function checkCrawlProgress() {
         const progress = await response.json();
         
         if (progress.success) {
-            const statusText = `Status: ${progress.status}\nPages: ${progress.pageCount}/${progress.maxPages}\nQueue: ${progress.queueLength}`;
+            const remaining = Math.max(0, progress.maxPages - progress.pageCount);
+            const statusText = `Status: ${progress.status}\nPages: ${progress.pageCount}/${progress.maxPages}\nRemaining: ${remaining}\nQueue: ${progress.queueLength}`;
             
             if (progress.currentUrl) {
-                crawlStatusText.textContent = `Crawling: ${progress.currentUrl}\n${statusText}`;
+                crawlStatusText.textContent = `Currently crawling: ${new URL(progress.currentUrl).pathname}\n${statusText}`;
             } else {
                 crawlStatusText.textContent = statusText;
             }
             
             crawlProgressStatus.textContent = progress.status;
             
+            // Update live sitemap if available
+            if (progress.sitemap) {
+                displayCrawlResults({
+                    sitemap: progress.sitemap,
+                    stats: {
+                        totalPages: progress.pageCount,
+                        maxDepth: progress.depth,
+                        isComplete: progress.isComplete,
+                        remaining: remaining
+                    }
+                });
+            }
+            
             if (progress.isComplete) {
-                showCrawlStatus('Crawl completed!', 'complete');
-                resumeCrawlBtn.classList.add('hidden');
+                const statusMessage = progress.stoppedByUser ? 'Crawl stopped by user!' : 'Crawl completed!';
+                showCrawlStatus(statusMessage, 'complete');
+                stopCrawlBtn.classList.add('hidden');
+                crawlBtn.disabled = false;
                 stopProgressPolling();
                 
-                // Refresh crawl results
-                try {
-                    const crawlResponse = await fetch('/api/crawl', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ jobId: currentJobId })
-                    });
-                    
-                    const crawlData = await crawlResponse.json();
-                    if (crawlData.success) {
-                        currentCrawlData = crawlData;
-                        displayCrawlResults(crawlData);
-                        saveSessionData();
+                // Store crawl data with complete sitemap
+                currentCrawlData = {
+                    sitemap: progress.sitemap,
+                    stats: {
+                        totalPages: progress.pageCount,
+                        maxDepth: progress.depth,
+                        isComplete: true,
+                        remaining: remaining
                     }
-                } catch (error) {
-                    console.error('Failed to refresh crawl results:', error);
+                };
+                
+                // Generate all export formats
+                generateAllExportFormats();
+                
+                // Show export section
+                exportSection.classList.remove('hidden');
+                
+                saveSessionData();
+            } else {
+                // Update display with current progress
+                if (progress.sitemap) {
+                    currentCrawlData = {
+                        sitemap: progress.sitemap,
+                        stats: {
+                            totalPages: progress.pageCount,
+                            maxDepth: progress.depth,
+                            isComplete: false,
+                            remaining: remaining
+                        }
+                    };
                 }
             }
         } else {
@@ -808,9 +788,31 @@ async function checkCrawlProgress() {
     }
 }
 
+function generateAllExportFormats() {
+    console.log('Generating all export formats...');
+    
+    // Generate JSON export
+    generatedJsonExport = generateJSONExport();
+    
+    // Generate RAG JSONL export
+    const chunkSize = parseInt(document.getElementById('chunkSize').value) || 300;
+    const overlap = parseInt(document.getElementById('overlap').value) || 50;
+    const includeHeadings = document.getElementById('includeHeadings').checked;
+    generatedRagJsonlExport = generateRAGJSONLExportData(chunkSize, overlap, includeHeadings);
+    
+    // Generate text export
+    generatedTextExport = generateTextExport();
+    
+    console.log('Export formats generated:', {
+        json: generatedJsonExport ? 'ready' : 'empty',
+        rag: generatedRagJsonlExport ? 'ready' : 'empty',
+        text: generatedTextExport ? 'ready' : 'empty'
+    });
+}
+
 function updateExportInfo() {
     const exportInfo = document.getElementById('exportInfo');
-    const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
+    const selectedFormat = document.querySelector('input[name="export_format"]:checked')?.value || 'json';
     
     let info = '';
     
@@ -836,22 +838,22 @@ function updateExportInfo() {
 }
 
 async function handleDownload() {
-    const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
+    const selectedFormat = document.querySelector('input[name="export_format"]:checked')?.value || 'json';
     
     let exportData;
     let filename;
     let mimeType;
     
     if (selectedFormat === 'json') {
-        exportData = generateJSONExport();
+        exportData = generatedJsonExport;
         filename = `url_content_${Date.now()}.json`;
         mimeType = 'application/json';
     } else if (selectedFormat === 'rag_jsonl') {
-        exportData = generateRAGJSONLExport();
+        exportData = generatedRagJsonlExport;
         filename = `rag_content_${Date.now()}.jsonl`;
         mimeType = 'application/jsonl';
     } else if (selectedFormat === 'txt') {
-        exportData = generateTextExport();
+        exportData = generatedTextExport;
         filename = `content_${Date.now()}.txt`;
         mimeType = 'text/plain';
     }
@@ -941,6 +943,11 @@ function generateRAGJSONLExport() {
     const chunkSize = parseInt(document.getElementById('chunkSize').value);
     const overlap = parseInt(document.getElementById('overlap').value);
     const includeHeadings = document.getElementById('includeHeadings').checked;
+    
+    return generateRAGJSONLExportData(chunkSize, overlap, includeHeadings);
+}
+
+function generateRAGJSONLExportData(chunkSize, overlap, includeHeadings) {
     
     const lines = [];
     
@@ -1126,13 +1133,19 @@ function restoreSessionIfExists() {
                 if (sessionData.currentCrawlData) {
                     currentCrawlData = sessionData.currentCrawlData;
                     displayCrawlResults(currentCrawlData);
+                    
+                    // If crawl was complete, generate exports and show section
+                    if (currentCrawlData.stats?.isComplete) {
+                        generateAllExportFormats();
+                        exportSection.classList.remove('hidden');
+                    }
                 }
                 
                 if (sessionData.currentJobId) {
                     currentJobId = sessionData.currentJobId;
                     jobIdInput.value = currentJobId;
                     currentJobIdSpan.textContent = currentJobId;
-                    batchInfo.classList.remove('hidden');
+                    jobInfo.classList.remove('hidden');
                 }
             }
         }
