@@ -855,6 +855,12 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         jobId = Math.random().toString(36).substr(2, 9);
     }
     
+    // Get initial startUrl from existing state or parameter
+    const initialStartUrl = existingState?.startUrl || startUrl;
+    
+    // Add to running jobs tracker
+    runningCrawlJobs.set(jobId, { status: 'running' });
+    
     // Save progress state with more detailed information
     const saveProgress = async (currentUrl = null, status = 'crawling') => {
         const progressState = {
@@ -865,7 +871,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
             pageCount,
             maxDepth,
             maxPages,
-            startUrl: existingState?.startUrl || startUrl,
+            startUrl: initialStartUrl,
             lastUpdated: new Date().toISOString(),
             completed: status === 'completed' || status === 'stopped',
             currentUrl,
@@ -875,12 +881,6 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         };
         await saveCrawlState(jobId, progressState);
     };
-    
-    // Save initial state
-    await saveProgress(null, 'starting');
-    
-    // Add to running jobs tracker
-    runningCrawlJobs.set(jobId, { status: 'running' });
     
     while (queue.length > 0 && pageCount < maxPages) {
         // Check if stop was requested
@@ -1019,7 +1019,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         pageCount,
         maxDepth,
         maxPages,
-        startUrl: existingState?.startUrl || startUrl,
+        startUrl: initialStartUrl,
         lastUpdated: new Date().toISOString(),
         completed: true,
         currentUrl: null,
@@ -1033,7 +1033,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         stats: {
             totalPages: pageCount,
             maxDepth,
-            startUrl: existingState?.startUrl || startUrl,
+            startUrl: initialStartUrl,
             isComplete: true,
             remaining: Math.max(0, maxPages - pageCount)
         },
@@ -1188,6 +1188,27 @@ app.post('/api/crawl', async (req, res) => {
             console.log('Robots.txt compliance: DISABLED');
         }
         
+        // Save initial job state BEFORE starting background crawl to avoid race condition
+        if (!existingState) {
+            const initialState = {
+                jobId,
+                visited: [],
+                sitemap: {},
+                queue: [{ url: normalizeUrl(crawlUrl), depth: 0, parent: null }],
+                pageCount: 0,
+                maxDepth: parseInt(maxDepth),
+                maxPages: parseInt(maxPages),
+                startUrl: crawlUrl,
+                lastUpdated: new Date().toISOString(),
+                completed: false,
+                currentUrl: null,
+                status: 'starting',
+                queueLength: 1,
+                stopRequested: false
+            };
+            await saveCrawlState(jobId, initialState);
+        }
+        
         // Start crawling asynchronously if not already running
         if (!runningCrawlJobs.has(jobId)) {
             console.log(`Starting background crawl for job ${jobId}`);
@@ -1197,7 +1218,7 @@ app.post('/api/crawl', async (req, res) => {
                 crawlUrl, 
                 parseInt(maxDepth), 
                 parseInt(maxPages),
-                existingState,
+                existingState || await loadCrawlState(jobId),
                 respectRobotsTxt
             ).catch(error => {
                 console.error(`Background crawl error for job ${jobId}:`, error);
