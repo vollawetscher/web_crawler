@@ -7,7 +7,8 @@
     "https://tv1.eu/untertitelung",
     "https://tv1.eu/referenzen",
     "https://tv1.eu/ueber-uns",
-    "https://tv1.eu/blog"
+    "https://tv1.eu/blog",
+    "https://tv1.eu/jobs"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -1470,14 +1471,312 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/blog": {
+      "success": true,
+      "final_url": "https://tv1.eu/blog",
+      "title": "Blog – TV1 News",
+      "meta_description": "Blogbeiträge und Aktuelles in der Übersicht - TV1.EU - a better LIVE - Experten für Live Streaming und Online Video",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Livestreaming ohne extra Hardware",
+          "url": "https://tv1.eu/livestreaming-ohne-extra-hardware/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/livestreaming-ohne-extra-hardware/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events erfolgreich durchführen",
+          "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Livestream Produktion aus der Ferne",
+          "url": "https://tv1.eu/livestream-produktion-aus-der-ferne/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/livestream-produktion-aus-der-ferne/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Prof. Werner Sinn über Corona und die Folgen",
+          "url": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Online Konferenzen als Ersatz für Präsenzveranstaltungen",
+          "url": "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Zum wiederholten Mal ausgezeichnet",
+          "url": "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet/",
+          "category": "content_internal"
+        },
+        {
+          "text": "TV1 ist ISO/IEC 27001 zertifiziert",
+          "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Weiterlesen",
+          "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/blog#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/blog#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Livestreaming ohne extra Hardware",
+            "url": "https://tv1.eu/livestreaming-ohne-extra-hardware/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events erfolgreich durchführen",
+            "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Livestream Produktion aus der Ferne",
+            "url": "https://tv1.eu/livestream-produktion-aus-der-ferne/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Prof. Werner Sinn über Corona und die Folgen",
+            "url": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Online Konferenzen als Ersatz für Präsenzveranstaltungen",
+            "url": "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Zum wiederholten Mal ausgezeichnet",
+            "url": "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet/",
+            "category": "content_internal"
+          },
+          {
+            "text": "TV1 ist ISO/IEC 27001 zertifiziert",
+            "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/livestreaming-ohne-extra-hardware",
+        "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+        "https://tv1.eu/livestream-produktion-aus-der-ferne",
+        "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
+        "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen",
+        "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet",
+        "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/livestreaming-ohne-extra-hardware",
+        "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+        "https://tv1.eu/livestream-produktion-aus-der-ferne",
+        "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
+        "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen",
+        "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet",
+        "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/jobs",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/en/imprint",
       "depth": 1,
@@ -1617,18 +1916,68 @@
       "url": "https://tv1.eu/en/data-protection",
       "depth": 2,
       "parent": "https://tv1.eu/ueber-uns"
+    },
+    {
+      "url": "https://tv1.eu/jobs",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/livestreaming-ohne-extra-hardware",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/livestream-produktion-aus-der-ferne",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/zum-wiederholten-mal-ausgezeichnet",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/tv1-ist-iso-iec-27001-zertifiziert",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/en/imprint",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 2,
+      "parent": "https://tv1.eu/blog"
     }
   ],
-  "pageCount": 7,
+  "pageCount": 8,
   "maxDepth": 2,
   "maxPages": 10,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T11:18:33.525Z",
+  "lastUpdated": "2025-09-15T11:18:34.814Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/blog",
+  "currentUrl": "https://tv1.eu/jobs",
   "status": "crawling",
-  "pagesProcessedInBatch": 7,
+  "pagesProcessedInBatch": 8,
   "maxPagesThisBatch": 10,
-  "queueLength": 29,
+  "queueLength": 38,
   "batchComplete": false
 }
