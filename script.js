@@ -548,7 +548,7 @@ async function checkCrawlProgress(jobId, isRestoredSession = false) {
                 }
             } else {
                 // Save incomplete status
-                saveCrawlCompletedStatus(false);
+                // saveCrawlCompletedStatus(false);
             }
         } else if (!isRestoredSession) {
             console.error('Progress check failed:', progress.error);
