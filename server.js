@@ -833,7 +833,7 @@ async function fetchAndParseUrl(url) {
 }
 
 // Crawl website with depth limit
-async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, existingState = null) {
+async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, pagesPerBatch = 10, existingState = null, respectRobotsTxt = true) {
     let visited, sitemap, queue, pageCount, jobId;
     
     if (existingState) {
