@@ -1,6 +1,8 @@
-// Global state - after new chat
+// URL Inspector Frontend Script
+
 let currentData = null;
-let currentCrawlJobId = null;
+let currentCrawlData = null;
+let currentJobId = null;
 let crawlProgressInterval = null;
 
 // DOM Elements
@@ -16,10 +18,8 @@ const resultsSection = document.getElementById('resultsSection');
 const downloadBtn = document.getElementById('downloadBtn');
 
 // Crawl elements
-const jobIdInput = document.getElementById('jobId');
-const maxDepthSelect = document.getElementById('maxDepth');
-const maxPagesInput = document.getElementById('maxPages');
-const pagesPerBatchInput = document.getElementById('pagesPerBatch');
+const crawlControlsSection = document.getElementById('crawlControlsSection');
+const crawlResultsSection = document.getElementById('crawlResultsSection');
 const crawlBtn = document.getElementById('crawlBtn');
 const resumeCrawlBtn = document.getElementById('resumeCrawlBtn');
 const crawlStatus = document.getElementById('crawlStatus');
@@ -27,146 +27,120 @@ const crawlStatusText = document.getElementById('crawlStatusText');
 const batchInfo = document.getElementById('batchInfo');
 const currentJobIdSpan = document.getElementById('currentJobId');
 const crawlProgressStatus = document.getElementById('crawlProgressStatus');
-const crawlControlsSection = document.getElementById('crawlControlsSection');
-const crawlResultsSection = document.getElementById('crawlResultsSection');
-const sitemapContainer = document.getElementById('sitemapContainer');
-const sitemapTree = document.getElementById('sitemapTree');
-const crawlSummary = document.getElementById('crawlSummary');
-const selectAllBtn = document.getElementById('selectAllBtn');
-const selectNoneBtn = document.getElementById('selectNoneBtn');
-const selectionCount = document.getElementById('selectionCount');
+const jobIdInput = document.getElementById('jobId');
+
+// Export format elements
+const exportFormatRadios = document.querySelectorAll('input[name="export_format"]');
+const ragOptions = document.getElementById('ragOptions');
 
 // Session restoration
-window.addEventListener('load', () => {
-    const savedData = sessionStorage.getItem('urlInspectorData');
-    const savedJobId = sessionStorage.getItem('currentCrawlJobId');
-    const savedSitemap = sessionStorage.getItem('currentSitemap');
-    const savedCrawlCompleted = sessionStorage.getItem('crawlCompleted');
-    
-    if (savedData) {
-        try {
-            currentData = JSON.parse(savedData);
-            displayResults(currentData);
-            showRestorationNotice();
-        } catch (e) {
-            console.error('Failed to restore session data:', e);
-            sessionStorage.removeItem('urlInspectorData');
-        }
-    }
-    
-    // Restore sitemap data if available
-    if (savedSitemap) {
-        try {
-            window.currentSitemap = JSON.parse(savedSitemap);
-            console.log('Restored sitemap with', Object.keys(window.currentSitemap).length, 'pages');
-        } catch (e) {
-            console.error('Failed to restore sitemap data:', e);
-            sessionStorage.removeItem('currentSitemap');
-        }
-    }
-    
-    if (savedJobId) {
-        currentCrawlJobId = savedJobId;
-        
-        // If crawl was completed, restore full UI state without starting progress polling
-        if (savedCrawlCompleted === 'true' && window.currentSitemap) {
-            console.log('Restoring completed crawl state');
-            crawlResultsSection.classList.remove('hidden');
-            
-            // Restore sitemap display
-            displaySitemap(window.currentSitemap);
-            
-            // Show completion status without spinner
-            showCrawlStatus(true, 'Crawl completed - session restored', true);
-            showBatchInfo(true, savedJobId, 'Completed');
-            
-            // Ensure resume button is hidden
-            showResumeCrawlButton(false);
-        } else {
-            // Only check progress if crawl wasn't completed
-            checkCrawlProgress(savedJobId, true);
-        }
-    }
+let sessionData = null;
+
+// Initialize the application
+document.addEventListener('DOMContentLoaded', function() {
+    initializeEventListeners();
+    initializeExportFormatHandlers();
+    restoreSessionIfExists();
 });
 
-function showRestorationNotice() {
-    const notice = document.createElement('div');
-    notice.className = 'restoration-notice';
-    notice.innerHTML = `
-        <div class="restoration-content">
-            <span>🔄 Session restored with previous inspection results</span>
-            <button class="clear-session-btn" onclick="clearSession()">Clear Session</button>
-        </div>
-    `;
-    document.querySelector('.input-section').appendChild(notice);
+function initializeEventListeners() {
+    inspectBtn.addEventListener('click', handleInspect);
+    parseManualBtn.addEventListener('click', handleManualParse);
+    downloadBtn.addEventListener('click', handleDownload);
+    crawlBtn.addEventListener('click', handleCrawl);
+    resumeCrawlBtn.addEventListener('click', handleResumeCrawl);
+    
+    // URL input enter key
+    urlInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            handleInspect();
+        }
+    });
+    
+    // Sitemap selection handlers
+    document.addEventListener('change', function(e) {
+        if (e.target.classList.contains('sitemap-checkbox') || 
+            e.target.classList.contains('sitemap-relevance-checkbox')) {
+            updateSelectionCount();
+            updateExportInfo();
+        }
+    });
+    
+    // Select all/none buttons
+    document.getElementById('selectAllBtn')?.addEventListener('click', function() {
+        document.querySelectorAll('.sitemap-checkbox').forEach(cb => cb.checked = true);
+        updateSelectionCount();
+        updateExportInfo();
+    });
+    
+    document.getElementById('selectNoneBtn')?.addEventListener('click', function() {
+        document.querySelectorAll('.sitemap-checkbox').forEach(cb => cb.checked = false);
+        updateSelectionCount();
+        updateExportInfo();
+    });
 }
 
-function clearSession() {
-    sessionStorage.removeItem('urlInspectorData');
-    sessionStorage.removeItem('currentCrawlJobId');
-    sessionStorage.removeItem('currentSitemap');
-    sessionStorage.removeItem('crawlCompleted');
-    location.reload();
+function initializeExportFormatHandlers() {
+    exportFormatRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (this.value === 'rag_jsonl') {
+                ragOptions.classList.remove('hidden');
+            } else {
+                ragOptions.classList.add('hidden');
+            }
+            updateExportInfo();
+        });
+    });
+    
+    // Initialize RAG options visibility
+    const selectedFormat = document.querySelector('input[name="export_format"]:checked');
+    if (selectedFormat && selectedFormat.value === 'rag_jsonl') {
+        ragOptions.classList.remove('hidden');
+    }
 }
 
-// Utility functions
+function showLoading(message = 'Processing...') {
+    loadingIndicator.querySelector('span').textContent = message;
+    loadingIndicator.classList.remove('hidden');
+    hideMessages();
+}
+
+function hideLoading() {
+    loadingIndicator.classList.add('hidden');
+}
+
 function showError(message) {
-    errorMessage.textContent = `❌ ${message}`;
+    errorMessage.textContent = message;
     errorMessage.classList.remove('hidden');
     successMessage.classList.add('hidden');
+    hideLoading();
 }
 
 function showSuccess(message) {
-    successMessage.textContent = `✅ ${message}`;
+    successMessage.textContent = message;
     successMessage.classList.remove('hidden');
     errorMessage.classList.add('hidden');
+    hideLoading();
 }
 
-function showLoading(show) {
-    if (show) {
-        loadingIndicator.classList.remove('hidden');
-        inspectBtn.disabled = true;
-        parseManualBtn.disabled = true;
-    } else {
-        loadingIndicator.classList.add('hidden');
-        inspectBtn.disabled = false;
-        parseManualBtn.disabled = false;
+function hideMessages() {
+    errorMessage.classList.add('hidden');
+    successMessage.classList.add('hidden');
+}
+
+async function handleInspect() {
+    const url = urlInput.value.trim();
+    
+    if (!url) {
+        showError('Please enter a URL');
+        return;
     }
-}
-
-function showCrawlStatus(show, message = '', isDetailed = false) {
-    if (show) {
-        crawlStatus.classList.remove('hidden');
-        crawlStatusText.textContent = message;
-        
-        // Only show spinner for actual crawling operations
-        const spinner = crawlStatus.querySelector('.spinner');
-        if (isDetailed || message.includes('complete') || message.includes('Complete')) {
-            spinner.style.display = 'none';
-            crawlStatus.classList.add('crawling');
-        } else {
-            spinner.style.display = 'block';
-            crawlStatus.classList.remove('crawling', 'complete');
-        }
-    } else {
-        crawlStatus.classList.add('hidden');
-        crawlStatus.classList.remove('crawling', 'complete');
-    }
-}
-
-function showBatchInfo(show, jobId = '', status = '') {
-    if (show) {
-        batchInfo.classList.remove('hidden');
-        if (jobId) currentJobIdSpan.textContent = jobId;
-        if (status) crawlProgressStatus.textContent = status;
-    } else {
-        batchInfo.classList.add('hidden');
-    }
-}
-
-// Main inspection function
-async function inspectUrl(url) {
-    showLoading(true);
+    
+    // Add protocol if missing
+    const finalUrl = url.startsWith('http') ? url : `https://${url}`;
+    
+    showLoading('Fetching and analyzing content...');
+    inspectBtn.disabled = true;
     
     try {
         const response = await fetch('/api/inspect', {
@@ -174,30 +148,39 @@ async function inspectUrl(url) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ url })
+            body: JSON.stringify({ url: finalUrl })
         });
         
         const data = await response.json();
         
         if (data.success) {
             currentData = data;
-            sessionStorage.setItem('urlInspectorData', JSON.stringify(data));
+            showSuccess(`✅ Content extracted from: ${data.final_url}`);
             displayResults(data);
-            showSuccess(`Content extracted from: ${data.final_url}`);
+            saveSessionData();
         } else {
-            showError(data.error || 'Failed to inspect URL');
+            showError(`❌ ${data.error}`);
         }
+        
     } catch (error) {
-        console.error('Inspection error:', error);
         showError(`Network error: ${error.message}`);
     } finally {
-        showLoading(false);
+        inspectBtn.disabled = false;
+        hideLoading();
     }
 }
 
-// Manual HTML parsing function
-async function parseManualHtml(html, url = '') {
-    showLoading(true);
+async function handleManualParse() {
+    const html = manualHtml.value.trim();
+    const url = manualUrl.value.trim();
+    
+    if (!html) {
+        showError('Please paste HTML content');
+        return;
+    }
+    
+    showLoading('Parsing HTML content...');
+    parseManualBtn.disabled = true;
     
     try {
         const response = await fetch('/api/parse-manual', {
@@ -212,115 +195,99 @@ async function parseManualHtml(html, url = '') {
         
         if (data.success) {
             currentData = data;
-            sessionStorage.setItem('urlInspectorData', JSON.stringify(data));
+            showSuccess(`✅ Content parsed successfully`);
             displayResults(data);
-            showSuccess('HTML content parsed successfully');
+            saveSessionData();
         } else {
-            showError(data.error || 'Failed to parse HTML');
+            showError(`❌ ${data.error}`);
         }
+        
     } catch (error) {
-        console.error('Parsing error:', error);
         showError(`Network error: ${error.message}`);
     } finally {
-        showLoading(false);
+        parseManualBtn.disabled = false;
+        hideLoading();
     }
 }
 
-// Display results
 function displayResults(data) {
+    // Show results section
     resultsSection.classList.remove('hidden');
     
-    // Show crawl controls section after URL inspection
+    // Show crawl controls section
     crawlControlsSection.classList.remove('hidden');
     
-    // Basic Information
-    updateBasicInfo(data);
+    // Display basic information
+    displayBasicInfo(data);
     
-    // Headings
-    updateHeadings(data);
+    // Display headings
+    displayHeadings(data);
     
-    // Main Content
-    updateMainContent(data);
+    // Display main content
+    displayMainContent(data);
     
-    // Links with categorization
-    updateLinks(data);
+    // Display links
+    displayLinks(data);
     
-    // Update export format visibility
-    updateExportFormatOptions();
+    // Update export info
+    updateExportInfo();
 }
 
-function updateBasicInfo(data) {
-    const basicPreviews = document.getElementById('basicPreviews');
-    let html = '';
+function displayBasicInfo(data) {
+    const previews = document.getElementById('basicPreviews');
+    previews.innerHTML = '';
     
     if (data.title) {
         document.getElementById('check_title').checked = true;
-        html += `<div class="preview-item">
-            <span class="preview-label">Title:</span>
-            <div class="preview-content">${escapeHtml(data.title)}</div>
-        </div>`;
+        const titlePreview = createPreviewItem('Title Preview:', data.title);
+        previews.appendChild(titlePreview);
     }
     
     if (data.meta_description) {
         document.getElementById('check_meta_description').checked = true;
-        html += `<div class="preview-item">
-            <span class="preview-label">Meta Description:</span>
-            <div class="preview-content">${escapeHtml(data.meta_description)}</div>
-        </div>`;
+        const descPreview = createPreviewItem('Meta Description Preview:', data.meta_description);
+        previews.appendChild(descPreview);
     }
-    
-    basicPreviews.innerHTML = html;
 }
 
-function updateHeadings(data) {
-    const headings = data.headings || { h1: [], h2: [], h3: [] };
-    const hasHeadings = headings.h1.length > 0 || headings.h2.length > 0 || headings.h3.length > 0;
-    
+function displayHeadings(data) {
     const headingsExpander = document.getElementById('headingsExpander');
-    if (!hasHeadings) {
+    const previews = document.getElementById('headingPreviews');
+    
+    if (!data.headings || (!data.headings.h1?.length && !data.headings.h2?.length && !data.headings.h3?.length)) {
         headingsExpander.style.display = 'none';
         return;
     }
     
     headingsExpander.style.display = 'block';
-    
-    // Update labels with counts
-    document.getElementById('h1Label').textContent = `H1 (${headings.h1.length})`;
-    document.getElementById('h2Label').textContent = `H2 (${headings.h2.length})`;
-    document.getElementById('h3Label').textContent = `H3 (${headings.h3.length})`;
-    
-    // Set checkboxes
-    document.getElementById('check_h1').checked = headings.h1.length > 0;
-    document.getElementById('check_h2').checked = headings.h2.length > 0;
-    document.getElementById('check_h3').checked = headings.h3.length > 0;
-    
-    // Update previews
-    const headingPreviews = document.getElementById('headingPreviews');
-    let html = '';
+    previews.innerHTML = '';
     
     ['h1', 'h2', 'h3'].forEach(level => {
-        if (headings[level] && headings[level].length > 0) {
-            const preview = headings[level].slice(0, 5);
-            html += `<div class="preview-item">
-                <span class="preview-label">${level.toUpperCase()}:</span>
-                <div class="preview-list">
-                    <ul>
-                        ${preview.map(heading => `<li>${escapeHtml(heading)}</li>`).join('')}
-                        ${headings[level].length > 5 ? `<li><em>... and ${headings[level].length - 5} more</em></li>` : ''}
-                    </ul>
-                </div>
-            </div>`;
+        const headings = data.headings[level] || [];
+        const label = document.getElementById(`${level}Label`);
+        const checkbox = document.getElementById(`check_${level}`);
+        
+        if (headings.length > 0) {
+            label.textContent = `${level.toUpperCase()} (${headings.length})`;
+            checkbox.checked = true;
+            
+            const preview = createPreviewItem(
+                `${level.toUpperCase()} Preview:`,
+                headings.slice(0, 5).join(', ') + (headings.length > 5 ? '...' : '')
+            );
+            previews.appendChild(preview);
+        } else {
+            label.textContent = level.toUpperCase();
+            checkbox.checked = false;
         }
     });
-    
-    headingPreviews.innerHTML = html;
 }
 
-function updateMainContent(data) {
+function displayMainContent(data) {
     const contentExpander = document.getElementById('contentExpander');
-    const contentPreview = document.getElementById('contentPreview');
+    const preview = document.getElementById('contentPreview');
     
-    if (!data.main_content || data.main_content.trim().length === 0) {
+    if (!data.main_content) {
         contentExpander.style.display = 'none';
         return;
     }
@@ -329,562 +296,404 @@ function updateMainContent(data) {
     document.getElementById('check_main_content').checked = true;
     
     const previewLength = Math.min(500, data.main_content.length);
-    const preview = data.main_content.substring(0, previewLength);
+    const previewText = data.main_content.substring(0, previewLength) + 
+                       (data.main_content.length > previewLength ? '...' : '');
     
-    contentPreview.innerHTML = `<div class="preview-item">
-        <span class="preview-label">Content Preview:</span>
-        <div class="preview-content">${escapeHtml(preview)}${data.main_content.length > previewLength ? '...' : ''}</div>
-    </div>`;
+    preview.innerHTML = '';
+    const contentPreview = createPreviewItem('Content Preview:', previewText);
+    preview.appendChild(contentPreview);
 }
 
-function updateLinks(data) {
+function displayLinks(data) {
     const linksExpander = document.getElementById('linksExpander');
-    const linksPreview = document.getElementById('linksPreview');
+    const preview = document.getElementById('linksPreview');
     
-    // Use categorized links if available, fallback to regular links
-    const categorizedLinks = data.categorized_links || {};
-    const regularLinks = data.links || [];
-    
-    // If we have categorized links, use them
-    if (Object.keys(categorizedLinks).length > 0) {
-        const categories = {
-            content_internal: 'Content Links',
-            external: 'External Links',
-            navigation: 'Navigation Links',
-            legal_or_contact: 'Legal/Contact Links'
-        };
-        
-        let totalLinks = 0;
-        let hasAnyLinks = false;
-        
-        // Update labels with counts and set default selections
-        Object.keys(categories).forEach(category => {
-            const links = categorizedLinks[category] || [];
-            const count = links.length;
-            totalLinks += count;
-            
-            const labelElement = document.getElementById(`links${category.split('_').map(word => 
-                word.charAt(0).toUpperCase() + word.slice(1)).join('')}Label`);
-            if (labelElement) {
-                labelElement.textContent = `${categories[category]} (${count})`;
-            }
-            
-            const checkboxElement = document.getElementById(`check_links_${category}`);
-            if (checkboxElement) {
-                // Default selections: content links and external links checked, navigation and legal unchecked
-                checkboxElement.checked = (category === 'content_internal' || category === 'external') && count > 0;
-            }
-            
-            if (count > 0) hasAnyLinks = true;
-        });
-        
-        if (!hasAnyLinks) {
-            linksExpander.style.display = 'none';
-            return;
-        }
-        
-        linksExpander.style.display = 'block';
-        
-        // Create preview
-        let html = '';
-        Object.keys(categories).forEach(category => {
-            const links = categorizedLinks[category] || [];
-            if (links.length > 0) {
-                const preview = links.slice(0, 10);
-                html += `<div class="preview-item">
-                    <span class="preview-label">${categories[category]}:</span>
-                    <div class="preview-list">
-                        <ul>
-                            ${preview.map(link => `<li><a href="${escapeHtml(link.url)}" target="_blank">${escapeHtml(link.text)}</a></li>`).join('')}
-                            ${links.length > 10 ? `<li><em>... and ${links.length - 10} more</em></li>` : ''}
-                        </ul>
-                    </div>
-                </div>`;
-            }
-        });
-        
-        linksPreview.innerHTML = html;
-    } 
-    // Fallback to regular links display
-    else if (regularLinks.length > 0) {
-        linksExpander.style.display = 'block';
-        
-        // Set only the general links checkbox (if it exists)
-        const generalLinksCheckbox = document.getElementById('check_links');
-        if (generalLinksCheckbox) {
-            generalLinksCheckbox.checked = false; // Default to unchecked for privacy
-        }
-        
-        const preview = regularLinks.slice(0, 10);
-        linksPreview.innerHTML = `<div class="preview-item">
-            <span class="preview-label">Links (${regularLinks.length}):</span>
-            <div class="preview-list">
-                <ul>
-                    ${preview.map(link => {
-                        const url = typeof link === 'object' ? link.url : link;
-                        const text = typeof link === 'object' ? link.text : link;
-                        return `<li><a href="${escapeHtml(url)}" target="_blank">${escapeHtml(text)}</a></li>`;
-                    }).join('')}
-                    ${regularLinks.length > 10 ? `<li><em>... and ${regularLinks.length - 10} more</em></li>` : ''}
-                </ul>
-            </div>
-        </div>`;
-    }
-    // No links at all
-    else {
+    if (!data.categorized_links) {
         linksExpander.style.display = 'none';
-    }
-}
-
-// Crawling functions
-async function startCrawl() {
-    const url = urlInput.value.trim();
-    const jobId = jobIdInput.value.trim();
-    const maxDepth = parseInt(maxDepthSelect.value);
-    const maxPages = parseInt(maxPagesInput.value);
-    const pagesPerBatch = parseInt(pagesPerBatchInput.value);
-    
-    if (!url && !jobId) {
-        showError('Please enter a URL to crawl or a Job ID to resume');
         return;
     }
     
+    linksExpander.style.display = 'block';
+    preview.innerHTML = '';
+    
+    const categories = {
+        'content_internal': 'Content Links',
+        'external': 'External Links', 
+        'navigation': 'Navigation Links',
+        'legal_or_contact': 'Legal/Contact Links'
+    };
+    
+    Object.entries(categories).forEach(([key, label]) => {
+        const links = data.categorized_links[key] || [];
+        const labelElement = document.getElementById(`links${key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')}Label`);
+        const checkbox = document.getElementById(`check_links_${key}`);
+        
+        if (labelElement) {
+            labelElement.textContent = `${label} (${links.length})`;
+        }
+        
+        if (checkbox) {
+            checkbox.checked = key === 'content_internal' && links.length > 0;
+        }
+        
+        if (links.length > 0) {
+            const linksList = document.createElement('div');
+            linksList.className = 'preview-item';
+            
+            const linkLabel = document.createElement('span');
+            linkLabel.className = 'preview-label';
+            linkLabel.textContent = `${label} Preview:`;
+            linksList.appendChild(linkLabel);
+            
+            const linkContent = document.createElement('div');
+            linkContent.className = 'preview-list';
+            
+            const ul = document.createElement('ul');
+            links.slice(0, 10).forEach(link => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.textContent = link.text;
+                a.target = '_blank';
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            
+            if (links.length > 10) {
+                const li = document.createElement('li');
+                li.textContent = `... and ${links.length - 10} more links`;
+                ul.appendChild(li);
+            }
+            
+            linkContent.appendChild(ul);
+            linksList.appendChild(linkContent);
+            preview.appendChild(linksList);
+        }
+    });
+}
+
+function createPreviewItem(label, content) {
+    const item = document.createElement('div');
+    item.className = 'preview-item';
+    
+    const labelEl = document.createElement('span');
+    labelEl.className = 'preview-label';
+    labelEl.textContent = label;
+    item.appendChild(labelEl);
+    
+    const contentEl = document.createElement('div');
+    contentEl.className = 'preview-content';
+    contentEl.textContent = content;
+    item.appendChild(contentEl);
+    
+    return item;
+}
+
+async function handleCrawl() {
+    const url = urlInput.value.trim();
+    const maxDepth = parseInt(document.getElementById('maxDepth').value);
+    const maxPages = parseInt(document.getElementById('maxPages').value);
+    const pagesPerBatch = parseInt(document.getElementById('pagesPerBatch').value);
+    const respectRobotsTxt = document.getElementById('respectRobotsTxt').checked;
+    const providedJobId = jobIdInput.value.trim();
+    
+    if (!url && !providedJobId) {
+        showError('Please enter a URL or provide a Job ID to resume');
+        return;
+    }
+    
+    // Generate and display Job ID immediately for new crawls
+    if (!providedJobId && url) {
+        currentJobId = generateJobId();
+        currentJobIdSpan.textContent = currentJobId;
+        jobIdInput.value = currentJobId;
+        batchInfo.classList.remove('hidden');
+        crawlProgressStatus.textContent = 'Starting crawl...';
+    } else if (providedJobId) {
+        currentJobId = providedJobId;
+        currentJobIdSpan.textContent = currentJobId;
+        batchInfo.classList.remove('hidden');
+        crawlProgressStatus.textContent = 'Resuming crawl...';
+    }
+    
+    showCrawlStatus('Starting crawl...', 'starting');
+    crawlBtn.disabled = true;
+    
     try {
-        crawlBtn.disabled = true;
-        showCrawlStatus(true, 'Initializing crawl...');
+        const requestBody = {
+            maxDepth,
+            maxPages,
+            pagesPerBatch,
+            respectRobotsTxt
+        };
+        
+        if (providedJobId) {
+            requestBody.jobId = providedJobId;
+        } else {
+            requestBody.url = url.startsWith('http') ? url : `https://${url}`;
+        }
         
         const response = await fetch('/api/crawl', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                url,
-                jobId: jobId || undefined,
-                maxDepth,
-                maxPages,
-                pagesPerBatch
-            })
+            body: JSON.stringify(requestBody)
         });
         
-        const result = await response.json();
+        const data = await response.json();
         
-        if (result.success) {
-            currentCrawlJobId = result.jobId;
-            sessionStorage.setItem('currentCrawlJobId', currentCrawlJobId);
+        if (data.success) {
+            currentCrawlData = data;
+            currentJobId = data.jobId;
+            currentJobIdSpan.textContent = currentJobId;
+            jobIdInput.value = currentJobId;
             
-            // Start polling for progress
-            startCrawlProgressPolling(result.jobId);
-            
-            showBatchInfo(true, result.jobId, 'In Progress');
-            crawlResultsSection.classList.remove('hidden');
-            
-            if (result.isComplete) {
-                displayCrawlResults(result);
+            if (data.isComplete) {
+                showCrawlStatus('Crawl completed!', 'complete');
+                displayCrawlResults(data);
+            } else {
+                showCrawlStatus('Batch completed. Click "Resume Crawl" to continue.', 'paused');
+                resumeCrawlBtn.classList.remove('hidden');
+                displayCrawlResults(data);
+                startProgressPolling();
             }
+            
+            saveSessionData();
         } else {
-            showError(result.error || 'Failed to start crawl');
-            showCrawlStatus(false);
+            showError(`❌ ${data.error}`);
+            hideCrawlStatus();
         }
+        
     } catch (error) {
-        console.error('Crawl error:', error);
         showError(`Network error: ${error.message}`);
-        showCrawlStatus(false);
+        hideCrawlStatus();
     } finally {
         crawlBtn.disabled = false;
     }
 }
 
-function startCrawlProgressPolling(jobId) {
-    // Clear any existing interval
-    if (crawlProgressInterval) {
-        clearInterval(crawlProgressInterval);
-    }
-    
-    // Start polling every 2 seconds
-    crawlProgressInterval = setInterval(() => {
-        checkCrawlProgress(jobId);
-    }, 2000);
-    
-    // Do an immediate check
-    checkCrawlProgress(jobId);
+function generateJobId() {
+    return Math.random().toString(36).substr(2, 9);
 }
 
-async function checkCrawlProgress(jobId, isRestoredSession = false) {
-    try {
-        const response = await fetch(`/api/crawl-progress/${jobId}`);
-        const progress = await response.json();
-        
-        if (progress.success) {
-            // Don't update UI state if we're in a restored completed session
-            if (isRestoredSession && progress.status === 'completed' && window.currentSitemap) {
-                console.log('Skipping progress update for restored completed session');
-                return;
-            }
-            
-            updateProgressDisplay(progress, isRestoredSession);
-            
-            if (progress.isComplete) {
-                stopCrawlProgressPolling();
-                saveCrawlCompletedStatus(true);
-                
-                // Fetch final results
-                const crawlResponse = await fetch('/api/crawl', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        jobId: jobId,
-                        maxDepth: progress.depth,
-                        maxPages: progress.maxPages,
-                        pagesPerBatch: 50
-                    })
-                });
-                
-                const finalResult = await crawlResponse.json();
-                if (finalResult.success) {
-                    displayCrawlResults(finalResult);
-                }
-            } else {
-                // Save incomplete status
-                // saveCrawlCompletedStatus(false);
-            }
-        } else if (!isRestoredSession) {
-            console.error('Progress check failed:', progress.error);
-            stopCrawlProgressPolling();
-        }
-    } catch (error) {
-        if (!isRestoredSession) {
-            console.error('Progress polling error:', error);
-        }
-    }
-}
-
-function updateProgressDisplay(progress, isRestoredSession = false) {
-    let statusMessage = '';
-    let isDetailed = false;
-    
-    // Show crawl results section and batch info
-    crawlResultsSection.classList.remove('hidden');
-    showBatchInfo(true, progress.jobId, progress.status);
-    
-    if (isRestoredSession) {
-        statusMessage = `Session restored - Job: ${progress.jobId}`;
-        if (progress.status === 'completed') {
-            statusMessage += ` (Completed: ${progress.pageCount} pages)`;
-        } else {
-            statusMessage += ` (Status: ${progress.status})`;
-        }
-        isDetailed = true;
-    } else {
-        switch (progress.status) {
-            case 'starting':
-            case 'initializing':
-                statusMessage = 'Initializing crawl...';
-                break;
-            case 'crawling':
-                if (progress.currentUrl) {
-                    const urlPath = new URL(progress.currentUrl).pathname || '/';
-                    statusMessage = `Processing: ${urlPath}\n\nBatch Progress: ${progress.pagesProcessedInBatch}/${progress.maxPagesThisBatch} pages\nTotal: ${progress.pageCount} pages crawled, ${progress.queueLength} in queue`;
-                    isDetailed = true;
-                } else {
-                    statusMessage = `Crawling in progress... (${progress.pageCount}/${progress.maxPages} pages)`;
-                    isDetailed = true;
-                }
-                break;
-            case 'batch_complete':
-                statusMessage = `Batch complete! Processed ${progress.pagesProcessedInBatch} pages.\n\nTotal crawled: ${progress.pageCount} pages\nRemaining in queue: ${progress.queueLength}`;
-                isDetailed = true;
-                showResumeCrawlButton(true);
-                break;
-            case 'completed':
-                statusMessage = `Crawl complete!\n\nTotal pages processed: ${progress.pageCount}`;
-                isDetailed = true;
-                crawlStatus.classList.remove('crawling');
-                crawlStatus.classList.add('complete');
-                break;
-            default:
-                statusMessage = `Status: ${progress.status} (${progress.pageCount}/${progress.maxPages} pages)`;
-                isDetailed = true;
-        }
-    }
-    
-    showCrawlStatus(true, statusMessage, isDetailed);
-    
-    // Update resume button visibility - explicit logic
-    if (progress.status === 'completed' || progress.isComplete) {
-        showResumeCrawlButton(false);
-    } else if (progress.status === 'batch_complete' || progress.batchComplete) {
-        showResumeCrawlButton(true);
-    } else {
-        // Hide resume button for other statuses like 'crawling', 'starting'
-        showResumeCrawlButton(false);
-    }
-}
-
-function stopCrawlProgressPolling() {
-    if (crawlProgressInterval) {
-        clearInterval(crawlProgressInterval);
-        crawlProgressInterval = null;
-    }
-}
-
-function showResumeCrawlButton(show) {
-    if (show) {
-        resumeCrawlBtn.classList.remove('hidden');
-    } else {
-        resumeCrawlBtn.classList.add('hidden');
-    }
-}
-
-async function resumeCrawl() {
-    if (!currentCrawlJobId) {
-        showError('No active crawl job to resume');
+async function handleResumeCrawl() {
+    if (!currentJobId) {
+        showError('No job ID available to resume');
         return;
     }
     
-    const respectRobotsTxt = document.getElementById('respectRobotsTxt').checked;
+    showCrawlStatus('Resuming crawl...', 'starting');
+    resumeCrawlBtn.disabled = true;
     
     try {
-        resumeCrawlBtn.disabled = true;
-        showCrawlStatus(true, 'Resuming crawl...');
-        showResumeCrawlButton(false);
-        
         const response = await fetch('/api/crawl', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                jobId: currentCrawlJobId,
-                maxDepth: parseInt(maxDepthSelect.value),
-                maxPages: parseInt(maxPagesInput.value),
-                pagesPerBatch: parseInt(pagesPerBatchInput.value),
-                respectRobotsTxt
+            body: JSON.stringify({ 
+                jobId: currentJobId,
+                maxDepth: parseInt(document.getElementById('maxDepth').value),
+                maxPages: parseInt(document.getElementById('maxPages').value),
+                pagesPerBatch: parseInt(document.getElementById('pagesPerBatch').value),
+                respectRobotsTxt: document.getElementById('respectRobotsTxt').checked
             })
         });
         
-        const result = await response.json();
+        const data = await response.json();
         
-        if (result.success) {
-            startCrawlProgressPolling(currentCrawlJobId);
+        if (data.success) {
+            currentCrawlData = data;
             
-            if (result.isComplete) {
-                displayCrawlResults(result);
+            if (data.isComplete) {
+                showCrawlStatus('Crawl completed!', 'complete');
+                resumeCrawlBtn.classList.add('hidden');
+                displayCrawlResults(data);
+                stopProgressPolling();
+            } else {
+                showCrawlStatus('Batch completed. Click "Resume Crawl" to continue.', 'paused');
+                displayCrawlResults(data);
+                startProgressPolling();
             }
+            
+            saveSessionData();
         } else {
-            showError(result.error || 'Failed to resume crawl');
-            showCrawlStatus(false);
+            showError(`❌ ${data.error}`);
+            hideCrawlStatus();
         }
+        
     } catch (error) {
-        console.error('Resume crawl error:', error);
         showError(`Network error: ${error.message}`);
-        showCrawlStatus(false);
+        hideCrawlStatus();
     } finally {
         resumeCrawlBtn.disabled = false;
     }
 }
 
-function displayCrawlResults(result) {
-    showCrawlStatus(false);
-    crawlResultsSection.classList.remove('hidden');
-    
-    // Display sitemap
-    console.log('[DEBUG] displayCrawlResults called with:', result);
-    console.log('[DEBUG] Sitemap data:', result.sitemap);
-    displaySitemap(result.sitemap);
-    
-    // Display crawl summary AFTER sitemap is set
-    displayCrawlSummary(result.stats, result.sitemap);
+function showCrawlStatus(message, status = 'crawling') {
+    crawlStatus.classList.remove('hidden');
+    crawlStatus.className = `crawl-status ${status}`;
+    crawlStatusText.textContent = message;
 }
 
-function displayCrawlSummary(stats, sitemap) {
-    // Use passed sitemap directly instead of relying on window.currentSitemap
-    const actualSitemap = sitemap || window.currentSitemap || {};
-    const totalPages = Object.keys(actualSitemap).length;
-    const successfulPages = Object.values(actualSitemap).filter(page => page.success).length;
-    const errorPages = totalPages - successfulPages;
-    const relevantPages = Object.values(actualSitemap).filter(page => page.is_relevant !== false).length;
+function hideCrawlStatus() {
+    crawlStatus.classList.add('hidden');
+}
+
+function displayCrawlResults(data) {
+    crawlResultsSection.classList.remove('hidden');
     
-    crawlSummary.innerHTML = `
+    // Display crawl summary
+    displayCrawlSummary(data.stats);
+    
+    // Display sitemap
+    displaySitemap(data.sitemap);
+    
+    // Update selection count
+    updateSelectionCount();
+    
+    // Update export info
+    updateExportInfo();
+}
+
+function displayCrawlSummary(stats) {
+    const summaryContainer = document.getElementById('crawlSummary');
+    
+    summaryContainer.innerHTML = `
         <div class="crawl-stats">
             <div class="stat-item">
-                <span class="stat-value">${totalPages}</span>
-                <span class="stat-label">Total Pages</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${successfulPages}</span>
-                <span class="stat-label">Successful</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${errorPages}</span>
-                <span class="stat-label">Errors</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${relevantPages}</span>
-                <span class="stat-label">Relevant</span>
+                <span class="stat-value">${stats.totalPages}</span>
+                <span class="stat-label">Pages Found</span>
             </div>
             <div class="stat-item">
                 <span class="stat-value">${stats.maxDepth}</span>
                 <span class="stat-label">Max Depth</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.isComplete ? 'Complete' : 'In Progress'}</span>
+                <span class="stat-label">Status</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.remaining || 0}</span>
+                <span class="stat-label">Remaining</span>
             </div>
         </div>
     `;
 }
 
 function displaySitemap(sitemap) {
-    console.log('[DEBUG] displaySitemap called with sitemap:', sitemap);
-    console.log('[DEBUG] Sitemap keys:', Object.keys(sitemap || {}));
+    const sitemapTree = document.getElementById('sitemapTree');
+    sitemapTree.innerHTML = '';
     
-    window.currentSitemap = sitemap;
+    // Group pages by depth
+    const pagesByDepth = {};
+    Object.entries(sitemap).forEach(([url, data]) => {
+        const depth = data.depth || 0;
+        if (!pagesByDepth[depth]) {
+            pagesByDepth[depth] = [];
+        }
+        pagesByDepth[depth].push({ url, ...data });
+    });
     
-    if (!sitemap || Object.keys(sitemap).length === 0) {
-        console.error('[DEBUG] No sitemap data available');
-        sitemapTree.innerHTML = '<p style="padding: 1rem; text-align: center; color: #666;">No pages found in crawl results.</p>';
-        return;
-    }
-    
-    const tree = buildSitemapTree(sitemap);
-    console.log('[DEBUG] Generated tree HTML length:', tree.length);
-    sitemapTree.innerHTML = tree;
-    updateSelectionCount();
-}
-
-function buildSitemapTree(sitemap) {
-    const urls = Object.keys(sitemap);
-    const processed = new Set();
-    let html = '';
-    
-    // Build tree structure starting from depth 0
-    function buildLevel(currentDepth) {
-        let levelHtml = '';
-        
-        urls.forEach(url => {
-            const page = sitemap[url];
-            if (page.depth === currentDepth && !processed.has(url)) {
-                processed.add(url);
-                levelHtml += buildSitemapNode(url, page, sitemap);
-            }
+    // Display pages by depth
+    Object.keys(pagesByDepth).sort((a, b) => parseInt(a) - parseInt(b)).forEach(depth => {
+        const pages = pagesByDepth[depth];
+        pages.forEach(page => {
+            const nodeElement = createSitemapNode(page, parseInt(depth));
+            sitemapTree.appendChild(nodeElement);
         });
-        
-        return levelHtml;
-    }
-    
-    // Build all levels
-    for (let depth = 0; depth <= 5; depth++) {
-        html += buildLevel(depth);
-    }
-    
-    return html;
-}
-
-function buildSitemapNode(url, page, sitemap) {
-    const isError = !page.success;
-    const isBlockedByRobots = page.blocked_by_robots;
-    const isSkippedDueToDepth = page.skipped_due_to_depth;
-    const isIrrelevant = page.is_relevant === false;
-    const nodeClass = `sitemap-node depth-${Math.min(page.depth, 2)}`;
-    const itemClass = `sitemap-item ${isError ? 'error' : ''} ${isBlockedByRobots ? 'blocked-robots' : ''} ${isSkippedDueToDepth ? 'skipped-depth' : ''} ${isIrrelevant ? 'irrelevant' : ''}`;
-    
-    // Generate unique IDs for checkboxes
-    const urlHash = btoa(url).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
-    const exportCheckboxId = `export_${urlHash}`;
-    const relevanceCheckboxId = `relevance_${urlHash}`;
-    
-    let sectionsInfo = '';
-    if (page.sections && page.sections.length > 0) {
-        sectionsInfo = `${page.sections.length} sections`;
-    }
-    
-    return `
-        <div class="${nodeClass}">
-            <div class="${itemClass}">
-                <div class="sitemap-checkboxes">
-                    <label class="checkbox-label export-label">
-                        <input type="checkbox" 
-                               class="sitemap-checkbox" 
-                               id="${exportCheckboxId}"
-                               data-url="${escapeHtml(url)}"
-                               onchange="updateSelectionCount()"
-                               ${!isError && !isIrrelevant && !isSkippedDueToDepth ? 'checked' : ''}>
-                        Export
-                    </label>
-                    <label class="checkbox-label relevance-label">
-                        <input type="checkbox" 
-                               class="sitemap-relevance-checkbox" 
-                               id="${relevanceCheckboxId}"
-                               data-url="${escapeHtml(url)}"
-                               onchange="toggleRelevance('${escapeHtml(url)}'); updateSelectionCount()"
-                               ${!isIrrelevant && !isSkippedDueToDepth ? 'checked' : ''}>
-                        Relevant
-                    </label>
-                </div>
-                <div class="sitemap-content">
-                    <div class="sitemap-title">${escapeHtml(page.title || 'Untitled')}</div>
-                    <a href="${escapeHtml(url)}" target="_blank" class="sitemap-url">${escapeHtml(url)}</a>
-                    <div class="sitemap-meta">
-                        <span>Depth: ${page.depth}</span>
-                        ${sectionsInfo ? `<span>${sectionsInfo}</span>` : ''}
-                        ${page.meta_description ? `<span>Has description</span>` : ''}
-                    </div>
-                    ${isError ? `<div class="sitemap-error">${escapeHtml(page.error)}</div>` : ''}
-                    ${isBlockedByRobots ? `<div class="sitemap-robots-blocked">🤖 Blocked by robots.txt</div>` : ''}
-                    ${isSkippedDueToDepth ? `<div class="sitemap-skipped-depth">⚠️ Skipped: Max depth (${page.depth - 1}) reached</div>` : ''}
-                </div>
-            </div>
-        </div>
-    `;
-}
-
-function toggleRelevance(url) {
-    if (window.currentSitemap && window.currentSitemap[url]) {
-        const currentValue = window.currentSitemap[url].is_relevant;
-        window.currentSitemap[url].is_relevant = currentValue === false ? true : false;
-        
-        // Update the visual state
-        const urlHash = btoa(url).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
-        const sitemapItem = document.querySelector(`#relevance_${urlHash}`).closest('.sitemap-item');
-        
-        if (window.currentSitemap[url].is_relevant === false) {
-            sitemapItem.classList.add('irrelevant');
-            // Uncheck export checkbox when marked irrelevant
-            const exportCheckbox = document.querySelector(`#export_${urlHash}`);
-            if (exportCheckbox) {
-                exportCheckbox.checked = false;
-            }
-        } else {
-            sitemapItem.classList.remove('irrelevant');
-            // Check export checkbox when marked relevant (if not error)
-            if (window.currentSitemap[url].success) {
-                const exportCheckbox = document.querySelector(`#export_${urlHash}`);
-                if (exportCheckbox) {
-                    exportCheckbox.checked = true;
-                }
-            }
-        }
-    }
-}
-
-function selectAllPages() {
-    const checkboxes = document.querySelectorAll('.sitemap-checkbox');
-    checkboxes.forEach(checkbox => {
-        const url = checkbox.dataset.url;
-        const page = window.currentSitemap[url];
-        // Only select if successful and relevant
-        if (page && page.success && page.is_relevant !== false) {
-            checkbox.checked = true;
-        }
     });
-    updateSelectionCount();
 }
 
-function selectNonePages() {
-    const checkboxes = document.querySelectorAll('.sitemap-checkbox');
-    checkboxes.forEach(checkbox => {
-        checkbox.checked = false;
-    });
-    updateSelectionCount();
+function createSitemapNode(page, depth) {
+    const node = document.createElement('div');
+    node.className = `sitemap-node depth-${depth}`;
+    
+    const item = document.createElement('div');
+    item.className = 'sitemap-item';
+    
+    if (page.error) {
+        item.classList.add('error');
+    } else if (page.skipped_due_to_depth) {
+        item.classList.add('skipped-depth');
+    } else if (!page.is_relevant) {
+        item.classList.add('irrelevant');
+    }
+    
+    // Checkboxes
+    const checkboxes = document.createElement('div');
+    checkboxes.className = 'sitemap-checkboxes';
+    
+    const exportCheckbox = document.createElement('input');
+    exportCheckbox.type = 'checkbox';
+    exportCheckbox.className = 'sitemap-checkbox';
+    exportCheckbox.dataset.url = page.url;
+    exportCheckbox.checked = page.success && page.is_relevant;
+    
+    const exportLabel = document.createElement('label');
+    exportLabel.className = 'checkbox-label export-label';
+    exportLabel.appendChild(exportCheckbox);
+    exportLabel.appendChild(document.createTextNode('Export'));
+    
+    const relevanceCheckbox = document.createElement('input');
+    relevanceCheckbox.type = 'checkbox';
+    relevanceCheckbox.className = 'sitemap-relevance-checkbox';
+    relevanceCheckbox.dataset.url = page.url;
+    relevanceCheckbox.checked = page.is_relevant;
+    
+    const relevanceLabel = document.createElement('label');
+    relevanceLabel.className = 'checkbox-label relevance-label';
+    relevanceLabel.appendChild(relevanceCheckbox);
+    relevanceLabel.appendChild(document.createTextNode('Relevant'));
+    
+    checkboxes.appendChild(exportLabel);
+    checkboxes.appendChild(relevanceLabel);
+    
+    // Content
+    const content = document.createElement('div');
+    content.className = 'sitemap-content';
+    
+    const title = document.createElement('div');
+    title.className = 'sitemap-title';
+    title.textContent = page.title || 'Untitled Page';
+    
+    const url = document.createElement('a');
+    url.className = 'sitemap-url';
+    url.href = page.url;
+    url.textContent = page.url;
+    url.target = '_blank';
+    
+    const meta = document.createElement('div');
+    meta.className = 'sitemap-meta';
+    
+    if (page.error) {
+        const error = document.createElement('div');
+        error.className = 'sitemap-error';
+        error.textContent = `Error: ${page.error}`;
+        meta.appendChild(error);
+    } else if (page.skipped_due_to_depth) {
+        const skipped = document.createElement('div');
+        skipped.className = 'sitemap-skipped-depth';
+        skipped.textContent = 'Skipped: Max depth reached';
+        meta.appendChild(skipped);
+    } else {
+        meta.innerHTML = `
+            <span>Depth: ${depth}</span>
+            <span>Sections: ${page.sections ? page.sections.length : 0}</span>
+            <span>Links: ${page.internal_links ? page.internal_links.length : 0}</span>
+        `;
+    }
+    
+    content.appendChild(title);
+    content.appendChild(url);
+    content.appendChild(meta);
+    
+    item.appendChild(checkboxes);
+    item.appendChild(content);
+    node.appendChild(item);
+    
+    return node;
 }
 
 function updateSelectionCount() {
@@ -903,352 +712,331 @@ function updateSelectionCount() {
     }
 }
 
-// Export functions
-function updateExportFormatOptions() {
-    const exportFormat = document.querySelector('input[name="export_format"]:checked').value;
-    const ragOptions = document.getElementById('ragOptions');
+function startProgressPolling() {
+    if (crawlProgressInterval) {
+        clearInterval(crawlProgressInterval);
+    }
     
-    if (exportFormat === 'rag_jsonl') {
-        ragOptions.classList.remove('hidden');
-    } else {
-        ragOptions.classList.add('hidden');
+    crawlProgressInterval = setInterval(checkCrawlProgress, 2000);
+}
+
+function stopProgressPolling() {
+    if (crawlProgressInterval) {
+        clearInterval(crawlProgressInterval);
+        crawlProgressInterval = null;
     }
 }
 
-function getSelectedContent() {
-    const selected = {};
-    
-    // Basic information
-    selected.source_url = document.getElementById('check_source_url').checked;
-    selected.title = document.getElementById('check_title').checked;
-    selected.meta_description = document.getElementById('check_meta_description').checked;
-    
-    // Headings
-    selected.h1 = document.getElementById('check_h1')?.checked || false;
-    selected.h2 = document.getElementById('check_h2')?.checked || false;
-    selected.h3 = document.getElementById('check_h3')?.checked || false;
-    
-    // Content
-    selected.main_content = document.getElementById('check_main_content').checked;
-    
-    // Links - check for categorized link checkboxes
-    selected.links_content_internal = document.getElementById('check_links_content_internal')?.checked || false;
-    selected.links_external = document.getElementById('check_links_external')?.checked || false;
-    selected.links_navigation = document.getElementById('check_links_navigation')?.checked || false;
-    selected.links_legal_or_contact = document.getElementById('check_links_legal_or_contact')?.checked || false;
-    
-    return selected;
-}
-
-function getSelectedPages() {
-    const selectedPages = [];
-    const checkboxes = document.querySelectorAll('.sitemap-checkbox:checked');
-    
-    checkboxes.forEach(checkbox => {
-        const url = checkbox.dataset.url;
-        if (window.currentSitemap && window.currentSitemap[url]) {
-            selectedPages.push(window.currentSitemap[url]);
-        }
-    });
-    
-    return selectedPages;
-}
-
-async function downloadExport() {
-    if (!currentData) {
-        showError('No data to export');
+async function checkCrawlProgress() {
+    if (!currentJobId) {
+        stopProgressPolling();
         return;
     }
     
-    const exportFormat = document.querySelector('input[name="export_format"]:checked').value;
-    const selectedContent = getSelectedContent();
-    
-    // Check if we have multi-page data
-    const selectedPages = window.currentSitemap ? getSelectedPages() : [];
-    const isMultiPage = selectedPages.length > 0;
-    
-    let exportData, filename, mimeType;
-    
     try {
-        if (exportFormat === 'json') {
-            const result = createJsonExport(selectedContent, isMultiPage ? selectedPages : [currentData]);
-            exportData = JSON.stringify(result, null, 2);
-            filename = `${isMultiPage ? 'multi_page' : 'url'}_content_${Date.now()}.json`;
-            mimeType = 'application/json';
-        } else if (exportFormat === 'rag_jsonl') {
-            const chunkSize = parseInt(document.getElementById('chunkSize').value);
-            const overlap = parseInt(document.getElementById('overlap').value);
-            const includeHeadings = document.getElementById('includeHeadings').checked;
+        const response = await fetch(`/api/crawl-progress/${currentJobId}`);
+        const progress = await response.json();
+        
+        if (progress.success) {
+            const statusText = `Status: ${progress.status}\nPages: ${progress.pageCount}/${progress.maxPages}\nQueue: ${progress.queueLength}`;
             
-            exportData = createRagJsonlExport(selectedContent, isMultiPage ? selectedPages : [currentData], chunkSize, overlap, includeHeadings);
-            filename = `${isMultiPage ? 'multi_page' : 'rag'}_content_${Date.now()}.jsonl`;
-            mimeType = 'application/jsonl';
-        } else if (exportFormat === 'txt') {
-            exportData = createTextExport(selectedContent, isMultiPage ? selectedPages : [currentData]);
-            filename = `${isMultiPage ? 'multi_page' : 'url'}_content_${Date.now()}.txt`;
-            mimeType = 'text/plain';
+            if (progress.currentUrl) {
+                crawlStatusText.textContent = `Crawling: ${progress.currentUrl}\n${statusText}`;
+            } else {
+                crawlStatusText.textContent = statusText;
+            }
+            
+            crawlProgressStatus.textContent = progress.status;
+            
+            if (progress.isComplete) {
+                showCrawlStatus('Crawl completed!', 'complete');
+                resumeCrawlBtn.classList.add('hidden');
+                stopProgressPolling();
+                // saveCrawlCompletedStatus(false); // Commented out - function not defined
+                
+                // Refresh crawl results
+                try {
+                    const crawlResponse = await fetch('/api/crawl', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ jobId: currentJobId })
+                    });
+                    
+                    const crawlData = await response.json();
+                    if (crawlData.success) {
+                        currentCrawlData = crawlData;
+                        displayCrawlResults(crawlData);
+                        saveSessionData();
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh crawl results:', error);
+                }
+            }
         }
-        
-        // Create and download file
-        const blob = new Blob([exportData], { type: mimeType });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = filename;
-        a.click();
-        URL.revokeObjectURL(url);
-        
-        showSuccess(`Export downloaded: ${filename}`);
-        
     } catch (error) {
-        console.error('Export error:', error);
-        showError(`Export failed: ${error.message}`);
+        console.error('Progress polling error:', error);
+        stopProgressPolling();
     }
 }
 
-function createJsonExport(selectedContent, pages) {
-    const result = {};
+function updateExportInfo() {
+    const exportInfo = document.getElementById('exportInfo');
+    const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
     
-    if (pages.length === 1) {
-        // Single page export
-        const data = pages[0];
-        
-        if (selectedContent.source_url) result.source_url = data.final_url;
-        if (selectedContent.title && data.title) result.title = data.title;
-        if (selectedContent.meta_description && data.meta_description) result.meta_description = data.meta_description;
-        
-        // Headings
-        if (data.headings) {
-            if (selectedContent.h1 && data.headings.h1) result.h1 = data.headings.h1;
-            if (selectedContent.h2 && data.headings.h2) result.h2 = data.headings.h2;
-            if (selectedContent.h3 && data.headings.h3) result.h3 = data.headings.h3;
+    let info = '';
+    
+    if (selectedFormat === 'json') {
+        info = 'JSON format: Structured data with all selected content types and metadata.';
+    } else if (selectedFormat === 'rag_jsonl') {
+        const chunkSize = document.getElementById('chunkSize').value;
+        const overlap = document.getElementById('overlap').value;
+        info = `RAG JSONL format: AI-optimized chunks (${chunkSize} words, ${overlap} overlap) with metadata for retrieval systems.`;
+    } else if (selectedFormat === 'txt') {
+        info = 'Plain text format: Clean, readable text organized by sections and headings.';
+    }
+    
+    // Add multi-page info if crawl data exists
+    if (currentCrawlData) {
+        const selectedPages = document.querySelectorAll('.sitemap-checkbox:checked').length;
+        if (selectedPages > 0) {
+            info += ` Multi-page export: ${selectedPages} pages selected.`;
+        }
+    }
+    
+    exportInfo.textContent = info;
+}
+
+async function handleDownload() {
+    const selectedFormat = document.querySelector('input[name="export_format"]:checked').value;
+    
+    let exportData;
+    let filename;
+    let mimeType;
+    
+    if (selectedFormat === 'json') {
+        exportData = generateJSONExport();
+        filename = `url_content_${Date.now()}.json`;
+        mimeType = 'application/json';
+    } else if (selectedFormat === 'rag_jsonl') {
+        exportData = generateRAGJSONLExport();
+        filename = `rag_content_${Date.now()}.jsonl`;
+        mimeType = 'application/jsonl';
+    } else if (selectedFormat === 'txt') {
+        exportData = generateTextExport();
+        filename = `content_${Date.now()}.txt`;
+        mimeType = 'text/plain';
+    }
+    
+    if (!exportData) {
+        showError('No content selected for export');
+        return;
+    }
+    
+    // Create and trigger download
+    const blob = new Blob([exportData], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    showSuccess(`✅ Downloaded ${filename}`);
+}
+
+function generateJSONExport() {
+    const exportData = {};
+    
+    // Single page data
+    if (currentData) {
+        if (document.getElementById('check_source_url').checked) {
+            exportData.source_url = currentData.final_url;
         }
         
-        if (selectedContent.main_content && data.main_content) result.main_content = data.main_content;
-        
-        // Export links based on selection
-        const exportLinks = {};
-        if (data.categorized_links) {
-            if (selectedContent.links_content_internal && data.categorized_links.content_internal) {
-                exportLinks.content_internal = data.categorized_links.content_internal;
-            }
-            if (selectedContent.links_external && data.categorized_links.external) {
-                exportLinks.external = data.categorized_links.external;
-            }
-            if (selectedContent.links_navigation && data.categorized_links.navigation) {
-                exportLinks.navigation = data.categorized_links.navigation;
-            }
-            if (selectedContent.links_legal_or_contact && data.categorized_links.legal_or_contact) {
-                exportLinks.legal_or_contact = data.categorized_links.legal_or_contact;
-            }
-            
-            if (Object.keys(exportLinks).length > 0) {
-                result.links = exportLinks;
-            }
+        if (document.getElementById('check_title').checked && currentData.title) {
+            exportData.title = currentData.title;
         }
         
-    } else {
-        // Multi-page export
-        result.pages = pages.map(data => {
-            const pageResult = {};
+        if (document.getElementById('check_meta_description').checked && currentData.meta_description) {
+            exportData.meta_description = currentData.meta_description;
+        }
+        
+        if (document.getElementById('check_main_content').checked && currentData.main_content) {
+            exportData.main_content = currentData.main_content;
+        }
+        
+        // Add selected link categories
+        if (currentData.categorized_links) {
+            const selectedLinks = {};
+            ['content_internal', 'external', 'navigation', 'legal_or_contact'].forEach(category => {
+                const checkbox = document.getElementById(`check_links_${category}`);
+                if (checkbox && checkbox.checked) {
+                    selectedLinks[category] = currentData.categorized_links[category] || [];
+                }
+            });
             
-            if (selectedContent.source_url) pageResult.source_url = data.final_url;
-            if (selectedContent.title && data.title) pageResult.title = data.title;
-            if (selectedContent.meta_description && data.meta_description) pageResult.meta_description = data.meta_description;
+            if (Object.keys(selectedLinks).length > 0) {
+                exportData.links = selectedLinks;
+            }
+        }
+    }
+    
+    // Multi-page data from crawl
+    if (currentCrawlData) {
+        const selectedPages = [];
+        document.querySelectorAll('.sitemap-checkbox:checked').forEach(checkbox => {
+            const url = checkbox.dataset.url;
+            const pageData = currentCrawlData.sitemap[url];
+            if (pageData && pageData.success) {
+                selectedPages.push({
+                    url: pageData.final_url || url,
+                    title: pageData.title,
+                    meta_description: pageData.meta_description,
+                    sections: pageData.sections || [],
+                    links: pageData.categorized_links || {}
+                });
+            }
+        });
+        
+        if (selectedPages.length > 0) {
+            exportData.pages = selectedPages;
+        }
+    }
+    
+    return Object.keys(exportData).length > 0 ? JSON.stringify(exportData, null, 2) : null;
+}
+
+function generateRAGJSONLExport() {
+    const chunkSize = parseInt(document.getElementById('chunkSize').value);
+    const overlap = parseInt(document.getElementById('overlap').value);
+    const includeHeadings = document.getElementById('includeHeadings').checked;
+    
+    const lines = [];
+    
+    // Process single page data
+    if (currentData && document.getElementById('check_main_content').checked) {
+        const chunks = chunkText(currentData.main_content, chunkSize, overlap);
+        chunks.forEach((chunk, index) => {
+            const metadata = {
+                source: currentData.final_url,
+                type: 'text',
+                chunk_index: index
+            };
             
-            if (selectedContent.main_content && data.main_content) pageResult.main_content = data.main_content;
-            
-            // Export links based on selection for each page
-            const exportLinks = {};
-            if (data.categorized_links) {
-                if (selectedContent.links_content_internal && data.categorized_links.content_internal) {
-                    exportLinks.content_internal = data.categorized_links.content_internal;
-                }
-                if (selectedContent.links_external && data.categorized_links.external) {
-                    exportLinks.external = data.categorized_links.external;
-                }
-                if (selectedContent.links_navigation && data.categorized_links.navigation) {
-                    exportLinks.navigation = data.categorized_links.navigation;
-                }
-                if (selectedContent.links_legal_or_contact && data.categorized_links.legal_or_contact) {
-                    exportLinks.legal_or_contact = data.categorized_links.legal_or_contact;
-                }
-                
-                if (Object.keys(exportLinks).length > 0) {
-                    pageResult.links = exportLinks;
-                }
+            if (includeHeadings && currentData.headings) {
+                metadata.headings = currentData.headings;
             }
             
-            return pageResult;
+            lines.push({
+                id: generateChunkId(currentData.final_url, index, chunk),
+                title: currentData.title || '',
+                chunk: chunk,
+                metadata: metadata
+            });
         });
     }
     
-    return result;
-}
-
-function createRagJsonlExport(selectedContent, pages, chunkSize, overlap, includeHeadings) {
-    const lines = [];
-    
-    pages.forEach(data => {
-        const baseMetadata = { source: data.final_url };
-        if (includeHeadings && data.headings) {
-            baseMetadata.h1 = data.headings.h1 || [];
-            baseMetadata.h2 = data.headings.h2 || [];
-            baseMetadata.h3 = data.headings.h3 || [];
-        }
-        
-        let chunkIndex = 0;
-        
-        // Title
-        if (selectedContent.title && data.title) {
-            const metadata = { ...baseMetadata, type: 'title' };
-            lines.push({
-                id: generateChunkId(data.final_url, chunkIndex, data.title),
-                title: data.title,
-                chunk: data.title,
-                metadata
-            });
-            chunkIndex++;
-        }
-        
-        // Meta description
-        if (selectedContent.meta_description && data.meta_description) {
-            const metadata = { ...baseMetadata, type: 'description' };
-            lines.push({
-                id: generateChunkId(data.final_url, chunkIndex, data.meta_description),
-                title: data.title || '',
-                chunk: data.meta_description,
-                metadata
-            });
-            chunkIndex++;
-        }
-        
-        // Main content
-        if (selectedContent.main_content && data.main_content) {
-            const chunks = chunkText(data.main_content, chunkSize, overlap);
-            chunks.forEach(chunk => {
-                const metadata = { ...baseMetadata, type: 'text' };
-                lines.push({
-                    id: generateChunkId(data.final_url, chunkIndex, chunk),
-                    title: data.title || '',
-                    chunk,
-                    metadata
+    // Process multi-page data from crawl
+    if (currentCrawlData) {
+        document.querySelectorAll('.sitemap-checkbox:checked').forEach(checkbox => {
+            const url = checkbox.dataset.url;
+            const pageData = currentCrawlData.sitemap[url];
+            
+            if (pageData && pageData.success && pageData.sections) {
+                pageData.sections.forEach(section => {
+                    const chunks = chunkText(section.content_text, chunkSize, overlap);
+                    chunks.forEach((chunk, chunkIndex) => {
+                        const metadata = {
+                            source: section.page_url,
+                            type: section.content_type || 'text',
+                            section_id: section.section_id,
+                            heading: section.heading,
+                            heading_level: section.heading_level,
+                            volatility: section.volatility,
+                            chunk_index: chunkIndex
+                        };
+                        
+                        if (includeHeadings && section.breadcrumbs) {
+                            metadata.breadcrumbs = section.breadcrumbs;
+                        }
+                        
+                        lines.push({
+                            id: `${section.section_id}_${chunkIndex}`,
+                            title: section.page_title || '',
+                            chunk: chunk,
+                            metadata: metadata
+                        });
+                    });
                 });
-                chunkIndex++;
-            });
-        }
-    });
+            }
+        });
+    }
     
-    return lines.map(line => JSON.stringify(line)).join('\n');
+    return lines.length > 0 ? lines.map(line => JSON.stringify(line)).join('\n') : null;
 }
 
-function createTextExport(selectedContent, pages) {
-    // Generate export metadata header
-    const now = new Date();
-    const exportDate = now.toLocaleDateString('de-DE') + ', ' + now.toLocaleTimeString('de-DE');
-    const isMultiPage = pages.length > 1;
+function generateTextExport() {
+    let content = '';
     
-    let metadata = `=== EXPORT METADATA ===\n\n`;
-    metadata += `Export Format: TXT\n`;
-    metadata += `Export Date: ${exportDate}\n`;
-    metadata += `Multi-page Export: ${isMultiPage ? 'Yes' : 'No'}\n`;
-    metadata += `Pages Exported: ${pages.length}\n`;
-    
-    // Count total sections across all pages
-    const totalSections = pages.reduce((sum, page) => {
-        return sum + (page.sections ? page.sections.length : 0);
-    }, 0);
-    metadata += `Total Sections: ${totalSections}\n`;
-    
-    // Add crawl info if available (from multi-page export)
-    if (currentCrawlJobId && window.currentSitemap) {
-        metadata += `\nCrawl Job ID: ${currentCrawlJobId}\n`;
-        const sitemapUrls = Object.keys(window.currentSitemap);
-        if (sitemapUrls.length > 0) {
-            // Try to get crawl settings from first page depth info
-            const maxDepth = Math.max(...Object.values(window.currentSitemap).map(p => p.depth || 0));
-            metadata += `Start URL: ${sitemapUrls[0]}\n`;
-            metadata += `Max Depth: ${maxDepth + 1}\n`;  // +1 because depth is 0-indexed
-            metadata += `Max Pages: ${document.getElementById('maxPages')?.value || 'N/A'}\n`;
-            metadata += `Pages Crawled: ${sitemapUrls.length}\n`;
+    // Single page data
+    if (currentData) {
+        if (document.getElementById('check_title').checked && currentData.title) {
+            content += `# ${currentData.title}\n\n`;
+        }
+        
+        if (document.getElementById('check_source_url').checked) {
+            content += `Source: ${currentData.final_url}\n\n`;
+        }
+        
+        if (document.getElementById('check_meta_description').checked && currentData.meta_description) {
+            content += `Description: ${currentData.meta_description}\n\n`;
+        }
+        
+        if (document.getElementById('check_main_content').checked && currentData.main_content) {
+            content += `## Content\n\n${currentData.main_content}\n\n`;
         }
     }
     
-    // Add selected content types
-    metadata += `\nSelected Content Types:\n`;
-    if (selectedContent.title) metadata += `✓ Title\n`;
-    if (selectedContent.meta_description) metadata += `✓ Meta Description\n`;
-    if (selectedContent.h1) metadata += `✓ H1 Headings\n`;
-    if (selectedContent.h2) metadata += `✓ H2 Headings\n`;
-    if (selectedContent.h3) metadata += `✓ H3 Headings\n`;
-    if (selectedContent.main_content) metadata += `✓ Main Content\n`;
-    if (selectedContent.links_content_internal) metadata += `✓ Content Links\n`;
-    if (selectedContent.links_external) metadata += `✓ External Links\n`;
-    if (selectedContent.links_navigation) metadata += `✓ Navigation Links\n`;
-    if (selectedContent.links_legal_or_contact) metadata += `✓ Legal/Contact Links\n`;
-    
-    metadata += `\n${'='.repeat(80)}\n\n`;
-    
-    let text = '';
-    
-    pages.forEach((data, pageIndex) => {
-        if (pages.length > 1) {
-            text += `\n${'='.repeat(80)}\n`;
-            text += `PAGE ${pageIndex + 1}\n`;
-            text += `${'='.repeat(80)}\n\n`;
-        }
+    // Multi-page data from crawl
+    if (currentCrawlData) {
+        const selectedPages = [];
+        document.querySelectorAll('.sitemap-checkbox:checked').forEach(checkbox => {
+            const url = checkbox.dataset.url;
+            const pageData = currentCrawlData.sitemap[url];
+            if (pageData && pageData.success) {
+                selectedPages.push(pageData);
+            }
+        });
         
-        if (selectedContent.source_url) {
-            text += `Source URL: ${data.final_url}\n\n`;
-        }
-        
-        if (selectedContent.title && data.title) {
-            text += `Title: ${data.title}\n\n`;
-        }
-        
-        if (selectedContent.meta_description && data.meta_description) {
-            text += `Meta Description: ${data.meta_description}\n\n`;
-        }
-        
-        if (selectedContent.main_content && data.main_content) {
-            text += `Main Content:\n${'-'.repeat(50)}\n${data.main_content}\n\n`;
-        }
-        
-        // Export selected link categories
-        if (data.categorized_links) {
-            const linkCategories = {
-                content_internal: 'Content Links',
-                external: 'External Links', 
-                navigation: 'Navigation Links',
-                legal_or_contact: 'Legal/Contact Links'
-            };
+        selectedPages.forEach(page => {
+            content += `\n# ${page.title || 'Untitled Page'}\n`;
+            content += `Source: ${page.final_url || page.url}\n\n`;
             
-            Object.keys(linkCategories).forEach(category => {
-                if (selectedContent[`links_${category}`] && data.categorized_links[category] && data.categorized_links[category].length > 0) {
-                    text += `${linkCategories[category]}:\n${'-'.repeat(30)}\n`;
-                    data.categorized_links[category].forEach(link => {
-                        text += `• ${link.text}: ${link.url}\n`;
-                    });
-                    text += '\n';
-                }
-            });
-        }
-    });
+            if (page.sections && page.sections.length > 0) {
+                page.sections.forEach(section => {
+                    content += `## ${section.heading}\n\n`;
+                    content += `${section.content_text}\n\n`;
+                });
+            }
+        });
+    }
     
-    return (metadata + text).trim();
-}
-
-// Utility functions
-function generateChunkId(url, chunkIndex, chunkText) {
-    const content = `${url}_${chunkIndex}_${chunkText.substring(0, 50)}`;
-    return btoa(content).replace(/[^a-zA-Z0-9]/g, '').substring(0, 12);
+    return content.trim() || null;
 }
 
 function chunkText(text, chunkSize, overlap) {
-    if (!text || !text.trim()) return [];
+    if (!text || !text.trim()) {
+        return [];
+    }
     
     const words = text.split(/\s+/);
-    if (words.length <= chunkSize) return [text];
+    if (words.length <= chunkSize) {
+        return [text];
+    }
     
     const chunks = [];
     let start = 0;
@@ -1258,58 +1046,91 @@ function chunkText(text, chunkSize, overlap) {
         const chunk = words.slice(start, end).join(' ');
         chunks.push(chunk);
         
-        if (end >= words.length) break;
+        if (end >= words.length) {
+            break;
+        }
         
         start = end - overlap;
-        if (start < 0) start = 0;
+        if (start < 0) {
+            start = 0;
+        }
     }
     
     return chunks;
 }
 
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+function generateChunkId(url, chunkIndex, chunkText) {
+    const content = `${url}_${chunkIndex}_${chunkText.substring(0, 50)}`;
+    return btoa(content).substring(0, 12);
 }
 
-// Event listeners
-document.addEventListener('DOMContentLoaded', () => {
-    inspectBtn.addEventListener('click', () => {
-        const url = urlInput.value.trim();
-        if (url) {
-            let fullUrl = url;
-            if (!url.startsWith('http://') && !url.startsWith('https://')) {
-                fullUrl = 'https://' + url;
+function saveSessionData() {
+    const sessionData = {
+        currentData,
+        currentCrawlData,
+        currentJobId,
+        timestamp: Date.now()
+    };
+    
+    try {
+        localStorage.setItem('urlInspectorSession', JSON.stringify(sessionData));
+    } catch (error) {
+        console.warn('Failed to save session data:', error);
+    }
+}
+
+function restoreSessionIfExists() {
+    try {
+        const saved = localStorage.getItem('urlInspectorSession');
+        if (saved) {
+            const sessionData = JSON.parse(saved);
+            
+            // Check if session is recent (within 24 hours)
+            const age = Date.now() - sessionData.timestamp;
+            if (age < 24 * 60 * 60 * 1000) {
+                showRestorationNotice();
+                
+                if (sessionData.currentData) {
+                    currentData = sessionData.currentData;
+                    displayResults(currentData);
+                    urlInput.value = currentData.final_url || '';
+                }
+                
+                if (sessionData.currentCrawlData) {
+                    currentCrawlData = sessionData.currentCrawlData;
+                    displayCrawlResults(currentCrawlData);
+                }
+                
+                if (sessionData.currentJobId) {
+                    currentJobId = sessionData.currentJobId;
+                    jobIdInput.value = currentJobId;
+                    currentJobIdSpan.textContent = currentJobId;
+                    batchInfo.classList.remove('hidden');
+                }
             }
-            inspectUrl(fullUrl);
         }
-    });
+    } catch (error) {
+        console.warn('Failed to restore session data:', error);
+    }
+}
+
+function showRestorationNotice() {
+    const notice = document.createElement('div');
+    notice.className = 'restoration-notice';
+    notice.innerHTML = `
+        <div class="restoration-content">
+            <span>🔄 Previous session restored</span>
+            <button class="clear-session-btn" onclick="clearSession()">Clear Session</button>
+        </div>
+    `;
     
-    parseManualBtn.addEventListener('click', () => {
-        const html = manualHtml.value.trim();
-        const url = manualUrl.value.trim();
-        if (html) {
-            parseManualHtml(html, url);
-        }
-    });
-    
-    urlInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            inspectBtn.click();
-        }
-    });
-    
-    downloadBtn.addEventListener('click', downloadExport);
-    
-    // Export format change handler
-    document.querySelectorAll('input[name="export_format"]').forEach(radio => {
-        radio.addEventListener('change', updateExportFormatOptions);
-    });
-    
-    // Crawl event listeners
-    crawlBtn.addEventListener('click', startCrawl);
-    resumeCrawlBtn.addEventListener('click', resumeCrawl);
-    selectAllBtn.addEventListener('click', selectAllPages);
-    selectNoneBtn.addEventListener('click', selectNonePages);
-});
+    document.querySelector('.container').insertBefore(notice, document.querySelector('.input-section'));
+}
+
+function clearSession() {
+    localStorage.removeItem('urlInspectorSession');
+    location.reload();
+}
+
+// Make clearSession available globally
+window.clearSession = clearSession;
