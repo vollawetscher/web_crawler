@@ -9,7 +9,8 @@
     "https://tv1.eu/ueber-uns",
     "https://tv1.eu/blog",
     "https://tv1.eu/jobs",
-    "https://tv1.eu/en/imprint"
+    "https://tv1.eu/en/imprint",
+    "https://tv1.eu/en/data-protection"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -2009,14 +2010,469 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/en/imprint": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/imprint",
+      "title": "Imprint – TV1",
+      "meta_description": "",
+      "main_content": "Information according to § 5 TMG TV1 GmbH Beta-Str. 9a 85774 Unterföhring Beta-Str. 9a 85774 Unterföhring Commercial Register: HRB 127 043 Registry court: München Commercial Register: HRB 127 043 Registry court: München Represented by: Michael Westphal, MBA Karsten Milde, Dipl.-Jur. Represented by: Represented by: Michael Westphal, MBA Karsten Milde, Dipl.-Jur.\n\nContact Telefon: +49 89 96 05 70-60 Telefax: +49 89 96 05 70-79 E-Mail: [email protected] Telefon: +49 89 96 05 70-60 Telefax: +49 89 96 05 70-79 E-Mail: [email protected] [email protected]\n\nVAT ID Sales tax identification number according to § 27 a Sales Tax Act: DE 812 786 315 Sales tax identification number according to § 27 a Sales Tax Act: DE 812 786 315\n\nResponsible for the content according to § 55 para. 2 RStV Michael Westphal Michael Westphal\n\nWebdesign Alexander Schwarze Webdesign Alexander Schwarze Webdesign\n\nEU dispute resolution The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr. You can find our e-mail address in the imprint above. The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr. https://ec.europa.eu/consumers/odr You can find our e-mail address in the imprint above.\n\nConsumer dispute resolution/universal arbitration board We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board. We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.\n\nLiability for contents As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a concrete infringement. If we become aware of corresponding infringements, we will remove this content immediately. Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a concrete infringement. If we become aware of corresponding infringements, we will remove this content immediately.\n\nLiability for links Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognisable at the time of linking. Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognisable at the time of linking. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements of the law, we will remove such links immediately. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements of the law, we will remove such links immediately.",
+      "sections": [
+        {
+          "section_id": "ef0101435ba0",
+          "section_order": 1,
+          "heading": "Information according to § 5 TMG",
+          "heading_level": "h2",
+          "content_text": "Information according to § 5 TMG TV1 GmbH Beta-Str. 9a 85774 Unterföhring Beta-Str. 9a 85774 Unterföhring Commercial Register: HRB 127 043 Registry court: München Commercial Register: HRB 127 043 Registry court: München Represented by: Michael Westphal, MBA Karsten Milde, Dipl.-Jur. Represented by: Represented by: Michael Westphal, MBA Karsten Milde, Dipl.-Jur.",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "stable",
+          "last_modified": null,
+          "hash": "9723c010621a8e8b534ae15c22cb14ec",
+          "extracted_contacts": [
+            {
+              "type": "phone",
+              "value": "127043"
+            },
+            {
+              "type": "phone",
+              "value": "127043"
+            }
+          ],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.410Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "a0a2aad8a463",
+          "section_order": 2,
+          "heading": "Contact",
+          "heading_level": "h2",
+          "content_text": "Contact Telefon: +49 89 96 05 70-60 Telefax: +49 89 96 05 70-79 E-Mail: [email protected] Telefon: +49 89 96 05 70-60 Telefax: +49 89 96 05 70-79 E-Mail: [email protected] [email protected]",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "c65383f3767f71bcc018c2d08821e9fe",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "[email protected]",
+              "url": "https://tv1.eu/cdn-cgi/l/email-protection"
+            },
+            {
+              "text": "[email protected]",
+              "url": "https://tv1.eu/cdn-cgi/l/email-protection"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [
+            "70:00-60:00",
+            "70:00-79:00",
+            "70:00-60:00",
+            "70:00-79:00"
+          ],
+          "last_seen": "2025-09-15T11:18:36.411Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "5f69e17da27f",
+          "section_order": 3,
+          "heading": "VAT ID",
+          "heading_level": "h2",
+          "content_text": "VAT ID Sales tax identification number according to § 27 a Sales Tax Act: DE 812 786 315 Sales tax identification number according to § 27 a Sales Tax Act: DE 812 786 315",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "258aab2649b87a9cdccf9e40c6c3f2de",
+          "extracted_contacts": [
+            {
+              "type": "phone",
+              "value": "812786"
+            },
+            {
+              "type": "phone",
+              "value": "812786"
+            }
+          ],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.411Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "0595f55ce41e",
+          "section_order": 4,
+          "heading": "Responsible for the content according to § 55 para. 2 RStV",
+          "heading_level": "h2",
+          "content_text": "Responsible for the content according to § 55 para. 2 RStV Michael Westphal Michael Westphal",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "859898feafac584f0ee54a8d90288d23",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.411Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "6a13f3825933",
+          "section_order": 5,
+          "heading": "Webdesign",
+          "heading_level": "h2",
+          "content_text": "Webdesign Alexander Schwarze Webdesign Alexander Schwarze Webdesign",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "246912ebfce30da8f77a3d2d870d2406",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Alexander Schwarze Webdesign",
+              "url": "https://alexander-schwarze.de/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.412Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "4294fff5911c",
+          "section_order": 6,
+          "heading": "EU dispute resolution",
+          "heading_level": "h2",
+          "content_text": "EU dispute resolution The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr. You can find our e-mail address in the imprint above. The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr. https://ec.europa.eu/consumers/odr You can find our e-mail address in the imprint above.",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "d2165efb664987e99ccddd70135875f6",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "https://ec.europa.eu/consumers/odr",
+              "url": "https://ec.europa.eu/consumers/odr"
+            },
+            {
+              "text": "https://ec.europa.eu/consumers/odr",
+              "url": "https://ec.europa.eu/consumers/odr"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.412Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "5166d3f3a4c2",
+          "section_order": 7,
+          "heading": "Consumer dispute resolution/universal arbitration board",
+          "heading_level": "h2",
+          "content_text": "Consumer dispute resolution/universal arbitration board We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board. We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "70899a5623acaded59713d910fdff6b9",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.412Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "1b1ba6693478",
+          "section_order": 8,
+          "heading": "Liability for contents",
+          "heading_level": "h3",
+          "content_text": "Liability for contents As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. As a service provider, we are responsible for our own content on these pages in accordance with general legislation pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a concrete infringement. If we become aware of corresponding infringements, we will remove this content immediately. Obligations to remove or block the use of information in accordance with general laws remain unaffected by this. However, liability in this regard is only possible from the time of knowledge of a concrete infringement. If we become aware of corresponding infringements, we will remove this content immediately.",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "4199b387f34f077dd78145819c7af45e",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.413Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "9a089650d0f8",
+          "section_order": 9,
+          "heading": "Liability for links",
+          "heading_level": "h3",
+          "content_text": "Liability for links Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognisable at the time of linking. Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognisable at the time of linking. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements of the law, we will remove such links immediately. However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements of the law, we will remove such links immediately.",
+          "page_url": "https://tv1.eu/en/imprint",
+          "page_title": "Imprint – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "29dc841e2af635a341768d50261c4262",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T11:18:36.413Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Alexander Schwarze Webdesign",
+          "url": "https://alexander-schwarze.de/",
+          "category": "external"
+        },
+        {
+          "text": "https://ec.europa.eu/consumers/odr",
+          "url": "https://ec.europa.eu/consumers/odr",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/imprint#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/imprint#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Alexander Schwarze Webdesign",
+            "url": "https://alexander-schwarze.de/",
+            "category": "external"
+          },
+          {
+            "text": "https://ec.europa.eu/consumers/odr",
+            "url": "https://ec.europa.eu/consumers/odr",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/untertitelung",
       "depth": 2,
@@ -2206,18 +2662,58 @@
       "url": "https://tv1.eu/en/data-protection",
       "depth": 2,
       "parent": "https://tv1.eu/jobs"
+    },
+    {
+      "url": "https://tv1.eu/en/home-english",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/virtual-events",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/subtitling",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/references",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/about-us",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/blog-en",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/jobs-en",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint"
     }
   ],
-  "pageCount": 9,
+  "pageCount": 10,
   "maxDepth": 2,
   "maxPages": 10,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T11:18:36.123Z",
+  "lastUpdated": "2025-09-15T11:18:37.424Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/en/imprint",
+  "currentUrl": "https://tv1.eu/en/data-protection",
   "status": "crawling",
-  "pagesProcessedInBatch": 9,
+  "pagesProcessedInBatch": 10,
   "maxPagesThisBatch": 10,
-  "queueLength": 39,
-  "batchComplete": false
+  "queueLength": 46,
+  "batchComplete": true
 }
