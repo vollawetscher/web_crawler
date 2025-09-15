@@ -3,7 +3,8 @@
   "visited": [
     "https://fonio.ai",
     "https://fonio.ai/preise",
-    "https://fonio.ai/kundengeschichten"
+    "https://fonio.ai/kundengeschichten",
+    "https://fonio.ai/partner-werden"
   ],
   "sitemap": {
     "https://fonio.ai": {
@@ -1541,14 +1542,621 @@
         "https://fonio.ai/presse"
       ],
       "is_relevant": true
+    },
+    "https://fonio.ai/kundengeschichten": {
+      "success": true,
+      "final_url": "https://fonio.ai/kundengeschichten",
+      "title": "fonio - Kundengeschichten aus der Praxis",
+      "meta_description": "So setzen Unternehmen den KI-Telefonassistenten von fonio.ai ein - für effizientere Anrufe und besseren Kundenservice. Jetzt Kundengeschichten lesen.",
+      "main_content": "### Mit fonio hat SIMPEX innerhalb von 2 Stunden ihren KI-Assistentin Susi live geschalten. ### 24/7 erreichbar: Anliegen per Anruf oder Mail automatisch zur zuständigen Person ### Die KI übernimmt in unserer Hausverwaltung 80% der Anrufe und erfasst zuverlässig Anliegen. ### Lena entlastet Parktigers Serviceteam und sorgt für sofortige Antworten – Tag und Nacht. ### Wie wir bei Spitta dank fonio.ai 9000 Support-Anrufe monatlich bewältigen und 24/7 erreichbar sind. ### Wir setzen fonio.ai für die Qualifizierung und Kontaktaufnahme von Bewerbern ein. ### Mit fonio.ai 800 Anrufe monatlich automatisiert und unsere Erreichbarkeit auf 100% gesteigert. ### Mit fonio.ai sind wir 24/7 erreichbar, wodurch Überlastungen beseitigt wurden. ### Mit fonio.ai skalieren wir unseren Kundenservice trotz rasantem Wachstum. ### Anrufe neu gedacht, mit fonio.",
+      "sections": [
+        {
+          "section_id": "a398c7ad2a67",
+          "section_order": 0,
+          "heading": "fonio - Kundengeschichten aus der Praxis",
+          "heading_level": "page",
+          "content_text": "### Mit fonio hat SIMPEX innerhalb von 2 Stunden ihren KI-Assistentin Susi live geschalten. ### 24/7 erreichbar: Anliegen per Anruf oder Mail automatisch zur zuständigen Person ### Die KI übernimmt in unserer Hausverwaltung 80% der Anrufe und erfasst zuverlässig Anliegen. ### Lena entlastet Parktigers Serviceteam und sorgt für sofortige Antworten – Tag und Nacht. ### Wie wir bei Spitta dank fonio.ai 9000 Support-Anrufe monatlich bewältigen und 24/7 erreichbar sind. ### Wir setzen fonio.ai für die Qualifizierung und Kontaktaufnahme von Bewerbern ein. ### Mit fonio.ai 800 Anrufe monatlich automatisiert und unsere Erreichbarkeit auf 100% gesteigert. ### Mit fonio.ai sind wir 24/7 erreichbar, wodurch Überlastungen beseitigt wurden. ### Mit fonio.ai skalieren wir unseren Kundenservice trotz rasantem Wachstum. ### Anrufe neu gedacht, mit fonio.",
+          "page_url": "https://fonio.ai/kundengeschichten",
+          "page_title": "fonio - Kundengeschichten aus der Praxis",
+          "breadcrumbs": [
+            "Allgemein",
+            "Anwälte",
+            "Autohäuser",
+            "Ärzte",
+            "Beauty",
+            "Contact Center",
+            "E-Commerce",
+            "Einzelhändler",
+            "Handwerker",
+            "Hausverwaltungen",
+            "Hotel",
+            "IT-Systemhäuser",
+            "Recruitment",
+            "Selbständige",
+            "Steuerberatung",
+            "Testimonials",
+            "Preise",
+            "Partner werden",
+            "Help Center",
+            "Blog",
+            "Features",
+            "Guides",
+            "Changelog",
+            "Webinare",
+            "Karriere",
+            "Presse",
+            "Kontakt",
+            "Jetzt starten"
+          ],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": "2025-09-15T07:49:41.000Z",
+          "hash": "902bfec0ae5af6c1fd481a2704f796bd",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:12:59.337Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "Allgemein",
+          "url": "https://fonio.ai/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Anwälte",
+          "url": "https://www.fonio.ai/industry-use-cases/anwalte",
+          "category": "external"
+        },
+        {
+          "text": "Autohäuser",
+          "url": "https://www.fonio.ai/industry-use-cases/autohaus",
+          "category": "external"
+        },
+        {
+          "text": "Ärzte",
+          "url": "https://www.fonio.ai/industry-use-cases/arztpraxis",
+          "category": "external"
+        },
+        {
+          "text": "Beauty",
+          "url": "https://www.fonio.ai/industry-use-cases/beauty",
+          "category": "external"
+        },
+        {
+          "text": "Contact Center",
+          "url": "https://www.fonio.ai/industry-use-cases/contact-center",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "E-Commerce",
+          "url": "https://www.fonio.ai/industry-use-cases/e-commerce",
+          "category": "external"
+        },
+        {
+          "text": "Einzelhändler",
+          "url": "https://www.fonio.ai/industry-use-cases/einzelhandel",
+          "category": "external"
+        },
+        {
+          "text": "Handwerker",
+          "url": "https://www.fonio.ai/industry-use-cases/handwerk",
+          "category": "external"
+        },
+        {
+          "text": "Hausverwaltungen",
+          "url": "https://www.fonio.ai/industry-use-cases/hausverwaltungen",
+          "category": "external"
+        },
+        {
+          "text": "Hotel",
+          "url": "https://www.fonio.ai/industry-use-cases/hotel",
+          "category": "external"
+        },
+        {
+          "text": "IT-Systemhäuser",
+          "url": "https://www.fonio.ai/industry-use-cases/it-systemhauser",
+          "category": "external"
+        },
+        {
+          "text": "Recruitment",
+          "url": "https://www.fonio.ai/industry-use-cases/recruiter",
+          "category": "external"
+        },
+        {
+          "text": "Selbständige",
+          "url": "https://www.fonio.ai/industry-use-cases/selbstandige",
+          "category": "external"
+        },
+        {
+          "text": "Steuerberatung",
+          "url": "https://www.fonio.ai/industry-use-cases/steuerberater",
+          "category": "external"
+        },
+        {
+          "text": "Testimonials",
+          "url": "https://fonio.ai/kundengeschichten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Preise",
+          "url": "https://fonio.ai/preise",
+          "category": "content_internal"
+        },
+        {
+          "text": "Partner werden",
+          "url": "https://fonio.ai/partner-werden",
+          "category": "content_internal"
+        },
+        {
+          "text": "Help Center",
+          "url": "http://docs.fonio.ai/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Blog",
+          "url": "https://fonio.ai/blog-tags/blog-article",
+          "category": "content_internal"
+        },
+        {
+          "text": "Features",
+          "url": "https://fonio.ai/blog-tags/features-article",
+          "category": "content_internal"
+        },
+        {
+          "text": "Guides",
+          "url": "https://www.fonio.ai/blog-tags/guide-article",
+          "category": "external"
+        },
+        {
+          "text": "Changelog",
+          "url": "https://fonio.ai/changelog",
+          "category": "content_internal"
+        },
+        {
+          "text": "Webinare",
+          "url": "https://fonio.ai/webinare",
+          "category": "content_internal"
+        },
+        {
+          "text": "Karriere",
+          "url": "https://fonio.ai/karriere",
+          "category": "content_internal"
+        },
+        {
+          "text": "Presse",
+          "url": "https://fonio.ai/presse",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kontakt",
+          "url": "https://fonio.ai/kontakt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Jetzt starten",
+          "url": "https://app.fonio.ai/register",
+          "category": "external"
+        },
+        {
+          "text": "MedizinmöbelMit fonio hat SIMPEX innerhalb von 2 Stunden ihren KI-Assistentin Susi live geschalten.",
+          "url": "https://fonio.ai/case-studies/simpex",
+          "category": "content_internal"
+        },
+        {
+          "text": "Hausverwaltungen24/7 erreichbar: Anliegen per Anruf oder Mail automatisch zur zuständigen Person",
+          "url": "https://fonio.ai/case-studies/lim-management-gmbh",
+          "category": "content_internal"
+        },
+        {
+          "text": "HausverwaltungDie KI übernimmt in unserer Hausverwaltung 80% der Anrufe und erfasst zuverlässig Anliegen.",
+          "url": "https://fonio.ai/case-studies/immobilientreuhand-jaklitsch",
+          "category": "content_internal"
+        },
+        {
+          "text": "ParkraummanagementLena entlastet Parktigers Serviceteam und sorgt für sofortige Antworten – Tag und Nacht.",
+          "url": "https://fonio.ai/case-studies/parktiger",
+          "category": "content_internal"
+        },
+        {
+          "text": "ZahnmedizinWie wir bei Spitta dank fonio.ai 9000 Support-Anrufe monatlich bewältigen und 24/7 erreichbar sind.",
+          "url": "https://fonio.ai/case-studies/spitta",
+          "category": "content_internal"
+        },
+        {
+          "text": "RecruitmentWir setzen fonio.ai für die Qualifizierung und Kontaktaufnahme von Bewerbern ein.",
+          "url": "https://fonio.ai/case-studies/yakabuna",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "eCommerceMit fonio.ai 800 Anrufe monatlich automatisiert und unsere Erreichbarkeit auf 100% gesteigert.",
+          "url": "https://fonio.ai/case-studies/stempel-fabrik",
+          "category": "content_internal"
+        },
+        {
+          "text": "eCommerceMit fonio.ai sind wir 24/7 erreichbar, wodurch Überlastungen beseitigt wurden.",
+          "url": "https://fonio.ai/case-studies/kaffeewelt",
+          "category": "content_internal"
+        },
+        {
+          "text": "Dienstleistung & HandwerkMit fonio.ai skalieren wir unseren Kundenservice trotz rasantem Wachstum.",
+          "url": "https://fonio.ai/case-studies/heizma",
+          "category": "content_internal"
+        },
+        {
+          "text": "Jetzt Plattform entdecken",
+          "url": "https://app.fonio.ai/register?_gl=1*s7isn0*FPAU*MTg4ODc3MjkzNi4xNzM3NjI4ODc4*_ga_6VBEPH5X99*MTczNzYzMDk0OS4xLjAuMTczNzYzMDk1MC4wLjAuMA..*_fplc*UFJqTUszN2RqZFVmWThQWjRiZmpQek9HMDBkOFlhTkd2TVdHdUc2cUpYdkQ1RXBTcTA2b3YlMkZEUk5FNnFURVJNMEkySTVZQSUyRnZGY2pMZnppRHRZZGlJc0RZTkR2RkM3dHRRNmx4YmRVQ05SUW9WcUoyUjVBN3o0c25UWWNSQSUzRCUzRA..*_ga_P5TXTLSBVE*MTczNzYzMDk0OS4yLjAuMTczNzYzMDk1OS4wLjAuMTM4MTIwMTI1Mg..",
+          "category": "external"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://fonio.ai/cdn-cgi/l/email-protection#533a3d353c13353c3d3a3c7d323a6c202631393630276e123f3f347d766163123d3521323436",
+          "category": "navigation"
+        },
+        {
+          "text": "Trustpilot",
+          "url": "https://de.trustpilot.com/review/fonio.ai",
+          "category": "external"
+        },
+        {
+          "text": "Google",
+          "url": "https://g.page/r/CeaU8FRpkPaqEAE/review",
+          "category": "external"
+        },
+        {
+          "text": "OMR",
+          "url": "https://omr.com/en/reviews/product/fonio-ai",
+          "category": "external"
+        },
+        {
+          "text": "Testimonials",
+          "url": "https://fonio.ai/kundengeschichten",
+          "category": "content_internal"
+        },
+        {
+          "text": "Preise",
+          "url": "https://fonio.ai/preise",
+          "category": "content_internal"
+        },
+        {
+          "text": "Partner werden",
+          "url": "https://fonio.ai/partner-werden",
+          "category": "content_internal"
+        },
+        {
+          "text": "Karriere",
+          "url": "https://fonio.ai/karriere",
+          "category": "content_internal"
+        },
+        {
+          "text": "Presse",
+          "url": "https://fonio.ai/presse",
+          "category": "content_internal"
+        },
+        {
+          "text": "Kontakt",
+          "url": "https://fonio.ai/kontakt",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Help Center",
+          "url": "http://docs.fonio.ai/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Blog",
+          "url": "https://www.fonio.ai/blog-tags/blog-article",
+          "category": "external"
+        },
+        {
+          "text": "Features",
+          "url": "https://www.fonio.ai/blog-tags/features-article",
+          "category": "external"
+        },
+        {
+          "text": "Changelog",
+          "url": "https://fonio.ai/changelog",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://fonio.ai/kontakt#impressum",
+          "category": "navigation"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://fonio.ai/datenschutzerklarung",
+          "category": "legal_or_contact"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "[email protected]",
+            "url": "https://fonio.ai/cdn-cgi/l/email-protection#533a3d353c13353c3d3a3c7d323a6c202631393630276e123f3f347d766163123d3521323436",
+            "category": "navigation"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://fonio.ai/kontakt#impressum",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "Contact Center",
+            "url": "https://www.fonio.ai/industry-use-cases/contact-center",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Help Center",
+            "url": "http://docs.fonio.ai/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Kontakt",
+            "url": "https://fonio.ai/kontakt",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "RecruitmentWir setzen fonio.ai für die Qualifizierung und Kontaktaufnahme von Bewerbern ein.",
+            "url": "https://fonio.ai/case-studies/yakabuna",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://fonio.ai/datenschutzerklarung",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Allgemein",
+            "url": "https://fonio.ai/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Testimonials",
+            "url": "https://fonio.ai/kundengeschichten",
+            "category": "content_internal"
+          },
+          {
+            "text": "Preise",
+            "url": "https://fonio.ai/preise",
+            "category": "content_internal"
+          },
+          {
+            "text": "Partner werden",
+            "url": "https://fonio.ai/partner-werden",
+            "category": "content_internal"
+          },
+          {
+            "text": "Blog",
+            "url": "https://fonio.ai/blog-tags/blog-article",
+            "category": "content_internal"
+          },
+          {
+            "text": "Features",
+            "url": "https://fonio.ai/blog-tags/features-article",
+            "category": "content_internal"
+          },
+          {
+            "text": "Changelog",
+            "url": "https://fonio.ai/changelog",
+            "category": "content_internal"
+          },
+          {
+            "text": "Webinare",
+            "url": "https://fonio.ai/webinare",
+            "category": "content_internal"
+          },
+          {
+            "text": "Karriere",
+            "url": "https://fonio.ai/karriere",
+            "category": "content_internal"
+          },
+          {
+            "text": "Presse",
+            "url": "https://fonio.ai/presse",
+            "category": "content_internal"
+          },
+          {
+            "text": "MedizinmöbelMit fonio hat SIMPEX innerhalb von 2 Stunden ihren KI-Assistentin Susi live geschalten.",
+            "url": "https://fonio.ai/case-studies/simpex",
+            "category": "content_internal"
+          },
+          {
+            "text": "Hausverwaltungen24/7 erreichbar: Anliegen per Anruf oder Mail automatisch zur zuständigen Person",
+            "url": "https://fonio.ai/case-studies/lim-management-gmbh",
+            "category": "content_internal"
+          },
+          {
+            "text": "HausverwaltungDie KI übernimmt in unserer Hausverwaltung 80% der Anrufe und erfasst zuverlässig Anliegen.",
+            "url": "https://fonio.ai/case-studies/immobilientreuhand-jaklitsch",
+            "category": "content_internal"
+          },
+          {
+            "text": "ParkraummanagementLena entlastet Parktigers Serviceteam und sorgt für sofortige Antworten – Tag und Nacht.",
+            "url": "https://fonio.ai/case-studies/parktiger",
+            "category": "content_internal"
+          },
+          {
+            "text": "ZahnmedizinWie wir bei Spitta dank fonio.ai 9000 Support-Anrufe monatlich bewältigen und 24/7 erreichbar sind.",
+            "url": "https://fonio.ai/case-studies/spitta",
+            "category": "content_internal"
+          },
+          {
+            "text": "eCommerceMit fonio.ai 800 Anrufe monatlich automatisiert und unsere Erreichbarkeit auf 100% gesteigert.",
+            "url": "https://fonio.ai/case-studies/stempel-fabrik",
+            "category": "content_internal"
+          },
+          {
+            "text": "eCommerceMit fonio.ai sind wir 24/7 erreichbar, wodurch Überlastungen beseitigt wurden.",
+            "url": "https://fonio.ai/case-studies/kaffeewelt",
+            "category": "content_internal"
+          },
+          {
+            "text": "Dienstleistung & HandwerkMit fonio.ai skalieren wir unseren Kundenservice trotz rasantem Wachstum.",
+            "url": "https://fonio.ai/case-studies/heizma",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Anwälte",
+            "url": "https://www.fonio.ai/industry-use-cases/anwalte",
+            "category": "external"
+          },
+          {
+            "text": "Autohäuser",
+            "url": "https://www.fonio.ai/industry-use-cases/autohaus",
+            "category": "external"
+          },
+          {
+            "text": "Ärzte",
+            "url": "https://www.fonio.ai/industry-use-cases/arztpraxis",
+            "category": "external"
+          },
+          {
+            "text": "Beauty",
+            "url": "https://www.fonio.ai/industry-use-cases/beauty",
+            "category": "external"
+          },
+          {
+            "text": "E-Commerce",
+            "url": "https://www.fonio.ai/industry-use-cases/e-commerce",
+            "category": "external"
+          },
+          {
+            "text": "Einzelhändler",
+            "url": "https://www.fonio.ai/industry-use-cases/einzelhandel",
+            "category": "external"
+          },
+          {
+            "text": "Handwerker",
+            "url": "https://www.fonio.ai/industry-use-cases/handwerk",
+            "category": "external"
+          },
+          {
+            "text": "Hausverwaltungen",
+            "url": "https://www.fonio.ai/industry-use-cases/hausverwaltungen",
+            "category": "external"
+          },
+          {
+            "text": "Hotel",
+            "url": "https://www.fonio.ai/industry-use-cases/hotel",
+            "category": "external"
+          },
+          {
+            "text": "IT-Systemhäuser",
+            "url": "https://www.fonio.ai/industry-use-cases/it-systemhauser",
+            "category": "external"
+          },
+          {
+            "text": "Recruitment",
+            "url": "https://www.fonio.ai/industry-use-cases/recruiter",
+            "category": "external"
+          },
+          {
+            "text": "Selbständige",
+            "url": "https://www.fonio.ai/industry-use-cases/selbstandige",
+            "category": "external"
+          },
+          {
+            "text": "Steuerberatung",
+            "url": "https://www.fonio.ai/industry-use-cases/steuerberater",
+            "category": "external"
+          },
+          {
+            "text": "Guides",
+            "url": "https://www.fonio.ai/blog-tags/guide-article",
+            "category": "external"
+          },
+          {
+            "text": "Jetzt starten",
+            "url": "https://app.fonio.ai/register",
+            "category": "external"
+          },
+          {
+            "text": "Jetzt Plattform entdecken",
+            "url": "https://app.fonio.ai/register?_gl=1*s7isn0*FPAU*MTg4ODc3MjkzNi4xNzM3NjI4ODc4*_ga_6VBEPH5X99*MTczNzYzMDk0OS4xLjAuMTczNzYzMDk1MC4wLjAuMA..*_fplc*UFJqTUszN2RqZFVmWThQWjRiZmpQek9HMDBkOFlhTkd2TVdHdUc2cUpYdkQ1RXBTcTA2b3YlMkZEUk5FNnFURVJNMEkySTVZQSUyRnZGY2pMZnppRHRZZGlJc0RZTkR2RkM3dHRRNmx4YmRVQ05SUW9WcUoyUjVBN3o0c25UWWNSQSUzRCUzRA..*_ga_P5TXTLSBVE*MTczNzYzMDk0OS4yLjAuMTczNzYzMDk1OS4wLjAuMTM4MTIwMTI1Mg..",
+            "category": "external"
+          },
+          {
+            "text": "Trustpilot",
+            "url": "https://de.trustpilot.com/review/fonio.ai",
+            "category": "external"
+          },
+          {
+            "text": "Google",
+            "url": "https://g.page/r/CeaU8FRpkPaqEAE/review",
+            "category": "external"
+          },
+          {
+            "text": "OMR",
+            "url": "https://omr.com/en/reviews/product/fonio-ai",
+            "category": "external"
+          },
+          {
+            "text": "Blog",
+            "url": "https://www.fonio.ai/blog-tags/blog-article",
+            "category": "external"
+          },
+          {
+            "text": "Features",
+            "url": "https://www.fonio.ai/blog-tags/features-article",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://fonio.ai",
+        "https://fonio.ai/kundengeschichten",
+        "https://fonio.ai/preise",
+        "https://fonio.ai/partner-werden",
+        "https://fonio.ai/blog-tags/blog-article",
+        "https://fonio.ai/blog-tags/features-article",
+        "https://fonio.ai/changelog",
+        "https://fonio.ai/webinare",
+        "https://fonio.ai/karriere",
+        "https://fonio.ai/presse",
+        "https://fonio.ai/case-studies/simpex",
+        "https://fonio.ai/case-studies/lim-management-gmbh",
+        "https://fonio.ai/case-studies/immobilientreuhand-jaklitsch",
+        "https://fonio.ai/case-studies/parktiger",
+        "https://fonio.ai/case-studies/spitta",
+        "https://fonio.ai/case-studies/stempel-fabrik",
+        "https://fonio.ai/case-studies/kaffeewelt",
+        "https://fonio.ai/case-studies/heizma"
+      ],
+      "depth": 1,
+      "parent": "https://fonio.ai",
+      "children": [
+        "https://fonio.ai/partner-werden",
+        "https://fonio.ai/blog-tags/blog-article",
+        "https://fonio.ai/blog-tags/features-article",
+        "https://fonio.ai/changelog",
+        "https://fonio.ai/webinare",
+        "https://fonio.ai/karriere",
+        "https://fonio.ai/presse",
+        "https://fonio.ai/case-studies/simpex",
+        "https://fonio.ai/case-studies/lim-management-gmbh",
+        "https://fonio.ai/case-studies/immobilientreuhand-jaklitsch",
+        "https://fonio.ai/case-studies/parktiger",
+        "https://fonio.ai/case-studies/spitta",
+        "https://fonio.ai/case-studies/stempel-fabrik",
+        "https://fonio.ai/case-studies/kaffeewelt",
+        "https://fonio.ai/case-studies/heizma"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://fonio.ai/partner-werden",
-      "depth": 1,
-      "parent": "https://fonio.ai"
-    },
     {
       "url": "https://fonio.ai/karriere",
       "depth": 1,
@@ -1618,18 +2226,93 @@
       "url": "https://fonio.ai/presse",
       "depth": 2,
       "parent": "https://fonio.ai/preise"
+    },
+    {
+      "url": "https://fonio.ai/partner-werden",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/blog-tags/blog-article",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/blog-tags/features-article",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/changelog",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/webinare",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/karriere",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/presse",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/simpex",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/lim-management-gmbh",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/immobilientreuhand-jaklitsch",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/parktiger",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/spitta",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/stempel-fabrik",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/kaffeewelt",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
+    },
+    {
+      "url": "https://fonio.ai/case-studies/heizma",
+      "depth": 2,
+      "parent": "https://fonio.ai/kundengeschichten"
     }
   ],
-  "pageCount": 3,
+  "pageCount": 4,
   "maxDepth": 2,
   "maxPages": 15,
   "startUrl": "https://fonio.ai",
-  "lastUpdated": "2025-09-15T10:12:58.864Z",
+  "lastUpdated": "2025-09-15T10:13:00.355Z",
   "completed": false,
-  "currentUrl": "https://fonio.ai/kundengeschichten",
+  "currentUrl": "https://fonio.ai/partner-werden",
   "status": "crawling",
-  "pagesProcessedInBatch": 3,
+  "pagesProcessedInBatch": 4,
   "maxPagesThisBatch": 5,
-  "queueLength": 15,
+  "queueLength": 29,
   "batchComplete": false
 }
