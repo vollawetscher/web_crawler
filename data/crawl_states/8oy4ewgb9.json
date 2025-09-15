@@ -10,7 +10,8 @@
     "https://hitcom.de/projekt?referenceId=345",
     "https://hitcom.de/projekt?referenceId=239",
     "https://hitcom.de/projekt?referenceId=347",
-    "https://hitcom.de/projekt?referenceId=173"
+    "https://hitcom.de/projekt?referenceId=173",
+    "https://hitcom.de/referenzen"
   ],
   "sitemap": {
     "https://hitcom.de": {
@@ -6504,11 +6505,6 @@
   },
   "queue": [
     {
-      "url": "https://hitcom.de/referenzen",
-      "depth": 2,
-      "parent": "https://hitcom.de/projekt?referenceId=353"
-    },
-    {
       "url": "https://hitcom.de/projekt?referenceId=343",
       "depth": 2,
       "parent": "https://hitcom.de/projekt?referenceId=352"
@@ -6594,16 +6590,16 @@
       "parent": "https://hitcom.de/projekt?referenceId=345"
     }
   ],
-  "pageCount": 10,
+  "pageCount": 11,
   "maxDepth": 2,
   "maxPages": 20,
   "startUrl": "https://hitcom.de",
-  "lastUpdated": "2025-09-15T08:30:36.607Z",
+  "lastUpdated": "2025-09-15T08:30:49.097Z",
   "completed": false,
-  "currentUrl": null,
-  "status": "batch_complete",
-  "pagesProcessedInBatch": 10,
+  "currentUrl": "https://hitcom.de/referenzen",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
   "maxPagesThisBatch": 10,
-  "queueLength": 18,
-  "batchComplete": true
+  "queueLength": 17,
+  "batchComplete": false
 }
