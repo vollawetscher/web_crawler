@@ -1,0 +1,20 @@
+{
+  "jobId": "si1656nh6",
+  "visited": [
+    "https://tv1.eu"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 10,
+  "startUrl": "https://tv1.eu",
+  "lastUpdated": "2025-09-15T11:18:25.908Z",
+  "completed": false,
+  "currentUrl": "https://tv1.eu",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 10,
+  "queueLength": 0,
+  "batchComplete": false
+}
