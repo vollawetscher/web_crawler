@@ -402,6 +402,9 @@ async function handleCrawl() {
         return;
     }
     
+    showCrawlStatus('Starting crawl...', 'starting');
+    crawlBtn.disabled = true;
+    
     // Generate and display Job ID immediately for new crawls
     if (!providedJobId && url) {
         currentJobId = generateJobId();
@@ -415,9 +418,6 @@ async function handleCrawl() {
         batchInfo.classList.remove('hidden');
         crawlProgressStatus.textContent = 'Resuming crawl...';
     }
-    
-    showCrawlStatus('Starting crawl...', 'starting');
-    crawlBtn.disabled = true;
     
     try {
         const requestBody = {
@@ -445,9 +445,12 @@ async function handleCrawl() {
         
         if (data.success) {
             currentCrawlData = data;
-            currentJobId = data.jobId;
-            currentJobIdSpan.textContent = currentJobId;
-            jobIdInput.value = currentJobId;
+            // Job ID should already be set above, but ensure consistency
+            if (!currentJobId) {
+                currentJobId = data.jobId;
+                currentJobIdSpan.textContent = currentJobId;
+                jobIdInput.value = currentJobId;
+            }
             
             if (data.isComplete) {
                 showCrawlStatus('Crawl completed!', 'complete');
