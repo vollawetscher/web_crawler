@@ -4,7 +4,8 @@
     "https://hitcom.de",
     "https://hitcom.de/projekt?referenceId=353",
     "https://hitcom.de/projekt?referenceId=352",
-    "https://hitcom.de/projekt?referenceId=351"
+    "https://hitcom.de/projekt?referenceId=351",
+    "https://hitcom.de/projekt?referenceId=350"
   ],
   "sitemap": {
     "https://hitcom.de": {
@@ -2398,14 +2399,587 @@
         "https://hitcom.de/referenzen"
       ],
       "is_relevant": true
+    },
+    "https://hitcom.de/projekt?referenceId=351": {
+      "success": true,
+      "final_url": "https://hitcom.de/projekt?referenceId=351",
+      "title": "Referenz | hitcom gmbh",
+      "meta_description": "",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "hallo (at) hitcom.de",
+          "url": "https://hitcom.de/projekt?referenceId=351#",
+          "category": "navigation"
+        },
+        {
+          "text": "vertrieb (at) hitcom.de",
+          "url": "https://hitcom.de/projekt?referenceId=351#",
+          "category": "navigation"
+        },
+        {
+          "text": "Jetzt anfragen",
+          "url": "https://www.hitcom.de/anfrage",
+          "category": "external"
+        },
+        {
+          "text": "Jetzt Termin sichern",
+          "url": "https://www.hitcom.de/termin",
+          "category": "external"
+        },
+        {
+          "text": "Agentur für digitale Entwicklung",
+          "url": "https://www.hitcom.de/de/Agentur-fuer-digitale-Entwicklung",
+          "category": "external"
+        },
+        {
+          "text": "Die Agentur",
+          "url": "https://www.hitcom.de/de/Die-Agentur",
+          "category": "external"
+        },
+        {
+          "text": "Annual Multimedia Award 2025",
+          "url": "https://www.hitcom.de/Annual-Multimedia-Award-2025",
+          "category": "external"
+        },
+        {
+          "text": "German Customer Award 2024",
+          "url": "https://www.hitcom.de/award",
+          "category": "external"
+        },
+        {
+          "text": "Bürgerservice",
+          "url": "https://www.hitcom.de/buergerservice",
+          "category": "external"
+        },
+        {
+          "text": "Leitbild",
+          "url": "https://www.hitcom.de/de/Die-Agentur/Leitbild",
+          "category": "external"
+        },
+        {
+          "text": "Team",
+          "url": "https://www.hitcom.de/de/Agentur-fuer-digitale-Entwicklung/Das-hitcom-Team",
+          "category": "external"
+        },
+        {
+          "text": "Leistungen für Kommunen",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen",
+          "category": "external"
+        },
+        {
+          "text": "Websites für Städte + Gemeinden",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Internetauftritt",
+          "category": "external"
+        },
+        {
+          "text": "Websites für Landkreise",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Landkreise",
+          "category": "external"
+        },
+        {
+          "text": "Künstliche Intelligenz (KI)",
+          "url": "https://www.hitcom.de/ai",
+          "category": "external"
+        },
+        {
+          "text": "Intranet",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Intranets",
+          "category": "external"
+        },
+        {
+          "text": "Corporate Design",
+          "url": "https://www.hitcom.de/branding",
+          "category": "external"
+        },
+        {
+          "text": "Social-Media",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Social-Media",
+          "category": "external"
+        },
+        {
+          "text": "Websites für  Museen + Galerien",
+          "url": "https://www.hitcom.de/de/Websites-fuer-Museen",
+          "category": "external"
+        },
+        {
+          "text": "Websites für Schulen",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Schulen",
+          "category": "external"
+        },
+        {
+          "text": "Websites für Feuerwehren",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Feuerwehren",
+          "category": "external"
+        },
+        {
+          "text": "Akademie",
+          "url": "https://www.hitcom.de/akademie",
+          "category": "external"
+        },
+        {
+          "text": "Individualschulungen",
+          "url": "https://www.hitcom.de/de/Service/cEasy-Individualschulung",
+          "category": "external"
+        },
+        {
+          "text": "Referenzen",
+          "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Referenzen",
+          "category": "external"
+        },
+        {
+          "text": "Software-Lösungen",
+          "url": "https://www.hitcom.de/de/Software-Loesungen",
+          "category": "external"
+        },
+        {
+          "text": "disgovery",
+          "url": "https://www.hitcom.de/de/Software-Loesungen/disgovery",
+          "category": "external"
+        },
+        {
+          "text": "App",
+          "url": "https://www.hitcom.de/app",
+          "category": "external"
+        },
+        {
+          "text": "Bürgerservice",
+          "url": "https://www.hitcom.de/buergerservice-portal-assistent",
+          "category": "external"
+        },
+        {
+          "text": "Volltextsuche",
+          "url": "https://www.hitcom.de/de/Software-Loesungen/GutFinder",
+          "category": "external"
+        },
+        {
+          "text": "Online-Terminvereinbarung",
+          "url": "https://www.hitcom.de/Online-Terminvereinbarung",
+          "category": "external"
+        },
+        {
+          "text": "Schadensmelder",
+          "url": "https://www.hitcom.de/schadensmelder",
+          "category": "external"
+        },
+        {
+          "text": "Schadensmelder MarketingKits",
+          "url": "https://www.hitcom.de/marketingkits",
+          "category": "external"
+        },
+        {
+          "text": "Formcentric FormularManager",
+          "url": "https://www.hitcom.de/Formcentric-Formulare",
+          "category": "external"
+        },
+        {
+          "text": "Erfolgsgeschichten",
+          "url": "https://www.hitcom.de/de/Erfolgsgeschichten",
+          "category": "external"
+        },
+        {
+          "text": "Übersicht aller Projekte",
+          "url": "https://www.hitcom.de/de/Erfolgsgeschichten/uebersicht-aller-Projekte",
+          "category": "external"
+        },
+        {
+          "text": "Karriere",
+          "url": "https://www.hitcom.de/de/Karriere",
+          "category": "external"
+        },
+        {
+          "text": "Arbeiten bei hitcom",
+          "url": "https://www.hitcom.de/de/Karriere/Arbeiten-bei-hitcom",
+          "category": "external"
+        },
+        {
+          "text": "Festanstellung",
+          "url": "https://www.hitcom.de/de/Karriere/Festanstellung",
+          "category": "external"
+        },
+        {
+          "text": "Ausbildung & DH-Studium",
+          "url": "https://www.hitcom.de/Ausbildung",
+          "category": "external"
+        },
+        {
+          "text": "Praktikum",
+          "url": "https://www.hitcom.de/de/Karriere/Praktikum",
+          "category": "external"
+        },
+        {
+          "text": "Schüler-Praktikum",
+          "url": "https://www.hitcom.de/de/Karriere/Schueler-Praktikum",
+          "category": "external"
+        },
+        {
+          "text": "Website\nStadt Gaildorf",
+          "url": "https://hitcom.de/projekt?referenceId=98",
+          "category": "content_internal"
+        },
+        {
+          "text": "Online-Terminvereinbarung\nStadt Gaildorf",
+          "url": "https://hitcom.de/projekt?referenceId=278",
+          "category": "content_internal"
+        },
+        {
+          "text": "Zurück zur Übersicht",
+          "url": "https://hitcom.de/referenzen",
+          "category": "content_internal"
+        },
+        {
+          "text": "hallo (at) hitcom.de",
+          "url": "https://hitcom.de/projekt?referenceId=351#",
+          "category": "navigation"
+        },
+        {
+          "text": "Xing",
+          "url": "https://xing.de/pages/hitcomnewmediagmbh",
+          "category": "external"
+        },
+        {
+          "text": "LinkedIn",
+          "url": "https://de.linkedin.com/company/hitcom-gmbh",
+          "category": "external"
+        },
+        {
+          "text": "Instagram",
+          "url": "https://www.instagram.com/hitcomgmbh/",
+          "category": "external"
+        },
+        {
+          "text": "Facebook",
+          "url": "https://www.facebook.com/hitcomgmbh/",
+          "category": "external"
+        },
+        {
+          "text": "Erfolgsgeschichte schreiben Angebot anfragen",
+          "url": "https://www.hitcom.de/angebot-anfragen",
+          "category": "external"
+        },
+        {
+          "text": "Komm ins Team Jetzt bewerben",
+          "url": "https://www.hitcom.de/jetzt-bewerben",
+          "category": "external"
+        },
+        {
+          "text": "Fehler melden",
+          "url": "https://www.hitcom.de/fehler-melden",
+          "category": "external"
+        },
+        {
+          "text": "Cookie Einstellungen",
+          "url": "https://hitcom.de/projekt?referenceId=351#",
+          "category": "navigation"
+        },
+        {
+          "text": "Webcam",
+          "url": "https://www.hitcom.de/webcam",
+          "category": "external"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://www.hitcom.de/impressum",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://www.hitcom.de/datenschutz",
+          "category": "legal_or_contact"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "hallo (at) hitcom.de",
+            "url": "https://hitcom.de/projekt?referenceId=351#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "Impressum",
+            "url": "https://www.hitcom.de/impressum",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://www.hitcom.de/datenschutz",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Website\nStadt Gaildorf",
+            "url": "https://hitcom.de/projekt?referenceId=98",
+            "category": "content_internal"
+          },
+          {
+            "text": "Online-Terminvereinbarung\nStadt Gaildorf",
+            "url": "https://hitcom.de/projekt?referenceId=278",
+            "category": "content_internal"
+          },
+          {
+            "text": "Zurück zur Übersicht",
+            "url": "https://hitcom.de/referenzen",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Jetzt anfragen",
+            "url": "https://www.hitcom.de/anfrage",
+            "category": "external"
+          },
+          {
+            "text": "Jetzt Termin sichern",
+            "url": "https://www.hitcom.de/termin",
+            "category": "external"
+          },
+          {
+            "text": "Agentur für digitale Entwicklung",
+            "url": "https://www.hitcom.de/de/Agentur-fuer-digitale-Entwicklung",
+            "category": "external"
+          },
+          {
+            "text": "Die Agentur",
+            "url": "https://www.hitcom.de/de/Die-Agentur",
+            "category": "external"
+          },
+          {
+            "text": "Annual Multimedia Award 2025",
+            "url": "https://www.hitcom.de/Annual-Multimedia-Award-2025",
+            "category": "external"
+          },
+          {
+            "text": "German Customer Award 2024",
+            "url": "https://www.hitcom.de/award",
+            "category": "external"
+          },
+          {
+            "text": "Bürgerservice",
+            "url": "https://www.hitcom.de/buergerservice",
+            "category": "external"
+          },
+          {
+            "text": "Leitbild",
+            "url": "https://www.hitcom.de/de/Die-Agentur/Leitbild",
+            "category": "external"
+          },
+          {
+            "text": "Team",
+            "url": "https://www.hitcom.de/de/Agentur-fuer-digitale-Entwicklung/Das-hitcom-Team",
+            "category": "external"
+          },
+          {
+            "text": "Leistungen für Kommunen",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen",
+            "category": "external"
+          },
+          {
+            "text": "Websites für Städte + Gemeinden",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Internetauftritt",
+            "category": "external"
+          },
+          {
+            "text": "Websites für Landkreise",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Landkreise",
+            "category": "external"
+          },
+          {
+            "text": "Künstliche Intelligenz (KI)",
+            "url": "https://www.hitcom.de/ai",
+            "category": "external"
+          },
+          {
+            "text": "Intranet",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Intranets",
+            "category": "external"
+          },
+          {
+            "text": "Corporate Design",
+            "url": "https://www.hitcom.de/branding",
+            "category": "external"
+          },
+          {
+            "text": "Social-Media",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Social-Media",
+            "category": "external"
+          },
+          {
+            "text": "Websites für  Museen + Galerien",
+            "url": "https://www.hitcom.de/de/Websites-fuer-Museen",
+            "category": "external"
+          },
+          {
+            "text": "Websites für Schulen",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Schulen",
+            "category": "external"
+          },
+          {
+            "text": "Websites für Feuerwehren",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Websites-fuer-Feuerwehren",
+            "category": "external"
+          },
+          {
+            "text": "Akademie",
+            "url": "https://www.hitcom.de/akademie",
+            "category": "external"
+          },
+          {
+            "text": "Individualschulungen",
+            "url": "https://www.hitcom.de/de/Service/cEasy-Individualschulung",
+            "category": "external"
+          },
+          {
+            "text": "Referenzen",
+            "url": "https://www.hitcom.de/de/Leistungen-fuer-Kommunen/Referenzen",
+            "category": "external"
+          },
+          {
+            "text": "Software-Lösungen",
+            "url": "https://www.hitcom.de/de/Software-Loesungen",
+            "category": "external"
+          },
+          {
+            "text": "disgovery",
+            "url": "https://www.hitcom.de/de/Software-Loesungen/disgovery",
+            "category": "external"
+          },
+          {
+            "text": "App",
+            "url": "https://www.hitcom.de/app",
+            "category": "external"
+          },
+          {
+            "text": "Bürgerservice",
+            "url": "https://www.hitcom.de/buergerservice-portal-assistent",
+            "category": "external"
+          },
+          {
+            "text": "Volltextsuche",
+            "url": "https://www.hitcom.de/de/Software-Loesungen/GutFinder",
+            "category": "external"
+          },
+          {
+            "text": "Online-Terminvereinbarung",
+            "url": "https://www.hitcom.de/Online-Terminvereinbarung",
+            "category": "external"
+          },
+          {
+            "text": "Schadensmelder",
+            "url": "https://www.hitcom.de/schadensmelder",
+            "category": "external"
+          },
+          {
+            "text": "Schadensmelder MarketingKits",
+            "url": "https://www.hitcom.de/marketingkits",
+            "category": "external"
+          },
+          {
+            "text": "Formcentric FormularManager",
+            "url": "https://www.hitcom.de/Formcentric-Formulare",
+            "category": "external"
+          },
+          {
+            "text": "Erfolgsgeschichten",
+            "url": "https://www.hitcom.de/de/Erfolgsgeschichten",
+            "category": "external"
+          },
+          {
+            "text": "Übersicht aller Projekte",
+            "url": "https://www.hitcom.de/de/Erfolgsgeschichten/uebersicht-aller-Projekte",
+            "category": "external"
+          },
+          {
+            "text": "Karriere",
+            "url": "https://www.hitcom.de/de/Karriere",
+            "category": "external"
+          },
+          {
+            "text": "Arbeiten bei hitcom",
+            "url": "https://www.hitcom.de/de/Karriere/Arbeiten-bei-hitcom",
+            "category": "external"
+          },
+          {
+            "text": "Festanstellung",
+            "url": "https://www.hitcom.de/de/Karriere/Festanstellung",
+            "category": "external"
+          },
+          {
+            "text": "Ausbildung & DH-Studium",
+            "url": "https://www.hitcom.de/Ausbildung",
+            "category": "external"
+          },
+          {
+            "text": "Praktikum",
+            "url": "https://www.hitcom.de/de/Karriere/Praktikum",
+            "category": "external"
+          },
+          {
+            "text": "Schüler-Praktikum",
+            "url": "https://www.hitcom.de/de/Karriere/Schueler-Praktikum",
+            "category": "external"
+          },
+          {
+            "text": "Xing",
+            "url": "https://xing.de/pages/hitcomnewmediagmbh",
+            "category": "external"
+          },
+          {
+            "text": "LinkedIn",
+            "url": "https://de.linkedin.com/company/hitcom-gmbh",
+            "category": "external"
+          },
+          {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/hitcomgmbh/",
+            "category": "external"
+          },
+          {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/hitcomgmbh/",
+            "category": "external"
+          },
+          {
+            "text": "Erfolgsgeschichte schreiben Angebot anfragen",
+            "url": "https://www.hitcom.de/angebot-anfragen",
+            "category": "external"
+          },
+          {
+            "text": "Komm ins Team Jetzt bewerben",
+            "url": "https://www.hitcom.de/jetzt-bewerben",
+            "category": "external"
+          },
+          {
+            "text": "Fehler melden",
+            "url": "https://www.hitcom.de/fehler-melden",
+            "category": "external"
+          },
+          {
+            "text": "Webcam",
+            "url": "https://www.hitcom.de/webcam",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://hitcom.de/projekt?referenceId=98",
+        "https://hitcom.de/projekt?referenceId=278",
+        "https://hitcom.de/referenzen"
+      ],
+      "depth": 1,
+      "parent": "https://hitcom.de",
+      "children": [
+        "https://hitcom.de/projekt?referenceId=98",
+        "https://hitcom.de/projekt?referenceId=278",
+        "https://hitcom.de/referenzen"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://hitcom.de/projekt?referenceId=350",
-      "depth": 1,
-      "parent": "https://hitcom.de"
-    },
     {
       "url": "https://hitcom.de/projekt?referenceId=346",
       "depth": 1,
@@ -2455,18 +3029,33 @@
       "url": "https://hitcom.de/referenzen",
       "depth": 2,
       "parent": "https://hitcom.de/projekt?referenceId=352"
+    },
+    {
+      "url": "https://hitcom.de/projekt?referenceId=98",
+      "depth": 2,
+      "parent": "https://hitcom.de/projekt?referenceId=351"
+    },
+    {
+      "url": "https://hitcom.de/projekt?referenceId=278",
+      "depth": 2,
+      "parent": "https://hitcom.de/projekt?referenceId=351"
+    },
+    {
+      "url": "https://hitcom.de/referenzen",
+      "depth": 2,
+      "parent": "https://hitcom.de/projekt?referenceId=351"
     }
   ],
-  "pageCount": 4,
+  "pageCount": 5,
   "maxDepth": 2,
   "maxPages": 20,
   "startUrl": "https://hitcom.de",
-  "lastUpdated": "2025-09-15T08:30:27.075Z",
+  "lastUpdated": "2025-09-15T08:30:28.455Z",
   "completed": false,
-  "currentUrl": "https://hitcom.de/projekt?referenceId=351",
+  "currentUrl": "https://hitcom.de/projekt?referenceId=350",
   "status": "crawling",
-  "pagesProcessedInBatch": 4,
+  "pagesProcessedInBatch": 5,
   "maxPagesThisBatch": 10,
-  "queueLength": 11,
+  "queueLength": 13,
   "batchComplete": false
 }
