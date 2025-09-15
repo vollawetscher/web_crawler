@@ -6,7 +6,8 @@
     "https://tv1.eu/virtuelle-events",
     "https://tv1.eu/untertitelung",
     "https://tv1.eu/referenzen",
-    "https://tv1.eu/ueber-uns"
+    "https://tv1.eu/ueber-uns",
+    "https://tv1.eu/blog"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -1153,14 +1154,325 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/ueber-uns": {
+      "success": true,
+      "final_url": "https://tv1.eu/ueber-uns",
+      "title": "Über uns – TV1",
+      "meta_description": "Über das Unternehmen TV1 - Media Streaming Pioniere – Innovatoren – Leistungsorientiert seit 1999 – Über 3600 erfolgreiche Projekte",
+      "main_content": "Projekte Streaming Produktionen Live Webcasts Online Video Analytics\n\nÜber uns 1997 starteten die Gründer ihren ersten Stream, seit 1999 ist TV1.EU einer der führenden Anbieter für Online Video Lösungen. Wir helfen unseren Kunden mit Online Videos und Live-Webcasts erfolgreich zu sein. 1997 starteten die Gründer ihren ersten Stream, seit 1999 ist TV1.EU einer der führenden Anbieter für Online Video Lösungen. Wir helfen unseren Kunden mit Online Videos und Live-Webcasts erfolgreich zu sein.\n\nMission TV1.EU unterstützt Firmen und Organisationen dabei, ihre Videoinhalte und Livesignale in erstklassiger Qualität auf alle Endgeräte auszuliefern. Dabei liegen die Kernkompetenzen in der Nutzung des vollen Potenzials von Livestreams und Videos durch Einsatz modernster Technologien. TV1.EU unterstützt Firmen und Organisationen dabei, ihre Videoinhalte und Livesignale in erstklassiger Qualität auf alle Endgeräte auszuliefern. Dabei liegen die Kernkompetenzen in der Nutzung des vollen Potenzials von Livestreams und Videos durch Einsatz modernster Technologien.\n\nProfil 1999 wird TV1.DE als der erste deutsche Internetsender gegründet. Nach dem Platzen der dotcom Blase wechselte TV1 das Geschäftsmodell ist seitdem ein B2B Anbieter. 1999 wird TV1.DE als der erste deutsche Internetsender gegründet. Nach dem Platzen der dotcom Blase wechselte TV1 das Geschäftsmodell ist seitdem ein B2B Anbieter. Mit mittlerweile mehr als 23 Jahren Expertise und über 5.200 Live-Produktionen/Streaming Media Projekten gehört TV1.EU zu den erfahrensten Anbietern im Markt. Mit mittlerweile mehr als 23 Jahren Expertise und über 5.200 Live-Produktionen/Streaming Media Projekten gehört TV1.EU zu den erfahrensten Anbietern im Markt. Als Full-Service Provider zählen zu unserem Unternehmensportfolio: Als Full-Service Provider zählen zu unserem Unternehmensportfolio: Als Full-Service Provider zählen zu unserem Unternehmensportfolio: – Live Webcasts – Online Konferenzen – Streaming (Encoding, Transcoding, CDN) – Live-Untertitelung, Übersetzung, Live-Gebärdensprache – Live Webcasts – Online Konferenzen – Streaming (Encoding, Transcoding, CDN) – Live-Untertitelung, Übersetzung, Live-Gebärdensprache Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig. Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig. Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig.\n\nInnovationen TV1.EU ist ein Innovationsführer in seiner Branche. Unsere innovativen Lösungen haben wir auf Basis intensiver und jahrelanger Projekterfahrung eigenständig entwickelt und im engen Austausch mit unseren Kunden erfolgreich umgesetzt. Unsere Technologien sind „State-of-the-Art“ und unsere Lösungen maßgeschneidert. So garantieren wir auch für die Zukunft eine permanente Weiterentwicklung unter Verwendung neuester Technologien. TV1.EU ist ein Innovationsführer in seiner Branche. Unsere innovativen Lösungen haben wir auf Basis intensiver und jahrelanger Projekterfahrung eigenständig entwickelt und im engen Austausch mit unseren Kunden erfolgreich umgesetzt. Unsere Technologien sind „State-of-the-Art“ und unsere Lösungen maßgeschneidert. So garantieren wir auch für die Zukunft eine permanente Weiterentwicklung unter Verwendung neuester Technologien.",
+      "sections": [
+        {
+          "section_id": "e7c9ca3b6506",
+          "section_order": 2,
+          "heading": "Projekte",
+          "heading_level": "h2",
+          "content_text": "Projekte Streaming Produktionen Live Webcasts Online Video Analytics",
+          "page_url": "https://tv1.eu/ueber-uns",
+          "page_title": "Über uns – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "759075fe5da4347fb95548fed1414477",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:06.473Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "a86b2f44e5b2",
+          "section_order": 3,
+          "heading": "Über uns",
+          "heading_level": "h2",
+          "content_text": "Über uns 1997 starteten die Gründer ihren ersten Stream, seit 1999 ist TV1.EU einer der führenden Anbieter für Online Video Lösungen. Wir helfen unseren Kunden mit Online Videos und Live-Webcasts erfolgreich zu sein. 1997 starteten die Gründer ihren ersten Stream, seit 1999 ist TV1.EU einer der führenden Anbieter für Online Video Lösungen. Wir helfen unseren Kunden mit Online Videos und Live-Webcasts erfolgreich zu sein.",
+          "page_url": "https://tv1.eu/ueber-uns",
+          "page_title": "Über uns – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "328973e7cc0be60f5b981860fb8c22ec",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:06.474Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "375a59c0769f",
+          "section_order": 4,
+          "heading": "Mission",
+          "heading_level": "h2",
+          "content_text": "Mission TV1.EU unterstützt Firmen und Organisationen dabei, ihre Videoinhalte und Livesignale in erstklassiger Qualität auf alle Endgeräte auszuliefern. Dabei liegen die Kernkompetenzen in der Nutzung des vollen Potenzials von Livestreams und Videos durch Einsatz modernster Technologien. TV1.EU unterstützt Firmen und Organisationen dabei, ihre Videoinhalte und Livesignale in erstklassiger Qualität auf alle Endgeräte auszuliefern. Dabei liegen die Kernkompetenzen in der Nutzung des vollen Potenzials von Livestreams und Videos durch Einsatz modernster Technologien.",
+          "page_url": "https://tv1.eu/ueber-uns",
+          "page_title": "Über uns – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "893fda31fcca9ea0a0f5010127d40319",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:06.475Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "11120c003cd1",
+          "section_order": 5,
+          "heading": "Profil",
+          "heading_level": "h2",
+          "content_text": "Profil 1999 wird TV1.DE als der erste deutsche Internetsender gegründet. Nach dem Platzen der dotcom Blase wechselte TV1 das Geschäftsmodell ist seitdem ein B2B Anbieter. 1999 wird TV1.DE als der erste deutsche Internetsender gegründet. Nach dem Platzen der dotcom Blase wechselte TV1 das Geschäftsmodell ist seitdem ein B2B Anbieter. Mit mittlerweile mehr als 23 Jahren Expertise und über 5.200 Live-Produktionen/Streaming Media Projekten gehört TV1.EU zu den erfahrensten Anbietern im Markt. Mit mittlerweile mehr als 23 Jahren Expertise und über 5.200 Live-Produktionen/Streaming Media Projekten gehört TV1.EU zu den erfahrensten Anbietern im Markt. Als Full-Service Provider zählen zu unserem Unternehmensportfolio: Als Full-Service Provider zählen zu unserem Unternehmensportfolio: Als Full-Service Provider zählen zu unserem Unternehmensportfolio: – Live Webcasts – Online Konferenzen – Streaming (Encoding, Transcoding, CDN) – Live-Untertitelung, Übersetzung, Live-Gebärdensprache – Live Webcasts – Online Konferenzen – Streaming (Encoding, Transcoding, CDN) – Live-Untertitelung, Übersetzung, Live-Gebärdensprache Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig. Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig. Wenn Sie individuelle Lösungen suchen, die maßgeschneidert auf Ihre individuellen Bedürfnisse passen, sind Sie bei uns richtig.",
+          "page_url": "https://tv1.eu/ueber-uns",
+          "page_title": "Über uns – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "1594648e1bc2218111f09433c8f21592",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:06.477Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "4873087e175e",
+          "section_order": 6,
+          "heading": "Innovationen",
+          "heading_level": "h2",
+          "content_text": "Innovationen TV1.EU ist ein Innovationsführer in seiner Branche. Unsere innovativen Lösungen haben wir auf Basis intensiver und jahrelanger Projekterfahrung eigenständig entwickelt und im engen Austausch mit unseren Kunden erfolgreich umgesetzt. Unsere Technologien sind „State-of-the-Art“ und unsere Lösungen maßgeschneidert. So garantieren wir auch für die Zukunft eine permanente Weiterentwicklung unter Verwendung neuester Technologien. TV1.EU ist ein Innovationsführer in seiner Branche. Unsere innovativen Lösungen haben wir auf Basis intensiver und jahrelanger Projekterfahrung eigenständig entwickelt und im engen Austausch mit unseren Kunden erfolgreich umgesetzt. Unsere Technologien sind „State-of-the-Art“ und unsere Lösungen maßgeschneidert. So garantieren wir auch für die Zukunft eine permanente Weiterentwicklung unter Verwendung neuester Technologien.",
+          "page_url": "https://tv1.eu/ueber-uns",
+          "page_title": "Über uns – TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "a090853964386c07dc5bfc4387200c2a",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:06.477Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "ZUM KONTAKT",
+          "url": "https://tv1.eu/ueber-uns#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/ueber-uns#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "ZUM KONTAKT",
+            "url": "https://tv1.eu/ueber-uns#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/ueber-uns#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/blog",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/jobs",
       "depth": 1,
@@ -1285,18 +1597,38 @@
       "url": "https://tv1.eu/en/data-protection",
       "depth": 2,
       "parent": "https://tv1.eu/referenzen"
+    },
+    {
+      "url": "https://tv1.eu/blog",
+      "depth": 2,
+      "parent": "https://tv1.eu/ueber-uns"
+    },
+    {
+      "url": "https://tv1.eu/jobs",
+      "depth": 2,
+      "parent": "https://tv1.eu/ueber-uns"
+    },
+    {
+      "url": "https://tv1.eu/en/imprint",
+      "depth": 2,
+      "parent": "https://tv1.eu/ueber-uns"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 2,
+      "parent": "https://tv1.eu/ueber-uns"
     }
   ],
-  "pageCount": 6,
+  "pageCount": 7,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:58:06.164Z",
+  "lastUpdated": "2025-09-15T09:58:07.486Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/ueber-uns",
+  "currentUrl": "https://tv1.eu/blog",
   "status": "crawling",
-  "pagesProcessedInBatch": 6,
+  "pagesProcessedInBatch": 7,
   "maxPagesThisBatch": 10,
-  "queueLength": 26,
+  "queueLength": 29,
   "batchComplete": false
 }
