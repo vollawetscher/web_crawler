@@ -27,7 +27,8 @@
     "https://tv1.eu/en/subtitling",
     "https://tv1.eu/en/references",
     "https://tv1.eu/en/about-us",
-    "https://tv1.eu/en/blog-en"
+    "https://tv1.eu/en/blog-en",
+    "https://tv1.eu/en/jobs-en"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -6702,65 +6703,540 @@
       "parent": "https://tv1.eu/en/imprint",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/en/blog-en": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/blog-en",
+      "title": "Blog – TV1 News",
+      "meta_description": "Blog posts and news overview - TV1.EU - a better LIVE - Experts in live streaming and online video",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Stream live without using additional hardware",
+          "url": "https://tv1.eu/en/stream-live-without-using-additional-hardware/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/stream-live-without-using-additional-hardware/",
+          "category": "content_internal"
+        },
+        {
+          "text": "How to successfully handle virtual events",
+          "url": "https://tv1.eu/en/how-to-successfully-handle-virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/how-to-successfully-handle-virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Remote livestream production",
+          "url": "https://tv1.eu/en/remote-livestream-production/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/remote-livestream-production/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Prof. Werner Sinn talks about Covid-19 and its consequences",
+          "url": "https://tv1.eu/en/prof-werner-sinn-talks-about-covid-19-and-its-consequences/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/prof-werner-sinn-talks-about-covid-19-and-its-consequences/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Online conferences instead of conventional attended events",
+          "url": "https://tv1.eu/en/online-conferences-instead-of-conventional-attended-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/online-conferences-instead-of-conventional-attended-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Another award goes to TV1",
+          "url": "https://tv1.eu/en/another-award-goes-to-tv1/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/another-award-goes-to-tv1/",
+          "category": "content_internal"
+        },
+        {
+          "text": "TV1 is ISO/IEC 27001 certified",
+          "url": "https://tv1.eu/en/tv1-is-iso-iec-27001-certified/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Read more",
+          "url": "https://tv1.eu/en/tv1-is-iso-iec-27001-certified/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/blog-en#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/blog-en#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Stream live without using additional hardware",
+            "url": "https://tv1.eu/en/stream-live-without-using-additional-hardware/",
+            "category": "content_internal"
+          },
+          {
+            "text": "How to successfully handle virtual events",
+            "url": "https://tv1.eu/en/how-to-successfully-handle-virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Remote livestream production",
+            "url": "https://tv1.eu/en/remote-livestream-production/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Prof. Werner Sinn talks about Covid-19 and its consequences",
+            "url": "https://tv1.eu/en/prof-werner-sinn-talks-about-covid-19-and-its-consequences/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Online conferences instead of conventional attended events",
+            "url": "https://tv1.eu/en/online-conferences-instead-of-conventional-attended-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Another award goes to TV1",
+            "url": "https://tv1.eu/en/another-award-goes-to-tv1/",
+            "category": "content_internal"
+          },
+          {
+            "text": "TV1 is ISO/IEC 27001 certified",
+            "url": "https://tv1.eu/en/tv1-is-iso-iec-27001-certified/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/stream-live-without-using-additional-hardware",
+        "https://tv1.eu/en/how-to-successfully-handle-virtual-events",
+        "https://tv1.eu/en/remote-livestream-production",
+        "https://tv1.eu/en/prof-werner-sinn-talks-about-covid-19-and-its-consequences",
+        "https://tv1.eu/en/online-conferences-instead-of-conventional-attended-events",
+        "https://tv1.eu/en/another-award-goes-to-tv1",
+        "https://tv1.eu/en/tv1-is-iso-iec-27001-certified",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/en/jobs-en": {
+      "success": true,
+      "final_url": "https://tv1.eu/en/jobs-en",
+      "title": "Jobs - TV1",
+      "meta_description": "",
+      "main_content": "### Working at TV1 means ### We are currently looking for a ### Full-time sales representative (m/f/d) ### We are currently looking for a ### Online Marketing Manager (m/f/d) full-time ### We are currently looking for a ### Video Producer (m/f/d) full time ### We are currently looking for a ### Working student (m/f/d) subtitling ### We are currently looking for a ### Sign language interpreter (freelance) (m/f/d) ### We are currently looking for a ### Working student support (m/f/d) ### We are currently looking for a ### Working Student DevOps (m/f/d) Sign language interpretation of livestreams from the political and public environment Support with IT administration Participation in the planning, implementation and maintenance of the cloud and container infrastructure Support with the automation of existing IT processes",
+      "sections": [
+        {
+          "section_id": "ae7139c04b90",
+          "section_order": 0,
+          "heading": "Jobs - TV1",
+          "heading_level": "page",
+          "content_text": "### Working at TV1 means ### We are currently looking for a ### Full-time sales representative (m/f/d) ### We are currently looking for a ### Online Marketing Manager (m/f/d) full-time ### We are currently looking for a ### Video Producer (m/f/d) full time ### We are currently looking for a ### Working student (m/f/d) subtitling ### We are currently looking for a ### Sign language interpreter (freelance) (m/f/d) ### We are currently looking for a ### Working student support (m/f/d) ### We are currently looking for a ### Working Student DevOps (m/f/d) Sign language interpretation of livestreams from the political and public environment Support with IT administration Participation in the planning, implementation and maintenance of the cloud and container infrastructure Support with the automation of existing IT processes",
+          "page_url": "https://tv1.eu/en/jobs-en",
+          "page_title": "Jobs - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "707f000e0b4bbe8b3a31b3a4cca0bf2c",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T10:00:17.652Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/en/home-english/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtual events",
+          "url": "https://tv1.eu/en/virtual-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Subtitling",
+          "url": "https://tv1.eu/en/subtitling/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENCES",
+          "url": "https://tv1.eu/en/references/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ABOUT US",
+          "url": "https://tv1.eu/en/about-us/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/en/blog-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/en/jobs-en/",
+          "category": "content_internal"
+        },
+        {
+          "text": "CONTACT",
+          "url": "https://tv1.eu/en/contact/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "APPLY",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection#b8d2d7dacbf8ccce8996ddcd",
+          "category": "navigation"
+        },
+        {
+          "text": "Video.Taxi.",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Video.Taxi.",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Change Cookie settings",
+          "url": "https://tv1.eu/en/jobs-en#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "APPLY",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection#b8d2d7dacbf8ccce8996ddcd",
+            "category": "navigation"
+          },
+          {
+            "text": "Change Cookie settings",
+            "url": "https://tv1.eu/en/jobs-en#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "CONTACT",
+            "url": "https://tv1.eu/en/contact/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/en/home-english/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtual events",
+            "url": "https://tv1.eu/en/virtual-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Subtitling",
+            "url": "https://tv1.eu/en/subtitling/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENCES",
+            "url": "https://tv1.eu/en/references/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ABOUT US",
+            "url": "https://tv1.eu/en/about-us/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/en/blog-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/en/jobs-en/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Video.Taxi.",
+            "url": "https://www.video.taxi/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/en/home-english",
+        "https://tv1.eu/en/virtual-events",
+        "https://tv1.eu/en/subtitling",
+        "https://tv1.eu/en/references",
+        "https://tv1.eu/en/about-us",
+        "https://tv1.eu/en/blog-en",
+        "https://tv1.eu/en/jobs-en",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/en/imprint",
+      "children": [],
+      "is_relevant": true
     }
   },
-  "queue": [
-    {
-      "url": "https://tv1.eu/en/jobs-en",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
-    {
-      "url": "https://tv1.eu/en/data-protection",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/imprint"
-    },
-    {
-      "url": "https://tv1.eu/en/home-english",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/virtual-events",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/subtitling",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/references",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/about-us",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/blog-en",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    },
-    {
-      "url": "https://tv1.eu/en/jobs-en",
-      "depth": 2,
-      "parent": "https://tv1.eu/en/data-protection"
-    }
-  ],
-  "pageCount": 27,
+  "queue": [],
+  "pageCount": 28,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T10:00:15.702Z",
+  "lastUpdated": "2025-09-15T10:00:18.662Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/en/blog-en",
-  "status": "crawling",
-  "pagesProcessedInBatch": 7,
+  "currentUrl": null,
+  "status": "completed",
+  "pagesProcessedInBatch": 8,
   "maxPagesThisBatch": 10,
-  "queueLength": 9,
+  "queueLength": 0,
   "batchComplete": false
 }
