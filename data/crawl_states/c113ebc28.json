@@ -16748,6 +16748,921 @@
         "https://books.toscrape.com/catalogue/icing-aces-hockey-2_25/index.html"
       ],
       "is_relevant": true
+    },
+    "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html": {
+      "success": true,
+      "final_url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+      "title": "Add a comment | \n     Books to Scrape - Sandbox",
+      "meta_description": "\n    \n",
+      "main_content": "This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning.",
+      "sections": [
+        {
+          "section_id": "03b5e10ad64e",
+          "section_order": 0,
+          "heading": "Add a comment | \n     Books to Scrape - Sandbox",
+          "heading_level": "page",
+          "content_text": "This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning.",
+          "page_url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+          "page_title": "Add a comment | \n     Books to Scrape - Sandbox",
+          "breadcrumbs": [
+            "Books"
+          ],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": "2023-02-08T21:02:32.000Z",
+          "hash": "0fb9725e5eccfa0c28415a6049d8c551",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:40:28.786Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "Books to Scrape",
+          "url": "https://books.toscrape.com/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Home",
+          "url": "https://books.toscrape.com/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Books",
+          "url": "https://books.toscrape.com/catalogue/category/books_1/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Books",
+          "url": "https://books.toscrape.com/catalogue/category/books_1/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Travel",
+          "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Mystery",
+          "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Historical Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sequential Art",
+          "url": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Classics",
+          "url": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Philosophy",
+          "url": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Romance",
+          "url": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Womens Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Childrens",
+          "url": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Religion",
+          "url": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Nonfiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Music",
+          "url": "https://books.toscrape.com/catalogue/category/books/music_14/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Default",
+          "url": "https://books.toscrape.com/catalogue/category/books/default_15/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Science Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Sports and Games",
+          "url": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Add a comment",
+          "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Fantasy",
+          "url": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "New Adult",
+          "url": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Young Adult",
+          "url": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Science",
+          "url": "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Poetry",
+          "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Paranormal",
+          "url": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Art",
+          "url": "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Psychology",
+          "url": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Autobiography",
+          "url": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Parenting",
+          "url": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Adult Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Humor",
+          "url": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Horror",
+          "url": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "History",
+          "url": "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Food and Drink",
+          "url": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christian Fiction",
+          "url": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Business",
+          "url": "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Biography",
+          "url": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Thriller",
+          "url": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Contemporary",
+          "url": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Spirituality",
+          "url": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Academic",
+          "url": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Self Help",
+          "url": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Historical",
+          "url": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Christian",
+          "url": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Suspense",
+          "url": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Short Stories",
+          "url": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Novels",
+          "url": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Health",
+          "url": "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Politics",
+          "url": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cultural",
+          "url": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Erotica",
+          "url": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Crime",
+          "url": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Torch Is Passed: ...",
+          "url": "https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Mindfulness and Acceptance ...",
+          "url": "https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Art Forger",
+          "url": "https://books.toscrape.com/catalogue/the-art-forger_930/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "On a Midnight Clear",
+          "url": "https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Judo: Seven Steps to ...",
+          "url": "https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Shobu Samurai, Project Aryoku ...",
+          "url": "https://books.toscrape.com/catalogue/shobu-samurai-project-aryoku-3_830/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Modern Romance",
+          "url": "https://books.toscrape.com/catalogue/modern-romance_820/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The White Queen (The ...",
+          "url": "https://books.toscrape.com/catalogue/the-white-queen-the-cousins-war-1_768/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Song of Achilles",
+          "url": "https://books.toscrape.com/catalogue/the-song-of-achilles_762/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Immortal Life of ...",
+          "url": "https://books.toscrape.com/catalogue/the-immortal-life-of-henrietta-lacks_753/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Dovekeepers",
+          "url": "https://books.toscrape.com/catalogue/the-dovekeepers_748/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "More Than Music (Chasing ...",
+          "url": "https://books.toscrape.com/catalogue/more-than-music-chasing-the-dream-1_716/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Code Name Verity (Code ...",
+          "url": "https://books.toscrape.com/catalogue/code-name-verity-code-name-verity-1_680/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cell",
+          "url": "https://books.toscrape.com/catalogue/cell_674/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Angels Walking (Angels Walking ...",
+          "url": "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "A Series of Catastrophes ...",
+          "url": "https://books.toscrape.com/catalogue/a-series-of-catastrophes-and-miracles-a-true-story-of-love-science-and-cancer_655/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "A People's History of ...",
+          "url": "https://books.toscrape.com/catalogue/a-peoples-history-of-the-united-states_654/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "A Brush of Wings ...",
+          "url": "https://books.toscrape.com/catalogue/a-brush-of-wings-angels-walking-3_651/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "Rook",
+          "url": "https://books.toscrape.com/catalogue/rook_647/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "The Midnight Watch: A ...",
+          "url": "https://books.toscrape.com/catalogue/the-midnight-watch-a-novel-of-the-titanic-and-the-californian_640/index.html",
+          "category": "content_internal"
+        },
+        {
+          "text": "next",
+          "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [],
+        "legal_or_contact": [
+          {
+            "text": "Self Help",
+            "url": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "Books to Scrape",
+            "url": "https://books.toscrape.com/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Books",
+            "url": "https://books.toscrape.com/catalogue/category/books_1/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Travel",
+            "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Mystery",
+            "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Historical Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sequential Art",
+            "url": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Classics",
+            "url": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Philosophy",
+            "url": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Romance",
+            "url": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Womens Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Childrens",
+            "url": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Religion",
+            "url": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Nonfiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Music",
+            "url": "https://books.toscrape.com/catalogue/category/books/music_14/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Default",
+            "url": "https://books.toscrape.com/catalogue/category/books/default_15/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Science Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Sports and Games",
+            "url": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Add a comment",
+            "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Fantasy",
+            "url": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "New Adult",
+            "url": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Young Adult",
+            "url": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Science",
+            "url": "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Poetry",
+            "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Paranormal",
+            "url": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Art",
+            "url": "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Psychology",
+            "url": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Autobiography",
+            "url": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Parenting",
+            "url": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Adult Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Humor",
+            "url": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Horror",
+            "url": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "History",
+            "url": "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Food and Drink",
+            "url": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Christian Fiction",
+            "url": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Business",
+            "url": "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Biography",
+            "url": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Thriller",
+            "url": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Contemporary",
+            "url": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Spirituality",
+            "url": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Academic",
+            "url": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Historical",
+            "url": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Christian",
+            "url": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Suspense",
+            "url": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Short Stories",
+            "url": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Novels",
+            "url": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Health",
+            "url": "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Politics",
+            "url": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Cultural",
+            "url": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Erotica",
+            "url": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Crime",
+            "url": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Torch Is Passed: ...",
+            "url": "https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Mindfulness and Acceptance ...",
+            "url": "https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Art Forger",
+            "url": "https://books.toscrape.com/catalogue/the-art-forger_930/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "On a Midnight Clear",
+            "url": "https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Judo: Seven Steps to ...",
+            "url": "https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Shobu Samurai, Project Aryoku ...",
+            "url": "https://books.toscrape.com/catalogue/shobu-samurai-project-aryoku-3_830/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Modern Romance",
+            "url": "https://books.toscrape.com/catalogue/modern-romance_820/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The White Queen (The ...",
+            "url": "https://books.toscrape.com/catalogue/the-white-queen-the-cousins-war-1_768/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Song of Achilles",
+            "url": "https://books.toscrape.com/catalogue/the-song-of-achilles_762/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Immortal Life of ...",
+            "url": "https://books.toscrape.com/catalogue/the-immortal-life-of-henrietta-lacks_753/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Dovekeepers",
+            "url": "https://books.toscrape.com/catalogue/the-dovekeepers_748/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "More Than Music (Chasing ...",
+            "url": "https://books.toscrape.com/catalogue/more-than-music-chasing-the-dream-1_716/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Code Name Verity (Code ...",
+            "url": "https://books.toscrape.com/catalogue/code-name-verity-code-name-verity-1_680/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Cell",
+            "url": "https://books.toscrape.com/catalogue/cell_674/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Angels Walking (Angels Walking ...",
+            "url": "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "A Series of Catastrophes ...",
+            "url": "https://books.toscrape.com/catalogue/a-series-of-catastrophes-and-miracles-a-true-story-of-love-science-and-cancer_655/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "A People's History of ...",
+            "url": "https://books.toscrape.com/catalogue/a-peoples-history-of-the-united-states_654/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "A Brush of Wings ...",
+            "url": "https://books.toscrape.com/catalogue/a-brush-of-wings-angels-walking-3_651/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "Rook",
+            "url": "https://books.toscrape.com/catalogue/rook_647/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "The Midnight Watch: A ...",
+            "url": "https://books.toscrape.com/catalogue/the-midnight-watch-a-novel-of-the-titanic-and-the-californian_640/index.html",
+            "category": "content_internal"
+          },
+          {
+            "text": "next",
+            "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://books.toscrape.com/index.html",
+        "https://books.toscrape.com/catalogue/category/books_1/index.html",
+        "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+        "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+        "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+        "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
+        "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
+        "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
+        "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+        "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+        "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+        "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
+        "https://books.toscrape.com/catalogue/category/books/religion_12/index.html",
+        "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
+        "https://books.toscrape.com/catalogue/category/books/music_14/index.html",
+        "https://books.toscrape.com/catalogue/category/books/default_15/index.html",
+        "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html",
+        "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html",
+        "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+        "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+        "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+        "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+        "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+        "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+        "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+        "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+        "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+        "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+        "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+        "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+        "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+        "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+        "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+        "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+        "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+        "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+        "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+        "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+        "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+        "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+        "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+        "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+        "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+        "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+        "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+        "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+        "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+        "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+        "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+        "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+        "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+        "https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html",
+        "https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html",
+        "https://books.toscrape.com/catalogue/the-art-forger_930/index.html",
+        "https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html",
+        "https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html",
+        "https://books.toscrape.com/catalogue/shobu-samurai-project-aryoku-3_830/index.html",
+        "https://books.toscrape.com/catalogue/modern-romance_820/index.html",
+        "https://books.toscrape.com/catalogue/the-white-queen-the-cousins-war-1_768/index.html",
+        "https://books.toscrape.com/catalogue/the-song-of-achilles_762/index.html",
+        "https://books.toscrape.com/catalogue/the-immortal-life-of-henrietta-lacks_753/index.html",
+        "https://books.toscrape.com/catalogue/the-dovekeepers_748/index.html",
+        "https://books.toscrape.com/catalogue/more-than-music-chasing-the-dream-1_716/index.html",
+        "https://books.toscrape.com/catalogue/code-name-verity-code-name-verity-1_680/index.html",
+        "https://books.toscrape.com/catalogue/cell_674/index.html",
+        "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html",
+        "https://books.toscrape.com/catalogue/a-series-of-catastrophes-and-miracles-a-true-story-of-love-science-and-cancer_655/index.html",
+        "https://books.toscrape.com/catalogue/a-peoples-history-of-the-united-states_654/index.html",
+        "https://books.toscrape.com/catalogue/a-brush-of-wings-angels-walking-3_651/index.html",
+        "https://books.toscrape.com/catalogue/rook_647/index.html",
+        "https://books.toscrape.com/catalogue/the-midnight-watch-a-novel-of-the-titanic-and-the-californian_640/index.html",
+        "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html"
+      ],
+      "depth": 1,
+      "parent": "https://books.toscrape.com",
+      "children": [
+        "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+        "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+        "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+        "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+        "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+        "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+        "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+        "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+        "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+        "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+        "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+        "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+        "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+        "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+        "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+        "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+        "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+        "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+        "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+        "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+        "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+        "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+        "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+        "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+        "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+        "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+        "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+        "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+        "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+        "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+        "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+        "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+        "https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html",
+        "https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html",
+        "https://books.toscrape.com/catalogue/the-art-forger_930/index.html",
+        "https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html",
+        "https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html",
+        "https://books.toscrape.com/catalogue/shobu-samurai-project-aryoku-3_830/index.html",
+        "https://books.toscrape.com/catalogue/modern-romance_820/index.html",
+        "https://books.toscrape.com/catalogue/the-white-queen-the-cousins-war-1_768/index.html",
+        "https://books.toscrape.com/catalogue/the-song-of-achilles_762/index.html",
+        "https://books.toscrape.com/catalogue/the-immortal-life-of-henrietta-lacks_753/index.html",
+        "https://books.toscrape.com/catalogue/the-dovekeepers_748/index.html",
+        "https://books.toscrape.com/catalogue/more-than-music-chasing-the-dream-1_716/index.html",
+        "https://books.toscrape.com/catalogue/code-name-verity-code-name-verity-1_680/index.html",
+        "https://books.toscrape.com/catalogue/cell_674/index.html",
+        "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html",
+        "https://books.toscrape.com/catalogue/a-series-of-catastrophes-and-miracles-a-true-story-of-love-science-and-cancer_655/index.html",
+        "https://books.toscrape.com/catalogue/a-peoples-history-of-the-united-states_654/index.html",
+        "https://books.toscrape.com/catalogue/a-brush-of-wings-angels-walking-3_651/index.html",
+        "https://books.toscrape.com/catalogue/rook_647/index.html",
+        "https://books.toscrape.com/catalogue/the-midnight-watch-a-novel-of-the-titanic-and-the-californian_640/index.html",
+        "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
@@ -22295,18 +23210,283 @@
       "url": "https://books.toscrape.com/catalogue/icing-aces-hockey-2_25/index.html",
       "depth": 2,
       "parent": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-art-forger_930/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/shobu-samurai-project-aryoku-3_830/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/modern-romance_820/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-white-queen-the-cousins-war-1_768/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-song-of-achilles_762/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-immortal-life-of-henrietta-lacks_753/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-dovekeepers_748/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/more-than-music-chasing-the-dream-1_716/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/code-name-verity-code-name-verity-1_680/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/cell_674/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/angels-walking-angels-walking-1_662/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/a-series-of-catastrophes-and-miracles-a-true-story-of-love-science-and-cancer_655/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/a-peoples-history-of-the-united-states_654/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/a-brush-of-wings-angels-walking-3_651/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/rook_647/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/the-midnight-watch-a-novel-of-the-titanic-and-the-californian_640/index.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/page-2.html",
+      "depth": 2,
+      "parent": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
     }
   ],
   "pageCount": 20,
   "maxDepth": 2,
   "maxPages": 20,
   "startUrl": "https://books.toscrape.com",
-  "lastUpdated": "2025-09-15T09:40:28.254Z",
+  "lastUpdated": "2025-09-15T09:40:29.804Z",
   "completed": false,
-  "currentUrl": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
-  "status": "crawling",
+  "currentUrl": null,
+  "status": "completed",
   "pagesProcessedInBatch": 10,
   "maxPagesThisBatch": 10,
-  "queueLength": 1109,
+  "queueLength": 1162,
   "batchComplete": true
 }
