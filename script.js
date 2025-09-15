@@ -894,6 +894,7 @@ function downloadFormat(format) {
     URL.revokeObjectURL(url);
     
     showSuccess(`✅ Downloaded ${filename}`);
+}
 
 function generateJSONExport() {
     const exportData = {};
