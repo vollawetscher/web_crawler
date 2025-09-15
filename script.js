@@ -742,6 +742,23 @@ async function checkCrawlProgress() {
     
     try {
         const response = await fetch(`/api/crawl-progress/${currentJobId}`);
+        
+        // Handle 404 - job not found, stop polling
+        if (response.status === 404) {
+            console.warn(`Crawl job ${currentJobId} not found (404), stopping progress polling`);
+            showCrawlStatus('Job not found. The crawl may have expired or been deleted.', 'paused');
+            resumeCrawlBtn.classList.add('hidden');
+            stopProgressPolling();
+            return;
+        }
+        
+        // Handle other HTTP errors
+        if (!response.ok) {
+            console.warn(`Progress check failed with status ${response.status}, stopping polling`);
+            stopProgressPolling();
+            return;
+        }
+        
         const progress = await response.json();
         
         if (progress.success) {
@@ -759,7 +776,6 @@ async function checkCrawlProgress() {
                 showCrawlStatus('Crawl completed!', 'complete');
                 resumeCrawlBtn.classList.add('hidden');
                 stopProgressPolling();
-                // saveCrawlCompletedStatus(false); // Commented out - function not defined
                 
                 // Refresh crawl results
                 try {
@@ -771,7 +787,7 @@ async function checkCrawlProgress() {
                         body: JSON.stringify({ jobId: currentJobId })
                     });
                     
-                    const crawlData = await response.json();
+                    const crawlData = await crawlResponse.json();
                     if (crawlData.success) {
                         currentCrawlData = crawlData;
                         displayCrawlResults(crawlData);
@@ -781,9 +797,13 @@ async function checkCrawlProgress() {
                     console.error('Failed to refresh crawl results:', error);
                 }
             }
+        } else {
+            console.warn('Progress check returned unsuccessful response, stopping polling');
+            stopProgressPolling();
         }
     } catch (error) {
         console.error('Progress polling error:', error);
+        showCrawlStatus('Connection error during progress check', 'paused');
         stopProgressPolling();
     }
 }
