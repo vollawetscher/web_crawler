@@ -1193,3 +1193,35 @@ function clearSession() {
 
 // Make clearSession available globally
 window.clearSession = clearSession;
+
+// Add to crawl log function
+function addToCrawlLog(message, type = 'info') {
+    const crawlLogContainer = document.getElementById('crawlLogContainer');
+    const crawlLogContent = document.getElementById('crawlLogContent');
+    
+    if (!crawlLogContent) {
+        return;
+    }
+    
+    // Show the log container if hidden
+    if (crawlLogContainer) {
+        crawlLogContainer.style.display = 'block';
+    }
+    
+    // Create log entry
+    const timestamp = new Date().toLocaleTimeString();
+    const logEntry = document.createElement('div');
+    logEntry.className = `log-entry log-${type}`;
+    logEntry.innerHTML = `<span class="log-time">${timestamp}</span> ${message}`;
+    
+    // Add to log content
+    crawlLogContent.appendChild(logEntry);
+    
+    // Keep only the last 20 entries
+    while (crawlLogContent.children.length > 20) {
+        crawlLogContent.removeChild(crawlLogContent.firstChild);
+    }
+    
+    // Auto-scroll to bottom
+    crawlLogContent.scrollTop = crawlLogContent.scrollHeight;
+}

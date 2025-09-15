@@ -946,7 +946,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         // Save detailed progress with current URL and batch info
         await saveProgress(url, 'crawling');
         
-        console.log(`Crawling: ${url} (depth: ${depth}, batch: ${pagesProcessedInBatch}/${maxPagesThisBatch})`);
+        console.log(`Crawling: ${url} (depth: ${depth})`);
         
         const result = await fetchAndParseUrl(url);
         
