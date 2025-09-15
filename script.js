@@ -4,7 +4,16 @@ let currentCrawlJobId = null;
 let crawlProgressInterval = null;
 
 // DOM Elements
-
+const urlInput = document.getElementById('urlInput');
+const inspectBtn = document.getElementById('inspectBtn');
+const manualHtml = document.getElementById('manualHtml');
+const manualUrl = document.getElementById('manualUrl');
+const parseManualBtn = document.getElementById('parseManualBtn');
+const loadingIndicator = document.getElementById('loadingIndicator');
+const errorMessage = document.getElementById('errorMessage');
+const successMessage = document.getElementById('successMessage');
+const resultsSection = document.getElementById('resultsSection');
+const downloadBtn = document.getElementById('downloadBtn');
 
 // Crawl elements
 const jobIdInput = document.getElementById('jobId');
