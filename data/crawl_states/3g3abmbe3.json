@@ -15,7 +15,10 @@
     "https://tv1.eu/livestreaming-der-pressekonferenz",
     "https://tv1.eu/bvi-nachhaltigkeitskonferenz",
     "https://tv1.eu/pressekonferenz-des-bayerischen-wirtschaftsministeriums",
-    "https://tv1.eu/livestreaming-ohne-extra-hardware"
+    "https://tv1.eu/livestreaming-ohne-extra-hardware",
+    "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+    "https://tv1.eu/livestream-produktion-aus-der-ferne",
+    "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -3871,24 +3874,689 @@
       "parent": "https://tv1.eu/referenzen",
       "children": [],
       "is_relevant": true
+    },
+    "https://tv1.eu/livestreaming-ohne-extra-hardware": {
+      "success": true,
+      "final_url": "https://tv1.eu/livestreaming-ohne-extra-hardware",
+      "title": "Livestreaming ohne extra Hardware - TV1",
+      "meta_description": "Livestreaming direkt vom Browser aus. Laden Sie Gäste ein, blenden ihr Logo ein und streamen Sie live zu ihren Zuschauern.",
+      "main_content": "### Livestreaming Software ### Video.Taxi Studio ermöglicht professionelles Streaming ohne extra Hardware",
+      "sections": [
+        {
+          "section_id": "b1a30c694e6a",
+          "section_order": 0,
+          "heading": "Livestreaming ohne extra Hardware - TV1",
+          "heading_level": "page",
+          "content_text": "### Livestreaming Software ### Video.Taxi Studio ermöglicht professionelles Streaming ohne extra Hardware",
+          "page_url": "https://tv1.eu/livestreaming-ohne-extra-hardware",
+          "page_title": "Livestreaming ohne extra Hardware - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "3baf15bf2dfec71eb288417bdb4da475",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:52.853Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Hier geht’s zur kostenlosen Anmeldung bei Video.Taxi (bitte klicken)",
+          "url": "https://service.video.taxi/session/new",
+          "category": "external"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/livestreaming-ohne-extra-hardware#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/livestreaming-ohne-extra-hardware#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Hier geht’s zur kostenlosen Anmeldung bei Video.Taxi (bitte klicken)",
+            "url": "https://service.video.taxi/session/new",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/blog",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren": {
+      "success": true,
+      "final_url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+      "title": "Virtuelle Events erfolgreich durchführen - TV1",
+      "meta_description": "",
+      "main_content": "Der Artikel zusammengefasst 1. Jeder physische Event kann als virtueller Event umgesetzt werden 1. Jeder physische Event kann als virtueller Event umgesetzt werden 2. Durch Zuschaltung externer Teilnehmer steigt die Komplexität 2. Durch Zuschaltung externer Teilnehmer steigt die Komplexität 3. Eine oder meherere Generalproben sind dringend empfohlen 3. Eine oder meherere Generalproben sind dringend empfohlen 4. Beim Livestreaming interaktive Komponenten wie z.b. Chat mit einbeziehen 4. Beim Livestreaming interaktive Komponenten wie z.b. Chat mit einbeziehen 5. Ein Konzept machen und ihn mit Profis gemeinsam umsetzen 5. Ein Konzept machen und ihn mit Profis gemeinsam umsetzen\n\nTV1 Seit 1999 sind wir Spezialisten für Livestreaming und Video hosting. Wir setzen mit eigenen Teams und Partnern anspruchsvolle Projekte um. Für Selberstreamer haben wir die Plattform Video.Taxi entwickelt. Seit 1999 sind wir Spezialisten für Livestreaming und Video hosting. Wir setzen mit eigenen Teams und Partnern anspruchsvolle Projekte um. Für Selberstreamer haben wir die Plattform Video.Taxi entwickelt.",
+      "sections": [
+        {
+          "section_id": "d624d735ea6b",
+          "section_order": 2,
+          "heading": "Der Artikel zusammengefasst",
+          "heading_level": "h3",
+          "content_text": "Der Artikel zusammengefasst 1. Jeder physische Event kann als virtueller Event umgesetzt werden 1. Jeder physische Event kann als virtueller Event umgesetzt werden 2. Durch Zuschaltung externer Teilnehmer steigt die Komplexität 2. Durch Zuschaltung externer Teilnehmer steigt die Komplexität 3. Eine oder meherere Generalproben sind dringend empfohlen 3. Eine oder meherere Generalproben sind dringend empfohlen 4. Beim Livestreaming interaktive Komponenten wie z.b. Chat mit einbeziehen 4. Beim Livestreaming interaktive Komponenten wie z.b. Chat mit einbeziehen 5. Ein Konzept machen und ihn mit Profis gemeinsam umsetzen 5. Ein Konzept machen und ihn mit Profis gemeinsam umsetzen",
+          "page_url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+          "page_title": "Virtuelle Events erfolgreich durchführen - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "a20c01bdb169bd49b2be61acbe3787f7",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:54.139Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "b78df7f3012b",
+          "section_order": 3,
+          "heading": "TV1",
+          "heading_level": "h4",
+          "content_text": "TV1 Seit 1999 sind wir Spezialisten für Livestreaming und Video hosting. Wir setzen mit eigenen Teams und Partnern anspruchsvolle Projekte um. Für Selberstreamer haben wir die Plattform Video.Taxi entwickelt. Seit 1999 sind wir Spezialisten für Livestreaming und Video hosting. Wir setzen mit eigenen Teams und Partnern anspruchsvolle Projekte um. Für Selberstreamer haben wir die Plattform Video.Taxi entwickelt.",
+          "page_url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
+          "page_title": "Virtuelle Events erfolgreich durchführen - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "6739c172e19e39a8cdbd016c9cca6019",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:59:54.139Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection#92e1f3fef7e1d2e6e4a3bcf7e7",
+          "category": "navigation"
+        },
+        {
+          "text": "HIER",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/",
+          "category": "external"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection#92e1f3fef7e1d2e6e4a3bcf7e7",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "HIER",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/blog",
+      "children": [],
+      "is_relevant": true
+    },
+    "https://tv1.eu/livestream-produktion-aus-der-ferne": {
+      "success": true,
+      "final_url": "https://tv1.eu/livestream-produktion-aus-der-ferne",
+      "title": "Livestream Produktion aus der Ferne - TV1",
+      "meta_description": "",
+      "main_content": "",
+      "sections": [],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Mehr erfahren",
+          "url": "https://policies.google.com/privacy",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Video laden",
+          "url": "https://tv1.eu/livestream-produktion-aus-der-ferne#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection#087b69646d7b487c7e39266d7d",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/livestream-produktion-aus-der-ferne#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "Video laden",
+            "url": "https://tv1.eu/livestream-produktion-aus-der-ferne#",
+            "category": "navigation"
+          },
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection#087b69646d7b487c7e39266d7d",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Mehr erfahren",
+            "url": "https://policies.google.com/privacy",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": []
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 2,
+      "parent": "https://tv1.eu/blog",
+      "children": [],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/virtuelle-events-erfolgreich-durchfuehren",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
-    {
-      "url": "https://tv1.eu/livestream-produktion-aus-der-ferne",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
-    {
-      "url": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
-      "depth": 2,
-      "parent": "https://tv1.eu/blog"
-    },
     {
       "url": "https://tv1.eu/online-konferenzen-als-ersatz-fuer-praesenzveranstaltungen",
       "depth": 2,
@@ -4000,16 +4668,16 @@
       "parent": "https://tv1.eu/en/data-protection"
     }
   ],
-  "pageCount": 15,
+  "pageCount": 18,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:59:52.572Z",
+  "lastUpdated": "2025-09-15T09:59:56.424Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/livestreaming-ohne-extra-hardware",
+  "currentUrl": "https://tv1.eu/prof-werner-sinn-ueber-corona-und-die-folgen",
   "status": "crawling",
-  "pagesProcessedInBatch": 5,
+  "pagesProcessedInBatch": 8,
   "maxPagesThisBatch": 10,
-  "queueLength": 25,
+  "queueLength": 22,
   "batchComplete": false
 }
