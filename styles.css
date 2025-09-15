@@ -439,7 +439,7 @@ h3 {
 }
 
 /* Batch Controls */
-.batch-controls {
+.job-controls {
     background: #f0f9ff;
     padding: 1.5rem;
     border-radius: 8px;
@@ -447,15 +447,15 @@ h3 {
     border: 1px solid #bae6fd;
 }
 
-.batch-controls .control-group {
+.job-controls .control-group {
     margin-bottom: 1rem;
 }
 
-.batch-controls .control-group:last-child {
+.job-controls .control-group:last-child {
     margin-bottom: 0;
 }
 
-.batch-info {
+.job-info {
     background: #f0f9ff;
     border: 1px solid #bae6fd;
     border-radius: 8px;
@@ -463,13 +463,34 @@ h3 {
     margin-top: 1rem;
 }
 
-.batch-info p {
+.job-info p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
 }
 
-.batch-info strong {
+.job-info strong {
     color: #1e40af;
+}
+
+.stop-crawl-btn {
+    padding: 0.75rem 1.5rem;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.stop-crawl-btn:hover {
+    background: #dc2626;
+}
+
+.stop-crawl-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
 }
 
 .resume-crawl-btn {
@@ -863,6 +884,13 @@ h3 {
     font-size: 0.875rem;
     font-style: italic;
     font-weight: 500;
+}
+
+.export-note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 1rem 0;
+    font-style: italic;
 }
 
 .export-info {
