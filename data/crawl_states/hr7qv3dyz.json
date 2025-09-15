@@ -5,7 +5,8 @@
     "http://loerrach-landkreis.de/aktuelles",
     "http://loerrach-landkreis.de/anfahrt",
     "http://loerrach-landkreis.de/tastatursteuerung",
-    "http://loerrach-landkreis.de/leichte-sprache"
+    "http://loerrach-landkreis.de/leichte-sprache",
+    "http://loerrach-landkreis.de/fehler-melden"
   ],
   "sitemap": {
     "http://loerrach-landkreis.de": {
@@ -10748,11 +10749,6 @@
   },
   "queue": [
     {
-      "url": "http://loerrach-landkreis.de/fehler-melden",
-      "depth": 1,
-      "parent": "http://loerrach-landkreis.de"
-    },
-    {
       "url": "http://loerrach-landkreis.de/willkommen",
       "depth": 2,
       "parent": "http://loerrach-landkreis.de/aktuelles"
@@ -10828,16 +10824,16 @@
       "parent": "http://loerrach-landkreis.de/leichte-sprache"
     }
   ],
-  "pageCount": 5,
+  "pageCount": 6,
   "maxDepth": 2,
   "maxPages": 15,
   "startUrl": "http://loerrach-landkreis.de",
-  "lastUpdated": "2025-09-15T10:23:32.196Z",
+  "lastUpdated": "2025-09-15T10:23:52.618Z",
   "completed": false,
-  "currentUrl": null,
-  "status": "batch_complete",
-  "pagesProcessedInBatch": 5,
+  "currentUrl": "http://loerrach-landkreis.de/fehler-melden",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
   "maxPagesThisBatch": 5,
-  "queueLength": 16,
-  "batchComplete": true
+  "queueLength": 15,
+  "batchComplete": false
 }
