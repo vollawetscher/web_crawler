@@ -8,7 +8,8 @@
     "https://tv1.eu/referenzen",
     "https://tv1.eu/ueber-uns",
     "https://tv1.eu/blog",
-    "https://tv1.eu/jobs"
+    "https://tv1.eu/jobs",
+    "https://tv1.eu/en/imprint"
   ],
   "sitemap": {
     "https://tv1.eu": {
@@ -1774,14 +1775,243 @@
         "https://tv1.eu/en/data-protection"
       ],
       "is_relevant": true
+    },
+    "https://tv1.eu/jobs": {
+      "success": true,
+      "final_url": "https://tv1.eu/jobs",
+      "title": "Jobs - TV1",
+      "meta_description": "",
+      "main_content": "### Arbeiten bei TV1 heißt ### Aktuell suchen wir einen ### Vertriebsmitarbeiter (m/w/d) in Vollzeit ### Aktuell suchen wir einen ### Online Marketing Manager (m/w/d) in Vollzeit ### Aktuell suchen wir einen ### Werkstudent (m/w/d) Video Production ### Aktuell suchen wir einen ### Werkstudent (m/w/d) Untertitelung ### Aktuell suchen wir einen ### Werkstudent Support (m/w/d) ### Aktuell suchen wir einen ### Gebärdensprach­dolmetscher (freie Mitarbeit) (m/w/d) ### Aktuell suchen wir einen ### Senior Sales Manager / Senior Account Manager (m/w/d) Organisation und Durchführung von Live- und virtuellen Events Arbeit hinter den Kulissen in verschiedenen technischen Bereichen Du studierst „irgendwas mit Medien“, z. B. Videographie, Film und Fernsehen, Regie oder vergleichbar Du bist interessiert an Livestream- und Videotechnik, Veranstaltungstechnik, o.ä. Du hast idealerweise bereits Erfahrungen in der Betreuung von Veranstaltungen im Streaming-Bereich gesammelt Du bist in deiner zeitlichen Verfügbarkeit flexibel Gebärdensprachdolmetschung von Livestreams aus dem politischen und öffentlichen Umfeld Die strategische Weiterentwicklung und Umsetzung der Vertriebsprozesse Aufbau und Motivation des Sales-Teams Das Bearbeiten von wichtigen Leads Die Akquise auf den üblichen Vertriebswegen Der Ausbau bestehender Kundenbeziehungen Die Erstellung von Angeboten für Ausschreibungen Du hast erfolgreiche Vertriebserfahrung und bereits in ähnlicher Position oder z.B. als Sales Manager oder Account Executive gearbeitet mindestens 2-3 Jahre Erfahrung im Führen eines Sales-Teams Du hast gutes technisches Verständnis und Interesse am Vertrieb von High-Tech-Anwendungen Du bist eigenverantwortlich und strukturiert mit ausgeprägter Kommunikationsfähigkeit Du bist verhandlungssicher auf Englisch in Wort und Schrift Du bist technikaffin und Streaming außerhalb von Netflix ist kein Fremdwort für dich Du willst mit unserer voll skalierbaren Plattform video.taxi voll durchstarten",
+      "sections": [
+        {
+          "section_id": "95920653f7da",
+          "section_order": 0,
+          "heading": "Jobs - TV1",
+          "heading_level": "page",
+          "content_text": "### Arbeiten bei TV1 heißt ### Aktuell suchen wir einen ### Vertriebsmitarbeiter (m/w/d) in Vollzeit ### Aktuell suchen wir einen ### Online Marketing Manager (m/w/d) in Vollzeit ### Aktuell suchen wir einen ### Werkstudent (m/w/d) Video Production ### Aktuell suchen wir einen ### Werkstudent (m/w/d) Untertitelung ### Aktuell suchen wir einen ### Werkstudent Support (m/w/d) ### Aktuell suchen wir einen ### Gebärdensprach­dolmetscher (freie Mitarbeit) (m/w/d) ### Aktuell suchen wir einen ### Senior Sales Manager / Senior Account Manager (m/w/d) Organisation und Durchführung von Live- und virtuellen Events Arbeit hinter den Kulissen in verschiedenen technischen Bereichen Du studierst „irgendwas mit Medien“, z. B. Videographie, Film und Fernsehen, Regie oder vergleichbar Du bist interessiert an Livestream- und Videotechnik, Veranstaltungstechnik, o.ä. Du hast idealerweise bereits Erfahrungen in der Betreuung von Veranstaltungen im Streaming-Bereich gesammelt Du bist in deiner zeitlichen Verfügbarkeit flexibel Gebärdensprachdolmetschung von Livestreams aus dem politischen und öffentlichen Umfeld Die strategische Weiterentwicklung und Umsetzung der Vertriebsprozesse Aufbau und Motivation des Sales-Teams Das Bearbeiten von wichtigen Leads Die Akquise auf den üblichen Vertriebswegen Der Ausbau bestehender Kundenbeziehungen Die Erstellung von Angeboten für Ausschreibungen Du hast erfolgreiche Vertriebserfahrung und bereits in ähnlicher Position oder z.B. als Sales Manager oder Account Executive gearbeitet mindestens 2-3 Jahre Erfahrung im Führen eines Sales-Teams Du hast gutes technisches Verständnis und Interesse am Vertrieb von High-Tech-Anwendungen Du bist eigenverantwortlich und strukturiert mit ausgeprägter Kommunikationsfähigkeit Du bist verhandlungssicher auf Englisch in Wort und Schrift Du bist technikaffin und Streaming außerhalb von Netflix ist kein Fremdwort für dich Du willst mit unserer voll skalierbaren Plattform video.taxi voll durchstarten",
+          "page_url": "https://tv1.eu/jobs",
+          "page_title": "Jobs - TV1",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "6b890c22a608c23140b320507efb2c1d",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [
+            "02:00-03:00"
+          ],
+          "last_seen": "2025-09-15T11:18:35.112Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "HIER BEWERBEN",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection#563c39342516222067783323",
+          "category": "navigation"
+        },
+        {
+          "text": "Video.Taxi.",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Video.Taxi.",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/jobs#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "HIER BEWERBEN",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection#563c39342516222067783323",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/jobs#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "Video.Taxi.",
+            "url": "https://www.video.taxi/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 1,
+      "parent": "https://tv1.eu",
+      "children": [
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
     }
   },
   "queue": [
-    {
-      "url": "https://tv1.eu/en/imprint",
-      "depth": 1,
-      "parent": "https://tv1.eu"
-    },
     {
       "url": "https://tv1.eu/en/data-protection",
       "depth": 1,
@@ -1966,18 +2196,28 @@
       "url": "https://tv1.eu/en/data-protection",
       "depth": 2,
       "parent": "https://tv1.eu/blog"
+    },
+    {
+      "url": "https://tv1.eu/en/imprint",
+      "depth": 2,
+      "parent": "https://tv1.eu/jobs"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 2,
+      "parent": "https://tv1.eu/jobs"
     }
   ],
-  "pageCount": 8,
+  "pageCount": 9,
   "maxDepth": 2,
   "maxPages": 10,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T11:18:34.814Z",
+  "lastUpdated": "2025-09-15T11:18:36.123Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu/jobs",
+  "currentUrl": "https://tv1.eu/en/imprint",
   "status": "crawling",
-  "pagesProcessedInBatch": 8,
+  "pagesProcessedInBatch": 9,
   "maxPagesThisBatch": 10,
-  "queueLength": 38,
+  "queueLength": 39,
   "batchComplete": false
 }
