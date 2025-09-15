@@ -1,0 +1,20 @@
+{
+  "jobId": "hr7qv3dyz",
+  "visited": [
+    "http://loerrach-landkreis.de"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 15,
+  "startUrl": "http://loerrach-landkreis.de",
+  "lastUpdated": "2025-09-15T10:23:25.149Z",
+  "completed": false,
+  "currentUrl": "http://loerrach-landkreis.de",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 5,
+  "queueLength": 0,
+  "batchComplete": false
+}
