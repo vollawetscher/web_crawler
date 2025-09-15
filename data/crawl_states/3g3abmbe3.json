@@ -1,20 +1,411 @@
 {
   "jobId": "3g3abmbe3",
   "visited": [
-    "https://tv1.eu"
+    "https://tv1.eu",
+    "https://tv1.eu/cdn-cgi/l/email-protection"
   ],
-  "sitemap": {},
-  "queue": [],
-  "pageCount": 1,
+  "sitemap": {
+    "https://tv1.eu": {
+      "success": true,
+      "final_url": "https://tv1.eu/",
+      "title": "TV1 – Streaminganbieter seit 1999",
+      "meta_description": "Willkommen auf der offiziellen Webseite von TV1.EU aus Unterföhring – Wir sind Experten für Live Streaming, Online Video, Live Webcasting usw.",
+      "main_content": "Bundestag Seit 2012 überträgt die TV1 Bundestagsdebatten live aus dem Plenum des Deutschen Bundestages. Alle Reden werden geschnitten und stehen einzeln in der Mediathek auf Abruf zur Verfügung. Seit 2018 erstellt TV1 auch die Untertitel und Gebärdensprach­übersetzung in Echtzeit. Seit 2021 werden alle vom Bundestag live gestreamten Inhalte untertitelt. Die Anzahl der Stunden stieg damit auf rund 1.000 pro Jahr. Zur Untertitelung setzt TV1 künstliche Intelligenz und Schriftsprachdolmetscher ein. Seit 2012 überträgt die TV1 Bundestagsdebatten live aus dem Plenum des Deutschen Bundestages. Alle Reden werden geschnitten und stehen einzeln in der Mediathek auf Abruf zur Verfügung. Seit 2018 erstellt TV1 auch die Untertitel und Gebärdensprach­übersetzung in Echtzeit. Seit 2021 werden alle vom Bundestag live gestreamten Inhalte untertitelt. Die Anzahl der Stunden stieg damit auf rund 1.000 pro Jahr. Zur Untertitelung setzt TV1 künstliche Intelligenz und Schriftsprachdolmetscher ein.\n\nYouTV YouTV ist ein Online-TV Rekorder, der die Aufnahme von über 50-TV Kanälen ermöglicht. Ausgeklügelte Aufnahmeassistenten nehmen den Nutzerinnen und Nutzern die Last der Entscheidung ab, welche Sendungen aufgenommen werden sollen. YouTV unterstützt bei der Programmauswahl, entfernt auf Wunsch die Werbung und ist in dreizehn Apps für alle wichtigen Endgeräte erhältlich. YouTV ist ein Online-TV Rekorder, der die Aufnahme von über 50-TV Kanälen ermöglicht. Ausgeklügelte Aufnahmeassistenten nehmen den Nutzerinnen und Nutzern die Last der Entscheidung ab, welche Sendungen aufgenommen werden sollen. YouTV unterstützt bei der Programmauswahl, entfernt auf Wunsch die Werbung und ist in dreizehn Apps für alle wichtigen Endgeräte erhältlich. Webseite besuchen … Webseite besuchen … Webseite besuchen … Webseite besuchen …\n\nVideo.Taxi Video.Taxi ist eine revolutionäre Plattform für alle, die Online-Events, Online-Meetings und Videopublishing schnell und unkompliziert durchführen wollen. Durch zahlreiche verfügbare Funktionen können Anwender und Anwenderinnen ihre Inhalte deutlich aufwerten. So ermöglicht Video.Taxi z.B. die Produktion aufwendiger Livestreams direkt am Computer, die Live-Untertitelung und den Verkauf von Livestreams und Videos. Video.Taxi ist eine revolutionäre Plattform für alle, die Online-Events, Online-Meetings und Videopublishing schnell und unkompliziert durchführen wollen. Durch zahlreiche verfügbare Funktionen können Anwender und Anwenderinnen ihre Inhalte deutlich aufwerten. So ermöglicht Video.Taxi z.B. die Produktion aufwendiger Livestreams direkt am Computer, die Live-Untertitelung und den Verkauf von Livestreams und Videos. Webseite besuchen … Webseite besuchen … Webseite besuchen … Webseite besuchen …",
+      "sections": [
+        {
+          "section_id": "52e1a8a24e74",
+          "section_order": 6,
+          "heading": "Bundestag",
+          "heading_level": "h5",
+          "content_text": "Bundestag Seit 2012 überträgt die TV1 Bundestagsdebatten live aus dem Plenum des Deutschen Bundestages. Alle Reden werden geschnitten und stehen einzeln in der Mediathek auf Abruf zur Verfügung. Seit 2018 erstellt TV1 auch die Untertitel und Gebärdensprach­übersetzung in Echtzeit. Seit 2021 werden alle vom Bundestag live gestreamten Inhalte untertitelt. Die Anzahl der Stunden stieg damit auf rund 1.000 pro Jahr. Zur Untertitelung setzt TV1 künstliche Intelligenz und Schriftsprachdolmetscher ein. Seit 2012 überträgt die TV1 Bundestagsdebatten live aus dem Plenum des Deutschen Bundestages. Alle Reden werden geschnitten und stehen einzeln in der Mediathek auf Abruf zur Verfügung. Seit 2018 erstellt TV1 auch die Untertitel und Gebärdensprach­übersetzung in Echtzeit. Seit 2021 werden alle vom Bundestag live gestreamten Inhalte untertitelt. Die Anzahl der Stunden stieg damit auf rund 1.000 pro Jahr. Zur Untertitelung setzt TV1 künstliche Intelligenz und Schriftsprachdolmetscher ein.",
+          "page_url": "https://tv1.eu/",
+          "page_title": "TV1 – Streaminganbieter seit 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "70073a94c536ff5ff49230f10800243c",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:00.168Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "6b43cc62bdbf",
+          "section_order": 7,
+          "heading": "YouTV",
+          "heading_level": "h5",
+          "content_text": "YouTV YouTV ist ein Online-TV Rekorder, der die Aufnahme von über 50-TV Kanälen ermöglicht. Ausgeklügelte Aufnahmeassistenten nehmen den Nutzerinnen und Nutzern die Last der Entscheidung ab, welche Sendungen aufgenommen werden sollen. YouTV unterstützt bei der Programmauswahl, entfernt auf Wunsch die Werbung und ist in dreizehn Apps für alle wichtigen Endgeräte erhältlich. YouTV ist ein Online-TV Rekorder, der die Aufnahme von über 50-TV Kanälen ermöglicht. Ausgeklügelte Aufnahmeassistenten nehmen den Nutzerinnen und Nutzern die Last der Entscheidung ab, welche Sendungen aufgenommen werden sollen. YouTV unterstützt bei der Programmauswahl, entfernt auf Wunsch die Werbung und ist in dreizehn Apps für alle wichtigen Endgeräte erhältlich. Webseite besuchen … Webseite besuchen … Webseite besuchen … Webseite besuchen …",
+          "page_url": "https://tv1.eu/",
+          "page_title": "TV1 – Streaminganbieter seit 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "9c7b630b1767f59d61bcc56fec142c50",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Webseite besuchen …",
+              "url": "https://www.youtv.de/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:00.169Z",
+          "prev_hash": null,
+          "has_changed": true
+        },
+        {
+          "section_id": "29a5f8023c0c",
+          "section_order": 8,
+          "heading": "Video.Taxi",
+          "heading_level": "h5",
+          "content_text": "Video.Taxi Video.Taxi ist eine revolutionäre Plattform für alle, die Online-Events, Online-Meetings und Videopublishing schnell und unkompliziert durchführen wollen. Durch zahlreiche verfügbare Funktionen können Anwender und Anwenderinnen ihre Inhalte deutlich aufwerten. So ermöglicht Video.Taxi z.B. die Produktion aufwendiger Livestreams direkt am Computer, die Live-Untertitelung und den Verkauf von Livestreams und Videos. Video.Taxi ist eine revolutionäre Plattform für alle, die Online-Events, Online-Meetings und Videopublishing schnell und unkompliziert durchführen wollen. Durch zahlreiche verfügbare Funktionen können Anwender und Anwenderinnen ihre Inhalte deutlich aufwerten. So ermöglicht Video.Taxi z.B. die Produktion aufwendiger Livestreams direkt am Computer, die Live-Untertitelung und den Verkauf von Livestreams und Videos. Webseite besuchen … Webseite besuchen … Webseite besuchen … Webseite besuchen …",
+          "page_url": "https://tv1.eu/",
+          "page_title": "TV1 – Streaminganbieter seit 1999",
+          "breadcrumbs": [],
+          "content_type": "general",
+          "volatility": "medium",
+          "last_modified": null,
+          "hash": "41ec6a0d5a8efdd8df2397ed5f759d41",
+          "extracted_contacts": [],
+          "extracted_addresses": [],
+          "extracted_links": [
+            {
+              "text": "Webseite besuchen …",
+              "url": "http://www.video.taxi/"
+            }
+          ],
+          "extracted_dates": [],
+          "extracted_opening_hours": [],
+          "last_seen": "2025-09-15T09:58:00.169Z",
+          "prev_hash": null,
+          "has_changed": true
+        }
+      ],
+      "links": [
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "HOME",
+          "url": "https://tv1.eu/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Virtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Untertitelung",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "REFERENZEN",
+          "url": "https://tv1.eu/referenzen/",
+          "category": "content_internal"
+        },
+        {
+          "text": "ÜBER UNS",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "BLOG",
+          "url": "https://tv1.eu/blog/",
+          "category": "content_internal"
+        },
+        {
+          "text": "JOBS",
+          "url": "https://tv1.eu/jobs/",
+          "category": "content_internal"
+        },
+        {
+          "text": "KONTAKT",
+          "url": "https://tv1.eu/kontakt/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "MEHR ERFAHREN",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "MEHR ERFAHREN",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "MEHR ERFAHREN",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Gefragter denn je\nVirtuelle Events",
+          "url": "https://tv1.eu/virtuelle-events/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Streamingplattform\nVideo.Taxi",
+          "url": "https://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "Untertitelung &\nGebärdensprache",
+          "url": "https://tv1.eu/untertitelung/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Webseite besuchen …",
+          "url": "https://www.youtv.de/",
+          "category": "external"
+        },
+        {
+          "text": "Webseite besuchen …",
+          "url": "http://www.video.taxi/",
+          "category": "external"
+        },
+        {
+          "text": "weiterlesen …",
+          "url": "https://tv1.eu/ueber-uns/",
+          "category": "content_internal"
+        },
+        {
+          "text": "TERMIN VEREINBAREN",
+          "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Cookie Einstellungen ändern",
+          "url": "https://tv1.eu/#",
+          "category": "navigation"
+        },
+        {
+          "text": "[email protected]",
+          "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+          "category": "content_internal"
+        },
+        {
+          "text": "Impressum",
+          "url": "https://tv1.eu/impressum/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "https://tv1.eu/datenschutz/",
+          "category": "legal_or_contact"
+        },
+        {
+          "text": "Imprint",
+          "url": "https://tv1.eu/en/imprint/",
+          "category": "content_internal"
+        },
+        {
+          "text": "Data protection",
+          "url": "https://tv1.eu/en/data-protection/",
+          "category": "content_internal"
+        }
+      ],
+      "categorized_links": {
+        "navigation": [
+          {
+            "text": "TERMIN VEREINBAREN",
+            "url": "https://outlook.office365.com/owa/calendar/VideoTaxi@tv1.eu/bookings/#kontakt",
+            "category": "navigation"
+          },
+          {
+            "text": "Cookie Einstellungen ändern",
+            "url": "https://tv1.eu/#",
+            "category": "navigation"
+          }
+        ],
+        "legal_or_contact": [
+          {
+            "text": "KONTAKT",
+            "url": "https://tv1.eu/kontakt/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Untertitelung &\nGebärdensprache",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Impressum",
+            "url": "https://tv1.eu/impressum/",
+            "category": "legal_or_contact"
+          },
+          {
+            "text": "Datenschutz",
+            "url": "https://tv1.eu/datenschutz/",
+            "category": "legal_or_contact"
+          }
+        ],
+        "content_internal": [
+          {
+            "text": "[email protected]",
+            "url": "https://tv1.eu/cdn-cgi/l/email-protection",
+            "category": "content_internal"
+          },
+          {
+            "text": "HOME",
+            "url": "https://tv1.eu/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Virtuelle Events",
+            "url": "https://tv1.eu/virtuelle-events/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Untertitelung",
+            "url": "https://tv1.eu/untertitelung/",
+            "category": "content_internal"
+          },
+          {
+            "text": "REFERENZEN",
+            "url": "https://tv1.eu/referenzen/",
+            "category": "content_internal"
+          },
+          {
+            "text": "ÜBER UNS",
+            "url": "https://tv1.eu/ueber-uns/",
+            "category": "content_internal"
+          },
+          {
+            "text": "BLOG",
+            "url": "https://tv1.eu/blog/",
+            "category": "content_internal"
+          },
+          {
+            "text": "JOBS",
+            "url": "https://tv1.eu/jobs/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Imprint",
+            "url": "https://tv1.eu/en/imprint/",
+            "category": "content_internal"
+          },
+          {
+            "text": "Data protection",
+            "url": "https://tv1.eu/en/data-protection/",
+            "category": "content_internal"
+          }
+        ],
+        "external": [
+          {
+            "text": "MEHR ERFAHREN",
+            "url": "https://www.video.taxi/",
+            "category": "external"
+          },
+          {
+            "text": "Webseite besuchen …",
+            "url": "https://www.youtv.de/",
+            "category": "external"
+          },
+          {
+            "text": "Webseite besuchen …",
+            "url": "http://www.video.taxi/",
+            "category": "external"
+          }
+        ]
+      },
+      "internal_links": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "depth": 0,
+      "parent": null,
+      "children": [
+        "https://tv1.eu/cdn-cgi/l/email-protection",
+        "https://tv1.eu/virtuelle-events",
+        "https://tv1.eu/untertitelung",
+        "https://tv1.eu/referenzen",
+        "https://tv1.eu/ueber-uns",
+        "https://tv1.eu/blog",
+        "https://tv1.eu/jobs",
+        "https://tv1.eu/en/imprint",
+        "https://tv1.eu/en/data-protection"
+      ],
+      "is_relevant": true
+    }
+  },
+  "queue": [
+    {
+      "url": "https://tv1.eu/virtuelle-events",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/untertitelung",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/referenzen",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/ueber-uns",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/blog",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/jobs",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/en/imprint",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    },
+    {
+      "url": "https://tv1.eu/en/data-protection",
+      "depth": 1,
+      "parent": "https://tv1.eu"
+    }
+  ],
+  "pageCount": 2,
   "maxDepth": 2,
   "maxPages": 30,
   "startUrl": "https://tv1.eu",
-  "lastUpdated": "2025-09-15T09:57:59.854Z",
+  "lastUpdated": "2025-09-15T09:58:01.185Z",
   "completed": false,
-  "currentUrl": "https://tv1.eu",
+  "currentUrl": "https://tv1.eu/cdn-cgi/l/email-protection",
   "status": "crawling",
-  "pagesProcessedInBatch": 1,
+  "pagesProcessedInBatch": 2,
   "maxPagesThisBatch": 10,
-  "queueLength": 0,
+  "queueLength": 8,
   "batchComplete": false
 }
