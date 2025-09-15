@@ -549,7 +549,6 @@ h3 {
 
 .crawl-status {
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 0.25rem;
     color: #7c3aed;
