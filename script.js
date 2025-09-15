@@ -7,6 +7,7 @@ let crawlProgressInterval = null;
 let generatedJsonExport = null;
 let generatedRagJsonlExport = null;
 let generatedTextExport = null;
+let crawlLog = [];
 
 // DOM Elements
 const urlInput = document.getElementById('urlInput');
@@ -25,13 +26,13 @@ const crawlControlsSection = document.getElementById('crawlControlsSection');
 const crawlResultsSection = document.getElementById('crawlResultsSection');
 const crawlBtn = document.getElementById('crawlBtn');
 const stopCrawlBtn = document.getElementById('stopCrawlBtn');
-const exportSection = document.querySelector('.export-section');
 const crawlStatus = document.getElementById('crawlStatus');
 const crawlStatusText = document.getElementById('crawlStatusText');
 const jobInfo = document.getElementById('jobInfo');
 const currentJobIdSpan = document.getElementById('currentJobId');
 const crawlProgressStatus = document.getElementById('crawlProgressStatus');
 const jobIdInput = document.getElementById('jobId');
+const crawlLogContainer = document.getElementById('crawlLog');
 
 // Export format elements
 const exportFormatRadios = document.querySelectorAll('input[name="export_format"]');
@@ -50,9 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeEventListeners() {
     inspectBtn.addEventListener('click', handleInspect);
     parseManualBtn.addEventListener('click', handleManualParse);
-    downloadBtn.addEventListener('click', handleDownload);
     crawlBtn.addEventListener('click', handleCrawl);
     stopCrawlBtn.addEventListener('click', handleStopCrawl);
+    
+    // Download button listeners
+    document.getElementById('downloadJsonBtn')?.addEventListener('click', () => downloadFormat('json'));
+    document.getElementById('downloadRagBtn')?.addEventListener('click', () => downloadFormat('rag_jsonl'));
+    document.getElementById('downloadTxtBtn')?.addEventListener('click', () => downloadFormat('txt'));
     
     // URL input enter key
     urlInput.addEventListener('keypress', function(e) {
@@ -715,14 +720,15 @@ async function checkCrawlProgress() {
         
         if (progress.success) {
             const remaining = Math.max(0, progress.maxPages - progress.pageCount);
-            const statusText = `Status: ${progress.status}\nPages: ${progress.pageCount}/${progress.maxPages}\nRemaining: ${remaining}\nQueue: ${progress.queueLength}`;
             
+            // Add current page to crawl log
             if (progress.currentUrl) {
-                crawlStatusText.textContent = `Currently crawling: ${new URL(progress.currentUrl).pathname}\n${statusText}`;
-            } else {
-                crawlStatusText.textContent = statusText;
+                const currentPath = new URL(progress.currentUrl).pathname;
+                addToCrawlLog(`Crawling: ${currentPath}`, 'info');
             }
             
+            const statusText = `Status: ${progress.status} | Pages: ${progress.pageCount}/${progress.maxPages} | Remaining: ${remaining} | Queue: ${progress.queueLength}`;
+            crawlStatusText.textContent = statusText;
             crawlProgressStatus.textContent = progress.status;
             
             // Update live sitemap if available
@@ -741,6 +747,7 @@ async function checkCrawlProgress() {
             if (progress.isComplete) {
                 const statusMessage = progress.stoppedByUser ? 'Crawl stopped by user!' : 'Crawl completed!';
                 showCrawlStatus(statusMessage, 'complete');
+                addToCrawlLog(statusMessage, 'success');
                 stopCrawlBtn.classList.add('hidden');
                 crawlBtn.disabled = false;
                 stopProgressPolling();
@@ -757,10 +764,16 @@ async function checkCrawlProgress() {
                 };
                 
                 // Generate all export formats
+                addToCrawlLog('Generating export formats...', 'info');
                 generateAllExportFormats();
+                addToCrawlLog('All export formats ready!', 'success');
                 
                 // Show export section
-                exportSection.classList.remove('hidden');
+                const exportSection = document.querySelector('.export-section');
+                if (exportSection) {
+                    exportSection.style.display = 'block';
+                    addToCrawlLog('Export options now available', 'info');
+                }
                 
                 saveSessionData();
             } else {
@@ -779,11 +792,13 @@ async function checkCrawlProgress() {
             }
         } else {
             console.warn('Progress check returned unsuccessful response, stopping polling');
+            addToCrawlLog('Progress check failed', 'error');
             stopProgressPolling();
         }
     } catch (error) {
         console.error('Progress polling error:', error);
         showCrawlStatus('Connection error during progress check', 'paused');
+        addToCrawlLog(`Connection error: ${error.message}`, 'error');
         stopProgressPolling();
     }
 }
@@ -807,6 +822,12 @@ function generateAllExportFormats() {
         json: generatedJsonExport ? 'ready' : 'empty',
         rag: generatedRagJsonlExport ? 'ready' : 'empty',
         text: generatedTextExport ? 'ready' : 'empty'
+    });
+    
+    // Update download buttons to show they're ready
+    const downloadButtons = document.querySelectorAll('.download-btn');
+    downloadButtons.forEach(btn => {
+        btn.disabled = false;
     });
 }
 
@@ -837,22 +858,20 @@ function updateExportInfo() {
     exportInfo.textContent = info;
 }
 
-async function handleDownload() {
-    const selectedFormat = document.querySelector('input[name="export_format"]:checked')?.value || 'json';
-    
+function downloadFormat(format) {
     let exportData;
     let filename;
     let mimeType;
     
-    if (selectedFormat === 'json') {
+    if (format === 'json') {
         exportData = generatedJsonExport;
         filename = `url_content_${Date.now()}.json`;
         mimeType = 'application/json';
-    } else if (selectedFormat === 'rag_jsonl') {
+    } else if (format === 'rag_jsonl') {
         exportData = generatedRagJsonlExport;
         filename = `rag_content_${Date.now()}.jsonl`;
         mimeType = 'application/jsonl';
-    } else if (selectedFormat === 'txt') {
+    } else if (format === 'txt') {
         exportData = generatedTextExport;
         filename = `content_${Date.now()}.txt`;
         mimeType = 'text/plain';
@@ -875,7 +894,6 @@ async function handleDownload() {
     URL.revokeObjectURL(url);
     
     showSuccess(`✅ Downloaded ${filename}`);
-}
 
 function generateJSONExport() {
     const exportData = {};

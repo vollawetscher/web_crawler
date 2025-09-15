@@ -907,6 +907,76 @@ h3 {
     color: #1e40af;
 }
 
+/* Crawl Log Styles */
+.crawl-log-container {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.crawl-log-container h4 {
+    background: #1e293b;
+    color: white;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.crawl-log-content {
+    height: 200px;
+    overflow-y: auto;
+    padding: 0.5rem;
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, monospace;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    background: #ffffff;
+}
+
+.log-entry {
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.25rem;
+    border-radius: 3px;
+    border-left: 3px solid #e2e8f0;
+}
+
+.log-info {
+    border-left-color: #3b82f6;
+    background: #f0f9ff;
+}
+
+.log-success {
+    border-left-color: #10b981;
+    background: #f0fdf4;
+    color: #065f46;
+}
+
+.log-error {
+    border-left-color: #ef4444;
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.log-time {
+    color: #6b7280;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.log-message {
+    color: #374151;
+}
+
+/* Download Buttons */
+.download-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Session Restoration Notice */
 .restoration-notice {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);

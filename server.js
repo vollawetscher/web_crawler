@@ -1162,9 +1162,12 @@ app.post('/api/crawl', async (req, res) => {
             return res.status(400).json({ error: 'URL is required for new crawls' });
         }
         
-        // Generate jobId if not provided (for new crawls)
+        // Generate meaningful jobId if not provided (for new crawls)
         if (!jobId && url) {
-            jobId = Math.random().toString(36).substr(2, 9); // Fallback random ID
+            const urlObj = new URL(url);
+            const domain = urlObj.hostname.replace(/^www\./, '');
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15); // YYYYMMDDTHHMMSS
+            jobId = `${domain}_${timestamp}`;
         }
         
         // Validate URL if starting new crawl

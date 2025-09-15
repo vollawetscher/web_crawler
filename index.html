@@ -173,6 +173,12 @@
                         <p><strong>Job ID:</strong> <span id="currentJobId"></span></p>
                         <p><strong>Status:</strong> <span id="crawlProgressStatus"></span></p>
                     </div>
+                    
+                    <!-- Real-time Crawl Log -->
+                    <div id="crawlLog" class="crawl-log-container hidden">
+                        <h4>📋 Crawl Activity Log</h4>
+                        <div id="crawlLogContent" class="crawl-log-content"></div>
+                    </div>
                 </div>
             </div>
 
@@ -197,7 +203,7 @@
 
             <!-- Export Options -->
             <hr>
-            <div class="export-section hidden">
+            <div class="export-section" style="display: none;">
                 <h2>📤 Export Options</h2>
                 
                 <div class="format-selection">
@@ -238,7 +244,11 @@
                     </div>
                 </div>
 
-                <button id="downloadBtn" class="download-btn">📥 Download Selected Format</button>
+                <div class="download-buttons">
+                    <button id="downloadJsonBtn" class="download-btn" disabled>📥 Download JSON</button>
+                    <button id="downloadRagBtn" class="download-btn" disabled>📥 Download RAG JSONL</button>
+                    <button id="downloadTxtBtn" class="download-btn" disabled>📥 Download Plain Text</button>
+                </div>
                 
                 <p class="export-note">💡 All export formats are pre-generated when the crawl completes. Simply select your preferred format above.</p>
                 
