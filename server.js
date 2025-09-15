@@ -1267,9 +1267,12 @@ app.post('/api/crawl-stop/:jobId', async (req, res) => {
 app.get('/api/crawl-progress/:jobId', async (req, res) => {
     try {
         const { jobId } = req.params;
+        console.log(`📊 Progress request for job: ${jobId}`);
+        
         const state = await loadCrawlState(jobId);
         
         if (!state) {
+            console.log(`❌ Job ${jobId} not found`);
             return res.status(404).json({ error: 'Crawl job not found' });
         }
         
