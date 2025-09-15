@@ -1,0 +1,20 @@
+{
+  "jobId": "662b3ztf4",
+  "visited": [
+    "https://fonio.ai"
+  ],
+  "sitemap": {},
+  "queue": [],
+  "pageCount": 1,
+  "maxDepth": 2,
+  "maxPages": 15,
+  "startUrl": "https://fonio.ai",
+  "lastUpdated": "2025-09-15T10:18:33.813Z",
+  "completed": false,
+  "currentUrl": "https://fonio.ai",
+  "status": "crawling",
+  "pagesProcessedInBatch": 1,
+  "maxPagesThisBatch": 5,
+  "queueLength": 0,
+  "batchComplete": false
+}
