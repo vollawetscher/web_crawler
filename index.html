@@ -171,8 +171,22 @@
                                 <span>Respect robots.txt</span>
                             </label>
                         </div>
-                        <button id="crawlBtn" class="crawl-btn">🕷️ Discover & Crawl Links</button>
+                        <button id="discoverLevel1Btn" class="crawl-btn">🔎 Discover Level 1</button>
+                        <button id="crawlBtn" class="crawl-btn">🕷️ Crawl Selected Branches</button>
                         <button id="stopCrawlBtn" class="stop-crawl-btn hidden">⏹️ Emergency Stop</button>
+                    </div>
+
+                    <div id="level1ReviewSection" class="level1-review-section hidden">
+                        <div class="level1-header">
+                            <h3>Level 1 Branch Review</h3>
+                            <div class="level1-actions">
+                                <button id="selectRecommendedBranchesBtn" class="action-btn">Select Recommended</button>
+                                <button id="selectAllBranchesBtn" class="action-btn">Select All</button>
+                                <button id="selectNoBranchesBtn" class="action-btn">Select None</button>
+                            </div>
+                        </div>
+                        <p class="level1-help">Review the first-level branches before crawling deeper. Uncheck unrelated branches to keep the KB focused.</p>
+                        <div id="level1BranchList" class="level1-branch-list"></div>
                     </div>
                     
                     <div id="crawlStatus" class="crawl-status hidden">

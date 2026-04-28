@@ -580,6 +580,84 @@ h3 {
     cursor: not-allowed;
 }
 
+.level1-review-section {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.level1-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.level1-header h3 {
+    margin: 0;
+}
+
+.level1-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.level1-help {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0.75rem 0 1rem;
+}
+
+.level1-branch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.level1-branch-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.75rem;
+    align-items: start;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0.75rem;
+}
+
+.branch-title {
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.branch-url {
+    color: #2563eb;
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+}
+
+.branch-reason {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.branch-score {
+    background: #e0e7ff;
+    border-radius: 999px;
+    color: #3730a3;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+}
+
 .crawl-status {
     display: flex;
     flex-direction: column;

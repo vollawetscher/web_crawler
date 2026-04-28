@@ -9,6 +9,7 @@ let generatedRagJsonlExport = null;
 let generatedTextExport = null;
 let generatedKbPackExport = null;
 let crawlLog = [];
+let currentLevel1Discovery = null;
 
 // DOM Elements
 const urlInput = document.getElementById('urlInput');
@@ -26,6 +27,7 @@ const projectBriefInput = document.getElementById('projectBrief');
 // Crawl elements
 const crawlControlsSection = document.getElementById('crawlControlsSection');
 const crawlResultsSection = document.getElementById('crawlResultsSection');
+const discoverLevel1Btn = document.getElementById('discoverLevel1Btn');
 const crawlBtn = document.getElementById('crawlBtn');
 const stopCrawlBtn = document.getElementById('stopCrawlBtn');
 const crawlStatus = document.getElementById('crawlStatus');
@@ -35,6 +37,8 @@ const currentJobIdSpan = document.getElementById('currentJobId');
 const crawlProgressStatus = document.getElementById('crawlProgressStatus');
 const jobIdInput = document.getElementById('jobId');
 const crawlLogContainer = document.getElementById('crawlLog');
+const level1ReviewSection = document.getElementById('level1ReviewSection');
+const level1BranchList = document.getElementById('level1BranchList');
 
 // Export format elements
 const exportFormatRadios = document.querySelectorAll('input[name="export_format"]');
@@ -53,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeEventListeners() {
     inspectBtn.addEventListener('click', handleInspect);
     parseManualBtn.addEventListener('click', handleManualParse);
+    discoverLevel1Btn?.addEventListener('click', handleDiscoverLevel1);
     crawlBtn.addEventListener('click', handleCrawl);
     stopCrawlBtn.addEventListener('click', handleStopCrawl);
     
@@ -93,6 +98,23 @@ function initializeEventListeners() {
         document.querySelectorAll('.sitemap-checkbox').forEach(cb => cb.checked = false);
         updateSelectionCount();
         updateExportInfo();
+    });
+
+    document.getElementById('selectRecommendedBranchesBtn')?.addEventListener('click', function() {
+        document.querySelectorAll('.level1-branch-checkbox').forEach(cb => {
+            cb.checked = cb.dataset.recommended === 'true';
+        });
+        updateLevel1SelectionSummary();
+    });
+
+    document.getElementById('selectAllBranchesBtn')?.addEventListener('click', function() {
+        document.querySelectorAll('.level1-branch-checkbox').forEach(cb => cb.checked = true);
+        updateLevel1SelectionSummary();
+    });
+
+    document.getElementById('selectNoBranchesBtn')?.addEventListener('click', function() {
+        document.querySelectorAll('.level1-branch-checkbox').forEach(cb => cb.checked = false);
+        updateLevel1SelectionSummary();
     });
 }
 
@@ -222,6 +244,50 @@ async function handleManualParse() {
         showError(`Network error: ${error.message}`);
     } finally {
         parseManualBtn.disabled = false;
+        hideLoading();
+    }
+}
+
+async function handleDiscoverLevel1() {
+    const url = urlInput.value.trim();
+
+    if (!url) {
+        showError('Please enter a URL to discover Level 1 branches');
+        return;
+    }
+
+    const finalUrl = url.startsWith('http') ? url : `https://${url}`;
+    showLoading('Discovering first-level branches...');
+    discoverLevel1Btn.disabled = true;
+
+    try {
+        const response = await fetch('/api/discover-level1', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                url: finalUrl,
+                projectBrief: projectBriefInput?.value || ''
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            currentLevel1Discovery = data;
+            currentData = data.source;
+            displayResults(data.source);
+            displayLevel1Branches(data.candidates || []);
+            showSuccess(`Discovered ${data.stats?.totalCandidates || 0} Level 1 branches. Review selections before crawling.`);
+            saveSessionData();
+        } else {
+            showError(`❌ ${data.error}`);
+        }
+    } catch (error) {
+        showError(`Network error: ${error.message}`);
+    } finally {
+        discoverLevel1Btn.disabled = false;
         hideLoading();
     }
 }
@@ -407,6 +473,73 @@ function createPreviewItem(label, content) {
     return item;
 }
 
+function displayLevel1Branches(candidates) {
+    if (!level1ReviewSection || !level1BranchList) {
+        return;
+    }
+
+    level1ReviewSection.classList.remove('hidden');
+    level1BranchList.innerHTML = '';
+
+    if (!candidates.length) {
+        level1BranchList.textContent = 'No crawlable Level 1 branches found from the page content.';
+        return;
+    }
+
+    candidates.forEach((candidate, index) => {
+        const item = document.createElement('div');
+        item.className = 'level1-branch-item';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'level1-branch-checkbox';
+        checkbox.dataset.url = candidate.url;
+        checkbox.dataset.recommended = candidate.preselected ? 'true' : 'false';
+        checkbox.checked = candidate.preselected || index < 10;
+        checkbox.addEventListener('change', updateLevel1SelectionSummary);
+
+        const content = document.createElement('div');
+        const title = document.createElement('div');
+        title.className = 'branch-title';
+        title.textContent = candidate.text || candidate.url;
+
+        const url = document.createElement('div');
+        url.className = 'branch-url';
+        url.textContent = candidate.url;
+
+        const reason = document.createElement('div');
+        reason.className = 'branch-reason';
+        reason.textContent = candidate.relevance_reason || 'No relevance reason available';
+
+        content.appendChild(title);
+        content.appendChild(url);
+        content.appendChild(reason);
+
+        const score = document.createElement('div');
+        score.className = 'branch-score';
+        score.textContent = `${Math.round((candidate.relevance_score || 0) * 100)}%`;
+
+        item.appendChild(checkbox);
+        item.appendChild(content);
+        item.appendChild(score);
+        level1BranchList.appendChild(item);
+    });
+
+    updateLevel1SelectionSummary();
+}
+
+function updateLevel1SelectionSummary() {
+    const selected = document.querySelectorAll('.level1-branch-checkbox:checked').length;
+    const total = document.querySelectorAll('.level1-branch-checkbox').length;
+    crawlProgressStatus.textContent = total > 0 ? `${selected}/${total} Level 1 branches selected` : '';
+}
+
+function getSelectedLevel1Urls() {
+    return Array.from(document.querySelectorAll('.level1-branch-checkbox:checked'))
+        .map(checkbox => checkbox.dataset.url)
+        .filter(Boolean);
+}
+
 async function handleCrawl() {
     const url = urlInput.value.trim();
     const maxDepth = parseInt(document.getElementById('maxDepth').value);
@@ -435,6 +568,15 @@ async function handleCrawl() {
             currentJobId = providedJobId;
         } else {
             requestBody.url = url.startsWith('http') ? url : `https://${url}`;
+            const selectedUrls = getSelectedLevel1Urls();
+            if (currentLevel1Discovery && selectedUrls.length === 0) {
+                showError('Select at least one Level 1 branch, or clear the session to run an unrestricted crawl.');
+                hideCrawlStatus();
+                return;
+            }
+            if (selectedUrls.length > 0) {
+                requestBody.selectedUrls = selectedUrls;
+            }
         }
         
         const response = await fetch('/api/crawl', {
@@ -712,7 +854,7 @@ async function checkCrawlProgress() {
         // Handle 404 - job not found, stop polling
         if (response.status === 404) {
             console.warn(`Crawl job ${currentJobId} not found (404), stopping progress polling`);
-            showCrawlStatus('Job not found. The crawl may have expired or been deleted.', 'paused');
+            showCrawlStatus('Job not found. The server may have restarted or lost crawl state. Check that /app/data is persisted on the Docker host, then resume with the Job ID if the state file exists.', 'paused');
             stopProgressPolling();
             return;
         }
@@ -1462,6 +1604,7 @@ function saveSessionData() {
         currentData,
         currentCrawlData,
         currentJobId,
+        currentLevel1Discovery,
         projectBrief: projectBriefInput?.value || '',
         timestamp: Date.now()
     };
@@ -1503,6 +1646,11 @@ function restoreSessionIfExists() {
                         generateAllExportFormats();
                         showExportSection();
                     }
+                }
+
+                if (sessionData.currentLevel1Discovery) {
+                    currentLevel1Discovery = sessionData.currentLevel1Discovery;
+                    displayLevel1Branches(currentLevel1Discovery.candidates || []);
                 }
                 
                 if (sessionData.currentJobId) {
