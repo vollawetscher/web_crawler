@@ -40,6 +40,17 @@
 
         <div id="resultsSection" class="results-section hidden">
             <h2>📋 Select Content to Export</h2>
+
+            <!-- Voice Agent Project Brief -->
+            <div class="content-group">
+                <details class="expander" id="projectBriefExpander" open>
+                    <summary>🎙️ Voice Agent Project Brief</summary>
+                    <div class="brief-input-content">
+                        <label for="projectBrief">Describe the voice agent's purpose, audience, must-know facts, and exclusions.</label>
+                        <textarea id="projectBrief" class="brief-textarea" placeholder="Example: This voice agent answers callers for a dental clinic. Prioritize opening hours, booking, emergency instructions, services, pricing notes, and location. Exclude generic website navigation and legal boilerplate."></textarea>
+                    </div>
+                </details>
+            </div>
             
             <!-- Basic Information -->
             <div class="content-group">
@@ -220,6 +231,10 @@
                             <input type="radio" name="export_format" value="txt">
                             <span>Plain Text</span>
                         </label>
+                        <label class="radio-item">
+                            <input type="radio" name="export_format" value="kb_pack">
+                            <span>KB Pack</span>
+                        </label>
                     </div>
                 </div>
 
@@ -247,9 +262,10 @@
                     <button id="downloadJsonBtn" class="download-btn" disabled>📥 Download JSON</button>
                     <button id="downloadRagBtn" class="download-btn" disabled>📥 Download RAG JSONL</button>
                     <button id="downloadTxtBtn" class="download-btn" disabled>📥 Download Plain Text</button>
+                    <button id="downloadKbPackBtn" class="download-btn" disabled>📥 Download KB Pack</button>
                 </div>
                 
-                <p class="export-note">💡 All export formats are pre-generated when the crawl completes. Simply select your preferred format above.</p>
+                <p class="export-note">💡 KB Pack creates a deduplicated Markdown handoff for an external AI workflow, with embedded JSONL chunks at the end.</p>
                 
                 <div class="export-info">
                     <p id="exportInfo" class="export-info-text"></p>

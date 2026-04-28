@@ -219,6 +219,23 @@ function extractBreadcrumbs($, url) {
     return breadcrumbs;
 }
 
+function extractHeadingMap($, scope = null) {
+    const root = scope || $.root();
+    return {
+        h1: root.find('h1').map((_, el) => $(el).text().trim()).get().filter(Boolean),
+        h2: root.find('h2').map((_, el) => $(el).text().trim()).get().filter(Boolean),
+        h3: root.find('h3').map((_, el) => $(el).text().trim()).get().filter(Boolean)
+    };
+}
+
+function normalizeExtractedText(text) {
+    return (text || '')
+        .replace(/\r/g, '\n')
+        .replace(/[ \t]+/g, ' ')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
+
 // Parse document with Cheerio and create sections (server-side)
 function parseDocument(html, url, lastModified = null) {
     try {
@@ -317,6 +334,7 @@ function parseDocument(html, url, lastModified = null) {
         
         console.log(`[DEBUG] Content strategy used: ${contentStrategy}`);
         console.log(`[DEBUG] Main content container text length: ${$mainContent.text().length} characters`);
+        const headings = extractHeadingMap($, $mainContent);
         
         // Extract breadcrumbs from the full page (before content extraction)
         const breadcrumbs = extractBreadcrumbs($, url);
@@ -441,7 +459,7 @@ function parseDocument(html, url, lastModified = null) {
                     let $current = $heading.next();
                     while ($current.length > 0) {
                         const tagName = $current.get(0).tagName.toLowerCase();
-                        if (tagName.match(/^h[1-6]$/) && tagName <= headingLevel) {
+                        if (tagName.match(/^h[1-6]$/) && parseInt(tagName.slice(1), 10) <= parseInt(headingLevel.slice(1), 10)) {
                             break;
                         }
                         
@@ -723,7 +741,7 @@ function parseDocument(html, url, lastModified = null) {
         console.log(`[DEBUG] Extracted ${totalLinks} total links (nav: ${processedCategorizedLinks.navigation.length}, legal: ${processedCategorizedLinks.legal_or_contact.length}, content: ${processedCategorizedLinks.content_internal.length}, external: ${processedCategorizedLinks.external.length}), ${internalLinks.length} crawlable internal links`);
         
         // Create main_content field for frontend compatibility
-        const main_content = sections.map(section => section.content_text).join('\n\n');
+        const main_content = normalizeExtractedText(sections.map(section => section.content_text).join('\n\n'));
         
         return {
             success: true,
@@ -731,6 +749,13 @@ function parseDocument(html, url, lastModified = null) {
             title,
             meta_description: metaDescription,
             main_content, // For frontend display compatibility
+            normalized_text: main_content,
+            headings,
+            extracted_facts: {
+                contacts: extractContacts(main_content),
+                dates: extractDates(main_content),
+                opening_hours: extractOpeningHours(main_content)
+            },
             sections,
             links: allLinks, // Keep for backward compatibility
             categorized_links: processedCategorizedLinks,

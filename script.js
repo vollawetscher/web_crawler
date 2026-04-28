@@ -7,6 +7,7 @@ let crawlProgressInterval = null;
 let generatedJsonExport = null;
 let generatedRagJsonlExport = null;
 let generatedTextExport = null;
+let generatedKbPackExport = null;
 let crawlLog = [];
 
 // DOM Elements
@@ -20,6 +21,7 @@ const errorMessage = document.getElementById('errorMessage');
 const successMessage = document.getElementById('successMessage');
 const resultsSection = document.getElementById('resultsSection');
 const downloadBtn = document.getElementById('downloadBtn');
+const projectBriefInput = document.getElementById('projectBrief');
 
 // Crawl elements
 const crawlControlsSection = document.getElementById('crawlControlsSection');
@@ -58,6 +60,11 @@ function initializeEventListeners() {
     document.getElementById('downloadJsonBtn')?.addEventListener('click', () => downloadFormat('json'));
     document.getElementById('downloadRagBtn')?.addEventListener('click', () => downloadFormat('rag_jsonl'));
     document.getElementById('downloadTxtBtn')?.addEventListener('click', () => downloadFormat('txt'));
+    document.getElementById('downloadKbPackBtn')?.addEventListener('click', () => downloadFormat('kb_pack'));
+    projectBriefInput?.addEventListener('input', () => {
+        generatedKbPackExport = generateKBPackExport();
+        saveSessionData();
+    });
     
     // URL input enter key
     urlInput.addEventListener('keypress', function(e) {
@@ -239,6 +246,8 @@ function displayResults(data) {
     displayLinks(data);
     
     // Update export info
+    showExportSection();
+    generateAllExportFormats();
     updateExportInfo();
 }
 
@@ -816,11 +825,15 @@ function generateAllExportFormats() {
     
     // Generate text export
     generatedTextExport = generateTextExport();
+
+    // Generate voice-agent KB pack export
+    generatedKbPackExport = generateKBPackExport();
     
     console.log('Export formats generated:', {
         json: generatedJsonExport ? 'ready' : 'empty',
         rag: generatedRagJsonlExport ? 'ready' : 'empty',
-        text: generatedTextExport ? 'ready' : 'empty'
+        text: generatedTextExport ? 'ready' : 'empty',
+        kbPack: generatedKbPackExport ? 'ready' : 'empty'
     });
     
     // Update download buttons to show they're ready
@@ -844,6 +857,8 @@ function updateExportInfo() {
         info = `RAG JSONL format: AI-optimized chunks (${chunkSize} words, ${overlap} overlap) with metadata for retrieval systems.`;
     } else if (selectedFormat === 'txt') {
         info = 'Plain text format: Clean, readable text organized by sections and headings.';
+    } else if (selectedFormat === 'kb_pack') {
+        info = 'KB Pack format: Deduplicated Markdown handoff for voice-agent KB creation, with embedded JSONL chunks and source notes.';
     }
     
     // Add multi-page info if crawl data exists
@@ -855,6 +870,13 @@ function updateExportInfo() {
     }
     
     exportInfo.textContent = info;
+}
+
+function showExportSection() {
+    const exportSection = document.querySelector('.export-section');
+    if (exportSection) {
+        exportSection.style.display = 'block';
+    }
 }
 
 function downloadFormat(format) {
@@ -874,6 +896,11 @@ function downloadFormat(format) {
         exportData = generatedTextExport;
         filename = `content_${Date.now()}.txt`;
         mimeType = 'text/plain';
+    } else if (format === 'kb_pack') {
+        generatedKbPackExport = generateKBPackExport();
+        exportData = generatedKbPackExport;
+        filename = `voice_agent_kb_pack_${Date.now()}.md`;
+        mimeType = 'text/markdown';
     }
     
     if (!exportData) {
@@ -1080,6 +1107,320 @@ function generateTextExport() {
     return content.trim() || null;
 }
 
+const KB_TOPIC_DEFINITIONS = [
+    { key: 'contact', title: 'Contact', patterns: ['contact', 'kontakt', 'email', 'e-mail', 'telefon', 'phone', 'call', 'hotline', '@'] },
+    { key: 'opening_hours', title: 'Opening Hours', patterns: ['opening', 'hours', 'öffnungszeit', 'uhr', 'closed', 'geschlossen', 'monday', 'montag', 'tuesday', 'dienstag', 'wednesday', 'mittwoch', 'thursday', 'donnerstag', 'friday', 'freitag', 'saturday', 'samstag', 'sunday', 'sonntag'] },
+    { key: 'location', title: 'Location', patterns: ['address', 'adresse', 'location', 'standort', 'anfahrt', 'directions', 'parking', 'parkplatz'] },
+    { key: 'booking', title: 'Booking And Appointments', patterns: ['book', 'booking', 'appointment', 'termin', 'reservation', 'reservierung', 'schedule', 'anmeldung'] },
+    { key: 'services', title: 'Services', patterns: ['service', 'leistung', 'offer', 'angebot', 'treatment', 'behandlung', 'beratung', 'support'] },
+    { key: 'pricing', title: 'Pricing And Payment', patterns: ['price', 'pricing', 'kosten', 'fee', 'gebühr', 'payment', 'zahlung', 'insurance', 'versicherung'] },
+    { key: 'policies', title: 'Policies And Requirements', patterns: ['policy', 'requirement', 'policy', 'pflicht', 'required', 'erforderlich', 'privacy', 'datenschutz', 'terms', 'bedingungen'] },
+    { key: 'faqs', title: 'FAQs And Common Questions', patterns: ['faq', 'question', 'frage', 'answer', 'antwort', 'how', 'wie', 'what', 'was', '?'] },
+    { key: 'general', title: 'General Knowledge', patterns: [] }
+];
+
+const KB_BOILERPLATE_PATTERNS = [
+    'cookie', 'cookies', 'datenschutz', 'privacy settings', 'impressum', 'copyright',
+    'all rights reserved', 'alle rechte vorbehalten', 'skip to content', 'zum inhalt',
+    'navigation', 'hauptnavigation', 'menu', 'menü', 'sitemap', 'matomo', 'piwik',
+    'browser session', 'browsersession', '__requestverificationtoken'
+];
+
+function normalizeKBText(text) {
+    return (text || '')
+        .replace(/\r/g, '\n')
+        .replace(/[ \t]+/g, ' ')
+        .replace(/\n{3,}/g, '\n\n')
+        .replace(/[“”]/g, '"')
+        .replace(/[‘’]/g, "'")
+        .trim();
+}
+
+function normalizeFingerprintText(text) {
+    return normalizeKBText(text)
+        .toLowerCase()
+        .replace(/https?:\/\/\S+/g, '')
+        .replace(/[^\p{L}\p{N}\s@:+.-]/gu, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function isLikelyBoilerplate(text) {
+    const normalized = normalizeFingerprintText(text);
+    if (!normalized || normalized.length < 35) {
+        return true;
+    }
+
+    const words = normalized.split(/\s+/);
+    if (words.length < 5) {
+        return true;
+    }
+
+    return KB_BOILERPLATE_PATTERNS.some(pattern => normalized.includes(pattern));
+}
+
+function similarityScore(a, b) {
+    const aWords = new Set(normalizeFingerprintText(a).split(/\s+/).filter(Boolean));
+    const bWords = new Set(normalizeFingerprintText(b).split(/\s+/).filter(Boolean));
+    if (!aWords.size || !bWords.size) {
+        return 0;
+    }
+
+    let intersection = 0;
+    aWords.forEach(word => {
+        if (bWords.has(word)) {
+            intersection++;
+        }
+    });
+
+    return intersection / Math.min(aWords.size, bWords.size);
+}
+
+function getKBTopic(text, fallbackType = 'general') {
+    const normalized = normalizeFingerprintText(text);
+    const matchingTopic = KB_TOPIC_DEFINITIONS.find(topic => {
+        if (topic.key === 'general') {
+            return false;
+        }
+        return topic.patterns.some(pattern => normalized.includes(pattern));
+    });
+
+    if (matchingTopic) {
+        return matchingTopic.key;
+    }
+
+    if (fallbackType === 'facility') {
+        return 'location';
+    }
+    if (fallbackType === 'service_info' || fallbackType === 'app_info') {
+        return 'services';
+    }
+    if (fallbackType === 'faq') {
+        return 'faqs';
+    }
+
+    return 'general';
+}
+
+function splitKnowledgeUnits(text) {
+    const normalized = normalizeKBText(text);
+    const paragraphs = normalized
+        .split(/\n{2,}|(?<=[.!?])\s+(?=[A-ZÄÖÜ0-9])/)
+        .map(part => normalizeKBText(part))
+        .filter(Boolean);
+
+    const units = [];
+    paragraphs.forEach(paragraph => {
+        if (paragraph.length <= 900) {
+            units.push(paragraph);
+            return;
+        }
+
+        const sentences = paragraph.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [paragraph];
+        let current = '';
+        sentences.forEach(sentence => {
+            const candidate = normalizeKBText(`${current} ${sentence}`);
+            if (candidate.length > 700 && current) {
+                units.push(current);
+                current = normalizeKBText(sentence);
+            } else {
+                current = candidate;
+            }
+        });
+        if (current) {
+            units.push(current);
+        }
+    });
+
+    return units.filter(unit => !isLikelyBoilerplate(unit));
+}
+
+function collectSelectedKBSources() {
+    const sources = [];
+
+    if (currentData) {
+        sources.push({
+            url: currentData.final_url || currentData.url || 'single-page',
+            title: currentData.title || 'Single Page',
+            meta_description: currentData.meta_description || '',
+            headings: currentData.headings || {},
+            sections: currentData.sections?.length ? currentData.sections : [{
+                heading: currentData.title || 'Main Content',
+                content_text: currentData.main_content || '',
+                content_type: 'general',
+                page_url: currentData.final_url || ''
+            }]
+        });
+    }
+
+    if (currentCrawlData?.sitemap) {
+        document.querySelectorAll('.sitemap-checkbox:checked').forEach(checkbox => {
+            const url = checkbox.dataset.url;
+            const pageData = currentCrawlData.sitemap[url];
+            if (pageData && pageData.success) {
+                sources.push({
+                    url: pageData.final_url || url,
+                    title: pageData.title || 'Untitled Page',
+                    meta_description: pageData.meta_description || '',
+                    headings: pageData.headings || {},
+                    sections: pageData.sections || []
+                });
+            }
+        });
+    }
+
+    const seen = new Set();
+    return sources.filter(source => {
+        const key = source.url || source.title;
+        if (seen.has(key)) {
+            return false;
+        }
+        seen.add(key);
+        return true;
+    });
+}
+
+function buildDedupedKBUnits() {
+    const sources = collectSelectedKBSources();
+    const units = [];
+    const fingerprints = new Set();
+
+    sources.forEach(source => {
+        source.sections.forEach((section, sectionIndex) => {
+            const sectionUnits = splitKnowledgeUnits(section.content_text || '');
+            sectionUnits.forEach(unitText => {
+                const fingerprint = normalizeFingerprintText(unitText);
+                if (fingerprints.has(fingerprint)) {
+                    return;
+                }
+
+                const nearDuplicate = units.some(existing => similarityScore(existing.text, unitText) >= 0.9);
+                if (nearDuplicate) {
+                    return;
+                }
+
+                fingerprints.add(fingerprint);
+                units.push({
+                    id: generateChunkId(source.url || 'kb', units.length, unitText),
+                    text: unitText,
+                    topic: getKBTopic(`${section.heading || ''} ${unitText}`, section.content_type),
+                    source_url: source.url,
+                    source_title: source.title,
+                    heading: section.heading || source.title || 'Content',
+                    section_index: sectionIndex,
+                    content_type: section.content_type || 'general'
+                });
+            });
+        });
+    });
+
+    return { sources, units };
+}
+
+function escapeMarkdown(text) {
+    return normalizeKBText(text).replace(/\n{3,}/g, '\n\n');
+}
+
+function createKBJsonl(units, chunkSize = 300, overlap = 50) {
+    const lines = [];
+
+    units.forEach(unit => {
+        const chunks = chunkText(unit.text, chunkSize, overlap);
+        chunks.forEach((chunk, chunkIndex) => {
+            lines.push({
+                id: `${unit.id}_${chunkIndex}`,
+                title: unit.source_title || '',
+                chunk,
+                metadata: {
+                    source: unit.source_url,
+                    topic: unit.topic,
+                    heading: unit.heading,
+                    content_type: unit.content_type,
+                    chunk_index: chunkIndex
+                }
+            });
+        });
+    });
+
+    return lines.map(line => JSON.stringify(line)).join('\n');
+}
+
+function generateKBPackExport() {
+    const { sources, units } = buildDedupedKBUnits();
+    if (!sources.length || !units.length) {
+        return null;
+    }
+
+    const brief = projectBriefInput?.value.trim() || 'No project brief provided.';
+    const byTopic = KB_TOPIC_DEFINITIONS.reduce((acc, topic) => {
+        acc[topic.key] = [];
+        return acc;
+    }, {});
+
+    units.forEach(unit => {
+        const topic = byTopic[unit.topic] ? unit.topic : 'general';
+        byTopic[topic].push(unit);
+    });
+
+    const originalUnits = sources.reduce((count, source) => {
+        return count + (source.sections || []).reduce((sectionCount, section) => {
+            return sectionCount + splitKnowledgeUnits(section.content_text || '').length;
+        }, 0);
+    }, 0);
+
+    const chunkSize = parseInt(document.getElementById('chunkSize')?.value, 10) || 300;
+    const overlap = parseInt(document.getElementById('overlap')?.value, 10) || 50;
+    const jsonl = createKBJsonl(units, chunkSize, overlap);
+
+    let markdown = '# Voice Agent KB Pack\n\n';
+    markdown += '## brief.md\n\n';
+    markdown += `${escapeMarkdown(brief)}\n\n`;
+    markdown += '## kb-summary.md\n\n';
+    markdown += `Generated from ${sources.length} source page${sources.length === 1 ? '' : 's'} with ${units.length} deduplicated knowledge unit${units.length === 1 ? '' : 's'}. `;
+    markdown += `Approximate removed duplicate or boilerplate units: ${Math.max(0, originalUnits - units.length)}.\n\n`;
+
+    KB_TOPIC_DEFINITIONS.forEach(topic => {
+        const topicUnits = byTopic[topic.key] || [];
+        if (!topicUnits.length) {
+            return;
+        }
+
+        markdown += `### ${topic.title}\n\n`;
+        topicUnits.forEach(unit => {
+            markdown += `- ${escapeMarkdown(unit.text)}\n`;
+            markdown += `  Source: ${unit.source_title || 'Untitled'} (${unit.source_url})`;
+            if (unit.heading) {
+                markdown += ` | Section: ${unit.heading}`;
+            }
+            markdown += '\n';
+        });
+        markdown += '\n';
+    });
+
+    markdown += '## sources.md\n\n';
+    sources.forEach((source, index) => {
+        markdown += `${index + 1}. ${source.title || 'Untitled Page'}\n`;
+        markdown += `   URL: ${source.url}\n`;
+        if (source.meta_description) {
+            markdown += `   Description: ${source.meta_description}\n`;
+        }
+        const headingSummary = ['h1', 'h2', 'h3']
+            .flatMap(level => source.headings?.[level] || [])
+            .slice(0, 8)
+            .join('; ');
+        if (headingSummary) {
+            markdown += `   Headings: ${headingSummary}\n`;
+        }
+    });
+
+    markdown += '\n## chunks.jsonl\n\n';
+    markdown += '```jsonl\n';
+    markdown += jsonl;
+    markdown += '\n```\n';
+
+    return markdown;
+}
+
 function chunkText(text, chunkSize, overlap) {
     if (!text || !text.trim()) {
         return [];
@@ -1113,7 +1454,7 @@ function chunkText(text, chunkSize, overlap) {
 
 function generateChunkId(url, chunkIndex, chunkText) {
     const content = `${url}_${chunkIndex}_${chunkText.substring(0, 50)}`;
-    return btoa(content).substring(0, 12);
+    return btoa(unescape(encodeURIComponent(content))).replace(/[^a-zA-Z0-9]/g, '').substring(0, 12);
 }
 
 function saveSessionData() {
@@ -1121,6 +1462,7 @@ function saveSessionData() {
         currentData,
         currentCrawlData,
         currentJobId,
+        projectBrief: projectBriefInput?.value || '',
         timestamp: Date.now()
     };
     
@@ -1141,6 +1483,10 @@ function restoreSessionIfExists() {
             const age = Date.now() - sessionData.timestamp;
             if (age < 24 * 60 * 60 * 1000) {
                 showRestorationNotice();
+
+                if (projectBriefInput && sessionData.projectBrief) {
+                    projectBriefInput.value = sessionData.projectBrief;
+                }
                 
                 if (sessionData.currentData) {
                     currentData = sessionData.currentData;
@@ -1155,7 +1501,7 @@ function restoreSessionIfExists() {
                     // If crawl was complete, generate exports and show section
                     if (currentCrawlData.stats?.isComplete) {
                         generateAllExportFormats();
-                        exportSection.classList.remove('hidden');
+                        showExportSection();
                     }
                 }
                 

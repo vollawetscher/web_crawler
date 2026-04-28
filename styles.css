@@ -139,6 +139,33 @@ header h1 {
     font-size: 0.875rem;
 }
 
+.brief-input-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.brief-input-content label {
+    color: #374151;
+    font-weight: 500;
+}
+
+.brief-textarea {
+    min-height: 140px;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.brief-textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
 .parse-btn {
     padding: 0.5rem 1rem;
     background: #059669;
@@ -408,6 +435,12 @@ h3 {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s;
+}
+
+.download-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
 }
 
 .download-btn:hover {
