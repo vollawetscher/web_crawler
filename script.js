@@ -1027,7 +1027,7 @@ function updateExportInfo() {
     } else if (selectedFormat === 'txt') {
         info = 'Plain text format: Clean, readable text organized by sections and headings.';
     } else if (selectedFormat === 'kb_pack') {
-        info = 'KB Pack format: Deduplicated Markdown handoff for voice-agent KB creation, with embedded JSONL chunks and source notes.';
+        info = 'KB Pack format: Recommended voice-agent handoff with project brief, deduplicated Markdown knowledge, source notes, and embedded JSONL chunks.';
     }
     
     // Add multi-page info if crawl data exists

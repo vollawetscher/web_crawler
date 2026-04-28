@@ -39,7 +39,7 @@
         </div>
 
         <div id="resultsSection" class="results-section hidden">
-            <h2>📋 Select Content to Export</h2>
+            <h2>Build Voice Agent KB</h2>
 
             <!-- Voice Agent Project Brief -->
             <div class="content-group">
@@ -52,85 +52,92 @@
                 </details>
             </div>
             
-            <!-- Basic Information -->
             <div class="content-group">
-                <details class="expander" open>
-                    <summary>📄 Basic Information</summary>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_source_url" checked>
-                            <span>Source URL</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_title">
-                            <span>Title</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_meta_description">
-                            <span>Meta Description</span>
-                        </label>
-                    </div>
-                    <div id="basicPreviews" class="previews"></div>
-                </details>
-            </div>
+                <details class="expander legacy-selection" id="legacySelectionExpander">
+                    <summary>Advanced / Legacy Content Selection</summary>
+                    <p class="advanced-help">These controls are mainly for debugging generic JSON, RAG JSONL, and plain text exports. KB Pack always includes source metadata and headings where useful.</p>
 
-            <!-- Headings -->
-            <div class="content-group">
-                <details class="expander" id="headingsExpander">
-                    <summary>📝 Headings</summary>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_h1">
-                            <span id="h1Label">H1</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_h2">
-                            <span id="h2Label">H2</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_h3">
-                            <span id="h3Label">H3</span>
-                        </label>
+                    <!-- Basic Information -->
+                    <div class="content-group">
+                        <details class="expander" open>
+                            <summary>📄 Basic Information</summary>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_source_url" checked>
+                                    <span>Source URL</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_title">
+                                    <span>Title</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_meta_description">
+                                    <span>Meta Description</span>
+                                </label>
+                            </div>
+                            <div id="basicPreviews" class="previews"></div>
+                        </details>
                     </div>
-                    <div id="headingPreviews" class="previews"></div>
-                </details>
-            </div>
 
-            <!-- Main Content -->
-            <div class="content-group">
-                <details class="expander" id="contentExpander">
-                    <summary>📄 Main Content</summary>
-                    <label class="checkbox-item">
-                        <input type="checkbox" id="check_main_content" checked>
-                        <span>Main Content</span>
-                    </label>
-                    <div id="contentPreview" class="previews"></div>
-                </details>
-            </div>
-
-            <!-- Links -->
-            <div class="content-group">
-                <details class="expander" id="linksExpander">
-                    <summary>🔗 Links</summary>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_links_content_internal">
-                            <span id="linksContentInternalLabel">Content Links</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_links_external">
-                            <span id="linksExternalLabel">External Links</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_links_navigation">
-                            <span id="linksNavigationLabel">Navigation Links</span>
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" id="check_links_legal_or_contact">
-                            <span id="linksLegalContactLabel">Legal/Contact Links</span>
-                        </label>
+                    <!-- Headings -->
+                    <div class="content-group">
+                        <details class="expander" id="headingsExpander">
+                            <summary>📝 Headings</summary>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_h1">
+                                    <span id="h1Label">H1</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_h2">
+                                    <span id="h2Label">H2</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_h3">
+                                    <span id="h3Label">H3</span>
+                                </label>
+                            </div>
+                            <div id="headingPreviews" class="previews"></div>
+                        </details>
                     </div>
-                    <div id="linksPreview" class="previews"></div>
+
+                    <!-- Main Content -->
+                    <div class="content-group">
+                        <details class="expander" id="contentExpander">
+                            <summary>📄 Main Content</summary>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="check_main_content" checked>
+                                <span>Main Content</span>
+                            </label>
+                            <div id="contentPreview" class="previews"></div>
+                        </details>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="content-group">
+                        <details class="expander" id="linksExpander">
+                            <summary>🔗 Links</summary>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_links_content_internal">
+                                    <span id="linksContentInternalLabel">Content Links</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_links_external">
+                                    <span id="linksExternalLabel">External Links</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_links_navigation">
+                                    <span id="linksNavigationLabel">Navigation Links</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" id="check_links_legal_or_contact">
+                                    <span id="linksLegalContactLabel">Legal/Contact Links</span>
+                                </label>
+                            </div>
+                            <div id="linksPreview" class="previews"></div>
+                        </details>
+                    </div>
                 </details>
             </div>
 
@@ -138,7 +145,7 @@
             <!-- Crawl Controls Section - Always visible after URL inspection -->
             <div id="crawlControlsSection" class="crawl-controls-section hidden">
                 <hr>
-                <h2>🗺️ Site Crawling & Multi-page Selection</h2>
+                <h2>Discover And Crawl Selected Branches</h2>
                 
                 <div class="crawl-controls">
                     <div class="job-controls">
@@ -228,13 +235,13 @@
             <!-- Export Options -->
             <hr>
             <div class="export-section" style="display: none;">
-                <h2>📤 Export Options</h2>
+                <h2>Download KB Pack</h2>
                 
                 <div class="format-selection">
                     <h3>Choose export format:</h3>
                     <div class="radio-group">
                         <label class="radio-item">
-                            <input type="radio" name="export_format" value="json" checked>
+                            <input type="radio" name="export_format" value="json">
                             <span>JSON</span>
                         </label>
                         <label class="radio-item">
@@ -246,7 +253,7 @@
                             <span>Plain Text</span>
                         </label>
                         <label class="radio-item">
-                            <input type="radio" name="export_format" value="kb_pack">
+                            <input type="radio" name="export_format" value="kb_pack" checked>
                             <span>KB Pack</span>
                         </label>
                     </div>

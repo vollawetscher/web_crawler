@@ -1181,6 +1181,7 @@ async function saveCrawlState(jobId, state) {
         await fs.writeFile(filePath, JSON.stringify(state, null, 2));
     } catch (error) {
         console.error('Failed to save crawl state:', error);
+        throw error;
     }
 }
 
@@ -1380,6 +1381,7 @@ app.post('/api/crawl', async (req, res) => {
         }
 
         let initialBranchCount = 0;
+        let crawlStateForRun = existingState;
         
         // Save initial job state BEFORE starting background crawl to avoid race condition
         if (!existingState) {
@@ -1418,6 +1420,7 @@ app.post('/api/crawl', async (req, res) => {
                 stopRequested: false
             };
             await saveCrawlState(jobId, initialState);
+            crawlStateForRun = initialState;
         }
         
         // Start crawling asynchronously if not already running
@@ -1429,7 +1432,7 @@ app.post('/api/crawl', async (req, res) => {
                 crawlUrl, 
                 parseInt(maxDepth), 
                 parseInt(maxPages),
-                existingState || await loadCrawlState(jobId),
+                crawlStateForRun,
                 respectRobotsTxt
             ).catch(error => {
                 console.error(`Background crawl error for job ${jobId}:`, error);
