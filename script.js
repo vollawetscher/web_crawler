@@ -277,6 +277,10 @@ async function handleDiscoverLevel1() {
         if (data.success) {
             currentLevel1Discovery = data;
             currentData = data.source;
+            currentJobId = null;
+            jobIdInput.value = '';
+            currentJobIdSpan.textContent = '';
+            jobInfo.classList.add('hidden');
             displayResults(data.source);
             displayLevel1Branches(data.candidates || []);
             showSuccess(`Discovered ${data.stats?.totalCandidates || 0} Level 1 branches. Review selections before crawling.`);
@@ -495,8 +499,11 @@ function displayLevel1Branches(candidates) {
         checkbox.className = 'level1-branch-checkbox';
         checkbox.dataset.url = candidate.url;
         checkbox.dataset.recommended = candidate.preselected ? 'true' : 'false';
-        checkbox.checked = candidate.preselected || index < 10;
-        checkbox.addEventListener('change', updateLevel1SelectionSummary);
+        checkbox.checked = candidate.selected ?? (candidate.preselected || index < 10);
+        checkbox.addEventListener('change', () => {
+            updateLevel1SelectionSummary();
+            saveSessionData();
+        });
 
         const content = document.createElement('div');
         const title = document.createElement('div');
@@ -529,9 +536,22 @@ function displayLevel1Branches(candidates) {
 }
 
 function updateLevel1SelectionSummary() {
+    persistLevel1Selections();
     const selected = document.querySelectorAll('.level1-branch-checkbox:checked').length;
     const total = document.querySelectorAll('.level1-branch-checkbox').length;
     crawlProgressStatus.textContent = total > 0 ? `${selected}/${total} Level 1 branches selected` : '';
+}
+
+function persistLevel1Selections() {
+    if (!currentLevel1Discovery?.candidates) {
+        return;
+    }
+
+    const selectedUrls = new Set(getSelectedLevel1Urls());
+    currentLevel1Discovery.candidates = currentLevel1Discovery.candidates.map(candidate => ({
+        ...candidate,
+        selected: selectedUrls.has(candidate.url)
+    }));
 }
 
 function getSelectedLevel1Urls() {
@@ -546,13 +566,15 @@ async function handleCrawl() {
     const maxPages = parseInt(document.getElementById('maxPages').value);
     const respectRobotsTxt = document.getElementById('respectRobotsTxt').checked;
     const providedJobId = jobIdInput.value.trim();
+    const selectedUrls = getSelectedLevel1Urls();
+    const shouldStartSelectedBranchCrawl = currentLevel1Discovery && selectedUrls.length > 0;
     
     if (!url && !providedJobId) {
         showError('Please enter a URL or provide a Job ID to resume');
         return;
     }
     
-    showCrawlStatus('Starting crawl...', 'starting');
+    showCrawlStatus(shouldStartSelectedBranchCrawl ? `Starting crawl for ${selectedUrls.length} selected branch(es)...` : 'Starting crawl...', 'starting');
     crawlBtn.disabled = true;
     stopCrawlBtn.classList.remove('hidden');
     
@@ -563,12 +585,17 @@ async function handleCrawl() {
             respectRobotsTxt
         };
         
-        if (providedJobId) {
+        if (shouldStartSelectedBranchCrawl) {
+            requestBody.url = url.startsWith('http') ? url : `https://${url}`;
+            requestBody.selectedUrls = selectedUrls;
+            currentJobId = null;
+            jobIdInput.value = '';
+            currentJobIdSpan.textContent = '';
+        } else if (providedJobId) {
             requestBody.jobId = providedJobId;
             currentJobId = providedJobId;
         } else {
             requestBody.url = url.startsWith('http') ? url : `https://${url}`;
-            const selectedUrls = getSelectedLevel1Urls();
             if (currentLevel1Discovery && selectedUrls.length === 0) {
                 showError('Select at least one Level 1 branch, or clear the session to run an unrestricted crawl.');
                 hideCrawlStatus();
@@ -594,10 +621,10 @@ async function handleCrawl() {
             currentJobIdSpan.textContent = currentJobId;
             jobIdInput.value = currentJobId;
             jobInfo.classList.remove('hidden');
-            crawlProgressStatus.textContent = 'Starting crawl...';
+            crawlProgressStatus.textContent = data.message || 'Starting crawl...';
             
             // Start polling immediately
-            showCrawlStatus('Crawling in progress...', 'crawling');
+            showCrawlStatus(data.message || 'Crawling in progress...', 'crawling');
             startProgressPolling();
             
             saveSessionData();

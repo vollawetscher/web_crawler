@@ -1339,9 +1339,10 @@ app.post('/api/parse-manual', async (req, res) => {
 app.post('/api/crawl', async (req, res) => {
     try {
         const { url, maxDepth = 2, maxPages = 50, jobId: providedJobId, respectRobotsTxt = true, selectedUrls = [] } = req.body;
+        const hasSelectedUrls = Array.isArray(selectedUrls) && selectedUrls.length > 0;
         
         let existingState = null;
-        let jobId = providedJobId;
+        let jobId = hasSelectedUrls ? null : providedJobId;
         
         if (jobId) {
             existingState = await loadCrawlState(jobId);
@@ -1377,6 +1378,8 @@ app.post('/api/crawl', async (req, res) => {
         } else {
             console.log('Robots.txt compliance: DISABLED');
         }
+
+        let initialBranchCount = 0;
         
         // Save initial job state BEFORE starting background crawl to avoid race condition
         if (!existingState) {
@@ -1396,6 +1399,7 @@ app.post('/api/crawl', async (req, res) => {
             const initialQueue = selectedQueue.length > 0
                 ? selectedQueue.map(selectedUrl => ({ url: selectedUrl, depth: 0, parent: crawlUrl, branchRoot: selectedUrl }))
                 : [{ url: normalizeUrl(crawlUrl), depth: 0, parent: null }];
+            initialBranchCount = selectedQueue.length;
             const initialState = {
                 jobId,
                 visited: [],
@@ -1410,7 +1414,7 @@ app.post('/api/crawl', async (req, res) => {
                 completed: false,
                 currentUrl: null,
                 status: 'starting',
-                queueLength: 1,
+                queueLength: initialQueue.length,
                 stopRequested: false
             };
             await saveCrawlState(jobId, initialState);
@@ -1438,7 +1442,9 @@ app.post('/api/crawl', async (req, res) => {
             success: true, 
             jobId,
             isComplete: false,
-            message: 'Crawl started in background'
+            message: initialBranchCount > 0
+                ? `Crawl started for ${initialBranchCount} selected branch(es)`
+                : 'Crawl started in background'
         });
         
     } catch (error) {
