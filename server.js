@@ -1279,9 +1279,10 @@ async function saveCrawlState(jobId, state) {
         await fs.mkdir(CRAWL_STATES_DIR, { recursive: true });
         const filePath = path.join(CRAWL_STATES_DIR, `${jobId}.json`);
         await fs.writeFile(filePath, JSON.stringify(state, null, 2));
+        return true;
     } catch (error) {
-        console.error('Failed to save crawl state:', error);
-        throw error;
+        console.error('Failed to save crawl state; continuing with in-memory state only:', error);
+        return false;
     }
 }
 
@@ -1624,9 +1625,7 @@ app.post('/api/crawl', async (req, res) => {
                 queueLength: initialQueue.length,
                 stopRequested: false
             };
-            saveCrawlState(jobId, initialState).catch(error => {
-                console.error(`Initial crawl state persistence failed for job ${jobId}:`, error);
-            });
+            saveCrawlState(jobId, initialState);
             crawlStateForRun = initialState;
         }
         
