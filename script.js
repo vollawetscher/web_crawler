@@ -10,6 +10,8 @@ let generatedTextExport = null;
 let generatedKbPackExport = null;
 let crawlLog = [];
 let currentLevel1Discovery = null;
+let isCrawlRunning = false;
+let isDownloadInProgress = false;
 
 // DOM Elements
 const urlInput = document.getElementById('urlInput');
@@ -577,6 +579,8 @@ async function handleCrawl() {
         return;
     }
     
+    isCrawlRunning = true;
+    updateDownloadButtons();
     showCrawlStatus(shouldStartSelectedBranchCrawl ? `Starting crawl for ${selectedUrls.length} selected tree node(s)...` : 'Starting crawl...', 'starting');
     showProgressDetails('Preparing crawl...', []);
     crawlBtn.disabled = true;
@@ -603,6 +607,8 @@ async function handleCrawl() {
             if (currentLevel1Discovery && selectedUrls.length === 0) {
                 showError('Select at least one tree node, or clear the session to run an unrestricted crawl.');
                 hideCrawlStatus();
+                isCrawlRunning = false;
+                updateDownloadButtons();
                 return;
             }
             if (selectedUrls.length > 0) {
@@ -635,23 +641,39 @@ async function handleCrawl() {
         } else {
             showError(`❌ ${data.error}`);
             hideCrawlStatus();
+            isCrawlRunning = false;
+            updateDownloadButtons();
         }
         
     } catch (error) {
         showError(`Network error: ${error.message}`);
         hideCrawlStatus();
+        isCrawlRunning = false;
+        updateDownloadButtons();
     } finally {
-        crawlBtn.disabled = false;
+        crawlBtn.disabled = isCrawlRunning;
     }
 }
 
-function showProgressDetails(currentUrl, processedUrls = []) {
+function showProgressDetails(currentUrl, processedUrls = [], progress = {}) {
     if (!crawlProgressDetails || !crawlCurrentUrl || !crawlProcessedUrls) {
         return;
     }
 
     crawlProgressDetails.classList.remove('hidden');
-    crawlCurrentUrl.textContent = currentUrl ? `Current: ${currentUrl}` : 'Current: waiting...';
+    const lastUpdated = progress.lastUpdated ? new Date(progress.lastUpdated) : null;
+    const ageSeconds = lastUpdated && !Number.isNaN(lastUpdated.getTime())
+        ? Math.max(0, Math.round((Date.now() - lastUpdated.getTime()) / 1000))
+        : null;
+    const heartbeat = ageSeconds === null ? '' : ` | Updated ${ageSeconds}s ago`;
+    const queue = Number.isFinite(progress.queueLength) ? ` | Queue: ${progress.queueLength}` : '';
+    const pageCount = Number.isFinite(progress.pageCount) && Number.isFinite(progress.maxPages)
+        ? ` | Pages: ${progress.pageCount}/${progress.maxPages}`
+        : '';
+
+    crawlCurrentUrl.textContent = currentUrl
+        ? `Current: ${currentUrl}${pageCount}${queue}${heartbeat}`
+        : `Current: waiting...${pageCount}${queue}${heartbeat}`;
     crawlProcessedUrls.innerHTML = '';
 
     processedUrls.slice(-20).reverse().forEach(url => {
@@ -722,6 +744,7 @@ function displayCrawlSummary(stats) {
     const summaryContainer = document.getElementById('crawlSummary');
     
     const remaining = stats.remaining !== undefined ? stats.remaining : Math.max(0, (stats.maxPages || 0) - (stats.totalPages || stats.pageCount || 0));
+    const queueLength = stats.queueLength !== undefined ? stats.queueLength : 0;
     
     summaryContainer.innerHTML = `
         <div class="crawl-stats">
@@ -738,8 +761,12 @@ function displayCrawlSummary(stats) {
                 <span class="stat-label">Status</span>
             </div>
             <div class="stat-item">
+                <span class="stat-value">${queueLength}</span>
+                <span class="stat-label">Queue</span>
+            </div>
+            <div class="stat-item">
                 <span class="stat-value">${remaining}</span>
-                <span class="stat-label">Remaining</span>
+                <span class="stat-label">Page Budget Left</span>
             </div>
         </div>
     `;
@@ -880,6 +907,8 @@ function startProgressPolling() {
         clearInterval(crawlProgressInterval);
     }
     
+    isCrawlRunning = true;
+    updateDownloadButtons();
     crawlProgressInterval = setInterval(checkCrawlProgress, 2000);
 }
 
@@ -888,6 +917,8 @@ function stopProgressPolling() {
         clearInterval(crawlProgressInterval);
         crawlProgressInterval = null;
     }
+    isCrawlRunning = false;
+    updateDownloadButtons();
 }
 
 async function checkCrawlProgress() {
@@ -926,10 +957,10 @@ async function checkCrawlProgress() {
                 addToCrawlLog(`Crawling: ${currentPath}`, 'info');
             }
             
-            const statusText = `Status: ${progress.status} | Pages: ${progress.pageCount}/${progress.maxPages} | Remaining: ${remaining} | Queue: ${progress.queueLength}`;
+            const statusText = `Status: ${progress.status} | Pages: ${progress.pageCount}/${progress.maxPages} | Page budget left: ${remaining} | Queue: ${progress.queueLength}`;
             crawlStatusText.textContent = statusText;
             crawlProgressStatus.textContent = progress.status;
-            showProgressDetails(progress.currentUrl || progress.status, processedUrls);
+            showProgressDetails(progress.currentUrl || progress.status, processedUrls, progress);
             
             // Update live sitemap if available
             if (progress.sitemap) {
@@ -939,7 +970,8 @@ async function checkCrawlProgress() {
                         totalPages: progress.pageCount,
                         maxDepth: progress.depth,
                         isComplete: progress.isComplete,
-                        remaining: remaining
+                        remaining: remaining,
+                        queueLength: progress.queueLength
                     }
                 });
             }
@@ -959,7 +991,8 @@ async function checkCrawlProgress() {
                         totalPages: progress.pageCount,
                         maxDepth: progress.depth,
                         isComplete: true,
-                        remaining: remaining
+                        remaining: remaining,
+                        queueLength: progress.queueLength
                     }
                 };
                 
@@ -985,7 +1018,8 @@ async function checkCrawlProgress() {
                             totalPages: progress.pageCount,
                             maxDepth: progress.depth,
                             isComplete: false,
-                            remaining: remaining
+                            remaining: remaining,
+                            queueLength: progress.queueLength
                         }
                     };
                 }
@@ -1028,10 +1062,13 @@ function generateAllExportFormats() {
         kbPack: generatedKbPackExport ? 'ready' : 'empty'
     });
     
-    // Update download buttons to show they're ready
+    updateDownloadButtons();
+}
+
+function updateDownloadButtons() {
     const downloadButtons = document.querySelectorAll('.download-btn');
     downloadButtons.forEach(btn => {
-        btn.disabled = false;
+        btn.disabled = isCrawlRunning || isDownloadInProgress;
     });
 }
 
@@ -1072,6 +1109,17 @@ function showExportSection() {
 }
 
 function downloadFormat(format) {
+    if (isCrawlRunning) {
+        showError('Wait until the crawl completes before downloading the KB Pack.');
+        return;
+    }
+    if (isDownloadInProgress) {
+        return;
+    }
+
+    isDownloadInProgress = true;
+    updateDownloadButtons();
+
     let exportData;
     let filename;
     let mimeType;
@@ -1097,6 +1145,8 @@ function downloadFormat(format) {
     
     if (!exportData) {
         showError('No content selected for export');
+        isDownloadInProgress = false;
+        updateDownloadButtons();
         return;
     }
     
@@ -1112,6 +1162,10 @@ function downloadFormat(format) {
     URL.revokeObjectURL(url);
     
     showSuccess(`✅ Downloaded ${filename}`);
+    setTimeout(() => {
+        isDownloadInProgress = false;
+        updateDownloadButtons();
+    }, 1000);
 }
 
 function generateJSONExport() {
@@ -1317,6 +1371,7 @@ const KB_BOILERPLATE_PATTERNS = [
     'navigation', 'hauptnavigation', 'menu', 'menü', 'sitemap', 'matomo', 'piwik',
     'browser session', 'browsersession', '__requestverificationtoken'
 ];
+const KB_SUMMARY_UNITS_PER_TOPIC = 5;
 
 function normalizeKBText(text) {
     return (text || '')
@@ -1578,7 +1633,7 @@ function generateKBPackExport() {
         }
 
         markdown += `### ${topic.title}\n\n`;
-        topicUnits.forEach(unit => {
+        topicUnits.slice(0, KB_SUMMARY_UNITS_PER_TOPIC).forEach(unit => {
             markdown += `- ${escapeMarkdown(unit.text)}\n`;
             markdown += `  Source: ${unit.source_title || 'Untitled'} (${unit.source_url})`;
             if (unit.heading) {
@@ -1586,6 +1641,9 @@ function generateKBPackExport() {
             }
             markdown += '\n';
         });
+        if (topicUnits.length > KB_SUMMARY_UNITS_PER_TOPIC) {
+            markdown += `\n_${topicUnits.length - KB_SUMMARY_UNITS_PER_TOPIC} additional retrieval unit${topicUnits.length - KB_SUMMARY_UNITS_PER_TOPIC === 1 ? '' : 's'} for this topic are included in chunks.jsonl._\n`;
+        }
         markdown += '\n';
     });
 
