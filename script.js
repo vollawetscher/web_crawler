@@ -13,6 +13,77 @@ let currentLevel1Discovery = null;
 let isCrawlRunning = false;
 let isDownloadInProgress = false;
 
+const DEFAULT_KFZ_KEYWORDS = `KFZ-Zulassung
+Fahrzeugzulassung
+Anmeldung
+Neuzulassung
+Auto anmelden
+Abmeldung
+Außerbetriebsetzung
+Auto abmelden
+Ummeldung
+Umschreibung
+Fahrzeug ummelden
+Wiederzulassung
+Wunschkennzeichen
+Kennzeichen reservieren
+Saisonkennzeichen
+Kurzzeitkennzeichen
+Überführungskennzeichen
+Rotes Kennzeichen
+H-Kennzeichen
+Oldtimer-Zulassung
+Exportkennzeichen
+Importfahrzeug Zulassung
+Zulassungsbescheinigung Teil I
+Zulassungsbescheinigung Teil II
+eVB-Nummer
+elektronische Versicherungsbestätigung
+Unterlagen Zulassung
+benötigte Unterlagen KFZ
+TÜV
+Hauptuntersuchung
+HU
+i-Kfz
+Online-Zulassung
+internetbasierte Fahrzeugzulassung
+KFZ-Steuer
+Kfz-Steuer
+Zulassungsstelle
+Kfz-Zulassungsbehörde
+Straßenverkehrsamt
+Kosten Zulassung
+Gebühren KFZ
+Termin Zulassungsstelle
+Vollmacht Zulassung
+Zulassungsstelle Kontakt
+Zulassungsstelle Adresse
+Anschrift Zulassungsstelle
+Zulassungsstelle Telefon
+Telefonnummer Zulassungsstelle
+Zulassungsstelle E-Mail
+Email Zulassungsstelle
+Zulassungsstelle Sprechzeiten
+Öffnungszeiten Zulassungsstelle
+Zulassungsstelle Öffnungszeiten
+Besuchszeiten Zulassungsstelle
+Gebühren Zulassungsstelle
+Gebühren KFZ-Zulassung
+Gebührentabelle Zulassung
+Verwaltungsgebühren Zulassung
+Wunschkennzeichen Gebühren
+Kosten Wunschkennzeichen
+Anfahrt Zulassungsstelle
+Parken Zulassungsstelle
+Online-Termin Zulassung
+Termin buchen KFZ
+Wartezeiten Zulassungsstelle
+Vollmacht Zulassungsstelle
+i-Kfz Zulassungsstelle
+Service KFZ-Zulassung
+Bürgerbüro KFZ
+Fahrzeugzulassungsbehörde`;
+
 // DOM Elements
 const urlInput = document.getElementById('urlInput');
 const inspectBtn = document.getElementById('inspectBtn');
@@ -25,6 +96,8 @@ const successMessage = document.getElementById('successMessage');
 const resultsSection = document.getElementById('resultsSection');
 const downloadBtn = document.getElementById('downloadBtn');
 const projectBriefInput = document.getElementById('projectBrief');
+const projectKeywordsInput = document.getElementById('projectKeywords');
+const loadKfzKeywordsBtn = document.getElementById('loadKfzKeywordsBtn');
 
 // Crawl elements
 const crawlControlsSection = document.getElementById('crawlControlsSection');
@@ -44,6 +117,8 @@ const level1BranchList = document.getElementById('level1BranchList');
 const crawlProgressDetails = document.getElementById('crawlProgressDetails');
 const crawlCurrentUrl = document.getElementById('crawlCurrentUrl');
 const crawlProcessedUrls = document.getElementById('crawlProcessedUrls');
+const triageAmbiguousBtn = document.getElementById('triageAmbiguousBtn');
+const triageStatus = document.getElementById('triageStatus');
 
 // Export format elements
 const exportFormatRadios = document.querySelectorAll('input[name="export_format"]');
@@ -74,6 +149,12 @@ function initializeEventListeners() {
     projectBriefInput?.addEventListener('input', () => {
         generatedKbPackExport = generateKBPackExport();
         saveSessionData();
+    });
+    projectKeywordsInput?.addEventListener('input', saveSessionData);
+    loadKfzKeywordsBtn?.addEventListener('click', () => {
+        projectKeywordsInput.value = DEFAULT_KFZ_KEYWORDS;
+        saveSessionData();
+        showSuccess('Loaded KFZ Zulassung keyword profile.');
     });
     
     // URL input enter key
@@ -111,6 +192,7 @@ function initializeEventListeners() {
         });
         updateLevel1SelectionSummary();
     });
+    triageAmbiguousBtn?.addEventListener('click', handleTriageAmbiguous);
 
     document.getElementById('selectAllBranchesBtn')?.addEventListener('click', function() {
         document.querySelectorAll('.level1-branch-checkbox').forEach(cb => cb.checked = true);
@@ -273,7 +355,8 @@ async function handleDiscoverLevel1() {
             },
             body: JSON.stringify({
                 url: finalUrl,
-                projectBrief: projectBriefInput?.value || ''
+                projectBrief: projectBriefInput?.value || '',
+                projectKeywords: projectKeywordsInput?.value || ''
             })
         });
 
@@ -498,6 +581,9 @@ function displayLevel1Branches(candidates) {
     candidates.forEach((candidate, index) => {
         const item = document.createElement('div');
         item.className = `level1-branch-item ${candidate.is_root ? 'branch-root' : 'branch-child'}`;
+        if (candidate.llm_decision) {
+            item.classList.add(`triage-${candidate.llm_decision}`);
+        }
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -521,7 +607,12 @@ function displayLevel1Branches(candidates) {
 
         const reason = document.createElement('div');
         reason.className = 'branch-reason';
-        reason.textContent = candidate.relevance_reason || 'No relevance reason available';
+        const reasonParts = [candidate.relevance_reason || 'No relevance reason available'];
+        if (candidate.llm_decision) {
+            const confidence = Math.round((candidate.llm_confidence || 0) * 100);
+            reasonParts.push(`LLM: ${candidate.llm_decision} (${confidence}%) - ${candidate.llm_reason || 'No reason returned'}`);
+        }
+        reason.textContent = reasonParts.join(' | ');
 
         content.appendChild(title);
         content.appendChild(url);
@@ -538,6 +629,95 @@ function displayLevel1Branches(candidates) {
     });
 
     updateLevel1SelectionSummary();
+}
+
+function getAmbiguousLevel1Candidates() {
+    return (currentLevel1Discovery?.candidates || []).filter(candidate => {
+        if (candidate.is_root) {
+            return false;
+        }
+        const score = candidate.relevance_score || 0;
+        return score > 0.05 && score < 0.55;
+    });
+}
+
+function showTriageStatus(message, type = 'info') {
+    if (!triageStatus) {
+        return;
+    }
+    triageStatus.classList.remove('hidden', 'error', 'success', 'info');
+    triageStatus.classList.add(type);
+    triageStatus.textContent = message;
+}
+
+async function handleTriageAmbiguous() {
+    const ambiguousCandidates = getAmbiguousLevel1Candidates();
+    if (!ambiguousCandidates.length) {
+        showTriageStatus('No ambiguous candidates found. Keyword scoring already made clear recommendations.', 'info');
+        return;
+    }
+
+    triageAmbiguousBtn.disabled = true;
+    showTriageStatus(`Sending ${ambiguousCandidates.length} ambiguous candidate(s) for one LLM triage call...`, 'info');
+
+    try {
+        const response = await fetch('/api/triage-ambiguous', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                projectBrief: projectBriefInput?.value || '',
+                projectKeywords: projectKeywordsInput?.value || '',
+                candidates: ambiguousCandidates
+            })
+        });
+
+        const data = await response.json();
+        if (!response.ok || !data.success) {
+            showTriageStatus(data.error || 'LLM triage failed.', 'error');
+            return;
+        }
+
+        const decisionsByUrl = new Map((data.decisions || []).map(decision => [decision.url, decision]));
+        let accepted = 0;
+        let rejected = 0;
+        let review = 0;
+
+        currentLevel1Discovery.candidates = currentLevel1Discovery.candidates.map(candidate => {
+            const decision = decisionsByUrl.get(candidate.url);
+            if (!decision) {
+                return candidate;
+            }
+
+            const selected = decision.decision === 'accept'
+                ? true
+                : decision.decision === 'reject'
+                    ? false
+                    : candidate.selected ?? candidate.preselected;
+
+            if (decision.decision === 'accept') accepted++;
+            if (decision.decision === 'reject') rejected++;
+            if (decision.decision === 'review') review++;
+
+            return {
+                ...candidate,
+                selected,
+                preselected: selected,
+                llm_decision: decision.decision,
+                llm_confidence: decision.confidence,
+                llm_reason: decision.reason
+            };
+        });
+
+        displayLevel1Branches(currentLevel1Discovery.candidates);
+        saveSessionData();
+        showTriageStatus(`LLM triage complete: ${accepted} accepted, ${rejected} rejected, ${review} need review.`, 'success');
+    } catch (error) {
+        showTriageStatus(`LLM triage failed: ${error.message}`, 'error');
+    } finally {
+        triageAmbiguousBtn.disabled = false;
+    }
 }
 
 function updateLevel1SelectionSummary() {
@@ -590,7 +770,8 @@ async function handleCrawl() {
         const requestBody = {
             maxDepth,
             maxPages,
-            respectRobotsTxt
+            respectRobotsTxt,
+            projectKeywords: projectKeywordsInput?.value || ''
         };
         
         if (shouldStartSelectedBranchCrawl) {
@@ -1714,6 +1895,7 @@ function saveSessionData() {
         currentJobId,
         currentLevel1Discovery,
         projectBrief: projectBriefInput?.value || '',
+        projectKeywords: projectKeywordsInput?.value || '',
         timestamp: Date.now()
     };
     
@@ -1737,6 +1919,9 @@ function restoreSessionIfExists() {
 
                 if (projectBriefInput && sessionData.projectBrief) {
                     projectBriefInput.value = sessionData.projectBrief;
+                }
+                if (projectKeywordsInput && sessionData.projectKeywords) {
+                    projectKeywordsInput.value = sessionData.projectKeywords;
                 }
                 
                 if (sessionData.currentData) {

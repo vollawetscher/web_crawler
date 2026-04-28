@@ -48,6 +48,11 @@
                     <div class="brief-input-content">
                         <label for="projectBrief">Describe the voice agent's purpose, audience, must-know facts, and exclusions.</label>
                         <textarea id="projectBrief" class="brief-textarea" placeholder="Example: This voice agent answers callers for a dental clinic. Prioritize opening hours, booking, emergency instructions, services, pricing notes, and location. Exclude generic website navigation and legal boilerplate."></textarea>
+                        <label for="projectKeywords">Keyword profile for discovery and crawl relevance.</label>
+                        <textarea id="projectKeywords" class="keyword-textarea" placeholder="One keyword or phrase per line. Use this to describe the exact service domain, local contact needs, fees, appointments, and exclusions."></textarea>
+                        <div class="keyword-actions">
+                            <button type="button" id="loadKfzKeywordsBtn" class="secondary-btn">Load KFZ Zulassung Keywords</button>
+                        </div>
                     </div>
                 </details>
             </div>
@@ -188,11 +193,13 @@
                             <h3>Structure Tree</h3>
                             <div class="level1-actions">
                                 <button id="selectRecommendedBranchesBtn" class="action-btn">Select Recommended</button>
+                                <button id="triageAmbiguousBtn" class="action-btn">LLM Triage Ambiguous</button>
                                 <button id="selectAllBranchesBtn" class="action-btn">Select All</button>
                                 <button id="selectNoBranchesBtn" class="action-btn">Select None</button>
                             </div>
                         </div>
                         <p class="level1-help">Level 1 is the start URL. Review child branches before crawling deeper. Uncheck unrelated branches to keep the KB focused.</p>
+                        <div id="triageStatus" class="triage-status hidden"></div>
                         <div id="level1BranchList" class="level1-branch-list"></div>
                     </div>
                     

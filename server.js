@@ -12,6 +12,8 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 3000;
+const LLM_TRIAGE_MODEL = process.env.LLM_TRIAGE_MODEL || process.env.OPENAI_MODEL || 'gpt-4o-mini';
+const LLM_TRIAGE_URL = process.env.LLM_TRIAGE_URL || 'https://api.openai.com/v1/chat/completions';
 
 // Create directories for data storage if they don't exist
 const DATA_DIR = path.join(__dirname, 'data');
@@ -342,7 +344,29 @@ function isLevel1BranchCandidate(link, seedUrl) {
     }
 }
 
-function extractRelevanceKeywords(seedUrl, projectBrief = '') {
+function safeDecodeText(value = '') {
+    try {
+        return decodeURIComponent(value);
+    } catch {
+        return value;
+    }
+}
+
+function extractKeywordProfileTerms(keywordProfile = '') {
+    return keywordProfile
+        .split(/\n+/)
+        .map(line => line.replace(/^#+\s*/, '').replace(/^\d+\.\s*/, '').trim())
+        .filter(line => line && !line.startsWith('#'))
+        .flatMap(line => {
+            const phrase = line.toLowerCase();
+            const words = phrase
+                .split(/[^a-zA-Z0-9äöüÄÖÜß]+/)
+                .filter(word => word.length >= 3);
+            return [phrase, ...words];
+        });
+}
+
+function extractRelevanceKeywords(seedUrl, projectBrief = '', keywordProfile = '') {
     const urlObj = new URL(seedUrl);
     const pathWords = decodeURIComponent(urlObj.pathname)
         .split(/[^a-zA-Z0-9äöüÄÖÜß]+/)
@@ -355,16 +379,18 @@ function extractRelevanceKeywords(seedUrl, projectBrief = '') {
         'ein', 'eine', 'für', 'mit', 'von', 'zur', 'zum', 'service', 'verwaltung'
     ]);
 
-    return Array.from(new Set([...pathWords, ...briefWords]
+    const profileTerms = extractKeywordProfileTerms(keywordProfile);
+
+    return Array.from(new Set([...pathWords, ...briefWords, ...profileTerms]
         .map(word => word.toLowerCase())
         .filter(word => !stopWords.has(word))));
 }
 
-function scoreBranchCandidate(link, seedUrl, projectBrief = '') {
-    const keywords = extractRelevanceKeywords(seedUrl, projectBrief);
-    const haystack = `${link.text || ''} ${link.url || ''}`.toLowerCase();
+function scoreBranchCandidate(link, seedUrl, projectBrief = '', keywordProfile = '') {
+    const keywords = extractRelevanceKeywords(seedUrl, projectBrief, keywordProfile);
+    const haystack = safeDecodeText(`${link.text || ''} ${link.url || ''}`).toLowerCase();
     const matches = keywords.filter(keyword => haystack.includes(keyword));
-    const score = keywords.length > 0 ? matches.length / Math.min(keywords.length, 6) : 0;
+    const score = keywords.length > 0 ? matches.length / Math.min(keywords.length, 10) : 0;
     const selected = matches.length > 0;
 
     return {
@@ -373,18 +399,18 @@ function scoreBranchCandidate(link, seedUrl, projectBrief = '') {
         preselected: selected,
         relevance_reason: selected
             ? `Matched: ${matches.slice(0, 5).join(', ')}`
-            : 'No seed or brief keyword match'
+            : 'No seed, brief, or keyword profile match'
     };
 }
 
-function createRootCandidate(result, projectBrief = '') {
+function createRootCandidate(result, projectBrief = '', keywordProfile = '') {
     const rootLink = {
         text: result.title || result.final_url,
         url: result.final_url,
         category: 'root'
     };
     return {
-        ...scoreBranchCandidate(rootLink, result.final_url, projectBrief),
+        ...scoreBranchCandidate(rootLink, result.final_url, projectBrief, keywordProfile),
         level: 1,
         is_root: true,
         preselected: true,
@@ -393,7 +419,31 @@ function createRootCandidate(result, projectBrief = '') {
     };
 }
 
-function isRelevantCrawlUrl(candidateUrl, seedUrl, branchRoot = '') {
+function extractJsonFromLLMResponse(text = '') {
+    const trimmed = text.trim();
+    if (trimmed.startsWith('```')) {
+        return trimmed
+            .replace(/^```(?:json)?\s*/i, '')
+            .replace(/\s*```$/, '')
+            .trim();
+    }
+    const firstArray = trimmed.indexOf('[');
+    const lastArray = trimmed.lastIndexOf(']');
+    if (firstArray !== -1 && lastArray !== -1 && lastArray > firstArray) {
+        return trimmed.slice(firstArray, lastArray + 1);
+    }
+    return trimmed;
+}
+
+function normalizeTriageDecision(decision = '') {
+    const normalized = decision.toLowerCase();
+    if (['accept', 'reject', 'review'].includes(normalized)) {
+        return normalized;
+    }
+    return 'review';
+}
+
+function isRelevantCrawlUrl(candidateUrl, seedUrl, branchRoot = '', keywordProfile = '') {
     try {
         const candidate = new URL(candidateUrl);
         const seed = new URL(seedUrl);
@@ -401,8 +451,8 @@ function isRelevantCrawlUrl(candidateUrl, seedUrl, branchRoot = '') {
             return false;
         }
 
-        const keywords = extractRelevanceKeywords(seedUrl, branchRoot);
-        const haystack = decodeURIComponent(`${candidate.pathname} ${candidate.search}`).toLowerCase();
+        const keywords = extractRelevanceKeywords(seedUrl, branchRoot, keywordProfile);
+        const haystack = safeDecodeText(`${candidate.pathname} ${candidate.search}`).toLowerCase();
         if (keywords.some(keyword => haystack.includes(keyword))) {
             return true;
         }
@@ -1008,7 +1058,7 @@ async function fetchAndParseUrl(url) {
 }
 
 // Crawl website with depth limit
-async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState = null, respectRobotsTxt = true) {
+async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState = null, respectRobotsTxt = true, keywordProfile = '') {
     let visited, sitemap, queue, pageCount, jobId;
     
     if (existingState) {
@@ -1029,6 +1079,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
     
     // Get initial startUrl from existing state or parameter
     const initialStartUrl = existingState?.startUrl || startUrl;
+    const activeKeywordProfile = existingState?.keywordProfile || keywordProfile || '';
     
     // Add to running jobs tracker
     runningCrawlJobs.set(jobId, { status: 'running' });
@@ -1044,6 +1095,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
             maxDepth,
             maxPages,
             startUrl: initialStartUrl,
+            keywordProfile: activeKeywordProfile,
             lastUpdated: new Date().toISOString(),
             completed: status === 'completed' || status === 'stopped',
             currentUrl,
@@ -1167,7 +1219,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         if (result.success && depth < maxDepth && result.internal_links) {
             for (const childUrl of result.internal_links) {
                 if (!visited.has(childUrl)) {
-                    if (!isRelevantCrawlUrl(childUrl, initialStartUrl, activeBranchRoot)) {
+                    if (!isRelevantCrawlUrl(childUrl, initialStartUrl, activeBranchRoot, activeKeywordProfile)) {
                         continue;
                     }
 
@@ -1197,6 +1249,7 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
         maxDepth,
         maxPages,
         startUrl: initialStartUrl,
+        keywordProfile: activeKeywordProfile,
         lastUpdated: new Date().toISOString(),
         completed: true,
         currentUrl: null,
@@ -1274,7 +1327,7 @@ app.post('/api/inspect', async (req, res) => {
 // API endpoint for Level 1 discovery without starting a full crawl
 app.post('/api/discover-level1', async (req, res) => {
     try {
-        const { url, projectBrief = '' } = req.body;
+        const { url, projectBrief = '', projectKeywords = '' } = req.body;
 
         if (!url) {
             return res.status(400).json({ error: 'URL is required' });
@@ -1305,13 +1358,13 @@ app.post('/api/discover-level1', async (req, res) => {
                 return true;
             })
             .map(link => ({
-                ...scoreBranchCandidate(link, result.final_url, projectBrief),
+                ...scoreBranchCandidate(link, result.final_url, projectBrief, projectKeywords),
                 level: 2,
                 is_root: false,
                 parent_url: result.final_url
             }))
             .sort((a, b) => b.relevance_score - a.relevance_score || a.url.localeCompare(b.url));
-        const candidates = [createRootCandidate(result, projectBrief), ...childCandidates];
+        const candidates = [createRootCandidate(result, projectBrief, projectKeywords), ...childCandidates];
 
         res.json({
             success: true,
@@ -1333,6 +1386,96 @@ app.post('/api/discover-level1', async (req, res) => {
     } catch (error) {
         console.error('Level 1 discovery error:', error);
         res.status(500).json({ error: `Level 1 discovery failed: ${error.message}` });
+    }
+});
+
+// API endpoint for one-shot LLM triage of ambiguous structure-tree candidates
+app.post('/api/triage-ambiguous', async (req, res) => {
+    try {
+        const apiKey = process.env.OPENAI_API_KEY || process.env.LLM_API_KEY;
+        if (!apiKey) {
+            return res.status(400).json({
+                error: 'LLM triage requires OPENAI_API_KEY or LLM_API_KEY on the server.'
+            });
+        }
+
+        const { projectBrief = '', projectKeywords = '', candidates = [] } = req.body;
+
+        if (!Array.isArray(candidates) || candidates.length === 0) {
+            return res.status(400).json({ error: 'No ambiguous candidates provided' });
+        }
+
+        const compactCandidates = candidates.slice(0, 40).map(candidate => ({
+            url: candidate.url,
+            title: candidate.text || '',
+            score: candidate.relevance_score || 0,
+            reason: candidate.relevance_reason || ''
+        }));
+
+        const prompt = [
+            'You triage website links for a voice-agent knowledge-base crawler.',
+            'Decide whether each URL should be crawled for this specific project.',
+            'Return strict JSON only: an array of objects with url, decision, confidence, reason.',
+            'decision must be one of: accept, reject, review.',
+            'accept = likely relevant and useful for the voice agent.',
+            'reject = likely irrelevant, boilerplate, navigation, legal-only, tourism/events, or unrelated.',
+            'review = unclear from URL/title/reason.',
+            '',
+            `Project brief:\n${projectBrief || 'No project brief provided.'}`,
+            '',
+            `Keyword profile:\n${projectKeywords || 'No keyword profile provided.'}`,
+            '',
+            `Candidates:\n${JSON.stringify(compactCandidates, null, 2)}`
+        ].join('\n');
+
+        const llmResponse = await fetch(LLM_TRIAGE_URL, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                model: LLM_TRIAGE_MODEL,
+                temperature: 0,
+                messages: [
+                    {
+                        role: 'system',
+                        content: 'You are a conservative relevance classifier for website crawl planning. Output valid JSON only.'
+                    },
+                    {
+                        role: 'user',
+                        content: prompt
+                    }
+                ]
+            })
+        });
+
+        if (!llmResponse.ok) {
+            const errorText = await llmResponse.text();
+            return res.status(502).json({
+                error: `LLM triage failed: HTTP ${llmResponse.status}`,
+                details: errorText.slice(0, 500)
+            });
+        }
+
+        const data = await llmResponse.json();
+        const content = data.choices?.[0]?.message?.content || '';
+        const parsed = JSON.parse(extractJsonFromLLMResponse(content));
+        const decisions = Array.isArray(parsed) ? parsed : [];
+
+        res.json({
+            success: true,
+            model: LLM_TRIAGE_MODEL,
+            decisions: decisions.map(decision => ({
+                url: decision.url,
+                decision: normalizeTriageDecision(decision.decision),
+                confidence: Number(decision.confidence || 0),
+                reason: String(decision.reason || '').slice(0, 300)
+            }))
+        });
+    } catch (error) {
+        console.error('LLM triage error:', error);
+        res.status(500).json({ error: `LLM triage failed: ${error.message}` });
     }
 });
 
@@ -1391,7 +1534,7 @@ app.post('/api/parse-manual', async (req, res) => {
 // API endpoint for crawling
 app.post('/api/crawl', async (req, res) => {
     try {
-        const { url, maxDepth = 2, maxPages = 50, jobId: providedJobId, respectRobotsTxt = true, selectedUrls = [] } = req.body;
+        const { url, maxDepth = 2, maxPages = 50, jobId: providedJobId, respectRobotsTxt = true, selectedUrls = [], projectKeywords = '' } = req.body;
         const hasSelectedUrls = Array.isArray(selectedUrls) && selectedUrls.length > 0;
         
         let existingState = null;
@@ -1464,6 +1607,7 @@ app.post('/api/crawl', async (req, res) => {
                 maxPages: parseInt(maxPages),
                 startUrl: crawlUrl,
                 selectedBranchRoots: selectedQueue,
+                keywordProfile: projectKeywords,
                 lastUpdated: new Date().toISOString(),
                 completed: false,
                 currentUrl: null,
@@ -1485,7 +1629,8 @@ app.post('/api/crawl', async (req, res) => {
                 parseInt(maxDepth), 
                 parseInt(maxPages),
                 crawlStateForRun,
-                respectRobotsTxt
+                respectRobotsTxt,
+                projectKeywords
             ).catch(error => {
                 console.error(`Background crawl error for job ${jobId}:`, error);
                 runningCrawlJobs.delete(jobId);
