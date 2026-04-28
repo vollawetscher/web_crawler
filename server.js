@@ -314,6 +314,34 @@ function isUsefulCrawlLink(link, currentUrl) {
     }
 }
 
+function isLevel1BranchCandidate(link, seedUrl) {
+    if (!isUsefulCrawlLink(link, seedUrl)) {
+        return false;
+    }
+
+    try {
+        const linkUrl = new URL(link.url);
+        const seed = new URL(seedUrl);
+        const path = linkUrl.pathname.replace(/\/+$/, '') || '/';
+        const utilityPathPatterns = [
+            /^\/$/,
+            /^\/map\//i,
+            /^\/v-card\//i,
+            /^\/kontakt\/?$/i,
+            /^\/impressum\/?$/i,
+            /^\/datenschutz/i
+        ];
+
+        if (linkUrl.hostname !== seed.hostname) {
+            return false;
+        }
+
+        return !utilityPathPatterns.some(pattern => pattern.test(path));
+    } catch {
+        return false;
+    }
+}
+
 function extractRelevanceKeywords(seedUrl, projectBrief = '') {
     const urlObj = new URL(seedUrl);
     const pathWords = decodeURIComponent(urlObj.pathname)
@@ -346,6 +374,22 @@ function scoreBranchCandidate(link, seedUrl, projectBrief = '') {
         relevance_reason: selected
             ? `Matched: ${matches.slice(0, 5).join(', ')}`
             : 'No seed or brief keyword match'
+    };
+}
+
+function createRootCandidate(result, projectBrief = '') {
+    const rootLink = {
+        text: result.title || result.final_url,
+        url: result.final_url,
+        category: 'root'
+    };
+    return {
+        ...scoreBranchCandidate(rootLink, result.final_url, projectBrief),
+        level: 1,
+        is_root: true,
+        preselected: true,
+        relevance_score: 1,
+        relevance_reason: 'Start URL (Level 1 root)'
     };
 }
 
@@ -1250,7 +1294,8 @@ app.post('/api/discover-level1', async (req, res) => {
         }
 
         const seen = new Set();
-        const candidates = (result.crawlable_links || [])
+        const childCandidates = (result.crawlable_links || [])
+            .filter(link => isLevel1BranchCandidate(link, result.final_url))
             .filter(link => {
                 const normalized = normalizeUrl(link.url);
                 if (seen.has(normalized)) {
@@ -1259,8 +1304,14 @@ app.post('/api/discover-level1', async (req, res) => {
                 seen.add(normalized);
                 return true;
             })
-            .map(link => scoreBranchCandidate(link, result.final_url, projectBrief))
+            .map(link => ({
+                ...scoreBranchCandidate(link, result.final_url, projectBrief),
+                level: 2,
+                is_root: false,
+                parent_url: result.final_url
+            }))
             .sort((a, b) => b.relevance_score - a.relevance_score || a.url.localeCompare(b.url));
+        const candidates = [createRootCandidate(result, projectBrief), ...childCandidates];
 
         res.json({
             success: true,
@@ -1275,7 +1326,8 @@ app.post('/api/discover-level1', async (req, res) => {
             candidates,
             stats: {
                 totalCandidates: candidates.length,
-                preselected: candidates.filter(candidate => candidate.preselected).length
+                preselected: candidates.filter(candidate => candidate.preselected).length,
+                childCandidates: childCandidates.length
             }
         });
     } catch (error) {

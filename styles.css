@@ -641,6 +641,15 @@ h3 {
     padding: 0.75rem;
 }
 
+.level1-branch-item.branch-root {
+    border-color: #7c3aed;
+    background: #f5f3ff;
+}
+
+.level1-branch-item.branch-child {
+    margin-left: 1.5rem;
+}
+
 .branch-title {
     color: #1e293b;
     font-weight: 600;
@@ -666,6 +675,44 @@ h3 {
     font-size: 0.8rem;
     font-weight: 600;
     padding: 0.25rem 0.5rem;
+}
+
+.crawl-progress-details {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.crawl-progress-details h4 {
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+}
+
+.progress-current {
+    color: #1e40af;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.progress-url-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.progress-url-row {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    color: #475569;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    overflow-wrap: anywhere;
 }
 
 .crawl-status {

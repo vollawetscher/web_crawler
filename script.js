@@ -39,6 +39,9 @@ const jobIdInput = document.getElementById('jobId');
 const crawlLogContainer = document.getElementById('crawlLog');
 const level1ReviewSection = document.getElementById('level1ReviewSection');
 const level1BranchList = document.getElementById('level1BranchList');
+const crawlProgressDetails = document.getElementById('crawlProgressDetails');
+const crawlCurrentUrl = document.getElementById('crawlCurrentUrl');
+const crawlProcessedUrls = document.getElementById('crawlProcessedUrls');
 
 // Export format elements
 const exportFormatRadios = document.querySelectorAll('input[name="export_format"]');
@@ -252,12 +255,12 @@ async function handleDiscoverLevel1() {
     const url = urlInput.value.trim();
 
     if (!url) {
-        showError('Please enter a URL to discover Level 1 branches');
+        showError('Please enter a URL to build the structure tree');
         return;
     }
 
     const finalUrl = url.startsWith('http') ? url : `https://${url}`;
-    showLoading('Discovering first-level branches...');
+    showLoading('Building structure tree...');
     discoverLevel1Btn.disabled = true;
 
     try {
@@ -283,7 +286,7 @@ async function handleDiscoverLevel1() {
             jobInfo.classList.add('hidden');
             displayResults(data.source);
             displayLevel1Branches(data.candidates || []);
-            showSuccess(`Discovered ${data.stats?.totalCandidates || 0} Level 1 branches. Review selections before crawling.`);
+            showSuccess(`Built structure tree with ${data.stats?.childCandidates || 0} child branch(es). Review selections before crawling.`);
             saveSessionData();
         } else {
             showError(`❌ ${data.error}`);
@@ -492,14 +495,14 @@ function displayLevel1Branches(candidates) {
 
     candidates.forEach((candidate, index) => {
         const item = document.createElement('div');
-        item.className = 'level1-branch-item';
+        item.className = `level1-branch-item ${candidate.is_root ? 'branch-root' : 'branch-child'}`;
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.className = 'level1-branch-checkbox';
         checkbox.dataset.url = candidate.url;
         checkbox.dataset.recommended = candidate.preselected ? 'true' : 'false';
-        checkbox.checked = candidate.selected ?? (candidate.preselected || index < 10);
+        checkbox.checked = candidate.selected ?? candidate.preselected;
         checkbox.addEventListener('change', () => {
             updateLevel1SelectionSummary();
             saveSessionData();
@@ -508,7 +511,7 @@ function displayLevel1Branches(candidates) {
         const content = document.createElement('div');
         const title = document.createElement('div');
         title.className = 'branch-title';
-        title.textContent = candidate.text || candidate.url;
+        title.textContent = `${candidate.is_root ? 'Level 1 Root: ' : 'Level 2: '}${candidate.text || candidate.url}`;
 
         const url = document.createElement('div');
         url.className = 'branch-url';
@@ -539,7 +542,7 @@ function updateLevel1SelectionSummary() {
     persistLevel1Selections();
     const selected = document.querySelectorAll('.level1-branch-checkbox:checked').length;
     const total = document.querySelectorAll('.level1-branch-checkbox').length;
-    crawlProgressStatus.textContent = total > 0 ? `${selected}/${total} Level 1 branches selected` : '';
+    crawlProgressStatus.textContent = total > 0 ? `${selected}/${total} tree node(s) selected` : '';
 }
 
 function persistLevel1Selections() {
@@ -574,7 +577,8 @@ async function handleCrawl() {
         return;
     }
     
-    showCrawlStatus(shouldStartSelectedBranchCrawl ? `Starting crawl for ${selectedUrls.length} selected branch(es)...` : 'Starting crawl...', 'starting');
+    showCrawlStatus(shouldStartSelectedBranchCrawl ? `Starting crawl for ${selectedUrls.length} selected tree node(s)...` : 'Starting crawl...', 'starting');
+    showProgressDetails('Preparing crawl...', []);
     crawlBtn.disabled = true;
     stopCrawlBtn.classList.remove('hidden');
     
@@ -597,7 +601,7 @@ async function handleCrawl() {
         } else {
             requestBody.url = url.startsWith('http') ? url : `https://${url}`;
             if (currentLevel1Discovery && selectedUrls.length === 0) {
-                showError('Select at least one Level 1 branch, or clear the session to run an unrestricted crawl.');
+                showError('Select at least one tree node, or clear the session to run an unrestricted crawl.');
                 hideCrawlStatus();
                 return;
             }
@@ -639,6 +643,23 @@ async function handleCrawl() {
     } finally {
         crawlBtn.disabled = false;
     }
+}
+
+function showProgressDetails(currentUrl, processedUrls = []) {
+    if (!crawlProgressDetails || !crawlCurrentUrl || !crawlProcessedUrls) {
+        return;
+    }
+
+    crawlProgressDetails.classList.remove('hidden');
+    crawlCurrentUrl.textContent = currentUrl ? `Current: ${currentUrl}` : 'Current: waiting...';
+    crawlProcessedUrls.innerHTML = '';
+
+    processedUrls.slice(-20).reverse().forEach(url => {
+        const row = document.createElement('div');
+        row.className = 'progress-url-row';
+        row.textContent = url;
+        crawlProcessedUrls.appendChild(row);
+    });
 }
 
 async function handleStopCrawl() {
@@ -897,6 +918,7 @@ async function checkCrawlProgress() {
         
         if (progress.success) {
             const remaining = Math.max(0, progress.maxPages - progress.pageCount);
+            const processedUrls = Object.keys(progress.sitemap || {});
             
             // Add current page to crawl log
             if (progress.currentUrl) {
@@ -907,6 +929,7 @@ async function checkCrawlProgress() {
             const statusText = `Status: ${progress.status} | Pages: ${progress.pageCount}/${progress.maxPages} | Remaining: ${remaining} | Queue: ${progress.queueLength}`;
             crawlStatusText.textContent = statusText;
             crawlProgressStatus.textContent = progress.status;
+            showProgressDetails(progress.currentUrl || progress.status, processedUrls);
             
             // Update live sitemap if available
             if (progress.sitemap) {
