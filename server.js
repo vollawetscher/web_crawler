@@ -22,6 +22,7 @@ const INSPECTIONS_DIR = path.join(DATA_DIR, 'inspections');
 
 // Track running crawl jobs
 const runningCrawlJobs = new Map();
+const crawlStateCache = new Map();
 
 async function initializeDataDirectories() {
     try {
@@ -1273,7 +1274,9 @@ async function crawlWebsite(startUrl, maxDepth = 2, maxPages = 50, existingState
 
 // Save crawl state to file
 async function saveCrawlState(jobId, state) {
+    crawlStateCache.set(jobId, state);
     try {
+        await fs.mkdir(CRAWL_STATES_DIR, { recursive: true });
         const filePath = path.join(CRAWL_STATES_DIR, `${jobId}.json`);
         await fs.writeFile(filePath, JSON.stringify(state, null, 2));
     } catch (error) {
@@ -1284,10 +1287,16 @@ async function saveCrawlState(jobId, state) {
 
 // Load crawl state from file
 async function loadCrawlState(jobId) {
+    if (crawlStateCache.has(jobId)) {
+        return crawlStateCache.get(jobId);
+    }
+
     try {
         const filePath = path.join(CRAWL_STATES_DIR, `${jobId}.json`);
         const data = await fs.readFile(filePath, 'utf8');
-        return JSON.parse(data);
+        const state = JSON.parse(data);
+        crawlStateCache.set(jobId, state);
+        return state;
     } catch (error) {
         if (error.code !== 'ENOENT') {
             console.error('Failed to load crawl state:', error);
@@ -1615,29 +1624,18 @@ app.post('/api/crawl', async (req, res) => {
                 queueLength: initialQueue.length,
                 stopRequested: false
             };
-            await saveCrawlState(jobId, initialState);
+            saveCrawlState(jobId, initialState).catch(error => {
+                console.error(`Initial crawl state persistence failed for job ${jobId}:`, error);
+            });
             crawlStateForRun = initialState;
         }
         
         // Start crawling asynchronously if not already running
-        if (!runningCrawlJobs.has(jobId)) {
-            console.log(`Starting background crawl for job ${jobId}`);
-            
-            // Start the crawl in the background
-            crawlWebsite(
-                crawlUrl, 
-                parseInt(maxDepth), 
-                parseInt(maxPages),
-                crawlStateForRun,
-                respectRobotsTxt,
-                projectKeywords
-            ).catch(error => {
-                console.error(`Background crawl error for job ${jobId}:`, error);
-                runningCrawlJobs.delete(jobId);
-            });
+        const shouldStartBackgroundCrawl = !runningCrawlJobs.has(jobId);
+        if (shouldStartBackgroundCrawl) {
+            runningCrawlJobs.set(jobId, { status: 'starting' });
         }
         
-        // Return immediately with job info
         res.json({ 
             success: true, 
             jobId,
@@ -1646,6 +1644,23 @@ app.post('/api/crawl', async (req, res) => {
                 ? `Crawl started for ${initialBranchCount} selected branch(es)`
                 : 'Crawl started in background'
         });
+
+        if (shouldStartBackgroundCrawl) {
+            setTimeout(() => {
+                console.log(`Starting background crawl for job ${jobId}`);
+                crawlWebsite(
+                    crawlUrl,
+                    parseInt(maxDepth),
+                    parseInt(maxPages),
+                    crawlStateForRun,
+                    respectRobotsTxt,
+                    projectKeywords
+                ).catch(error => {
+                    console.error(`Background crawl error for job ${jobId}:`, error);
+                    runningCrawlJobs.delete(jobId);
+                });
+            }, 0);
+        }
         
     } catch (error) {
         console.error('Crawl error:', error);

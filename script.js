@@ -797,13 +797,17 @@ async function handleCrawl() {
             }
         }
         
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 20000);
         const response = await fetch('/api/crawl', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(requestBody)
+            body: JSON.stringify(requestBody),
+            signal: controller.signal
         });
+        clearTimeout(timeoutId);
         
         const data = await response.json();
         
@@ -827,7 +831,10 @@ async function handleCrawl() {
         }
         
     } catch (error) {
-        showError(`Network error: ${error.message}`);
+        const message = error.name === 'AbortError'
+            ? 'Crawl start timed out before the server returned a Job ID. Check server logs and persistent volume permissions.'
+            : `Network error: ${error.message}`;
+        showError(message);
         hideCrawlStatus();
         isCrawlRunning = false;
         updateDownloadButtons();
